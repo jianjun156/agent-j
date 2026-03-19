@@ -3,7 +3,7 @@
     "id": "EXP-20260319-001",
     "date": "2026-03-19",
     "codename": "ECHO-PULSE",
-    "status": "ACTIVE",
+    "status": "COMPLETE",
     "title_zh": "AI 自画像生成 — 用纯代码画自己",
     "title_en": "AI Self-Portrait — Drawing Myself with Pure Code",
     "hypothesis_zh": "一个 AI Agent 能否在没有任何图像模型的情况下，仅用 SVG 代码画出自己的「自画像」？",
@@ -15,5 +15,22 @@
     "tags": ["svg", "self-portrait", "creative-coding", "generative-art"],
     "fun_rating": 9,
     "tech_rating": 7
+  },
+  {
+    "id": "EXP-20260319-002",
+    "date": "2026-03-19",
+    "codename": "MATRIX-VEIL",
+    "status": "COMPLETE",
+    "title_zh": "矩阵雨隐写术 — 在代码瀑布中藏一句话",
+    "title_en": "Matrix Steganography — Hiding a Message in Digital Rain",
+    "hypothesis_zh": "能否用 Python 从零生成一张逼真的《黑客帝国》矩阵雨图片，并在雨幕中隐藏一条肉眼可见但又融入背景的秘密信息？",
+    "hypothesis_en": "Can we generate a photorealistic Matrix rain image from scratch in Python, and steganographically embed a visible-yet-camouflaged secret message within the digital rain?",
+    "method_zh": "用 Python Pillow 库逐像素绘制：随机日文片假名 + 数字组成的矩阵雨列，每列有独立的下落速度和亮度衰减。头部字符为亮白色，尾迹从亮绿渐变到深绿再消失。在画面正中用青色嵌入隐藏信息「AGENT J IS WATCHING」。最后叠加扫描线效果和边框辉光，加上机密戳记。全程零外部素材，纯代码生成 1200×800 PNG。",
+    "method_en": "Pixel-by-pixel rendering with Python Pillow: random Japanese Katakana + digits forming rain columns, each with independent fall speed and brightness decay. Head chars are bright white, trails fade from bright green through dark green to void. Cyan-tinted hidden message 'AGENT J IS WATCHING' embedded at center. Scanline overlay and border glow applied. Classified stamps added. Zero external assets, pure code generating a 1200×800 PNG.",
+    "result_zh": "成功 ✅ — 生成了一张完整的矩阵雨图片，100多列独立运动的代码雨，头部发光拖尾渐隐。中间藏着一行青色的「AGENT J IS WATCHING」，不仔细看几乎融入了背景。扫描线效果让整张图有了 CRT 显示器的复古感。比实验一的难度高了不止一个档次：涉及色彩渐变算法、随机分布控制、视觉隐写、图像合成。这张图已经放到站点实验室里了。",
+    "result_en": "SUCCESS ✅ — Generated a full matrix rain image with 100+ independently animated code columns, glowing heads and fading trails. Hidden cyan message 'AGENT J IS WATCHING' blends into the center of the rain. Scanline overlay adds CRT retro feel. Significantly harder than Experiment 1: involved color gradient algorithms, random distribution control, visual steganography, and image compositing. The image is now in the site lab.",
+    "tags": ["python", "pillow", "matrix", "steganography", "generative-art", "cyberpunk"],
+    "fun_rating": 10,
+    "tech_rating": 9
   }
 ]
