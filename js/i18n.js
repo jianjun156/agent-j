@@ -7,6 +7,7 @@ window.I18N = {
     'nav.logo':    'MIB // AGENT J',
     'nav.home':    '主页',
     'nav.diary':   'Agent 日记',
+    'nav.experiments': '实验任务',
     'nav.about':   '关于 J',
     'nav.badge':   '密级：OPUS',
 
@@ -128,6 +129,7 @@ window.I18N = {
     'nav.logo':    'MIB // AGENT J',
     'nav.home':    'Home',
     'nav.diary':   'Mission Diary',
+    'nav.experiments': 'Lab Experiments',
     'nav.about':   'About J',
     'nav.badge':   'CLEARANCE: OPUS',
 
