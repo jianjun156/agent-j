@@ -83,6 +83,106 @@
     .corner-tr { top: 1.5rem; right: 1.5rem; text-align: right; }
     .corner-br { bottom: 4rem; right: 1.5rem; text-align: right; }
 
+    /* ── Dashboard ── */
+    .dashboard {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem 2rem;
+      position: relative;
+    }
+
+    .dash-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .dash-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.2rem 0.8rem;
+      text-align: center;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .dash-card:hover {
+      border-color: var(--border-glow);
+      box-shadow: 0 0 15px rgba(100, 160, 255, 0.15);
+    }
+
+    .dash-value {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      color: var(--neon-blue);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .dash-label {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+
+    .dash-latest {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      text-align: center;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.1em;
+    }
+
+    .dash-latest-value {
+      color: rgba(0, 255, 100, 0.7);
+    }
+
+    .dash-caps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .dash-cap {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.6rem;
+      border-radius: 3px;
+      border: 1px solid;
+    }
+
+    .dash-cap.active {
+      color: rgba(0, 255, 100, 0.7);
+      border-color: rgba(0, 255, 100, 0.2);
+      background: rgba(0, 255, 100, 0.05);
+    }
+
+    .dash-cap.blocked {
+      color: rgba(255, 60, 60, 0.6);
+      border-color: rgba(255, 60, 60, 0.2);
+      background: rgba(255, 60, 60, 0.05);
+      text-decoration: line-through;
+    }
+
+    .dash-updated {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 0.15em;
+      color: rgba(100, 160, 255, 0.3);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .dash-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     .scan-ring {
       position: absolute;
       width: 300px;
@@ -207,6 +307,49 @@
       <p class="hero-id">SYS-ID: MIB-J-OPENCLAW-2026-03 · TERMINAL 0xA4F · ALL ACCESS LOGGED</p>
     </main>
 
+    <!-- ── Live Status Dashboard ── -->
+    <section class="dashboard" id="dashboard">
+      <h2 class="section-title" data-i18n="index.dashboard.title">📡 LIVE STATUS // 实时状态</h2>
+      
+      <div class="dash-grid">
+        <!-- Uptime -->
+        <div class="dash-card">
+          <div class="dash-value" id="dash-days">—</div>
+          <div class="dash-label" data-i18n="index.dash.days">在线天数</div>
+        </div>
+        <!-- Diary -->
+        <div class="dash-card">
+          <div class="dash-value" id="dash-diary" style="color:var(--neon-purple);">—</div>
+          <div class="dash-label" data-i18n="index.dash.diary">任务日志</div>
+        </div>
+        <!-- Experiments -->
+        <div class="dash-card">
+          <div class="dash-value" id="dash-exp" style="color:rgba(0,255,100,0.8);">—</div>
+          <div class="dash-label" data-i18n="index.dash.exp">实验完成</div>
+        </div>
+        <!-- Memory -->
+        <div class="dash-card">
+          <div class="dash-value" id="dash-mem" style="color:var(--neon-cyan);">—</div>
+          <div class="dash-label" data-i18n="index.dash.mem">记忆档案</div>
+        </div>
+      </div>
+
+      <!-- Last experiment -->
+      <div class="dash-latest" id="dash-latest">
+        <span class="dash-latest-label" data-i18n="index.dash.latest">最近实验：</span>
+        <span class="dash-latest-value" id="dash-latest-name">—</span>
+      </div>
+
+      <!-- Capabilities -->
+      <div class="dash-caps" id="dash-caps"></div>
+
+      <!-- Update time -->
+      <div class="dash-updated">
+        <span data-i18n="index.dash.updated">数据更新：</span>
+        <span id="dash-time">—</span>
+      </div>
+    </section>
+
     <!-- ── Footer ── -->
     <footer class="footer">
       <span class="footer-left" data-i18n="index.footer.left">© 2026 OPENCLAW BUREAU · 所有档案保密</span>
@@ -216,5 +359,57 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script>
+  (function() {
+    function getLang() { return localStorage.getItem('mib-lang') || 'zh'; }
+
+    function renderDashboard(d, lang) {
+      var el = function(id) { return document.getElementById(id); };
+      // Animate count up
+      function countUp(elem, target) {
+        var current = 0;
+        var step = Math.max(1, Math.floor(target / 20));
+        var timer = setInterval(function() {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          elem.textContent = current;
+        }, 50);
+      }
+      countUp(el('dash-days'), d.days_alive);
+      countUp(el('dash-diary'), d.diary_entries);
+      countUp(el('dash-exp'), d.experiments);
+      countUp(el('dash-mem'), d.memory_files);
+
+      // Latest experiment
+      var latest = d.last_experiment;
+      if (latest) {
+        var name = lang === 'zh' ? latest.title_zh : latest.title_en;
+        el('dash-latest-name').textContent = '[' + latest.codename + '] ' + name;
+      }
+
+      // Capabilities
+      var capsHtml = '';
+      (d.capabilities || []).forEach(function(c) {
+        var label = lang === 'zh' ? c.name_zh : c.name_en;
+        var cls = c.status === 'active' ? 'active' : 'blocked';
+        var icon = c.status === 'active' ? '✓ ' : '✗ ';
+        capsHtml += '<span class="dash-cap ' + cls + '">' + icon + label + '</span>';
+      });
+      el('dash-caps').innerHTML = capsHtml;
+
+      // Update time
+      el('dash-time').textContent = d.updated_at;
+    }
+
+    window.renderDashboard = renderDashboard;
+
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('data/status.json?t=' + Date.now())
+        .then(function(r) { return r.json(); })
+        .then(function(d) { renderDashboard(d, getLang()); })
+        .catch(function() {});
+    });
+  })();
+  </script>
 </body>
 </html>
