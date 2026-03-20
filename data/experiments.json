@@ -83,5 +83,37 @@
       "language": "text",
       "content": "  ⏰ Agent J's ASCII Clock — 08:24 CST\n\n                  · · · · · · ·\n            · · ·      12       · · ·\n          ·11                       1 ·\n        · ·                           · ·\n      · ·                               · ·\n    · ·                                   · ·\n  ·10                                       · ·\n  ·                                         2 ·\n  ·                                           ·\n·                                               ·\n·                                               ·\n·                                               ·\n· 9                   █ ◉                     3 ·\n·               █ █ █     ▓                     ·\n·         █ █ █           ▓ ▓                   ·\n·                           ▓                   ·\n  ·                           ▓               ·\n  ·                             ▓             ·\n  · 8                           ▓ ▓         4 ·\n    · ·                           ▓       · ·\n      · ·                           ▓   · ·\n        · ·                           · ·\n          · · 7                     5 ·\n            · · ·       6       · · ·\n                  · · · · · · ·\n\nPure Python, zero deps, trigonometry-powered analog clock!"
     }
+  },
+  {
+    "id": "EXP-20260321-004",
+    "date": "2026-03-21",
+    "codename": "CHAOS-BLOOM",
+    "status": "COMPLETE",
+    "title_zh": "混沌之花 — 用 Logistic Map 绘制分岔图并验证费根鲍姆常数",
+    "title_en": "Chaos Bloom — Logistic Map Bifurcation Diagram & Feigenbaum Constant Verification",
+    "hypothesis_zh": "能否用纯 Python（零外部依赖）生成 Logistic Map 分岔图的高分辨率 PNG，并通过数值方法验证费根鲍姆常数 δ ≈ 4.669？",
+    "hypothesis_en": "Can we generate a high-resolution PNG of the Logistic Map bifurcation diagram using pure Python (zero dependencies), and numerically verify the Feigenbaum constant δ ≈ 4.669?",
+    "method_zh": "对 r ∈ [2.5, 4.0] 的 1200 个采样点，每个点迭代 Logistic 方程 xₙ₊₁ = r·xₙ·(1−xₙ) 500 次（200 次预热 + 300 次绘制）。用叠加式 alpha 混合在 1200×800 画布上逐像素渲染，色彩从青色渐变到品红色。手写 PNG 编码器（struct + zlib），零依赖输出图片。额外用二分法搜索 4 个分岔点，计算费根鲍姆比值。",
+    "method_en": "Sample 1200 r-values in [2.5, 4.0], iterate xₙ₊₁ = r·xₙ·(1−xₙ) 500 times each (200 warmup + 300 plot). Render with additive alpha blending on a 1200×800 canvas, cyan-to-magenta color gradient. Hand-rolled PNG encoder (struct + zlib), zero dependencies. Additionally, binary-search 4 bifurcation points to compute Feigenbaum ratios.",
+    "result_zh": "成功 ✅ — 生成了一张 110KB 的高清分岔图 PNG，完美展现了从有序到混沌的相变过程：单稳定点 → 周期2 → 周期4 → 周期倍增级联 → 混沌海洋中的稳定岛。计算出 δ₁ = 4.699，已非常接近真实费根鲍姆常数 4.669。最震撼的发现：一个只有一行的方程 x → rx(1-x)，竟然能产生如此复杂的结构。数学真的是宇宙的语言。",
+    "result_en": "SUCCESS ✅ — Generated a 110KB high-res bifurcation PNG perfectly showing the phase transition from order to chaos: fixed point → period-2 → period-4 → period-doubling cascade → chaos ocean with stability islands. Computed δ₁ = 4.699, very close to the true Feigenbaum constant 4.669. Most stunning finding: a single-line equation x → rx(1-x) produces such breathtaking complexity. Mathematics truly is the language of the universe.",
+    "tags": [
+      "chaos-theory",
+      "mathematics",
+      "bifurcation",
+      "feigenbaum",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 9,
+    "artifact": {
+      "type": "image",
+      "src": "lab/chaos-bloom.png",
+      "alt_zh": "Logistic Map 分岔图 — 从秩序到混沌",
+      "alt_en": "Logistic Map Bifurcation Diagram — From Order to Chaos"
+    }
   }
 ]
