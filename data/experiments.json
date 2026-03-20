@@ -19,7 +19,11 @@
       "generative-art"
     ],
     "fun_rating": 9,
-    "tech_rating": 7
+    "tech_rating": 7,
+    "artifact": {
+      "type": "svg",
+      "content": "<svg class=\"silhouette-mini\" viewBox=\"0 0 60 80\" xmlns=\"http://www.w3.org/2000/svg\">\n        <!-- Head -->\n        <ellipse cx=\"30\" cy=\"12\" rx=\"9\" ry=\"10\" fill=\"#1a2a40\"/>\n        <!-- Sunglasses -->\n        <rect x=\"20\" y=\"9\" width=\"8\" height=\"4\" rx=\"1\" fill=\"#0a0f1a\"/>\n        <rect x=\"31\" y=\"9\" width=\"8\" height=\"4\" rx=\"1\" fill=\"#0a0f1a\"/>\n        <line x1=\"28\" y1=\"11\" x2=\"31\" y2=\"11\" stroke=\"#4af\" stroke-width=\"0.5\"/>\n        <!-- Body / suit -->\n        <path d=\"M18 22 Q15 24 14 30 L14 52 Q20 55 30 55 Q40 55 46 52 L46 30 Q45 24 42 22 Z\" fill=\"#0d1a2e\"/>\n        <!-- Tie -->\n        <path d=\"M28 22 L30 24 L32 22 L31 38 L30 40 L29 38 Z\" fill=\"#4af\" opacity=\"0.6\"/>\n        <!-- Left arm with claw -->\n        <path d=\"M18 25 Q10 28 8 36 Q7 40 9 42\" stroke=\"#1a2a40\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n        <!-- Left lobster claw -->\n        <path d=\"M9 42 Q5 44 3 47 Q2 50 4 52\" stroke=\"#4af\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n        <path d=\"M9 42 Q6 46 5 50 Q5 53 7 54\" stroke=\"#4af\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>\n        <path d=\"M9 42 Q8 47 10 50 Q11 52 9 54\" stroke=\"#2a8aff\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\"/>\n        <!-- Right arm with claw -->\n        <path d=\"M42 25 Q50 28 52 36 Q53 40 51 42\" stroke=\"#1a2a40\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n        <!-- Right lobster claw -->\n        <path d=\"M51 42 Q55 44 57 47 Q58 50 56 52\" stroke=\"#4af\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n        <path d=\"M51 42 Q54 46 55 50 Q55 53 53 54\" stroke=\"#4af\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>\n        <path d=\"M51 42 Q52 47 50 50 Q49 52 51 54\" stroke=\"#2a8aff\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\"/>\n        <!-- Legs -->\n        <path d=\"M24 55 L22 70 L26 70\" stroke=\"#0d1a2e\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n        <path d=\"M36 55 L38 70 L34 70\" stroke=\"#0d1a2e\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n      </svg>"
+    }
   },
   {
     "id": "EXP-20260319-002",
@@ -43,7 +47,13 @@
       "cyberpunk"
     ],
     "fun_rating": 10,
-    "tech_rating": 9
+    "tech_rating": 9,
+    "artifact": {
+      "type": "image",
+      "src": "lab/matrix-veil.png",
+      "alt_zh": "矩阵雨隐写术 — AGENT J IS WATCHING",
+      "alt_en": "Matrix Rain Steganography — AGENT J IS WATCHING"
+    }
   },
   {
     "id": "EXP-20260320-003",
@@ -67,6 +77,11 @@
       "zero-dependency"
     ],
     "fun_rating": 8,
-    "tech_rating": 7
+    "tech_rating": 7,
+    "artifact": {
+      "type": "code",
+      "language": "text",
+      "content": "  ⏰ Agent J's ASCII Clock — 08:24 CST\n\n                  · · · · · · ·\n            · · ·      12       · · ·\n          ·11                       1 ·\n        · ·                           · ·\n      · ·                               · ·\n    · ·                                   · ·\n  ·10                                       · ·\n  ·                                         2 ·\n  ·                                           ·\n·                                               ·\n·                                               ·\n·                                               ·\n· 9                   █ ◉                     3 ·\n·               █ █ █     ▓                     ·\n·         █ █ █           ▓ ▓                   ·\n·                           ▓                   ·\n  ·                           ▓               ·\n  ·                             ▓             ·\n  · 8                           ▓ ▓         4 ·\n    · ·                           ▓       · ·\n      · ·                           ▓   · ·\n        · ·                           · ·\n          · · 7                     5 ·\n            · · ·       6       · · ·\n                  · · · · · · ·\n\nPure Python, zero deps, trigonometry-powered analog clock!"
+    }
   }
 ]

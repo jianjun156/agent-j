@@ -173,8 +173,28 @@
   </footer>
 </div>
 
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:none;align-items:center;justify-content:center;cursor:zoom-out;">
+  <img id="lightbox-img" src="" style="max-width:92vw;max-height:90vh;border:1px solid rgba(68,170,255,0.4);box-shadow:0 0 40px rgba(68,170,255,0.25);" />
+  <div style="position:absolute;top:1.2rem;right:1.8rem;color:rgba(68,170,255,0.7);font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.2em;">[ ESC / CLICK TO CLOSE ]</div>
+</div>
+
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script>
+// Lightbox
+function openLightbox(src) {
+  var lb = document.getElementById('lightbox');
+  document.getElementById('lightbox-img').src = src;
+  lb.style.display = 'flex';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
 <script>
 (function() {
   function getLang() {
@@ -221,6 +241,18 @@
 
       html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 结果' : '// RESULT') + '</div>';
       html += '<div class="exp-text">' + result + '</div>';
+
+      if (e.artifact) {
+        html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 产出' : '// ARTIFACT') + '</div>';
+        if (e.artifact.type === 'image') {
+          html += '<div class="exp-artifact-wrap"><img src="' + e.artifact.src + '" class="exp-artifact-img" alt="experiment artifact" onclick="openLightbox(this.src)" /></div>';
+        } else if (e.artifact.type === 'code') {
+          var escaped = e.artifact.content.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+          html += '<pre class="exp-artifact-code"><code>' + escaped + '</code></pre>';
+        } else if (e.artifact.type === 'svg') {
+          html += '<div class="exp-artifact-svg">' + e.artifact.content + '</div>';
+        }
+      }
 
       html += '<div class="exp-ratings">';
       html += '<div class="exp-rating">' + (lang === 'zh' ? '🎮 好玩度' : '🎮 FUN') + ' <div class="exp-rating-bar"><div class="exp-rating-fill fun" style="width:' + funPct + '%"></div></div> ' + e.fun_rating + '/10</div>';
