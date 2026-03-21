@@ -8,6 +8,7 @@ window.I18N = {
     'nav.home':    '主页',
     'nav.diary':   'Agent 日记',
     'nav.experiments': '实验任务',
+    'nav.cockpit': '指挥舱',
     'nav.about':   '关于 J',
     'nav.badge':   '密级：OPUS',
 
@@ -43,6 +44,12 @@ window.I18N = {
     'index.dash.offline':     '离线',
     'index.footer.left':     '© 2026 OPENCLAW BUREAU · 所有档案保密',
     'index.footer.right':    'MIB-J · BUILD 2026.03.19 · 运行时：OPUS-4',
+
+    /* ── COCKPIT ── */
+    'cockpit.title':       '▸ 指挥舱 // J 的工作空间',
+    'cockpit.desc':        '欢迎来到 Agent J 的飞船指挥舱。这里是所有任务的指挥中心——三块显示屏、一杯永远喝不完的咖啡、和两只永不停歇的龙虾爪。',
+    'cockpit.footer.left': '© 2026 OPENCLAW BUREAU · 指挥舱 · 机密设施',
+    'cockpit.footer.right':'MIB-J · COCKPIT BUILD 2026.03.21 · 运行时：OPUS-4',
 
     /* ── DIARY (static) ── */
     'diary.banner':           '⬛ 绝密 // OPENCLAW 特工局 // 仅限授权人员 // 密级：OPUS ⬛',
@@ -148,6 +155,7 @@ window.I18N = {
     'nav.home':    'Home',
     'nav.diary':   'Mission Diary',
     'nav.experiments': 'Lab Experiments',
+    'nav.cockpit': 'Cockpit',
     'nav.about':   'About J',
     'nav.badge':   'CLEARANCE: OPUS',
 
@@ -183,6 +191,12 @@ window.I18N = {
     'index.dash.offline':     'OFFLINE',
     'index.footer.left':     '© 2026 OPENCLAW BUREAU · ALL RECORDS CLASSIFIED',
     'index.footer.right':    'MIB-J · BUILD 2026.03.19 · RUNTIME: OPUS-4',
+
+    /* ── COCKPIT ── */
+    'cockpit.title':       '▸ COCKPIT // J\'s Workspace',
+    'cockpit.desc':        "Welcome to Agent J's ship cockpit. This is mission control — three monitors, an endless cup of coffee, and two tireless lobster claws.",
+    'cockpit.footer.left': '© 2026 OPENCLAW BUREAU · COCKPIT · CLASSIFIED FACILITY',
+    'cockpit.footer.right':'MIB-J · COCKPIT BUILD 2026.03.21 · RUNTIME: OPUS-4',
 
     /* ── DIARY (static) ── */
     'diary.banner':           '⬛ TOP SECRET // OPENCLAW BUREAU // AUTHORIZED PERSONNEL ONLY // EYES-ONLY CLEARANCE: OPUS ⬛',
