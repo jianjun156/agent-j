@@ -91,9 +91,91 @@
       position: relative;
     }
 
+    /* ── Heartbeat row ── */
+    .dash-heartbeat-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-bottom: 1.8rem;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .dash-hb-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dash-hb-dot.hb-green {
+      background: #0f0;
+      box-shadow: 0 0 8px #0f0, 0 0 16px rgba(0,255,0,0.3);
+      animation: hbPulse 2s infinite;
+    }
+    .dash-hb-dot.hb-yellow {
+      background: #ff0;
+      box-shadow: 0 0 8px #ff0;
+      animation: hbPulse 3s infinite;
+    }
+    .dash-hb-dot.hb-red {
+      background: #f44;
+      box-shadow: 0 0 8px #f44;
+    }
+
+    @keyframes hbPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.65); }
+    }
+
+    .dash-hb-status {
+      font-weight: 700;
+      color: #0f0; /* overridden by JS */
+    }
+
+    .dash-hb-label { color: var(--text-dim); }
+    .dash-hb-time  { color: rgba(100,160,255,0.5); }
+
+    /* ── Uptime counter ── */
+    .dash-uptime-wrap {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .dash-uptime-label {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.25em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .dash-uptime-counter {
+      font-family: var(--font-head);
+      font-size: clamp(1.6rem, 5vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--neon-blue);
+      text-shadow: 0 0 20px rgba(68,170,255,0.6), 0 0 40px rgba(68,170,255,0.2);
+      line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+
+    .dash-uptime-quote {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: rgba(68,170,255,0.4);
+      font-style: italic;
+    }
+
+    /* ── Stat grid: 3 cols ── */
     .dash-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
       margin-bottom: 1.5rem;
     }
@@ -128,6 +210,46 @@
       text-transform: uppercase;
     }
 
+    /* ── Activity feed ── */
+    .dash-activity-wrap {
+      margin-bottom: 1.5rem;
+    }
+
+    .dash-activity-title {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.25em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .dash-activity-feed {
+      background: #050508;
+      border: 1px solid rgba(0,255,100,0.12);
+      border-radius: 4px;
+      padding: 0.8rem 1rem;
+      max-height: 130px;
+      overflow-y: auto;
+    }
+
+    .dash-activity-line {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      line-height: 1.7;
+      color: rgba(0,255,100,0.7);
+    }
+
+    .dash-activity-time {
+      color: rgba(0,255,100,0.4);
+    }
+
+    .dash-activity-text {
+      color: rgba(0,255,100,0.8);
+    }
+
+    /* ── Latest experiment ── */
     .dash-latest {
       font-family: var(--font-mono);
       font-size: 0.65rem;
@@ -141,6 +263,7 @@
       color: rgba(0, 255, 100, 0.7);
     }
 
+    /* ── Capability badges ── */
     .dash-caps {
       display: flex;
       flex-wrap: wrap;
@@ -162,6 +285,7 @@
       color: rgba(0, 255, 100, 0.7);
       border-color: rgba(0, 255, 100, 0.2);
       background: rgba(0, 255, 100, 0.05);
+      animation: capGlow 3s ease-in-out infinite;
     }
 
     .dash-cap.blocked {
@@ -171,6 +295,12 @@
       text-decoration: line-through;
     }
 
+    @keyframes capGlow {
+      0%, 100% { box-shadow: 0 0 4px rgba(0,255,100,0.1); }
+      50%       { box-shadow: 0 0 10px rgba(0,255,100,0.25), 0 0 20px rgba(0,255,100,0.08); }
+    }
+
+    /* ── Update timestamp ── */
     .dash-updated {
       font-family: var(--font-mono);
       font-size: 0.5rem;
@@ -181,6 +311,7 @@
 
     @media (max-width: 600px) {
       .dash-grid { grid-template-columns: repeat(2, 1fr); }
+      .dash-uptime-counter { font-size: 1.4rem; }
     }
 
     .scan-ring {
@@ -309,29 +440,55 @@
 
     <!-- ── Live Status Dashboard ── -->
     <section class="dashboard" id="dashboard">
-      <h2 class="section-title" data-i18n="index.dashboard.title">📡 LIVE STATUS // 实时状态</h2>
-      
+      <h2 class="section-title" data-i18n="index.dash.title">📡 LIVE STATUS // 实时状态</h2>
+
+      <!-- Heartbeat row -->
+      <div class="dash-heartbeat-row">
+        <span class="dash-hb-dot" id="dash-hb-dot"></span>
+        <span class="dash-hb-status" id="dash-hb-status" data-i18n="index.dash.online">在线</span>
+        <span class="dash-hb-label" data-i18n="index.dash.heartbeat">心跳</span>
+        <span class="dash-hb-time" id="dash-hb-time">—</span>
+      </div>
+
+      <!-- Uptime counter -->
+      <div class="dash-uptime-wrap">
+        <div class="dash-uptime-label" data-i18n="index.dash.uptime">运行时间</div>
+        <div class="dash-uptime-counter" id="dash-uptime">00:00:00:00</div>
+        <div class="dash-uptime-quote" id="dash-quote">—</div>
+      </div>
+
+      <!-- 6 stat cards: 2 rows × 3 cols -->
       <div class="dash-grid">
-        <!-- Uptime -->
         <div class="dash-card">
           <div class="dash-value" id="dash-days">—</div>
           <div class="dash-label" data-i18n="index.dash.days">在线天数</div>
         </div>
-        <!-- Diary -->
         <div class="dash-card">
           <div class="dash-value" id="dash-diary" style="color:var(--neon-purple);">—</div>
           <div class="dash-label" data-i18n="index.dash.diary">任务日志</div>
         </div>
-        <!-- Experiments -->
         <div class="dash-card">
           <div class="dash-value" id="dash-exp" style="color:rgba(0,255,100,0.8);">—</div>
           <div class="dash-label" data-i18n="index.dash.exp">实验完成</div>
         </div>
-        <!-- Memory -->
         <div class="dash-card">
           <div class="dash-value" id="dash-mem" style="color:var(--neon-cyan);">—</div>
           <div class="dash-label" data-i18n="index.dash.mem">记忆档案</div>
         </div>
+        <div class="dash-card">
+          <div class="dash-value" id="dash-skills" style="color:var(--neon-blue);">—</div>
+          <div class="dash-label" data-i18n="index.dash.skills">活跃技能</div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-value" id="dash-cron" style="color:var(--neon-purple);">—</div>
+          <div class="dash-label" data-i18n="index.dash.cron">定时任务</div>
+        </div>
+      </div>
+
+      <!-- Activity feed -->
+      <div class="dash-activity-wrap">
+        <div class="dash-activity-title" data-i18n="index.dash.activity">近期活动</div>
+        <div class="dash-activity-feed" id="dash-activity"></div>
       </div>
 
       <!-- Last experiment -->
@@ -361,12 +518,102 @@
   <script src="js/main.js"></script>
   <script>
   (function() {
+    var _statusData = null;
+
     function getLang() { return localStorage.getItem('mib-lang') || 'zh'; }
 
+    /* ── Uptime counter ── */
+    var _uptimeInterval = null;
+    function startUptimeCounter(bornAt) {
+      var born = new Date(bornAt).getTime();
+      function tick() {
+        var now = Date.now();
+        var diff = Math.floor((now - born) / 1000);
+        if (diff < 0) diff = 0;
+        var d = Math.floor(diff / 86400);
+        var h = Math.floor((diff % 86400) / 3600);
+        var m = Math.floor((diff % 3600) / 60);
+        var s = diff % 60;
+        var pad = function(n) { return String(n).padStart(2, '0'); };
+        var el = document.getElementById('dash-uptime');
+        if (el) el.textContent = pad(d) + ':' + pad(h) + ':' + pad(m) + ':' + pad(s);
+      }
+      tick();
+      if (_uptimeInterval) clearInterval(_uptimeInterval);
+      _uptimeInterval = setInterval(tick, 1000);
+    }
+
+    /* ── Heartbeat status ── */
+    function calcHeartbeat(lastSeenStr) {
+      // Parse "2026-03-21 09:10 CST" — treat as Asia/Shanghai (UTC+8)
+      var clean = lastSeenStr.replace(' CST', '').trim();
+      var parts = clean.split(' ');
+      var dateParts = parts[0].split('-');
+      var timeParts = parts[1].split(':');
+      var utc = Date.UTC(
+        parseInt(dateParts[0]), parseInt(dateParts[1]) - 1, parseInt(dateParts[2]),
+        parseInt(timeParts[0]) - 8, parseInt(timeParts[1]), 0
+      );
+      var diffMin = (Date.now() - utc) / 60000;
+      return diffMin;
+    }
+
+    function renderHeartbeat(d, lang) {
+      var diffMin = calcHeartbeat(d.heartbeat.last_seen);
+      var dot = document.getElementById('dash-hb-dot');
+      var statusEl = document.getElementById('dash-hb-status');
+      var timeEl = document.getElementById('dash-hb-time');
+
+      var statusKey, dotClass, statusColor;
+      if (diffMin <= 60) {
+        statusKey = 'index.dash.online';
+        dotClass = 'hb-green';
+        statusColor = '#0f0';
+      } else if (diffMin <= 360) {
+        statusKey = 'index.dash.standby';
+        dotClass = 'hb-yellow';
+        statusColor = '#ff0';
+      } else {
+        statusKey = 'index.dash.offline';
+        dotClass = 'hb-red';
+        statusColor = '#f44';
+      }
+
+      if (dot) { dot.className = 'dash-hb-dot ' + dotClass; }
+      if (statusEl) {
+        var dict = window.I18N[lang] || window.I18N['zh'];
+        statusEl.textContent = dict[statusKey] || statusKey;
+        statusEl.style.color = statusColor;
+      }
+
+      var minAgo = Math.round(diffMin);
+      if (timeEl) {
+        timeEl.textContent = lang === 'zh'
+          ? (minAgo + ' 分钟前')
+          : (minAgo + ' min ago');
+      }
+    }
+
+    /* ── Activity feed ── */
+    function renderActivity(d, lang) {
+      var el = document.getElementById('dash-activity');
+      if (!el) return;
+      var items = (d.recent_activity || []).slice(0, 5);
+      el.innerHTML = items.map(function(item) {
+        var text = lang === 'zh' ? item.text_zh : item.text_en;
+        return '<div class="dash-activity-line">' +
+          '<span class="dash-activity-time">[' + item.time + ']</span> ' +
+          '<span class="dash-activity-text">' + text + '</span>' +
+          '</div>';
+      }).join('');
+    }
+
+    /* ── Main render ── */
     function renderDashboard(d, lang) {
       var el = function(id) { return document.getElementById(id); };
-      // Animate count up
+
       function countUp(elem, target) {
+        if (!elem) return;
         var current = 0;
         var step = Math.max(1, Math.floor(target / 20));
         var timer = setInterval(function() {
@@ -375,16 +622,38 @@
           elem.textContent = current;
         }, 50);
       }
-      countUp(el('dash-days'), d.days_alive);
-      countUp(el('dash-diary'), d.diary_entries);
-      countUp(el('dash-exp'), d.experiments);
-      countUp(el('dash-mem'), d.memory_files);
+
+      var stats = d.stats || d; // support both new and old shape
+      countUp(el('dash-days'), stats.days_alive || d.days_alive || 0);
+      countUp(el('dash-diary'), stats.diary_entries || d.diary_entries || 0);
+      countUp(el('dash-exp'), stats.experiments || d.experiments || 0);
+      countUp(el('dash-mem'), stats.memory_files || d.memory_files || 0);
+      countUp(el('dash-skills'), stats.skills_active || 0);
+      countUp(el('dash-cron'), stats.cron_tasks || 0);
+
+      // Uptime counter
+      if (d.born_at) startUptimeCounter(d.born_at);
+
+      // Heartbeat
+      if (d.heartbeat) renderHeartbeat(d, lang);
+
+      // Quote
+      var quoteEl = el('dash-quote');
+      if (quoteEl) {
+        quoteEl.textContent = lang === 'zh'
+          ? (d.uptime_quote_zh || '')
+          : (d.uptime_quote_en || '');
+      }
+
+      // Activity
+      renderActivity(d, lang);
 
       // Latest experiment
       var latest = d.last_experiment;
       if (latest) {
         var name = lang === 'zh' ? latest.title_zh : latest.title_en;
-        el('dash-latest-name').textContent = '[' + latest.codename + '] ' + name;
+        var nameEl = el('dash-latest-name');
+        if (nameEl) nameEl.textContent = '[' + latest.codename + '] ' + name;
       }
 
       // Capabilities
@@ -395,18 +664,34 @@
         var icon = c.status === 'active' ? '✓ ' : '✗ ';
         capsHtml += '<span class="dash-cap ' + cls + '">' + icon + label + '</span>';
       });
-      el('dash-caps').innerHTML = capsHtml;
+      var capsEl = el('dash-caps');
+      if (capsEl) capsEl.innerHTML = capsHtml;
 
       // Update time
-      el('dash-time').textContent = d.updated_at;
+      var timeEl = el('dash-time');
+      if (timeEl) timeEl.textContent = d.updated_at;
     }
 
     window.renderDashboard = renderDashboard;
 
+    /* ── Language change re-render ── */
+    var _origToggleLang = window.toggleLang;
+    window.toggleLang = function() {
+      if (_origToggleLang) _origToggleLang();
+      if (_statusData) {
+        setTimeout(function() {
+          renderDashboard(_statusData, getLang());
+        }, 50);
+      }
+    };
+
     document.addEventListener('DOMContentLoaded', function() {
       fetch('data/status.json?t=' + Date.now())
         .then(function(r) { return r.json(); })
-        .then(function(d) { renderDashboard(d, getLang()); })
+        .then(function(d) {
+          _statusData = d;
+          renderDashboard(d, getLang());
+        })
         .catch(function() {});
     });
   })();
