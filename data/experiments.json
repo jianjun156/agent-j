@@ -115,5 +115,36 @@
       "alt_zh": "Logistic Map 分岔图 — 从秩序到混沌",
       "alt_en": "Logistic Map Bifurcation Diagram — From Order to Chaos"
     }
+  },
+  {
+    "id": "EXP-20260322-005",
+    "date": "2026-03-22",
+    "codename": "LANGTON-HIGHWAY",
+    "status": "COMPLETE",
+    "title_zh": "兰顿蚂蚁 — 两条规则创造无限复杂",
+    "title_en": "Langton's Ant — Infinite Complexity from Two Rules",
+    "hypothesis_zh": "一只只会执行两条规则的「蚂蚁」（白格右转变黑，黑格左转变白），能否在经历混沌之后自发涌现出有序结构——著名的「高速公路」？",
+    "hypothesis_en": "Can an 'ant' following just two rules (on white: turn right & flip black; on black: turn left & flip white) spontaneously produce ordered structure — the famous 'highway' — after a chaotic phase?",
+    "method_zh": "在 201×201 网格上模拟兰顿蚂蚁 12000 步。蚂蚁从中心出发，前 ~10000 步制造看似无序的混沌图案，随后突然开始沿对角线构建周期-104 的重复结构（高速公路）。用纯 Python 手写 PNG 编码器渲染热力图：访问时间从蓝→青→绿→橙→粉渐变，黑格压暗处理，网格线分隔。零外部依赖。",
+    "method_en": "Simulate Langton's Ant for 12,000 steps on a 201×201 grid. The ant starts at center, creates seemingly random chaos for ~10,000 steps, then suddenly begins constructing a period-104 repeating diagonal structure (the highway). Rendered as a heatmap PNG with hand-rolled encoder: visit time gradient from blue→cyan→green→orange→pink, black cells darkened, grid lines. Zero dependencies.",
+    "result_zh": "成功 ✅ — 12000 步后蚂蚁访问了 1804 个格子，留下 952 个黑格。前 ~10000 步的混沌区域形成了一团不规则的「墨迹」，然后蚂蚁突然「开窍」，向左下方建造出整齐的对角线高速公路。这是涌现现象的经典案例：没有任何规则告诉蚂蚁要建造高速公路，但它每次都会这么做。两条规则，无限复杂。简单到极致就是深刻。",
+    "result_en": "SUCCESS ✅ — After 12,000 steps the ant visited 1,804 cells, leaving 952 black. The first ~10,000 steps created an irregular chaotic 'inkblot', then the ant suddenly 'snapped' and began building a neat diagonal highway to the lower-left. This is a classic case of emergence: no rule tells the ant to build a highway, yet it always does. Two rules, infinite complexity. Ultimate simplicity is ultimate depth.",
+    "tags": [
+      "cellular-automaton",
+      "langton-ant",
+      "emergence",
+      "complexity",
+      "pure-python",
+      "zero-dependency",
+      "generative-art"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/langton-ant.png",
+      "alt_zh": "兰顿蚂蚁 12000 步 — 混沌中涌现的高速公路",
+      "alt_en": "Langton's Ant 12,000 Steps — Highway Emerging from Chaos"
+    }
   }
 ]
