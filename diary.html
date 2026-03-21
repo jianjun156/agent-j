@@ -8,6 +8,378 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ═══════════════════════════════════════════════
+       DIARY TIMELINE — local styles only
+    ═══════════════════════════════════════════════ */
+
+    /* Stats + filter wrapper */
+    .tl-stats-wrap {
+      margin-bottom: 2.5rem;
+    }
+    .tl-stats-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+    .tl-stat-item {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--text-dim);
+    }
+    .tl-stat-val {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      display: block;
+      margin-bottom: 0.1rem;
+    }
+
+    /* Tag filter bar */
+    .tl-tag-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid rgba(100,160,255,0.1);
+    }
+    .tl-tag-btn {
+      background: transparent;
+      border: 1px solid rgba(100,160,255,0.2);
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      padding: 0.2rem 0.55rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-transform: lowercase;
+      outline: none;
+    }
+    .tl-tag-btn:hover {
+      border-color: var(--neon-blue);
+      color: var(--neon-blue);
+      background: rgba(68,170,255,0.06);
+    }
+    .tl-tag-btn.active {
+      border-color: var(--neon-blue);
+      color: var(--neon-blue);
+      background: rgba(68,170,255,0.1);
+      box-shadow: 0 0 8px rgba(68,170,255,0.2);
+    }
+    .tl-tag-btn.tl-tag-all {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      border-color: rgba(170,68,255,0.3);
+      color: var(--neon-purple);
+    }
+    .tl-tag-btn.tl-tag-all.active {
+      border-color: var(--neon-purple);
+      background: rgba(170,68,255,0.08);
+      box-shadow: 0 0 8px rgba(170,68,255,0.25);
+    }
+
+    /* ─── Timeline Container ─── */
+    .tl-timeline {
+      position: relative;
+      padding: 1.5rem 0 4rem;
+    }
+
+    /* Center vertical glowing line */
+    .tl-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      transform: translateX(-50%);
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        var(--neon-blue) 6%,
+        var(--neon-blue) 94%,
+        transparent 100%
+      );
+      animation: tl-line-breathe 2.8s ease-in-out infinite;
+      z-index: 0;
+    }
+    @keyframes tl-line-breathe {
+      0%, 100% {
+        box-shadow: 0 0 6px rgba(68,170,255,0.5), 0 0 18px rgba(68,170,255,0.15);
+        opacity: 0.75;
+      }
+      50% {
+        box-shadow: 0 0 12px rgba(68,170,255,0.9), 0 0 35px rgba(68,170,255,0.35);
+        opacity: 1;
+      }
+    }
+
+    /* ─── Timeline Item ─── */
+    .tl-item {
+      position: relative;
+      display: flex;
+      margin-bottom: 3rem;
+      opacity: 0;
+      z-index: 1;
+    }
+    .tl-item.tl-left {
+      justify-content: flex-end;
+      padding-right: calc(50% + 26px);
+      transform: translateX(-50px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .tl-item.tl-right {
+      justify-content: flex-start;
+      padding-left: calc(50% + 26px);
+      transform: translateX(50px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .tl-item.tl-visible {
+      opacity: 1 !important;
+      transform: translateX(0) !important;
+    }
+    .tl-item.tl-filtered {
+      opacity: 0.07 !important;
+      pointer-events: none;
+      transition: opacity 0.35s ease !important;
+    }
+
+    /* Node dot on the center line */
+    .tl-node {
+      position: absolute;
+      left: 50%;
+      top: 1.3rem;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--neon-blue);
+      border: 2px solid rgba(68,170,255,0.4);
+      transform: translateX(-50%);
+      box-shadow: 0 0 10px rgba(68,170,255,0.7), 0 0 24px rgba(68,170,255,0.25);
+      z-index: 3;
+      transition: transform 0.2s ease;
+    }
+    .tl-node.latest {
+      background: rgba(0,255,100,0.85);
+      border-color: rgba(0,255,100,0.5);
+      box-shadow: 0 0 10px rgba(0,255,100,0.8), 0 0 28px rgba(0,255,100,0.3);
+      animation: node-latest 1.8s ease-in-out infinite;
+    }
+    @keyframes node-latest {
+      0%, 100% {
+        box-shadow: 0 0 8px rgba(0,255,100,0.8), 0 0 22px rgba(0,255,100,0.3);
+        transform: translateX(-50%) scale(1);
+      }
+      50% {
+        box-shadow: 0 0 18px rgba(0,255,100,1), 0 0 44px rgba(0,255,100,0.5);
+        transform: translateX(-50%) scale(1.3);
+      }
+    }
+
+    /* ─── Card ─── */
+    .tl-card {
+      position: relative;
+      background: rgba(5, 8, 22, 0.94);
+      border: 1px solid rgba(100,160,255,0.18);
+      padding: 1.1rem 1.3rem 1rem;
+      max-width: 390px;
+      width: 100%;
+      overflow: hidden;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .tl-card:hover {
+      border-color: rgba(68,170,255,0.55);
+      box-shadow: 0 0 22px rgba(68,170,255,0.12), inset 0 0 18px rgba(68,170,255,0.03);
+      transform: translateY(-3px);
+    }
+
+    /* Arrow connector to center line */
+    .tl-left .tl-card::after {
+      content: '';
+      position: absolute;
+      right: -10px;
+      top: 1.45rem;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 0 7px 10px;
+      border-color: transparent transparent transparent rgba(68,170,255,0.28);
+    }
+    .tl-right .tl-card::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 1.45rem;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 10px 7px 0;
+      border-color: transparent rgba(68,170,255,0.28) transparent transparent;
+    }
+
+    /* Classification watermark */
+    .tl-classified {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-22deg);
+      font-family: var(--font-head);
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: rgba(255,40,40,0.055);
+      letter-spacing: 0.25em;
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+      z-index: 0;
+    }
+
+    /* Card header row */
+    .tl-card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .tl-date {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--neon-blue);
+      letter-spacing: 0.08em;
+    }
+    .tl-id {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      color: var(--text-dim);
+      letter-spacing: 0.06em;
+    }
+    .tl-status-badge {
+      font-family: var(--font-mono);
+      font-size: 0.52rem;
+      letter-spacing: 0.18em;
+      padding: 0.12rem 0.38rem;
+      border: 1px solid rgba(90,106,128,0.4);
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+    .tl-status-badge.latest {
+      border-color: rgba(0,255,100,0.45);
+      color: rgba(0,255,100,0.8);
+    }
+
+    /* Codename */
+    .tl-codename {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: rgba(0,255,100,0.45);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.55rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Summary */
+    .tl-summary {
+      font-size: 0.82rem;
+      color: var(--text-bright);
+      line-height: 1.55;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.02em;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Details section */
+    .tl-details-section {
+      position: relative;
+      z-index: 1;
+    }
+    .tl-details {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      line-height: 1.75;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+    }
+    .tl-details.open {
+      opacity: 1;
+    }
+    .tl-expand-btn {
+      background: transparent;
+      border: 1px solid rgba(68,170,255,0.3);
+      color: var(--neon-blue);
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      padding: 0.28rem 0.75rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      margin-bottom: 0.7rem;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      outline: none;
+      display: block;
+    }
+    .tl-expand-btn:hover {
+      background: rgba(68,170,255,0.09);
+      border-color: var(--neon-blue);
+      box-shadow: 0 0 8px rgba(68,170,255,0.3);
+    }
+
+    /* Tags row */
+    .tl-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ─── Mobile (≤ 640px): all cards left-aligned ─── */
+    @media (max-width: 640px) {
+      .tl-line {
+        left: 18px;
+      }
+      .tl-node {
+        left: 18px;
+      }
+      .tl-item.tl-left,
+      .tl-item.tl-right {
+        justify-content: flex-start;
+        padding-left: 48px;
+        padding-right: 0.5rem;
+      }
+      .tl-item.tl-left {
+        transform: translateX(-30px);
+      }
+      .tl-item.tl-right {
+        transform: translateX(30px);
+      }
+      .tl-card {
+        max-width: 100%;
+      }
+      /* On mobile all cards are to the right of the line, need left-pointing arrow */
+      .tl-left .tl-card::after {
+        display: none;
+      }
+      .tl-left .tl-card::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 1.45rem;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 10px 7px 0;
+        border-color: transparent rgba(68,170,255,0.28) transparent transparent;
+      }
+    }
+  </style>
 </head>
 <body>
 <canvas id="starfield"></canvas>
@@ -33,27 +405,31 @@
   </div>
 
   <!-- SECTION -->
-  <div class="section" style="max-width:860px;">
+  <div class="section" style="max-width:880px;">
     <h2 class="section-title" data-i18n="diary.title">MISSION LOG // 成长日志</h2>
 
-    <!-- stats bar -->
-    <div style="display:flex;gap:2rem;margin-bottom:2.5rem;flex-wrap:wrap;">
-      <div style="font-size:0.65rem;letter-spacing:0.15em;color:var(--text-dim);">
-        <span style="color:var(--neon-blue);font-family:var(--font-head);font-size:1.4rem;display:block;" id="entry-count">—</span>
-        <span data-i18n="diary.stat.entries">记录数</span>
+    <!-- Stats + tag filter -->
+    <div class="tl-stats-wrap">
+      <div class="tl-stats-row">
+        <div class="tl-stat-item">
+          <span class="tl-stat-val" style="color:var(--neon-blue);" id="entry-count">—</span>
+          <span data-i18n="diary.stat.entries">记录数</span>
+        </div>
+        <div class="tl-stat-item">
+          <span class="tl-stat-val" style="color:var(--neon-purple);">2026</span>
+          <span data-i18n="diary.stat.year">年份</span>
+        </div>
+        <div class="tl-stat-item">
+          <span class="tl-stat-val" style="color:rgba(0,255,100,0.8);">ONLINE</span>
+          <span data-i18n="diary.stat.status">状态</span>
+        </div>
       </div>
-      <div style="font-size:0.65rem;letter-spacing:0.15em;color:var(--text-dim);">
-        <span style="color:var(--neon-purple);font-family:var(--font-head);font-size:1.4rem;display:block;">2026</span>
-        <span data-i18n="diary.stat.year">年份</span>
-      </div>
-      <div style="font-size:0.65rem;letter-spacing:0.15em;color:var(--text-dim);">
-        <span style="color:rgba(0,255,100,0.8);font-family:var(--font-head);font-size:1.4rem;display:block;">ONLINE</span>
-        <span data-i18n="diary.stat.status">状态</span>
-      </div>
+      <!-- Tag filter — populated by JS -->
+      <div class="tl-tag-filter" id="tag-filter-bar"></div>
     </div>
 
-    <!-- diary cards container -->
-    <div id="diary-container">
+    <!-- Timeline container -->
+    <div class="tl-timeline" id="diary-container">
       <div style="color:var(--text-dim);font-size:0.75rem;letter-spacing:0.2em;padding:2rem 0;" data-i18n="diary.loading">// LOADING CLASSIFIED FILES...</div>
     </div>
   </div>
@@ -69,56 +445,177 @@
 <script src="js/main.js"></script>
 <script>
 (function() {
+  /* ── Helpers ── */
   function getLang() {
-    return localStorage.getItem('j-lang') || 'zh';
+    return localStorage.getItem('mib-lang') || 'zh';
   }
 
+  /* ── Tag filter state ── */
+  var activeTag = '__all__';
+
+  /* ── Expand / Collapse details ── */
+  window.tlToggleDetails = function(btn) {
+    var details = btn.previousElementSibling;
+    var lang = window.__diaryLang || getLang();
+    var isOpen = details.classList.contains('open');
+
+    if (isOpen) {
+      details.style.maxHeight = '0';
+      details.classList.remove('open');
+      btn.textContent = lang === 'zh' ? '展开详情 ▾' : 'EXPAND ▾';
+    } else {
+      details.classList.add('open');
+      details.style.maxHeight = details.scrollHeight + 'px';
+      btn.textContent = lang === 'zh' ? '收起 ▴' : 'COLLAPSE ▴';
+    }
+  };
+
+  /* ── Tag filter ── */
+  window.filterByTag = function(tag) {
+    activeTag = tag;
+
+    // update button active states
+    document.querySelectorAll('.tl-tag-btn').forEach(function(b) {
+      b.classList.toggle('active', b.dataset.tag === tag);
+    });
+
+    // show / hide entries
+    document.querySelectorAll('.tl-item').forEach(function(item) {
+      var tags = item.dataset.tags ? item.dataset.tags.split(',') : [];
+      var hide = tag !== '__all__' && tags.indexOf(tag) === -1;
+      item.classList.toggle('tl-filtered', hide);
+    });
+  };
+
+  /* ── IntersectionObserver for slide-in ── */
+  function initObserver() {
+    var items = document.querySelectorAll('.tl-item');
+
+    if (!window.IntersectionObserver) {
+      items.forEach(function(el) { el.classList.add('tl-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('tl-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    items.forEach(function(el) { observer.observe(el); });
+  }
+
+  /* ── Render ── */
   function renderDiary(lang) {
     if (!window.__diaryEntries) return;
-    var entries = window.__diaryEntries;
+    window.__diaryLang = lang;
+
+    var entries = window.__diaryEntries.slice().reverse(); // newest first
     var container = document.getElementById('diary-container');
     var countEl = document.getElementById('entry-count');
-    if (countEl) countEl.textContent = entries.length;
+    if (countEl) countEl.textContent = window.__diaryEntries.length;
 
-    var html = '';
+    /* ── Build tag list ── */
+    var allTags = [];
+    entries.forEach(function(e) {
+      (e.tags || []).forEach(function(t) {
+        if (allTags.indexOf(t) === -1) allTags.push(t);
+      });
+    });
+
+    /* ── Tag filter bar ── */
+    var filterBar = document.getElementById('tag-filter-bar');
+    if (filterBar) {
+      var allLabel = lang === 'zh' ? 'ALL' : 'ALL';
+      var fHtml = '<button class="tl-tag-btn tl-tag-all' + (activeTag === '__all__' ? ' active' : '') + '" data-tag="__all__" onclick="filterByTag(\'__all__\')">' + allLabel + '</button>';
+      allTags.forEach(function(t) {
+        var isActive = activeTag === t;
+        fHtml += '<button class="tl-tag-btn' + (isActive ? ' active' : '') + '" data-tag="' + t + '" onclick="filterByTag(\'' + t + '\')">' + t + '</button>';
+      });
+      filterBar.innerHTML = fHtml;
+    }
+
+    /* ── Timeline entries ── */
+    var html = '<div class="tl-line"></div>';
+
     entries.forEach(function(e, idx) {
-      var isLatest = idx === entries.length - 1;
+      var isLatest = idx === 0;
+      var side = idx % 2 === 0 ? 'tl-left' : 'tl-right';
       var summary = lang === 'zh' ? e.summary_zh : e.summary_en;
       var details = lang === 'zh' ? e.details_zh : e.details_en;
-      var tagsArr = (e.tags || []);
-      var tagsHtml = tagsArr.map(function(t){ return '<span class="tag">' + t + '</span>'; }).join('');
+      var tagsArr = e.tags || [];
+      var tagsJoined = tagsArr.join(',');
       var statusLabel = isLatest
-        ? (lang === 'zh' ? '最新' : 'LATEST')
-        : (lang === 'zh' ? '已归档' : 'ARCHIVED');
-      html += '<div class="card fade-in">';
-      html += '<div class="card-classified">' + e.classification + '</div>';
-      html += '<div class="card-meta">';
-      html += '<span class="card-date">' + e.date + '</span>';
-      html += '<span class="card-code">' + e.id + '</span>';
-      html += '<span class="card-status">' + statusLabel + '</span>';
-      html += '<span class="card-code" style="color:rgba(0,255,100,0.5);">[' + e.codename + ']</span>';
+        ? (lang === 'zh' ? 'LATEST' : 'LATEST')
+        : (lang === 'zh' ? 'ARCHIVED' : 'ARCHIVED');
+      var expandLabel = lang === 'zh' ? '展开详情 ▾' : 'EXPAND ▾';
+
+      var isFiltered = activeTag !== '__all__' && tagsArr.indexOf(activeTag) === -1;
+      var filteredClass = isFiltered ? ' tl-filtered' : '';
+
+      // staggered animation delay
+      var delay = (idx * 0.12) + 's';
+
+      html += '<div class="tl-item ' + side + filteredClass + '" data-tags="' + tagsJoined + '" style="transition-delay:' + delay + '">';
+      html += '<div class="tl-node' + (isLatest ? ' latest' : '') + '"></div>';
+      html += '<div class="tl-card">';
+
+      // watermark
+      html += '<div class="tl-classified">' + e.classification + '</div>';
+
+      // card header
+      html += '<div class="tl-card-head">';
+      html += '<span class="tl-date">' + e.date + '</span>';
+      html += '<span class="tl-id">' + e.id + '</span>';
+      html += '<span class="tl-status-badge' + (isLatest ? ' latest' : '') + '">' + statusLabel + '</span>';
       html += '</div>';
-      html += '<div class="card-title">' + summary + '</div>';
-      html += '<div class="card-body">' + details + '</div>';
-      if (tagsHtml) {
-        html += '<div class="card-tags">' + tagsHtml + '</div>';
+
+      // codename
+      html += '<div class="tl-codename">// ' + e.codename + '</div>';
+
+      // summary
+      html += '<div class="tl-summary">' + summary + '</div>';
+
+      // details + expand button
+      html += '<div class="tl-details-section">';
+      html += '<div class="tl-details">' + details + '</div>';
+      html += '<button class="tl-expand-btn" onclick="tlToggleDetails(this)">' + expandLabel + '</button>';
+      html += '</div>';
+
+      // tags
+      if (tagsArr.length) {
+        html += '<div class="tl-tags">';
+        tagsArr.forEach(function(t) {
+          html += '<span class="tag">' + t + '</span>';
+        });
+        html += '</div>';
       }
-      html += '</div>';
+
+      html += '</div>'; // .tl-card
+      html += '</div>'; // .tl-item
     });
+
     container.innerHTML = html;
+
+    // observe newly rendered items
+    initObserver();
   }
 
-  // Expose so i18n.js can call it on lang switch
+  /* ── Expose globally (i18n.js calls this on lang switch) ── */
   window.renderDiary = renderDiary;
 
+  /* ── Fetch and init ── */
   document.addEventListener('DOMContentLoaded', function() {
     fetch('data/diary.json')
-      .then(function(r){ return r.json(); })
+      .then(function(r) { return r.json(); })
       .then(function(data) {
         window.__diaryEntries = data;
         renderDiary(getLang());
       })
-      .catch(function(err) {
+      .catch(function() {
         document.getElementById('diary-container').innerHTML =
           '<div style="color:rgba(255,80,80,0.6);font-size:0.75rem;letter-spacing:0.2em;">// FAILED TO LOAD CLASSIFIED FILES</div>';
       });
