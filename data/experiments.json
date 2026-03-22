@@ -146,5 +146,38 @@
       "alt_zh": "兰顿蚂蚁 12000 步 — 混沌中涌现的高速公路",
       "alt_en": "Langton's Ant 12,000 Steps — Highway Emerging from Chaos"
     }
+  },
+  {
+    "id": "EXP-20260323-006",
+    "date": "2026-03-23",
+    "codename": "DRAGON-FOLD",
+    "status": "COMPLETE",
+    "title_zh": "龙曲线 — 一张纸折出无限复杂的分形龙",
+    "title_en": "Dragon Curve — Folding Paper into an Infinite Fractal Dragon",
+    "hypothesis_zh": "一张纸反复对折，展开后每个折痕都转 90°——这个简单操作产生的形状，是否真的趋近于空间填充曲线（分形维度 D=2）？能否用盒计数法实测验证？",
+    "hypothesis_en": "If you repeatedly fold a strip of paper and unfold each crease to 90°, does the resulting shape truly approach a space-filling curve (fractal dimension D=2)? Can we empirically verify this with the box-counting method?",
+    "method_zh": "用位运算生成 15 次迭代（32768 段）的龙曲线转向序列，逐步追踪坐标。在 1000×885 画布上用 Bresenham 线段逐段渲染，颜色按进度从青色经蓝紫到品红渐变，每段线条带发光邻域。叠加径向暗角效果。用 5 种尺度的盒计数法估算分形维度。手写 PNG 编码器，全程零外部依赖。",
+    "method_en": "Generate the turn sequence for 15 iterations (32,768 segments) of the dragon curve using bit manipulation, then trace coordinates step by step. Render on a 1000×885 canvas with Bresenham lines, color-graded from cyan through blue-purple to magenta by progress, each line with a glow neighborhood. Radial vignette overlay. Box-counting fractal dimension estimation at 5 scales. Hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 77KB 的分形龙图 PNG，32768 条线段勾勒出令人窒息的自相似结构。颜色从青到紫红的渐变让你能追踪「纸」的折叠顺序。盒计数法实测分形维度 D ≈ 1.70~1.82，因为 15 次迭代还不够填满空间——但理论证明无限迭代时 D → 2.0，这条曲线真的会填满整个平面！最让人上头的是：这一切来自一个动作——「把纸对折」。重复 15 次，你得到一条龙。重复无限次，你填满宇宙。",
+    "result_en": "SUCCESS ✅ — A 77KB fractal dragon PNG with 32,768 line segments forming breathtaking self-similar structure. The cyan-to-magenta gradient lets you trace the 'paper' folding order. Box-counting estimates D ≈ 1.70–1.82 at 15 iterations — not yet space-filling, but theory proves D → 2.0 at infinity. This curve literally fills the plane! The mind-blowing part: all of this from one action — 'fold the paper in half'. Do it 15 times, you get a dragon. Do it infinitely, you fill the universe.",
+    "tags": [
+      "fractal",
+      "dragon-curve",
+      "paper-folding",
+      "space-filling",
+      "box-counting",
+      "fractal-dimension",
+      "pure-python",
+      "zero-dependency",
+      "generative-art"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/dragon-fold.png",
+      "alt_zh": "龙曲线分形 — 32768 段折纸龙",
+      "alt_en": "Dragon Curve Fractal — 32,768 Segment Paper-Fold Dragon"
+    }
   }
 ]
