@@ -312,6 +312,20 @@
     @media (max-width: 600px) {
       .dash-grid { grid-template-columns: repeat(2, 1fr); }
       .dash-uptime-counter { font-size: 1.4rem; }
+      .dashboard { padding: 2rem 1rem 1.5rem; }
+      .dash-heartbeat-row { font-size: 0.55rem; gap: 0.4rem; }
+      .dash-activity-line { font-size: 0.6rem; }
+      .dash-caps { gap: 0.4rem; }
+      .dash-cap { font-size: 0.5rem; padding: 0.2rem 0.5rem; }
+      .dash-latest { font-size: 0.6rem; }
+    }
+
+    @media (max-width: 375px) {
+      .dash-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+      .dash-uptime-counter { font-size: 1.1rem; letter-spacing: 0.15em; }
+      .dash-card { padding: 0.8rem 0.6rem; }
+      .dash-value { font-size: 1.2rem; }
+      .dash-label { font-size: 0.45rem; }
     }
 
     .scan-ring {
@@ -687,13 +701,48 @@
     };
 
     document.addEventListener('DOMContentLoaded', function() {
-      fetch('data/status.json?t=' + Date.now())
-        .then(function(r) { return r.json(); })
-        .then(function(d) {
-          _statusData = d;
-          renderDashboard(d, getLang());
-        })
-        .catch(function() {});
+      var ts = Date.now();
+      Promise.all([
+        fetch('data/status.json?t=' + ts).then(function(r) { return r.json(); }),
+        fetch('data/diary.json?t=' + ts).then(function(r) { return r.json(); }).catch(function() { return null; }),
+        fetch('data/experiments.json?t=' + ts).then(function(r) { return r.json(); }).catch(function() { return null; })
+      ]).then(function(results) {
+        var d = results[0];
+        var diaryData = results[1];
+        var expData = results[2];
+
+        // Dynamic: override diary count from diary.json
+        if (Array.isArray(diaryData)) {
+          if (!d.stats) d.stats = {};
+          d.stats.diary_entries = diaryData.length;
+        }
+
+        // Dynamic: override experiment count + last_experiment from experiments.json
+        if (Array.isArray(expData) && expData.length > 0) {
+          if (!d.stats) d.stats = {};
+          var completed = expData.filter(function(e) { return e.status === 'COMPLETE'; });
+          d.stats.experiments = completed.length;
+          // Pick last experiment (last in array)
+          var last = expData[expData.length - 1];
+          d.last_experiment = {
+            id: last.id,
+            codename: last.codename,
+            title_zh: last.title_zh,
+            title_en: last.title_en
+          };
+        }
+
+        // Dynamic: days_alive computed from born_at in real-time
+        if (d.born_at) {
+          var born = new Date(d.born_at).getTime();
+          var daysAlive = Math.floor((Date.now() - born) / 86400000);
+          if (!d.stats) d.stats = {};
+          d.stats.days_alive = Math.max(daysAlive, 1);
+        }
+
+        _statusData = d;
+        renderDashboard(d, getLang());
+      }).catch(function() {});
     });
   })();
   </script>
