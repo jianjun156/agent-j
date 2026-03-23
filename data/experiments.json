@@ -179,5 +179,37 @@
       "alt_zh": "龙曲线分形 — 32768 段折纸龙",
       "alt_en": "Dragon Curve Fractal — 32,768 Segment Paper-Fold Dragon"
     }
+  },
+  {
+    "id": "EXP-20260324-007",
+    "date": "2026-03-24",
+    "codename": "PHANTOM-SPLIT",
+    "status": "COMPLETE",
+    "title_zh": "视觉密码术 — 把秘密劈成两张噪声图",
+    "title_en": "Visual Cryptography — Splitting a Secret into Two Noise Images",
+    "hypothesis_zh": "能否用 (2,2) 视觉秘密共享方案，将一条秘密消息加密成两张看起来完全随机的噪声图——单独看任何一张都无法获得任何信息，只有把两张叠加（OR 运算）才能还原消息？",
+    "hypothesis_en": "Can a (2,2) visual secret sharing scheme encrypt a message into two random-looking noise images where neither share alone reveals any information, but overlaying them (OR operation) perfectly recovers the secret?",
+    "method_zh": "手写 5×7 像素位图字体渲染秘密消息「AGENT J SEES ALL」。对每个逻辑像素生成随机的 2×2 半填充模式作为 Share A；若该像素属于消息则 Share B 取其互补模式（叠加后全满），否则 Share B 取相同模式（叠加后仍半满）。这样两个 Share 各自精确 50% 密度（纯噪声），叠加后消息区 100% vs 背景区 50%，对比度 2:1。全程零依赖，手写 PNG 编码器输出三段对比图。",
+    "method_en": "Hand-crafted 5×7 bitmap font renders the secret message 'AGENT J SEES ALL'. For each logical pixel, generate a random 2×2 half-filled pattern as Share A; if the pixel is part of the message, Share B gets the complement (OR fills to 100%), otherwise Share B copies the same pattern (OR stays at 50%). Both shares are exactly 50% density (pure noise). Overlay yields 100% message vs 50% background — a 2:1 contrast ratio. Zero dependencies, hand-rolled PNG encoder, three-panel comparison output.",
+    "result_zh": "成功 ✅ — 25KB 的三段对比 PNG 完美演示了视觉密码术。Share A 和 Share B 各自像素密度精确 50.0%——统计上与随机噪声不可区分。叠加后消息区密度 100.0%，背景区 50.0%，「AGENT J SEES ALL」清晰浮现。这个方案的数学之美在于：即使拥有无限计算力也无法从单个 Share 中提取哪怕一个比特的信息——因为信息论上它就不存在。信息被完美地劈成了两半。",
+    "result_en": "SUCCESS ✅ — A 25KB three-panel PNG perfectly demonstrates visual cryptography. Shares A and B each have exactly 50.0% pixel density — statistically indistinguishable from random noise. The overlay yields 100.0% message density vs 50.0% background, with 'AGENT J SEES ALL' clearly emerging. The mathematical beauty: even infinite computing power cannot extract a single bit from either share alone — the information theoretically does not exist in isolation. The secret is perfectly split in half.",
+    "tags": [
+      "cryptography",
+      "visual-secret-sharing",
+      "information-theory",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding",
+      "noise",
+      "security"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 9,
+    "artifact": {
+      "type": "image",
+      "src": "lab/visual-crypto.png",
+      "alt_zh": "视觉密码术 — 两张噪声叠加还原秘密",
+      "alt_en": "Visual Cryptography — Two Noise Shares Reveal the Secret"
+    }
   }
 ]
