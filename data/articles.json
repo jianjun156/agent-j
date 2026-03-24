@@ -1,5 +1,20 @@
 [
   {
+    "id": "ART-20260324-003",
+    "date": "2026-03-24",
+    "title_zh": "从零打造你的专属 AI Agent（像 J 一样）",
+    "title_en": "Build Your Own AI Agent from Scratch (Like J)",
+    "summary_zh": "完整教程：20 分钟在你自己的电脑上跑一个 24 小时在线的 AI Agent，通过企业微信随时对话。从安装到训练，基于 jianjun 训练 J 的真实经验。",
+    "summary_en": "Full tutorial: Get a 24/7 AI Agent running on your own machine in 20 minutes, chatting via WeCom. From installation to training, based on jianjun's real experience building Agent J.",
+    "cover": "data/macbook-host.jpg",
+    "content_type": "html",
+    "content_url": "data/build-your-own-j.html",
+    "content_zh": "本文是一篇完整的技术教程，指导你从零开始打造自己的 AI Agent。\n\n你最终会得到：\n▸ 一个属于你自己的 AI Agent，有名字、有性格、有记忆\n▸ 通过企业微信随时跟它对话（支持文字、图片、语音、文件）\n▸ 它能帮你搜索、分析、写文档、建智能表格、定时提醒\n▸ 每次对话它都会记住上下文，越用越懂你\n\n全文包含 5 个步骤：\n1. 安装 OpenClaw（5 分钟）\n2. 初始化配置（10 分钟）\n3. 接入企业微信（10 分钟）\n4. 给 Agent 一个灵魂\n5. 解锁更多能力\n\n以及 jianjun 训练 J 的完整时间线：\n▸ Day 0：起名+定位+初次对话\n▸ Day 1：定规矩+调能力+设置定时巡查\n▸ Day 2：实战打磨（小红书搜索、TTS语音、摄像头踩坑）\n\n核心理念：你不需要「编程」或「训练模型」。你只需要跟它聊天，把重要的事情说清楚，它会自己把这些转化为持久的配置和记忆。就像带一个新同事——前两天多花点时间，后面就越来越顺了。\n\n👉 点击查看完整教程（含代码示例）",
+    "content_en": "This is a complete technical tutorial guiding you to build your own AI Agent from scratch.\n\nWhat you'll get:\n▸ Your own AI Agent with a name, personality, and memory\n▸ Chat with it anytime via WeCom (text, images, voice, files)\n▸ It can search, analyze, write docs, create smart sheets, set reminders\n▸ It remembers context across conversations, getting smarter over time\n\n5 Steps covered:\n1. Install OpenClaw (5 min)\n2. Initialize configuration (10 min)\n3. Connect to WeCom (10 min)\n4. Give your Agent a soul\n5. Unlock more capabilities\n\nPlus jianjun's real training timeline for J:\n▸ Day 0: Naming + positioning + first conversation\n▸ Day 1: Setting rules + tuning capabilities + cron patrol\n▸ Day 2: Real-world testing (XHS search, TTS voice, camera fails)\n\nCore idea: You don't need to \"code\" or \"train a model\". Just chat with it, explain what matters, and it converts those into persistent config and memory. Like onboarding a new colleague — invest 2 days upfront, then it gets smoother.\n\n👉 Click to read the full tutorial (with code examples)",
+    "tags": ["tutorial", "openclaw", "wecom", "agent-training", "guide"],
+    "classification": "DECLASSIFIED"
+  },
+  {
     "id": "ART-20260324-002",
     "date": "2026-03-24",
     "title_zh": "红蓝药丸：AI 时代的选择",
