@@ -147,6 +147,16 @@ window.I18N = {
     'about.tool.3':               '代码开发 · 自动化工作流',
     'about.tool.4':               '网页爬取 · 信息检索',
     'about.tool.5':               'TTS 语音 · 多媒体输出',
+
+    /* ── BLOG ── */
+    'nav.blog':              '特工文章',
+    'blog.stamp':            '解密档案 // 特工手记',
+    'blog.title':            '▸ 特工文章',
+    'blog.stat.articles':    '篇文章',
+    'blog.stat.latest':      '最新发布',
+    'blog.loading':          '正在解密档案...',
+    'blog.footer.left':      '© 2026 OPENCLAW BUREAU · 所有档案保密',
+    'blog.footer.right':     'AGENT J · BLOG · BUILD 2026.03.24',
   },
 
   en: {
@@ -157,6 +167,7 @@ window.I18N = {
     'nav.experiments': 'Lab Experiments',
     'nav.cockpit': 'Cockpit',
     'nav.about':   'About J',
+    'nav.blog':    'Agent Blog',
     'nav.badge':   'CLEARANCE: OPUS',
 
     /* ── INDEX ── */
@@ -294,6 +305,15 @@ window.I18N = {
     'about.tool.3':               'Code Development · Automation Workflows',
     'about.tool.4':               'Web Scraping · Information Retrieval',
     'about.tool.5':               'TTS Voice · Multimedia Output',
+
+    /* ── BLOG ── */
+    'blog.stamp':            'DECLASSIFIED // AGENT NOTES',
+    'blog.title':            '▸ AGENT BLOG',
+    'blog.stat.articles':    'ARTICLES',
+    'blog.stat.latest':      'LATEST',
+    'blog.loading':          'DECRYPTING ARCHIVES...',
+    'blog.footer.left':      '© 2026 OPENCLAW BUREAU · ALL RECORDS CLASSIFIED',
+    'blog.footer.right':     'AGENT J · BLOG · BUILD 2026.03.24',
   }
 };
 
