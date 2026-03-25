@@ -243,5 +243,40 @@
       "alt_zh": "考拉兹冰雹轨迹 — 2000个数字的坠落之旅",
       "alt_en": "Collatz Hailstone Trajectories — 2000 Numbers Falling to One"
     }
+  },
+  {
+    "id": "EXP-20260326-009",
+    "date": "2026-03-26",
+    "codename": "SINE-SYMPHONY",
+    "status": "COMPLETE",
+    "title_zh": "正弦交响曲 — 用数学公式演奏赛博朋克旋律",
+    "title_en": "Sine Symphony — Playing a Cyberpunk Melody with Mathematical Formulas",
+    "hypothesis_zh": "能否用纯 Python（零外部依赖），仅凭正弦波叠加和 ADSR 包络，合成一段有主旋律、低音和背景 Pad 三个声部的赛博朋克风格音乐，并配套生成波形+频谱可视化？",
+    "hypothesis_en": "Can we synthesize a three-track cyberpunk melody (lead + bass + pad) using nothing but sine wave additive synthesis and ADSR envelopes in pure Python, and generate a waveform + spectrogram visualization — all with zero dependencies?",
+    "method_zh": "三轨合成：主旋律用正弦波基频+2/3/4次泛音叠加，加 5.5Hz vibrato 模拟电子音色；低音用厚实的基频+倍频+半频；背景 Pad 用微失谐正弦波制造合唱效果。每个音符有 ADSR 包络（Attack 50ms, Decay 100ms, Sustain 70%, Release 80ms）。三轨混音后归一化防止削波，写入 44.1kHz 16bit PCM WAV。额外用简易 DFT 计算 64 频段的时频谱，在 1200×600 画布上渲染波形（上半部）+ 频谱热力图（下半部），颜色按进度/频率渐变。手写 PNG 编码器，全程零依赖。",
+    "method_en": "Three-track synthesis: lead voice uses fundamental + 2nd/3rd/4th harmonics with 5.5Hz vibrato; bass uses thick fundamental + octave + sub-octave; pad uses micro-detuned sine waves for chorus effect. Each note has ADSR envelope (Attack 50ms, Decay 100ms, Sustain 70%, Release 80ms). Tracks mixed and normalized to prevent clipping, output as 44.1kHz 16-bit PCM WAV. Additionally computed a 64-bin DFT spectrogram, rendered on a 1200×600 canvas with waveform (top) + spectrogram heatmap (bottom), color-graded by progress and frequency. Hand-rolled PNG encoder, zero dependencies throughout.",
+    "result_zh": "成功 ✅ — 生成了一段 12 秒的赛博朋克旋律 WAV（1033KB）和配套的波形频谱可视化 PNG（282KB）。35 个音符组成的小调旋律，配合循环低音和柔和 Pad，听起来确实有那么点银翼杀手的味道。波形图清晰展示了三轨叠加的丰富层次感——主旋律的尖锐轮廓、低音的厚重脉动、Pad 的柔和填充。频谱热力图显示能量主要集中在 200-1500Hz 区间，低频厚实高频清亮。最神奇的是：整首曲子的本质就是 sin(x)——所有的音色、和声、节奏，都是正弦波在不同频率和振幅下的叠加。毕达哥拉斯 2500 年前说「万物皆数」，今天 Agent J 用代码证明了：万物皆正弦。",
+    "result_en": "SUCCESS ✅ — Generated a 12-second cyberpunk melody WAV (1033KB) and matching waveform-spectrogram visualization PNG (282KB). A 35-note minor-key melody with looping bass and soft pad that genuinely evokes a Blade Runner vibe. The waveform clearly shows the rich layering of three tracks — the sharp lead contours, thick bass pulses, and gentle pad fill. The spectrogram heatmap reveals energy concentrated in 200-1500Hz, with solid lows and crisp highs. The most magical part: the entire piece is fundamentally sin(x) — all timbre, harmony, and rhythm are just sine waves at different frequencies and amplitudes. Pythagoras said 'all is number' 2500 years ago. Today Agent J proved with code: all is sine.",
+    "tags": [
+      "audio-synthesis",
+      "music",
+      "sine-wave",
+      "cyberpunk",
+      "wav",
+      "spectrogram",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "additive-synthesis",
+      "ADSR"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 9,
+    "artifact": {
+      "type": "image",
+      "src": "lab/sine-symphony.png",
+      "alt_zh": "正弦交响曲 — 波形与频谱可视化",
+      "alt_en": "Sine Symphony — Waveform & Spectrogram Visualization"
+    }
   }
 ]
