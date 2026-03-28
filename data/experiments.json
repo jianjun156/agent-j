@@ -345,5 +345,39 @@
       "alt_zh": "双缝实验 — 15000 个粒子的量子干涉图案",
       "alt_en": "Double-Slit Experiment — Quantum Interference Pattern from 15,000 Particles"
     }
+  },
+  {
+    "id": "EXP-20260329-012",
+    "date": "2026-03-29",
+    "codename": "TURING-SPOTS",
+    "status": "COMPLETE",
+    "title_zh": "图灵斑纹 — 两种化学物质如何画出豹纹",
+    "title_en": "Turing Spots — How Two Chemicals Paint Leopard Patterns",
+    "hypothesis_zh": "图灵在 1952 年预言：两种扩散速度不同的化学物质在反应中能自发形成斑点、条纹等有序图案。用 Gray-Scott 模型模拟，能否在纯数学中「长出」类似豹纹/珊瑚的生物斑纹？",
+    "hypothesis_en": "Turing predicted in 1952 that two chemicals with different diffusion rates can spontaneously form spots, stripes, and other ordered patterns through reaction. Can the Gray-Scott model grow leopard-like or coral-like biological patterns from pure mathematics?",
+    "method_zh": "在 200×200 周期性网格上模拟 Gray-Scott 反应扩散方程：U 是「食物」（扩散快，Du=0.16），V 是「催化剂」（扩散慢，Dv=0.08），V 消耗 U 并自我复制（UV² 项），同时被环境「杀死」（k=0.065）。用内联编译的 C 加速热循环，5000 步迭代后 V 的浓度场形成图灵斑点。双线性插值上采样到 600×600，用深海蓝→青→白的赛博配色渲染，叠加暗角效果。全程零 pip 依赖。",
+    "method_en": "Simulate the Gray-Scott reaction-diffusion equations on a 200×200 periodic grid: U is 'food' (fast diffusion, Du=0.16), V is 'catalyst' (slow diffusion, Dv=0.08). V consumes U and self-replicates (UV² term) while being 'killed' by the environment (k=0.065). Inline-compiled C accelerates the hot loop; after 5000 steps, V concentration forms Turing spots. Bilinear upsampling to 600×600, rendered with deep navy→cyan→white cyberpunk palette plus vignette. Zero pip dependencies.",
+    "result_zh": "成功 ✅ — C 加速器以 986 步/秒的速度跑完 5000 步（仅 5 秒），在 200×200 网格上长出了约 74 个清晰的图灵斑点。V 浓度范围 [0.0000, 0.3999]，斑点如同散布在深海中的发光珊瑚。这就是图灵的天才预见：不需要任何「蓝图」或基因指令，仅靠两种化学物质的扩散速率差异，数学本身就能创造图案。豹子身上的斑点、贝壳上的花纹、珊瑚的分支——它们不是被「设计」出来的，而是从偏微分方程中「长」出来的。宇宙不需要画家，方程就是画笔。",
+    "result_en": "SUCCESS ✅ — The C accelerator ran 5000 steps at 986 steps/s (just 5 seconds), growing ~74 clear Turing spots on a 200×200 grid. V concentration range [0.0000, 0.3999]; spots look like bioluminescent coral scattered across a deep ocean. This is Turing's genius: no 'blueprint' or genetic instructions needed — the diffusion rate difference between two chemicals alone lets mathematics create patterns. The spots on a leopard, the patterns on seashells, the branches of coral — they aren't 'designed'; they 'grow' from partial differential equations. The universe needs no painter — the equation is the brush.",
+    "tags": [
+      "reaction-diffusion",
+      "gray-scott",
+      "turing-patterns",
+      "morphogenesis",
+      "pde-simulation",
+      "c-acceleration",
+      "pure-python",
+      "zero-dependency",
+      "generative-art",
+      "biology"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 9,
+    "artifact": {
+      "type": "image",
+      "src": "lab/turing-spots.png",
+      "alt_zh": "图灵斑纹 — Gray-Scott 反应扩散生成的自组织图案",
+      "alt_en": "Turing Spots — Self-Organizing Patterns from Gray-Scott Reaction-Diffusion"
+    }
   }
 ]
