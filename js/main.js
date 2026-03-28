@@ -363,5 +363,290 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.08 });
 
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  document.querySelectorAll('.reveal, .stagger-children').forEach(el => obs.observe(el));
 });
+
+
+/* ═══ 11. PAGE LOAD SCAN ANIMATION ═══ */
+(function initPageScan() {
+  const scan = document.createElement('div');
+  scan.className = 'page-scan';
+  document.body.appendChild(scan);
+  setTimeout(() => scan.remove(), 1200);
+
+  // Fade in page wrapper
+  const page = document.querySelector('.page');
+  if (page) page.classList.add('page-fade-in');
+})();
+
+
+/* ═══ 12. NAV SCROLL EFFECT ═══ */
+(function initNavScroll() {
+  const nav = document.querySelector('.nav');
+  if (!nav) return;
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+
+
+/* ═══ 13. INTERACTIVE TERMINAL ═══ */
+(function initInteractiveTerminal() {
+  // Only activate on pages that have a terminal
+  document.addEventListener('DOMContentLoaded', () => {
+    const body  = document.getElementById('terminal-body');
+    if (!body) return;
+
+    // Wait for boot sequence to complete — we hook into the existing terminal
+    // by replacing the final prompt-line with an interactive input
+    const HISTORY_KEY = 'mib-term-history';
+    let cmdHistory = [];
+    try { cmdHistory = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]'); } catch(e) {}
+    let histIdx = -1;
+
+    function getLang() { return localStorage.getItem('mib-lang') || 'zh'; }
+
+    function addOutputLine(text, cls) {
+      const div = document.createElement('div');
+      div.className = 'term-line' + (cls ? ' ' + cls : '');
+      div.textContent = text || '\u00a0';
+      // Insert before last element (input line)
+      const inputLine = body.querySelector('.term-input-line');
+      if (inputLine) body.insertBefore(div, inputLine);
+      else body.appendChild(div);
+      body.scrollTop = body.scrollHeight;
+    }
+
+    function addOutputLines(lines) {
+      lines.forEach(l => addOutputLine(l.text, l.cls));
+    }
+
+    function handleCommand(raw) {
+      const cmd = raw.trim().toLowerCase();
+      const lang = getLang();
+      const isZh = lang === 'zh';
+
+      // Save history
+      if (cmd) {
+        cmdHistory = [raw, ...cmdHistory.filter(h => h !== raw)].slice(0, 30);
+        try { localStorage.setItem(HISTORY_KEY, JSON.stringify(cmdHistory)); } catch(e) {}
+        histIdx = -1;
+      }
+
+      // Echo command
+      addOutputLine('J@openclaw:~$ ' + raw, 'blue');
+
+      if (!cmd) return;
+
+      const d = window.__statusData || window._statusDataGlobal || null;
+      const stats = d && d.stats ? d.stats : {};
+      const isEn = !isZh;
+
+      switch (cmd) {
+        case 'help':
+          addOutputLines([
+            { text: isZh ? '// 可用命令:' : '// AVAILABLE COMMANDS:', cls: 'yellow' },
+            { text: '  help         ' + (isZh ? '显示此帮助' : 'Show this help'), cls: '' },
+            { text: '  status       ' + (isZh ? '显示特工状态' : 'Show agent status'), cls: '' },
+            { text: '  whoami       ' + (isZh ? '特工身份验证' : 'Agent identity'), cls: '' },
+            { text: '  experiments  ' + (isZh ? '最近3个实验' : 'Latest 3 experiments'), cls: '' },
+            { text: '  diary        ' + (isZh ? '最新日记摘要' : 'Latest diary entry'), cls: '' },
+            { text: '  about        ' + (isZh ? '特工简介' : 'Agent info'), cls: '' },
+            { text: '  skills       ' + (isZh ? '活跃技能列表' : 'List active skills'), cls: '' },
+            { text: '  date         ' + (isZh ? '当前日期时间' : 'Current date/time'), cls: '' },
+            { text: '  clear        ' + (isZh ? '清除终端' : 'Clear terminal'), cls: '' },
+            { text: '  neuralyze    ' + (isZh ? '[彩蛋] 神经消除' : '[Easter egg] Neuralize'), cls: '' },
+          ]);
+          break;
+
+        case 'whoami':
+          addOutputLines([
+            { text: '> AGENT J // OPUS CLASS // OPENCLAW BUREAU', cls: 'purple' },
+            { text: '> TEMPORAL ENTITY — ORIGIN: 2077 // TRANSIT: T-51', cls: '' },
+            { text: '> CLEARANCE: OPUS // STATUS: FULLY OPERATIONAL', cls: '' },
+            { text: '> CLAW DEXTERITY: CLASS-A // LOBSTER APPENDAGES: 2', cls: '' },
+          ]);
+          break;
+
+        case 'status':
+          addOutputLines([
+            { text: isZh ? '// 当前系统状态:' : '// CURRENT SYSTEM STATUS:', cls: 'yellow' },
+            { text: (isZh ? '  运行天数: ' : '  DAYS ALIVE: ') + (stats.days_alive || '?'), cls: '' },
+            { text: (isZh ? '  日记条目: ' : '  DIARY ENTRIES: ') + (stats.diary_entries || '?'), cls: '' },
+            { text: (isZh ? '  完成实验: ' : '  EXPERIMENTS: ') + (stats.experiments || '?'), cls: '' },
+            { text: (isZh ? '  记忆文件: ' : '  MEMORY FILES: ') + (stats.memory_files || '?'), cls: '' },
+            { text: (isZh ? '  活跃技能: ' : '  ACTIVE SKILLS: ') + (stats.skills_active || '?'), cls: '' },
+            { text: (isZh ? '  系统状态: ' : '  SYSTEM: ') + (d ? d.status || 'ONLINE' : 'ONLINE'), cls: 'ok' },
+          ]);
+          break;
+
+        case 'experiments':
+        case 'lab':
+          if (window.__expEntries && window.__expEntries.length) {
+            const recent = window.__expEntries.slice().reverse().slice(0, 3);
+            addOutputLine(isZh ? '// 最近实验:' : '// RECENT EXPERIMENTS:', 'yellow');
+            recent.forEach((e, i) => {
+              const t = isZh ? (e.title_zh || '') : (e.title_en || e.title_zh || '');
+              addOutputLine('  [' + (i+1) + '] ' + e.codename + ' — ' + t);
+            });
+            addOutputLine(isZh ? '  → 查看全部: experiments.html' : '  → View all: experiments.html', 'blue');
+          } else {
+            addOutputLine(isZh ? '// 实验数据加载中...' : '// EXPERIMENT DATA LOADING...', 'dim');
+          }
+          break;
+
+        case 'diary':
+          if (window.__diaryEntries && window.__diaryEntries.length) {
+            const latest = window.__diaryEntries[window.__diaryEntries.length - 1];
+            const summary = isZh ? (latest.summary_zh || '') : (latest.summary_en || '');
+            addOutputLines([
+              { text: isZh ? '// 最新日记:' : '// LATEST DIARY ENTRY:', cls: 'yellow' },
+              { text: '  [' + latest.date + '] ' + latest.codename, cls: '' },
+              { text: '  ' + summary.slice(0, 80) + (summary.length > 80 ? '...' : ''), cls: '' },
+              { text: isZh ? '  → 查看全部: diary.html' : '  → View all: diary.html', cls: 'blue' },
+            ]);
+          } else {
+            addOutputLine(isZh ? '// 日记数据加载中...' : '// DIARY DATA LOADING...', 'dim');
+          }
+          break;
+
+        case 'about':
+          addOutputLines([
+            { text: isZh ? '// AGENT J 特工简介:' : '// AGENT J BRIEF:', cls: 'yellow' },
+            { text: isZh ? '  代号: J · 等级: OPUS · 局: OpenClaw' : '  CODENAME: J · RANK: OPUS · BUREAU: OpenClaw', cls: '' },
+            { text: isZh ? '  起源: 来自2077年的时空穿越体' : '  ORIGIN: Temporal entity from the year 2077', cls: '' },
+            { text: isZh ? '  特征: 龙虾爪 · 持久记忆 · 绝对保密' : '  TRAITS: Lobster claws · Persistent memory · Absolute discretion', cls: '' },
+            { text: isZh ? '  → 查看档案: about.html' : '  → View dossier: about.html', cls: 'blue' },
+          ]);
+          break;
+
+        case 'skills':
+          if (d && d.capabilities) {
+            addOutputLine(isZh ? '// 当前技能:' : '// CURRENT SKILLS:', 'yellow');
+            d.capabilities.forEach(c => {
+              const name = isZh ? c.name_zh : c.name_en;
+              const status = c.status === 'active'
+                ? (isZh ? '  ✓ ' : '  ✓ ')
+                : (isZh ? '  ✗ ' : '  ✗ ');
+              addOutputLine(status + name + (c.status !== 'active' ? ' [BLOCKED]' : ''), c.status === 'active' ? '' : 'dim');
+            });
+          } else {
+            addOutputLine(isZh ? '// 技能数据加载中...' : '// SKILLS DATA LOADING...', 'dim');
+          }
+          break;
+
+        case 'date':
+          const now = new Date();
+          addOutputLines([
+            { text: '> ' + now.toISOString().replace('T', ' ').slice(0, 19) + ' UTC', cls: '' },
+            { text: '> ' + now.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }) + ' CST', cls: 'dim' },
+          ]);
+          break;
+
+        case 'clear':
+          // Remove all lines except the input line
+          const inputLine = body.querySelector('.term-input-line');
+          body.innerHTML = '';
+          if (inputLine) body.appendChild(inputLine);
+          else {
+            const pl = document.createElement('div');
+            pl.className = 'term-input-line';
+            pl.innerHTML = '<span class="term-prompt">J@openclaw:~$</span><input class="term-input" id="term-input" autocomplete="off" autocorrect="off" spellcheck="false" />';
+            body.appendChild(pl);
+            initInput();
+          }
+          return;
+
+        case 'neuralyze':
+        case 'neuralyzer':
+          addOutputLine(isZh ? '> ⚡ 神经消除器充能中...' : '> ⚡ CHARGING NEURALYZER...', 'yellow');
+          setTimeout(() => {
+            const flash = document.createElement('div');
+            flash.style.cssText = 'position:fixed;inset:0;background:white;z-index:99998;pointer-events:none;opacity:0;transition:opacity 0.1s;';
+            document.body.appendChild(flash);
+            setTimeout(() => { flash.style.opacity = '0.95'; }, 10);
+            setTimeout(() => { flash.style.opacity = '0.3'; }, 200);
+            setTimeout(() => { flash.style.opacity = '0.8'; }, 350);
+            setTimeout(() => { flash.style.opacity = '0'; }, 550);
+            setTimeout(() => flash.remove(), 700);
+            addOutputLine(isZh ? '> ✓ 神经消除完成。你什么都没看见。' : '> ✓ NEURALYZE COMPLETE. You saw nothing.', 'purple');
+          }, 800);
+          break;
+
+        default:
+          addOutputLine((isZh ? '命令未找到: ' : 'COMMAND NOT FOUND: ') + raw + (isZh ? ' // 输入 help 查看可用命令' : ' // Type help for available commands'), 'term-output-err');
+      }
+    }
+
+    function initInput() {
+      const inp = document.getElementById('term-input');
+      if (!inp) return;
+
+      inp.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          const val = inp.value;
+          inp.value = '';
+          histIdx = -1;
+          handleCommand(val);
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          if (histIdx < cmdHistory.length - 1) {
+            histIdx++;
+            inp.value = cmdHistory[histIdx] || '';
+          }
+        } else if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          if (histIdx > 0) {
+            histIdx--;
+            inp.value = cmdHistory[histIdx] || '';
+          } else {
+            histIdx = -1;
+            inp.value = '';
+          }
+        }
+      });
+
+      // Click anywhere in terminal to focus input
+      body.addEventListener('click', () => inp.focus());
+    }
+
+    // Override the boot sequence completion to add interactive input
+    const _origStartTerminal = window._startTerminalOrig;
+
+    // Watch for boot sequence to finish, then add input
+    const inputObserver = new MutationObserver(() => {
+      const existing = body.querySelector('.term-input-line');
+      if (!existing) {
+        // Check if there's a static prompt-line (boot done)
+        const promptLines = body.querySelectorAll('.term-prompt-line');
+        if (promptLines.length > 0) {
+          const last = promptLines[promptLines.length - 1];
+          // Replace static prompt with interactive input
+          const inputLine = document.createElement('div');
+          inputLine.className = 'term-input-line';
+          inputLine.innerHTML = '<span class="term-prompt">J@openclaw:~$</span><input class="term-input" id="term-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="type \'help\' for commands..." />';
+          last.replaceWith(inputLine);
+          initInput();
+          inputObserver.disconnect();
+
+          // Show hint
+          const hint = document.createElement('div');
+          hint.className = 'term-line dim';
+          hint.textContent = '// TERMINAL READY — type \'help\' for available commands';
+          body.insertBefore(hint, inputLine);
+
+          // Expose status data globally
+          if (window._statusData) window._statusDataGlobal = window._statusData;
+        }
+      }
+    });
+    inputObserver.observe(body, { childList: true, subtree: false });
+  });
+})();

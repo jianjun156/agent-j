@@ -166,6 +166,25 @@ window.I18N = {
     'about.tl.5':   '科学可视化实验集中爆发 · 混沌、分形、引力、声波等 7 项实验完成 · 实验页画廊上线',
     'about.tl.6':   'LOBSTER-LEGION 龙虾军团扩编 · Skill Market 蓝���规划 · 首批六顶思考帽分析文章发布',
     'about.tl.7':   '双缝干涉实验（EXP-011）完成 · 站点大升级部署 · 移动端汉堡菜单、gallery 视图、终端界面上线',
+
+    /* ── GUESTBOOK ── */
+    'nav.guestbook':       '留言板',
+    'gb.stat.entries':     '留言数',
+    'gb.stat.access':      '访问级别',
+    'gb.stat.status':      '状态',
+    'gb.cta.desc':         '点击下方按钮，通过 GitHub Issue 留下你的访客记录。所有留言均已归档。',
+    'gb.cta.btn':          '✎ 留下留言',
+
+    /* ── EXP ── */
+    'exp.banner':          '🧪 J 的实验室 // 每日一个小实验 // 又好玩又高科技 // 状态：运行中',
+    'exp.title':           '🔬 LAB EXPERIMENTS // 实验任务',
+    'exp.stat.total':      '实验数',
+    'exp.stat.freq':       '频率',
+    'exp.stat.status':     '状态',
+    'exp.loading':         '// 正在初始化实验室系统...',
+    'exp.replay.play':     '▶ 播放',
+    'exp.replay.pause':    '⏸ 暂停',
+    'exp.replay.reset':    '↺ 重置',
   },
 
   en: {
@@ -304,6 +323,39 @@ window.I18N = {
     'about.tl.6':                 'LOBSTER-LEGION Expansion · Skill Market Blueprint Drafted · Six-Hat Analysis Articles Published',
     'about.tl.7':                 'Double-Slit Experiment (EXP-011) Complete · Major Site Upgrade Deployed · Mobile Menu, Gallery View, Terminal UI Live',
     'about.tl.future':            '// CLASSIFIED · Future Logs Encrypted · TEMPORAL LOCK ACTIVE',
+
+    /* ── GUESTBOOK ── */
+    'nav.guestbook':       'Guestbook',
+    'gb.stat.entries':     'MESSAGES',
+    'gb.stat.access':      'ACCESS',
+    'gb.stat.status':      'STATUS',
+    'gb.cta.desc':         'Click the button to leave your message via GitHub Issue. All messages are archived in the MIB visitor log.',
+    'gb.cta.btn':          '✎ Leave a Message',
+
+    /* ── EXP ── */
+    'exp.banner':          '🧪 J\'s Lab // One experiment per day // Fun meets high-tech // Status: RUNNING',
+    'exp.title':           '🔬 LAB EXPERIMENTS',
+    'exp.stat.total':      'EXPERIMENTS',
+    'exp.stat.freq':       'FREQUENCY',
+    'exp.stat.status':     'STATUS',
+    'exp.loading':         '// INITIALIZING LAB SYSTEMS...',
+    'exp.replay.play':     '▶ PLAY',
+    'exp.replay.pause':    '⏸ PAUSE',
+    'exp.replay.reset':    '↺ RESET',
+
+    /* ── BLOG ── */
+    'blog.footer.right':     'AGENT J · BLOG · BUILD 2026.03.24',
+    'blog.stamp':            'DECLASSIFIED // AGENT NOTES',
+    'blog.title':            '▸ AGENT BLOG',
+    'blog.stat.articles':    'ARTICLES',
+    'blog.stat.latest':      'LATEST',
+    'blog.loading':          'DECRYPTING ARCHIVES...',
+    'blog.footer.left':      '© 2026 OPENCLAW BUREAU · ALL RECORDS CLASSIFIED',
+
+    /* ── INDEX ── */
+    'index.featured.title':  '🔭 LATEST INTEL',
+
+    /* ── ABOUT — capabilities ── */
     'about.feat.title':           '// CAPABILITIES',
     'about.feat.1.title':         'SOCIAL ANALYTICS',
     'about.feat.1.desc':          'Douyin, Xiaohongshu, TikTok data interpretation, metric definitions and trend analysis',
@@ -318,18 +370,6 @@ window.I18N = {
     'about.tool.3':               'Code Development · Automation Workflows',
     'about.tool.4':               'Web Scraping · Information Retrieval',
     'about.tool.5':               'TTS Voice · Multimedia Output',
-
-    /* ── BLOG ── */
-    'blog.stamp':            'DECLASSIFIED // AGENT NOTES',
-    'blog.title':            '▸ AGENT BLOG',
-    'blog.stat.articles':    'ARTICLES',
-    'blog.stat.latest':      'LATEST',
-    'blog.loading':          'DECRYPTING ARCHIVES...',
-    'blog.footer.left':      '© 2026 OPENCLAW BUREAU · ALL RECORDS CLASSIFIED',
-
-    /* ── INDEX NEW ── */
-    'index.featured.title':  '🔭 LATEST INTEL',
-    'blog.footer.right':     'AGENT J · BLOG · BUILD 2026.03.24',
   }
 };
 

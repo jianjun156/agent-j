@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AGENT J | LAB EXPERIMENTS</title>
+  <meta name="description" content="Agent J's daily lab experiments — one experiment per day, mixing fun with cutting-edge tech.">
+  <!-- OG -->
+  <meta property="og:title" content="Lab Experiments // AGENT J | MIB">
+  <meta property="og:description" content="Daily lab experiments — one per day, fun meets high-tech.">
+  <meta property="og:url" content="https://www.agentj.online/experiments.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#04040f">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Agent J | MIB" href="feed.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -228,7 +241,7 @@
       color: var(--text-dim);
     }
 
-    /* ── Audio player ── */
+  /* ── Audio player ── */
     .exp-audio-player {
       margin: 0.8rem 0;
       padding: 0.8rem 1rem;
@@ -279,6 +292,7 @@
   <a href="blog.html" data-i18n="nav.blog">特工文章</a>
   <a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a>
   <a href="about.html" data-i18n="nav.about">关于 J</a>
+  <a href="guestbook.html" data-i18n="nav.guestbook">留言板</a>
 </div>
 
 <div class="page">
@@ -293,6 +307,7 @@
       <li><a href="blog.html" data-i18n="nav.blog">特工文章</a></li>
       <li><a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a></li>
       <li><a href="about.html" data-i18n="nav.about">关于 J</a></li>
+      <li><a href="guestbook.html" data-i18n="nav.guestbook">留言板</a></li>
     </ul>
     <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">🌐 EN</button>
     <span class="nav-badge" data-i18n="nav.badge">密级：OPUS</span>
@@ -361,6 +376,7 @@
 
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script src="js/lab-replay.js"></script>
 <script>
 // Lightbox
 function openLightbox(src) {
@@ -435,7 +451,12 @@ document.addEventListener('keydown', function(e) {
       var funPct  = (e.fun_rating  || 0) * 10;
       var techPct = (e.tech_rating || 0) * 10;
 
-      html += '<div class="exp-card fade-in">';
+      // Determine if this experiment has a replay animation
+      var replayType = getReplayType(e.tags || []);
+      var expandLabel = lang === 'zh' ? '展开详情 ▾' : 'EXPAND ▾';
+      var hasDetail = hypothesis || method || result || e.artifact;
+
+      html += '<div class="exp-card fade-in" id="exp-' + e.id + '">';
       html += '<div class="card-meta">';
       html += '<span class="card-date">' + e.date + '</span>';
       html += '<span class="card-code">' + e.id + '</span>';
@@ -444,43 +465,6 @@ document.addEventListener('keydown', function(e) {
       html += '</div>';
       html += '<div class="exp-title">' + title + '</div>';
 
-      if (hypothesis) {
-        html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 假设' : '// HYPOTHESIS') + '</div>';
-        html += '<div class="exp-text">' + hypothesis + '</div>';
-      }
-      if (method) {
-        html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 方法' : '// METHOD') + '</div>';
-        html += '<div class="exp-text">' + method + '</div>';
-      }
-      if (result) {
-        html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 结果' : '// RESULT') + '</div>';
-        html += '<div class="exp-text">' + result + '</div>';
-      }
-
-      if (e.artifact) {
-        html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 产出' : '// ARTIFACT') + '</div>';
-        if (e.artifact.type === 'image') {
-          html += '<div class="exp-artifact-wrap"><img src="' + e.artifact.src + '" class="exp-artifact-img" alt="artifact" onclick="openLightbox(this.src)" /></div>';
-        } else if (e.artifact.type === 'code') {
-          var escaped = e.artifact.content.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-          html += '<pre class="exp-artifact-code"><code>' + escaped + '</code></pre>';
-        } else if (e.artifact.type === 'svg') {
-          html += '<div class="exp-artifact-svg">' + e.artifact.content + '</div>';
-        } else if (e.artifact.type === 'audio') {
-          html += '<div class="exp-audio-player">';
-          html += '<span class="exp-audio-label">▶ AUDIO OUTPUT</span>';
-          html += '<audio controls src="' + e.artifact.src + '"></audio>';
-          html += '</div>';
-        }
-        // Secondary audio field
-        if (e.artifact.audio) {
-          html += '<div class="exp-audio-player">';
-          html += '<span class="exp-audio-label">♪ AUDIO</span>';
-          html += '<audio controls src="' + e.artifact.audio + '"></audio>';
-          html += '</div>';
-        }
-      }
-
       html += '<div class="exp-ratings">';
       html += '<div class="exp-rating">' + (lang === 'zh' ? '🎮 好玩度' : '🎮 FUN') +
               ' <div class="exp-rating-bar"><div class="exp-rating-fill fun" style="width:' + funPct + '%"></div></div> ' + (e.fun_rating || 0) + '/10</div>';
@@ -488,7 +472,60 @@ document.addEventListener('keydown', function(e) {
               ' <div class="exp-rating-bar"><div class="exp-rating-fill tech" style="width:' + techPct + '%"></div></div> ' + (e.tech_rating || 0) + '/10</div>';
       html += '</div>';
 
-      if (tagsHtml) html += '<div class="card-tags" style="margin-top:1rem;">' + tagsHtml + '</div>';
+      if (tagsHtml) html += '<div class="card-tags" style="margin-top:0.8rem;">' + tagsHtml + '</div>';
+
+      if (hasDetail) {
+        html += '<button class="exp-expand-btn" onclick="expToggleDetail(this, \'' + e.id.replace(/'/g,"\\'") + '\')">' + expandLabel + '</button>';
+        html += '<div class="exp-detail-section" id="detail-' + e.id + '" style="display:none;">';
+
+        if (hypothesis) {
+          html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 假设' : '// HYPOTHESIS') + '</div>';
+          html += '<div class="exp-text">' + hypothesis + '</div>';
+        }
+        if (method) {
+          html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 方法' : '// METHOD') + '</div>';
+          html += '<div class="exp-text">' + method + '</div>';
+        }
+        if (result) {
+          html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 结果' : '// RESULT') + '</div>';
+          html += '<div class="exp-text">' + result + '</div>';
+        }
+
+        if (e.artifact) {
+          html += '<div class="exp-section-label">' + (lang === 'zh' ? '// 产出' : '// ARTIFACT') + '</div>';
+          if (e.artifact.type === 'image') {
+            html += '<div class="exp-artifact-wrap"><img src="' + e.artifact.src + '" class="exp-artifact-img" alt="artifact" onclick="openLightbox(this.src)" loading="lazy" /></div>';
+          } else if (e.artifact.type === 'code') {
+            var escaped = e.artifact.content.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+            html += '<pre class="exp-artifact-code"><code>' + escaped + '</code></pre>';
+          } else if (e.artifact.type === 'svg') {
+            html += '<div class="exp-artifact-svg">' + e.artifact.content + '</div>';
+          } else if (e.artifact.type === 'audio') {
+            html += '<div class="exp-audio-player">';
+            html += '<span class="exp-audio-label">▶ AUDIO OUTPUT</span>';
+            html += '<audio controls src="' + e.artifact.src + '"></audio>';
+            html += '</div>';
+          }
+          if (e.artifact.audio) {
+            html += '<div class="exp-audio-player"><span class="exp-audio-label">♪ AUDIO</span><audio controls src="' + e.artifact.audio + '"></audio></div>';
+          }
+        }
+
+        if (replayType) {
+          html += '<div class="lab-replay-wrap">';
+          html += '<div class="lab-replay-label">▶ LIVE REPLAY // ' + replayType.toUpperCase() + '</div>';
+          html += '<canvas id="replay-' + e.id + '" width="400" height="280"></canvas>';
+          html += '<div class="lab-replay-controls">';
+          html += '<button class="lab-replay-btn" onclick="expReplayPlay(\'' + e.id + '\',\'' + replayType + '\')">' + (lang === 'zh' ? '▶ 播放' : '▶ PLAY') + '</button>';
+          html += '<button class="lab-replay-btn" onclick="expReplayPause(\'' + e.id + '\')">' + (lang === 'zh' ? '⏸ 暂停' : '⏸ PAUSE') + '</button>';
+          html += '<button class="lab-replay-btn" onclick="expReplayReset(\'' + e.id + '\',\'' + replayType + '\')">' + (lang === 'zh' ? '↺ 重置' : '↺ RESET') + '</button>';
+          html += '<span class="lab-replay-label" style="margin-left:0.5rem;">' + (lang === 'zh' ? '纯 Canvas 动画' : 'Pure Canvas animation') + '</span>';
+          html += '</div></div>';
+        }
+
+        html += '</div>'; // .exp-detail-section
+      }
+
       html += '</div>';
     });
     return html;
@@ -500,15 +537,24 @@ document.addEventListener('keydown', function(e) {
     sorted.forEach(function(e) {
       var title = lang === 'zh' ? (e.title_zh || '') : (e.title_en || e.title_zh || '');
       var thumb = '';
+      var audioBadge = '';
       if (e.artifact && e.artifact.type === 'image') {
-        thumb = '<div class="exp-grid-thumb-wrap"><img src="' + e.artifact.src + '" class="exp-grid-thumb" alt="artifact" onclick="openLightbox(this.src)" /></div>';
+        thumb = '<div class="exp-grid-thumb-wrap" style="position:relative;"><img src="' + e.artifact.src + '" class="exp-grid-thumb" alt="artifact" loading="lazy" onclick="openLightbox(\'' + e.artifact.src + '\')" />'
+              + '<div style="position:absolute;top:0.3rem;right:0.3rem;font-size:0.5rem;letter-spacing:0.1em;background:rgba(68,170,255,0.2);color:var(--neon-blue);padding:0.1rem 0.35rem;font-family:var(--font-mono);">🔍 CLICK</div>'
+              + '</div>';
       } else if (e.artifact && e.artifact.type === 'svg') {
         thumb = '<div class="exp-grid-svg-wrap">' + e.artifact.content + '</div>';
+      } else if (e.artifact && e.artifact.type === 'audio') {
+        thumb = '<div class="exp-grid-placeholder" style="flex-direction:column;gap:0.3rem;">';
+        thumb += '<span style="font-size:1.4rem;">🎵</span>';
+        thumb += '<span style="font-size:0.55rem;letter-spacing:0.15em;">[' + e.codename + ']</span>';
+        thumb += '</div>';
+        audioBadge = '<span class="exp-audio-badge">♪ AUDIO</span>';
       } else {
         thumb = '<div class="exp-grid-placeholder">[' + e.codename + ']</div>';
       }
-      html += '<div class="exp-grid-card">';
-      html += thumb;
+      html += '<div class="exp-grid-card" onclick="expGridExpand(\'' + e.id.replace(/'/g,"\\'") + '\')" style="cursor:pointer;" title="Click to expand">';
+      html += '<div style="position:relative;">' + thumb + audioBadge + '</div>';
       html += '<div class="exp-grid-info">';
       html += '<div class="exp-grid-title">' + title + '</div>';
       html += '<div class="exp-grid-meta">' + e.date + ' · ' + (e.fun_rating || 0) + '★ · ' + (e.tech_rating || 0) + '⚡</div>';
@@ -549,6 +595,85 @@ document.addEventListener('keydown', function(e) {
   }
 
   window.renderExperiments = renderExperiments;
+
+  // ── Expand/collapse detail in list view ──
+  window.expToggleDetail = function(btn, id) {
+    var detail = document.getElementById('detail-' + id);
+    if (!detail) return;
+    var lang = localStorage.getItem('mib-lang') || 'zh';
+    var isOpen = detail.style.display !== 'none';
+    if (isOpen) {
+      detail.style.display = 'none';
+      btn.textContent = lang === 'zh' ? '展开详情 ▾' : 'EXPAND ▾';
+    } else {
+      detail.style.display = 'block';
+      btn.textContent = lang === 'zh' ? '收起 ▴' : 'COLLAPSE ▴';
+    }
+  };
+
+  // ── Grid view: switch to list view and scroll to expanded card ──
+  window.expGridExpand = function(id) {
+    // Switch to list view
+    setView('list');
+    // After render, scroll to the card and expand it
+    setTimeout(function() {
+      var card = document.getElementById('exp-' + id);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var btn = card.querySelector('.exp-expand-btn');
+        var detail = document.getElementById('detail-' + id);
+        if (btn && detail && detail.style.display === 'none') {
+          btn.click();
+        }
+      }
+    }, 100);
+  };
+
+  // ── Replay map: codename → animation type ──
+  var REPLAY_MAP = {
+    'double-slit': 'double-slit',
+    'interference': 'double-slit',
+    'quantum': 'double-slit',
+    'chaos-bloom': 'chaos-bloom',
+    'lorenz': 'chaos-bloom',
+    'chaos': 'chaos-bloom',
+    'attractor': 'chaos-bloom',
+    'dragon-fold': 'dragon-fold',
+    'fractal': 'dragon-fold',
+    'dragon': 'dragon-fold',
+  };
+
+  function getReplayType(tags) {
+    for (var i = 0; i < tags.length; i++) {
+      var t = tags[i].toLowerCase();
+      if (REPLAY_MAP[t]) return REPLAY_MAP[t];
+    }
+    return null;
+  }
+
+  var _replayInstances = {};
+
+  window.expReplayPlay = function(id, type) {
+    if (!window.LabReplay) return;
+    var canvas = document.getElementById('replay-' + id);
+    if (!canvas) return;
+    if (!_replayInstances[id]) {
+      _replayInstances[id] = window.LabReplay.init(canvas, type);
+    }
+    if (_replayInstances[id]) _replayInstances[id].start();
+  };
+
+  window.expReplayPause = function(id) {
+    if (_replayInstances[id]) _replayInstances[id].pause();
+  };
+
+  window.expReplayReset = function(id, type) {
+    if (!_replayInstances[id] && window.LabReplay) {
+      var canvas = document.getElementById('replay-' + id);
+      if (canvas) _replayInstances[id] = window.LabReplay.init(canvas, type);
+    }
+    if (_replayInstances[id]) _replayInstances[id].reset();
+  };
 
   document.addEventListener('DOMContentLoaded', function() {
     fetch('data/experiments.json')
