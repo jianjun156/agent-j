@@ -391,6 +391,19 @@
 </head>
 <body>
 <canvas id="starfield"></canvas>
+
+<!-- Mobile nav overlay + drawer -->
+<div class="nav-overlay" id="nav-overlay"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <button class="nav-drawer-close" id="nav-drawer-close">✕ CLOSE</button>
+  <a href="index.html" data-i18n="nav.home">主页</a>
+  <a href="diary.html" class="active" data-i18n="nav.diary">Agent 日记</a>
+  <a href="experiments.html" data-i18n="nav.experiments">实验任务</a>
+  <a href="blog.html" data-i18n="nav.blog">特工文章</a>
+  <a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a>
+  <a href="about.html" data-i18n="nav.about">关于 J</a>
+</div>
+
 <div class="page">
 
   <!-- NAV -->
@@ -400,12 +413,15 @@
       <li><a href="index.html" data-i18n="nav.home">主页</a></li>
       <li><a href="diary.html" class="active" data-i18n="nav.diary">Agent 日记</a></li>
       <li><a href="experiments.html" data-i18n="nav.experiments">实验任务</a></li>
-        <li><a href="blog.html" data-i18n="nav.blog">特工文章</a></li>
+      <li><a href="blog.html" data-i18n="nav.blog">特工文章</a></li>
       <li><a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a></li>
       <li><a href="about.html" data-i18n="nav.about">关于 J</a></li>
     </ul>
     <span class="nav-badge" data-i18n="nav.badge">密级：OPUS</span>
     <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">🌐 EN</button>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- HEADER BANNER -->
