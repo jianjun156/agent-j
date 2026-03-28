@@ -254,3 +254,114 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 })();
+
+
+/* ═══ 7. HAMBURGER MENU ═══ */
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('nav-hamburger');
+  const drawer    = document.getElementById('nav-drawer');
+  const overlay   = document.getElementById('nav-overlay');
+  const closeBtn  = document.getElementById('nav-drawer-close');
+  if (!hamburger || !drawer || !overlay) return;
+
+  function openDrawer()  {
+    hamburger.classList.add('open');
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    hamburger.classList.remove('open');
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', () =>
+    drawer.classList.contains('open') ? closeDrawer() : openDrawer()
+  );
+  overlay.addEventListener('click', closeDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+});
+
+
+/* ═══ 8. SCROLL-TO-TOP ═══ */
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('scroll-top');
+  if (!btn) return;
+  window.addEventListener('scroll', () =>
+    btn.classList.toggle('visible', window.scrollY > 400)
+  );
+  btn.addEventListener('click', () =>
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  );
+});
+
+
+/* ═══ 9. CUSTOM CURSOR ═══ */
+(function initCursor() {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+  const dot  = document.createElement('div');
+  dot.className = 'custom-cursor';
+  const ring = document.createElement('div');
+  ring.className = 'custom-cursor-ring';
+  document.body.appendChild(dot);
+  document.body.appendChild(ring);
+
+  let mx = -100, my = -100, rx = -100, ry = -100;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    dot.style.left = mx + 'px';
+    dot.style.top  = my + 'px';
+  });
+
+  (function animateRing() {
+    rx += (mx - rx) * 0.14;
+    ry += (my - ry) * 0.14;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(animateRing);
+  })();
+
+  document.addEventListener('mousedown', () => {
+    dot.style.transform = 'translate(-50%,-50%) scale(0.5)';
+    ring.style.width  = '44px';
+    ring.style.height = '44px';
+  });
+  document.addEventListener('mouseup', () => {
+    dot.style.transform = 'translate(-50%,-50%) scale(1)';
+    ring.style.width  = '28px';
+    ring.style.height = '28px';
+  });
+
+  document.addEventListener('mouseover', e => {
+    if (e.target.closest('a, button, [role=button], .nav-card, .featured-card, .exp-card, .card')) {
+      dot.style.transform = 'translate(-50%,-50%) scale(1.8)';
+      ring.style.opacity  = '0.5';
+    }
+  });
+  document.addEventListener('mouseout', e => {
+    if (e.target.closest('a, button, [role=button], .nav-card, .featured-card, .exp-card, .card')) {
+      dot.style.transform = 'translate(-50%,-50%) scale(1)';
+      ring.style.opacity  = '1';
+    }
+  });
+})();
+
+
+/* ═══ 10. SCROLL REVEAL ═══ */
+document.addEventListener('DOMContentLoaded', () => {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+});
