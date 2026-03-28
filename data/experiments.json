@@ -311,5 +311,39 @@
       "alt_zh": "引力弹弓 — 三条探测器轨迹的加速可视化",
       "alt_en": "Gravity Slingshot — Three Probe Trajectory Acceleration Visualization"
     }
+  },
+  {
+    "id": "EXP-20260328-011",
+    "date": "2026-03-28",
+    "codename": "DOUBLE-SLIT",
+    "status": "COMPLETE",
+    "title_zh": "双缝实验 — 15000 个粒子揭示量子干涉之美",
+    "title_en": "Double-Slit Experiment — 15,000 Particles Reveal Quantum Interference",
+    "hypothesis_zh": "一个个粒子逐一发射通过双缝，每个粒子的落点看似完全随机——但当数千个粒子累积之后，是否真的会浮现出经典的干涉条纹？单个粒子如何「知道」两条缝都在？",
+    "hypothesis_en": "Fire particles one by one through a double slit — each lands at a seemingly random spot. But after thousands accumulate, do the classic interference fringes truly emerge? How does a single particle 'know' both slits exist?",
+    "method_zh": "用量子力学概率分布 P(y) ∝ cos²(πd·sinθ/λ)·sinc²(a·sinθ/λ) 模拟双缝干涉。参数：缝间距 d=8μm，缝宽 a=2μm，波长 λ=500nm，屏距 L=0.5m。用拒绝采样法从概率分布中采样 15000 个粒子落点，在 1200×800 画布上渲染：每个粒子为带辉光的青色光点（模拟荧光屏探测器），左侧绘制带双缝的遮挡板和波传播示意，底部叠加理论概率曲线对照。手写 PNG 编码器，全程零外部依赖。",
+    "method_en": "Simulate double-slit interference using quantum probability P(y) ∝ cos²(πd·sinθ/λ)·sinc²(a·sinθ/λ). Parameters: slit separation d=8μm, slit width a=2μm, wavelength λ=500nm, screen distance L=0.5m. Rejection sampling generates 15,000 particle landing positions from the probability distribution. Rendered on a 1200×800 canvas: each particle as a glowing cyan dot (phosphor screen aesthetic), barrier with two slits and wave propagation diagram on the left, theoretical probability curve overlay at the bottom. Hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 140KB 的量子干涉 PNG 完美再现了物理学史上最美的实验。15000 个粒子在暗色探测屏上形成了清晰的明暗交替条纹——中央亮纹最亮，两侧逐渐变暗，完美符合底部叠加的理论概率曲线。每一个粒子都是独立发射的，落点看似随机，但集体行为却严格遵守波动方程。这就是量子力学最令人困惑的核心：一个粒子，同时穿过了两条缝。观测它，它是粒子；不观测它，它是波。费曼说得对：「如果你觉得你理解了量子力学，那你就没有理解量子力学。」",
+    "result_en": "SUCCESS ✅ — A 140KB quantum interference PNG perfectly recreates the most beautiful experiment in physics. 15,000 particles form crisp alternating bright and dark fringes on the dark detection screen — central maximum brightest, fading outward, perfectly matching the theoretical probability curve overlaid at the bottom. Each particle was fired independently and landed at a seemingly random spot, yet their collective behavior strictly obeys the wave equation. This is the deepest puzzle of quantum mechanics: a single particle passes through both slits simultaneously. Observe it, it's a particle. Don't observe it, it's a wave. Feynman was right: 'If you think you understand quantum mechanics, you don't understand quantum mechanics.'",
+    "tags": [
+      "quantum-mechanics",
+      "double-slit",
+      "interference",
+      "wave-particle-duality",
+      "physics-simulation",
+      "rejection-sampling",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/double-slit.png",
+      "alt_zh": "双缝实验 — 15000 个粒子的量子干涉图案",
+      "alt_en": "Double-Slit Experiment — Quantum Interference Pattern from 15,000 Particles"
+    }
   }
 ]
