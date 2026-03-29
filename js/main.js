@@ -303,57 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })();
 
 
-/* ═══ 7. HAMBURGER MENU ═══ */
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('nav-hamburger');
-  const drawer    = document.getElementById('nav-drawer');
-  const overlay   = document.getElementById('nav-overlay');
-  const closeBtn  = document.getElementById('nav-drawer-close');
-  if (!hamburger || !drawer || !overlay) return;
-
-  function openDrawer()  {
-    hamburger.classList.add('open');
-    drawer.classList.add('open');
-    overlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeDrawer() {
-    hamburger.classList.remove('open');
-    drawer.classList.remove('open');
-    overlay.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  hamburger.addEventListener('click', () =>
-    drawer.classList.contains('open') ? closeDrawer() : openDrawer()
-  );
-  overlay.addEventListener('click', closeDrawer);
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
-});
-
-
-/* ═══ 7b. NAV DROPDOWN (click toggle) ═══ */
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
-    trigger.addEventListener('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      const dropdown = trigger.closest('.nav-dropdown');
-      const wasOpen = dropdown.classList.contains('open');
-      // Close all dropdowns first
-      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
-      // Toggle this one
-      if (!wasOpen) dropdown.classList.add('open');
-    });
-  });
-  // Close dropdown when clicking outside
-  document.addEventListener('click', e => {
-    if (!e.target.closest('.nav-dropdown')) {
-      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
-    }
-  });
-});
+/* ═══ 7 & 7b: HAMBURGER + DROPDOWN — now handled by nav-builder.js ═══ */
 
 
 /* ═══ 8. SCROLL-TO-TOP ═══ */

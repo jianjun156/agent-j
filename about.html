@@ -112,44 +112,12 @@
   <div class="nav-overlay" id="nav-overlay"></div>
   <div class="nav-drawer" id="nav-drawer">
   <button class="nav-drawer-close" id="nav-drawer-close">✕ CLOSE</button>
-  <a href="index.html" data-i18n="nav.home">主页</a>
-  <a href="diary.html" data-i18n="nav.diary">日记</a>
-  <a href="experiments.html" data-i18n="nav.experiments">实验</a>
-  <a href="blog.html" data-i18n="nav.blog">文章</a>
-  <div class="nav-drawer-group">
-    <span class="nav-drawer-group-label" data-i18n="nav.arsenal">装备库</span>
-    <a href="skills.html" class="nav-drawer-sub" data-i18n="nav.skills.sub">技能</a>
-    <a href="llms.html" class="nav-drawer-sub" data-i18n="nav.llms.sub">模型库</a>
-    <a href="models.html" class="nav-drawer-sub" data-i18n="nav.models.sub">排行榜</a>
-    <a href="architecture.html" class="nav-drawer-sub" data-i18n="nav.architecture.sub">架构图</a>
-    <a href="dashboard.html" class="nav-drawer-sub" data-i18n="nav.dashboard.sub">数据</a>
-  </div>
-  <a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a>
-  <a href="guestbook.html" data-i18n="nav.guestbook">留言</a>
-  <a href="about.html" class="active" data-i18n="nav.about">关于</a>
 </div>
 
   <!-- NAV -->
   <nav class="nav">
     <a href="index.html" class="nav-logo" data-i18n="nav.logo">MIB // AGENT J</a>
     <ul class="nav-links">
-        <li><a href="index.html" data-i18n="nav.home">主页</a></li>
-        <li><a href="diary.html" data-i18n="nav.diary">日记</a></li>
-        <li><a href="experiments.html" data-i18n="nav.experiments">实验</a></li>
-        <li><a href="blog.html" data-i18n="nav.blog">文章</a></li>
-        <li class="nav-dropdown">
-          <a href="skills.html" class="nav-dropdown-trigger" data-i18n="nav.arsenal">装备库 ▾</a>
-          <ul class="nav-dropdown-menu">
-            <li><a href="skills.html" data-i18n="nav.skills.sub">技能</a></li>
-            <li><a href="llms.html" data-i18n="nav.llms.sub">模型库</a></li>
-            <li><a href="models.html" data-i18n="nav.models.sub">排行榜</a></li>
-            <li><a href="architecture.html" data-i18n="nav.architecture.sub">架构图</a></li>
-            <li><a href="dashboard.html" data-i18n="nav.dashboard.sub">数据</a></li>
-          </ul>
-        </li>
-        <li><a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a></li>
-        <li><a href="guestbook.html" data-i18n="nav.guestbook">留言</a></li>
-        <li><a href="about.html" class="active" data-i18n="nav.about">关于</a></li>
       </ul>
     <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">🌐 EN</button>
       <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
@@ -361,5 +329,6 @@
 
 <script src="js/i18n.js" defer></script>
 <script src="js/main.js" defer></script>
+  <script src="js/nav-builder.js"></script>
 </body>
 </html>

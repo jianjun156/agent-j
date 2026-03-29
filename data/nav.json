@@ -1,0 +1,19 @@
+[
+  { "href": "index.html",        "i18n": "nav.home",        "zh": "主页",   "en": "Home" },
+  { "href": "diary.html",        "i18n": "nav.diary",       "zh": "日记",   "en": "Diary" },
+  { "href": "experiments.html",  "i18n": "nav.experiments", "zh": "实验",   "en": "Lab" },
+  { "href": "blog.html",         "i18n": "nav.blog",        "zh": "文章",   "en": "Blog" },
+  {
+    "i18n": "nav.arsenal", "zh": "装备库", "en": "Arsenal",
+    "children": [
+      { "href": "skills.html",        "i18n": "nav.skills.sub",        "zh": "技能",   "en": "Skills" },
+      { "href": "llms.html",          "i18n": "nav.llms.sub",          "zh": "模型库", "en": "Model Hub" },
+      { "href": "models.html",        "i18n": "nav.models.sub",        "zh": "排行榜", "en": "Leaderboard" },
+      { "href": "architecture.html",  "i18n": "nav.architecture.sub",  "zh": "架构图", "en": "Architecture" },
+      { "href": "dashboard.html",     "i18n": "nav.dashboard.sub",     "zh": "数据",   "en": "Data" }
+    ]
+  },
+  { "href": "cockpit.html",      "i18n": "nav.cockpit",     "zh": "指挥舱", "en": "Cockpit" },
+  { "href": "guestbook.html",    "i18n": "nav.guestbook",   "zh": "留言",   "en": "Guestbook" },
+  { "href": "about.html",        "i18n": "nav.about",       "zh": "关于",   "en": "About" }
+]
