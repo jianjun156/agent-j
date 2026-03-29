@@ -400,6 +400,137 @@
       .tl-card { padding: 1rem 0.8rem; }
       .tl-card-body { font-size: 0.7rem; }
     }
+
+    /* ═══════════════════════════════════════════════
+       DIARY — Light Mode Overrides
+    ═══════════════════════════════════════════════ */
+    [data-theme="light"] .tl-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-color: rgba(40, 60, 100, 0.15);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    [data-theme="light"] .tl-card:hover {
+      border-color: rgba(29, 91, 191, 0.3);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    /* Timeline line */
+    [data-theme="light"] .tl-line {
+      background: linear-gradient(to bottom, transparent 0%, rgba(29,91,191,0.25) 6%, rgba(29,91,191,0.25) 94%, transparent 100%) !important;
+      animation: none;
+      box-shadow: none;
+    }
+    /* Node dots */
+    [data-theme="light"] .tl-node {
+      background: var(--neon-blue);
+      border-color: rgba(29,91,191,0.3);
+      box-shadow: 0 0 4px rgba(29,91,191,0.25);
+    }
+    [data-theme="light"] .tl-node.latest {
+      background: #16a34a;
+      border-color: rgba(22,163,74,0.4);
+      box-shadow: 0 0 4px rgba(22,163,74,0.3);
+      animation: none;
+    }
+    /* Arrow connectors */
+    [data-theme="light"] .tl-left .tl-card::after {
+      border-color: transparent transparent transparent rgba(40,60,100,0.15);
+    }
+    [data-theme="light"] .tl-right .tl-card::before,
+    [data-theme="light"] .tl-left .tl-card::before {
+      border-color: transparent rgba(40,60,100,0.15) transparent transparent;
+    }
+    /* Classified watermark */
+    [data-theme="light"] .tl-classified {
+      color: rgba(220,38,38,0.04);
+    }
+    /* Text elements */
+    [data-theme="light"] .tl-date { color: var(--neon-blue); }
+    [data-theme="light"] .tl-id { color: #64748b; }
+    [data-theme="light"] .tl-codename { color: #16a34a; text-shadow: none; }
+    [data-theme="light"] .tl-summary { color: #0f172a; }
+    [data-theme="light"] .tl-details { color: #334155; }
+    [data-theme="light"] .tl-status-badge { color: #475569; border-color: rgba(40,60,100,0.25); }
+    [data-theme="light"] .tl-status-badge.latest { color: #16a34a; border-color: rgba(22,163,74,0.35); }
+    /* Expand button */
+    [data-theme="light"] .tl-expand-btn {
+      border-color: rgba(29,91,191,0.25);
+      color: var(--neon-blue);
+    }
+    [data-theme="light"] .tl-expand-btn:hover {
+      background: rgba(29,91,191,0.06);
+      border-color: var(--neon-blue);
+      box-shadow: none;
+    }
+    /* Tag filter */
+    [data-theme="light"] .tl-tag-filter {
+      border-top-color: rgba(40,60,100,0.1);
+    }
+    [data-theme="light"] .tl-tag-btn {
+      border-color: rgba(40,60,100,0.2);
+      color: #475569;
+    }
+    [data-theme="light"] .tl-tag-btn:hover {
+      border-color: var(--neon-blue);
+      color: var(--neon-blue);
+      background: rgba(29,91,191,0.05);
+    }
+    [data-theme="light"] .tl-tag-btn.active {
+      border-color: var(--neon-blue);
+      color: var(--neon-blue);
+      background: rgba(29,91,191,0.08);
+      box-shadow: none;
+    }
+    [data-theme="light"] .tl-tag-btn.tl-tag-all {
+      border-color: rgba(109,40,217,0.25);
+      color: var(--neon-purple);
+    }
+    [data-theme="light"] .tl-tag-btn.tl-tag-all.active {
+      border-color: var(--neon-purple);
+      background: rgba(109,40,217,0.06);
+      box-shadow: none;
+    }
+    /* Tags on cards */
+    [data-theme="light"] .tl-tags .tl-tag {
+      color: #475569;
+      border-color: rgba(40,60,100,0.18);
+      background: rgba(40,60,100,0.04);
+    }
+    /* Stats */
+    [data-theme="light"] .tl-stat-val { color: var(--neon-blue); }
+    [data-theme="light"] .tl-stat-item { color: #475569; }
+    /* Banner */
+    [data-theme="light"] [style*="rgba(255,30,30"] {
+      background: rgba(220,38,38,0.04) !important;
+      border-bottom-color: rgba(220,38,38,0.12) !important;
+      color: rgba(220,38,38,0.5) !important;
+    }
+    /* Mood score bar */
+    [data-theme="light"] .tl-mood-bar {
+      background: rgba(29,91,191,0.08);
+    }
+    [data-theme="light"] .tl-mood-fill {
+      box-shadow: none;
+    }
+    /* Month headers */
+    [data-theme="light"] .tl-month-header {
+      color: #0f172a;
+      border-color: rgba(40,60,100,0.12);
+    }
+    /* Tag search */
+    [data-theme="light"] .tl-tag-search {
+      background: rgba(255,255,255,0.9);
+      border-color: rgba(40,60,100,0.2);
+      color: #1e293b;
+    }
+    [data-theme="light"] .tl-tag-search:focus {
+      border-color: var(--neon-blue);
+    }
+    /* Load more button */
+    [data-theme="light"] #diary-load-more {
+      border-color: rgba(29,91,191,0.25) !important;
+      color: var(--neon-blue) !important;
+      background: transparent !important;
+    }
   </style>
 </head>
 <body>
