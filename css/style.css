@@ -133,20 +133,17 @@ body::after {
 .lang-toggle {
   font-size: 0.62rem;
   letter-spacing: 0.12em;
-  color: var(--text-bright);
-  border: 1px solid var(--border);
-  padding: 0.35rem 0.7rem;
+  color: var(--text-dim);
+  border: none;
+  padding: 0.35rem 0.5rem;
   font-family: var(--font-mono);
-  background: rgba(10, 10, 24, 0.8);
+  background: transparent;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: color 0.25s;
 }
 
 .lang-toggle:hover {
-  color: var(--bg);
-  background: var(--neon-blue);
-  border-color: var(--neon-blue);
-  box-shadow: 0 0 14px rgba(68,170,255,0.35);
+  color: var(--neon-blue);
 }
 
 .nav-badge {
@@ -837,7 +834,7 @@ body::after {
   .nav-badge { display: none; }
   .lang-toggle {
     font-size: 0.55rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.3rem;
   }
 
   .section { padding: 1.5rem 1rem; }
@@ -1509,21 +1506,20 @@ body,
 /* ── Theme toggle button ────────────────────────── */
 .theme-toggle {
   font-size: 0.85rem;
-  color: var(--text-bright);
-  border: 1px solid var(--border);
-  padding: 0.3rem 0.6rem;
+  color: var(--text-dim);
+  border: none;
+  padding: 0.3rem 0.4rem;
   font-family: var(--font-mono);
-  background: rgba(10, 10, 24, 0.8);
+  background: transparent;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: color 0.25s;
   line-height: 1;
 }
 [data-theme="light"] .theme-toggle {
-  background: rgba(240,242,248,0.8);
+  background: transparent;
 }
 .theme-toggle:hover {
-  border-color: var(--neon-blue);
-  box-shadow: 0 0 10px rgba(68,170,255,0.2);
+  color: var(--neon-blue);
 }
 
 /* ── Filter tabs ────────────────────────────────── */
@@ -2323,3 +2319,118 @@ body,
 [data-theme="light"] .artifact-lightbox {
   background: rgba(240,242,248,0.97);
 }
+
+/* ═══════════════════════════════════════════════════
+   LIGHT MODE — Comprehensive Font & Effect Fixes
+   Kill neon glows, text-shadows, rgba colors on light bg
+   ═══════════════════════════════════════════════════ */
+
+/* Kill ALL text-shadow glow effects in light mode */
+[data-theme="light"] .nav-logo,
+[data-theme="light"] .nav-links a:hover,
+[data-theme="light"] .nav-links a.active,
+[data-theme="light"] .hero-title,
+[data-theme="light"] .section-title,
+[data-theme="light"] .text-neon,
+[data-theme="light"] .text-purple,
+[data-theme="light"] .tl-codename,
+[data-theme="light"] .exp-codename,
+[data-theme="light"] .dash-uptime-counter,
+[data-theme="light"] .dash-value,
+[data-theme="light"] .dash-hb-status,
+[data-theme="light"] .exp-status,
+[data-theme="light"] .featured-card-label {
+  text-shadow: none !important;
+}
+
+/* Nav logo */
+[data-theme="light"] .nav-logo { color: #0f172a; }
+
+/* Hero */
+[data-theme="light"] .hero-title { color: #0f172a; }
+[data-theme="light"] .hero-sub { color: #334155; }
+[data-theme="light"] .hero-desc { color: #334155; }
+[data-theme="light"] .hero-eyebrow { color: #64748b; }
+[data-theme="light"] .hero-id { color: #94a3b8; }
+[data-theme="light"] .mib-sigil { color: rgba(29,91,191,0.3); }
+[data-theme="light"] .corner-tag { color: rgba(29,91,191,0.25); }
+[data-theme="light"] .status-bar .status-item { color: #475569; }
+[data-theme="light"] .status-dot { background: #16a34a; box-shadow: 0 0 4px rgba(22,163,74,0.4); }
+[data-theme="light"] .glitch-line { opacity: 0; }
+[data-theme="light"] .cursor, [data-theme="light"] .term-cursor-blink { box-shadow: none; }
+
+/* Section titles */
+[data-theme="light"] .section-title { color: #0f172a; border-bottom-color: rgba(29,91,191,0.15); }
+
+/* Dashboard */
+[data-theme="light"] .dash-uptime-counter { color: var(--neon-blue); }
+[data-theme="light"] .dash-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); border-color: rgba(29,91,191,0.25); }
+[data-theme="light"] .dash-cap.active { color: #16a34a; border-color: rgba(22,163,74,0.3); background: rgba(22,163,74,0.06); box-shadow: none; animation: none; }
+[data-theme="light"] .dash-cap.blocked { color: #dc2626; border-color: rgba(220,38,38,0.3); background: rgba(220,38,38,0.06); }
+[data-theme="light"] .dash-latest-value { color: #16a34a; }
+
+/* Cards: subtle shadow instead of neon glow */
+[data-theme="light"] .exp-card:hover,
+[data-theme="light"] .nav-card:hover,
+[data-theme="light"] .featured-card:hover,
+[data-theme="light"] .card:hover { border-color: rgba(29,91,191,0.25); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+[data-theme="light"] .nav-card::before { opacity: 0.5; }
+[data-theme="light"] .nav-card-sub { color: #64748b; }
+
+/* Experiment cards */
+[data-theme="light"] .exp-card::before { background: linear-gradient(180deg, #16a34a, var(--neon-blue)); }
+[data-theme="light"] .exp-status.complete { color: var(--neon-blue); border-color: var(--neon-blue); }
+[data-theme="light"] .exp-status.active { color: #16a34a; border-color: #16a34a; }
+
+/* Diary timeline */
+[data-theme="light"] .tl-line { background: linear-gradient(to bottom, transparent, rgba(29,91,191,0.15), rgba(29,91,191,0.15), transparent) !important; }
+[data-theme="light"] .tl-dot { background: var(--neon-blue) !important; box-shadow: 0 0 4px rgba(29,91,191,0.25) !important; }
+[data-theme="light"] .tl-codename { color: var(--neon-blue); }
+[data-theme="light"] .tl-mood-fill { box-shadow: none; }
+[data-theme="light"] .tl-month-header { color: #0f172a; border-color: rgba(29,91,191,0.12); }
+
+/* Tags */
+[data-theme="light"] .tl-tag, [data-theme="light"] .tag { color: #475569; border-color: rgba(40,60,100,0.2); background: rgba(40,60,100,0.04); }
+
+/* Featured */
+[data-theme="light"] .featured-card-label { color: var(--neon-blue); }
+[data-theme="light"] .featured-card-title { color: #0f172a; }
+[data-theme="light"] .featured-card-body { color: #334155; }
+[data-theme="light"] .featured-img-wrap { border-color: rgba(40,60,100,0.08); background: rgba(40,60,100,0.03); }
+
+/* Terminal */
+[data-theme="light"] .terminal-window { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+
+/* Blog */
+[data-theme="light"] .article-classification { color: #475569; border-color: rgba(40,60,100,0.2); }
+
+/* Scan rings: invisible in light mode */
+[data-theme="light"] .scan-ring { opacity: 0; }
+
+/* Kill all pulsing/glowing animations in light mode */
+[data-theme="light"] [class*="Glow"],
+[data-theme="light"] [class*="pulse"] { animation: none !important; }
+
+/* Scanline overlay already killed via variable, but ensure */
+[data-theme="light"] body::after { opacity: 0 !important; }
+
+/* About page radar bars */
+[data-theme="light"] .radar-bar { box-shadow: none; }
+
+/* Skills page */
+[data-theme="light"] .skill-status-dot { box-shadow: none; }
+
+/* LLM cards */
+[data-theme="light"] .llm-highlight { border-color: rgba(29,91,191,0.35); box-shadow: 0 2px 12px rgba(29,91,191,0.08); }
+[data-theme="light"] .llm-badge { background: rgba(29,91,191,0.08); color: var(--neon-blue); border-color: rgba(29,91,191,0.2); }
+
+/* Models table */
+[data-theme="light"] .models-rank-fire { text-shadow: none; }
+
+/* Diary inline styles with hardcoded rgba colors */
+[data-theme="light"] [style*="rgba(170,68,255"] { color: #6d28d9 !important; border-color: rgba(109,40,217,0.25) !important; }
+[data-theme="light"] [style*="rgba(0,255,100"] { color: #16a34a !important; }
+[data-theme="light"] [style*="rgba(68,170,255"] { color: var(--neon-blue) !important; }
+[data-theme="light"] [style*="rgba(255,30,30"] { color: #dc2626 !important; }
+[data-theme="light"] [style*="rgba(255,80,80"] { color: #dc2626 !important; }
