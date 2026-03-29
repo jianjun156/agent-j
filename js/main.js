@@ -7,9 +7,23 @@
    ══════════════════════════════════════════════════ */
 (function initTheme() {
   const THEME_KEY = 'mib-theme';
+  const THEME_SET_KEY = 'mib-theme-manual'; // tracks if user manually chose
+
+  function getAutoTheme() {
+    // Beijing time (UTC+8): day = 7:00-18:00, night = rest
+    const now = new Date();
+    const utcH = now.getUTCHours();
+    const bjH = (utcH + 8) % 24;
+    return (bjH >= 7 && bjH < 18) ? 'light' : 'dark';
+  }
 
   function getTheme() {
-    return localStorage.getItem(THEME_KEY) || 'dark';
+    // If user manually set, use that
+    if (localStorage.getItem(THEME_SET_KEY)) {
+      return localStorage.getItem(THEME_KEY) || getAutoTheme();
+    }
+    // Otherwise auto by time
+    return getAutoTheme();
   }
 
   function applyTheme(theme) {
@@ -21,8 +35,10 @@
   }
 
   window.toggleTheme = function() {
-    const next = getTheme() === 'dark' ? 'light' : 'dark';
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
     localStorage.setItem(THEME_KEY, next);
+    localStorage.setItem(THEME_SET_KEY, '1'); // mark as manual
     applyTheme(next);
   };
 

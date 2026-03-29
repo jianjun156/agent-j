@@ -106,9 +106,15 @@ body::after {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 2rem;
   list-style: none;
   margin-left: auto;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
@@ -2017,8 +2023,10 @@ body,
   align-items: center;
 }
 .nav-dropdown-trigger {
-  /* inherits .nav-links a styles */
+  /* inherits .nav-links a styles — ensure identical line height */
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
 }
 .nav-dropdown-menu {
   display: none;
