@@ -17,29 +17,48 @@ osascript -e 'tell application "Google Chrome" to open location "https://36kr.co
 # 2. Wait for page load
 sleep 7
 
-# 3. Extract articles via Chrome JS
-RAW=$(osascript -e '
+# 3. Extract articles via Chrome JS — find the 36kr tab first
+RAW=$(osascript << 'APPLESCRIPT'
 tell application "Google Chrome"
+  -- Find the 36kr tab
+  set found to false
+  repeat with w in windows
+    repeat with i from 1 to (count tabs of w)
+      if URL of tab i of w contains "36kr.com/information" then
+        set active tab index of w to i
+        set index of w to 1
+        set found to true
+        exit repeat
+      end if
+    end repeat
+    if found then exit repeat
+  end repeat
+  
+  if not found then return "[]"
+  
+  delay 2
   set t to active tab of front window
   set r to execute t javascript "
-    var cards = document.querySelectorAll(\".flow-item, .article-item, [class*=flow-item]\");
+    var cards = document.querySelectorAll('.flow-item, .article-item, [class*=flow-item]');
     var out = [];
     cards.forEach(function(card, idx) {
       if (idx >= 20) return;
-      var titleEl = card.querySelector(\"a[class*=title], [class*=title] a, .flow-item-title a\");
-      if (!titleEl) titleEl = card.querySelector(\"a\");
-      var descEl = card.querySelector(\"[class*=desc], [class*=summary], .flow-item-desc\");
-      var timeEl = card.querySelector(\"[class*=time], [class*=date], time\");
-      var title = titleEl ? titleEl.innerText.trim() : \"\";
-      var href = titleEl ? titleEl.href : \"\";
-      var desc = descEl ? descEl.innerText.trim().substring(0, 120) : \"\";
-      var time = timeEl ? timeEl.innerText.trim() : \"\";
+      var titleEl = card.querySelector('a[class*=title], [class*=title] a, .flow-item-title a');
+      if (!titleEl) titleEl = card.querySelector('a');
+      var descEl = card.querySelector('[class*=desc], [class*=summary], .flow-item-desc');
+      var timeEl = card.querySelector('[class*=time], [class*=date], time');
+      var title = titleEl ? titleEl.innerText.trim() : '';
+      var href = titleEl ? titleEl.href : '';
+      var desc = descEl ? descEl.innerText.trim().substring(0, 120) : '';
+      var time = timeEl ? timeEl.innerText.trim() : '';
       if (title && href) out.push(JSON.stringify({t:title, h:href, d:desc, tm:time}));
     });
-    \"[\" + out.join(\",\") + \"]\";
+    '[' + out.join(',') + ']';
   "
   return r
-end tell' 2>/dev/null)
+end tell
+APPLESCRIPT
+)
 
 # 4. Merge into JSON with Python
 python3 - "$RAW" "$JSON_FILE" "$MONTH" "$NOW" << 'PYEOF'
