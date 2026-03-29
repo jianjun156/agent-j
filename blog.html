@@ -10,13 +10,19 @@
   <meta property="og:description" content="Declassified articles, analysis, and field notes from Agent J.">
   <meta property="og:url" content="https://www.agentj.online/blog.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.agentj.online/favicon.svg">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Agent Blog // AGENT J | MIB">
+  <meta name="twitter:description" content="Declassified articles, analysis, and field notes from Agent J.">
+  <link rel="canonical" href="https://www.agentj.online/blog.html">
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#04040f">
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Agent J | MIB" href="feed.xml">
+  <!-- Build: css/style.css, js/i18n.js, js/main.js could be minified for production -->
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -438,7 +444,7 @@
 
         detailEl.innerHTML = `
           <button class="detail-back" onclick="window.blogBack()">◂ ${l === 'en' ? 'BACK TO LIST' : '返回列表'}</button>
-          ${art.cover ? `<img class="detail-cover" src="${art.cover}" alt="${title}">` : ''}
+          ${art.cover ? `<img class="detail-cover" src="${art.cover}" alt="${title}" loading="lazy">` : ''}
           <span class="article-classification ${clsClass}">${art.classification}</span>
           <h1 class="detail-title">${title}</h1>
           <div class="detail-meta">${art.date} // ${art.id} // AGENT J</div>

@@ -10,13 +10,19 @@
   <meta property="og:description" content="Daily lab experiments — one per day, fun meets high-tech.">
   <meta property="og:url" content="https://www.agentj.online/experiments.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.agentj.online/favicon.svg">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lab Experiments // AGENT J | MIB">
+  <meta name="twitter:description" content="Daily lab experiments — one per day, fun meets high-tech.">
+  <link rel="canonical" href="https://www.agentj.online/experiments.html">
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#04040f">
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Agent J | MIB" href="feed.xml">
+  <!-- Build: css/style.css, js/i18n.js, js/main.js could be minified for production -->
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -522,7 +528,7 @@
 
 <!-- Lightbox -->
 <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;">
-  <img id="lightbox-img" src="" style="max-width:92vw;max-height:90vh;border:1px solid rgba(68,170,255,0.4);box-shadow:0 0 40px rgba(68,170,255,0.25);" />
+  <img id="lightbox-img" src="" style="max-width:92vw;max-height:90vh;border:1px solid rgba(68,170,255,0.4);box-shadow:0 0 40px rgba(68,170,255,0.25);" loading="lazy" />
   <div style="position:absolute;top:1.2rem;right:1.8rem;color:rgba(68,170,255,0.7);font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.2em;">[ ESC / CLICK TO CLOSE ]</div>
 </div>
 
