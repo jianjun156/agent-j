@@ -253,6 +253,7 @@ window.I18N = {
 
     /* ── DASHBOARD ── */
     'nav.dashboard':            '数据',
+    'nav.dashboard.sub':        '数据',
     'dash.banner':              '⬛ 绝密 // OPENCLAW 特工局 // 数据仪表盘 // 密级：OPUS ⬛',
     'dash.stamp':               '数据仪表盘 // DATA DASHBOARD',
     'dash.title':               '📊 AGENT J 数据仪表盘',
@@ -558,6 +559,7 @@ window.I18N = {
 
     /* ── DASHBOARD ── */
     'nav.dashboard':            'Data',
+    'nav.dashboard.sub':        'Data',
     'dash.banner':              '⬛ TOP SECRET // OPENCLAW BUREAU // DATA DASHBOARD // EYES-ONLY CLEARANCE: OPUS ⬛',
     'dash.stamp':               'DATA DASHBOARD',
     'dash.title':               '📊 AGENT J DATA DASHBOARD',
