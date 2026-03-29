@@ -317,6 +317,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/* ═══ 7b. NAV DROPDOWN (click toggle) ═══ */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+    trigger.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      const dropdown = trigger.closest('.nav-dropdown');
+      const wasOpen = dropdown.classList.contains('open');
+      // Close all dropdowns first
+      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+      // Toggle this one
+      if (!wasOpen) dropdown.classList.add('open');
+    });
+  });
+  // Close dropdown when clicking outside
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+    }
+  });
+});
+
+
 /* ═══ 8. SCROLL-TO-TOP ═══ */
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('scroll-top');

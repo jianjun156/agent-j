@@ -2019,11 +2019,12 @@ body,
   display: flex;
   align-items: center;
   gap: 0.15em;
+  cursor: pointer;
 }
 .nav-dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 0.6rem);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(4, 4, 20, 0.97);
@@ -2036,7 +2037,7 @@ body,
   white-space: nowrap;
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
-.nav-dropdown:hover .nav-dropdown-menu {
+.nav-dropdown.open .nav-dropdown-menu {
   display: block;
 }
 .nav-dropdown-menu li a {
