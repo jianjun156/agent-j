@@ -55,7 +55,7 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     /* ── Index-only styles ── */
-    .hero { padding: 4.5rem 2rem 2rem; }
+    .hero { padding: 4.5rem 2rem 2rem; overflow: hidden; position: relative; }
 
     .mib-sigil {
       font-family: var(--font-head);
@@ -566,6 +566,10 @@
 
     /* ── Mobile ── */
     @media (max-width: 600px) {
+      .hero { padding: 3rem 1rem 1.5rem; }
+      .corner-tag { display: none; }
+      .scan-ring { display: none; }
+      .mib-sigil { letter-spacing: 0.2em; font-size: 0.45rem; }
       .dash-grid { grid-template-columns: repeat(2, 1fr); }
       .dash-uptime-counter { font-size: 1.4rem; }
       .dashboard { padding: 2rem 1rem 1.5rem; }
@@ -856,41 +860,19 @@
     }
 
     /* ── Heartbeat status ── */
-    function calcHeartbeat(lastSeenStr) {
-      var clean = lastSeenStr.replace(' CST', '').trim();
-      var parts = clean.split(' ');
-      var dateParts = parts[0].split('-');
-      var timeParts = parts[1].split(':');
-      var utc = Date.UTC(
-        parseInt(dateParts[0]), parseInt(dateParts[1]) - 1, parseInt(dateParts[2]),
-        parseInt(timeParts[0]) - 8, parseInt(timeParts[1]), 0
-      );
-      return (Date.now() - utc) / 60000;
-    }
-
     function renderHeartbeat(d, lang) {
-      var diffMin = calcHeartbeat(d.heartbeat.last_seen);
       var dot = document.getElementById('dash-hb-dot');
       var statusEl = document.getElementById('dash-hb-status');
       var timeEl = document.getElementById('dash-hb-time');
 
-      var statusKey, dotClass, statusColor;
-      if (diffMin <= 60) {
-        statusKey = 'index.dash.online'; dotClass = 'hb-green'; statusColor = '#0f0';
-      } else if (diffMin <= 360) {
-        statusKey = 'index.dash.standby'; dotClass = 'hb-yellow'; statusColor = '#ff0';
-      } else {
-        statusKey = 'index.dash.offline'; dotClass = 'hb-red'; statusColor = '#f44';
-      }
-
-      if (dot) dot.className = 'dash-hb-dot ' + dotClass;
+      // Always show online — static site, no real heartbeat
+      if (dot) dot.className = 'dash-hb-dot hb-green';
       if (statusEl) {
         var dict = window.I18N[lang] || window.I18N['zh'];
-        statusEl.textContent = dict[statusKey] || statusKey;
-        statusEl.style.color = statusColor;
+        statusEl.textContent = dict['index.dash.online'] || '在线';
+        statusEl.style.color = '#0f0';
       }
-      var minAgo = Math.round(diffMin);
-      if (timeEl) timeEl.textContent = lang === 'zh' ? (minAgo + ' 分钟前') : (minAgo + ' min ago');
+      if (timeEl) timeEl.textContent = lang === 'zh' ? '实时' : 'LIVE';
     }
 
     /* ── Activity feed ── */
