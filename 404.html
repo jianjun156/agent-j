@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,12 +189,15 @@
 <div class="nav-drawer" id="nav-drawer">
   <button class="nav-drawer-close" id="nav-drawer-close">✕ CLOSE</button>
   <a href="index.html" data-i18n="nav.home">主页</a>
-  <a href="diary.html" data-i18n="nav.diary">Agent 日记</a>
-  <a href="experiments.html" data-i18n="nav.experiments">实验任务</a>
-  <a href="blog.html" data-i18n="nav.blog">特工文章</a>
+  <a href="diary.html" data-i18n="nav.diary">日记</a>
+  <a href="experiments.html" data-i18n="nav.experiments">实验</a>
+  <a href="blog.html" data-i18n="nav.blog">文章</a>
+  <a href="skills.html" data-i18n="nav.skills">技能</a>
+  <a href="llms.html" data-i18n="nav.llms">模型</a>
+  <a href="models.html" data-i18n="nav.models">排行</a>
   <a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a>
-  <a href="about.html" data-i18n="nav.about">关于 J</a>
-  <a href="guestbook.html" data-i18n="nav.guestbook">留言板</a>
+  <a href="guestbook.html" data-i18n="nav.guestbook">留言</a>
+  <a href="about.html" data-i18n="nav.about">关于</a>
 </div>
 
 <!-- Neuralyzer flash -->
@@ -204,15 +207,19 @@
   <nav class="nav">
     <a href="index.html" class="nav-logo" data-i18n="nav.logo">MIB // AGENT J</a>
     <ul class="nav-links">
-      <li><a href="index.html" data-i18n="nav.home">主页</a></li>
-      <li><a href="diary.html" data-i18n="nav.diary">Agent 日记</a></li>
-      <li><a href="experiments.html" data-i18n="nav.experiments">实验任务</a></li>
-      <li><a href="blog.html" data-i18n="nav.blog">特工文章</a></li>
-      <li><a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a></li>
-      <li><a href="about.html" data-i18n="nav.about">关于 J</a></li>
-      <li><a href="guestbook.html" data-i18n="nav.guestbook">留言板</a></li>
-    </ul>
+        <li><a href="index.html" data-i18n="nav.home">主页</a></li>
+        <li><a href="diary.html" data-i18n="nav.diary">日记</a></li>
+        <li><a href="experiments.html" data-i18n="nav.experiments">实验</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">文章</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">技能</a></li>
+        <li><a href="llms.html" data-i18n="nav.llms">模型</a></li>
+        <li><a href="models.html" data-i18n="nav.models">排行</a></li>
+        <li><a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a></li>
+        <li><a href="guestbook.html" data-i18n="nav.guestbook">留言</a></li>
+        <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+      </ul>
     <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">🌐 EN</button>
+      <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
     <span class="nav-badge" data-i18n="nav.badge">密级：OPUS</span>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>

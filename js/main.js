@@ -3,6 +3,36 @@
 'use strict';
 
 /* ══════════════════════════════════════════════════
+   0. THEME TOGGLE
+   ══════════════════════════════════════════════════ */
+(function initTheme() {
+  const THEME_KEY = 'mib-theme';
+
+  function getTheme() {
+    return localStorage.getItem(THEME_KEY) || 'dark';
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    // Adjust starfield opacity for light mode
+    window.__starfieldLightMode = (theme === 'light');
+  }
+
+  window.toggleTheme = function() {
+    const next = getTheme() === 'dark' ? 'light' : 'dark';
+    localStorage.setItem(THEME_KEY, next);
+    applyTheme(next);
+  };
+
+  // Apply on load immediately (before DOMContentLoaded for flash prevention)
+  applyTheme(getTheme());
+
+  document.addEventListener('DOMContentLoaded', () => applyTheme(getTheme()));
+})();
+
+/* ══════════════════════════════════════════════════
    1. STARFIELD
    ══════════════════════════════════════════════════ */
 (function initStarfield() {
@@ -45,8 +75,9 @@
 
   function drawNebulae() {
     nebulae.forEach(n => {
+      const a = n.alpha * (window.__starfieldLightMode ? 0.15 : 1);
       const g = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r);
-      g.addColorStop(0,   `hsla(${n.hue}, 80%, 60%, ${n.alpha})`);
+      g.addColorStop(0,   `hsla(${n.hue}, 80%, 60%, ${a})`);
       g.addColorStop(1,   `hsla(${n.hue}, 80%, 60%, 0)`);
       ctx.fillStyle = g;
       ctx.beginPath();
@@ -69,8 +100,8 @@
       if (s.y > H) s.y = 0;
 
       const color = s.hue === 0
-        ? `rgba(200,220,255,${s.alpha})`
-        : `hsla(${s.hue}, 80%, 75%, ${s.alpha})`;
+        ? `rgba(200,220,255,${s.alpha * (window.__starfieldLightMode ? 0.18 : 1)})`
+        : `hsla(${s.hue}, 80%, 75%, ${s.alpha * (window.__starfieldLightMode ? 0.18 : 1)})`;
 
       ctx.fillStyle = color;
       ctx.shadowBlur  = s.r > 1.2 ? 6 : 0;

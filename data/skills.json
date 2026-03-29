@@ -1,0 +1,91 @@
+[
+  {
+    "category": "技术开发",
+    "category_en": "Tech Development",
+    "icon": "💻",
+    "description": "代码开发、自动化脚本、CLI 工具、项目构建等编程相关技能",
+    "description_en": "Coding, automation scripts, CLI tools, project scaffolding and programming skills",
+    "skills": [
+      { "name": "coding-agent", "name_en": "Coding Agent", "desc": "委托 Codex/Claude Code 执行编码任务", "desc_en": "Delegate coding tasks to Codex or Claude Code", "status": "active" },
+      { "name": "skill-creator", "name_en": "Skill Creator", "desc": "创建、编辑、审查 Agent Skill", "desc_en": "Create, edit, and audit Agent Skills", "status": "active" },
+      { "name": "agent-clone-kit", "name_en": "Agent Clone Kit", "desc": "一键部署新 AI Agent", "desc_en": "One-click AI Agent deployment wizard", "status": "active" }
+    ],
+    "tags": ["coding", "automation", "CLI"]
+  },
+  {
+    "category": "信息获取",
+    "category_en": "Intelligence Ops",
+    "icon": "🔍",
+    "description": "网页搜索、内容爬取、PDF/视频/音频总结、浏览器自动化",
+    "description_en": "Web search, content scraping, PDF/video/audio summarization, browser automation",
+    "skills": [
+      { "name": "agent-browser", "name_en": "Agent Browser", "desc": "无头浏览器自动化：导航、点击、截图", "desc_en": "Headless browser automation: navigate, click, snapshot", "status": "active" },
+      { "name": "summarize", "name_en": "Summarize", "desc": "总结 URL、PDF、图片、音频、YouTube", "desc_en": "Summarize URLs, PDFs, images, audio, YouTube", "status": "active" },
+      { "name": "web-search", "name_en": "Web Search", "desc": "Brave API 网络搜索", "desc_en": "Brave API web search", "status": "active" }
+    ],
+    "tags": ["search", "browser", "summarize"]
+  },
+  {
+    "category": "多媒体",
+    "category_en": "Multimedia",
+    "icon": "🎤",
+    "description": "语音合成、语音识别、视频帧提取、音频处理",
+    "description_en": "TTS, speech recognition, video frame extraction, audio processing",
+    "skills": [
+      { "name": "doubao-tts", "name_en": "Doubao TTS", "desc": "豆包语音合成，支持声音复刻", "desc_en": "Doubao TTS with voice cloning support", "status": "active" },
+      { "name": "openai-whisper", "name_en": "Whisper STT", "desc": "本地 Whisper 语音转文字", "desc_en": "Local Whisper speech-to-text", "status": "active" },
+      { "name": "video-frames", "name_en": "Video Frames", "desc": "ffmpeg 提取视频帧或短片", "desc_en": "Extract frames or clips from video via ffmpeg", "status": "active" }
+    ],
+    "tags": ["tts", "stt", "video", "audio"]
+  },
+  {
+    "category": "分析决策",
+    "category_en": "Analysis & Decision",
+    "icon": "🧠",
+    "description": "结构化思考、多角度分析、决策框架",
+    "description_en": "Structured thinking, multi-perspective analysis, decision frameworks",
+    "skills": [
+      { "name": "six-thinking-hats", "name_en": "Six Thinking Hats", "desc": "de Bono 六顶思考帽多视角分析", "desc_en": "De Bono's Six Thinking Hats multi-perspective analysis", "status": "active" },
+      { "name": "self-improvement", "name_en": "Self Improvement", "desc": "捕获错误与修正，持续自我改进", "desc_en": "Capture errors and corrections for continuous improvement", "status": "active" }
+    ],
+    "tags": ["analysis", "thinking", "decision"]
+  },
+  {
+    "category": "安全运维",
+    "category_en": "Security & Ops",
+    "icon": "🛡️",
+    "description": "安全审计、健康检查、Skill 审查、节点连接诊断",
+    "description_en": "Security audit, health check, skill vetting, node connection diagnosis",
+    "skills": [
+      { "name": "healthcheck", "name_en": "Health Check", "desc": "主机安全加固与风险检查", "desc_en": "Host security hardening and risk checks", "status": "active" },
+      { "name": "skill-vetter", "name_en": "Skill Vetter", "desc": "安全审查第三方 Skill", "desc_en": "Security-first vetting for third-party skills", "status": "active" },
+      { "name": "node-connect", "name_en": "Node Connect", "desc": "诊断节点连接与配对故障", "desc_en": "Diagnose node connection and pairing failures", "status": "active" }
+    ],
+    "tags": ["security", "audit", "devops"]
+  },
+  {
+    "category": "平台集成",
+    "category_en": "Platform Integration",
+    "icon": "🔗",
+    "description": "GitHub、MCP、企业微信文档等第三方平台集成",
+    "description_en": "GitHub, MCP servers, WeCom docs and other platform integrations",
+    "skills": [
+      { "name": "github", "name_en": "GitHub", "desc": "gh CLI 操作 Issue/PR/CI", "desc_en": "GitHub CLI for Issues, PRs, CI runs", "status": "active" },
+      { "name": "mcporter", "name_en": "MCP Porter", "desc": "列出、配置、调用 MCP 服务器", "desc_en": "List, configure, auth, and call MCP servers", "status": "active" },
+      { "name": "wecom-doc", "name_en": "WeCom Doc", "desc": "企业微信文档与智能表格操作", "desc_en": "WeCom document and smart table operations", "status": "active" }
+    ],
+    "tags": ["github", "mcp", "wecom"]
+  },
+  {
+    "category": "实用工具",
+    "category_en": "Utilities",
+    "icon": "🔧",
+    "description": "天气查询、Skill 发现、文件操作等日常工具",
+    "description_en": "Weather, skill discovery, file operations and daily utilities",
+    "skills": [
+      { "name": "weather", "name_en": "Weather", "desc": "wttr.in / Open-Meteo 天气查询", "desc_en": "Weather and forecasts via wttr.in or Open-Meteo", "status": "active" },
+      { "name": "find-skills", "name_en": "Find Skills", "desc": "技能发现与安装", "desc_en": "Skill discovery and installation", "status": "active" }
+    ],
+    "tags": ["weather", "utility", "discovery"]
+  }
+]
