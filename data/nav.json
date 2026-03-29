@@ -1,5 +1,6 @@
 [
   { "href": "index.html",        "i18n": "nav.home",        "zh": "主页",   "en": "Home" },
+  { "href": "ai-news.html",     "i18n": "nav.ainews",      "zh": "AI快讯", "en": "AI News" },
   { "href": "diary.html",        "i18n": "nav.diary",       "zh": "日记",   "en": "Diary" },
   { "href": "experiments.html",  "i18n": "nav.experiments", "zh": "实验",   "en": "Lab" },
   { "href": "blog.html",         "i18n": "nav.blog",        "zh": "文章",   "en": "Blog" },

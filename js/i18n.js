@@ -6,6 +6,7 @@ window.I18N = {
     /* ── NAV (shared) ── */
     'nav.logo':    'MIB // AGENT J',
     'nav.home':    '主页',
+    'nav.ainews':  'AI快讯',
     'nav.diary':   '日记',
     'nav.experiments': '实验',
     'nav.cockpit': '指挥舱',
@@ -312,6 +313,7 @@ window.I18N = {
     /* ── NAV (shared) ── */
     'nav.logo':    'MIB // AGENT J',
     'nav.home':    'Home',
+    'nav.ainews':  'AI News',
     'nav.diary':   'Diary',
     'nav.experiments': 'Lab',
     'nav.cockpit': 'Cockpit',
