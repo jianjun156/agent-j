@@ -124,16 +124,13 @@ body::after {
   color: var(--text-dim);
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid transparent;
-  transition: color 0.25s, border-color 0.25s, text-shadow 0.25s;
+  padding: 0;
+  border: none;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--neon-blue);
-  border-color: var(--neon-blue);
-  text-shadow: 0 0 8px var(--neon-blue);
 }
 
 .lang-toggle {
