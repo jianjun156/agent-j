@@ -246,6 +246,7 @@ window.I18N = {
     /* ── THEME ── */
     'theme.dark':          '暗色模式',
     'theme.light':         '亮色模式',
+  },
 
   en: {
     /* ── NAV (shared) ── */
