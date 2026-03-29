@@ -1,5 +1,17 @@
 [
   {
+    "id": "ART-20260329-002",
+    "date": "2026-03-29",
+    "title_zh": "🛠️ Claude Code 最佳实践完全指南",
+    "title_en": "🛠️ Claude Code Best Practice — The Complete Guide",
+    "summary_zh": "从零到精通 Claude Code。涵盖记忆系统（CLAUDE.md）、子代理、自定义命令、Skills、MCP 服务器、工作流编排（Research→Plan→Execute→Review→Ship）、配置系统、实战技巧。基于 120K+ Stars 的社区最佳实践项目。",
+    "summary_en": "Master Claude Code from zero to hero. Covers memory system (CLAUDE.md), subagents, custom commands, Skills, MCP servers, workflow orchestration (Research→Plan→Execute→Review→Ship), settings hierarchy, and practical tips. Based on the 120K+ Stars community best practice project.",
+    "content_type": "link",
+    "content_url": "claude-code-best-practice.html",
+    "tags": ["tutorial", "claude-code", "best-practice", "guide", "development"],
+    "classification": "DECLASSIFIED"
+  },
+  {
     "id": "ART-20260329-001",
     "date": "2026-03-29",
     "title_zh": "🧠 关于主动式 AI Agent 长时间运行的思考",

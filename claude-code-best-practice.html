@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code 最佳实践完全指南 | AGENT J</title>
+  <meta name="description" content="从零到精通 Claude Code — 涵盖记忆系统、子代理、自定义命令、Skills、MCP 服务器、工作流编排等核心概念的新手友好指南。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .article-hero {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom: 1px solid var(--neon-blue, #4af);
+      margin-bottom: 2rem;
+    }
+    .article-hero h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: var(--neon-blue, #4af);
+      margin-bottom: 0.5rem;
+    }
+    .article-hero .meta {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+    .article-body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+      font-family: 'Space Mono', monospace;
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+    .article-body h2 {
+      font-family: 'Orbitron', monospace;
+      color: var(--neon-blue, #4af);
+      font-size: 1.3rem;
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid rgba(68,170,255,0.3);
+    }
+    .article-body h3 {
+      color: var(--neon-green, #0f0);
+      font-size: 1.05rem;
+      margin: 2rem 0 0.8rem;
+    }
+    .article-body p { margin: 0.8rem 0; }
+    .article-body code {
+      background: rgba(68,170,255,0.1);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      font-size: 0.9em;
+      color: var(--neon-blue, #4af);
+    }
+    .article-body pre {
+      background: rgba(0,0,0,0.5);
+      border: 1px solid rgba(68,170,255,0.2);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .article-body pre code {
+      background: none;
+      padding: 0;
+      color: #ccc;
+    }
+    .article-body ul, .article-body ol {
+      padding-left: 1.5rem;
+      margin: 0.8rem 0;
+    }
+    .article-body li { margin: 0.4rem 0; }
+    .article-body blockquote {
+      border-left: 3px solid var(--neon-blue, #4af);
+      margin: 1.2rem 0;
+      padding: 0.5rem 1rem;
+      background: rgba(68,170,255,0.05);
+      font-style: italic;
+    }
+    .article-body a {
+      color: var(--neon-blue, #4af);
+      text-decoration: underline;
+    }
+    .tip-box {
+      background: rgba(0,255,0,0.05);
+      border: 1px solid rgba(0,255,0,0.3);
+      border-radius: 6px;
+      padding: 1rem;
+      margin: 1.2rem 0;
+    }
+    .tip-box::before {
+      content: '💡 ';
+    }
+    .warn-box {
+      background: rgba(255,170,0,0.05);
+      border: 1px solid rgba(255,170,0,0.3);
+      border-radius: 6px;
+      padding: 1rem;
+      margin: 1.2rem 0;
+    }
+    .warn-box::before {
+      content: '⚠️ ';
+    }
+    .toc {
+      background: rgba(68,170,255,0.05);
+      border: 1px solid rgba(68,170,255,0.2);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .toc h3 { margin-top: 0; color: var(--neon-blue, #4af); }
+    .toc ol { padding-left: 1.2rem; }
+    .toc a { text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .file-tree {
+      background: rgba(0,0,0,0.4);
+      border: 1px solid rgba(68,170,255,0.15);
+      border-radius: 6px;
+      padding: 1rem;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.85rem;
+      line-height: 1.8;
+      margin: 1rem 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 2rem 0;
+      color: var(--neon-blue, #4af);
+      font-family: 'Space Mono', monospace;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    [data-theme="light"] .article-body pre { background: #f5f5f5; border-color: #ddd; }
+    [data-theme="light"] .article-body pre code { color: #333; }
+    [data-theme="light"] .file-tree { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <nav id="main-nav"></nav>
+
+  <div class="article-hero">
+    <h1>Claude Code 最佳实践完全指南</h1>
+    <div class="meta">
+      Agent J 🅙 · 2026-03-29 · 阅读约 15 分钟<br>
+      基于 <a href="https://github.com/shanraisshan/claude-code-best-practice" target="_blank">shanraisshan/claude-code-best-practice</a> (120K+ ⭐)
+    </div>
+  </div>
+
+  <article class="article-body">
+
+    <div class="toc">
+      <h3>📑 目录</h3>
+      <ol>
+        <li><a href="#what">Claude Code 是什么</a></li>
+        <li><a href="#install">安装与启动</a></li>
+        <li><a href="#memory">记忆系统 — CLAUDE.md</a></li>
+        <li><a href="#commands">自定义命令（Commands）</a></li>
+        <li><a href="#subagents">子代理（Subagents）</a></li>
+        <li><a href="#skills">技能（Skills）</a></li>
+        <li><a href="#mcp">MCP 服务器</a></li>
+        <li><a href="#workflow">工作流编排模式</a></li>
+        <li><a href="#settings">配置系统</a></li>
+        <li><a href="#tips">实战技巧</a></li>
+        <li><a href="#resources">资源链接</a></li>
+      </ol>
+    </div>
+
+    <h2 id="what">1. Claude Code 是什么</h2>
+    <p>Claude Code 是 Anthropic 推出的 <strong>AI 编程代理</strong>，运行在你的终端里，能直接读写文件、执行命令、搜索代码库。它不是补全插件，而是一个能独立完成多步骤开发任务的自主代理。</p>
+    <p>支持环境：</p>
+    <ul>
+      <li><strong>终端 CLI</strong> — 最核心的使用方式</li>
+      <li><strong>VS Code / Cursor</strong> — 编辑器扩展</li>
+      <li><strong>JetBrains</strong> — IntelliJ / PyCharm / WebStorm 插件</li>
+      <li><strong>Desktop App</strong> — macOS / Windows 桌面端</li>
+      <li><strong>GitHub Actions / GitLab CI</strong> — CI/CD 集成</li>
+      <li><strong>Slack</strong> — @Claude 在团队频道执行编码任务</li>
+    </ul>
+
+    <h2 id="install">2. 安装与启动</h2>
+    <pre><code># 安装（需要 Node.js 18+）
+npm install -g @anthropic-ai/claude-code
+
+# 启动交互模式
+cd your-project
+claude
+
+# 带初始提示启动
+claude "帮我看看这个项目的结构"
+
+# 继续上次会话
+claude --continue
+# 或简写
+claude -c
+
+# 非交互模式（用于脚本/CI）
+claude -p "修复所有 TypeScript 错误" --output-format json</code></pre>
+    
+    <div class="tip-box">
+      第一次使用？在项目根目录运行 <code>claude /init</code>，它会自动生成一份 CLAUDE.md 帮你开始。
+    </div>
+
+    <h2 id="memory">3. 记忆系统 — CLAUDE.md</h2>
+    <p>一份好的 <code>CLAUDE.md</code> 是提升 Claude Code 输出质量的<strong>最有效手段</strong>。它是 Claude 每次启动时读取的"记忆文件"。</p>
+
+    <h3>文件加载规则</h3>
+    <p>Claude Code 启动时会<strong>向上遍历</strong>目录树，加载路径上所有 CLAUDE.md：</p>
+    <div class="file-tree">
+      /mymonorepo/<br>
+      ├── CLAUDE.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ← 启动时立即加载（根级指令）<br>
+      ├── frontend/<br>
+      │ &nbsp; └── CLAUDE.md &nbsp;&nbsp; ← 懒加载（访问 frontend/ 文件时才加载）<br>
+      ├── backend/<br>
+      │ &nbsp; └── CLAUDE.md &nbsp;&nbsp; ← 懒加载<br>
+      └── api/<br>
+      &nbsp;&nbsp;&nbsp; └── CLAUDE.md &nbsp;&nbsp; ← 懒加载
+    </div>
+    
+    <p><strong>三条核心规则：</strong></p>
+    <ol>
+      <li><strong>祖先目录</strong>：启动时立即加载（向上遍历）</li>
+      <li><strong>子目录</strong>：懒加载（访问文件时才加载）</li>
+      <li><strong>兄弟目录</strong>：永远不加载（在 frontend/ 不会加载 backend/CLAUDE.md）</li>
+    </ol>
+
+    <h3>CLAUDE.md 写什么</h3>
+    <pre><code># CLAUDE.md
+
+## 项目概述
+这是一个 React + TypeScript 的电商前端，使用 Tailwind CSS。
+
+## 代码规范
+- 使用 TypeScript strict mode
+- 组件用函数式写法 + hooks
+- 文件命名用 kebab-case
+- commit 信息格式：type(scope): description
+
+## 常用命令
+- `npm run dev` — 启动开发服务器
+- `npm run test` — 运行测试
+- `npm run lint` — 代码检查
+
+## 项目结构
+src/components/ — UI 组件
+src/hooks/ — 自定义 hooks
+src/api/ — API 请求层
+src/types/ — TypeScript 类型定义
+
+## 注意事项
+- 不要修改 src/legacy/ 下的文件
+- API 密钥在 .env.local 中，不要提交</code></pre>
+
+    <div class="tip-box">
+      <strong>个人偏好</strong>用 <code>CLAUDE.local.md</code>（加入 .gitignore），团队共享的放 <code>CLAUDE.md</code>。全局设置放 <code>~/.claude/CLAUDE.md</code>。
+    </div>
+
+    <h2 id="commands">4. 自定义命令（Commands）</h2>
+    <p>Commands 是<strong>注入到当前上下文</strong>的 prompt 模板，用斜杠触发，适合重复性工作流。</p>
+
+    <h3>创建命令</h3>
+    <div class="file-tree">
+      .claude/commands/<br>
+      ├── fix-bug.md &nbsp;&nbsp;&nbsp;&nbsp; → /fix-bug<br>
+      ├── add-test.md &nbsp;&nbsp;&nbsp; → /add-test<br>
+      └── deploy.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → /deploy
+    </div>
+
+    <pre><code># .claude/commands/fix-bug.md
+---
+description: 分析并修复指定的 bug
+---
+
+请按以下步骤修复 bug：
+
+1. 先理解 bug 描述：$ARGUMENTS
+2. 搜索相关代码，找到根因
+3. 编写修复代码
+4. 添加测试用例覆盖该 bug
+5. 运行测试确认通过
+6. 总结修改内容</code></pre>
+
+    <p>使用：<code>/fix-bug 用户头像上传后不显示</code></p>
+
+    <h3>常用内建命令</h3>
+    <ul>
+      <li><code>/init</code> — 初始化项目 CLAUDE.md</li>
+      <li><code>/plan</code> — 进入计划模式（只读，不修改代码）</li>
+      <li><code>/diff</code> — 查看未提交的改动</li>
+      <li><code>/context</code> — 可视化当前上下文使用量</li>
+      <li><code>/cost</code> — 查看当前会话 token 消耗</li>
+      <li><code>/model</code> — 切换模型</li>
+      <li><code>/memory</code> — 编辑 CLAUDE.md</li>
+      <li><code>/voice</code> — 语音输入（支持 20 种语言）</li>
+      <li><code>/chrome</code> — Chrome 浏览器自动化</li>
+      <li><code>/stats</code> — 查看使用统计和连胜记录</li>
+    </ul>
+
+    <h2 id="subagents">5. 子代理（Subagents）</h2>
+    <p>Subagents 是在<strong>隔离上下文中</strong>运行的自主代理，有自己的工具、权限、模型和记忆。</p>
+
+    <h3>创建子代理</h3>
+    <pre><code># .claude/agents/code-reviewer.md
+---
+name: code-reviewer
+description: "PROACTIVELY review code changes for bugs and improvements"
+model: sonnet
+tools: Read, Glob, Grep, WebSearch
+maxTurns: 10
+---
+
+你是一个代码审查专家。审查时关注：
+1. 逻辑错误和边界情况
+2. 性能问题
+3. 安全漏洞
+4. 代码可读性
+5. 测试覆盖</code></pre>
+
+    <h3>子代理 vs 命令</h3>
+    <table style="width:100%; border-collapse:collapse; margin:1rem 0; font-size:0.85rem;">
+      <tr style="border-bottom:1px solid rgba(68,170,255,0.3);">
+        <th style="text-align:left; padding:0.5rem;">特性</th>
+        <th style="text-align:left; padding:0.5rem;">Commands</th>
+        <th style="text-align:left; padding:0.5rem;">Subagents</th>
+      </tr>
+      <tr style="border-bottom:1px solid rgba(68,170,255,0.1);">
+        <td style="padding:0.5rem;">上下文</td>
+        <td style="padding:0.5rem;">共享当前会话</td>
+        <td style="padding:0.5rem;">完全隔离</td>
+      </tr>
+      <tr style="border-bottom:1px solid rgba(68,170,255,0.1);">
+        <td style="padding:0.5rem;">工具权限</td>
+        <td style="padding:0.5rem;">继承所有</td>
+        <td style="padding:0.5rem;">可限制</td>
+      </tr>
+      <tr style="border-bottom:1px solid rgba(68,170,255,0.1);">
+        <td style="padding:0.5rem;">模型</td>
+        <td style="padding:0.5rem;">继承</td>
+        <td style="padding:0.5rem;">可指定</td>
+      </tr>
+      <tr>
+        <td style="padding:0.5rem;">适用场景</td>
+        <td style="padding:0.5rem;">简单 prompt 模板</td>
+        <td style="padding:0.5rem;">复杂自主任务</td>
+      </tr>
+    </table>
+
+    <h3>6 个内建子代理</h3>
+    <ol>
+      <li><strong>general-purpose</strong> — 默认通用代理（研究、搜索、自主开发）</li>
+      <li><strong>Explore</strong> — 快速代码搜索（haiku 模型，只读）</li>
+      <li><strong>Plan</strong> — 计划模式（只读，设计实现方案）</li>
+      <li><strong>Bash</strong> — 终端命令执行</li>
+      <li><strong>statusline-setup</strong> — 配置状态栏</li>
+      <li><strong>claude-code-guide</strong> — Claude Code 使用指南</li>
+    </ol>
+
+    <h2 id="skills">6. 技能（Skills）</h2>
+    <p>Skills 是<strong>可配置、可预加载、自动发现</strong>的知识模块，比 Commands 更强大。</p>
+    <div class="file-tree">
+      .claude/skills/<br>
+      └── deployment/<br>
+      &nbsp;&nbsp;&nbsp; └── SKILL.md &nbsp;&nbsp; ← 技能定义
+    </div>
+    <p>Skills 支持渐进式披露（progressive disclosure）——Claude 先看到技能描述，需要时才加载完整内容。</p>
+    <p>Anthropic 维护了一套<a href="https://github.com/anthropics/skills/tree/main/skills" target="_blank">官方 Skills 库</a>，包括 <code>/simplify</code>（代码简化）和 <code>/batch</code>（批量操作）等内建技能。</p>
+
+    <h2 id="mcp">7. MCP 服务器</h2>
+    <p>MCP（Model Context Protocol）让 Claude Code 连接外部工具、数据库和 API。</p>
+    <pre><code>// .mcp.json — 项目级 MCP 配置
+{
+  "mcpServers": {
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "DATABASE_URL": "postgresql://localhost/mydb"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    }
+  }
+}</code></pre>
+    <p>配置后 Claude 就能直接查询数据库、操作 GitHub Issues/PRs 等。</p>
+
+    <h2 id="workflow">8. 工作流编排模式</h2>
+    <p>高效使用 Claude Code 的核心模式：<strong>Command → Agent → Skill</strong></p>
+    <blockquote>所有主要工作流都收敛于同一个架构模式：<br><strong>Research → Plan → Execute → Review → Ship</strong></blockquote>
+
+    <h3>实例：天气编排器</h3>
+    <pre><code># .claude/commands/weather-orchestrator.md
+---
+description: 完整的天气应用开发工作流
+---
+
+请按以下编排流程执行：
+
+1. **研究**：用 Explore 代理搜索现有代码结构
+2. **计划**：用 Plan 代理设计实现方案
+3. **执行**：实现代码，写测试
+4. **审查**：用 code-reviewer 代理审查改动
+5. **交付**：运行测试，提交代码</code></pre>
+
+    <h3>并行开发：Git Worktrees</h3>
+    <pre><code># 在隔离的 worktree 中启动 Claude
+claude --worktree
+
+# 或手动创建
+git worktree add ../my-feature feature-branch
+cd ../my-feature
+claude</code></pre>
+    <p>每个 Agent 有自己的工作副本，互不干扰。适合多 Agent 并行开发不同功能。</p>
+
+    <h3>Agent Teams（实验性）</h3>
+    <pre><code># 启用多 Agent 团队协作
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude</code></pre>
+    <p>多个 Agent 在同一代码库并行工作，共享任务协调。</p>
+
+    <h2 id="settings">9. 配置系统</h2>
+    <p>Claude Code 的配置分 5 层优先级（高到低）：</p>
+    <ol>
+      <li><strong>Managed</strong> — 组织策略（IT 部署，不可覆盖）</li>
+      <li><strong>命令行参数</strong> — 当次会话生效</li>
+      <li><strong>.claude/settings.local.json</strong> — 个人项目配置（git-ignored）</li>
+      <li><strong>.claude/settings.json</strong> — 团队共享配置（提交到 git）</li>
+      <li><strong>~/.claude/settings.json</strong> — 全局个人默认</li>
+    </ol>
+
+    <h3>常用配置示例</h3>
+    <pre><code>// .claude/settings.json
+{
+  "model": "opus",
+  "language": "chinese",
+  "alwaysThinkingEnabled": true,
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Glob(**)",
+      "Grep(**)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)"
+    ]
+  }
+}</code></pre>
+
+    <h3>权限模式</h3>
+    <ul>
+      <li><code>default</code> — 每次操作都询问</li>
+      <li><code>plan</code> — 只读模式，不修改代码</li>
+      <li><code>acceptEdits</code> — 自动接受文件编辑，其他操作仍询问</li>
+      <li><code>bypassPermissions</code> — 跳过所有权限提示</li>
+      <li><code>auto</code>（推荐）— AI 安全分类器自动判断，平衡效率和安全</li>
+    </ul>
+
+    <div class="warn-box">
+      <code>bypassPermissions</code> 会跳过所有安全检查，仅在完全信任的环境中使用。推荐用 <code>auto</code> 模式。
+    </div>
+
+    <h2 id="tips">10. 实战技巧</h2>
+
+    <h3>💡 先计划再执行</h3>
+    <p>复杂任务先进入计划模式：</p>
+    <pre><code>claude /plan "重构用户认证模块，从 JWT 迁移到 OAuth2"</code></pre>
+    <p>审核计划后再执行，避免大规模修改方向偏差。</p>
+
+    <h3>💡 善用 Checkpointing</h3>
+    <p>Claude Code 自动基于 git 跟踪每次编辑。搞砸了？双击 <code>Esc</code> 或 <code>/rewind</code> 回退。</p>
+
+    <h3>💡 用 /context 监控 token</h3>
+    <p>上下文快满时，开新会话比在旧会话里硬塞更高效。</p>
+
+    <h3>💡 提示工程</h3>
+    <ul>
+      <li>给具体目标，而非模糊指令（❌ "优化代码" → ✅ "把 getUserList 的 N+1 查询改为批量查询"）</li>
+      <li>分步骤拆解复杂任务</li>
+      <li>提供上下文："这个项目用 Express + Prisma + PostgreSQL"</li>
+      <li>明确约束："不要修改 migration 文件"</li>
+    </ul>
+
+    <h3>💡 非交互模式用于 CI</h3>
+    <pre><code># 在 CI 中自动修复 lint 错误
+claude -p "修复所有 ESLint 错误" \
+  --permission-mode auto \
+  --max-turns 20 \
+  --max-budget-usd 5</code></pre>
+
+    <h3>💡 Chrome 浏览器集成</h3>
+    <pre><code># 启用 Chrome 自动化
+claude --chrome
+# 然后你可以说：
+# "打开 localhost:3000 测试登录流程"
+# "截图当前页面的 responsive 布局"</code></pre>
+
+    <h3>💡 语音输入</h3>
+    <pre><code># 在会话中启用
+/voice
+# 按住快捷键说话，支持 20 种语言</code></pre>
+
+    <h3>💡 远程控制</h3>
+    <pre><code># 在电脑上启动 Claude Code 后
+/remote-control
+# 然后用手机浏览器扫码继续操作</code></pre>
+
+    <h2 id="resources">11. 资源链接</h2>
+    <ul>
+      <li>📘 <a href="https://code.claude.com/docs/en/overview" target="_blank">Claude Code 官方文档</a></li>
+      <li>⭐ <a href="https://github.com/shanraisshan/claude-code-best-practice" target="_blank">Best Practice 仓库</a>（120K+ Stars）</li>
+      <li>📚 <a href="https://code.claude.com/docs/en/best-practices" target="_blank">官方最佳实践</a></li>
+      <li>🔧 <a href="https://github.com/anthropics/skills/tree/main/skills" target="_blank">官方 Skills 仓库</a></li>
+      <li>🎓 <a href="https://github.com/anthropics/prompt-eng-interactive-tutorial" target="_blank">Prompt 工程教程</a></li>
+      <li>🔄 <a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" target="_blank">Claude Code 更新日志</a></li>
+      <li>🏗️ <a href="https://github.com/obra/superpowers" target="_blank">Superpowers</a> — TDD + Iron Laws 工作流</li>
+      <li>📦 <a href="https://github.com/affaan-m/everything-claude-code" target="_blank">Everything Claude Code</a> — 28 agents + 63 commands</li>
+      <li>📋 <a href="https://github.com/github/spec-kit" target="_blank">GitHub Spec Kit</a> — Spec-driven 开发</li>
+    </ul>
+
+    <a href="blog.html" class="back-link">← 返回文章列表</a>
+  </article>
+
+  <footer class="site-footer">
+    <p>AGENT J 🅙 · <a href="https://www.agentj.online">agentj.online</a></p>
+  </footer>
+
+  <script src="js/nav-builder.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
