@@ -209,6 +209,116 @@
       color: rgba(255,60,60,0.6);
       background: rgba(255,60,60,0.03);
     }
+
+    /* ═══════════════════════════════════════════════
+       COCKPIT — Light Mode Overrides
+    ═══════════════════════════════════════════════ */
+    [data-theme="light"] .cockpit-header h1 {
+      color: #0f172a;
+      text-shadow: none;
+    }
+    [data-theme="light"] .cockpit-header .sub { color: #64748b; }
+    /* Canvas wrap */
+    [data-theme="light"] .cockpit-canvas-wrap {
+      border-color: rgba(40,60,100,0.2);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      background: #f0f2f8;
+    }
+    /* Description card */
+    [data-theme="light"] .cockpit-desc-card {
+      background: #ffffff;
+      border-color: rgba(40,60,100,0.12);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    [data-theme="light"] .cockpit-desc-card::before {
+      background: linear-gradient(180deg, var(--neon-blue), var(--neon-purple));
+    }
+    [data-theme="light"] .cockpit-desc-eyebrow {
+      color: var(--neon-blue);
+      text-shadow: none;
+    }
+    [data-theme="light"] .cockpit-desc-text {
+      color: #334155;
+      font-size: 0.85rem;
+    }
+    /* Status dots — no glow */
+    [data-theme="light"] .cockpit-stat-dot {
+      box-shadow: none !important;
+      animation: none;
+    }
+    [data-theme="light"] .cockpit-stat { color: #475569; font-size: 0.65rem; }
+    /* Live status panel header */
+    [data-theme="light"] [style*="color:var(--neon-cyan)"][style*="text-shadow"] {
+      text-shadow: none !important;
+    }
+    /* Stat cards */
+    [data-theme="light"] .cockpit-stat-card {
+      background: #ffffff;
+      border-color: rgba(40,60,100,0.12);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    [data-theme="light"] .cockpit-stat-card:hover {
+      border-color: rgba(29,91,191,0.25);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    [data-theme="light"] .cockpit-stat-val {
+      text-shadow: none !important;
+      color: var(--neon-blue);
+      font-size: 2rem;
+    }
+    [data-theme="light"] .cockpit-stat-label {
+      color: #475569;
+      font-size: 0.62rem;
+    }
+    [data-theme="light"] .cockpit-health-bar-wrap {
+      background: rgba(29,91,191,0.08);
+    }
+    [data-theme="light"] .cockpit-health-bar {
+      box-shadow: none;
+    }
+    /* Override inline neon colors on stat values */
+    [data-theme="light"] #ck-exp { color: #16a34a !important; }
+    [data-theme="light"] #ck-skills { color: #d97706 !important; }
+    [data-theme="light"] #ck-diary { color: var(--neon-purple) !important; }
+    /* Capabilities tags */
+    [data-theme="light"] .cockpit-cap-tag {
+      border-color: rgba(22,163,74,0.3);
+      color: #16a34a;
+      background: rgba(22,163,74,0.05);
+    }
+    [data-theme="light"] .cockpit-cap-tag.blocked {
+      border-color: rgba(220,38,38,0.25);
+      color: #dc2626;
+      background: rgba(220,38,38,0.04);
+    }
+    /* Activity items */
+    [data-theme="light"] .cockpit-activity-item {
+      border-bottom-color: rgba(40,60,100,0.08);
+      font-size: 0.6rem;
+    }
+    [data-theme="light"] .cockpit-activity-time { color: var(--neon-blue); opacity: 0.8; }
+    [data-theme="light"] .cockpit-activity-text { color: #334155; }
+    /* Panel labels */
+    [data-theme="light"] .cockpit-panel-label {
+      color: var(--neon-blue);
+      font-size: 0.6rem;
+    }
+    /* Quick links */
+    [data-theme="light"] .cockpit-quick-link {
+      background: #ffffff;
+      border-color: rgba(40,60,100,0.12);
+      color: #334155;
+    }
+    [data-theme="light"] .cockpit-quick-link:hover {
+      border-color: rgba(29,91,191,0.3);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    /* Kill all text-shadow in cockpit */
+    [data-theme="light"] .cockpit-main * { text-shadow: none !important; }
+    /* Inline style overrides for the live status header */
+    [data-theme="light"] .cockpit-desc-section [style*="neon-cyan"] {
+      color: var(--neon-blue) !important;
+    }
   </style>
 </head>
 <body>

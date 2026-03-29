@@ -2013,12 +2013,11 @@ body,
 /* ── Nav Dropdown (desktop) ─────────────────────── */
 .nav-dropdown {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .nav-dropdown-trigger {
   /* inherits .nav-links a styles */
-  display: flex;
-  align-items: center;
-  gap: 0.15em;
   cursor: pointer;
 }
 .nav-dropdown-menu {
