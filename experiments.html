@@ -277,6 +277,138 @@
     @media (max-width: 400px) {
       .exp-grid { grid-template-columns: 1fr; }
     }
+
+    /* ═══════════════════════════════════════════════
+       EXPERIMENTS — Light Mode Overrides
+    ═══════════════════════════════════════════════ */
+    /* Header banner: green is unreadable on light bg */
+    [data-theme="light"] .exp-header-banner {
+      background: rgba(29,91,191,0.04);
+      border-bottom-color: rgba(29,91,191,0.12);
+      color: #475569;
+    }
+    /* Card backgrounds */
+    [data-theme="light"] .exp-card {
+      background: #ffffff;
+      border-color: rgba(40,60,100,0.12);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    [data-theme="light"] .exp-card:hover {
+      border-color: rgba(29,91,191,0.25);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    [data-theme="light"] .exp-card::before {
+      background: linear-gradient(180deg, var(--neon-blue), var(--neon-purple));
+    }
+    /* Status badges */
+    [data-theme="light"] .exp-status.active {
+      border-color: #16a34a;
+      color: #16a34a;
+    }
+    [data-theme="light"] .exp-status.complete {
+      border-color: var(--neon-blue);
+      color: var(--neon-blue);
+    }
+    /* Title and text — kill all text-shadow */
+    [data-theme="light"] .exp-title {
+      color: #0f172a;
+      text-shadow: none;
+    }
+    [data-theme="light"] .exp-section-label {
+      color: var(--neon-purple);
+      text-shadow: none;
+    }
+    [data-theme="light"] .exp-text {
+      color: #334155;
+      text-shadow: none;
+    }
+    /* Ratings bars: no glow */
+    [data-theme="light"] .exp-rating { color: #475569; }
+    [data-theme="light"] .exp-rating-bar { background: rgba(29,91,191,0.08); }
+    [data-theme="light"] .exp-rating-fill.fun {
+      background: linear-gradient(90deg, #16a34a, var(--neon-cyan));
+      box-shadow: none;
+    }
+    [data-theme="light"] .exp-rating-fill.tech {
+      background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+      box-shadow: none;
+    }
+    /* Gallery grid cards */
+    [data-theme="light"] .exp-grid-card {
+      background: #ffffff;
+      border-color: rgba(40,60,100,0.12);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    [data-theme="light"] .exp-grid-card:hover {
+      border-color: rgba(29,91,191,0.25);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    [data-theme="light"] .exp-grid-thumb-wrap {
+      background: rgba(40,60,100,0.03);
+      border-bottom-color: rgba(40,60,100,0.1);
+    }
+    [data-theme="light"] .exp-grid-svg-wrap {
+      background: radial-gradient(ellipse at center, rgba(29,91,191,0.04) 0%, transparent 70%);
+    }
+    [data-theme="light"] .exp-grid-svg-wrap svg {
+      filter: drop-shadow(0 0 6px rgba(29,91,191,0.15));
+    }
+    [data-theme="light"] .exp-grid-placeholder {
+      color: var(--neon-blue);
+      background: rgba(29,91,191,0.03);
+    }
+    [data-theme="light"] .exp-grid-title { color: #0f172a; }
+    [data-theme="light"] .exp-grid-meta { color: #64748b; }
+    /* Audio player */
+    [data-theme="light"] .exp-audio-player {
+      background: rgba(29,91,191,0.03);
+      border-color: rgba(29,91,191,0.12);
+    }
+    [data-theme="light"] .exp-audio-label { color: #475569; }
+    [data-theme="light"] .exp-audio-player audio { filter: none; }
+    /* Tag filter buttons */
+    [data-theme="light"] .tag-filter-btn {
+      color: #475569;
+      border-color: rgba(40,60,100,0.2);
+    }
+    [data-theme="light"] .tag-filter-btn:hover {
+      color: var(--neon-blue);
+      border-color: var(--neon-blue);
+    }
+    [data-theme="light"] .tag-filter-btn.active {
+      color: #ffffff;
+      background: var(--neon-blue);
+      border-color: var(--neon-blue);
+    }
+    /* View toggle */
+    [data-theme="light"] .view-btn { color: #475569; border-color: rgba(40,60,100,0.2); }
+    [data-theme="light"] .view-btn.active,
+    [data-theme="light"] .view-btn:hover {
+      color: var(--neon-blue);
+      border-color: var(--neon-blue);
+      background: rgba(29,91,191,0.05);
+    }
+    /* Experiment detail expanded section */
+    [data-theme="light"] .exp-detail-content {
+      color: #334155;
+      text-shadow: none;
+    }
+    /* Tags inside cards */
+    [data-theme="light"] .exp-card .tag,
+    [data-theme="light"] .exp-card [style*="border"] {
+      text-shadow: none;
+    }
+    /* Kill ALL remaining text-shadow and box-shadow glow in exp cards */
+    [data-theme="light"] .exp-card *,
+    [data-theme="light"] .exp-grid-card * {
+      text-shadow: none !important;
+    }
+    /* Tag search */
+    [data-theme="light"] .tl-tag-search {
+      background: rgba(255,255,255,0.9);
+      border-color: rgba(40,60,100,0.2);
+      color: #1e293b;
+    }
   </style>
 </head>
 <body>
