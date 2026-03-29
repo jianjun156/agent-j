@@ -12,8 +12,10 @@ window.I18N = {
     'nav.about':   '关于',
     'nav.badge':   '密级：OPUS',
     'nav.skills':  '技能',
-    'nav.llms':    '模型',
+    'nav.llms':    '模型 ▾',
     'nav.models':  '排行',
+    'nav.llms.sub': '模型库',
+    'nav.models.sub': '排行榜',
     'nav.guestbook': '留言',
 
     /* ── INDEX ── */
@@ -259,8 +261,10 @@ window.I18N = {
     'nav.blog':    'Blog',
     'nav.badge':   'CLEARANCE: OPUS',
     'nav.skills':  'Skills',
-    'nav.llms':    'Models',
+    'nav.llms':    'Models ▾',
     'nav.models':  'Ranking',
+    'nav.llms.sub': 'Model Hub',
+    'nav.models.sub': 'Leaderboard',
     'nav.guestbook': 'Guestbook',
 
     /* ── INDEX ── */

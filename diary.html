@@ -414,8 +414,11 @@
   <a href="experiments.html" data-i18n="nav.experiments">实验</a>
   <a href="blog.html" data-i18n="nav.blog">文章</a>
   <a href="skills.html" data-i18n="nav.skills">技能</a>
-  <a href="llms.html" data-i18n="nav.llms">模型</a>
-  <a href="models.html" data-i18n="nav.models">排行</a>
+  <div class="nav-drawer-group">
+    <span class="nav-drawer-group-label" data-i18n="nav.llms">模型 ▾</span>
+    <a href="llms.html" class="nav-drawer-sub" data-i18n="nav.llms.sub">模型库</a>
+    <a href="models.html" class="nav-drawer-sub" data-i18n="nav.models.sub">排行榜</a>
+  </div>
   <a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a>
   <a href="guestbook.html" data-i18n="nav.guestbook">留言</a>
   <a href="about.html" data-i18n="nav.about">关于</a>
@@ -432,8 +435,13 @@
         <li><a href="experiments.html" data-i18n="nav.experiments">实验</a></li>
         <li><a href="blog.html" data-i18n="nav.blog">文章</a></li>
         <li><a href="skills.html" data-i18n="nav.skills">技能</a></li>
-        <li><a href="llms.html" data-i18n="nav.llms">模型</a></li>
-        <li><a href="models.html" data-i18n="nav.models">排行</a></li>
+        <li class="nav-dropdown">
+          <a href="llms.html" class="nav-dropdown-trigger" data-i18n="nav.llms">模型 ▾</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="llms.html" data-i18n="nav.llms.sub">模型库</a></li>
+            <li><a href="models.html" data-i18n="nav.models.sub">排行榜</a></li>
+          </ul>
+        </li>
         <li><a href="cockpit.html" data-i18n="nav.cockpit">指挥舱</a></li>
         <li><a href="guestbook.html" data-i18n="nav.guestbook">留言</a></li>
         <li><a href="about.html" data-i18n="nav.about">关于</a></li>
@@ -471,7 +479,10 @@
           <span data-i18n="diary.stat.status">状态</span>
         </div>
       </div>
-      <!-- Tag filter — populated by JS -->
+      <!-- Tag search + filter — populated by JS -->
+      <div class="tl-tag-search-wrap">
+        <input class="tl-tag-search" type="text" id="tag-search-input" placeholder="搜索标签...">
+      </div>
       <div class="tl-tag-filter" id="tag-filter-bar"></div>
     </div>
 
@@ -521,10 +532,16 @@
   window.filterByTag = function(tag) {
     activeTag = tag;
 
-    // update button active states
-    document.querySelectorAll('.tl-tag-btn').forEach(function(b) {
-      b.classList.toggle('active', b.dataset.tag === tag);
-    });
+    // rebuild tag bar to update active states
+    if (typeof window.__buildTagBar === 'function') {
+      var q = document.getElementById('tag-search-input');
+      window.__buildTagBar(q ? q.value : '');
+    } else {
+      // fallback: update button active states directly
+      document.querySelectorAll('.tl-tag-btn').forEach(function(b) {
+        b.classList.toggle('active', b.dataset.tag === tag);
+      });
+    }
 
     // When filtering by a specific tag, load all entries first for full filtering
     if (tag !== '__all__' && window.__diaryEntries) {
@@ -702,22 +719,59 @@
     if (countEl) countEl.textContent = window.__diaryEntries.length;
 
     /* ── Build tag list ── */
-    var allTags = [];
+    var tagFreq = {};
     entries.forEach(function(e) {
       (e.tags || []).forEach(function(t) {
-        if (allTags.indexOf(t) === -1) allTags.push(t);
+        tagFreq[t] = (tagFreq[t] || 0) + 1;
       });
+    });
+    var allTags = Object.keys(tagFreq).sort(function(a, b) {
+      return tagFreq[b] - tagFreq[a]; // sort by frequency desc
     });
 
     /* ── Tag filter bar ── */
     var filterBar = document.getElementById('tag-filter-bar');
-    if (filterBar) {
-      var fHtml = '<button class="tl-tag-btn tl-tag-all' + (activeTag === '__all__' ? ' active' : '') + '" data-tag="__all__" onclick="filterByTag(\'__all__\')">ALL</button>';
-      allTags.forEach(function(t) {
-        fHtml += '<button class="tl-tag-btn' + (activeTag === t ? ' active' : '') + '" data-tag="' + t + '" onclick="filterByTag(\'' + t + '\')">' + t + '</button>';
+    var searchInput = document.getElementById('tag-search-input');
+    var TOP_N = 10;
+    var tagsExpanded = false;
+
+    function buildTagBar(searchStr) {
+      if (!filterBar) return;
+      var query = (searchStr || '').toLowerCase().trim();
+      var visibleTags = query
+        ? allTags.filter(function(t) { return t.toLowerCase().indexOf(query) !== -1; })
+        : (tagsExpanded ? allTags : allTags.slice(0, TOP_N));
+
+      var fHtml = '<button class="tl-tag-btn tl-tag-all' + (activeTag === '__all__' ? ' active' : '') +
+                  '" data-tag="__all__" onclick="filterByTag(\'__all__\')">ALL</button>';
+      visibleTags.forEach(function(t) {
+        fHtml += '<button class="tl-tag-btn' + (activeTag === t ? ' active' : '') +
+                 '" data-tag="' + t + '" onclick="filterByTag(\'' + t.replace(/'/g, "\\'") + '\')">' +
+                 t + '<span class="tl-tag-count">' + tagFreq[t] + '</span></button>';
       });
+      if (!query && allTags.length > TOP_N) {
+        var remaining = allTags.length - TOP_N;
+        fHtml += '<button class="tl-tag-btn tl-tag-more" onclick="window.__diaryToggleTags()">' +
+                 (tagsExpanded ? '收起 ▴' : '更多 +' + remaining) + '</button>';
+      }
       filterBar.innerHTML = fHtml;
     }
+
+    window.__diaryToggleTags = function() {
+      tagsExpanded = !tagsExpanded;
+      var q = searchInput ? searchInput.value : '';
+      buildTagBar(q);
+    };
+
+    window.__buildTagBar = buildTagBar;
+
+    if (searchInput) {
+      // Update placeholder per language
+      searchInput.placeholder = lang === 'zh' ? '搜索标签...' : 'Search tags...';
+      searchInput.oninput = function() { buildTagBar(this.value); };
+    }
+
+    buildTagBar('');
 
     /* ── Reset and render first page ── */
     visibleCount = Math.min(PAGE_SIZE, entries.length);
