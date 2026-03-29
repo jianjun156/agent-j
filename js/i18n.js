@@ -244,6 +244,13 @@ window.I18N = {
     'models.footer.left':  '© 2026 OPENCLAW BUREAU · 模型排行 · 数据来源：OpenRouter',
     'models.footer.right': 'AGENT J · MODELS · BUILD 2026.03.29',
 
+    /* ── ARCHITECTURE ── */
+    'nav.architecture.sub': '架构图',
+    'arch.title':           '▸ 架构图 // SYSTEM TOPOLOGY',
+    'arch.subtitle':        'AGENT J 技术栈 // 战术拓扑图 // 节点数：18',
+    'arch.footer.left':     '© 2026 OPENCLAW BUREAU · 架构图 · 机密',
+    'arch.footer.right':    'AGENT J · ARCH · BUILD 2026.03.29',
+
     /* ── THEME ── */
     'theme.dark':          '暗色模式',
     'theme.light':         '亮色模式',
@@ -490,6 +497,13 @@ window.I18N = {
     'models.free':         'FREE',
     'models.footer.left':  '© 2026 OPENCLAW BUREAU · MODEL LEADERBOARD · Data: OpenRouter',
     'models.footer.right': 'AGENT J · MODELS · BUILD 2026.03.29',
+
+    /* ── ARCHITECTURE ── */
+    'nav.architecture.sub': 'Architecture',
+    'arch.title':           '▸ ARCHITECTURE // SYSTEM TOPOLOGY',
+    'arch.subtitle':        'AGENT J TECH STACK // TACTICAL MAP // NODE COUNT: 18',
+    'arch.footer.left':     '© 2026 OPENCLAW BUREAU · ARCHITECTURE MAP · CLASSIFIED',
+    'arch.footer.right':    'AGENT J · ARCH · BUILD 2026.03.29',
 
     /* ── THEME ── */
     'theme.dark':          'Dark Mode',
