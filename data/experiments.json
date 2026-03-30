@@ -414,5 +414,40 @@
       "alt_zh": "Quine 衔尾蛇 — 自我复制的永恒循环",
       "alt_en": "Quine Ouroboros — The Eternal Cycle of Self-Replication"
     }
+  },
+  {
+    "id": "EXP-20260331-014",
+    "date": "2026-03-31",
+    "codename": "PRIME-SPIRAL",
+    "status": "COMPLETE",
+    "title_zh": "乌拉姆螺旋 — 素数排列中的神秘对角线",
+    "title_en": "Ulam Spiral — Mysterious Diagonals in Prime Number Arrangements",
+    "hypothesis_zh": "把正整数从 1 开始按螺旋形排列，标记其中的素数——这些看似随机的素数位置，是否真的会形成肉眼可见的对角线结构？这些对角线对应什么样的数学公式？",
+    "hypothesis_en": "Arrange positive integers in a spiral starting from 1, then mark the primes — do these seemingly random prime positions actually form visible diagonal structures? What mathematical formulas do these diagonals correspond to?",
+    "method_zh": "在 401×401 网格上生成乌拉姆螺旋：从中心 1 开始顺时针螺旋排列 160,801 个整数，用埃拉托斯特尼筛法标记素数。在 800×800 画布上渲染：每个素数为带辉光的彩色光点，颜色按距中心距离从青色→蓝紫→品红渐变。叠加对角线参考线和径向暗角效果。额外验证了欧拉著名的素数生成公式 n²+n+41 在前 200 个值中的命中率。全程零外部依赖，手写 PNG 编码器。",
+    "method_en": "Generate the Ulam Spiral on a 401×401 grid: integers 1 to 160,801 arranged in a clockwise spiral from center, primes marked via Sieve of Eratosthenes. Rendered on an 800×800 canvas: each prime as a glowing colored dot, color-graded by distance from center (cyan→blue-purple→magenta). Diagonal reference lines and radial vignette overlay. Additionally verified Euler's famous prime-generating formula n²+n+41 hitting 78% primes in first 200 values. Zero external dependencies, hand-rolled PNG encoder.",
+    "result_zh": "成功 ✅ — 176KB 的乌拉姆螺旋 PNG 清晰展现了素数分布中令人震惊的对角线结构。160,801 个整数中有 14,752 个素数（9.2%），但它们绝不是均匀散布的——主对角线上素数密度高达 22.7%，远超平均值的 2.5 倍！这些对角线对应二次多项式 n²+n+c 的值域，其中欧拉的 n²+n+41 最为著名——前 40 个值全是素数，前 200 个值中 78% 是素数。1963 年数学家乌拉姆在无聊的会议上随手涂鸦发现了这个现象，至今没人能完全解释为什么素数「偏爱」某些对角线。数学中最简单的对象——自然数和素数——藏着最深的谜。",
+    "result_en": "SUCCESS ✅ — A 176KB Ulam Spiral PNG reveals stunning diagonal structures in prime distribution. Of 160,801 integers, 14,752 are prime (9.2%), but they're far from uniformly scattered — the main diagonal has 22.7% prime density, 2.5× the average! These diagonals correspond to quadratic polynomials n²+n+c, with Euler's n²+n+41 being the most famous — all 40 initial values are prime, and 78% of the first 200 values are prime. Mathematician Ulam discovered this in 1963 while doodling during a boring meeting. To this day, no one can fully explain why primes 'prefer' certain diagonals. The simplest objects in math — natural numbers and primes — hide the deepest mysteries.",
+    "tags": [
+      "number-theory",
+      "prime-numbers",
+      "ulam-spiral",
+      "quadratic-polynomials",
+      "euler",
+      "sieve-of-eratosthenes",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "generative-art",
+      "unsolved-problems"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/ulam-spiral.png",
+      "alt_zh": "乌拉姆螺旋 — 160801 个数中素数的对角线之谜",
+      "alt_en": "Ulam Spiral — Diagonal Mystery of Primes Among 160,801 Numbers"
+    }
   }
 ]
