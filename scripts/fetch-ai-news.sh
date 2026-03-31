@@ -8,25 +8,18 @@ REPO="/Users/jianjun/.openclaw/workspace/agent-j"
 NEWS_DIR="$REPO/data/ai-news"
 mkdir -p "$NEWS_DIR"
 
-TODAY=$(date +%Y-%m-%d)
-MONTH=$(date +%Y-%m)
-JSON_FILE="$NEWS_DIR/$MONTH.json"
-NOW=$(date +%Y-%m-%dT%H:%M:%S+08:00)
+# 纯 Python 实现，避免 shell 变量嵌入 heredoc 的转义问题
+python3 << 'PYEOF'
+import json, urllib.request, datetime, os
 
-# 1. Fetch hotlist
-HOTLIST=$(curl -s "https://openclaw.36krcdn.com/media/hotlist/$TODAY/24h_hot_list.json" 2>/dev/null)
+REPO = "/Users/jianjun/.openclaw/workspace/agent-j"
+NEWS_DIR = os.path.join(REPO, "data", "ai-news")
+os.makedirs(NEWS_DIR, exist_ok=True)
 
-# 2. Fetch AI notes
-AINOTES=$(curl -s "https://openclaw.36krcdn.com/media/ainotes/$TODAY/ai_notes.json" 2>/dev/null)
-
-# 3. Merge all sources into monthly JSON with Python
-python3 - "$JSON_FILE" "$MONTH" "$NOW" "$TODAY" << PYEOF
-import json, sys, urllib.request
-
-json_file = sys.argv[1]
-month = sys.argv[2]
-now_str = sys.argv[3]
-today = sys.argv[4]
+today = datetime.date.today().strftime("%Y-%m-%d")
+month = datetime.date.today().strftime("%Y-%m")
+json_file = os.path.join(NEWS_DIR, f"{month}.json")
+now_str = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S+08:00")
 
 # Load existing
 try:
@@ -43,9 +36,10 @@ added = 0
 
 # --- Source 1: Hotlist ---
 try:
-    hotlist_raw = '''$HOTLIST'''
-    api_data = json.loads(hotlist_raw)
-    for item in api_data.get('data', []):
+    req = urllib.request.urlopen(
+        f"https://openclaw.36krcdn.com/media/hotlist/{today}/24h_hot_list.json", timeout=15)
+    hotlist = json.loads(req.read())
+    for item in hotlist.get('data', []):
         url = item.get('url', '')
         url_clean = url.split('?')[0]
         if not url_clean or url_clean in existing_urls:
@@ -66,14 +60,17 @@ try:
         })
         existing_urls.add(url_clean)
         added += 1
+    print(f"Hotlist: {added} new articles")
 except Exception as e:
     print(f"Hotlist error: {e}")
 
 # --- Source 2: AI Notes ---
+added_notes = 0
 try:
-    ainotes_raw = '''$AINOTES'''
-    notes = json.loads(ainotes_raw)
-    for n in notes[:15]:
+    req = urllib.request.urlopen(
+        f"https://openclaw.36krcdn.com/media/ainotes/{today}/ai_notes.json", timeout=15)
+    notes = json.loads(req.read())
+    for n in notes[:20]:
         note_url = n.get('noteUrl', '')
         url_clean = note_url.split('?')[0]
         if not url_clean or url_clean in existing_urls:
@@ -85,24 +82,26 @@ try:
             "source": "36Kr测评",
             "author": n.get('authorName', ''),
             "date": today,
-            "time": "12:00"
+            "time": "09:00"
         })
         existing_urls.add(url_clean)
-        added += 1
+        added_notes += 1
+    print(f"AI Notes: {added_notes} new articles")
 except Exception as e:
     print(f"AI Notes error: {e}")
 
-# Sort and save
+# Sort by date+time descending and save
 data['articles'].sort(key=lambda a: a['date'] + a.get('time', ''), reverse=True)
 data['lastUpdate'] = now_str
 
 with open(json_file, 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
-print(f"Added {added} new articles, total {len(data['articles'])}")
+total = added + added_notes
+print(f"Total added: {total}, all articles: {len(data['articles'])}")
 PYEOF
 
-# 4. Git commit + push (only if changes)
+# Git commit + push (only if changes)
 cd "$REPO"
 if git diff --quiet data/ai-news/ 2>/dev/null; then
   echo "No changes to commit"
