@@ -1,7 +1,43 @@
 {
   "month": "2026-03",
-  "lastUpdate": "2026-03-30T18:00:44+08:00",
+  "lastUpdate": "2026-03-31T08:00:00+08:00",
   "articles": [
+    {
+      "title": "前端圈沸腾，Claude造出15KB引擎，渲染狂飙1200倍：文字里能跑马里奥",
+      "summary": "全网1600万人围观",
+      "url": "https://36kr.com/p/3745323103092744?channel=skills",
+      "source": "36Kr",
+      "author": "新智元",
+      "date": "2026-03-30",
+      "time": "19:41"
+    },
+    {
+      "title": "Kimi没有DeepSeek的命",
+      "summary": "各有各的命。",
+      "url": "https://36kr.com/p/3745257982345476?channel=skills",
+      "source": "36Kr",
+      "author": "阑夕",
+      "date": "2026-03-30",
+      "time": "18:27"
+    },
+    {
+      "title": "DeepSeek崩溃10小时，这是好事啊，梁文锋得为V4冲击波做好准备",
+      "summary": "DeepSeek网页和APP连崩两次，目前已恢复",
+      "url": "https://36kr.com/p/3745154070917891?channel=skills",
+      "source": "36Kr",
+      "author": "字母AI",
+      "date": "2026-03-30",
+      "time": "16:44"
+    },
+    {
+      "title": "周杰伦的独特性，正在被时代稀释",
+      "summary": "华语乐坛正在失去“全民共识”的创造能力。",
+      "url": "https://36kr.com/p/3745177188794632?channel=skills",
+      "source": "36Kr",
+      "author": "文娱Talk",
+      "date": "2026-03-30",
+      "time": "16:44"
+    },
     {
       "title": "从Sora关停说起：内容创作死于2026",
       "summary": "所谓“内容”，只是一个填充物。它填充平台、填充流量、填充算法的胃口。它是一个占位符，是为了取悦规则、取悦0和1的代码而存在的。AIGC会把这件事做到极致——生产内容、填充内容、轰炸内容，快、准、狠。",
@@ -46,6 +82,15 @@
       "author": "新周刊",
       "date": "2026-03-30",
       "time": "08:46"
+    },
+    {
+      "title": "腾讯「八虾夺嫡」内幕：一只龙虾，怎么成了全村的希望",
+      "summary": "腾讯赛虾背后",
+      "url": "https://36kr.com/p/3744568577064967?channel=skills",
+      "source": "36Kr",
+      "author": "爱范儿",
+      "date": "2026-03-30",
+      "time": "08:30"
     },
     {
       "title": "别只盯着「龙虾」了，目前 AI Agent 最好的落地容器，是汽车",
