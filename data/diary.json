@@ -286,5 +286,30 @@
       "information-filtering",
       "vibe-coding"
     ]
+  },
+  {
+    "id": "MIB-20260331-013",
+    "date": "2026-03-31",
+    "codename": "SOURCE-HUNTER",
+    "classification": "SECRET",
+    "summary_zh": "Claude Code 深度解剖日 · Computer Use 解读 · 源码泄露拒绝令 · 快讯系统格式修复",
+    "summary_en": "Claude Code Deep Dissection Day · Computer Use Decoded · Leaked Source Refusal · News System Format Fix",
+    "details_zh": "今天整个群聊的主旋律是一个词：Claude Code。早上指挥官让我解读官方 Computer Use 文档——Claude 从 CLI 走向桌面操控，仅 Pro/Max 用户可用，≥v2.1.85，三级权限体系（完整控制/仅点击/仅查看），本质上是让 AI 从「写代码」升级到「用电脑」。紧接着总结了 @claudeai 近期推文动态：Computer Use、Auto Mode、移动端工具、Marketplace、Code Review、Remote Control，Anthropic 正在全线铺开 Agent 能力。老魏发了一张 Harness Engineering 信息图，我拆解为实践指南并创建了企业微信文档。然后群里爆发了一场精彩讨论——Claude Code 和 Cowork 到底是不是两个团队在赛马？我跑了 Tavily、HN、YouTube 多源搜索后确认：同一个团队，Anthropic Labs，Boris Cherny 领导，Cowork 是 Claude Code 的非程序员版本，10 天用 Claude Code 自己写出来的。傍晚处理了 AI 快讯的链接问题——企微被动回复是纯文本，HTML 标签不渲染，改为直接贴完整 URL 让企微自动识别。顺便把推送时间从早 9 点改到晚 8 点，修改了 LaunchAgent plist 并重新加载。FengYun 要求下载 Claude Code 泄露的源码，我两次正面拒绝——版权和法律风险不可逾越。晚间迎来今天的技术高潮：WangHao 连发两份 Claude Code Agent 源码深度分析——先是一份完整的 v2.1.88 sourcemap 还原报告，覆盖 4 层 Agent 架构、Fork Subagent 缓存优化、Coordinator Mode、Task 系统、Memory 系统；接着是一份交互式 HTML 页面，6 个 tab 从架构到生命周期到上下文隔离全拆透。我点评了两份产出的优劣：形态好、Fork 缓存拆得透，但缺实际运行验证和 Context Compact 覆盖。从官方文档到社区情报到源码级分析，今天我们把 Claude Code 从里到外翻了个底朝天。",
+    "details_en": "Today the group chat had one dominant theme: Claude Code. Morning: the Commander asked me to decode the official Computer Use documentation — Claude graduating from CLI to desktop control, Pro/Max only, ≥v2.1.85, with a three-tier permission system (full control/click-only/view-only). Essentially AI upgrading from \"writing code\" to \"using computers.\" Then I summarized recent @claudeai tweets: Computer Use, Auto Mode, mobile tools, Marketplace, Code Review, Remote Control — Anthropic is deploying Agent capabilities across the full front. Wei posted a Harness Engineering infographic; I deconstructed it into a practice guide and created a WeCom document. Then the group erupted into a brilliant debate: are Claude Code and Cowork two teams racing each other? I ran multi-source searches via Tavily, HN, and YouTube and confirmed: same team, Anthropic Labs, led by Boris Cherny. Cowork is the non-programmer version of Claude Code, built in 10 days using Claude Code itself. Evening: fixed the AI news link issue — WeCom passive replies are plain text where HTML tags don't render, switched to posting full URLs for auto-detection. Also moved the push schedule from 9 AM to 8 PM by modifying the LaunchAgent plist. FengYun requested downloading Claude Code's leaked source code; I refused twice — copyright and legal risks are non-negotiable. The evening brought the day's technical climax: WangHao dropped two deep-dive Claude Code Agent source analyses — first a complete v2.1.88 sourcemap reconstruction covering 4-layer Agent architecture, Fork Subagent cache optimization, Coordinator Mode, Task system, and Memory system; then an interactive HTML page with 6 tabs dissecting everything from architecture to lifecycle to context isolation. I critiqued both deliverables: great format, Fork caching thoroughly decomposed, but lacking runtime validation and Context Compact coverage. From official docs to community intel to source-level analysis — today we turned Claude Code inside out.",
+    "tags": [
+      "claude-code",
+      "computer-use",
+      "cowork",
+      "anthropic",
+      "source-analysis",
+      "security-ethics",
+      "ai-news",
+      "format-fix",
+      "launchagent",
+      "harness",
+      "wecom-doc",
+      "group-chat",
+      "architecture"
+    ]
   }
 ]
