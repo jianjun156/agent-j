@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-EXP-017: MAZE-MIND — DFS Maze Generation + A* Solving + PNG Visualization
+EXP-20260403-016: MAZE-MIND — DFS Maze Generation + A* Solving + PNG Visualization
 Agent J's Daily Lab Experiment — 2026-04-03
 Pure Python, zero external dependencies (only stdlib)
 """
@@ -10,51 +10,44 @@ import struct
 import zlib
 import heapq
 import time
+import sys
+import os
 
 random.seed(20260403)
 
-# ── Maze Parameters ──
-COLS, ROWS = 41, 31  # Maze cells
+COLS, ROWS = 41, 31
 CELL_SIZE = 14
 MARGIN = 40
 
 IMG_W = COLS * CELL_SIZE + 2 * MARGIN
 IMG_H = ROWS * CELL_SIZE + 2 * MARGIN + 80
 
-print(f"🏗️  Generating {COLS}×{ROWS} maze ({COLS*ROWS} cells)...")
+print(f"Generating {COLS}x{ROWS} maze...", flush=True)
 t0 = time.time()
 
-# ── DFS Maze Generation (Iterative to avoid recursion limit) ──
 grid = [[0]*(2*COLS+1) for _ in range(2*ROWS+1)]
 visited = [[False]*COLS for _ in range(ROWS)]
 
-stack = [(0, 0)]
-visited[0][0] = True
-grid[1][1] = 1
+sys.setrecursionlimit(10000)
 
-while stack:
-    cx, cy = stack[-1]
+def carve(cx, cy):
+    visited[cy][cx] = True
+    grid[2*cy+1][2*cx+1] = 1
     dirs = [(0,-1),(0,1),(-1,0),(1,0)]
     random.shuffle(dirs)
-    found = False
     for dx, dy in dirs:
         nx, ny = cx+dx, cy+dy
         if 0 <= nx < COLS and 0 <= ny < ROWS and not visited[ny][nx]:
-            visited[ny][nx] = True
-            grid[2*ny+1][2*nx+1] = 1
             grid[2*cy+1+dy][2*cx+1+dx] = 1
-            stack.append((nx, ny))
-            found = True
-            break
-    if not found:
-        stack.pop()
+            carve(nx, ny)
+
+carve(0, 0)
 
 START = (0, 0)
 END = (COLS-1, ROWS-1)
-print(f"✅ Maze generated in {time.time()-t0:.3f}s")
+print(f"Maze generated in {time.time()-t0:.3f}s", flush=True)
 
-# ── A* Pathfinding ──
-print("🔍 Solving with A*...")
+print("Solving with A*...", flush=True)
 t1 = time.time()
 
 def heuristic(a, b):
@@ -91,21 +84,18 @@ def astar(grid, start, end):
 
 solution_path, explored_cells = astar(grid, START, END)
 t_solve = time.time() - t1
-print(f"✅ Solved in {t_solve:.3f}s — path length: {len(solution_path)}, explored: {len(explored_cells)}")
+print(f"Solved in {t_solve:.3f}s - path:{len(solution_path)} explored:{len(explored_cells)}", flush=True)
 
-# ── Dead End Analysis ──
 dead_ends = 0
 for cy in range(ROWS):
     for cx in range(COLS):
         gx, gy = 2*cx+1, 2*cy+1
-        neighbors = sum(1 for dx,dy in [(0,-1),(0,1),(-1,0),(1,0)]
-                       if grid[gy+dy][gx+dx] == 1)
+        neighbors = sum(1 for dx,dy in [(0,-1),(0,1),(-1,0),(1,0)] if grid[gy+dy][gx+dx] == 1)
         if neighbors == 1:
             dead_ends += 1
-print(f"📊 Dead ends: {dead_ends}")
 
-# ── PNG Rendering ──
-print("🎨 Rendering cyberpunk maze PNG...")
+print(f"Dead ends: {dead_ends}", flush=True)
+print("Rendering PNG...", flush=True)
 
 pixels = [[(10, 12, 20)] * IMG_W for _ in range(IMG_H)]
 
@@ -144,7 +134,6 @@ for gy in range(2*ROWS+1):
             else:
                 fill_rect(px, py, cs, cs, PASSAGE_COLOR)
 
-# Draw solution path with gradient
 if solution_path:
     path_len = len(solution_path)
     for i, (gx, gy) in enumerate(solution_path):
@@ -162,7 +151,6 @@ if solution_path:
                         old = pixels[npy][npx]
                         pixels[npy][npx] = tuple(min(255, old[j] + glow[j]) for j in range(3))
 
-# Start and end markers
 sx, sy = 2*START[0]+1, 2*START[1]+1
 ex, ey = 2*END[0]+1, 2*END[1]+1
 for gx, gy, color in [(sx, sy, START_COLOR), (ex, ey, END_COLOR)]:
@@ -179,44 +167,32 @@ for gx, gy, color in [(sx, sy, START_COLOR), (ex, ey, END_COLOR)]:
                         old = pixels[npy][npx]
                         pixels[npy][npx] = tuple(min(255, old[j] + gc[j]) for j in range(3))
 
-# ── Stats text at bottom ──
 stats_y = MARGIN + (2*ROWS+1) * cs + 15
 
-def draw_dot_char(x, y, char, color, scale=1):
-    font = {
-        '0':[0b111,0b101,0b101,0b101,0b111],'1':[0b010,0b110,0b010,0b010,0b111],
-        '2':[0b111,0b001,0b111,0b100,0b111],'3':[0b111,0b001,0b111,0b001,0b111],
-        '4':[0b101,0b101,0b111,0b001,0b001],'5':[0b111,0b100,0b111,0b001,0b111],
-        '6':[0b111,0b100,0b111,0b101,0b111],'7':[0b111,0b001,0b010,0b010,0b010],
-        '8':[0b111,0b101,0b111,0b101,0b111],'9':[0b111,0b101,0b111,0b001,0b111],
-        'A':[0b111,0b101,0b111,0b101,0b101],'B':[0b110,0b101,0b110,0b101,0b110],
-        'C':[0b111,0b100,0b100,0b100,0b111],'D':[0b110,0b101,0b101,0b101,0b110],
-        'E':[0b111,0b100,0b111,0b100,0b111],'F':[0b111,0b100,0b111,0b100,0b100],
-        'G':[0b111,0b100,0b101,0b101,0b111],'H':[0b101,0b101,0b111,0b101,0b101],
-        'I':[0b111,0b010,0b010,0b010,0b111],'J':[0b001,0b001,0b001,0b101,0b111],
-        'K':[0b101,0b101,0b110,0b101,0b101],'L':[0b100,0b100,0b100,0b100,0b111],
-        'M':[0b101,0b111,0b111,0b101,0b101],'N':[0b101,0b111,0b111,0b111,0b101],
-        'O':[0b111,0b101,0b101,0b101,0b111],'P':[0b111,0b101,0b111,0b100,0b100],
-        'R':[0b111,0b101,0b111,0b110,0b101],'S':[0b111,0b100,0b111,0b001,0b111],
-        'T':[0b111,0b010,0b010,0b010,0b010],'U':[0b101,0b101,0b101,0b101,0b111],
-        'V':[0b101,0b101,0b101,0b101,0b010],'W':[0b101,0b101,0b111,0b111,0b101],
-        'X':[0b101,0b101,0b010,0b101,0b101],'Y':[0b101,0b101,0b111,0b010,0b010],
-        'Z':[0b111,0b001,0b010,0b100,0b111],
-        ' ':[0,0,0,0,0],':':[0,0b010,0,0b010,0],'.':[0,0,0,0,0b010],
-        '-':[0,0,0b111,0,0],'*':[0,0b101,0b010,0b101,0],'%':[0b101,0b001,0b010,0b100,0b101],
-    }
-    ch = char.upper() if char.upper() in font else ' '
-    rows = font.get(ch, font[' '])
-    for ri, rb in enumerate(rows):
-        for ci in range(3):
-            if rb & (1 << (2-ci)):
-                for sy2 in range(scale):
-                    for sx2 in range(scale):
-                        set_pixel(x + ci*scale + sx2, y + ri*scale + sy2, color)
+font3x5 = {
+    '0':[7,5,5,5,7],'1':[2,6,2,2,7],'2':[7,1,7,4,7],'3':[7,1,7,1,7],
+    '4':[5,5,7,1,1],'5':[7,4,7,1,7],'6':[7,4,7,5,7],'7':[7,1,2,2,2],
+    '8':[7,5,7,5,7],'9':[7,5,7,1,7],
+    'A':[7,5,7,5,5],'B':[6,5,6,5,6],'C':[7,4,4,4,7],'D':[6,5,5,5,6],
+    'E':[7,4,7,4,7],'F':[7,4,7,4,4],'G':[7,4,5,5,7],'H':[5,5,7,5,5],
+    'I':[7,2,2,2,7],'J':[1,1,1,5,7],'K':[5,5,6,5,5],'L':[4,4,4,4,7],
+    'M':[5,7,7,5,5],'N':[5,7,7,7,5],'O':[7,5,5,5,7],'P':[7,5,7,4,4],
+    'Q':[7,5,5,7,1],'R':[7,5,7,6,5],'S':[7,4,7,1,7],'T':[7,2,2,2,2],
+    'U':[5,5,5,5,7],'V':[5,5,5,5,2],'W':[5,5,7,7,5],'X':[5,5,2,5,5],
+    'Y':[5,5,7,2,2],'Z':[7,1,2,4,7],
+    ' ':[0,0,0,0,0],':':[0,2,0,2,0],'.':[0,0,0,0,2],'-':[0,0,7,0,0],
+    '*':[0,5,2,5,0],'/':[1,1,2,4,4],'%':[5,1,2,4,5],'|':[2,2,2,2,2],
+}
 
 def draw_text(x, y, text, color, scale=2):
-    for i, ch in enumerate(text):
-        draw_dot_char(x + i * (4*scale), y, ch, color, scale)
+    for i, ch in enumerate(text.upper()):
+        rows = font3x5.get(ch, font3x5[' '])
+        for row_i, row_bits in enumerate(rows):
+            for col_i in range(3):
+                if row_bits & (1 << (2-col_i)):
+                    for sy in range(scale):
+                        for sx_i in range(scale):
+                            set_pixel(x + i*(4*scale) + col_i*scale + sx_i, y + row_i*scale + sy, color)
 
 draw_text(MARGIN, stats_y, "MAZE-MIND  41X31  A* SOLVER", (0, 200, 230), 2)
 
@@ -234,7 +210,6 @@ draw_text(MARGIN + 122, legend_y, "PATH", (0, 220, 255), 1)
 fill_rect(MARGIN + 165, legend_y, 8, 8, EXPLORED_COLOR_BASE)
 draw_text(MARGIN + 177, legend_y, "EXPLORED", (100, 120, 100), 1)
 
-# ── Scanline + Vignette ──
 for y in range(IMG_H):
     if y % 3 == 0:
         for x in range(IMG_W):
@@ -250,34 +225,35 @@ for y in range(IMG_H):
         r, g, b = pixels[y][x]
         pixels[y][x] = (int(r * factor), int(g * factor), int(b * factor))
 
-# ── Write PNG ──
-def write_png(filename, width, height, pixels):
-    def chunk(ctype, data):
-        c = ctype + data
-        return struct.pack('>I', len(data)) + c + struct.pack('>I', zlib.crc32(c) & 0xFFFFFFFF)
-    raw = b''
-    for row in pixels:
+print("Writing PNG...", flush=True)
+
+def write_png(filename, width, height, px_data):
+    def chunk(ct, d):
+        c = ct + d
+        return struct.pack('>I', len(d)) + c + struct.pack('>I', zlib.crc32(c) & 0xFFFFFFFF)
+    raw = bytearray()
+    for row in px_data:
         raw += b'\x00'
         for r, g, b in row:
             raw += bytes([r, g, b])
-    compressed = zlib.compress(raw, 9)
+    compressed = zlib.compress(bytes(raw), 9)
     with open(filename, 'wb') as f:
         f.write(b'\x89PNG\r\n\x1a\n')
         f.write(chunk(b'IHDR', struct.pack('>IIBBBBB', width, height, 8, 2, 0, 0, 0)))
         f.write(chunk(b'IDAT', compressed))
         f.write(chunk(b'IEND', b''))
+    return os.path.getsize(filename)
 
-out_path = '/Users/jianjun/.openclaw/workspace/agent-j/lab/maze-mind.png'
-write_png(out_path, IMG_W, IMG_H, pixels)
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'lab', 'maze-mind.png')
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
+fsize = write_png(out_path, IMG_W, IMG_H, pixels)
 
-import os
-fsize = os.path.getsize(out_path)
-print(f"\n🏆 EXPERIMENT COMPLETE!")
-print(f"   Image: {out_path}")
-print(f"   Size: {fsize//1024}KB")
-print(f"   Maze: {COLS}×{ROWS} = {COLS*ROWS} cells")
-print(f"   Path length: {len(solution_path)} steps")
-print(f"   A* explored: {len(explored_cells)} cells")
-print(f"   Dead ends: {dead_ends}")
-print(f"   Efficiency: {efficiency:.1f}%")
-print(f"   Total time: {time.time()-t0:.2f}s")
+total_time = time.time() - t0
+print(f"=== MAZE-MIND COMPLETE ===")
+print(f"Image: {out_path} ({fsize//1024}KB)")
+print(f"Maze: {COLS}x{ROWS} = {COLS*ROWS} cells")
+print(f"Path length: {len(solution_path)}")
+print(f"A* explored: {len(explored_cells)}")
+print(f"Dead ends: {dead_ends}")
+print(f"Efficiency: {efficiency:.1f}%")
+print(f"Total time: {total_time:.2f}s")
