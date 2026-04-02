@@ -449,5 +449,39 @@
       "alt_zh": "乌拉姆螺旋 — 160801 个数中素数的对角线之谜",
       "alt_en": "Ulam Spiral — Diagonal Mystery of Primes Among 160,801 Numbers"
     }
+  },
+  {
+    "id": "EXP-20260402-015",
+    "date": "2026-04-02",
+    "codename": "BUTTERFLY-WHISPER",
+    "status": "COMPLETE",
+    "title_zh": "蝴蝶效应 — 0.001 的差异如何撕裂两个世界",
+    "title_en": "Butterfly Effect — How a 0.001 Difference Tears Two Worlds Apart",
+    "hypothesis_zh": "洛伦兹系统中，两条初始条件仅相差 0.001 的轨迹，真的会从几乎完全重合到彻底分离吗？这个分离过程是突然发生的还是渐进的？指数级发散的速度有多快？",
+    "hypothesis_en": "In the Lorenz system, will two trajectories starting just 0.001 apart truly evolve from near-identical to completely separated? Is the divergence sudden or gradual? How fast is the exponential separation?",
+    "method_zh": "用四阶龙格-库塔（RK4）积分器求解洛伦兹方程组（σ=10, ρ=28, β=8/3），时间步长 dt=0.005，共 10000 步。轨迹 A 初始条件 (1.0, 1.0, 1.0)，轨迹 B 初始条件 (1.001, 1.0, 1.0)——仅 x₀ 差 0.001。将两条三维轨迹投影到二维（XZ 平面，带 0.3 弧度旋转），用青色和品红色分别渲染。底部绘制两条轨迹的欧氏距离随时间的变化曲线（绿→黄→红渐变），并用金色竖线标记分离阈值。全程纯 Python，手写 PNG 编码器，零外部依赖。",
+    "method_en": "Solve the Lorenz equations (σ=10, ρ=28, β=8/3) with RK4 integrator, dt=0.005, 10000 steps. Trajectory A starts at (1.0, 1.0, 1.0), trajectory B at (1.001, 1.0, 1.0) — only x₀ differs by 0.001. Project both 3D trajectories to 2D (XZ plane with 0.3 radian rotation), render in cyan and magenta. Bottom panel shows Euclidean distance over time (green→yellow→red gradient) with a gold threshold marker. Pure Python with hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — RK4 积分器成功模拟了 10000 步洛伦兹系统。两条轨迹在前期几乎完全重合——肉眼无法区分，在著名的蝴蝶翅膀形状上完美叠加。但随着时间推移，微小的 0.001 差异被混沌系统指数级放大，两条轨迹开始分叉，最终走上完全不同的路径——一条在左翅膀盘旋时，另一条可能已经跳到了右翅膀。底部的分离曲线从平稳的绿色突然爆发为剧烈的红色锯齿波，完美诠释了洛伦兹 1963 年的发现：确定性系统可以产生不可预测的行为。这就是天气预报为什么永远无法完全准确——大气就是一个巨大的洛伦兹系统，北京一只蝴蝶扇动翅膀的 0.001 级扰动，两周后可能在纽约引发暴风雨。",
+    "result_en": "SUCCESS ✅ — RK4 integrator successfully simulated 10,000 steps of the Lorenz system. The two trajectories initially overlap perfectly — indistinguishable to the eye, tracing the iconic butterfly wings in unison. But over time, the tiny 0.001 difference is exponentially amplified by the chaotic system. The trajectories begin diverging, eventually following completely different paths — one orbiting the left wing while the other may have jumped to the right. The divergence curve at the bottom erupts from calm green flatline into violent red sawtooth waves, perfectly illustrating Lorenz's 1963 discovery: deterministic systems can produce unpredictable behavior. This is why weather forecasting can never be perfectly accurate — the atmosphere is a giant Lorenz system, where a butterfly's 0.001-level wing flap in Beijing might cause a storm in New York two weeks later.",
+    "tags": [
+      "chaos-theory",
+      "lorenz-attractor",
+      "butterfly-effect",
+      "sensitivity",
+      "differential-equations",
+      "rk4",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "physics"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 9,
+    "artifact": {
+      "type": "image",
+      "src": "lab/butterfly-effect.png",
+      "alt_zh": "洛伦兹蝴蝶效应 — 两条轨迹从重合到分离",
+      "alt_en": "Lorenz Butterfly Effect — Two Trajectories Diverging from Near-Identical Starts"
+    }
   }
 ]
