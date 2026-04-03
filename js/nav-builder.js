@@ -153,6 +153,218 @@
     }
   }
 
+  /* ════════════════════════════════
+     FULL-SITE SEARCH (Fuse.js)
+  ════════════════════════════════ */
+  let _fuse = null;
+  let _searchIndex = null;
+  let _fuseLoading = false;
+
+  function getLang() { return localStorage.getItem('mib-lang') || 'zh'; }
+
+  function getTypeLabel(type) {
+    const lang = getLang();
+    const map = {
+      diary:      lang === 'zh' ? '任务日志' : 'Diary',
+      experiment: lang === 'zh' ? '实验'     : 'Experiment',
+      article:    lang === 'zh' ? '文章'     : 'Article'
+    };
+    return map[type] || type;
+  }
+
+  async function loadFuse() {
+    if (_fuse) return _fuse;
+    if (_fuseLoading) return null;
+    _fuseLoading = true;
+
+    // Load Fuse.js from CDN
+    await new Promise((resolve, reject) => {
+      if (window.Fuse) return resolve();
+      const s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js';
+      s.onload = resolve;
+      s.onerror = reject;
+      document.head.appendChild(s);
+    });
+
+    // Load search index
+    const resp = await fetch('data/search-index.json?v=' + Date.now());
+    _searchIndex = await resp.json();
+
+    const lang = getLang();
+    const titleKey = lang === 'zh' ? 'title_zh' : 'title_en';
+    const contentKey = lang === 'zh' ? 'content_zh' : 'content_en';
+
+    _fuse = new Fuse(_searchIndex, {
+      keys: [
+        { name: titleKey, weight: 2 },
+        { name: contentKey, weight: 1 },
+        { name: 'tags', weight: 1.5 },
+        { name: 'codename', weight: 1 }
+      ],
+      threshold: 0.35,
+      includeMatches: true,
+      minMatchCharLength: 2
+    });
+
+    _fuseLoading = false;
+    return _fuse;
+  }
+
+  function createSearchModal() {
+    // Overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'search-overlay';
+    overlay.id = 'search-overlay';
+
+    const lang = getLang();
+    const placeholder = lang === 'zh'
+      ? '搜索日记、实验、文章...'
+      : 'Search diary, experiments, articles...';
+
+    overlay.innerHTML = `
+      <div class="search-container">
+        <div class="search-input-wrap">
+          <span class="search-input-icon">🔍</span>
+          <input class="search-input" id="search-input" type="text"
+            placeholder="${placeholder}" autocomplete="off" />
+          <span class="search-kbd">ESC</span>
+        </div>
+        <div class="search-results" id="search-results">
+          <div class="search-empty">
+            <span class="icon">🔍</span>
+            ${lang === 'zh' ? '输入关键词开始搜索' : 'Type to search'}
+          </div>
+        </div>
+        <div class="search-footer">POWERED BY FUSE.JS · AGENT J SEARCH</div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+
+    // Close on overlay click
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeSearch();
+    });
+
+    // ESC to close
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('open')) {
+        closeSearch();
+      }
+    });
+
+    // Debounced search
+    let _timer = null;
+    input.addEventListener('input', () => {
+      clearTimeout(_timer);
+      _timer = setTimeout(() => doSearch(input.value.trim()), 200);
+    });
+
+    return overlay;
+  }
+
+  async function doSearch(query) {
+    const results = document.getElementById('search-results');
+    if (!results) return;
+    const lang = getLang();
+
+    if (!query || query.length < 2) {
+      results.innerHTML = `<div class="search-empty"><span class="icon">🔍</span>${lang === 'zh' ? '输入关键词开始搜索' : 'Type to search'}</div>`;
+      return;
+    }
+
+    const fuse = await loadFuse();
+    if (!fuse) {
+      results.innerHTML = `<div class="search-empty"><span class="icon">⚠️</span>${lang === 'zh' ? '搜索索引加载中...' : 'Loading search index...'}</div>`;
+      return;
+    }
+
+    const titleKey = lang === 'zh' ? 'title_zh' : 'title_en';
+    const contentKey = lang === 'zh' ? 'content_zh' : 'content_en';
+    const hits = fuse.search(query, { limit: 15 });
+
+    if (hits.length === 0) {
+      results.innerHTML = `<div class="search-empty"><span class="icon">💭</span>${lang === 'zh' ? '未找到相关内容' : 'No results found'}</div>`;
+      return;
+    }
+
+    let html = '';
+    hits.forEach(hit => {
+      const item = hit.item;
+      const title = item[titleKey] || item.title_zh || '';
+      const content = item[contentKey] || item.content_zh || '';
+      const snippet = content.length > 120 ? content.substring(0, 120) + '…' : content;
+      const codename = item.codename ? `[${item.codename}] ` : '';
+
+      html += `<a class="search-result-item" href="${item.url}">
+        <div class="search-result-top">
+          <span class="search-result-type ${item.type}">${getTypeLabel(item.type)}</span>
+          <span class="search-result-date">${item.date || ''}</span>
+        </div>
+        <div class="search-result-title">${codename}${title}</div>
+        ${snippet ? `<div class="search-result-snippet">${snippet}</div>` : ''}
+      </a>`;
+    });
+
+    results.innerHTML = html;
+  }
+
+  function openSearch() {
+    let overlay = document.getElementById('search-overlay');
+    if (!overlay) overlay = createSearchModal();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      const input = document.getElementById('search-input');
+      if (input) input.focus();
+    }, 100);
+    // Preload Fuse
+    loadFuse();
+  }
+
+  function closeSearch() {
+    const overlay = document.getElementById('search-overlay');
+    if (overlay) {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+      const input = document.getElementById('search-input');
+      if (input) { input.value = ''; }
+      const results = document.getElementById('search-results');
+      const lang = getLang();
+      if (results) results.innerHTML = `<div class="search-empty"><span class="icon">🔍</span>${lang === 'zh' ? '输入关键词开始搜索' : 'Type to search'}</div>`;
+    }
+  }
+
+  // Expose globally
+  window.openSearch = openSearch;
+  window.closeSearch = closeSearch;
+
+  function initSearchButton() {
+    // Add search button to nav (before lang-toggle)
+    const langBtn = document.getElementById('lang-toggle');
+    if (!langBtn) return;
+
+    const btn = document.createElement('button');
+    btn.className = 'nav-search-btn';
+    btn.id = 'nav-search-btn';
+    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+    btn.innerHTML = `🔍 <span class="search-hint">${isMac ? '⌘K' : 'Ctrl+K'}</span>`;
+    btn.addEventListener('click', openSearch);
+    langBtn.parentNode.insertBefore(btn, langBtn);
+
+    // Cmd/Ctrl+K shortcut
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        openSearch();
+      }
+    });
+  }
+
   /* ── Init ── */
   async function init() {
     try {
@@ -164,6 +376,7 @@
       buildDrawerNav(items);
       initDropdownToggle();
       initHamburger();
+      initSearchButton();
       refreshI18n();
     } catch (err) {
       console.warn('[nav-builder] Failed to load nav.json, using static fallback:', err);

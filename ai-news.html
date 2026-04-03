@@ -221,10 +221,12 @@
       const sources = new Set(filtered.map(a => a.source));
       let html = '';
       filtered.forEach((a, i) => {
+        var likesStr = a.likes ? (' · ❤️ ' + (a.likes >= 1000 ? (a.likes/1000).toFixed(1)+'k' : a.likes)) : '';
+        var viewsStr = a.views ? (' · 👁️ ' + (a.views >= 1000000 ? (a.views/1000000).toFixed(1)+'M' : a.views >= 1000 ? (a.views/1000).toFixed(1)+'k' : a.views)) : '';
         html += '<li class="ainews-item">' +
           '<div class="ainews-item-title"><a href="' + a.url + '" target="_blank" rel="noopener">' + a.title + '</a></div>' +
           (a.summary ? '<div class="ainews-item-summary">' + a.summary + '</div>' : '') +
-          '<div class="ainews-item-meta"><span class="source">' + (a.source||'') + '</span> · ' + (a.time||'') + '</div>' +
+          '<div class="ainews-item-meta"><span class="source">' + (a.source||'') + '</span> · ' + (a.author||'') + ' · ' + (a.time||'') + likesStr + viewsStr + '</div>' +
           '</li>';
       });
       listEl.innerHTML = html;
