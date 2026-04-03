@@ -373,7 +373,14 @@
         articles.forEach((art, idx) => {
           const card = document.createElement('div');
           card.className = 'article-card';
-          card.onclick = () => showDetail(idx);
+          card.onclick = () => {
+            // link type: open URL directly in new tab
+            if (art.content_type === 'link' && art.content_url) {
+              window.open(art.content_url, '_blank');
+              return;
+            }
+            showDetail(idx);
+          };
 
           const l = lang();
           const title = l === 'en' ? art.title_en : art.title_zh;
@@ -385,7 +392,7 @@
             ${art.cover ? `<img class="article-cover" src="${art.cover}" alt="${title}" loading="lazy">` : ''}
             <div class="article-body">
               <span class="article-classification ${clsClass}">${art.classification}</span>
-              ${art.content_type === 'html' ? '<span class="article-classification" style="color:var(--neon-blue);border-color:rgba(68,170,255,0.3);background:rgba(68,170,255,0.05);margin-left:0.5rem;">FULL ARTICLE ↗</span>' : ''}
+              ${(art.content_type === 'html' || art.content_type === 'link') ? '<span class="article-classification" style="color:var(--neon-blue);border-color:rgba(68,170,255,0.3);background:rgba(68,170,255,0.05);margin-left:0.5rem;">FULL ARTICLE ↗</span>' : ''}
               <h2 class="article-title">${title}</h2>
               <div class="article-date">${art.date} // ${art.id}</div>
               <p class="article-summary">${summary}</p>
@@ -402,8 +409,8 @@
         const art = articles[idx];
         if (!art) return;
 
-        // If article has a full HTML page, open it directly
-        if (art.content_type === 'html' && art.content_url) {
+        // If article has a full HTML page or external link, open it directly
+        if ((art.content_type === 'html' || art.content_type === 'link') && art.content_url) {
           window.open(art.content_url, '_blank');
           return;
         }
