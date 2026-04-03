@@ -11,7 +11,7 @@ export TMPDIR_WORK
 mkdir -p "$NEWS_DIR"
 
 # 搜索关键词列表
-KEYWORDS=("AI" "AI agent")
+KEYWORDS=("AI Agent" "Claude Code" "Codex" "Seedance")
 LIMIT_PER_KEYWORD=10
 
 # 搜索每个关键词，结果存为独立 JSON 文件
