@@ -1,7 +1,117 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-03T18:01:04+08:00",
+  "lastUpdate": "2026-04-03T23:59:33+08:00",
   "articles": [
+    {
+      "title": "https://t.co/CCSaYHQJ2O",
+      "summary": "",
+      "url": "https://x.com/i/status/2040079034290409692",
+      "source": "X/Twitter",
+      "author": "@Kimi_Moonshot",
+      "date": "2026-04-03",
+      "time": "22:48",
+      "likes": 335,
+      "views": 15741
+    },
+    {
+      "title": "You can try it out here: https://t.co/00EUsZRcyi. Your First AI employee is free.",
+      "summary": "It’s so cool to see OpenClaw competitors. Thanks to the team for partnering with me.\n\nThey also offer over 100+ tools and 200+ LLMs with no API key setup, plus multiple agent creation. https://t.co/Tr…",
+      "url": "https://x.com/i/status/2040074548121342008",
+      "source": "X/Twitter",
+      "author": "@dr_cintas",
+      "date": "2026-04-03",
+      "time": "22:30",
+      "likes": 6,
+      "views": 631
+    },
+    {
+      "title": "Blink New just launched Blink Claw, it lets you run an entire team of AI employees which you can deploy in 60 secs.",
+      "summary": "Comes with 100+ connectors and 200+ LLMs that you can use without touching an API key.\n\n2. Here's an agent that scans the entire US stock market every single day https://t.co/gvASTY47vh",
+      "url": "https://x.com/i/status/2040074215563407613",
+      "source": "X/Twitter",
+      "author": "@dr_cintas",
+      "date": "2026-04-03",
+      "time": "22:29",
+      "likes": 5,
+      "views": 543
+    },
+    {
+      "title": "You can now set up and run OpenClaw without touching a terminal.",
+      "summary": "It takes just one click to set up everything automatically and get a personal AI assistant to work for you 24/7.\n\n5 insane use cases &amp; how to below:\n\n1. Agent that turns any brand URL into FULL ad…",
+      "url": "https://x.com/i/status/2040074133204017445",
+      "source": "X/Twitter",
+      "author": "@dr_cintas",
+      "date": "2026-04-03",
+      "time": "22:29",
+      "likes": 30,
+      "views": 2318
+    },
+    {
+      "title": "Open Multi-Agent 开放多智能体",
+      "summary": "构建能自动拆解目标的 AI 智能体团队。定义智能体的角色和工具，描述一个目标——框架自动规划任务图、调度依赖、并行执行。\n\n3 个运行时依赖，27 个源文件，一次 runTeam() 调用从目标到结果。\n\nhttps://t.co/ixKWVvOdyR",
+      "url": "https://x.com/i/status/2040054459943076135",
+      "source": "X/Twitter",
+      "author": "@QingQ77",
+      "date": "2026-04-03",
+      "time": "21:11",
+      "likes": 12,
+      "views": 729
+    },
+    {
+      "title": "推荐一个开源项目 ArcReel，一个由 AI Agent 驱动的视频生成工作台。",
+      "summary": "它把视频制作流程彻底打通：从 小说 → 角色/场景/道具设计 → 剧本 → 分镜 → 最终视频生成 全流程自动化，核心是通过多 Agent 协同完成创作任务，实现真正的“从文本到视频”。\nhttps://t.co/xo0jDnooVn https://t.co/peBStoAJBx",
+      "url": "https://x.com/i/status/2040050537530634329",
+      "source": "X/Twitter",
+      "author": "@grgerwcwetwet",
+      "date": "2026-04-03",
+      "time": "20:55",
+      "likes": 36,
+      "views": 2594
+    },
+    {
+      "title": "8 RAG architectures for AI Engineers:",
+      "summary": "(explained with usage)\n\n1) Naive RAG\n- Retrieves documents purely based on vector similarity between the query embedding and stored embeddings.\n- Works best for simple, fact-based queries where direct…",
+      "url": "https://x.com/i/status/2040050430890405931",
+      "source": "X/Twitter",
+      "author": "@akshay_pachaar",
+      "date": "2026-04-03",
+      "time": "20:54",
+      "likes": 92,
+      "views": 4054
+    },
+    {
+      "title": "Netflix just open-sourced VOID",
+      "summary": "A model that removes objects from video along with every physical interaction they caused.\n\nRemove a person holding a guitar and the guitar falls naturally. Remove hands and the objects they were touc…",
+      "url": "https://x.com/i/status/2040048122555179406",
+      "source": "X/Twitter",
+      "author": "@RoundtableSpace",
+      "date": "2026-04-03",
+      "time": "20:45",
+      "likes": 169,
+      "views": 50617
+    },
+    {
+      "title": "How Claude Code Works",
+      "summary": "Claude 代码的工作原理\n\n深入解读当前最成功的 AI 编程 Agent 的源码架构\n\nhttps://t.co/92B3yjuCZI https://t.co/EN06l30BsL",
+      "url": "https://x.com/i/status/2040015452743573838",
+      "source": "X/Twitter",
+      "author": "@QingQ77",
+      "date": "2026-04-03",
+      "time": "18:36",
+      "likes": 37,
+      "views": 2456
+    },
+    {
+      "title": "这位帅气法国小哥靠 5 个 AI 小产品，月赚 70万刀",
+      "summary": "实现躺赢，简直是人生赢家\n\n他是怎么做的？\n\n核心赚钱模型：SaaS订阅\n\n他所有的产品本质都是：\n\n按月收费（$10 / $29 / $99 这种）\n\n解决用户的痛点，用户持续用，就持续付钱\n\n• Rabbit AI → AI 做视频：40万刀/月\n• Outrank → SEO搞流量：20万刀/月\n• Super X → X涨粉：1.3万刀/月\n• Postsyncer → 可以一键发 10 …",
+      "url": "https://x.com/i/status/2040003050958643443",
+      "source": "X/Twitter",
+      "author": "@web3annie",
+      "date": "2026-04-03",
+      "time": "17:46",
+      "likes": 253,
+      "views": 24407
+    },
     {
       "title": "下坠的中产，正在批量逃离“陪读天堂”",
       "summary": "一场通往“教育乌托邦”的跨国围城。",
@@ -399,6 +509,39 @@
       "time": "08:12"
     },
     {
+      "title": "Pika just released real-time video chat.",
+      "summary": "You can send a Google Meet invite to your agent (OpenClaw, Claude, AI Self…) and have them join you on a real-time video call.\n\nWatch my agent book an appointment live for me https://t.co/P6wZVJF6aI",
+      "url": "https://x.com/i/status/2039845766638772549",
+      "source": "X/Twitter",
+      "author": "@dr_cintas",
+      "date": "2026-04-03",
+      "time": "07:21",
+      "likes": 541,
+      "views": 79346
+    },
+    {
+      "title": "AI Agents is a waste of time.",
+      "summary": "AI Agents = LLM + Data + Tools + Web\n\nCodex / Claude Code = the same thing (CLI Agents = good at reading files and coding).\n\nJust use that.\n\nBest agent = markdown file and scripts running through the …",
+      "url": "https://x.com/i/status/2039844205615292580",
+      "source": "X/Twitter",
+      "author": "@godofprompt",
+      "date": "2026-04-03",
+      "time": "07:15",
+      "likes": 47,
+      "views": 5234
+    },
+    {
+      "title": "We’re introducing Cursor 3. It is simpler, more powerful, and built for a world where all code is written by agents, while keeping the depth of a development environment. https://t.co/rXR9vaZDnO",
+      "summary": "",
+      "url": "https://x.com/i/status/2039768512894505086",
+      "source": "X/Twitter",
+      "author": "@cursor_ai",
+      "date": "2026-04-03",
+      "time": "02:14",
+      "likes": 7160,
+      "views": 1444410
+    },
+    {
       "title": "Anthropic一夜震撼升级：Claude获得「永久在线」，全球打工人变天",
       "summary": "Anthropic推出永久在线AI Conway，终结被动聊天时代。",
       "url": "https://36kr.com/p/3749600504660739?channel=skills",
@@ -712,6 +855,17 @@
       "author": "8点1氪",
       "date": "2026-04-02",
       "time": "08:09"
+    },
+    {
+      "title": "Hermes Agent is an INCREDIBLE AI agent",
+      "summary": "It's better than OpenClaw in some key ways, but does it replace it?\n\nIn this video I cover what Hermes agent is, how to use it, workflows that will explode your productivity, and if it's the OpenClaw …",
+      "url": "https://x.com/i/status/2039364255699599867",
+      "source": "X/Twitter",
+      "author": "@AlexFinn",
+      "date": "2026-04-01",
+      "time": "23:28",
+      "likes": 1112,
+      "views": 112896
     },
     {
       "title": "AI时代，教育何往？",
