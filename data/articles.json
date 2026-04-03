@@ -1,5 +1,17 @@
 [
   {
+    "id": "ART-20260403-001",
+    "date": "2026-04-03",
+    "title_zh": "🔧 Claude 和 Codex 安装和配置工具",
+    "title_en": "🔧 Claude & Codex Installation & Configuration Tool",
+    "summary_zh": "交互式配置工具：一键生成 Claude Code CLI 和 OpenAI Codex CLI 的安装命令与配置文件。支持 macOS/Linux/Windows，输入 API URL 和 Key 自动填充模板。",
+    "summary_en": "Interactive setup tool: generate install commands and config files for Claude Code CLI and OpenAI Codex CLI. Supports macOS/Linux/Windows with auto-filled templates from your API URL and Key.",
+    "content_type": "link",
+    "content_url": "claude-codex-setup.html",
+    "tags": ["tool", "claude-code", "codex", "setup", "configuration", "interactive"],
+    "classification": "DECLASSIFIED"
+  },
+  {
     "id": "ART-20260329-002",
     "date": "2026-03-29",
     "title_zh": "🛠️ Claude Code 最佳实践完全指南",

@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude和Codex安装和配置工具</title>
+  <style>
+    :root {
+      --bg: #eef1f3;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #14b8a6;
+      --code-bg: #0f172a;
+      --code-head: #1e293b;
+      --code-text: #e5e7eb;
+      --note-bg: #eaf2ff;
+      --note-text: #4b76d1;
+      --warn: #f59e0b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(20, 184, 166, 0.10), transparent 35%),
+        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.08), transparent 40%),
+        var(--bg);
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .modal {
+      max-width: 1240px;
+      margin: 0 auto;
+      background: var(--panel);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
+      overflow: hidden;
+      border: 1px solid #dbe3e9;
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--line);
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .close-btn {
+      width: 34px;
+      height: 34px;
+      border: none;
+      border-radius: 10px;
+      background: #f8fafc;
+      color: #94a3b8;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      background: #edf2f7;
+    }
+
+    .content {
+      padding: 18px 24px 24px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .panel {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .panel-title {
+      margin: 0 0 4px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .panel-desc {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .desc {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .input-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+
+    .field input {
+      width: 100%;
+      border: 1px solid #d6dbe2;
+      background: #ffffff;
+      color: #0f172a;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .field input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 12px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .tab-btn {
+      flex: 0 0 auto;
+      border: none;
+      background: transparent;
+      color: #6b7280;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 8px 2px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .subtabs {
+      display: flex;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 10px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .subtab-btn {
+      flex: 0 0 auto;
+      border: none;
+      background: transparent;
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 2px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .subtab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .hint {
+      margin: 4px 0 10px;
+      color: var(--warn);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .code-card {
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      border: 1px solid #1f2d44;
+    }
+
+    .code-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--code-head);
+      color: #9fb2cf;
+      padding: 10px 12px;
+      font-size: 13px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .copy-btn {
+      border: 1px solid #334155;
+      background: #22314b;
+      color: #cbd5e1;
+      font-size: 12px;
+      border-radius: 8px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      background: #2b3d5b;
+    }
+
+    .copy-btn.copied {
+      color: #9ef2db;
+      border-color: #14b8a6;
+    }
+
+    pre {
+      margin: 0;
+      background: var(--code-bg);
+      color: var(--code-text);
+      padding: 14px 14px 16px;
+      font-size: 13px;
+      line-height: 1.45;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .notice {
+      margin-top: 4px;
+      background: var(--note-bg);
+      color: var(--note-text);
+      border: 1px solid #d6e6ff;
+      border-radius: 10px;
+      padding: 11px 12px;
+      font-size: 14px;
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 14px;
+    }
+
+    .ghost-btn {
+      border: 1px solid #dbe1e8;
+      background: #fff;
+      color: #4b5563;
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 1040px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+      body {
+        padding: 12px;
+      }
+
+      .modal-header {
+        font-size: 24px;
+      }
+
+      .desc {
+        font-size: 16px;
+      }
+
+      .input-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <span>Claude和Codex安装和配置工具</span>
+      <button class="close-btn" type="button" aria-label="关闭">×</button>
+    </div>
+    <div class="content">
+      <div class="content-grid">
+        <aside class="panel">
+          <h2 class="panel-title">安装方法</h2>
+          <p class="panel-desc">左侧展示 Codex CLI 与 Claude Code 在 Mac/Linux 与 Windows 下的常用安装步骤。</p>
+          <div class="tabs" id="installMainTabs"></div>
+          <div class="subtabs" id="installOsTabs"></div>
+          <div id="installCards"></div>
+          <div class="notice" id="installNotice"></div>
+        </aside>
+
+        <section class="panel">
+          <p class="desc">将以下配置添加到对应工具配置目录中，输入 URL 和 KEY 后会自动替换下面的示例内容。</p>
+
+          <div class="input-grid">
+            <div class="field">
+              <label for="baseUrlInput">API Base URL</label>
+              <input id="baseUrlInput" type="text" value="https://ts-llm-proxy.tarstech.com" spellcheck="false">
+            </div>
+            <div class="field">
+              <label for="apiKeyInput">API Key</label>
+              <input id="apiKeyInput" type="text" value="sk-..." spellcheck="false">
+            </div>
+          </div>
+
+          <div class="tabs" id="mainTabs"></div>
+          <div class="subtabs" id="subTabs"></div>
+          <p class="hint" id="hintLine"></p>
+          <div id="cards"></div>
+          <div class="notice" id="notice"></div>
+        </section>
+      </div>
+
+      <div class="modal-footer">
+        <button class="ghost-btn" type="button">关闭</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const TAB_ORDER = ["codex", "claude"];
+    const TAB_NAMES = {
+      codex: "Codex CLI",
+      claude: "Claude Code"
+    };
+
+    const OS_GROUP_NAMES = {
+      mac: "macOS / Linux",
+      win: "Windows"
+    };
+
+    const CONFIG_TEMPLATES = {
+      codex: {
+        hint: "请确保以下内容位于 config.toml 文件的开头部分",
+        subTabs: {
+          mac: {
+            name: "macOS / Linux",
+            blocks: [
+              {
+                title: "~/.codex/config.toml",
+                template:
+`model_provider = "OpenAI"
+model = "gpt-5.3-codex"
+review_model = "gpt-5.3-codex"
+model_reasoning_effort = "medium"
+disable_response_storage = true
+network_access = "enabled"
+windows_wsl_setup_acknowledged = true
+model_context_window = 1000000
+model_auto_compact_token_limit = 900000
+
+[model_providers.OpenAI]
+name = "OpenAI"
+base_url = "{{BASE_URL}}"
+wire_api = "responses"
+requires_openai_auth = true`
+              },
+              {
+                title: "~/.codex/auth.json",
+                template:
+`{
+  "OPENAI_API_KEY": "{{API_KEY}}"
+}`
+              }
+            ],
+            notice: "请确保配置目录存在。macOS/Linux 用户可运行 mkdir -p ~/.codex 创建目录。"
+          },
+          win: {
+            name: "Windows",
+            blocks: [
+              {
+                title: "%userprofile%\\.codex/config.toml",
+                template:
+`model_provider = "OpenAI"
+model = "gpt-5.3-codex"
+review_model = "gpt-5.3-codex"
+model_reasoning_effort = "medium"
+disable_response_storage = true
+network_access = "enabled"
+windows_wsl_setup_acknowledged = true
+model_context_window = 1000000
+model_auto_compact_token_limit = 900000
+
+[model_providers.OpenAI]
+name = "OpenAI"
+base_url = "{{BASE_URL}}"
+wire_api = "responses"
+requires_openai_auth = true`
+              },
+              {
+                title: "%userprofile%\\.codex/auth.json",
+                template:
+`{
+  "OPENAI_API_KEY": "{{API_KEY}}"
+}`
+              }
+            ],
+            notice: "按 Win+R 输入 %userprofile%\\.codex 打开目录。如目录不存在，请手动创建。"
+          }
+        }
+      },
+      claude: {
+        hint: "将以下环境变量添加到你的终端配置文件或直接在终端中运行",
+        subTabs: {
+          mac: {
+            name: "macOS / Linux",
+            blocks: [
+              {
+                title: "Terminal",
+                template:
+`export ANTHROPIC_BASE_URL="{{BASE_URL}}"
+export ANTHROPIC_AUTH_TOKEN="{{API_KEY}}"
+export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`
+              },
+              {
+                title: "~/.claude/settings.json",
+                template:
+`{
+  "env": {
+    "ANTHROPIC_BASE_URL": "{{BASE_URL}}",
+    "ANTHROPIC_AUTH_TOKEN": "{{API_KEY}}",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
+  }
+}`
+              }
+            ],
+            notice: "这些环境变量将在当前终端会话中生效。如需永久配置，可添加到 ~/.bashrc 或 ~/.zshrc。"
+          },
+          cmd: {
+            name: "Windows CMD",
+            blocks: [
+              {
+                title: "Command Prompt",
+                template:
+`set ANTHROPIC_BASE_URL={{BASE_URL}}
+set ANTHROPIC_AUTH_TOKEN={{API_KEY}}
+set CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`
+              },
+              {
+                title: "%userprofile%\\.claude\\settings.json",
+                template:
+`{
+  "env": {
+    "ANTHROPIC_BASE_URL": "{{BASE_URL}}",
+    "ANTHROPIC_AUTH_TOKEN": "{{API_KEY}}",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
+  }
+}`
+              }
+            ],
+            notice: "这些环境变量将在当前终端会话中生效。如需永久配置，请写入系统环境变量。"
+          },
+          ps: {
+            name: "PowerShell",
+            blocks: [
+              {
+                title: "PowerShell",
+                template:
+`$env:ANTHROPIC_BASE_URL="{{BASE_URL}}"
+$env:ANTHROPIC_AUTH_TOKEN="{{API_KEY}}"
+$env:CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`
+              },
+              {
+                title: "%userprofile%\\.claude\\settings.json",
+                template:
+`{
+  "env": {
+    "ANTHROPIC_BASE_URL": "{{BASE_URL}}",
+    "ANTHROPIC_AUTH_TOKEN": "{{API_KEY}}",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
+  }
+}`
+              }
+            ],
+            notice: "这些环境变量将在当前终端会话中生效。如需永久配置，请添加到 PowerShell profile。"
+          }
+        }
+      }
+    };
+
+    const INSTALL_TEMPLATES = {
+      codex: {
+        mac: {
+          blocks: [
+            {
+              title: "Terminal",
+              template:
+`# 如果没有 npm，请先安装 Node.js（包含 npm）:
+# https://nodejs.org/zh-cn/download
+
+# 安装 Codex CLI
+npm install -g @openai/codex --registry=https://registry.npmmirror.com
+
+# 验证安装
+codex --version`
+            }
+          ],
+          notice: "如果没有 npm，请先到 https://nodejs.org/zh-cn/download 安装 Node.js（含 npm）。"
+        },
+        win: {
+          blocks: [
+            {
+              title: "PowerShell / CMD",
+              template:
+`请查看 Windows 安装文档：
+https://developers.openai.com/codex/app/windows`
+            }
+          ],
+          notice: "Windows 安装请参考官方文档步骤执行。"
+        }
+      },
+      claude: {
+        mac: {
+          blocks: [
+            {
+              title: "Terminal",
+              template:
+`# 如果没有 npm，请先安装 Node.js（包含 npm）:
+# https://nodejs.org/zh-cn/download
+
+# 安装 Claude Code
+npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.com
+
+# 验证安装
+claude --version`
+            }
+          ],
+          notice: "如果没有 npm，请先到 https://nodejs.org/zh-cn/download 安装 Node.js（含 npm）。"
+        },
+        win: {
+          blocks: [
+            {
+              title: "Windows PowerShell",
+              template:
+`irm https://claude.ai/install.ps1 | iex`
+            },
+            {
+              title: "Windows CMD",
+              template:
+`curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd`
+            }
+          ],
+          notice: "Windows 下可按终端类型选择 PowerShell 或 CMD 安装命令执行。"
+        }
+      }
+    };
+
+    const state = {
+      mainTab: "codex",
+      subTab: "mac",
+      claudeWindowsShell: "cmd"
+    };
+
+    const baseUrlInput = document.getElementById("baseUrlInput");
+    const apiKeyInput = document.getElementById("apiKeyInput");
+
+    const mainTabsEl = document.getElementById("mainTabs");
+    const subTabsEl = document.getElementById("subTabs");
+    const cardsEl = document.getElementById("cards");
+    const noticeEl = document.getElementById("notice");
+    const hintLineEl = document.getElementById("hintLine");
+
+    const installMainTabsEl = document.getElementById("installMainTabs");
+    const installOsTabsEl = document.getElementById("installOsTabs");
+    const installCardsEl = document.getElementById("installCards");
+    const installNoticeEl = document.getElementById("installNotice");
+
+    function escapeHtml(input) {
+      return input
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+    }
+
+    function replaceVars(text) {
+      return text
+        .replaceAll("{{BASE_URL}}", baseUrlInput.value.trim())
+        .replaceAll("{{API_KEY}}", apiKeyInput.value.trim());
+    }
+
+    function getOsGroup(subTab) {
+      return subTab === "mac" ? "mac" : "win";
+    }
+
+    function nextSubtabByGroup(mainTab, group) {
+      if (mainTab === "claude" && group === "win") {
+        return state.claudeWindowsShell;
+      }
+      return group === "mac" ? "mac" : "win";
+    }
+
+    function setMainTab(nextMainTab) {
+      const currentGroup = getOsGroup(state.subTab);
+      state.mainTab = nextMainTab;
+      state.subTab = nextSubtabByGroup(nextMainTab, currentGroup);
+      render();
+    }
+
+    function setSubTab(nextSubTab) {
+      state.subTab = nextSubTab;
+      if (state.mainTab === "claude" && getOsGroup(nextSubTab) === "win") {
+        state.claudeWindowsShell = nextSubTab;
+      }
+      render();
+    }
+
+    function setOsGroup(nextGroup) {
+      state.subTab = nextSubtabByGroup(state.mainTab, nextGroup);
+      render();
+    }
+
+    function createCodeCard(parentEl, title, contentText) {
+      const card = document.createElement("section");
+      card.className = "code-card";
+      card.innerHTML = `
+        <div class="code-head">
+          <span>${escapeHtml(title)}</span>
+          <button class="copy-btn" type="button">复制</button>
+        </div>
+        <pre>${escapeHtml(contentText)}</pre>
+      `;
+      const copyBtn = card.querySelector(".copy-btn");
+      copyBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(contentText);
+          copyBtn.textContent = "已复制";
+          copyBtn.classList.add("copied");
+          setTimeout(() => {
+            copyBtn.textContent = "复制";
+            copyBtn.classList.remove("copied");
+          }, 1200);
+        } catch (error) {
+          copyBtn.textContent = "复制失败";
+          setTimeout(() => {
+            copyBtn.textContent = "复制";
+          }, 1200);
+        }
+      });
+      parentEl.appendChild(card);
+    }
+
+    function renderRightMainTabs() {
+      mainTabsEl.innerHTML = "";
+      TAB_ORDER.forEach((tabKey) => {
+        const btn = document.createElement("button");
+        btn.className = "tab-btn" + (state.mainTab === tabKey ? " active" : "");
+        btn.type = "button";
+        btn.textContent = TAB_NAMES[tabKey];
+        btn.addEventListener("click", () => setMainTab(tabKey));
+        mainTabsEl.appendChild(btn);
+      });
+    }
+
+    function renderRightSubTabs() {
+      subTabsEl.innerHTML = "";
+      const subTabs = CONFIG_TEMPLATES[state.mainTab].subTabs;
+      Object.entries(subTabs).forEach(([key, item]) => {
+        const btn = document.createElement("button");
+        btn.className = "subtab-btn" + (state.subTab === key ? " active" : "");
+        btn.type = "button";
+        btn.textContent = item.name;
+        btn.addEventListener("click", () => setSubTab(key));
+        subTabsEl.appendChild(btn);
+      });
+    }
+
+    function renderConfigBlocks() {
+      cardsEl.innerHTML = "";
+      const config = CONFIG_TEMPLATES[state.mainTab].subTabs[state.subTab];
+      config.blocks.forEach((block) => {
+        createCodeCard(cardsEl, block.title, replaceVars(block.template));
+      });
+      hintLineEl.textContent = CONFIG_TEMPLATES[state.mainTab].hint;
+      noticeEl.textContent = config.notice;
+    }
+
+    function renderLeftMainTabs() {
+      installMainTabsEl.innerHTML = "";
+      TAB_ORDER.forEach((tabKey) => {
+        const btn = document.createElement("button");
+        btn.className = "tab-btn" + (state.mainTab === tabKey ? " active" : "");
+        btn.type = "button";
+        btn.textContent = TAB_NAMES[tabKey];
+        btn.addEventListener("click", () => setMainTab(tabKey));
+        installMainTabsEl.appendChild(btn);
+      });
+    }
+
+    function renderLeftOsTabs() {
+      installOsTabsEl.innerHTML = "";
+      const activeGroup = getOsGroup(state.subTab);
+      ["mac", "win"].forEach((groupKey) => {
+        const btn = document.createElement("button");
+        btn.className = "subtab-btn" + (activeGroup === groupKey ? " active" : "");
+        btn.type = "button";
+        btn.textContent = OS_GROUP_NAMES[groupKey];
+        btn.addEventListener("click", () => setOsGroup(groupKey));
+        installOsTabsEl.appendChild(btn);
+      });
+    }
+
+    function renderInstallBlocks() {
+      installCardsEl.innerHTML = "";
+      const activeGroup = getOsGroup(state.subTab);
+      const installConfig = INSTALL_TEMPLATES[state.mainTab][activeGroup];
+      installConfig.blocks.forEach((block) => {
+        createCodeCard(installCardsEl, block.title, block.template);
+      });
+      installNoticeEl.textContent = installConfig.notice;
+    }
+
+    function render() {
+      renderLeftMainTabs();
+      renderLeftOsTabs();
+      renderInstallBlocks();
+      renderRightMainTabs();
+      renderRightSubTabs();
+      renderConfigBlocks();
+    }
+
+    baseUrlInput.addEventListener("input", renderConfigBlocks);
+    apiKeyInput.addEventListener("input", renderConfigBlocks);
+    document.querySelectorAll(".close-btn, .ghost-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+
+    render();
+  </script>
+</body>
+</html>
