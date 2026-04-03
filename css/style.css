@@ -1421,9 +1421,9 @@ body,
 
 /* ── Light mode variables ────────────────────────── */
 [data-theme="light"] {
-  --bg:           #f0f2f8;
+  --bg:           #eef1f5;
   --bg-card:      #ffffff;
-  --bg-card2:     #f8f9fc;
+  --bg-card2:     #f6f7fa;
   --border:       rgba(40, 60, 100, 0.2);
   --border-glow:  rgba(60, 100, 200, 0.4);
   --neon-blue:    #1d5bbf;
@@ -1438,11 +1438,14 @@ body,
 
 /* ── Light mode: nav background ─────────────────── */
 [data-theme="light"] .nav {
-  background: rgba(240, 242, 248, 0.9);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom-color: rgba(40, 60, 100, 0.12);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
 }
 [data-theme="light"] .nav.scrolled {
-  background: rgba(240, 242, 248, 0.97) !important;
-  border-bottom-color: rgba(60,100,200,0.2) !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-bottom-color: rgba(40, 60, 100, 0.15) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
 }
 
 /* ── Light mode: nav drawer ─────────────────────── */
@@ -1453,7 +1456,8 @@ body,
 
 /* ── Light mode: footer ─────────────────────────── */
 [data-theme="light"] .footer {
-  background: rgba(240, 242, 248, 0.7);
+  background: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid rgba(40, 60, 100, 0.1);
 }
 
 /* ── Light mode: terminal ───────────────────────── */
