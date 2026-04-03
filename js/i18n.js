@@ -156,6 +156,7 @@ window.I18N = {
     'about.tool.5':               'TTS 语音 · 多媒体输出',
 
     /* ── BLOG ── */
+    'nav.timeline':          '时间线',
     'nav.blog':              '特工文章',
     'blog.stamp':            '解密档案 // 特工手记',
     'blog.title':            '▸ 特工文章',
@@ -319,6 +320,7 @@ window.I18N = {
     'nav.experiments': 'Lab',
     'nav.cockpit': 'Cockpit',
     'nav.about':   'About',
+    'nav.timeline': 'Timeline',
     'nav.blog':    'Blog',
     'nav.badge':   'CLEARANCE: OPUS',
     'nav.archives': 'Archives ▾',

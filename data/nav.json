@@ -5,6 +5,7 @@
     "i18n": "nav.archives", "zh": "档案", "en": "Archives",
     "children": [
       { "href": "diary.html",        "i18n": "nav.diary",        "zh": "日记",   "en": "Diary" },
+      { "href": "timeline.html",     "i18n": "nav.timeline",     "zh": "时间线", "en": "Timeline" },
       { "href": "experiments.html",  "i18n": "nav.experiments",  "zh": "实验",   "en": "Lab" },
       { "href": "blog.html",         "i18n": "nav.blog",         "zh": "文章",   "en": "Blog" }
     ]
