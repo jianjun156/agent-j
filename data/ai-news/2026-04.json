@@ -1,7 +1,205 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-02T18:01:29+08:00",
+  "lastUpdate": "2026-04-03T08:00:01+08:00",
   "articles": [
+    {
+      "title": "AI文生图，文字即画笔",
+      "summary": "AI文生图在数字内容创作愈发普及的当下，AI文生图功能已成为普通人实现创意落地的核心工具。无需专业绘画功底，仅通过文字描述即可生成专属图像，这项功能的实用性与细节表现究竟如何？我以日常创作、自媒体配图、场景设计等真实需求为出发点，对主流AI",
+      "url": "https://36aidianping.com/note-detail/3568010593719204?channel=skills",
+      "source": "36Kr测评",
+      "author": "氪友0nfN",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "豆包hr视角锐评简历，这细节优化的太好了吧",
+      "summary": "马上要去面试了，怕简历不过关，让豆包以HR视角锐评我的简历，提的建议精准又专业，每一条都值得借鉴\n\n豆包直接揪出了我没注意的细节问题：标点符号中英文混用、英文缩写大小写不统一，这些小问题在HR眼里就是做事不严谨的直接体现；还有时间线漏洞，实",
+      "url": "https://36aidianping.com/note-detail/3568010593719206?channel=skills",
+      "source": "36Kr测评",
+      "author": "王w",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "DeepSeek AI 测评：校园学术党的文献工具",
+      "summary": "作为经常要和英文文献打交道的学生，我试过不少AI工具，DeepSeek算是目前用下来比较顺手的，功能比较相匹配的。\n对于我来说最好用的是它对英文材料的处理能力。读《nature》上的文献时，我把整篇PDF丢进去，翻译准确度很高，专业术语不会",
+      "url": "https://36aidianping.com/note-detail/3568010593719207?channel=skills",
+      "source": "36Kr测评",
+      "author": "大萝萝",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "豆包图片生成测评 看完不笑的可以把自己也加进去了",
+      "summary": "使用豆包生成搞笑风格的图片，具体提示词为:以动漫《恶搞之家》的画风和角色形象，如Peter，brain等人物诠释不同的历史重大事件，如拿破仑名画，攻克国会大厦等，生成九张图片。\n总体生成的结果看了属于给人气笑了的程度。第一个问题是重大历史事",
+      "url": "https://36aidianping.com/note-detail/3568010593719234?channel=skills",
+      "source": "36Kr测评",
+      "author": "Liumzx",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "无水印AI生图神器",
+      "summary": "这是一个初次登录就可以免费生成一张图的友好平台。\n\n优点：没有用过多提示词，生成的图片一样很逼真，最重要的是没有水印，适合用来做电子食谱的食谱小图。可以免费下载下载后的图片也没有水印。\n\n缺点：没有完全适配手机页面，上面的菜单栏堆叠在一起。",
+      "url": "https://36aidianping.com/note-detail/3568010593719209?channel=skills",
+      "source": "36Kr测评",
+      "author": "月桃",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "尝试理解豆包的第六天",
+      "summary": "        今天用豆包整理了一个用于生成视频的文本模板，生成的模板过长，我将它简化了一下\n1. 视频氛围(...) +主题 (...)，整体时长10秒，帧率30fps，画面比例16:9横屏\n\n2. 视频内容\n- 视频主人公：(...)\n",
+      "url": "https://36aidianping.com/note-detail/3568010593719210?channel=skills",
+      "source": "36Kr测评",
+      "author": "小八",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "【元宝派】我们是否需要群里有个AI（8）",
+      "summary": "哪些场景我们也许需要元宝派？\n当我和恋爱的 TA 聊天的时候。如果是和 Crush 聊天，或许有个调皮的元宝派会不错，可以活跃气氛，提供话题不至于冷场；亦或者给异地的情侣一个记录的同步平台，其提供的一起看一起听功能也可以覆盖微信无法做到的空",
+      "url": "https://36aidianping.com/note-detail/3568010593719211?channel=skills",
+      "source": "36Kr测评",
+      "author": "阿刘",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "DeepSeek用spss处理数据难题完美解决！",
+      "summary": "        对于一个刚接触spss这个软件的人来说，进行数据清洗处理并进行分析是比较困难的，找不到该如何去做，这个时候DeepSeek就派上用场了。\n        把数据上传给DeepSeek，并让他按照要求用spss这个软件进行数据",
+      "url": "https://36aidianping.com/note-detail/3568010593719212?channel=skills",
+      "source": "36Kr测评",
+      "author": "草莓糖葫芦",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "我再也不自己做PPT了！",
+      "summary": "测评15\n\n今天我试了一下轻竹办公，听说它制作PPT的功能也非常强大，今天发现确实不错。\n\n首先啊首先，它不用登陆和下载！（也可能我还没把PPT下载这个对我们来说还是非常友好的，可以免费使用！它的界面非常的简单，流程也非常非常的简便，你不需",
+      "url": "https://36aidianping.com/note-detail/3568010593719213?channel=skills",
+      "source": "36Kr测评",
+      "author": "LLL",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "3岁前的记忆为啥记不住？AI学习工具",
+      "summary": "这款产品是豆包APP内置的全学科学习助手，主打拍题答疑、作业批改、作文辅导等核心功能，覆盖小学到研究生全学段，下方导航栏对应五大核心功能入口，界面布局清晰，新手也能快速上手。\n\n今天重点测评它的核心实用功能：\n拍题答疑是它的标志性功能，入口",
+      "url": "https://36aidianping.com/note-detail/3568010593719214?channel=skills",
+      "source": "36Kr测评",
+      "author": "氪友niu",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "只凭AI可以当大触吗？",
+      "summary": "这个标题绝对会被很多真大触喷惨，今天来测评对比seedream4.5、智谱ai绘图模型、讯飞星火绘图模型、即梦AI绘图模型等四个模型对于特定游戏的特定风格绘图指定遵循，深度考察他们的多模态指令能力。prompt是绘制原神中刻晴的全身图草稿，",
+      "url": "https://36aidianping.com/note-detail/3568010593719233?channel=skills",
+      "source": "36Kr测评",
+      "author": "TigeronAI",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "教育研究数据报告的AI救星-轻竹",
+      "summary": " 一、核心功能\n轻竹PPT的核心功能围绕PPT生成与文档处理展开：可输入主题一键生成PPT，也能上传Word/PDF/TXT文档或通过链接转换PPT；支持文档摘要提取、智能写作，还提供PDF转Word、合并/拆分等文档处理工具。\n\n 二、使",
+      "url": "https://36aidianping.com/note-detail/3568010593719217?channel=skills",
+      "source": "36Kr测评",
+      "author": "ovoq",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "电商御用修图师，可灵AI给我的震撼",
+      "summary": "不算上跟甲方拉扯，以前我拍照，换背景、修瑕疵、做祛痘对比图，一张图起码半小时。现在可灵AI 3.0 Omni，不到两分钟直接给我省了百分之八十工作量。\n\n“产品替换+场景融合”应该是夯中之夯，只用几张不同角度的护肤品图和一张美容院场景，要求",
+      "url": "https://36aidianping.com/note-detail/3568010593719218?channel=skills",
+      "source": "36Kr测评",
+      "author": "iiix",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "猫箱使用",
+      "summary": "1.坦白说我以为猫箱是养猫的软件，没想到是和AI聊天，猫箱有个功能特别戳我语音畅聊不用打字，直接说话就行，而且角色会用对应的语气回你。晚上失眠的时候跟它唠两句，比刷短视频解压多了\n\n2.自由创作度很高，你可以捏一个自己喜欢的角色，从长相到说",
+      "url": "https://36aidianping.com/note-detail/3568010593719219?channel=skills",
+      "source": "36Kr测评",
+      "author": "幼儿园船长",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "论文润色封神！DS随心转让学术写作一键开挂",
+      "summary": "近期在学校的课业里涉及到论文的撰写，这个DS随心转可是帮了我大忙了！！！今天依旧从两方面展开我对他的评价。\n\n一方面是我对他的大大大好评，表现在首先我用他润色了我的论文初稿，我只能说效果是十分夯，语句的通顺程度提升很多，但又不会改的面目全非",
+      "url": "https://36aidianping.com/note-detail/3568010593719220?channel=skills",
+      "source": "36Kr测评",
+      "author": "养乐多蒙牛优益c",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "找工作查公司信息，用DeepSeek真的太省心了！",
+      "summary": "最近在找工作，每次面试前都要花大量时间查公司背景。试了用DeepSeek查公司信息，效率太高了，分享给正在求职的小伙伴们。\n只需要直接输入公司全称，比如我这次查的安徽图联科技有限公司，它就会自动梳理出完整的公司信息，不用自己再去各个平台零散",
+      "url": "https://36aidianping.com/note-detail/3568010593719221?channel=skills",
+      "source": "36Kr测评",
+      "author": "众乐乐",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "尝试理解豆包的第六天",
+      "summary": "         今天用豆包整理了一个用于生成视频的文本模板，生成的模板过长，我将它简化了一下\n1. 视频氛围(...) +主题 (...)，整体时长10秒，帧率30fps，画面比例16:9横屏\n\n2. 视频内容\n- 视频主人公：(...)",
+      "url": "https://36aidianping.com/note-detail/3568010593719224?channel=skills",
+      "source": "36Kr测评",
+      "author": "小八",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "U钙网实测！免费做LOGO的神器竟有这些小槽点",
+      "summary": "最近想给小工作室做个简易LOGO，不想花钱找设计师，就试了下网上推的U钙网，整体用下来体验挺两极的，说说真实感受。\n \n它的操作真的零门槛，不用懂任何设计知识，打开网页输入品牌名，选好想要的场景风格，几秒就能生成几十款LOGO，还能通过数字",
+      "url": "https://36aidianping.com/note-detail/3568010593719229?channel=skills",
+      "source": "36Kr测评",
+      "author": "珉时捷",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "PPT救星还是模板大卖场？ ",
+      "summary": " 我是那种做PPT会焦虑的人。不是不会用软件，是每次盯着空白页超过五分钟就开始发呆。所以当同事推荐熊猫办公的时候，我没犹豫太久，直接冲了月会员试试。 用下来大概两周，感受比较混合。\n\n模板这件事，他们是认真的 \n\n熊猫办公的核心竞争力，说白",
+      "url": "https://36aidianping.com/note-detail/3568010593719230?channel=skills",
+      "source": "36Kr测评",
+      "author": "hzhzhzh",
+      "date": "2026-04-03",
+      "time": "09:00"
+    },
+    {
+      "title": "顶级恐怖，MIT数学实锤证明：ChatGPT正诱发「AI精神病」，全球14人已死亡",
+      "summary": "妄想螺旋，纯贝叶斯理性人也逃不过",
+      "url": "https://36kr.com/p/3749595104772871?channel=skills",
+      "source": "36Kr",
+      "author": "新智元",
+      "date": "2026-04-02",
+      "time": "20:27"
+    },
+    {
+      "title": "一文读懂Harness Engineering：从14篇工程文章中，寻找那个让AI不再离经叛道的壳",
+      "summary": "把黑盒彻底砸开，顺着十五个月的血泪文献，看清这套「约束工程」（Harness engeniering）的每一张真实图纸。",
+      "url": "https://36kr.com/p/3749464991187458?channel=skills",
+      "source": "36Kr",
+      "author": "36氪的朋友们",
+      "date": "2026-04-02",
+      "time": "18:06"
+    },
+    {
+      "title": "废手机回收价翻倍涨，二手内存芯片流去哪了？",
+      "summary": "没人承认自己用了二手芯片，但都说“有很多人在用”",
+      "url": "https://36kr.com/p/3749380682072832?channel=skills",
+      "source": "36Kr",
+      "author": "半熟财经",
+      "date": "2026-04-02",
+      "time": "17:07"
+    },
     {
       "title": "应对职场 35 岁危机：做好这 5 件事，越老越值钱",
       "summary": "35岁不是危机，而是你职场高光的开始。",
@@ -10,6 +208,15 @@
       "author": "Ray先森",
       "date": "2026-04-02",
       "time": "15:26"
+    },
+    {
+      "title": "不掌握token的甲骨文们，注定会大裁员",
+      "summary": "为什么订单拿得越多，员工反而裁得越狠？",
+      "url": "https://36kr.com/p/3749232015553028?channel=skills",
+      "source": "36Kr",
+      "author": "字母AI",
+      "date": "2026-04-02",
+      "time": "15:20"
     },
     {
       "title": "9块9的法拉利小车，能治好“赵一鸣们”的增长焦虑吗？",
@@ -235,6 +442,15 @@
       "author": "氪友rfCw",
       "date": "2026-04-02",
       "time": "09:00"
+    },
+    {
+      "title": "外行人“看不懂”的 App，登顶美国付费总榜",
+      "summary": "横屏 or 竖屏，that is the question。",
+      "url": "https://36kr.com/p/3748941568754184?channel=skills",
+      "source": "36Kr",
+      "author": "白鲸出海",
+      "date": "2026-04-02",
+      "time": "08:41"
     },
     {
       "title": "我教AI“学做人”，AI教我“认清现实”？",
