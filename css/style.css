@@ -14,8 +14,8 @@
   --text-dim:     #5a6a80;
   --text-bright:  #e8f4ff;
   --classified:   rgba(255, 40, 40, 0.15);
-  --font-head:    'Orbitron', monospace;
-  --font-mono:    'Space Mono', monospace;
+  --font-head:    'Orbitron', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-mono:    'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   --scanline-opacity: 0.04;
 }
 
@@ -28,7 +28,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
@@ -97,7 +97,7 @@ body::after {
 
 .nav-logo {
   font-family: var(--font-head);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   font-weight: 900;
   letter-spacing: 0.3em;
   color: var(--neon-blue);
@@ -120,7 +120,7 @@ body::after {
 
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.2em;
   color: var(--text-dim);
   text-decoration: none;
@@ -135,7 +135,7 @@ body::after {
 }
 
 .lang-toggle {
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   color: var(--text-dim);
   border: none;
@@ -151,7 +151,7 @@ body::after {
 }
 
 .nav-badge {
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   letter-spacing: 0.15em;
   color: var(--text-dim);
   border: 1px solid var(--border);
@@ -943,7 +943,7 @@ body::after {
 
 .nav-drawer a {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.25em;
   color: var(--text-dim);
   text-decoration: none;
@@ -2048,7 +2048,7 @@ body,
 .nav-dropdown-menu li a {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   letter-spacing: 0.18em;
   color: var(--text-dim);
   text-decoration: none;
@@ -2085,7 +2085,7 @@ body,
 }
 .nav-drawer-group-label {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.25em;
   color: var(--text-dim);
   text-transform: uppercase;
@@ -2098,7 +2098,7 @@ body,
 }
 .nav-drawer-sub {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   letter-spacing: 0.2em;
   color: var(--text-dim);
   text-decoration: none;
