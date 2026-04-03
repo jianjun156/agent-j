@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-03T08:00:04+08:00",
+  "lastUpdate": "2026-04-03T08:00:17+08:00",
   "articles": [
     {
       "title": "AI文生图，文字即画笔",
@@ -174,6 +174,33 @@
       "time": "09:00"
     },
     {
+      "title": "顶级恐怖，MIT数学实锤证明：ChatGPT正诱发「AI精神病」，全球14人已死亡",
+      "summary": "妄想螺旋，纯贝叶斯理性人也逃不过",
+      "url": "https://36kr.com/p/3749595104772871?channel=skills",
+      "source": "36Kr",
+      "author": "新智元",
+      "date": "2026-04-02",
+      "time": "20:27"
+    },
+    {
+      "title": "一文读懂Harness Engineering：从14篇工程文章中，寻找那个让AI不再离经叛道的壳",
+      "summary": "把黑盒彻底砸开，顺着十五个月的血泪文献，看清这套「约束工程」（Harness engeniering）的每一张真实图纸。",
+      "url": "https://36kr.com/p/3749464991187458?channel=skills",
+      "source": "36Kr",
+      "author": "36氪的朋友们",
+      "date": "2026-04-02",
+      "time": "18:06"
+    },
+    {
+      "title": "废手机回收价翻倍涨，二手内存芯片流去哪了？",
+      "summary": "没人承认自己用了二手芯片，但都说“有很多人在用”",
+      "url": "https://36kr.com/p/3749380682072832?channel=skills",
+      "source": "36Kr",
+      "author": "半熟财经",
+      "date": "2026-04-02",
+      "time": "17:07"
+    },
+    {
       "title": "应对职场 35 岁危机：做好这 5 件事，越老越值钱",
       "summary": "35岁不是危机，而是你职场高光的开始。",
       "url": "https://36kr.com/p/3749160798634755?channel=skills",
@@ -181,6 +208,15 @@
       "author": "Ray先森",
       "date": "2026-04-02",
       "time": "15:26"
+    },
+    {
+      "title": "不掌握token的甲骨文们，注定会大裁员",
+      "summary": "为什么订单拿得越多，员工反而裁得越狠？",
+      "url": "https://36kr.com/p/3749232015553028?channel=skills",
+      "source": "36Kr",
+      "author": "字母AI",
+      "date": "2026-04-02",
+      "time": "15:20"
     },
     {
       "title": "9块9的法拉利小车，能治好“赵一鸣们”的增长焦虑吗？",
@@ -406,6 +442,15 @@
       "author": "氪友rfCw",
       "date": "2026-04-02",
       "time": "09:00"
+    },
+    {
+      "title": "外行人“看不懂”的 App，登顶美国付费总榜",
+      "summary": "横屏 or 竖屏，that is the question。",
+      "url": "https://36kr.com/p/3748941568754184?channel=skills",
+      "source": "36Kr",
+      "author": "白鲸出海",
+      "date": "2026-04-02",
+      "time": "08:41"
     },
     {
       "title": "我教AI“学做人”，AI教我“认清现实”？",
