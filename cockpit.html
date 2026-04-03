@@ -23,9 +23,6 @@
   <link rel="alternate" type="application/rss+xml" title="Agent J | MIB" href="feed.xml">
   <!-- Build: css/style.css, js/i18n.js, js/main.js could be minified for production -->
   <link rel="preload" href="css/style.css" as="style">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
     .cockpit-main {
@@ -583,7 +580,7 @@
       // MIB text above
       ctx.globalAlpha = 0.85;
       ctx.fillStyle = C.nBlue;
-      ctx.font = '7px "Orbitron", monospace';
+      ctx.font = '7px "PingFang SC", sans-serif';
       ctx.fillText('MIB', (dx+1)*PX, (dy-2)*PX);
       ctx.globalAlpha = 1;
       // Status light
@@ -615,7 +612,7 @@
         ctx.beginPath(); ctx.arc(cx*PX+PX/2, cy*PX+PX/2, (r-0.5)*PX, 0, Math.PI*2); ctx.stroke();
       });
       // Label
-      ctx.globalAlpha = 0.5; ctx.fillStyle = C.nBlue; ctx.font = '5px "Space Mono",monospace';
+      ctx.globalAlpha = 0.5; ctx.fillStyle = C.nBlue; ctx.font = '5px "PingFang SC",sans-serif';
       ctx.fillText('SYS:EARTH', (cx-5)*PX, (cy+r+3)*PX); ctx.globalAlpha = 1;
     }
 
@@ -629,7 +626,7 @@
       alpha(0.07, function() { ctx.fillStyle = C.nPurple; ctx.fillRect(bx*PX, by*PX, bw*PX, bh*PX); });
       hline(bx+1, by+3, bw-2, C.nPurple);
       // Title
-      ctx.globalAlpha = 0.8; ctx.fillStyle = C.nPurple; ctx.font = 'bold 6px "Orbitron",monospace';
+      ctx.globalAlpha = 0.8; ctx.fillStyle = C.nPurple; ctx.font = 'bold 6px "PingFang SC",sans-serif';
       ctx.fillText('MISSION BOARD', (bx+2)*PX, (by+3)*PX-1); ctx.globalAlpha = 1;
 
       // Cards
@@ -645,9 +642,9 @@
         ctx.strokeStyle = c.col; ctx.lineWidth = PX;
         ctx.strokeRect(c.x*PX+PX/2, c.y*PX+PX/2, (c.w-1)*PX, (c.h-1)*PX);
         alpha(0.10, function(cc){ return function(){ ctx.fillStyle=cc.col; ctx.fillRect(cc.x*PX,cc.y*PX,cc.w*PX,cc.h*PX); };}(c));
-        ctx.globalAlpha=0.95; ctx.fillStyle=c.col; ctx.font='bold 5px "Space Mono",monospace';
+        ctx.globalAlpha=0.95; ctx.fillStyle=c.col; ctx.font='bold 5px "PingFang SC",sans-serif';
         ctx.fillText(c.lbl,(c.x+1)*PX,(c.y+5)*PX);
-        ctx.globalAlpha=0.7; ctx.font='5px "Space Mono",monospace';
+        ctx.globalAlpha=0.7; ctx.font='5px "PingFang SC",sans-serif';
         ctx.fillText(c.st,(c.x+1)*PX,(c.y+9)*PX); ctx.globalAlpha=1;
         // Pin dot
         dot(c.x+Math.floor(c.w/2), c.y, c.col);
@@ -734,7 +731,7 @@
         }
         if(Math.random()<0.1) dot(col.x, 39+Math.floor(Math.random()*15), C.dimGreen);
       }
-      ctx.globalAlpha=0.6; ctx.fillStyle=C.nGreen; ctx.font='5px "Space Mono",monospace';
+      ctx.globalAlpha=0.6; ctx.fillStyle=C.nGreen; ctx.font='5px "PingFang SC",sans-serif';
       ctx.fillText('MATRIX', 30*PX, 41*PX); ctx.globalAlpha=1;
     }
 
@@ -747,7 +744,7 @@
         var lineY=37+2+tl*2;
         if(lineY>=53) break;
         ctx.globalAlpha=tl<termLines.length-1?0.6:0.95;
-        ctx.fillStyle=C.nCyan; ctx.font='5px "Space Mono",monospace';
+        ctx.fillStyle=C.nCyan; ctx.font='5px "PingFang SC",sans-serif';
         ctx.fillText(termLines[tl],(49+1)*PX,lineY*PX+4);
       }
       ctx.globalAlpha=1;
@@ -797,7 +794,7 @@
         var ba=0.4+0.6*Math.sin(t*0.1+bi*1.5);
         alpha(ba,function(b2){return function(){ctx.fillStyle=C.nGreen;ctx.fillRect((rcx+b2.ox)*PX,(rcy+b2.oy)*PX,PX,PX);};}(blips[bi]));
       }
-      ctx.globalAlpha=0.6; ctx.fillStyle=C.dimGreen; ctx.font='5px "Space Mono",monospace';
+      ctx.globalAlpha=0.6; ctx.fillStyle=C.dimGreen; ctx.font='5px "PingFang SC",sans-serif';
       ctx.fillText('RADAR',76*PX,41*PX); ctx.globalAlpha=1;
     }
 
@@ -864,14 +861,14 @@
       rect(cx+5,cy+9,3,2,C.nBlue); rect(cx+9,cy+9,3,2,'#ff4422'); rect(cx+13,cy+9,3,2,C.nPurple);
       // Machine screen
       rect(cx+5,cy+12,10,3,C.scrBg2); border(cx+5,cy+12,10,3,C.panelLight);
-      ctx.globalAlpha=0.9; ctx.fillStyle=C.nCyan; ctx.font='5px "Space Mono",monospace';
+      ctx.globalAlpha=0.9; ctx.fillStyle=C.nCyan; ctx.font='5px "PingFang SC",sans-serif';
       ctx.fillText('BREW',(cx+6)*PX,(cy+14)*PX); ctx.globalAlpha=1;
       // Neon strip accent
       alpha(0.4+0.2*Math.sin(t*0.06),function(){ctx.fillStyle=C.nCyan;ctx.fillRect((cx+2)*PX,(cy+19)*PX,16*PX,PX);});
       // MIB Mug
       rect(cx+20,cy+13,7,8,C.panelMid); border(cx+20,cy+13,7,8,C.mibLogo);
       rect(cx+27,cy+14,2,5,C.panelMid); // handle
-      ctx.globalAlpha=0.8; ctx.fillStyle=C.mibLogo; ctx.font='bold 7px "Orbitron",monospace';
+      ctx.globalAlpha=0.8; ctx.fillStyle=C.mibLogo; ctx.font='bold 7px "PingFang SC",sans-serif';
       ctx.fillText('J',(cx+22)*PX,(cy+19)*PX); ctx.globalAlpha=1;
       // Steam (animated)
       var stOff=(t*0.6)%12;
@@ -909,7 +906,7 @@
       alpha(0.04+0.03*Math.sin(t*0.05),function(){ctx.fillStyle=C.nCyan;ctx.fillRect((rx-13)*PX,(ry+2)*PX,9*PX,8*PX);});
       var now=new Date(), hh=now.getHours(), mm=now.getMinutes();
       var ts=(hh<10?'0':'')+hh+':'+(mm<10?'0':'')+mm;
-      ctx.globalAlpha=0.8; ctx.fillStyle=C.nCyan; ctx.font='5px "Space Mono",monospace';
+      ctx.globalAlpha=0.8; ctx.fillStyle=C.nCyan; ctx.font='5px "PingFang SC",sans-serif';
       ctx.fillText(ts,(rx-12)*PX,(ry+7)*PX); ctx.globalAlpha=1;
 
       // Alien plant
@@ -945,7 +942,7 @@
 
     // ── ROOM LABEL OVERLAYS
     function drawLabels() {
-      ctx.globalAlpha=0.35; ctx.fillStyle=C.nBlue; ctx.font='5px "Space Mono",monospace';
+      ctx.globalAlpha=0.35; ctx.fillStyle=C.nBlue; ctx.font='5px "PingFang SC",sans-serif';
       ctx.fillText('CONSOLE',(28+2)*PX,(58+12)*PX);
       ctx.fillStyle=C.nPurple;
       ctx.fillText('REST ZONE', 101*PX, 98*PX);

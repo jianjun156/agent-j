@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* ── CSS Variables ─────────────────────────────── */
 :root {
@@ -14,7 +13,7 @@
   --text-dim:     #5a6a80;
   --text-bright:  #e8f4ff;
   --classified:   rgba(255, 40, 40, 0.15);
-  --font-head:    'Orbitron', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-head:    'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   --font-mono:    'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   --scanline-opacity: 0.04;
 }
@@ -730,7 +729,7 @@ body::after {
   border-radius: 4px;
   padding: 1rem;
   overflow-x: auto;
-  font-family: 'Space Mono', 'Courier New', monospace;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   font-size: 0.55rem;
   line-height: 1.4;
   color: rgba(0, 255, 100, 0.8);
