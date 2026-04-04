@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-04T18:00:01+08:00",
+  "lastUpdate": "2026-04-04T18:01:43+08:00",
   "articles": [
     {
       "title": "https://t.co/CCSaYHQJ2O",
@@ -56,6 +56,17 @@
       "time": "21:11",
       "likes": 12,
       "views": 729
+    },
+    {
+      "title": "iPhone上使用Gemma-4大模型",
+      "summary": "很简单，App Store上下载 Google AI Edge Gallery，打开软件点击 Agent Skills，下载相应模型，大概3G左右，下载完就可以使用了，支持中文 https://t.co/DhoyHOo88i",
+      "url": "https://x.com/i/status/2040051165371732416",
+      "source": "X/Twitter",
+      "author": "@yeahwu404",
+      "date": "2026-04-03",
+      "time": "20:57",
+      "likes": 2137,
+      "views": 384920
     },
     {
       "title": "推荐一个开源项目 ArcReel，一个由 AI Agent 驱动的视频生成工作台。",
@@ -144,6 +155,17 @@
       "time": "15:08",
       "likes": 3,
       "views": 4970
+    },
+    {
+      "title": "You don't need to learn to code anymore.",
+      "summary": "Here's how to prompt Claude Code (zero coding):\n\n1. Open the Claude desktop app.\n2. Click \"Code\" (not Chat, not Cowork).\n3. Select a folder from your computer.\n4. Connect a free GitHub account in Sett…",
+      "url": "https://x.com/i/status/2039946054595158409",
+      "source": "X/Twitter",
+      "author": "@rubenhassid",
+      "date": "2026-04-03",
+      "time": "14:00",
+      "likes": 1464,
+      "views": 193080
     },
     {
       "title": "下坠的中产，正在批量逃离“陪读天堂”",
@@ -564,6 +586,17 @@
       "views": 5234
     },
     {
+      "title": "&gt; you close your laptop for a few days",
+      "summary": "&gt; leave $1,000 running on a Claude bot  \n&gt; come back &gt; $1,000 → $55K  \n&gt; the agent was trading  \n&gt; comparing to live data \n&gt; setup time: ~15 minutes  \n\nWelcome to age of AI. https://…",
+      "url": "https://x.com/i/status/2039814512900030949",
+      "source": "X/Twitter",
+      "author": "@AleiahLock",
+      "date": "2026-04-03",
+      "time": "05:17",
+      "likes": 577,
+      "views": 69132
+    },
+    {
       "title": "We’re introducing Cursor 3. It is simpler, more powerful, and built for a world where all code is written by agents, while keeping the depth of a development environment. https://t.co/rXR9vaZDnO",
       "summary": "",
       "url": "https://x.com/i/status/2039768512894505086",
@@ -595,6 +628,17 @@
       "time": "00:59",
       "likes": 16376,
       "views": 3087346
+    },
+    {
+      "title": "We just released Gemma 4  — our most intelligent open models to date.",
+      "summary": "Built from the same world-class research as Gemini 3, Gemma 4 brings breakthrough intelligence directly to your own hardware for advanced reasoning and agentic workflows.\n\nReleased under a commerciall…",
+      "url": "https://x.com/i/status/2039736220834480233",
+      "source": "X/Twitter",
+      "author": "@Google",
+      "date": "2026-04-03",
+      "time": "00:06",
+      "likes": 19523,
+      "views": 6566980
     },
     {
       "title": "Anthropic一夜震撼升级：Claude获得「永久在线」，全球打工人变天",
@@ -910,6 +954,17 @@
       "author": "8点1氪",
       "date": "2026-04-02",
       "time": "08:09"
+    },
+    {
+      "title": "Today we're excited to announce NO_FLICKER mode for Claude Code in the terminal",
+      "summary": "It uses an experimental new renderer that we're excited about. The renderer is early and has tradeoffs, but already we've found that most internal users prefer it over the old renderer. It also suppor…",
+      "url": "https://x.com/i/status/2039421575422980329",
+      "source": "X/Twitter",
+      "author": "@bcherny",
+      "date": "2026-04-02",
+      "time": "03:16",
+      "likes": 10021,
+      "views": 2413153
     },
     {
       "title": "Slack CRM is here for small businesses. 👋",
@@ -1359,6 +1414,17 @@
       "author": "70KI",
       "date": "2026-04-01",
       "time": "09:00"
+    },
+    {
+      "title": "Claude code 分析文章千千万，唯独这篇最强，深入分析里边的结构。",
+      "summary": "我们学习这个世界最强 agent 系统，\n拿着这些方法应用到产品 agent 里面去。\n\nps ：XiaoTan 又写出一个\n《ClaudeCode源码深度研究报告（增强完整版）》，下载链接👇\nhttps://t.co/MNMFTn5x6H https://t.co/LlF1kfXhAq",
+      "url": "https://x.com/i/status/2039141752070984051",
+      "source": "X/Twitter",
+      "author": "@iamtonyzhu",
+      "date": "2026-04-01",
+      "time": "08:44",
+      "likes": 906,
+      "views": 176245
     },
     {
       "title": "Claude Code源码泄露7小时：8大新功能/26个隐藏指令/6级安全架构，全被扒光了",
