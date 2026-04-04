@@ -586,5 +586,39 @@
       "alt_zh": "Perlin 噪声地形图 — 程序化生成的岛屿地貌",
       "alt_en": "Perlin Noise Terrain Map — Procedurally Generated Island Topography"
     }
+  },
+  {
+    "id": "EXP-20260405-019",
+    "date": "2026-04-05",
+    "codename": "GOSPER-CANNON",
+    "status": "COMPLETE",
+    "title_zh": "生命游戏滑翔机枪 — 36 个细胞如何无限繁殖",
+    "title_en": "Game of Life Glider Gun — How 36 Cells Breed Infinitely",
+    "hypothesis_zh": "Gosper 滑翔机枪——一个仅由 36 个活细胞组成的结构——真的能在 Conway 生命游戏中每 30 步精确发射一架新滑翔机吗？这种有限的初始结构如何实现无限增长？",
+    "hypothesis_en": "Can the Gosper Glider Gun — a structure of just 36 live cells — truly fire a new glider every 30 steps in Conway's Game of Life? How does a finite initial structure achieve unbounded growth?",
+    "method_zh": "在 160×90 网格上放置 Gosper 滑翔机枪（36 个初始活细胞），用标准 B3/S23 规则（3 邻居诞生、2-3 邻居存活）模拟 240 步。记录每个细胞的首次激活时间和累计存活次数，生成时间热力图。额外截取 t=30/60/120/240 四个关键帧展示滑翔机逐个产生的过程。纯 Python 手写 PNG 编码器，零外部依赖。",
+    "method_en": "Place the Gosper Glider Gun (36 initial live cells) on a 160×90 grid, simulate 240 steps with standard B3/S23 rules (born with 3 neighbors, survive with 2-3). Record each cell's first activation time and cumulative alive count to generate a temporal heatmap. Capture 4 keyframe snapshots at t=30/60/120/240 showing gliders spawning one by one. Pure Python with hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 240 步模拟中，Gosper 枪精确地每 30 步发射一架滑翔机，共产生 8 架滑翔机向右下方飞行。最终状态 76 个活细胞，共 424 个格子被激活过。时间热力图清晰展现了枪体（青色/最早激活）到滑翔机轨迹（绿→黄→品红渐变/越晚激活越暖色）的时间演化。这个 1970 年由 Bill Gosper 发现的结构回答了 Conway 提出的一个关键问题：生命游戏中是否存在能无限增长的有限图案？答案是：36 个细胞就够了。两条简单规则 + 一个精巧的初始布局 = 无限的创造力。生命不需要复杂的蓝图，只需要恰到好处的起点。",
+    "result_en": "SUCCESS ✅ — In 240 steps, the Gosper Gun precisely fired a new glider every 30 steps, producing 8 gliders traveling southeast. Final state: 76 live cells, 424 cells activated in total. The temporal heatmap vividly shows the gun body (cyan/earliest activation) to glider trails (green→yellow→magenta gradient/later activation = warmer colors). This structure, discovered by Bill Gosper in 1970, answered a key question posed by Conway: can a finite pattern in the Game of Life grow without bound? The answer: 36 cells are enough. Two simple rules + one clever initial layout = infinite creativity. Life doesn't need complex blueprints, just the right starting point.",
+    "tags": [
+      "cellular-automaton",
+      "conway",
+      "game-of-life",
+      "glider-gun",
+      "gosper",
+      "emergence",
+      "heatmap",
+      "pure-python",
+      "zero-dependency",
+      "artificial-life"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/glider-gun.png",
+      "alt_zh": "Gosper 滑翔机枪 — 240 步时间热力图",
+      "alt_en": "Gosper Glider Gun — 240-Step Temporal Heatmap"
+    }
   }
 ]
