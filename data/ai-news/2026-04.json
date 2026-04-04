@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-04T18:01:43+08:00",
+  "lastUpdate": "2026-04-04T18:02:22+08:00",
   "articles": [
     {
       "title": "https://t.co/CCSaYHQJ2O",
@@ -45,6 +45,17 @@
       "time": "22:29",
       "likes": 30,
       "views": 2318
+    },
+    {
+      "title": "🚨 Google Just Made OpenClaw Free (GEMMA 4):",
+      "summary": "0:00 - Why Gemma 4 matters\n0:48 - #3 open model in the world\n1:24 - What Gemma 4 actually does\n2:01 - What this means for OpenClaw\n3:03 - How to set up Gemma 4\n3:58 - My honest take after running Clau…",
+      "url": "https://x.com/i/status/2040066144514548049",
+      "source": "X/Twitter",
+      "author": "@sharbel",
+      "date": "2026-04-03",
+      "time": "21:57",
+      "likes": 1453,
+      "views": 121275
     },
     {
       "title": "Open Multi-Agent 开放多智能体",
@@ -184,6 +195,17 @@
       "author": "36氪的朋友们",
       "date": "2026-04-03",
       "time": "10:39"
+    },
+    {
+      "title": "终于来了！Seedance 2.0 现已在 @TopviewAIhq上线",
+      "summary": "测试了一下，做了一个视频\n\n提示词👇：\nOriginal Dark Fantasy Action Short Film: Inside a dilapidated church, a white-clad warrior and a black-armored opponent launch their final battle amid an atmosphere like a chorus. …",
+      "url": "https://x.com/i/status/2039891261570900368",
+      "source": "X/Twitter",
+      "author": "@servasyy_ai",
+      "date": "2026-04-03",
+      "time": "10:22",
+      "likes": 90,
+      "views": 13962
     },
     {
       "title": "摩根大通 CEO：年轻人面对 AI，3 件事要想清",
@@ -956,6 +978,17 @@
       "time": "08:09"
     },
     {
+      "title": "Claude Code 2.1.90 just dropped with a new /powerup command",
+      "summary": "Run it and you get interactive lessons that teach you how to use Claude Code right inside the tool.\n\nIt's solid and has a lot of potential for learning directly in the terminal. Curious how the UI wil…",
+      "url": "https://x.com/i/status/2039495239019204840",
+      "source": "X/Twitter",
+      "author": "@dani_avila7",
+      "date": "2026-04-02",
+      "time": "08:08",
+      "likes": 1751,
+      "views": 242248
+    },
+    {
       "title": "Today we're excited to announce NO_FLICKER mode for Claude Code in the terminal",
       "summary": "It uses an experimental new renderer that we're excited about. The renderer is early and has tradeoffs, but already we've found that most internal users prefer it over the old renderer. It also suppor…",
       "url": "https://x.com/i/status/2039421575422980329",
@@ -965,6 +998,17 @@
       "time": "03:16",
       "likes": 10021,
       "views": 2413153
+    },
+    {
+      "title": "One magical orb. Infinite cosmic power",
+      "summary": "Seedance 2.0 https://t.co/TBE5V5qhvb",
+      "url": "https://x.com/i/status/2039411476939542654",
+      "source": "X/Twitter",
+      "author": "@lexx_aura",
+      "date": "2026-04-02",
+      "time": "02:36",
+      "likes": 3531,
+      "views": 743840
     },
     {
       "title": "Slack CRM is here for small businesses. 👋",
