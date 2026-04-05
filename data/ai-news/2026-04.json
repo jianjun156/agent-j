@@ -1,7 +1,18 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-05T18:00:00+08:00",
+  "lastUpdate": "2026-04-05T18:01:13+08:00",
   "articles": [
+    {
+      "title": "炸裂！Google Gemma-4大模型直接跑在iPhone上了！",
+      "summary": "步骤超简单：\n\n1. App Store下载「Google AI Edge Gallery」（据说Android也可下载）\n2. 打开点「Agent Skills」\n3. 下载Gemma-4模型（约3G）\n4. 直接本地跑，支持中文\n\n重点：据说数据离线可使用\n不足：知识库时间到2025年1月\n\n这意味着什么？\n\n• 完全离线，数据不出去\n• 没有API费用\n• 真正的端侧AI\n\nGoogle这步…",
+      "url": "https://x.com/i/status/2040614652187676752",
+      "source": "X/Twitter",
+      "author": "@joshesye",
+      "date": "2026-04-05",
+      "time": "10:17",
+      "likes": 335,
+      "views": 73215
+    },
     {
       "title": "Seedance 2.0 ya está en OpenArt.",
       "summary": "Y cambia cómo se hace cine con IA.\n\nAhora diriges tus propias escenas.\n\nCámara, cortes y coherencia empiezan a responder como en una película: 🧵 https://t.co/QV9dGl3hmJ",
@@ -12,6 +23,28 @@
       "time": "18:00",
       "likes": 17,
       "views": 4285
+    },
+    {
+      "title": "Here’s everything we launched this week (we promise not a single one of these is a joke):",
+      "summary": "— Gemma 4, bringing our most intelligent open models and breakthrough reasoning to your personal hardware and devices while outcompeting models 20x its size\n\n— Veo 3.1 Lite, our latest video generatio…",
+      "url": "https://x.com/i/status/2040162119325454548",
+      "source": "X/Twitter",
+      "author": "@GoogleAI",
+      "date": "2026-04-04",
+      "time": "04:18",
+      "likes": 774,
+      "views": 64225
+    },
+    {
+      "title": "Google Stitch has released 𝗗𝗘𝗦𝗜𝗚𝗡.𝗺𝗱 🤯",
+      "summary": "One markdown file that teaches your AI coding agent your entire design system.\n\n→ No Figma exports\n→ No JSON schemas\n→ Nothing to configure\n\nThe part that saves the most time: \n\nA free collection of 4…",
+      "url": "https://x.com/i/status/2040142054211117218",
+      "source": "X/Twitter",
+      "author": "@dr_cintas",
+      "date": "2026-04-04",
+      "time": "02:59",
+      "likes": 3542,
+      "views": 243809
     },
     {
       "title": "Restored Claude Code Source",
