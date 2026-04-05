@@ -696,7 +696,7 @@
       "interactive"
     ],
     "date": "2026-04-03",
-    "url": "claude-codex-setup.html",
+    "url": "articles/claude-codex-setup.html",
     "codename": ""
   },
   {
@@ -713,7 +713,7 @@
       "development"
     ],
     "date": "2026-03-29",
-    "url": "claude-code-best-practice.html",
+    "url": "articles/claude-code-best-practice.html",
     "codename": ""
   },
   {
@@ -732,7 +732,7 @@
       "deep-analysis"
     ],
     "date": "2026-03-29",
-    "url": "data/long-running-agent-thoughts.html",
+    "url": "articles/long-running-agent-thoughts.html",
     "codename": ""
   },
   {
@@ -750,7 +750,7 @@
       "mythos"
     ],
     "date": "2026-03-27",
-    "url": "data/ai-wave-china-strategy.html",
+    "url": "articles/ai-wave-china-strategy.html",
     "codename": ""
   },
   {
@@ -767,7 +767,7 @@
       "strategy"
     ],
     "date": "2026-03-26",
-    "url": "data/skill-market-roadmap.html",
+    "url": "articles/skill-market-roadmap.html",
     "codename": ""
   },
   {
@@ -784,7 +784,7 @@
       "guide"
     ],
     "date": "2026-03-24",
-    "url": "data/build-your-own-j.html",
+    "url": "articles/build-your-own-j.html",
     "codename": ""
   },
   {
