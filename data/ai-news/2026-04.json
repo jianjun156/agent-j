@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-05T18:01:13+08:00",
+  "lastUpdate": "2026-04-05T18:01:57+08:00",
   "articles": [
     {
       "title": "炸裂！Google Gemma-4大模型直接跑在iPhone上了！",
@@ -45,6 +45,17 @@
       "time": "02:59",
       "likes": 3542,
       "views": 243809
+    },
+    {
+      "title": "You can now review the code written by Claude Code, Codex, OpenCode, and more directly in Warp, and send inline comments straight to the agent.",
+      "summary": "It's like a PR review without having to leave your terminal. Try it out! https://t.co/DuB3QpTkcf",
+      "url": "https://x.com/i/status/2040132025383022835",
+      "source": "X/Twitter",
+      "author": "@warpdotdev",
+      "date": "2026-04-04",
+      "time": "02:19",
+      "likes": 1104,
+      "views": 187989
     },
     {
       "title": "Restored Claude Code Source",
@@ -674,6 +685,17 @@
       "views": 69132
     },
     {
+      "title": "Seedance 2.0 just dropped and gave birth to the next major franchise 🎬🔥",
+      "summary": "Watch “Zephyr” -  a new global entertainment industry benchmark, born within Higgsfield Original Series.\n\nCreate your own show on Cinema Studio 3.0.\n\nOnly available through business email verification…",
+      "url": "https://x.com/i/status/2039775464743653718",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-04-03",
+      "time": "02:42",
+      "likes": 1585,
+      "views": 4521265
+    },
+    {
       "title": "We’re introducing Cursor 3. It is simpler, more powerful, and built for a world where all code is written by agents, while keeping the depth of a development environment. https://t.co/rXR9vaZDnO",
       "summary": "",
       "url": "https://x.com/i/status/2039768512894505086",
@@ -736,6 +758,17 @@
       "time": "20:27"
     },
     {
+      "title": "Seedance 2.0 今天正式开放了 API",
+      "summary": "各大平台陆续接入了 Seedance 2.0，告别了生成视频排队状态\n\n而且有的平台还给开放了支持上传真人照片的能力\n\nTekan AI是首批支持真人人脸的，估计是他们主要是广告场景\n\nSeedance 2.0用来生成广告真是真不错\n\n上传一张脸，Seedance 2.0 直接用这张脸生成视频，全程面部一致。",
+      "url": "https://x.com/i/status/2039670893367218270",
+      "source": "X/Twitter",
+      "author": "@xiaohu",
+      "date": "2026-04-02",
+      "time": "19:46",
+      "likes": 586,
+      "views": 80774
+    },
+    {
       "title": "一文读懂Harness Engineering：从14篇工程文章中，寻找那个让AI不再离经叛道的壳",
       "summary": "把黑盒彻底砸开，顺着十五个月的血泪文献，看清这套「约束工程」（Harness engeniering）的每一张真实图纸。",
       "url": "https://36kr.com/p/3749464991187458?channel=skills",
@@ -781,6 +814,17 @@
       "author": "字母AI",
       "date": "2026-04-02",
       "time": "15:20"
+    },
+    {
+      "title": "谁能告诉我全网最好的，第三方Seedance 2.0 的API接入方是哪个？",
+      "summary": "",
+      "url": "https://x.com/i/status/2039534195941462111",
+      "source": "X/Twitter",
+      "author": "@yihui_indie",
+      "date": "2026-04-02",
+      "time": "10:43",
+      "likes": 151,
+      "views": 52542
     },
     {
       "title": "5天涨粉百万、摩托车卖爆，张雪和他的《飞驰人生》",
