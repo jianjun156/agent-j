@@ -1,7 +1,18 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-05T08:01:28+08:00",
+  "lastUpdate": "2026-04-05T08:01:42+08:00",
   "articles": [
+    {
+      "title": "Seedance 2.0 ya está en OpenArt.",
+      "summary": "Y cambia cómo se hace cine con IA.\n\nAhora diriges tus propias escenas.\n\nCámara, cortes y coherencia empiezan a responder como en una película: 🧵 https://t.co/QV9dGl3hmJ",
+      "url": "https://x.com/i/status/2040368892024111572",
+      "source": "X/Twitter",
+      "author": "@ivnways",
+      "date": "2026-04-04",
+      "time": "18:00",
+      "likes": 17,
+      "views": 4285
+    },
     {
       "title": "Restored Claude Code Source",
       "summary": "一个把 Claude Code 尽量逆向还原到“可运行”状态的仓库\n\nhttps://t.co/CfND8PYsLH https://t.co/RRpNR8f1kw",
