@@ -1,7 +1,18 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-05T08:00:00+08:00",
+  "lastUpdate": "2026-04-05T08:01:28+08:00",
   "articles": [
+    {
+      "title": "Restored Claude Code Source",
+      "summary": "一个把 Claude Code 尽量逆向还原到“可运行”状态的仓库\n\nhttps://t.co/CfND8PYsLH https://t.co/RRpNR8f1kw",
+      "url": "https://x.com/i/status/2040085162135101470",
+      "source": "X/Twitter",
+      "author": "@QingQ77",
+      "date": "2026-04-03",
+      "time": "23:13",
+      "likes": 36,
+      "views": 3903
+    },
     {
       "title": "https://t.co/CCSaYHQJ2O",
       "summary": "",
@@ -699,6 +710,17 @@
       "time": "17:07"
     },
     {
+      "title": "Qwen 今天发了 Qwen3.6-Plus，顺手把它接到 Claude Code 里试了下，效果比预期好不少。我让它帮我做一个工程师的个人作品网站，主要看审美和前端实现的表现，直接感受是这次质量提升很明显，Agentic Coding 也更清楚了。放到前端开发和长一点的任务里，它不会停在给你一段代码上，而是会自己接着拆需求、找路径、改代码、跑测试，发现问题再继续修，中间少了很多反复接手的地方。",
+      "summary": "这次另一个比较明显的点，这次任务拆解、规划、编码交付这条链路更好了，多模态和推理也基本到位了，图像、文本、视频这些输入能放到同一条链路里统一处理，接真实工程任务的感觉更完整，执行过程录了个视频，大伙有兴趣可以看看它是怎么一步步跑下来的。",
+      "url": "https://x.com/i/status/2039612655493959812",
+      "source": "X/Twitter",
+      "author": "@HiTw93",
+      "date": "2026-04-02",
+      "time": "15:55",
+      "likes": 309,
+      "views": 86936
+    },
+    {
       "title": "应对职场 35 岁危机：做好这 5 件事，越老越值钱",
       "summary": "35岁不是危机，而是你职场高光的开始。",
       "url": "https://36kr.com/p/3749160798634755?channel=skills",
@@ -1009,6 +1031,17 @@
       "time": "02:36",
       "likes": 3531,
       "views": 743840
+    },
+    {
+      "title": "Claude Code Project Structure (Quick Guide)",
+      "summary": "Most projects start with just CLAUDE.md.\nThat’s why they stay basic.\n\nHere’s the structure that turns Claude into an engineering partner 👇\n\n📌 Core Files\n• CLAUDE.md → project rules & context\n• CLAUDE.…",
+      "url": "https://x.com/i/status/2039407475275743545",
+      "source": "X/Twitter",
+      "author": "@dkare1009",
+      "date": "2026-04-02",
+      "time": "02:20",
+      "likes": 2367,
+      "views": 159922
     },
     {
       "title": "Slack CRM is here for small businesses. 👋",
