@@ -47,6 +47,8 @@
     .exp-card:hover { border-color: var(--border-glow); box-shadow: 0 0 20px rgba(68,170,255,0.08); }
     .exp-card:hover::before { opacity: 1; }
 
+    .exp-detail-link:hover { background: rgba(68,170,255,0.1) !important; color: #fff !important; }
+
     .exp-status {
       display: inline-block;
       font-size: 0.58rem;
@@ -639,6 +641,9 @@ document.addEventListener('keydown', function(e) {
 
       if (tagsHtml) html += '<div class="card-tags" style="margin-top:0.8rem;">' + tagsHtml + '</div>';
 
+      // Detail page link
+      html += '<a href="experiments/' + e.id + '.html" class="exp-detail-link" style="display:inline-block;font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;color:var(--neon-blue);text-decoration:none;padding:0.3rem 0.7rem;border:1px solid rgba(68,170,255,0.3);margin-top:0.8rem;margin-right:0.8rem;transition:all 0.2s;">' + (lang === 'zh' ? '查看详情 →' : 'VIEW DETAIL →') + '</a>';
+
       if (hasDetail) {
         html += '<button class="exp-expand-btn" onclick="expToggleDetail(this, \'' + e.id.replace(/'/g,"\\'") + '\')">' + expandLabel + '</button>';
         html += '<div class="exp-detail-section" id="detail-' + e.id + '" style="display:none;">';
@@ -723,6 +728,7 @@ document.addEventListener('keydown', function(e) {
       html += '<div class="exp-grid-info">';
       html += '<div class="exp-grid-title">' + title + '</div>';
       html += '<div class="exp-grid-meta">' + e.date + ' · ' + (e.fun_rating || 0) + '★ · ' + (e.tech_rating || 0) + '⚡</div>';
+      html += '<a href="experiments/' + e.id + '.html" class="exp-grid-detail-link" style="display:inline-block;font-family:var(--font-mono);font-size:0.5rem;letter-spacing:0.1em;color:var(--neon-blue);text-decoration:none;margin-top:0.3rem;" onclick="event.stopPropagation();">' + (lang === 'zh' ? '详情 →' : 'DETAIL →') + '</a>';
       html += '</div>';
       html += '</div>';
     });

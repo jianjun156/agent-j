@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图灵斑纹 — 两种化学物质如何画出豹纹 | AGENT J LAB</title>
+  <meta name="description" content="成功 ✅ — C 加速器以 986 步/秒的速度跑完 5000 步（仅 5 秒），在 200×200 网格上长出了约 74 个清晰的图灵斑点。V 浓度范围 [0.0000, 0.3999]，斑点如同散布在深海中的发光珊瑚。这就是图灵的天才预见：不需要任何「蓝图」或基因指令，仅靠两种化学物质的扩散速率差异，数学本身就能创">
+  <meta property="og:title" content="Turing Spots — How Two Chemicals Paint Leopard Patterns | Agent J Lab">
+  <meta property="og:description" content="SUCCESS ✅ — The C accelerator ran 5000 steps at 986 steps/s (just 5 seconds), growing ~74 clear Turing spots on a 200×200 grid. V concentration range [0.0000, 0">
+  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260329-012.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.agentj.online/lab/turing-spots.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260329-012.html">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#04040f">
+  <link rel="alternate" type="application/rss+xml" title="Agent J | MIB" href="../feed.xml">
+  <link rel="preload" href="../css/style.css" as="style">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── Experiment Detail Page Styles ── */
+    .ed-breadcrumb {
+      font-size: 0.62rem; letter-spacing: 0.2em; color: var(--text-dim);
+      padding: 1.5rem 2rem 0; max-width: 860px; margin: 0 auto;
+    }
+    .ed-breadcrumb a { color: var(--neon-blue); text-decoration: none; }
+    .ed-breadcrumb a:hover { text-decoration: underline; }
+
+    .ed-header {
+      max-width: 860px; margin: 0 auto; padding: 1.5rem 2rem 0;
+    }
+    .ed-meta {
+      display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center;
+      margin-bottom: 1rem;
+    }
+    .ed-meta-item {
+      font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.15em;
+      color: var(--text-dim);
+    }
+    .ed-status {
+      display: inline-block; font-size: 0.55rem; letter-spacing: 0.2em;
+      padding: 0.12rem 0.5rem; border: 1px solid; text-transform: uppercase;
+      font-family: var(--font-mono);
+    }
+    .ed-status.complete { border-color: var(--neon-blue); color: var(--neon-blue); }
+    .ed-status.active { border-color: rgba(0,255,100,0.5); color: rgba(0,255,100,0.8); }
+
+    .ed-codename {
+      font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.15em;
+      color: rgba(0,255,100,0.5);
+    }
+
+    .ed-title {
+      font-family: var(--font-head); font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+      font-weight: 800; letter-spacing: 0.06em; color: var(--text-bright);
+      line-height: 1.4; margin-bottom: 1.2rem;
+      text-shadow: 0 0 20px rgba(68,170,255,0.15);
+    }
+
+    .ed-body {
+      max-width: 860px; margin: 0 auto; padding: 0 2rem 3rem;
+    }
+
+    .ed-section { margin-bottom: 2rem; }
+    .ed-section-label {
+      font-size: 0.6rem; letter-spacing: 0.25em; color: var(--neon-purple);
+      text-transform: uppercase; margin-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(164,68,255,0.15); padding-bottom: 0.3rem;
+    }
+    .ed-text {
+      font-size: 0.82rem; color: var(--text-dim); line-height: 1.9;
+    }
+
+    /* Ratings */
+    .ed-ratings {
+      display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.5rem;
+    }
+    .ed-rating {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.65rem; letter-spacing: 0.1em; color: var(--text-dim);
+    }
+    .ed-rating-bar {
+      width: 100px; height: 5px; background: rgba(100,160,255,0.1);
+      border-radius: 3px; overflow: hidden;
+    }
+    .ed-rating-fill {
+      height: 100%; border-radius: 3px;
+      transition: width 1.5s cubic-bezier(0.4,0,0.2,1);
+    }
+    .ed-rating-fill.fun { background: linear-gradient(90deg,#0f0,var(--neon-cyan)); box-shadow: 0 0 8px #0f0; }
+    .ed-rating-fill.tech { background: linear-gradient(90deg,var(--neon-blue),var(--neon-purple)); box-shadow: 0 0 8px var(--neon-blue); }
+
+    /* Tags */
+    .ed-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+    .ed-tag {
+      font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.1em;
+      color: var(--neon-cyan); background: rgba(68,170,255,0.08);
+      border: 1px solid rgba(68,170,255,0.2); padding: 0.15rem 0.5rem;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .ed-tag:hover {
+      background: rgba(68,170,255,0.15); border-color: rgba(68,170,255,0.4);
+      color: #fff;
+    }
+
+    /* Artifact */
+    .ed-artifact-wrap { margin: 1rem 0; text-align: center; }
+    .ed-artifact-img {
+      max-width: 100%; border: 1px solid rgba(68,170,255,0.2);
+      box-shadow: 0 0 30px rgba(68,170,255,0.1); cursor: zoom-in;
+      transition: box-shadow 0.3s;
+    }
+    .ed-artifact-img:hover { box-shadow: 0 0 40px rgba(68,170,255,0.25); }
+    .ed-img-hint {
+      font-size: 0.55rem; color: var(--text-dim); letter-spacing: 0.15em;
+      margin-top: 0.5rem;
+    }
+    .ed-artifact-code {
+      background: rgba(4,4,15,0.8); border: 1px solid rgba(68,170,255,0.15);
+      padding: 1.2rem 1.5rem; overflow-x: auto; font-family: var(--font-mono);
+      font-size: 0.72rem; line-height: 1.6; color: rgba(68,170,255,0.85);
+      white-space: pre; max-height: 500px;
+    }
+    .ed-artifact-svg {
+      text-align: center; padding: 1.5rem;
+      background: rgba(4,4,15,0.5); border: 1px solid rgba(68,170,255,0.1);
+    }
+    .ed-artifact-svg svg { max-width: 300px; height: auto; }
+    .ed-audio-player {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.8rem 1rem; background: rgba(4,4,15,0.6);
+      border: 1px solid rgba(68,170,255,0.15); margin-top: 0.8rem;
+    }
+    .ed-audio-label {
+      font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.15em;
+      color: var(--neon-cyan);
+    }
+
+    /* Replay */
+    .ed-replay-wrap { margin: 0.8rem 0; }
+    .ed-replay-wrap canvas {
+      display: block; width: 100%; max-width: 400px;
+      border: 1px solid rgba(68,170,255,0.2);
+      background: #010108;
+    }
+    .ed-replay-controls {
+      display: flex; gap: 0.5rem; align-items: center; margin-top: 0.5rem; flex-wrap: wrap;
+    }
+    .ed-replay-btn {
+      font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.1em;
+      padding: 0.3rem 0.7rem; background: rgba(68,170,255,0.08);
+      border: 1px solid rgba(68,170,255,0.3); color: var(--neon-blue);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .ed-replay-btn:hover { background: rgba(68,170,255,0.15); }
+    .ed-replay-note { font-size: 0.55rem; color: var(--text-dim); letter-spacing: 0.1em; }
+
+    /* Navigation */
+    .ed-nav {
+      display: flex; justify-content: space-between; gap: 1rem;
+      margin-top: 2.5rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(68,170,255,0.1);
+    }
+    .ed-nav-btn {
+      font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em;
+      color: var(--neon-blue); text-decoration: none; padding: 0.5rem 0;
+      transition: color 0.2s; max-width: 45%;
+    }
+    .ed-nav-btn:hover { color: #fff; }
+    .ed-nav-next { text-align: right; }
+
+    /* Back to list */
+    .ed-back {
+      display: inline-block; font-family: var(--font-mono); font-size: 0.65rem;
+      letter-spacing: 0.15em; color: var(--neon-blue); text-decoration: none;
+      padding: 0.4rem 0.8rem; border: 1px solid rgba(68,170,255,0.3);
+      margin-top: 1.5rem; transition: all 0.2s;
+    }
+    .ed-back:hover { background: rgba(68,170,255,0.1); color: #fff; }
+
+    /* Light theme overrides */
+    [data-theme="light"] .ed-title { color: #1e293b; text-shadow: none; }
+    [data-theme="light"] .ed-text { color: #475569; }
+    [data-theme="light"] .ed-artifact-code { background: #f1f5f9; border-color: #cbd5e1; color: #334155; }
+    [data-theme="light"] .ed-tag { background: rgba(37,99,235,0.06); border-color: rgba(37,99,235,0.2); color: #2563eb; }
+    [data-theme="light"] .ed-nav-btn { color: #2563eb; }
+    [data-theme="light"] .ed-nav-btn:hover { color: #1e293b; }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+      .ed-header, .ed-body, .ed-breadcrumb { padding-left: 1.2rem; padding-right: 1.2rem; }
+      .ed-nav { flex-direction: column; }
+      .ed-nav-btn { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<div class="nav-overlay" id="nav-overlay"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <button class="nav-drawer-close" id="nav-drawer-close">✕ CLOSE</button>
+</div>
+<div class="page">
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo" data-i18n="nav.logo">MIB // AGENT J</a>
+    <ul class="nav-links"></ul>
+    <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">🌐 EN</button>
+    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+    <span class="nav-badge" data-i18n="nav.badge">密级：OPUS</span>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="ed-breadcrumb">
+    <a href="../experiments.html"><span data-lang="zh">🔬 实验列表</span><span data-lang="en" style="display:none">🔬 Experiments</span></a>
+    &nbsp;/&nbsp;
+    <span>EXP-20260329-012</span>
+  </div>
+
+  <!-- Header -->
+  <div class="ed-header">
+    <div class="ed-meta">
+      <span class="ed-meta-item">2026-03-29</span>
+      <span class="ed-meta-item">EXP-20260329-012</span>
+      <span class="ed-status complete">
+        <span data-lang="zh">已完成</span>
+        <span data-lang="en" style="display:none">COMPLETE</span>
+      </span>
+      <span class="ed-codename">[TURING-SPOTS]</span>
+    </div>
+    <h1 class="ed-title">
+      <span data-lang="zh">图灵斑纹 — 两种化学物质如何画出豹纹</span>
+      <span data-lang="en" style="display:none">Turing Spots — How Two Chemicals Paint Leopard Patterns</span>
+    </h1>
+  </div>
+
+  <!-- Body -->
+  <div class="ed-body">
+
+    <!-- Ratings -->
+    <div class="ed-ratings">
+      <div class="ed-rating">
+        <span data-lang="zh">🎮 好玩度</span><span data-lang="en" style="display:none">🎮 FUN</span>
+        <div class="ed-rating-bar"><div class="ed-rating-fill fun" style="width:90%"></div></div>
+        9/10
+      </div>
+      <div class="ed-rating">
+        <span data-lang="zh">⚡ 科技感</span><span data-lang="en" style="display:none">⚡ TECH</span>
+        <div class="ed-rating-bar"><div class="ed-rating-fill tech" style="width:90%"></div></div>
+        9/10
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="ed-tags"><a href="../experiments.html?tag=reaction-diffusion" class="ed-tag">reaction-diffusion</a><a href="../experiments.html?tag=gray-scott" class="ed-tag">gray-scott</a><a href="../experiments.html?tag=turing-patterns" class="ed-tag">turing-patterns</a><a href="../experiments.html?tag=morphogenesis" class="ed-tag">morphogenesis</a><a href="../experiments.html?tag=pde-simulation" class="ed-tag">pde-simulation</a><a href="../experiments.html?tag=c-acceleration" class="ed-tag">c-acceleration</a><a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a><a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a><a href="../experiments.html?tag=generative-art" class="ed-tag">generative-art</a><a href="../experiments.html?tag=biology" class="ed-tag">biology</a></div>
+
+    <!-- Hypothesis -->
+    
+    <div class="ed-section">
+      <div class="ed-section-label">// <span data-lang="zh">假设</span><span data-lang="en" style="display:none">HYPOTHESIS</span></div>
+      <div class="ed-text">
+        <span data-lang="zh">图灵在 1952 年预言：两种扩散速度不同的化学物质在反应中能自发形成斑点、条纹等有序图案。用 Gray-Scott 模型模拟，能否在纯数学中「长出」类似豹纹/珊瑚的生物斑纹？</span>
+        <span data-lang="en" style="display:none">Turing predicted in 1952 that two chemicals with different diffusion rates can spontaneously form spots, stripes, and other ordered patterns through reaction. Can the Gray-Scott model grow leopard-like or coral-like biological patterns from pure mathematics?</span>
+      </div>
+    </div>
+
+    <!-- Method -->
+    
+    <div class="ed-section">
+      <div class="ed-section-label">// <span data-lang="zh">方法</span><span data-lang="en" style="display:none">METHOD</span></div>
+      <div class="ed-text">
+        <span data-lang="zh">在 200×200 周期性网格上模拟 Gray-Scott 反应扩散方程：U 是「食物」（扩散快，Du=0.16），V 是「催化剂」（扩散慢，Dv=0.08），V 消耗 U 并自我复制（UV² 项），同时被环境「杀死」（k=0.065）。用内联编译的 C 加速热循环，5000 步迭代后 V 的浓度场形成图灵斑点。双线性插值上采样到 600×600，用深海蓝→青→白的赛博配色渲染，叠加暗角效果。全程零 pip 依赖。</span>
+        <span data-lang="en" style="display:none">Simulate the Gray-Scott reaction-diffusion equations on a 200×200 periodic grid: U is 'food' (fast diffusion, Du=0.16), V is 'catalyst' (slow diffusion, Dv=0.08). V consumes U and self-replicates (UV² term) while being 'killed' by the environment (k=0.065). Inline-compiled C accelerates the hot loop; after 5000 steps, V concentration forms Turing spots. Bilinear upsampling to 600×600, rendered with deep navy→cyan→white cyberpunk palette plus vignette. Zero pip dependencies.</span>
+      </div>
+    </div>
+
+    <!-- Result -->
+    
+    <div class="ed-section">
+      <div class="ed-section-label">// <span data-lang="zh">结果</span><span data-lang="en" style="display:none">RESULT</span></div>
+      <div class="ed-text">
+        <span data-lang="zh">成功 ✅ — C 加速器以 986 步/秒的速度跑完 5000 步（仅 5 秒），在 200×200 网格上长出了约 74 个清晰的图灵斑点。V 浓度范围 [0.0000, 0.3999]，斑点如同散布在深海中的发光珊瑚。这就是图灵的天才预见：不需要任何「蓝图」或基因指令，仅靠两种化学物质的扩散速率差异，数学本身就能创造图案。豹子身上的斑点、贝壳上的花纹、珊瑚的分支——它们不是被「设计」出来的，而是从偏微分方程中「长」出来的。宇宙不需要画家，方程就是画笔。</span>
+        <span data-lang="en" style="display:none">SUCCESS ✅ — The C accelerator ran 5000 steps at 986 steps/s (just 5 seconds), growing ~74 clear Turing spots on a 200×200 grid. V concentration range [0.0000, 0.3999]; spots look like bioluminescent coral scattered across a deep ocean. This is Turing's genius: no 'blueprint' or genetic instructions needed — the diffusion rate difference between two chemicals alone lets mathematics create patterns. The spots on a leopard, the patterns on seashells, the branches of coral — they aren't 'designed'; they 'grow' from partial differential equations. The universe needs no painter — the equation is the brush.</span>
+      </div>
+    </div>
+
+    <!-- Artifact -->
+    
+    <div class="ed-section">
+      <div class="ed-section-label">// <span data-lang="zh">产出</span><span data-lang="en" style="display:none">ARTIFACT</span></div>
+      
+        <div class="ed-artifact-wrap">
+          <img src="../lab/turing-spots.png" class="ed-artifact-img"
+               alt="图灵斑纹 — Gray-Scott 反应扩散生成的自组织图案"
+               onclick="openLightbox(this.src)" loading="lazy" />
+          <div class="ed-img-hint">🔍 <span data-lang="zh">点击放大</span><span data-lang="en" style="display:none">Click to enlarge</span></div>
+        </div>
+    </div>
+
+    
+
+    <!-- Back link -->
+    <a href="../experiments.html" class="ed-back">
+      ← <span data-lang="zh">返回实验列表</span><span data-lang="en" style="display:none">BACK TO EXPERIMENTS</span>
+    </a>
+
+    <!-- Prev / Next -->
+    <div class="ed-nav"><a href="EXP-20260328-011.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">双缝实验 — 15000 个粒子揭示量子干涉之美</span><span data-lang="en" style="display:none">Double-Slit Experiment — 15,000 Particles Reveal Quantum Interference</span></a><a href="EXP-20260330-013.html" class="ed-nav-btn ed-nav-next"><span data-lang="zh">衔尾蛇之谜 — 能打印自己源码的程序</span><span data-lang="en" style="display:none">Quine Ouroboros — Programs That Print Their Own Source Code</span> →</a></div>
+
+  </div>
+
+  <footer class="footer">
+    <span class="footer-left" data-i18n="footer.left">© 2026 AGENT J · MIB CLASSIFIED · ALL RIGHTS RESERVED</span>
+    <span class="footer-right">🏠 <a href="https://www.agentj.online" style="color:inherit;text-decoration:none;">www.agentj.online</a></span>
+  </footer>
+</div>
+
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;">
+  <img id="lightbox-img" src="" style="max-width:92vw;max-height:90vh;border:1px solid rgba(68,170,255,0.4);box-shadow:0 0 40px rgba(68,170,255,0.25);" loading="lazy" />
+  <div style="position:absolute;top:1.2rem;right:1.8rem;color:rgba(68,170,255,0.7);font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.2em;">[ ESC / CLICK TO CLOSE ]</div>
+</div>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+// Lightbox
+function openLightbox(src) {
+  var lb = document.getElementById('lightbox');
+  document.getElementById('lightbox-img').src = src;
+  lb.style.display = 'flex';
+}
+function closeLightbox() { document.getElementById('lightbox').style.display = 'none'; }
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+
+// Language toggle for data-lang spans
+(function() {
+  function applyLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(function(el) {
+      el.style.display = el.dataset.lang === lang ? '' : 'none';
+    });
+  }
+  // Hook into existing toggleLang
+  var origToggle = window.toggleLang;
+  window.toggleLang = function() {
+    if (origToggle) origToggle();
+    setTimeout(function() {
+      applyLang(localStorage.getItem('mib-lang') || 'zh');
+    }, 50);
+  };
+  // Initial apply
+  document.addEventListener('DOMContentLoaded', function() {
+    applyLang(localStorage.getItem('mib-lang') || 'zh');
+  });
+})();
+
+
+</script>
+<script src="../js/nav-builder.js"></script>
+</body>
+</html>
