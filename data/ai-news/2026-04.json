@@ -1,7 +1,18 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-06T08:00:00+08:00",
+  "lastUpdate": "2026-04-06T08:01:54+08:00",
   "articles": [
+    {
+      "title": "🚨 Dreamina Seedance 2.0 just launched in Dreamina with breakthrough \"Multimodal Reference\"",
+      "summary": "→ 12-file input in 4 different modalities\n→ Faces, fonts &amp; objects stay consistent\n→ Full features, no queues, and free trial for new users\n\nInsane examples &amp; how to try free below: https://t.…",
+      "url": "https://x.com/i/status/2040646436597952890",
+      "source": "X/Twitter",
+      "author": "@dr_cintas",
+      "date": "2026-04-05",
+      "time": "12:23",
+      "likes": 56,
+      "views": 7078
+    },
     {
       "title": "炸裂！Google Gemma-4大模型直接跑在iPhone上了！",
       "summary": "步骤超简单：\n\n1. App Store下载「Google AI Edge Gallery」（据说Android也可下载）\n2. 打开点「Agent Skills」\n3. 下载Gemma-4模型（约3G）\n4. 直接本地跑，支持中文\n\n重点：据说数据离线可使用\n不足：知识库时间到2025年1月\n\n这意味着什么？\n\n• 完全离线，数据不出去\n• 没有API费用\n• 真正的端侧AI\n\nGoogle这步…",
@@ -12,6 +23,17 @@
       "time": "10:17",
       "likes": 335,
       "views": 73215
+    },
+    {
+      "title": "MOST COMPLETE CLAUDE CODE SETUP OPEN SOURCED",
+      "summary": "- 27 agents, 64 skills, 33 commands + built-in AgentShield with 1,282 security tests\n- Handles planning, code review, fixes, TDD, token optimization & more\n- Works on Cursor, OpenCode, Codex CLI — one…",
+      "url": "https://x.com/i/status/2040500903296352663",
+      "source": "X/Twitter",
+      "author": "@RoundtableSpace",
+      "date": "2026-04-05",
+      "time": "02:45",
+      "likes": 4305,
+      "views": 448665
     },
     {
       "title": "Seedance 2.0 ya está en OpenArt.",
@@ -696,6 +718,17 @@
       "views": 4521265
     },
     {
+      "title": "⚠️ Video promptu: '' 5 saniyelik bir video, Beyaz bikinili uzak doğulu yatak odasında bir kız kameraya bakiyor ''",
+      "summary": "sadece bunu yazdim. \nseedance 2.0 sessiz sedasız video üretim oyununu değiştirdi. \n\nilk denemede aldigim sonuca bakin. yani o bildiğin 50 kere generate edip hepsini çöpe atma döngüsünu bitirmisler.  f…",
+      "url": "https://x.com/i/status/2039772772717719938",
+      "source": "X/Twitter",
+      "author": "@umutcanbostanci",
+      "date": "2026-04-03",
+      "time": "02:31",
+      "likes": 206,
+      "views": 34500
+    },
+    {
       "title": "We’re introducing Cursor 3. It is simpler, more powerful, and built for a world where all code is written by agents, while keeping the depth of a development environment. https://t.co/rXR9vaZDnO",
       "summary": "",
       "url": "https://x.com/i/status/2039768512894505086",
@@ -814,6 +847,17 @@
       "author": "字母AI",
       "date": "2026-04-02",
       "time": "15:20"
+    },
+    {
+      "title": "Seedance 2.0 is live on OpenArt - for Teams & Enterprise users first.",
+      "summary": "-Up to 9 images, 3 videos, and 3 audio files as references\n-Director-level camera control\n-90%+ usable output on the first attempt\n-Cinematic multi-shot storytelling.\n-Physics that actually holds.\n\n60…",
+      "url": "https://x.com/i/status/2039553049560223799",
+      "source": "X/Twitter",
+      "author": "@openart_ai",
+      "date": "2026-04-02",
+      "time": "11:58",
+      "likes": 908,
+      "views": 7146909
     },
     {
       "title": "谁能告诉我全网最好的，第三方Seedance 2.0 的API接入方是哪个？",
@@ -1099,6 +1143,17 @@
       "views": 242248
     },
     {
+      "title": "Claude Code 2.1.90 has been released.",
+      "summary": "19 CLI changes\n\nHighlights:\n• Added /powerup interactive lessons with animated demos to speed hands-on Claude Code onboarding\n• Auto mode respects explicit boundaries like 'don't push' or 'wait for X …",
+      "url": "https://x.com/i/status/2039493041979847023",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-02",
+      "time": "08:00",
+      "likes": 881,
+      "views": 125886
+    },
+    {
       "title": "Today we're excited to announce NO_FLICKER mode for Claude Code in the terminal",
       "summary": "It uses an experimental new renderer that we're excited about. The renderer is early and has tradeoffs, but already we've found that most internal users prefer it over the old renderer. It also suppor…",
       "url": "https://x.com/i/status/2039421575422980329",
@@ -1108,6 +1163,17 @@
       "time": "03:16",
       "likes": 10021,
       "views": 2413153
+    },
+    {
+      "title": "OpenAI’s CFO Sarah Friar:",
+      "summary": "\"When you give people raw intelligence, they see what it can do and they use it more.\"\n- Free users: 7 uses/day. Plus: 21. Pro: 11x higher.\n- OpenAI is turning away business due to compute shortages.\n…",
+      "url": "https://x.com/i/status/2039421316303057048",
+      "source": "X/Twitter",
+      "author": "@rohanpaul_ai",
+      "date": "2026-04-02",
+      "time": "03:15",
+      "likes": 183,
+      "views": 37489
     },
     {
       "title": "One magical orb. Infinite cosmic power",
