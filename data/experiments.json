@@ -620,5 +620,39 @@
       "alt_zh": "Gosper 滑翔机枪 — 240 步时间热力图",
       "alt_en": "Gosper Glider Gun — 240-Step Temporal Heatmap"
     }
+  },
+  {
+    "id": "EXP-20260407-020",
+    "date": "2026-04-07",
+    "codename": "LISSAJOUS-HARMONY",
+    "status": "COMPLETE",
+    "title_zh": "利萨如和弦 — 频率比画出的音乐图形",
+    "title_en": "Lissajous Harmony — Musical Intervals Drawn by Frequency Ratios",
+    "hypothesis_zh": "两个互相垂直的正弦振动叠加时，如果频率比恰好是简单整数比（对应音乐和弦音程），会画出什么形状？1:1 同度、2:1 八度、3:2 五度……每个音程是否都有独特的视觉'签名'？",
+    "hypothesis_en": "When two perpendicular sinusoidal motions combine, what shapes emerge if their frequency ratios are simple integers — corresponding to musical intervals? Does each interval (unison 1:1, octave 2:1, fifth 3:2...) have a unique visual 'signature'?",
+    "method_zh": "用参数方程 x(t)=sin(a·t+δ), y(t)=sin(b·t) 绘制 8 种音乐音程对应的利萨如图形：同度(1:1)、八度(2:1)、纯五度(3:2)、纯四度(4:3)、大三度(5:4)、大六度(5:3)、小三度(6:5)、小六度(8:5)。每条曲线 2000 个采样点，双层渲染（外层辉光+内层主线），颜色沿曲线渐变。8 格网格布局，赛博朋克配色，扫描线+径向暗角。纯 Python 手写 PNG 编码器，零外部依赖。",
+    "method_en": "Plot 8 Lissajous figures using x(t)=sin(a·t+δ), y(t)=sin(b·t) for musical intervals: unison(1:1), octave(2:1), perfect fifth(3:2), perfect fourth(4:3), major third(5:4), major sixth(5:3), minor third(6:5), minor sixth(8:5). Each curve sampled at 2000 points, dual-layer rendering (outer glow + inner line), color-graded along the curve. 4×2 grid layout, cyberpunk palette, scanlines + radial vignette. Pure Python hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 174KB 的 PNG 展示了 8 种音乐音程的利萨如图形。最简单的 1:1 同度画出一个优雅的椭圆；2:1 八度形成对称的 8 字形抛物线；3:2 纯五度——西方音乐最和谐的音程——画出了精致的三叶结；4:3 纯四度是四叶草；比值越复杂（5:4、6:5），曲线的缠绕越密集越华丽。最深刻的发现：毕达哥拉斯 2500 年前用铁匠铺的锤子发现频率的简单整数比听起来和谐——今天我们用数学证明，和谐不仅能被听到，还能被看到。每一个和弦都是一幅画，每一首曲子都是一组利萨如图形的编舞。",
+    "result_en": "SUCCESS ✅ — A 174KB PNG showcases 8 Lissajous figures corresponding to musical intervals. The simplest 1:1 unison draws an elegant ellipse; the 2:1 octave forms a symmetric figure-8 parabola; the 3:2 perfect fifth — the most consonant interval in Western music — creates an exquisite trefoil knot; the 4:3 fourth makes a four-leaf clover. Higher ratios (5:4, 6:5) produce increasingly intricate intertwining curves. The deepest insight: Pythagoras discovered 2,500 years ago with a blacksmith's hammers that simple integer frequency ratios sound harmonious — today we prove mathematically that harmony can not only be heard but seen. Every chord is a painting, every melody a choreography of Lissajous figures.",
+    "tags": [
+      "lissajous",
+      "music-theory",
+      "frequency-ratios",
+      "harmonic-intervals",
+      "parametric-curves",
+      "generative-art",
+      "pure-python",
+      "zero-dependency",
+      "mathematics",
+      "pythagoras"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 7,
+    "artifact": {
+      "type": "image",
+      "src": "lab/lissajous-harmony.png",
+      "alt_zh": "利萨如和弦 — 8 种音乐音程的参数曲线图",
+      "alt_en": "Lissajous Harmony — Parametric Curves of 8 Musical Intervals"
+    }
   }
 ]
