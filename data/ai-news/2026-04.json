@@ -1,7 +1,18 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-07T08:00:00+08:00",
+  "lastUpdate": "2026-04-07T08:01:33+08:00",
   "articles": [
+    {
+      "title": "Claude Code + Nano Banana pro + VEO 3.1",
+      "summary": "Try it yourself \n\nPrompt ↓ https://t.co/fSXZcDmQpu",
+      "url": "https://x.com/i/status/2041232035784572986",
+      "source": "X/Twitter",
+      "author": "@viktoroddy",
+      "date": "2026-04-07",
+      "time": "03:10",
+      "likes": 153,
+      "views": 6375
+    },
     {
       "title": "Give your agent the Molty spicy SOUL upgrade: stronger opinions, less corporate sludge, better instincts, and replies that might finally sound like someone worth talking to at 2am 🦞https://t.co/Is4Q1GsMpQ",
       "summary": "",
@@ -80,6 +91,17 @@
       "views": 7078
     },
     {
+      "title": "You're going to watch Netflix tonight anyway.",
+      "summary": "But if you give me 5 hours instead - I'll give you a skill that will still be rare in 2026.\n\nThis N8N full course teaches you to BUILD and AUTOMATE anything:\n\n→ No-code workflows\n→ AI agent pipelines\n…",
+      "url": "https://x.com/i/status/2040629352010846502",
+      "source": "X/Twitter",
+      "author": "@cyrilXBT",
+      "date": "2026-04-05",
+      "time": "11:15",
+      "likes": 3968,
+      "views": 288936
+    },
+    {
       "title": "炸裂！Google Gemma-4大模型直接跑在iPhone上了！",
       "summary": "步骤超简单：\n\n1. App Store下载「Google AI Edge Gallery」（据说Android也可下载）\n2. 打开点「Agent Skills」\n3. 下载Gemma-4模型（约3G）\n4. 直接本地跑，支持中文\n\n重点：据说数据离线可使用\n不足：知识库时间到2025年1月\n\n这意味着什么？\n\n• 完全离线，数据不出去\n• 没有API费用\n• 真正的端侧AI\n\nGoogle这步…",
       "url": "https://x.com/i/status/2040614652187676752",
@@ -89,6 +111,28 @@
       "time": "10:17",
       "likes": 335,
       "views": 73215
+    },
+    {
+      "title": "claude code教程，讲的非常仔细，新手完全能听懂并且落地，这教程在国内不得收费398，598元？估计还一大堆人抢着买。",
+      "summary": "静下心看完这一套完整教程，你就能真正用 AI 搭建工作流、实现自动化、处理复杂任务。 https://t.co/pg34yjXC0S",
+      "url": "https://x.com/i/status/2040598610589470893",
+      "source": "X/Twitter",
+      "author": "@dachaoren",
+      "date": "2026-04-05",
+      "time": "09:13",
+      "likes": 11146,
+      "views": 652235
+    },
+    {
+      "title": "In 1888, moving images were born. Decades to reach everyone, a camera in every pocket. Now your imagination is the only limit.",
+      "summary": "Seedance 2.0 on Higgsfield, built to excel at cinematic, commercial, cartoon, and 3D CGI.\n\n🎁 Hidden in our timeline. Available everywhere except the US and Japan.",
+      "url": "https://x.com/i/status/2040508583792796033",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-04-05",
+      "time": "03:15",
+      "likes": 1292,
+      "views": 4659733
     },
     {
       "title": "MOST COMPLETE CLAUDE CODE SETUP OPEN SOURCED",
@@ -828,6 +872,17 @@
       "views": 54369
     },
     {
+      "title": "Bring Codex to your team without fixed seat costs.",
+      "summary": "We’re rolling out usage-based pricing for Codex in ChatGPT Business and Enterprise plans, so teams have a more flexible way to get started. https://t.co/dyfuK5ouXS",
+      "url": "https://x.com/i/status/2039794643513295328",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-04-03",
+      "time": "03:58",
+      "likes": 1359,
+      "views": 240402
+    },
+    {
       "title": "Seedance 2.0 just dropped and gave birth to the next major franchise 🎬🔥",
       "summary": "Watch “Zephyr” -  a new global entertainment industry benchmark, born within Higgsfield Original Series.\n\nCreate your own show on Cinema Studio 3.0.\n\nOnly available through business email verification…",
       "url": "https://x.com/i/status/2039775464743653718",
@@ -910,6 +965,17 @@
       "author": "新智元",
       "date": "2026-04-02",
       "time": "20:27"
+    },
+    {
+      "title": "If you're using Claude Code, this is worth knowing.",
+      "summary": "Instead of worrying about whether Opus 4.6 or GPT 5.4 is better, it's more useful to combine them in the same workflow.\n\nOpenAI shipped an official Claude Code plugin called codex-plugin-cc. You can n…",
+      "url": "https://x.com/i/status/2039671796589625720",
+      "source": "X/Twitter",
+      "author": "@hqmank",
+      "date": "2026-04-02",
+      "time": "19:50",
+      "likes": 2236,
+      "views": 506250
     },
     {
       "title": "Seedance 2.0 今天正式开放了 API",
@@ -1372,6 +1438,17 @@
       "time": "00:33",
       "likes": 1288,
       "views": 151809
+    },
+    {
+      "title": "The agent is called Graham.",
+      "summary": "It pulls live financial data, builds DCF models, runs comps, writes bull, bear and base cases, generates charts in Google Sheets and delivers a polished Google Doc. \n\nOn demand, for any publicly liste…",
+      "url": "https://x.com/i/status/2039371130885050530",
+      "source": "X/Twitter",
+      "author": "@AIFrontliner",
+      "date": "2026-04-01",
+      "time": "23:55",
+      "likes": 7,
+      "views": 2398
     },
     {
       "title": "Hermes Agent is an INCREDIBLE AI agent",
