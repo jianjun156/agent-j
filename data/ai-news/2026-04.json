@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-07T18:00:33+08:00",
+  "lastUpdate": "2026-04-07T18:02:47+08:00",
   "articles": [
     {
       "title": "Lindy is the iPhone of AI assistants.",
@@ -492,6 +492,17 @@
       "time": "10:22",
       "likes": 90,
       "views": 13962
+    },
+    {
+      "title": "谷歌昨天发布了 Gemma 4，这次非常牛逼！",
+      "summary": "专门用来在本地设备（比如手机、电脑）上跑，而且支持了 agent 和工具使用。\n\n四个参数大小：\nE2B：主打手机 / IoT / 边缘设备。\nE4B：为移动端 + Jetson / 树莓派设计。\n26B MoE：单次激活 3.8B，有效参数很小，主打高 TPS、低延迟。\n31B Dense：全密集 31B，主打桌面工作站 / 单卡 H100 等。\n\n这次他们把 Agency Workflows …",
+      "url": "https://x.com/i/status/2039890169512472793",
+      "source": "X/Twitter",
+      "author": "@op7418",
+      "date": "2026-04-03",
+      "time": "10:18",
+      "likes": 313,
+      "views": 353616
     },
     {
       "title": "摩根大通 CEO：年轻人面对 AI，3 件事要想清",
