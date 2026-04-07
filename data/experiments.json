@@ -654,5 +654,38 @@
       "alt_zh": "利萨如和弦 — 8 种音乐音程的参数曲线图",
       "alt_en": "Lissajous Harmony — Parametric Curves of 8 Musical Intervals"
     }
+  },
+  {
+    "id": "EXP-20260408-021",
+    "date": "2026-04-08",
+    "codename": "VORONOI-CRYSTAL",
+    "status": "COMPLETE",
+    "title_zh": "Voronoi 水晶 — 150 个种子点切割平面成宝石花窗",
+    "title_en": "Voronoi Crystal — 150 Seed Points Cutting a Plane into Gem-Stained Glass",
+    "hypothesis_zh": "在平面上随机撒 150 个种子点，让每个像素归属于离它最近的种子——这种简单的『最近邻法则』能否自发生成类似教堂彩色玻璃或宝石切面的美丽图案？细胞大小的分布有多不均匀？",
+    "hypothesis_en": "Scatter 150 random seed points on a plane and assign each pixel to its nearest seed — can this simple 'nearest neighbor rule' spontaneously generate patterns resembling stained glass or gem facets? How uneven is the cell size distribution?",
+    "method_zh": "在 800×600 画布上用暴力最近邻法计算 150 个种子点的 Voronoi 图：对每个像素找最近和次近种子，记录距离差用于边界检测。细胞着色用黄金比例分散色相，HSL 空间中低明度高饱和模拟宝石质感。边界区域（距离差 <3px）叠加青色辉光，细胞内部用距离场制造同心环纹理和中心高光。种子点标为白色光点。叠加扫描线和径向暗角。纯 Python 手写 PNG 编码器，零外部依赖。",
+    "method_en": "Compute Voronoi diagram for 150 seeds on an 800×600 canvas via brute-force nearest neighbor: for each pixel, find the closest and second-closest seed, record distance difference for boundary detection. Cells colored using golden-ratio hue dispersal in HSL space with low lightness and high saturation for gem-like appearance. Boundaries (distance diff <3px) overlaid with cyan glow. Cell interiors textured with concentric rings from distance field and center highlights. Seed points marked as white dots. Scanline and radial vignette overlays. Pure Python hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 643KB 的 PNG 生成了一幅惊艳的赛博朋克彩色玻璃图。150 个种子点全部形成了独立的 Voronoi 细胞，细胞大小从 323px 到 11284px 不等（34.9 倍差异！），中位数 2866px。15.2% 的像素位于细胞边界上，青色辉光勾勒出每一条『裂缝』。最美的部分是黄金比例色相分配——让相邻细胞几乎不会撞色，整体效果像一面散落在深空中的彩色教堂花窗。Voronoi 图无处不在：长颈鹿的斑纹、干裂的泥地、蜻蜓的翅膀脉络、泡沫的形状——自然界最爱的分区方式，就是『谁近归谁』。",
+    "result_en": "SUCCESS ✅ — A 643KB PNG creates stunning cyberpunk stained glass. All 150 seeds formed distinct Voronoi cells ranging from 323px to 11,284px (34.9× difference!), median 2,866px. 15.2% of pixels lie on cell boundaries, outlined by cyan glow 'cracks'. The golden-ratio hue assignment ensures neighboring cells rarely share colors, creating the effect of stained glass floating in deep space. Voronoi diagrams are everywhere in nature: giraffe spots, cracked mud, dragonfly wing veins, foam bubbles — nature's favorite partitioning method is simply 'closest wins'.",
+    "tags": [
+      "voronoi",
+      "computational-geometry",
+      "nearest-neighbor",
+      "stained-glass",
+      "generative-art",
+      "pure-python",
+      "zero-dependency",
+      "data-visualization",
+      "nature-patterns"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 7,
+    "artifact": {
+      "type": "image",
+      "src": "lab/voronoi-crystal.png",
+      "alt_zh": "Voronoi 水晶 — 150 个种子点的彩色玻璃花窗",
+      "alt_en": "Voronoi Crystal — Stained Glass from 150 Seed Points"
+    }
   }
 ]
