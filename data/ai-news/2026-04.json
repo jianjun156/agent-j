@@ -1,7 +1,18 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-07T08:01:33+08:00",
+  "lastUpdate": "2026-04-07T08:02:17+08:00",
   "articles": [
+    {
+      "title": "Lindy is the iPhone of AI assistants.",
+      "summary": "Here's why:\n\nOpenClaw = Linux:\n- The agent can rewrite its own code on the fly.\n- Wildly powerful.\n- Also complex and very technical\n\nClaude = Android:\n- Built for developers and power users.\n- More p…",
+      "url": "https://x.com/i/status/2041253031917109502",
+      "source": "X/Twitter",
+      "author": "@startupideaspod",
+      "date": "2026-04-07",
+      "time": "04:33",
+      "likes": 29,
+      "views": 4762
+    },
     {
       "title": "Claude Code + Nano Banana pro + VEO 3.1",
       "summary": "Try it yourself \n\nPrompt ↓ https://t.co/fSXZcDmQpu",
@@ -12,6 +23,28 @@
       "time": "03:10",
       "likes": 153,
       "views": 6375
+    },
+    {
+      "title": "AI agents aren't magic. They're systems you should be able to reason about.",
+      "summary": "Next week, @_nerdai_, author of Build a Multi-Agent System (from Scratch), will build one from the ground up — no frameworks, just first principles.\n\nUnderstand how LLMs, tools, MCP, and reasoning loo…",
+      "url": "https://x.com/i/status/2041184283310645719",
+      "source": "X/Twitter",
+      "author": "@ManningBooks",
+      "date": "2026-04-07",
+      "time": "00:00",
+      "likes": 11,
+      "views": 486
+    },
+    {
+      "title": "A secret workplace war broke out in China and went viral on GitHub.",
+      "summary": "Companies ordered workers to document their knowledge as \"AI skill files.\" Workers figured out why and fired back.\n\nSomeone built colleague. skill - clones a coworker's chats and docs into an AI agent…",
+      "url": "https://x.com/i/status/2041180379445367131",
+      "source": "X/Twitter",
+      "author": "@RoundtableSpace",
+      "date": "2026-04-06",
+      "time": "23:45",
+      "likes": 90,
+      "views": 54011
     },
     {
       "title": "Give your agent the Molty spicy SOUL upgrade: stronger opinions, less corporate sludge, better instincts, and replies that might finally sound like someone worth talking to at 2am 🦞https://t.co/Is4Q1GsMpQ",
@@ -58,6 +91,17 @@
       "views": 598
     },
     {
+      "title": "bro created an AI job search system for Claude Code that scored 700+ job applications and actually got him a job.",
+      "summary": "AND IT'S NOW OPEN-SOURCE.\n\nIt scans multiple company career pages, rewrites your CV per job, and even fills application forms. The repo has:\n> 14 skill modes (evaluate, scan, PDF, ...)\n> Go terminal d…",
+      "url": "https://x.com/i/status/2040820834428658008",
+      "source": "X/Twitter",
+      "author": "@Hesamation",
+      "date": "2026-04-05",
+      "time": "23:56",
+      "likes": 23400,
+      "views": 4112049
+    },
+    {
       "title": "CLAUDE IS OFFERING 13 AI COURSES & CERTIFICATES.",
       "summary": "ALL FREE. START LEARNING NOW.\n\n* Claude 101. Learn Claude for everyday work.\nhttps://t.co/5BTxHDLkFl\n\n* AI Fluency: Frameworks & Foundations.\nhttps://t.co/4cVd0yWh2b\n\n* Introduction to Agent Skills.\nh…",
       "url": "https://x.com/i/status/2040772692866183308",
@@ -78,6 +122,17 @@
       "time": "19:03",
       "likes": 80,
       "views": 40391
+    },
+    {
+      "title": "This repo gives any AI agent instant access to the entire web without API keys.",
+      "summary": "Agent Reach is a single command that connects your agent to 15+ platforms like Twitter, Reddit, and Bilibili. It completely bypasses expensive API paywalls and frustrating 403 errors.\n\n100% Open Sourc…",
+      "url": "https://x.com/i/status/2040743989796823136",
+      "source": "X/Twitter",
+      "author": "@oliviscusAI",
+      "date": "2026-04-05",
+      "time": "18:50",
+      "likes": 810,
+      "views": 48250
     },
     {
       "title": "🚨 Dreamina Seedance 2.0 just launched in Dreamina with breakthrough \"Multimodal Reference\"",
