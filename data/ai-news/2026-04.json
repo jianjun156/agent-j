@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-08T18:01:14+08:00",
+  "lastUpdate": "2026-04-08T18:02:43+08:00",
   "articles": [
     {
       "title": "To celebrate 3 million weekly codex users, we are resetting usage limits.",
@@ -25,6 +25,17 @@
       "views": 245346
     },
     {
+      "title": "We’ve added a new pseudonymous video model to our Text to Video and Image to Video Arenas.‘HappyHorse-1.0’ is currently landing in the #1 spot for Text and Image to Video (No Audio) and the #2 spot for Text and Image to Video (With Audio).",
+      "summary": "Further details coming soon.\n\nExample generations below from HappyHorse-1.0 in the Artificial Analysis Video Arena 🚀",
+      "url": "https://x.com/i/status/2041591989083500933",
+      "source": "X/Twitter",
+      "author": "@ArtificialAnlys",
+      "date": "2026-04-08",
+      "time": "03:00",
+      "likes": 265,
+      "views": 57220
+    },
+    {
       "title": "Introducing Project Glasswing: an urgent initiative to help secure the world’s most critical software.",
       "summary": "It’s powered by our newest frontier model, Claude Mythos Preview, which can find software vulnerabilities better than all but the most skilled humans.\nhttps://t.co/NQ7IfEtYk7",
       "url": "https://x.com/i/status/2041578392852517128",
@@ -34,6 +45,28 @@
       "time": "02:06",
       "likes": 32527,
       "views": 18041716
+    },
+    {
+      "title": "这个教程确实牛逼啊，现在很多短剧都是AI生成了",
+      "summary": "AI 短剧赛道，已经进化到“工业流水线”时代  \n\n爆款工作流：OpenClaw  + XCrawl + Seedance 2.0把短剧制作门槛，直接打到了地板上  \n\n详细 Skill 配置 + 操作步骤",
+      "url": "https://x.com/i/status/2041483098584728053",
+      "source": "X/Twitter",
+      "author": "@WY_mask",
+      "date": "2026-04-07",
+      "time": "19:47",
+      "likes": 292,
+      "views": 39703
+    },
+    {
+      "title": "HappyHorse 盲测超越 Seedance 2.0 登顶第一👑",
+      "summary": "Artificial Analysis 突然冒出一匹黑马，没有官网，没有论文，没有任何公开信息\n\n老张只想问下万能的推友：这是谁的部下如此勇猛？ https://t.co/ykpwOEM7j9",
+      "url": "https://x.com/i/status/2041461520425746902",
+      "source": "X/Twitter",
+      "author": "@laozhang2579",
+      "date": "2026-04-07",
+      "time": "18:22",
+      "likes": 215,
+      "views": 87491
     },
     {
       "title": "有人把一套Claude Code的新手教程讲得特别细，在闲鱼卖398块钱，已经卖出去几百份了。",
@@ -91,6 +124,17 @@
       "views": 712910
     },
     {
+      "title": "In 1888, moving images were born. Decades to reach everyone, a camera in every pocket. Now your imagination is the only limit.",
+      "summary": "Seedance 2.0 on Higgsfield, built to excel at cinematic, commercial, cartoon, and 3D CGI.\n\n🎁 Hidden in our timeline. Available everywhere except the US and Japan.",
+      "url": "https://x.com/i/status/2040508583792796033",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-04-05",
+      "time": "03:15",
+      "likes": 1471,
+      "views": 7379553
+    },
+    {
       "title": "真心建议每个程序员都去手搓一个自用的 Coding Agent。",
       "summary": "纯靠写 Prompt 糊文本做 Skill，观测性太差了，你根本摸不到 harness 模型的上限在哪。缺乏 Agent 的状态流转做约束，复杂任务根本控不住。\n\n最近用 AI 搓了个 mini 版的 Claude Code，对 Agent 的理解稍微升了点。\n\nPS: 我经常从 Gemini / GPT-5.4 蒸馏 SOP Skill，再下放给 @MiniMax_AI 模型来跑任务. 建议可以…",
       "url": "https://x.com/i/status/2040480642857828636",
@@ -100,6 +144,17 @@
       "time": "01:24",
       "likes": 1109,
       "views": 141932
+    },
+    {
+      "title": "Seedance 2.0 just dropped and gave birth to the next major franchise 🎬🔥",
+      "summary": "Watch “Zephyr” -  a new global entertainment industry benchmark, born within Higgsfield Original Series.\n\nCreate your own show on Cinema Studio 3.0.\n\nOnly available through business email verification…",
+      "url": "https://x.com/i/status/2039775464743653718",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-04-03",
+      "time": "02:42",
+      "likes": 1935,
+      "views": 5404992
     },
     {
       "title": "We’re introducing Cursor 3. It is simpler, more powerful, and built for a world where all code is written by agents, while keeping the depth of a development environment. https://t.co/rXR9vaZDnO",
@@ -124,6 +179,28 @@
       "views": 7518675
     },
     {
+      "title": "上次我介绍全新AI 视频 Agent LibTV",
+      "summary": "可以接入Claude Code和龙虾，一句话出片..\n\n但是遗憾的是当时没有接入Seedance 2.0，效果不是很理想，今天Seedance 2.0 今天正式开放了 API，他们第一批接入了\n\n现在效果直接起飞了...\n\n利用Claude Code 接入他们的skill，直接就能生成完整视频😅\n\n下面是我测试的一些结果",
+      "url": "https://x.com/i/status/2039689016057209171",
+      "source": "X/Twitter",
+      "author": "@xiaohu",
+      "date": "2026-04-02",
+      "time": "20:58",
+      "likes": 365,
+      "views": 79541
+    },
+    {
+      "title": "Seedance 2.0 – officially on Higgsfield with 65% OFF!",
+      "summary": "Next-gen physics in your AI videos. Joint audio-video generation. Best-in-class picture control.\n\nWorld’s best video model lands on Higgsfield right on our birthday.\n\nOnly available through business e…",
+      "url": "https://x.com/i/status/2039535191098802315",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-04-02",
+      "time": "10:47",
+      "likes": 2826,
+      "views": 4797104
+    },
+    {
       "title": "Today we're excited to announce NO_FLICKER mode for Claude Code in the terminal",
       "summary": "It uses an experimental new renderer that we're excited about. The renderer is early and has tradeoffs, but already we've found that most internal users prefer it over the old renderer. It also suppor…",
       "url": "https://x.com/i/status/2039421575422980329",
@@ -133,6 +210,17 @@
       "time": "03:16",
       "likes": 10060,
       "views": 2500463
+    },
+    {
+      "title": "推荐一款Manus平替工具：AnyGen， 字节出品",
+      "summary": "1. 支持Nano Banana 2/Pro 生成设计图\n2. 接入了Seedance 2.0 实测支持10s视频\n3. AI搭档支持接入Lark、Telegram和Discord\n\n功能齐全，可玩性很高👇\nhttps://t.co/icNsJqNcm0 https://t.co/3tN8DdFM2J",
+      "url": "https://x.com/i/status/2039238393746673734",
+      "source": "X/Twitter",
+      "author": "@yanhua1010",
+      "date": "2026-04-01",
+      "time": "15:08",
+      "likes": 533,
+      "views": 61603
     },
     {
       "title": "Claude code 分析文章千千万，唯独这篇最强，深入分析里边的结构。",
