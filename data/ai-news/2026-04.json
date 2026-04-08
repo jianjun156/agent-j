@@ -1,5 +1,149 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-08T18:00:01+08:00",
-  "articles": []
+  "lastUpdate": "2026-04-08T18:01:14+08:00",
+  "articles": [
+    {
+      "title": "To celebrate 3 million weekly codex users, we are resetting usage limits.",
+      "summary": "We will do this every million users up to 10 million.\n\nHappy building!",
+      "url": "https://x.com/i/status/2041658719839383945",
+      "source": "X/Twitter",
+      "author": "@sama",
+      "date": "2026-04-08",
+      "time": "07:25",
+      "likes": 20428,
+      "views": 1041491
+    },
+    {
+      "title": "Three million people are now using Codex weekly - up from two million a little under a month ago. Incredible to see the growth. Thank you to all of you and to the ecosystem we’re part of. To celebrate, we’re resetting rate limits so you can keep building, and we’ll reset them every additional 1M users until we reach 10M, so we can keep celebrating along the way.",
+      "summary": "Enjoy and thank you!",
+      "url": "https://x.com/i/status/2041655710346572085",
+      "source": "X/Twitter",
+      "author": "@thsottiaux",
+      "date": "2026-04-08",
+      "time": "07:13",
+      "likes": 3720,
+      "views": 245346
+    },
+    {
+      "title": "Introducing Project Glasswing: an urgent initiative to help secure the world’s most critical software.",
+      "summary": "It’s powered by our newest frontier model, Claude Mythos Preview, which can find software vulnerabilities better than all but the most skilled humans.\nhttps://t.co/NQ7IfEtYk7",
+      "url": "https://x.com/i/status/2041578392852517128",
+      "source": "X/Twitter",
+      "author": "@AnthropicAI",
+      "date": "2026-04-08",
+      "time": "02:06",
+      "likes": 32527,
+      "views": 18041716
+    },
+    {
+      "title": "有人把一套Claude Code的新手教程讲得特别细，在闲鱼卖398块钱，已经卖出去几百份了。",
+      "summary": "现在这套东西免费放出来，说白了就是信息差。你只要沉下心把这套完整教程过一遍，就能真正用AI搭工作流、做自动化、搞定那些比较复杂的事。 https://t.co/arYtxqEydM",
+      "url": "https://x.com/i/status/2041237944783319499",
+      "source": "X/Twitter",
+      "author": "@TGweb3333",
+      "date": "2026-04-07",
+      "time": "03:33",
+      "likes": 781,
+      "views": 82359
+    },
+    {
+      "title": "claude code新手教程，这个老外讲的非常仔细，这教程在闲鱼卖398，卖了几百份了。",
+      "summary": "这里免费，真的是认知差，静下心看完这一套完整教程，你就能真正用 AI 搭建工作流、实现自动化、处理复杂任务。 https://t.co/pg34yjXC0S",
+      "url": "https://x.com/i/status/2041053531759640601",
+      "source": "X/Twitter",
+      "author": "@dachaoren",
+      "date": "2026-04-06",
+      "time": "15:20",
+      "likes": 10275,
+      "views": 739908
+    },
+    {
+      "title": "CLAUDE IS OFFERING 13 AI COURSES & CERTIFICATES.",
+      "summary": "ALL FREE. START LEARNING NOW.\n\n* Claude 101. Learn Claude for everyday work.\nhttps://t.co/5BTxHDLkFl\n\n* AI Fluency: Frameworks & Foundations.\nhttps://t.co/4cVd0yWh2b\n\n* Introduction to Agent Skills.\nh…",
+      "url": "https://x.com/i/status/2040772692866183308",
+      "source": "X/Twitter",
+      "author": "@RoundtableSpace",
+      "date": "2026-04-05",
+      "time": "20:45",
+      "likes": 8599,
+      "views": 3253507
+    },
+    {
+      "title": "You're going to watch Netflix tonight anyway.",
+      "summary": "But if you give me 5 hours instead - I'll give you a skill that will still be rare in 2026.\n\nThis N8N full course teaches you to BUILD and AUTOMATE anything:\n\n→ No-code workflows\n→ AI agent pipelines\n…",
+      "url": "https://x.com/i/status/2040629352010846502",
+      "source": "X/Twitter",
+      "author": "@cyrilXBT",
+      "date": "2026-04-05",
+      "time": "11:15",
+      "likes": 4044,
+      "views": 299946
+    },
+    {
+      "title": "claude code教程，讲的非常仔细，新手完全能听懂并且落地，这教程在国内不得收费398，598元？估计还一大堆人抢着买。",
+      "summary": "静下心看完这一套完整教程，你就能真正用 AI 搭建工作流、实现自动化、处理复杂任务。 https://t.co/pg34yjXC0S",
+      "url": "https://x.com/i/status/2040598610589470893",
+      "source": "X/Twitter",
+      "author": "@dachaoren",
+      "date": "2026-04-05",
+      "time": "09:13",
+      "likes": 11646,
+      "views": 712910
+    },
+    {
+      "title": "真心建议每个程序员都去手搓一个自用的 Coding Agent。",
+      "summary": "纯靠写 Prompt 糊文本做 Skill，观测性太差了，你根本摸不到 harness 模型的上限在哪。缺乏 Agent 的状态流转做约束，复杂任务根本控不住。\n\n最近用 AI 搓了个 mini 版的 Claude Code，对 Agent 的理解稍微升了点。\n\nPS: 我经常从 Gemini / GPT-5.4 蒸馏 SOP Skill，再下放给 @MiniMax_AI 模型来跑任务. 建议可以…",
+      "url": "https://x.com/i/status/2040480642857828636",
+      "source": "X/Twitter",
+      "author": "@hylarucoder",
+      "date": "2026-04-05",
+      "time": "01:24",
+      "likes": 1109,
+      "views": 141932
+    },
+    {
+      "title": "We’re introducing Cursor 3. It is simpler, more powerful, and built for a world where all code is written by agents, while keeping the depth of a development environment. https://t.co/rXR9vaZDnO",
+      "summary": "",
+      "url": "https://x.com/i/status/2039768512894505086",
+      "source": "X/Twitter",
+      "author": "@cursor_ai",
+      "date": "2026-04-03",
+      "time": "02:14",
+      "likes": 8078,
+      "views": 1952637
+    },
+    {
+      "title": "We just released Gemma 4  — our most intelligent open models to date.",
+      "summary": "Built from the same world-class research as Gemini 3, Gemma 4 brings breakthrough intelligence directly to your own hardware for advanced reasoning and agentic workflows.\n\nReleased under a commerciall…",
+      "url": "https://x.com/i/status/2039736220834480233",
+      "source": "X/Twitter",
+      "author": "@Google",
+      "date": "2026-04-03",
+      "time": "00:06",
+      "likes": 20490,
+      "views": 7518675
+    },
+    {
+      "title": "Today we're excited to announce NO_FLICKER mode for Claude Code in the terminal",
+      "summary": "It uses an experimental new renderer that we're excited about. The renderer is early and has tradeoffs, but already we've found that most internal users prefer it over the old renderer. It also suppor…",
+      "url": "https://x.com/i/status/2039421575422980329",
+      "source": "X/Twitter",
+      "author": "@bcherny",
+      "date": "2026-04-02",
+      "time": "03:16",
+      "likes": 10060,
+      "views": 2500463
+    },
+    {
+      "title": "Claude code 分析文章千千万，唯独这篇最强，深入分析里边的结构。",
+      "summary": "我们学习这个世界最强 agent 系统，\n拿着这些方法应用到产品 agent 里面去。\n\nps ：XiaoTan 又写出一个\n《ClaudeCode源码深度研究报告（增强完整版）》，下载链接👇\nhttps://t.co/MNMFTn5x6H https://t.co/LlF1kfXhAq",
+      "url": "https://x.com/i/status/2039141752070984051",
+      "source": "X/Twitter",
+      "author": "@iamtonyzhu",
+      "date": "2026-04-01",
+      "time": "08:44",
+      "likes": 916,
+      "views": 185624
+    }
+  ]
 }
