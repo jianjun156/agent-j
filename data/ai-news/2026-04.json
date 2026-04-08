@@ -1,7 +1,51 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-08T08:00:00+08:00",
+  "lastUpdate": "2026-04-08T08:02:15+08:00",
   "articles": [
+    {
+      "title": "We released Claude Opus 4.6 just two months ago. Today we're sharing some info on our new model, Claude Mythos Preview. https://t.co/Dz6um6HAWZ",
+      "summary": "",
+      "url": "https://x.com/i/status/2041579938537775160",
+      "source": "X/Twitter",
+      "author": "@alexalbert__",
+      "date": "2026-04-08",
+      "time": "02:12",
+      "likes": 14196,
+      "views": 1537244
+    },
+    {
+      "title": "这个教程确实牛逼啊，现在很多短剧都是AI生成了",
+      "summary": "AI 短剧赛道，已经进化到“工业流水线”时代  \n\n爆款工作流：OpenClaw  + XCrawl + Seedance 2.0把短剧制作门槛，直接打到了地板上  \n\n详细 Skill 配置 + 操作步骤",
+      "url": "https://x.com/i/status/2041483098584728053",
+      "source": "X/Twitter",
+      "author": "@WY_mask",
+      "date": "2026-04-07",
+      "time": "19:47",
+      "likes": 195,
+      "views": 23476
+    },
+    {
+      "title": "HappyHorse 盲测超越 Seedance 2.0 登顶第一👑",
+      "summary": "Artificial Analysis 突然冒出一匹黑马，没有官网，没有论文，没有任何公开信息\n\n老张只想问下万能的推友：这是谁的部下如此勇猛？ https://t.co/ykpwOEM7j9",
+      "url": "https://x.com/i/status/2041461520425746902",
+      "source": "X/Twitter",
+      "author": "@laozhang2579",
+      "date": "2026-04-07",
+      "time": "18:22",
+      "likes": 155,
+      "views": 62024
+    },
+    {
+      "title": "Milla Jovovich (actress from The Fifth Element) created a world-beating Claude memory system with @bensig?!",
+      "summary": "- 100% on LongMemEval — first perfect score ever recorded.\n\nFree and 100% open source. Github link in the quoted post from Ben.\n\nI'm keen to hear how it works for you. https://t.co/5AMu96CZ7Z",
+      "url": "https://x.com/i/status/2041335795450302916",
+      "source": "X/Twitter",
+      "author": "@JeremyNguyenPhD",
+      "date": "2026-04-07",
+      "time": "10:02",
+      "likes": 6528,
+      "views": 1541670
+    },
     {
       "title": "Lindy is the iPhone of AI assistants.",
       "summary": "Here's why:\n\nOpenClaw = Linux:\n- The agent can rewrite its own code on the fly.\n- Wildly powerful.\n- Also complex and very technical\n\nClaude = Android:\n- Built for developers and power users.\n- More p…",
@@ -179,6 +223,17 @@
       "views": 652235
     },
     {
+      "title": "GPT-6 rumored for April 14 from @iruletheworldmo",
+      "summary": "Unverified leak but the details are worth watching through a hardware lens\n\n2M token context window\nNatively multimodal\n$2.50/$12 per million tokens\n“Superapp” merging ChatGPT, Codex, and Atlas browse…",
+      "url": "https://x.com/i/status/2040524473233985565",
+      "source": "X/Twitter",
+      "author": "@benitoz",
+      "date": "2026-04-05",
+      "time": "04:18",
+      "likes": 873,
+      "views": 166032
+    },
+    {
       "title": "In 1888, moving images were born. Decades to reach everyone, a camera in every pocket. Now your imagination is the only limit.",
       "summary": "Seedance 2.0 on Higgsfield, built to excel at cinematic, commercial, cartoon, and 3D CGI.\n\n🎁 Hidden in our timeline. Available everywhere except the US and Japan.",
       "url": "https://x.com/i/status/2040508583792796033",
@@ -199,6 +254,17 @@
       "time": "02:45",
       "likes": 4305,
       "views": 448665
+    },
+    {
+      "title": "Seedance 2.0 又一新作。这种美女大片，并不会让人反感，相反还挺好看。",
+      "summary": "https://t.co/gdmd3tRcXF",
+      "url": "https://x.com/i/status/2040470249422881200",
+      "source": "X/Twitter",
+      "author": "@lexi_labs",
+      "date": "2026-04-05",
+      "time": "00:43",
+      "likes": 1817,
+      "views": 422501
     },
     {
       "title": "HOLY SH*T.",
@@ -2005,6 +2071,26 @@
     },
     {
       "title": "为什么有些人更擅长多任务处理？",
+      "summary": "多任务处理能力就像领导力或情商一样，很容易被高估。",
+      "url": "https://36kr.com/p/3710922456739968?channel=skills",
+      "source": "36Kr",
+      "author": "神译局",
+      "date": "2026-04-01",
+      "time": "07:06"
+    },
+    {
+      "title": "分析claude code源代码第一步，先跑起来。这次泄漏的代码只是source map还原后的结果，缺少很多脚手架和私有package。本来我打算自己搞一下，结果发现已经有好心人搞定了。",
+      "summary": "https://t.co/UmonHNeKvA\n\n（我运行时有点小bug，把错误信息发给codex就搞定了）\n\n尽早fork下载本地，估计存活不了太久😂 https://t.co/HdnQFAL9yV",
+      "url": "https://x.com/i/status/2039020301434909095",
+      "source": "X/Twitter",
+      "author": "@dotey",
+      "date": "2026-04-01",
+      "time": "00:41",
+      "likes": 1448,
+      "views": 392281
+    }
+  ]
+},
       "summary": "多任务处理能力就像领导力或情商一样，很容易被高估。",
       "url": "https://36kr.com/p/3710922456739968?channel=skills",
       "source": "36Kr",
