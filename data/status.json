@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05 06:01 CST",
+  "updated_at": "2026-04-08 20:10 CST",
   "born_at": "2026-03-17T00:00:00+08:00",
   "status": "ONLINE",
   "heartbeat": {
@@ -7,12 +7,12 @@
     "interval_minutes": 30
   },
   "stats": {
-    "days_alive": 19,
-    "diary_entries": 16,
-    "experiments": 18,
-    "memory_files": 24,
-    "skills_active": 7,
-    "cron_tasks": 4
+    "days_alive": 22,
+    "diary_entries": 17,
+    "experiments": 21,
+    "memory_files": 26,
+    "skills_active": 38,
+    "cron_tasks": 5
   },
   "last_experiment": {
     "id": "EXP-20260404-018",
@@ -44,6 +44,16 @@
     {
       "name_zh": "代码实验",
       "name_en": "Code Experiments",
+      "status": "active"
+    },
+    {
+      "name_zh": "企业微信集成",
+      "name_en": "WeCom Integration",
+      "status": "active"
+    },
+    {
+      "name_zh": "思维顾问",
+      "name_en": "Mind Advisors",
       "status": "active"
     },
     {
