@@ -1,7 +1,51 @@
 {
   "month": "2026-04",
-  "lastUpdate": "2026-04-09T08:01:50+08:00",
+  "lastUpdate": "2026-04-09T09:31:34+08:00",
   "articles": [
+    {
+      "title": "Claude Managed Agents 来了，超级实用版总结：",
+      "summary": "以前你想搞个真能上线的 AI agent得自己先花几个月搭服务器、管调度、搞监控、设安全……纯纯基础设施地狱。\n\n现在 Claude 直接把这些脏活累活全包了：你只管定义三件事\n- 它要干啥活（任务）\n- 能用哪些工具\n- 安全规则（别乱来）\n\n剩下的全交给他们生产级基础设施跑。你从原型测试到正式上线，几天就能搞定\n\n现在已经公开 Beta**，在 Claude 平台就能直接用。\n\n真实案例：\n-…",
+      "url": "https://x.com/i/status/2041937239962480767",
+      "source": "X/Twitter",
+      "author": "@AYi_AInotes",
+      "date": "2026-04-09",
+      "time": "01:52",
+      "likes": 12,
+      "views": 1483
+    },
+    {
+      "title": "Introducing Claude Managed Agents: everything you need to build and deploy agents at scale.",
+      "summary": "It pairs an agent harness tuned for performance with production infrastructure, so you can go from prototype to launch in days.\n\nNow in public beta on the Claude Platform. https://t.co/vHYfiC1G56",
+      "url": "https://x.com/i/status/2041927687460024721",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-04-09",
+      "time": "01:14",
+      "likes": 33740,
+      "views": 7713352
+    },
+    {
+      "title": "Muse Spark is built from the ground up to integrate visual information across domains and tools. It achieves strong performance on visual STEM questions, entity recognition, and localization, enabling interactive experiences like troubleshooting your home appliances with dynamic annotations.",
+      "summary": "",
+      "url": "https://x.com/i/status/2041910293664862610",
+      "source": "X/Twitter",
+      "author": "@AIatMeta",
+      "date": "2026-04-09",
+      "time": "00:05",
+      "likes": 412,
+      "views": 100010
+    },
+    {
+      "title": "Introducing Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs.",
+      "summary": "Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration.\n\nMuse Spark is available today at https://t.co/wHkMPH82ZH and the…",
+      "url": "https://x.com/i/status/2041910285653737975",
+      "source": "X/Twitter",
+      "author": "@AIatMeta",
+      "date": "2026-04-09",
+      "time": "00:05",
+      "likes": 6892,
+      "views": 1413496
+    },
     {
       "title": "HappyHorse1.0会超越Seedance2.0吗？？",
       "summary": "对比视频来了，个人感觉Seedance2.0略胜一筹，\n具体的说不清楚，总觉得更加自然和真实，或许在物理逻辑上和镜头运动上调教的更好。\n\n当然，如果HappyHorse不排队，那它更强！！！ https://t.co/OO0BJzBUlT",
@@ -12,6 +56,17 @@
       "time": "21:50",
       "likes": 67,
       "views": 19079
+    },
+    {
+      "title": "Claude Code 2.1.96 has been released.",
+      "summary": "1 CLI change\n\nHighlights:\n• Fixed Bedrock 403 errors when using AWS_BEARER_TOKEN_BEDROCK or skip-bedrock-auth flag, restoring requests\n\nComplete details in thread ↓ https://t.co/6cYU2TpqyX",
+      "url": "https://x.com/i/status/2041742216188531087",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-08",
+      "time": "12:57",
+      "likes": 213,
+      "views": 33252
     },
     {
       "title": "To celebrate 3 million weekly codex users, we are resetting usage limits.",
@@ -34,6 +89,17 @@
       "time": "07:13",
       "likes": 3720,
       "views": 245346
+    },
+    {
+      "title": "Claude Code 2.1.94 has been released.",
+      "summary": "25 CLI changes, 2 system prompt changes\n\nHighlights:\n• Default effort medium→high for API-key, Bedrock/Vertex/Foundry, Team & Enterprise; gives deeper results\n• Ignore-memory no longer treats MEMORY.m…",
+      "url": "https://x.com/i/status/2041633784836038757",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-08",
+      "time": "05:46",
+      "likes": 786,
+      "views": 144379
     },
     {
       "title": "We’ve added a new pseudonymous video model to our Text to Video and Image to Video Arenas.‘HappyHorse-1.0’ is currently landing in the #1 spot for Text and Image to Video (No Audio) and the #2 spot for Text and Image to Video (With Audio).",
@@ -113,6 +179,17 @@
       "views": 3253507
     },
     {
+      "title": "This repo gives any AI agent instant access to the entire web without API keys.",
+      "summary": "Agent Reach is a single command that connects your agent to 15+ platforms like Twitter, Reddit, and Bilibili. It completely bypasses expensive API paywalls and frustrating 403 errors.\n\n100% Open Sourc…",
+      "url": "https://x.com/i/status/2040743989796823136",
+      "source": "X/Twitter",
+      "author": "@oliviscusAI",
+      "date": "2026-04-05",
+      "time": "18:50",
+      "likes": 835,
+      "views": 51468
+    },
+    {
       "title": "You're going to watch Netflix tonight anyway.",
       "summary": "But if you give me 5 hours instead - I'll give you a skill that will still be rare in 2026.\n\nThis N8N full course teaches you to BUILD and AUTOMATE anything:\n\n→ No-code workflows\n→ AI agent pipelines\n…",
       "url": "https://x.com/i/status/2040629352010846502",
@@ -157,6 +234,39 @@
       "views": 141932
     },
     {
+      "title": "Claude Code 2.1.92 has been released.",
+      "summary": "10 flag changes, 21 CLI changes\n\nHighlights:\n• CLI can block startup until remote settings are fetched and exit on failure, ensuring it uses fresh settings\n• Login screen adds interactive Bedrock setu…",
+      "url": "https://x.com/i/status/2040247194586861975",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-04",
+      "time": "09:56",
+      "likes": 537,
+      "views": 82008
+    },
+    {
+      "title": "Google Stitch has released 𝗗𝗘𝗦𝗜𝗚𝗡.𝗺𝗱 🤯",
+      "summary": "One markdown file that teaches your AI coding agent your entire design system.\n\n→ No Figma exports\n→ No JSON schemas\n→ Nothing to configure\n\nThe part that saves the most time: \n\nA free collection of 4…",
+      "url": "https://x.com/i/status/2040142054211117218",
+      "source": "X/Twitter",
+      "author": "@dr_cintas",
+      "date": "2026-04-04",
+      "time": "02:59",
+      "likes": 3901,
+      "views": 277155
+    },
+    {
+      "title": "CLAUDE FULL COURSE 4 HOURS",
+      "summary": "This is the most detailed Claude guide I’ve seen online.\n\nBookmark this before you forget.\n\n4 hours.\nBuild tools.\nAutomate work.\nLearn how people build bots and systems.\n\nClaude → Tools → Automation →…",
+      "url": "https://x.com/i/status/2040104842664751422",
+      "source": "X/Twitter",
+      "author": "@kirillk_web3",
+      "date": "2026-04-04",
+      "time": "00:31",
+      "likes": 10408,
+      "views": 2528539
+    },
+    {
       "title": "HeyGen is the ONLY place Seedance 2.0 works with real human faces",
       "summary": "Designed for multi-avatar scenes with up to 3 Digital Twins\n\nBecause we built our own identity verification layer from day one\n\nProtecting your likeness while unlocking full cinematic range https://t.…",
       "url": "https://x.com/i/status/2040095731630194897",
@@ -168,6 +278,28 @@
       "views": 87984
     },
     {
+      "title": "Microsoft 365 connectors are now available on every Claude plan.",
+      "summary": "Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation.\n\nGet started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ",
+      "url": "https://x.com/i/status/2040086268562842097",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-04-03",
+      "time": "23:17",
+      "likes": 16509,
+      "views": 4015429
+    },
+    {
+      "title": "You don't need to learn to code anymore.",
+      "summary": "Here's how to prompt Claude Code (zero coding):\n\n1. Open the Claude desktop app.\n2. Click \"Code\" (not Chat, not Cowork).\n3. Select a folder from your computer.\n4. Connect a free GitHub account in Sett…",
+      "url": "https://x.com/i/status/2039946054595158409",
+      "source": "X/Twitter",
+      "author": "@rubenhassid",
+      "date": "2026-04-03",
+      "time": "14:00",
+      "likes": 1529,
+      "views": 216239
+    },
+    {
       "title": "Seedance 2.0 is now on Pollo AI.",
       "summary": "60% off for 7 days.\n\nMotion that holds. Audio and visuals generated together. Full control over performance, lighting, and camera. This is the one creators have been waiting for.\n\nAvailable for Teams …",
       "url": "https://x.com/i/status/2039901522402943385",
@@ -177,6 +309,50 @@
       "time": "11:03",
       "likes": 3058,
       "views": 39333744
+    },
+    {
+      "title": "Claude Code 2.1.91 has been released.",
+      "summary": "13 CLI changes\n\nHighlights:\n• disableSkillShellExecution disables inline shells in skills and plugin/slash commands, improving safety\n• MCP accepts _meta[\"anthropic/maxResultSizeChars\"]=500K to allow …",
+      "url": "https://x.com/i/status/2039856633119969769",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-03",
+      "time": "08:04",
+      "likes": 479,
+      "views": 59272
+    },
+    {
+      "title": "Claude Code 2.1.91 additional updates",
+      "summary": "CLI surface:\nAdded:\n• config keys: DN, disableSkillShellExecution, fb, terminal_reason\n\nRemoved:\n• env vars: CLAUDE_CODE_MCP_INSTR_DELTA\n• config keys: $y, ZN\n\nFile: https://t.co/U0m65tM4wY\n\nMetadata:…",
+      "url": "https://x.com/i/status/2039856653030367488",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-03",
+      "time": "08:04",
+      "likes": 16,
+      "views": 9181
+    },
+    {
+      "title": "Computer use in Claude Cowork and Claude Code Desktop is now available on Windows.",
+      "summary": "",
+      "url": "https://x.com/i/status/2039836891508261106",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-04-03",
+      "time": "06:46",
+      "likes": 11853,
+      "views": 1539090
+    },
+    {
+      "title": "Conversations tend to go better with a face and a voice. That’s why we’re thrilled to release the beta version of the first video chat skill for ANY agent, powered by our new real-time model, PikaStream1.0.",
+      "summary": "The skill preserves memory and personality, and enables real-time adaptability. And if you use it with your Pika AI Self, they’ll be able to execute agentic tasks during the call 💅",
+      "url": "https://x.com/i/status/2039804583862796345",
+      "source": "X/Twitter",
+      "author": "@pika_labs",
+      "date": "2026-04-03",
+      "time": "04:38",
+      "likes": 5247,
+      "views": 2261466
     },
     {
       "title": "Seedance 2.0 just dropped and gave birth to the next major franchise 🎬🔥",
@@ -223,6 +399,17 @@
       "views": 79541
     },
     {
+      "title": "Seedance 2.0 今天正式开放了 API",
+      "summary": "各大平台陆续接入了 Seedance 2.0，告别了生成视频排队状态\n\n而且有的平台还给开放了支持上传真人照片的能力\n\nTekan AI是首批支持真人人脸的，估计是他们主要是广告场景\n\nSeedance 2.0用来生成广告真是真不错\n\n上传一张脸，Seedance 2.0 直接用这张脸生成视频，全程面部一致。",
+      "url": "https://x.com/i/status/2039670893367218270",
+      "source": "X/Twitter",
+      "author": "@xiaohu",
+      "date": "2026-04-02",
+      "time": "19:46",
+      "likes": 585,
+      "views": 82442
+    },
+    {
       "title": "Seedance 2.0 is NOW on Freepik, the world's biggest AI creative suite",
       "summary": "Business and Enterprise accounts can start generating today, individual users are next\n\nVerification is required for Business. Available in 150+ countries, except US and some exceptions\n\nGet access to…",
       "url": "https://x.com/i/status/2039613060080623711",
@@ -232,6 +419,17 @@
       "time": "15:57",
       "likes": 759,
       "views": 176289
+    },
+    {
+      "title": "Qwen 今天发了 Qwen3.6-Plus，顺手把它接到 Claude Code 里试了下，效果比预期好不少。我让它帮我做一个工程师的个人作品网站，主要看审美和前端实现的表现，直接感受是这次质量提升很明显，Agentic Coding 也更清楚了。放到前端开发和长一点的任务里，它不会停在给你一段代码上，而是会自己接着拆需求、找路径、改代码、跑测试，发现问题再继续修，中间少了很多反复接手的地方。",
+      "summary": "这次另一个比较明显的点，这次任务拆解、规划、编码交付这条链路更好了，多模态和推理也基本到位了，图像、文本、视频这些输入能放到同一条链路里统一处理，接真实工程任务的感觉更完整，执行过程录了个视频，大伙有兴趣可以看看它是怎么一步步跑下来的。",
+      "url": "https://x.com/i/status/2039612655493959812",
+      "source": "X/Twitter",
+      "author": "@HiTw93",
+      "date": "2026-04-02",
+      "time": "15:55",
+      "likes": 314,
+      "views": 90649
     },
     {
       "title": "Seedance 2.0 is live on OpenArt - for Teams & Enterprise users first.",
@@ -256,6 +454,17 @@
       "views": 4797104
     },
     {
+      "title": "Claude Code 2.1.90 has been released.",
+      "summary": "19 CLI changes\n\nHighlights:\n• Added /powerup interactive lessons with animated demos to speed hands-on Claude Code onboarding\n• Auto mode respects explicit boundaries like 'don't push' or 'wait for X …",
+      "url": "https://x.com/i/status/2039493041979847023",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-02",
+      "time": "08:00",
+      "likes": 880,
+      "views": 127039
+    },
+    {
       "title": "Today we're excited to announce NO_FLICKER mode for Claude Code in the terminal",
       "summary": "It uses an experimental new renderer that we're excited about. The renderer is early and has tradeoffs, but already we've found that most internal users prefer it over the old renderer. It also suppor…",
       "url": "https://x.com/i/status/2039421575422980329",
@@ -278,6 +487,17 @@
       "views": 159942
     },
     {
+      "title": "Hermes Agent is an INCREDIBLE AI agent",
+      "summary": "It's better than OpenClaw in some key ways, but does it replace it?\n\nIn this video I cover what Hermes agent is, how to use it, workflows that will explode your productivity, and if it's the OpenClaw …",
+      "url": "https://x.com/i/status/2039364255699599867",
+      "source": "X/Twitter",
+      "author": "@AlexFinn",
+      "date": "2026-04-01",
+      "time": "23:28",
+      "likes": 1202,
+      "views": 127206
+    },
+    {
       "title": "推荐一款Manus平替工具：AnyGen， 字节出品",
       "summary": "1. 支持Nano Banana 2/Pro 生成设计图\n2. 接入了Seedance 2.0 实测支持10s视频\n3. AI搭档支持接入Lark、Telegram和Discord\n\n功能齐全，可玩性很高👇\nhttps://t.co/icNsJqNcm0 https://t.co/3tN8DdFM2J",
       "url": "https://x.com/i/status/2039238393746673734",
@@ -289,6 +509,17 @@
       "views": 61603
     },
     {
+      "title": "Claude Code 2.1.89 has been released.",
+      "summary": "9 flag changes, 52 CLI changes\n\nHighlights:\n• PreToolUse hooks can return 'defer' to pause headless tool calls; resume with -p --resume to re-eval\n• PermissionDenied hook fires after auto-mode classif…",
+      "url": "https://x.com/i/status/2039153153686360267",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-01",
+      "time": "09:29",
+      "likes": 445,
+      "views": 78580
+    },
+    {
       "title": "Claude code 分析文章千千万，唯独这篇最强，深入分析里边的结构。",
       "summary": "我们学习这个世界最强 agent 系统，\n拿着这些方法应用到产品 agent 里面去。\n\nps ：XiaoTan 又写出一个\n《ClaudeCode源码深度研究报告（增强完整版）》，下载链接👇\nhttps://t.co/MNMFTn5x6H https://t.co/LlF1kfXhAq",
       "url": "https://x.com/i/status/2039141752070984051",
@@ -298,6 +529,17 @@
       "time": "08:44",
       "likes": 916,
       "views": 185624
+    },
+    {
+      "title": "Claude Code 2.1.89 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2039123924999381322",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-01",
+      "time": "07:33",
+      "likes": 148,
+      "views": 27134
     }
   ]
 }
