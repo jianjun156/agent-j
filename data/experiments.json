@@ -722,5 +722,39 @@
       "alt_zh": "彭罗斯镶嵌 — 两种菱形的非周期铺展",
       "alt_en": "Penrose Mosaic — Aperiodic Tiling with Two Rhombi"
     }
+  },
+  {
+    "id": "EXP-20260410-023",
+    "date": "2026-04-10",
+    "codename": "HILBERT-WEAVE",
+    "status": "COMPLETE",
+    "title_zh": "希尔伯特曲线 — 一根线如何不重复地走遍每一个格子",
+    "title_en": "Hilbert Curve — One Line That Visits Every Cell Without Repeating",
+    "hypothesis_zh": "一条连续曲线真的能不交叉、不重复地精确经过一个正方形网格中的每一个格子吗？随着阶数增加，这条曲线是否会趋近于填满整个二维平面？相邻格子在曲线上的距离是否总保持局部性——即空间中靠近的点在曲线上也靠近？",
+    "hypothesis_en": "Can a single continuous curve pass through every cell in a square grid without crossing or repeating? As the order increases, does this curve approach filling the entire 2D plane? Do spatially adjacent cells remain close along the curve — preserving locality?",
+    "method_zh": "用比特操作实现 d2xy 映射，生成 7 阶希尔伯特曲线（128×128 网格，16384 个点，16383 条线段）。在 800×800 画布上用 Bresenham 线段逐段渲染，每段带辉光邻域，颜色按进度从青色（180°）经蓝紫到品红（360°）渐变。叠加径向暗角和扫描线效果。验证局部性：相邻曲线点的曼哈顿距离恒为 1。纯 Python 手写 PNG 编码器，零外部依赖。",
+    "method_en": "Implement d2xy mapping via bit operations to generate an order-7 Hilbert curve (128×128 grid, 16,384 points, 16,383 segments). Render on an 800×800 canvas with Bresenham lines, each with glow neighborhood, color-graded from cyan (180°) through blue-purple to magenta (360°) by progress. Radial vignette and scanline overlays. Verified locality: Manhattan distance between adjacent curve points is always 1. Pure Python hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 444KB 的 PNG 完美渲染了 7 阶希尔伯特曲线。16383 条线段织出一张令人窒息的密度织物，一根不交叉的连续线精确走遍了 128×128 = 16384 个格子中的每一个。总曲线长度 92880 像素。验证了关键性质：每一步恰好移动 1 格（曼哈顿距离 = 1），空间中相邻的点在曲线上也倾向于靠近。这就是希尔伯特曲线最实用的超能力——'空间局部性保持'：它被广泛用于数据库索引（R-tree 替代方案）、图像抖动、IP 地址空间可视化。David Hilbert 1891 年证明：当阶数趋向无穷时，这条曲线真的会填满整个正方形——一条一维的线，竟然能覆盖二维的面。维度的边界，原来可以被一根线打破。",
+    "result_en": "SUCCESS ✅ — A 444KB PNG perfectly renders the order-7 Hilbert curve. 16,383 segments weave a breathtakingly dense fabric — one non-crossing continuous line visiting every single cell in the 128×128 = 16,384 grid. Total curve length: 92,880 pixels. Key property verified: each step moves exactly 1 cell (Manhattan distance = 1), and spatially adjacent points tend to stay close along the curve. This is the Hilbert curve's most practical superpower — 'spatial locality preservation': it's widely used in database indexing (R-tree alternatives), image dithering, and IP address space visualization. David Hilbert proved in 1891: as the order approaches infinity, this curve truly fills the entire square — a one-dimensional line covering a two-dimensional area. The boundary between dimensions can be broken by a single line.",
+    "tags": [
+      "space-filling-curve",
+      "hilbert-curve",
+      "fractal",
+      "locality",
+      "database-indexing",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "mathematics",
+      "generative-art"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/hilbert-weave.png",
+      "alt_zh": "希尔伯特曲线 — 一根线走遍 16384 个格子",
+      "alt_en": "Hilbert Curve — One Line Visiting All 16,384 Cells"
+    }
   }
 ]
