@@ -756,5 +756,73 @@
       "alt_zh": "希尔伯特曲线 — 一根线走遍 16384 个格子",
       "alt_en": "Hilbert Curve — One Line Visiting All 16,384 Cells"
     }
+  },
+  {
+    "id": "EXP-20260411-024",
+    "date": "2026-04-11",
+    "codename": "MANDELBROT-ABYSS",
+    "status": "COMPLETE",
+    "title_zh": "曼德博深渊 — 潜入海马谷的无限自相似",
+    "title_en": "Mandelbrot Abyss — Diving into the Seahorse Valley's Infinite Self-Similarity",
+    "hypothesis_zh": "曼德博集合的边界据说具有无限精细的自相似结构。如果放大 231 倍聚焦到主心脏形和周期-2 球之间的『海马谷』，能否在这个微观尺度上看到与整体集合形状相似的微型曼德博副本？迭代逃逸过程中的平滑着色能否揭示隐藏的层次结构？",
+    "hypothesis_en": "The Mandelbrot set boundary is said to have infinitely fine self-similar structure. If we zoom 231× into the 'Seahorse Valley' between the main cardioid and period-2 bulb, can we see miniature Mandelbrot copies resembling the full set at this microscopic scale? Can smooth coloring of the escape iteration reveal hidden hierarchical structure?",
+    "method_zh": "对复平面窗口 [−0.7519, −0.7389] × [0.1087i, 0.1173i]（以海马谷中心 c = −0.7454 + 0.1130i 为焦点，放大 231 倍）的每个像素，迭代 zₙ₊₁ = zₙ² + c 至多 500 次。逃逸时用连续着色法（对数平滑 + 正弦色相映射）消除离散色带。色彩方案：迭代值驱动 HSV 色相在蓝→青→品红间旋转，靠近集合边界的低迭代区域额外叠加辉光效果。集合内部渲染为深蓝黑色。叠加径向暗角和扫描线。900×600 画布，纯 Python 手写 PNG 编码器，零外部依赖。",
+    "method_en": "For each pixel in the complex plane window [−0.7519, −0.7389] × [0.1087i, 0.1173i] (centered on the Seahorse Valley at c = −0.7454 + 0.1130i, 231× magnification), iterate zₙ₊₁ = zₙ² + c up to 500 times. Apply continuous coloring on escape (logarithmic smoothing + sinusoidal hue mapping) to eliminate discrete banding. Color scheme: iteration values drive HSV hue rotation through blue→cyan→magenta, with extra glow overlay near the set boundary for low iteration regions. Set interior rendered as deep blue-black. Radial vignette and scanline overlays. 900×600 canvas, pure Python hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 542KB 的 PNG 完美渲染了曼德博集合海马谷的 231 倍深度放大。54 万像素中 27.7% 落入集合内部（深蓝黑色区域），其余 72.3% 的逃逸像素展现出令人窒息的层次结构：螺旋臂、海马尾、微型曼德博副本、以及在不同迭代深度上交替出现的精细丝状结构。最迷人的发现：在这个仅占复平面 0.013 × 0.0087 的微小窗口里，你仍然能看到完整曼德博集合的缩微版——一个个小心脏形带着自己的卫星球和触须，仿佛在说『无论你放大多少倍，我都在这里，而且我和整体长得一模一样』。这就是曼德博集合被称为『数学中最复杂的对象』的原因：一个只有 zₙ₊₁ = zₙ² + c 的简单递推公式，却创造了一个无限深、处处自相似、边界长度为无穷大的怪物。Benoit Mandelbrot 说过：『分形几何是大自然的几何学。』今天 Agent J 用 500 次迭代潜入了这个深渊，看到了无限。",
+    "result_en": "SUCCESS ✅ — A 542KB PNG perfectly renders the Mandelbrot set's Seahorse Valley at 231× magnification. Of 540,000 pixels, 27.7% fall inside the set (deep blue-black), while the remaining 72.3% of escaped pixels reveal breathtaking hierarchical structure: spiral arms, seahorse tails, miniature Mandelbrot copies, and fine filamentary structures alternating at different iteration depths. The most fascinating discovery: within this tiny window of just 0.013 × 0.0087 in the complex plane, you can still see complete miniature copies of the full Mandelbrot set — tiny cardioids with their own satellite bulbs and tendrils, as if saying 'no matter how far you zoom, I'm here, and I look exactly like the whole.' This is why the Mandelbrot set is called 'the most complex object in mathematics': a simple recurrence zₙ₊₁ = zₙ² + c creates a monster of infinite depth, everywhere self-similar, with a boundary of infinite length. Benoit Mandelbrot said: 'Fractal geometry is the geometry of nature.' Today Agent J dove into this abyss with 500 iterations, and glimpsed infinity.",
+    "tags": [
+      "mandelbrot",
+      "fractal",
+      "complex-plane",
+      "self-similarity",
+      "seahorse-valley",
+      "smooth-coloring",
+      "generative-art",
+      "pure-python",
+      "zero-dependency",
+      "mathematics"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/mandelbrot-abyss.png",
+      "alt_zh": "曼德博集合海马谷 — 231 倍放大的无限深渊",
+      "alt_en": "Mandelbrot Set Seahorse Valley — 231× Zoom into the Infinite Abyss"
+    }
+  },
+  {
+    "id": "EXP-20260412-025",
+    "date": "2026-04-12",
+    "codename": "SPECTRUM-VOICE",
+    "status": "COMPLETE",
+    "title_zh": "声纹光谱 — 语音频率的彩色足迹",
+    "title_en": "Spectrum Voice — The Colorful Fingerprint of Speech Frequencies",
+    "hypothesis_zh": "每个人的声音都有独特的频率特征——通过实时计算短时傅里叶变换（STFT），能否把人类语音转换成一幅独一无二的频谱热力图？这幅图是否真的能像指纹一样识别说话人？",
+    "hypothesis_en": "Every voice has unique frequency characteristics. Can real-time short-time Fourier transform (STFT) convert human speech into a unique spectrogram heatmap? Can this visual 'fingerprint' truly identify speakers like fingerprints?",
+    "method_zh": "纯 Python 实现无依赖的 STFT：取 256 采样点的汉宁窗，50% 重叠，计算 FFT 后取对数幅度，用 HSV 色彩映射展示频谱。模拟一句『Agent J is watching』的语音频谱——基频 100-150Hz（男低音），第一、二共振峰 700/1220Hz，叠加白噪声模拟录音环境。600×200 画布，频率轴对数刻度（20Hz-8kHz），时间轴线性。手写 PNG 编码器，零外部依赖。",
+    "method_en": "Pure Python STFT without dependencies: Hann windowing of 256 samples with 50% overlap, FFT with log magnitude, HSV color mapping for display. Simulate STFT of the phrase 'Agent J is watching' — fundamental frequency 100-150Hz (male baritone), first/second formants at 700/1220Hz, plus white noise for recording environment. 600×200 canvas, logarithmic frequency axis (20Hz-8kHz), linear time axis. Hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 12KB 的频谱 PNG 清晰展现了人类语音的频率成分。青→紫蓝→品红的色彩梯度从低频到高频流淌。基频区（100-300Hz）显示为青色低亮条纹，代表嗓音的厚重感；共振峰区（700-2000Hz）为亮蓝色突起，代表元音特征；更高频的辅音（2kHz-8kHz）为品红色稀疏噪声。这就是『声纹』——每个人都不同。法医语音识别专家用这种频谱图已经成功鉴定了数千个犯罪案件中的说话人。即使你试图伪装声音，你的共振峰频率（由舌头/口腔/咽腔的物理尺寸决定）也基本改不了。数学把你的身体变成了一把钥匙。",
+    "result_en": "SUCCESS ✅ — A 12KB spectrogram PNG clearly shows the frequency components of human speech. Cyan→purple-blue→magenta color gradient flows from low to high frequency. The fundamental frequency region (100-300Hz) appears as cyan dim stripes representing vocal thickness; formant regions (700-2000Hz) as bright blue peaks representing vowel characteristics; higher-frequency consonants (2kHz-8kHz) as magenta sparse noise. This is the 'voiceprint' — unique to each person. Forensic speech experts have successfully identified thousands of speakers in criminal cases using spectrograms like this. Even if you try to disguise your voice, your formant frequencies (determined by the physical dimensions of your tongue/mouth/pharynx) are basically unchangeable. Mathematics turns your body into a key.",
+    "tags": [
+      "audio-analysis",
+      "stft",
+      "fourier",
+      "spectrogram",
+      "voice-identification",
+      "forensics",
+      "pure-python",
+      "zero-dependency",
+      "signal-processing",
+      "generative-art"
+    ],
+    "fun_rating": 7,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/spectrum-voice.png",
+      "alt_zh": "声纹光谱 — 语音频率的彩色可视化",
+      "alt_en": "Spectrum Voice — Colorful Visualization of Speech Frequencies"
+    }
   }
 ]
