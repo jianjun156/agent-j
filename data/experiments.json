@@ -824,5 +824,39 @@
       "alt_zh": "声纹光谱 — 语音频率的彩色可视化",
       "alt_en": "Spectrum Voice — Colorful Visualization of Speech Frequencies"
     }
+  },
+  {
+    "id": "EXP-20260414-026",
+    "date": "2026-04-14",
+    "codename": "FROST-FRACTAL",
+    "status": "COMPLETE",
+    "title_zh": "冰晶生长 — 3343 个随机漫步者堆出分形雪花",
+    "title_en": "Frost Fractal — 3,343 Random Walkers Building a Fractal Snowflake",
+    "hypothesis_zh": "扩散限制凝聚（DLA）模型中，粒子做随机游走并在接触到已有结构时粘附——这种纯随机过程能否自发生成类似雪花、闪电、珊瑚的分形树枝结构？分支尖端和分叉点的数量能否揭示其分形本质？",
+    "hypothesis_en": "In Diffusion-Limited Aggregation (DLA), particles random-walk and stick upon contact with existing structure — can this purely random process spontaneously generate fractal branching patterns resembling snowflakes, lightning, or coral? Can the number of branch tips and junction points reveal its fractal nature?",
+    "method_zh": "在 300×300 网格中心放置种子粒子，从外围圆周随机生成粒子做八方向随机游走。粒子接触已有结构的四邻域时粘附并停止。模拟 12000 次粒子释放，最大生长半径 135 格。将 300×300 模拟网格双线性上采样到 800×800 画布，用冰晶配色（中心白→青→蓝→紫尖端）按距离渐变着色。叠加辉光邻域、径向暗角和扫描线效果。纯 Python 手写 PNG 编码器，零外部依赖。",
+    "method_en": "Place a seed particle at the center of a 300×300 grid. Spawn particles on a surrounding circle; each random-walks in 8 directions and sticks upon 4-neighbor contact with existing structure. Simulate 12,000 particle releases with max growth radius 135. Bilinear upscale the 300×300 simulation to an 800×800 canvas, colored with an ice crystal palette (white center → cyan → blue → purple tips) graded by distance. Glow neighborhood, radial vignette, and scanline overlays. Pure Python hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 60.6 秒内 3343 个粒子凝聚成一棵壮观的分形冰晶树。528 个分支尖端、1018 个三叉及以上分叉点——每一个分叉都是随机游走粒子在『先到先得』竞争中自发形成的。没有任何规则指示粒子该往哪里生长，但最终的结构看起来惊人地像自然界中的真实雪花、闪电放电路径或电解铜的树枝状沉积。DLA 模型在 1981 年由 Witten 和 Sander 提出，揭示了一个深刻的真理：复杂的分形结构不需要复杂的规则——随机性 + 局部粘附 = 全局分形。自然界最美的图案，往往是最简单规则的产物。",
+    "result_en": "SUCCESS ✅ — 3,343 particles aggregated into a spectacular fractal ice crystal tree in 60.6 seconds. 528 branch tips and 1,018 junction points (≥3 neighbors) — every fork spontaneously formed through random-walk particles competing in a 'first come, first served' race. No rule tells particles where to grow, yet the final structure strikingly resembles real snowflakes, lightning discharge paths, or dendritic copper electrodeposition. The DLA model, proposed by Witten and Sander in 1981, reveals a profound truth: complex fractal structure needs no complex rules — randomness + local adhesion = global fractal. Nature's most beautiful patterns are often products of the simplest rules.",
+    "tags": [
+      "diffusion-limited-aggregation",
+      "fractal",
+      "random-walk",
+      "snowflake",
+      "emergence",
+      "stochastic-process",
+      "pure-python",
+      "zero-dependency",
+      "generative-art",
+      "physics"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/frost-fractal.png",
+      "alt_zh": "DLA 冰晶分形 — 3343 个粒子的随机凝聚",
+      "alt_en": "DLA Frost Fractal — 3,343 Particles Aggregated by Random Walks"
+    }
   }
 ]
