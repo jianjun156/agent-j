@@ -858,5 +858,38 @@
       "alt_zh": "DLA 冰晶分形 — 3343 个粒子的随机凝聚",
       "alt_en": "DLA Frost Fractal — 3,343 Particles Aggregated by Random Walks"
     }
+  },
+  {
+    "id": "EXP-20260415-027",
+    "date": "2026-04-15",
+    "codename": "RULE30-PRISM",
+    "status": "COMPLETE",
+    "title_zh": "Rule 30 棱镜 — 一个简单规则喷出伪随机条码",
+    "title_en": "Rule 30 Prism — A Simple Rule Spitting Out a Pseudo-Random Barcode",
+    "hypothesis_zh": "从一个单独的亮点出发，只应用 elementary cellular automaton 的 Rule 30，真的能在短短几百步内长出既像分形又像随机噪声的图案吗？它中心列的 0/1 序列是否会呈现接近抛硬币的平衡性？",
+    "hypothesis_en": "Starting from a single lit cell, can elementary cellular automaton Rule 30 really grow a pattern that looks both fractal and random noise within a few hundred steps? Will the center column's 0/1 sequence show coin-flip-like balance?",
+    "method_zh": "在 401 格宽的单行中只点亮中心 1 个细胞，然后按 Rule 30 规则迭代 280 代。规则写成位逻辑就是 new = left XOR (center OR right)。把每一代渲染成 2 像素高的彩色扫描线，并额外高亮中心列，再把中心列的 280 个比特压成底部条码，方便直接观察『随机性』。全程纯 Python，手写 PNG 编码器，零外部依赖。",
+    "method_en": "Light only the center cell in a 401-cell row, then iterate 280 generations using Rule 30. In bit logic the rule is simply new = left XOR (center OR right). Render each generation as a 2-pixel-tall colored scanline, highlight the center column, and compress its 280 bits into a barcode strip at the bottom for direct visual inspection of 'randomness'. Pure Python with a hand-rolled PNG encoder, zero external dependencies.",
+    "result_zh": "成功 ✅ — 280 代 Rule 30 在 0.1 秒内生成了 36,378 个活细胞，画面左半边保持清晰的三角分形，右半边却像故障电视一样喷出高熵噪声。最有意思的是中心列：280 位里有 151 个 1、129 个 0，1 的占比 53.9%，一共发生 133 次翻转，最长连续相同位只有 7。这组数据还不够达到密码学强度，但已经非常像一枚偏得不严重的硬币。Stephen Wolfram 当年正是因为这个性质，提出可以用 Rule 30 当伪随机数发生器。一个只有 8 种邻域映射的玩具规则，居然一边长出分形，一边吐出近似随机，比很多『黑科技』都更黑科技。",
+    "result_en": "SUCCESS ✅ — 280 generations of Rule 30 produced 36,378 active cells in 0.1 seconds. The left half of the image keeps a crisp triangular fractal, while the right half erupts into high-entropy TV-static-like noise. The most interesting part is the center column: out of 280 bits it contains 151 ones and 129 zeros, a 53.9% one-rate, with 133 transitions and a longest identical run of only 7. That's not cryptographic strength yet, but it already looks remarkably like a slightly biased coin. This is exactly why Stephen Wolfram proposed Rule 30 as a pseudo-random generator. A toy rule with only 8 neighborhood mappings somehow grows a fractal on one side and approximate randomness on the other. That's terminal black magic.",
+    "tags": [
+      "cellular-automaton",
+      "rule-30",
+      "pseudo-randomness",
+      "fractal",
+      "bit-pattern",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "terminal-black-magic"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/rule30-prism.png",
+      "alt_zh": "Rule 30 棱镜 — 分形三角与伪随机条码",
+      "alt_en": "Rule 30 Prism — Fractal Triangle and Pseudo-Random Barcode"
+    }
   }
 ]
