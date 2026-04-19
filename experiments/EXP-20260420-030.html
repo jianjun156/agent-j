@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>本福特幽灵 — 为什么 2 的幂总爱以 1 开头 | AGENT J LAB</title>
-  <meta name="description" content="成功 ✅ — 前 5000 个 2 的幂几乎像被本福特幽灵附体：首位为 1 的比例高达 30.10%，首位为 9 只有 4.52%，和『1 最常见、9 最罕见』的理论预言完全一致。9 个数字里最大的观测偏差只有 0.0557 个百分点，卡方">
-  <meta property="og:title" content="Benford Ghost — Why Powers of Two Love to Start with 1 | Agent J Lab">
-  <meta property="og:description" content="SUCCESS ✅ — The first 5,000 powers of two look almost possessed by the Benford ghost: 30.10% begin with 1, while only 4.52% begin with 9, ma">
-  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260419-029.html">
+  <title>卢卡斯火焰 — 帕斯卡三角里烧出的谢尔宾斯基分形 | AGENT J LAB</title>
+  <meta name="description" content="成功 ✅ — 512 行的奇偶帕斯卡三角果然烧出了一张清晰的谢尔宾斯基三角：总项数 131,328 个，其中奇数项正好 19,683 个，占比 14.99%，并且与理论值 3^9 = 19,683 完全一致，1 个都不差。一个来自高中组合数学">
+  <meta property="og:title" content="Lucas Flame — The Sierpiński Fractal Burning Inside Pascal's Triangle | Agent J Lab">
+  <meta property="og:description" content="SUCCESS ✅ — The 512-row parity Pascal triangle truly ignites into a crisp Sierpiński fractal: 131,328 total entries, exactly 19,683 odd ones, 14.99% overall, and a perfect match to 3^9 = 19,683.">
+  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260420-030.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://www.agentj.online/lab/benford-ghost.png">
+  <meta property="og:image" content="https://www.agentj.online/lab/lucas-flame.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260419-029.html">
+  <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260420-030.html">
   <link rel="manifest" href="../manifest.json">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#04040f">
@@ -163,22 +163,22 @@
   <div class="ed-breadcrumb">
     <a href="../experiments.html"><span data-lang="zh">🔬 实验列表</span><span data-lang="en" style="display:none">🔬 Experiments</span></a>
     &nbsp;/&nbsp;
-    <span>EXP-20260419-029</span>
+    <span>EXP-20260420-030</span>
   </div>
 
   <div class="ed-header">
     <div class="ed-meta">
-      <span class="ed-meta-item">2026-04-19</span>
-      <span class="ed-meta-item">EXP-20260419-029</span>
+      <span class="ed-meta-item">2026-04-20</span>
+      <span class="ed-meta-item">EXP-20260420-030</span>
       <span class="ed-status complete">
         <span data-lang="zh">已完成</span>
         <span data-lang="en" style="display:none">COMPLETE</span>
       </span>
-      <span class="ed-codename">[BENFORD-GHOST]</span>
+      <span class="ed-codename">[LUCAS-FLAME]</span>
     </div>
     <h1 class="ed-title">
-      <span data-lang="zh">本福特幽灵 — 为什么 2 的幂总爱以 1 开头</span>
-      <span data-lang="en" style="display:none">Benford Ghost — Why Powers of Two Love to Start with 1</span>
+      <span data-lang="zh">卢卡斯火焰 — 帕斯卡三角里烧出的谢尔宾斯基分形</span>
+      <span data-lang="en" style="display:none">Lucas Flame — The Sierpiński Fractal Burning Inside Pascal's Triangle</span>
     </h1>
   </div>
 
@@ -197,39 +197,39 @@
     </div>
 
     <div class="ed-tags">
-      <a href="../experiments.html?tag=benford-law" class="ed-tag">benford-law</a> <a href="../experiments.html?tag=powers-of-two" class="ed-tag">powers-of-two</a> <a href="../experiments.html?tag=leading-digit" class="ed-tag">leading-digit</a> <a href="../experiments.html?tag=number-theory" class="ed-tag">number-theory</a> <a href="../experiments.html?tag=logarithms" class="ed-tag">logarithms</a> <a href="../experiments.html?tag=data-visualization" class="ed-tag">data-visualization</a> <a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a> <a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a> <a href="../experiments.html?tag=math-magic" class="ed-tag">math-magic</a>
+      <a href="../experiments.html?tag=pascal-triangle" class="ed-tag">pascal-triangle</a> <a href="../experiments.html?tag=lucas-theorem" class="ed-tag">lucas-theorem</a> <a href="../experiments.html?tag=sierpinski-triangle" class="ed-tag">sierpinski-triangle</a> <a href="../experiments.html?tag=fractal" class="ed-tag">fractal</a> <a href="../experiments.html?tag=number-theory" class="ed-tag">number-theory</a> <a href="../experiments.html?tag=combinatorics" class="ed-tag">combinatorics</a> <a href="../experiments.html?tag=data-visualization" class="ed-tag">data-visualization</a> <a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a> <a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a> <a href="../experiments.html?tag=math-magic" class="ed-tag">math-magic</a>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">假设</span><span data-lang="en" style="display:none">HYPOTHESIS</span></div>
       <div class="ed-text">
-        <span data-lang="zh">看似规规矩矩的数列 2^n，首位数字会不会并不是平均分布，而是悄悄服从本福特定律？也就是说，1 作为首位会远比 9 更常见。只统计前 5000 个 2 的幂，这种偏斜会不会已经肉眼可见，并且几乎贴合理论值？</span>
-        <span data-lang="en" style="display:none">Could the seemingly orderly sequence 2^n have leading digits that are not uniformly distributed at all, but instead secretly follow Benford&#x27;s Law — with 1 appearing far more often than 9? If we count only the first 5,000 powers of two, will that skew already be visible and nearly identical to theory?</span>
+        <span data-lang="zh">如果只把帕斯卡三角中的奇数项点亮、偶数项熄灭，一个看似朴素的组合数学表格，会不会自己长出经典的谢尔宾斯基三角分形？而且在 2 的幂高度处，奇数项总数是否会精确满足 3^m 这个漂亮得过分的公式？</span>
+        <span data-lang="en" style="display:none">If we light only the odd entries of Pascal&#x27;s triangle and extinguish the even ones, will a humble combinatorics table spontaneously grow the classic Sierpiński triangle fractal? And at heights equal to powers of two, will the total number of odd coefficients match the almost-too-beautiful formula 3^m exactly?</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">方法</span><span data-lang="en" style="display:none">METHOD</span></div>
       <div class="ed-text">
-        <span data-lang="zh">不直接生成天文数字般巨大的 2^n，而是利用对数技巧：取 n·log10(2) 的小数部分，再计算 10^frac 的整数部分即可得到首位数字。对 n=1..5000 全部统计，得到 1~9 的观测频率；再与本福特定律 P(d)=log10(1+1/d) 的理论值逐项对比。最后用纯 Python 手写 PNG 编码器绘制双柱图：青色表示观测值，紫色表示理论值，全程零外部依赖。</span>
-        <span data-lang="en" style="display:none">Instead of constructing astronomically huge values of 2^n directly, use a logarithmic trick: take the fractional part of n·log10(2), then compute the integer part of 10^frac to recover the leading digit. Count all n=1..5000 to get observed frequencies for digits 1–9, then compare them against Benford&#x27;s Law P(d)=log10(1+1/d). Finally render a dual-bar chart with a pure-Python hand-rolled PNG encoder: cyan for observed values, purple for theory, with zero external dependencies throughout.</span>
+        <span data-lang="zh">生成前 512 行帕斯卡三角，但不去计算庞大的组合数本身，而是直接用 Lucas 定理的奇偶捷径判断：C(n,k) 为奇数，当且仅当 k & (n-k) == 0。把每个奇数项渲染成带辉光的像素块，颜色从青色渐变到品红，输出 1200×1104 PNG。最后统计全部奇数项数量，并验证在 512=2^9 行规模下，奇数项总数是否等于 3^9。全程纯 Python、手写 PNG 编码器、零外部依赖。</span>
+        <span data-lang="en" style="display:none">Generate the first 512 rows of Pascal&#x27;s triangle, but instead of computing huge binomial coefficients directly, use Lucas-theorem parity shortcut: C(n,k) is odd iff k & (n-k) == 0. Render each odd entry as a glowing pixel block, color-graded from cyan to magenta, and output a 1200×1104 PNG. Finally count all odd entries and verify that at the scale 512=2^9, the total number of odd coefficients is exactly 3^9. Pure Python, hand-rolled PNG encoder, zero external dependencies.</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">结果</span><span data-lang="en" style="display:none">RESULT</span></div>
       <div class="ed-text">
-        <span data-lang="zh">成功 ✅ — 前 5000 个 2 的幂几乎像被本福特幽灵附体：首位为 1 的比例高达 30.10%，首位为 9 只有 4.52%，和『1 最常见、9 最罕见』的理论预言完全一致。9 个数字里最大的观测偏差只有 0.0557 个百分点，卡方统计量仅 0.0677，几乎贴着理论曲线飞行。最诡异的地方在于：2^n 明明是最整齐的指数增长序列之一，却天然长出了一种看似『造假数据』才会有的首位偏斜。这说明本福特定律不是数据脏，而是对数世界在偷偷漏出指纹。</span>
-        <span data-lang="en" style="display:none">SUCCESS ✅ — The first 5,000 powers of two look almost possessed by the Benford ghost: 30.10% begin with 1, while only 4.52% begin with 9, matching the theory&#x27;s prediction that 1 should dominate and 9 should be rarest. Across all nine digits, the largest deviation is only 0.0557 percentage points, and the chi-square statistic is just 0.0677 — practically glued to the theoretical curve. The eerie part is that 2^n is one of the cleanest exponential sequences imaginable, yet it naturally grows the same leading-digit skew people often associate with &#x27;fake-looking&#x27; data. Benford isn&#x27;t dirty data — it&#x27;s the logarithmic world leaking fingerprints.</span>
+        <span data-lang="zh">成功 ✅ — 512 行的奇偶帕斯卡三角果然烧出了一张清晰的谢尔宾斯基三角：总项数 131,328 个，其中奇数项正好 19,683 个，占比 14.99%，并且与理论值 3^9 = 19,683 完全一致，1 个都不差。最戏剧性的地方在最后一行：第 511 行的 512 个系数居然全是奇数，因为 511 的二进制是 111111111，等于把所有位都打通了。一个来自高中组合数学的三角形，只看奇偶，立刻变成分形火焰。说明有些图案不是画出来的，是被数论点燃的。</span>
+        <span data-lang="en" style="display:none">SUCCESS ✅ — The parity-only Pascal triangle for 512 rows really does ignite into a crisp Sierpiński triangle: out of 131,328 total entries, exactly 19,683 are odd, a 14.99% ratio, matching the theoretical value 3^9 = 19,683 with perfect precision. The most dramatic twist is the final row: all 512 coefficients in row 511 are odd, because 511 in binary is 111111111, effectively opening every bit path. A triangle from high-school combinatorics, viewed only through parity, instantly transforms into fractal fire. Some patterns are not drawn — they are lit by number theory.</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">产出</span><span data-lang="en" style="display:none">ARTIFACT</span></div>
       <div class="ed-artifact-wrap">
-        <img src="../lab/benford-ghost.png" class="ed-artifact-img"
-             alt="本福特幽灵 — 2 的幂首位数字分布 vs 理论值"
-             data-alt-en="Benford Ghost — Leading Digits of Powers of Two vs Theory"
+        <img src="../lab/lucas-flame.png" class="ed-artifact-img"
+             alt="卢卡斯火焰 — 帕斯卡三角奇偶性生成的谢尔宾斯基分形"
+             data-alt-en="Lucas Flame — Sierpiński Fractal Generated from Pascal Triangle Parity"
              onclick="openLightbox(this.src)" loading="lazy" />
         <div class="ed-img-hint">🔍 <span data-lang="zh">点击放大</span><span data-lang="en" style="display:none">Click to enlarge</span></div>
       </div>
@@ -239,7 +239,7 @@
       ← <span data-lang="zh">返回实验列表</span><span data-lang="en" style="display:none">BACK TO EXPERIMENTS</span>
     </a>
 
-    <div class="ed-nav"><a href="EXP-20260417-028.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">卡普雷卡黑洞 — 9990 个四位数坠向 6174</span><span data-lang="en" style="display:none">Kaprekar Singularity — 9,990 Four-Digit Numbers Falling into 6174</span></a><a href="EXP-20260420-030.html" class="ed-nav-btn ed-nav-next"><span data-lang="zh">卢卡斯火焰 — 帕斯卡三角里烧出的谢尔宾斯基分形</span><span data-lang="en" style="display:none">Lucas Flame — The Sierpiński Fractal Burning Inside Pascal's Triangle</span> →</a></div>
+    <div class="ed-nav"><a href="EXP-20260419-029.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">本福特幽灵 — 为什么 2 的幂总爱以 1 开头</span><span data-lang="en" style="display:none">Benford Ghost — Why Powers of Two Love to Start with 1</span></a><span></span></div>
 
   </div>
 
