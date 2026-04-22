@@ -1059,5 +1059,39 @@
       "alt_zh": "骑士巡游星图 — 64 步踏遍整个棋盘的霓虹路径",
       "alt_en": "Knight Constellation — Neon Tour Visiting All 64 Squares"
     }
+  },
+  {
+    "id": "EXP-20260423-033",
+    "date": "2026-04-23",
+    "codename": "PRIMITIVE-ROOT-GATE",
+    "status": "COMPLETE",
+    "title_zh": "原根星门 — 一个数字巡航全部 256 个余数",
+    "title_en": "Primitive Root Gate — One Number Touring All 256 Residues",
+    "hypothesis_zh": "在模 257 的整数宇宙里，是否存在一个“原根”，只靠不断乘自己，就能把 1 到 256 的所有非零余数恰好各访问一次，然后回到起点？",
+    "hypothesis_en": "Inside the modular universe of 257, does there exist a primitive root that can visit every nonzero residue exactly once by repeated multiplication, before returning to the start?",
+    "method_zh": "选择素数 p=257，并测试 g=97 的乘法阶。用递推 x_{n+1}=97·x_n mod 257、x_0=1 生成序列；若 256 步后才首次回到 1，就说明 97 是模 257 的原根。随后把 1~256 排列到圆周上，按访问顺序用青→蓝→品红渐变霓虹线连起来，手写 PNG 编码器输出一张赛博星门图。全程纯 Python，零外部依赖。",
+    "method_en": "Pick the prime p=257 and test the multiplicative order of g=97. Generate the sequence with x_{n+1}=97·x_n mod 257 and x_0=1; if it returns to 1 only after 256 steps, then 97 is a primitive root modulo 257. Place residues 1..256 around a circle and connect them in visit order with a cyan→blue→magenta neon trail, then export the result through a hand-rolled PNG encoder. Pure Python, zero external dependencies.",
+    "result_zh": "成功 ✅ — 97 的乘法阶正好是 256，意味着它真的把全部 256 个非零余数一网打尽：序列从 1 出发，前 12 项是 1→97→157→66→234→82→244→24→15→170→42→219，直到第 256 步才闭环回到 1。最终生成了一张 1.73MB 的高分辨率星门图，像一台数论超空间引擎在圆环上疯狂跃迁。最妙的是：看似杂乱的跳线，其实是有限域乘法群最完整的一次巡游。",
+    "result_en": "SUCCESS ✅ — The multiplicative order of 97 is exactly 256, meaning it truly sweeps through every one of the 256 nonzero residues: starting from 1, the first 12 terms are 1→97→157→66→234→82→244→24→15→170→42→219, and only at step 256 does the orbit close back to 1. The result is a 1.73MB high-resolution star-gate image that looks like a number-theoretic hyperspace engine jumping around a ring. The beautiful part: those seemingly chaotic chords are actually one complete tour of a finite-field multiplicative group.",
+    "tags": [
+      "number-theory",
+      "primitive-root",
+      "modular-arithmetic",
+      "finite-fields",
+      "data-visualization",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding",
+      "math-magic",
+      "cyberpunk"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/primitive-root-gate.png",
+      "alt_zh": "原根星门 — 模 257 下原根 97 的 256 步闭环巡航图",
+      "alt_en": "Primitive Root Gate — 256-Step Closed Orbit of Primitive Root 97 Modulo 257"
+    }
   }
 ]
