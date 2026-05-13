@@ -1093,5 +1093,39 @@
       "alt_zh": "原根星门 — 模 257 下原根 97 的 256 步闭环巡航图",
       "alt_en": "Primitive Root Gate — 256-Step Closed Orbit of Primitive Root 97 Modulo 257"
     }
+  },
+  {
+    "id": "EXP-20260513-034",
+    "date": "2026-05-13",
+    "codename": "PHYLLOTAXIS-ORACLE",
+    "status": "COMPLETE",
+    "title_zh": "叶序预言机 — 黄金角让 2600 粒种子自动避开拥堵",
+    "title_en": "Phyllotaxis Oracle — The Golden Angle Lets 2600 Seeds Avoid Traffic",
+    "hypothesis_zh": "如果把一粒粒种子按 r∝√n 向外摆放，每次旋转固定角度 θ，那么接近黄金角 137.507764° 的 θ，是否会比普通角度更均匀地填满圆盘，并自然消除明显的辐射状“车道”？",
+    "hypothesis_en": "If seeds are placed outward with r∝√n while each new seed rotates by a fixed angle θ, will the golden angle 137.507764° fill the disk more evenly than ordinary angles and naturally erase obvious radial traffic lanes?",
+    "method_zh": "用纯 Python 生成 2600 个叶序点：r=c√n，a=nθ。并排测试 137.000°、黄金角 137.507764°、以及有理角 144.000°（2/5 圈）三种方案。对每种方案统计 36 个角向桶的变异系数（angular CV）和抽样最近邻距离变异系数（NN CV），同时用手写 PNG 编码器绘制三联图：青蓝到金色的种子轨迹、同心参考环、霓虹标签。零外部依赖。",
+    "method_en": "Generate 2600 phyllotaxis points in pure Python with r=c√n and a=nθ. Compare three angles side by side: 137.000°, the golden angle 137.507764°, and rational 144.000° (2/5 turn). For each layout, measure the coefficient of variation across 36 angular bins (angular CV) and a sampled nearest-neighbor distance CV (NN CV), then render a triptych with a hand-rolled PNG encoder: cyan-blue-to-gold seed trails, concentric guide rings, and neon labels. Zero external dependencies.",
+    "result_zh": "成功 ✅ — 黄金角胜出，而且赢得很干净：137.000° 的 angular CV=0.0253、NN CV=0.1261；黄金角降到 angular CV=0.0109、NN CV=0.0177；而 144° 因为是 2/5 圈，直接挤出 5 条“种子高速公路”，angular CV 暴涨到 2.3414、NN CV=1.2292。最终生成 182895 字节的三联 PNG。结论很像自然界的冷笑话：向日葵不是会算数学，它只是用最不容易撞车的角度在排队。",
+    "result_en": "SUCCESS ✅ — The golden angle wins cleanly: 137.000° scores angular CV=0.0253 and NN CV=0.1261; the golden angle drops to angular CV=0.0109 and NN CV=0.0177; while 144° is exactly a 2/5 turn and collapses into five seed highways, exploding to angular CV=2.3414 and NN CV=1.2292. The final triptych PNG is 182,895 bytes. Nature's punchline: sunflowers are not doing algebra — they are simply using the least collision-prone angle for queuing.",
+    "tags": [
+      "phyllotaxis",
+      "golden-angle",
+      "fibonacci",
+      "plant-patterns",
+      "mathematics",
+      "data-visualization",
+      "generative-art",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding"
+    ],
+    "fun_rating": 9,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/phyllotaxis-oracle.png",
+      "alt_zh": "叶序预言机 — 黄金角、137° 与 144° 的 2600 粒种子分布对比",
+      "alt_en": "Phyllotaxis Oracle — 2600-seed layout comparison of golden angle, 137°, and 144°"
+    }
   }
 ]
