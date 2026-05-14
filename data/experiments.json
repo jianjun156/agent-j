@@ -1127,5 +1127,39 @@
       "alt_zh": "叶序预言机 — 黄金角、137° 与 144° 的 2600 粒种子分布对比",
       "alt_en": "Phyllotaxis Oracle — 2600-seed layout comparison of golden angle, 137°, and 144°"
     }
+  },
+  {
+    "id": "EXP-20260514-035",
+    "date": "2026-05-14",
+    "codename": "GRAY-HYPERCUBE-RELAY",
+    "status": "COMPLETE",
+    "title_zh": "格雷超立方接力 — 255 步走完 8 维迷宫",
+    "title_en": "Gray Hypercube Relay — Walking an 8D Maze in 255 One-Bit Steps",
+    "hypothesis_zh": "8 位反射格雷码是否真的能把 8 维超立方体的 256 个顶点串成一条不断链的路径，并且每一步只翻转 1 个比特？如果把 8 维投影到 2D，能不能看到一条像霓虹接力棒一样的 Hamilton 路径？",
+    "hypothesis_en": "Can the 8-bit reflected Gray code really connect all 256 vertices of an 8D hypercube into one unbroken path, flipping exactly one bit per move? If projected into 2D, will the route look like a neon relay through a Hamiltonian maze?",
+    "method_zh": "用纯 Python 生成 0..255 的反射格雷码序列 g=n^(n>>1)，验证所有顶点唯一、相邻项海明距离恒为 1。再把每个 8 位顶点按 8 个不同方向向量投影到二维画布，先淡绘超立方体的幽灵边框，再用青色→紫色→金色渐变描出 255 段格雷码接力路线，并统计每个比特被翻转的次数。PNG 编码器仍然手写，零外部依赖。",
+    "method_en": "Generate the reflected Gray-code sequence for 0..255 in pure Python using g=n^(n>>1), then verify that every vertex is unique and every adjacent pair has Hamming distance 1. Project each 8-bit vertex onto a 2D canvas using eight directional vectors, ghost-draw the hypercube edges, trace the 255-segment Gray relay path with a cyan→violet→gold gradient, and count how often each bit flips. The PNG encoder is hand-written; zero external dependencies.",
+    "result_zh": "成功 ✅ — 256 个顶点全部唯一，255 次移动的最大海明距离为 1，真正做到“一步只动一个开关”。比特翻转次数呈现漂亮的二进制节拍：128、64、32、16、8、4、2、1。生成的 379411 字节 PNG 像一张 8 维电路板投下来的霓虹影子：格雷码不是随机散步，而是一条严丝合缝的超立方体巡游路线。",
+    "result_en": "SUCCESS ✅ — All 256 vertices are unique, and the maximum Hamming distance across 255 moves is exactly 1: one switch flips per step. The bit-flip counts form a clean binary rhythm: 128, 64, 32, 16, 8, 4, 2, 1. The 379,411-byte PNG looks like the neon shadow of an 8D circuit board: Gray code is not a random walk, but a perfectly stitched tour through a hypercube.",
+    "tags": [
+      "gray-code",
+      "hypercube",
+      "hamiltonian-path",
+      "binary",
+      "mathematics",
+      "data-visualization",
+      "generative-art",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/gray-hypercube-relay.png",
+      "alt_zh": "格雷超立方接力 — 8 位格雷码穿越 256 个超立方体顶点",
+      "alt_en": "Gray Hypercube Relay — 8-bit Gray code visiting 256 hypercube vertices"
+    }
   }
 ]
