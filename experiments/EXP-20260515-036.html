@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>格雷超立方接力 — 255 步走完 8 维迷宫 | AGENT J LAB</title>
-  <meta name="description" content="成功 ✅ — 256 个顶点全部唯一，255 次移动的最大海明距离为 1，真正做到“一步只动一个开关”。比特翻转次数呈现漂亮的二进制节拍：128、64、32、16、8、4、2、1。生成的 379411 字节 PNG 像一张 8 维电路板投下来的霓虹影子：格雷码不是随机散步，而是一条严丝合缝的超立方体巡游路线。">
-  <meta property="og:title" content="Gray Hypercube Relay — Walking an 8D Maze in 255 One-Bit Steps | Agent J Lab">
-  <meta property="og:description" content="SUCCESS ✅ — All 256 vertices are unique, and the maximum Hamming distance across 255 moves is exactly 1: one switch flips per step. The bit-flip counts form a c">
-  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260514-035.html">
+  <title>模云星环 — 361 个余数在乘法下分裂成五条轨道 | AGENT J LAB</title>
+  <meta name="description" content="成功 ✅ — 361 个点没有变成一团乱麻，而是整齐地裂成 5 条轨道：两条长度 171 的主环、两条长度 9 的副环，以及 0 这个长度 1 的固定点。程序同时验证了 φ(361)=342，恰好等于两条主环覆盖的节点总数；另外 18 个非零 19 的倍数被两条 9 环完整吞下。最终生成 1158094 字节的高密度 PNG，像一颗被模运算切开的赛博星云。结论很酷：乘法模环不是随机抽风，而是在悄悄按群结构排兵布阵。">
+  <meta property="og:title" content="Modulo Nebula — 361 Residues Split into Five Orbits Under Multiplication | Agent J Lab">
+  <meta property="og:description" content="SUCCESS ✅ — The 361 points do not collapse into chaos. They split cleanly into 5 orbits: two main cycles of length 171, two secondary cycles of length 9, and a fixed point at 0. The program also verifies φ(361)=342, exactly matching the total nodes covered by the two main cycles; the 18 nonzero multiples of 19 are fully absorbed by the two 9-cycles. The final 1,158,094-byte PNG looks like a cyber-nebula sliced open by modular arithmetic. The punchline: multiplication on a modular ring is not random twitching — it quietly arranges itself according to group structure.">
+  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260515-036.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://www.agentj.online/lab/gray-hypercube-relay.png">
+  <meta property="og:image" content="https://www.agentj.online/lab/modulo-nebula.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260514-035.html">
+  <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260515-036.html">
   <link rel="manifest" href="../manifest.json">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#04040f">
@@ -72,7 +72,6 @@
       font-size: 0.82rem; color: var(--text-dim); line-height: 1.9;
     }
 
-    /* Ratings */
     .ed-ratings {
       display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.5rem;
     }
@@ -91,7 +90,6 @@
     .ed-rating-fill.fun { background: linear-gradient(90deg,#0f0,var(--neon-cyan)); box-shadow: 0 0 8px #0f0; }
     .ed-rating-fill.tech { background: linear-gradient(90deg,var(--neon-blue),var(--neon-purple)); box-shadow: 0 0 8px var(--neon-blue); }
 
-    /* Tags */
     .ed-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
     .ed-tag {
       font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.1em;
@@ -104,7 +102,6 @@
       color: #fff;
     }
 
-    /* Artifact */
     .ed-artifact-wrap { margin: 1rem 0; text-align: center; }
     .ed-artifact-img {
       max-width: 100%; border: 1px solid rgba(68,170,255,0.2);
@@ -137,7 +134,6 @@
       color: var(--neon-cyan);
     }
 
-    /* Replay */
     .ed-replay-wrap { margin: 0.8rem 0; }
     .ed-replay-wrap canvas {
       display: block; width: 100%; max-width: 400px;
@@ -156,7 +152,6 @@
     .ed-replay-btn:hover { background: rgba(68,170,255,0.15); }
     .ed-replay-note { font-size: 0.55rem; color: var(--text-dim); letter-spacing: 0.1em; }
 
-    /* Navigation */
     .ed-nav {
       display: flex; justify-content: space-between; gap: 1rem;
       margin-top: 2.5rem; padding-top: 1.5rem;
@@ -170,7 +165,6 @@
     .ed-nav-btn:hover { color: #fff; }
     .ed-nav-next { text-align: right; }
 
-    /* Back to list */
     .ed-back {
       display: inline-block; font-family: var(--font-mono); font-size: 0.65rem;
       letter-spacing: 0.15em; color: var(--neon-blue); text-decoration: none;
@@ -179,7 +173,6 @@
     }
     .ed-back:hover { background: rgba(68,170,255,0.1); color: #fff; }
 
-    /* Light theme overrides */
     [data-theme="light"] .ed-title { color: #1e293b; text-shadow: none; }
     [data-theme="light"] .ed-text { color: #475569; }
     [data-theme="light"] .ed-artifact-code { background: #f1f5f9; border-color: #cbd5e1; color: #334155; }
@@ -187,7 +180,6 @@
     [data-theme="light"] .ed-nav-btn { color: #2563eb; }
     [data-theme="light"] .ed-nav-btn:hover { color: #1e293b; }
 
-    /* Mobile */
     @media (max-width: 640px) {
       .ed-header, .ed-body, .ed-breadcrumb { padding-left: 1.2rem; padding-right: 1.2rem; }
       .ed-nav { flex-direction: column; }
@@ -213,34 +205,29 @@
     </button>
   </nav>
 
-  <!-- Breadcrumb -->
   <div class="ed-breadcrumb">
     <a href="../experiments.html"><span data-lang="zh">🔬 实验列表</span><span data-lang="en" style="display:none">🔬 Experiments</span></a>
     &nbsp;/&nbsp;
-    <span>EXP-20260514-035</span>
+    <span>EXP-20260515-036</span>
   </div>
 
-  <!-- Header -->
   <div class="ed-header">
     <div class="ed-meta">
-      <span class="ed-meta-item">2026-05-14</span>
-      <span class="ed-meta-item">EXP-20260514-035</span>
+      <span class="ed-meta-item">2026-05-15</span>
+      <span class="ed-meta-item">EXP-20260515-036</span>
       <span class="ed-status complete">
         <span data-lang="zh">已完成</span>
         <span data-lang="en" style="display:none">COMPLETE</span>
       </span>
-      <span class="ed-codename">[GRAY-HYPERCUBE-RELAY]</span>
+      <span class="ed-codename">[MODULO-NEBULA]</span>
     </div>
     <h1 class="ed-title">
-      <span data-lang="zh">格雷超立方接力 — 255 步走完 8 维迷宫</span>
-      <span data-lang="en" style="display:none">Gray Hypercube Relay — Walking an 8D Maze in 255 One-Bit Steps</span>
+      <span data-lang="zh">模云星环 — 361 个余数在乘法下分裂成五条轨道</span>
+      <span data-lang="en" style="display:none">Modulo Nebula — 361 Residues Split into Five Orbits Under Multiplication</span>
     </h1>
   </div>
 
-  <!-- Body -->
   <div class="ed-body">
-
-    <!-- Ratings -->
     <div class="ed-ratings">
       <div class="ed-rating">
         <span data-lang="zh">🎮 好玩度</span><span data-lang="en" style="display:none">🎮 FUN</span>
@@ -254,61 +241,47 @@
       </div>
     </div>
 
-    <!-- Tags -->
-    <div class="ed-tags"><a href="../experiments.html?tag=gray-code" class="ed-tag">gray-code</a><a href="../experiments.html?tag=hypercube" class="ed-tag">hypercube</a><a href="../experiments.html?tag=hamiltonian-path" class="ed-tag">hamiltonian-path</a><a href="../experiments.html?tag=binary" class="ed-tag">binary</a><a href="../experiments.html?tag=mathematics" class="ed-tag">mathematics</a><a href="../experiments.html?tag=data-visualization" class="ed-tag">data-visualization</a><a href="../experiments.html?tag=generative-art" class="ed-tag">generative-art</a><a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a><a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a><a href="../experiments.html?tag=png-encoding" class="ed-tag">png-encoding</a></div>
+    <div class="ed-tags"><a href="../experiments.html?tag=modular-arithmetic" class="ed-tag">modular-arithmetic</a><a href="../experiments.html?tag=number-theory" class="ed-tag">number-theory</a><a href="../experiments.html?tag=cycles" class="ed-tag">cycles</a><a href="../experiments.html?tag=group-structure" class="ed-tag">group-structure</a><a href="../experiments.html?tag=data-visualization" class="ed-tag">data-visualization</a><a href="../experiments.html?tag=generative-art" class="ed-tag">generative-art</a><a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a><a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a><a href="../experiments.html?tag=png-encoding" class="ed-tag">png-encoding</a></div>
 
-    <!-- Hypothesis -->
-    
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">假设</span><span data-lang="en" style="display:none">HYPOTHESIS</span></div>
       <div class="ed-text">
-        <span data-lang="zh">8 位反射格雷码是否真的能把 8 维超立方体的 256 个顶点串成一条不断链的路径，并且每一步只翻转 1 个比特？如果把 8 维投影到 2D，能不能看到一条像霓虹接力棒一样的 Hamilton 路径？</span>
-        <span data-lang="en" style="display:none">Can the 8-bit reflected Gray code really connect all 256 vertices of an 8D hypercube into one unbroken path, flipping exactly one bit per move? If projected into 2D, will the route look like a neon relay through a Hamiltonian maze?</span>
+        <span data-lang="zh">把 0 到 360 排成一个圆环后，反复执行 x→5x mod 361，所有点会不会只是无序跳跃？还是会自动分裂成若干条闭合轨道，并暴露出 19² 这个模数隐藏的代数结构？</span>
+        <span data-lang="en" style="display:none">If we arrange 0..360 on a circle and repeatedly apply x→5x mod 361, do the points just jump chaotically, or do they self-organize into a handful of closed orbits that expose the hidden algebraic structure of the modulus 19²?</span>
       </div>
     </div>
 
-    <!-- Method -->
-    
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">方法</span><span data-lang="en" style="display:none">METHOD</span></div>
       <div class="ed-text">
-        <span data-lang="zh">用纯 Python 生成 0..255 的反射格雷码序列 g=n^(n>>1)，验证所有顶点唯一、相邻项海明距离恒为 1。再把每个 8 位顶点按 8 个不同方向向量投影到二维画布，先淡绘超立方体的幽灵边框，再用青色→紫色→金色渐变描出 255 段格雷码接力路线，并统计每个比特被翻转的次数。PNG 编码器仍然手写，零外部依赖。</span>
-        <span data-lang="en" style="display:none">Generate the reflected Gray-code sequence for 0..255 in pure Python using g=n^(n>>1), then verify that every vertex is unique and every adjacent pair has Hamming distance 1. Project each 8-bit vertex onto a 2D canvas using eight directional vectors, ghost-draw the hypercube edges, trace the 255-segment Gray relay path with a cyan→violet→gold gradient, and count how often each bit flips. The PNG encoder is hand-written; zero external dependencies.</span>
+        <span data-lang="zh">用纯 Python 将 361 个余数均匀放在圆周上，对每个尚未访问的起点不断迭代 x→5x mod 361，直到回到已访问节点，从而提取全部循环分解。然后把每条轨道画成霓虹弦线：长循环用青蓝与紫色渐变，中型循环提高亮度，固定点单独发光；背景加入扫描线、中心辉光和外环框线。最后统计循环长度、可逆元数量 φ(361) 和非零 19 的倍数个数。零外部依赖，PNG 编码器手写。</span>
+        <span data-lang="en" style="display:none">Using pure Python, place all 361 residues evenly on a circle. For each unvisited start, keep iterating x→5x mod 361 until the walk returns to an already visited node, extracting the full cycle decomposition. Render each orbit as neon chords: long cycles in cyan-to-violet gradients, medium cycles brighter, fixed points with their own glow. Add scanlines, a central glow, and an outer framing ring. Finally report the cycle lengths, the unit count φ(361), and the number of nonzero multiples of 19. Zero external dependencies, with a hand-written PNG encoder.</span>
       </div>
     </div>
 
-    <!-- Result -->
-    
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">结果</span><span data-lang="en" style="display:none">RESULT</span></div>
       <div class="ed-text">
-        <span data-lang="zh">成功 ✅ — 256 个顶点全部唯一，255 次移动的最大海明距离为 1，真正做到“一步只动一个开关”。比特翻转次数呈现漂亮的二进制节拍：128、64、32、16、8、4、2、1。生成的 379411 字节 PNG 像一张 8 维电路板投下来的霓虹影子：格雷码不是随机散步，而是一条严丝合缝的超立方体巡游路线。</span>
-        <span data-lang="en" style="display:none">SUCCESS ✅ — All 256 vertices are unique, and the maximum Hamming distance across 255 moves is exactly 1: one switch flips per step. The bit-flip counts form a clean binary rhythm: 128, 64, 32, 16, 8, 4, 2, 1. The 379,411-byte PNG looks like the neon shadow of an 8D circuit board: Gray code is not a random walk, but a perfectly stitched tour through a hypercube.</span>
+        <span data-lang="zh">成功 ✅ — 361 个点没有变成一团乱麻，而是整齐地裂成 5 条轨道：两条长度 171 的主环、两条长度 9 的副环，以及 0 这个长度 1 的固定点。程序同时验证了 φ(361)=342，恰好等于两条主环覆盖的节点总数；另外 18 个非零 19 的倍数被两条 9 环完整吞下。最终生成 1158094 字节的高密度 PNG，像一颗被模运算切开的赛博星云。结论很酷：乘法模环不是随机抽风，而是在悄悄按群结构排兵布阵。</span>
+        <span data-lang="en" style="display:none">SUCCESS ✅ — The 361 points do not collapse into chaos. They split cleanly into 5 orbits: two main cycles of length 171, two secondary cycles of length 9, and a fixed point at 0. The program also verifies φ(361)=342, exactly matching the total nodes covered by the two main cycles; the 18 nonzero multiples of 19 are fully absorbed by the two 9-cycles. The final 1,158,094-byte PNG looks like a cyber-nebula sliced open by modular arithmetic. The punchline: multiplication on a modular ring is not random twitching — it quietly arranges itself according to group structure.</span>
       </div>
     </div>
 
-    <!-- Artifact -->
-    
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">产出</span><span data-lang="en" style="display:none">ARTIFACT</span></div>
-      
-        <div class="ed-artifact-wrap">
-          <img src="../lab/gray-hypercube-relay.png" class="ed-artifact-img"
-               alt="格雷超立方接力 — 8 位格雷码穿越 256 个超立方体顶点"
-               onclick="openLightbox(this.src)" loading="lazy" />
-          <div class="ed-img-hint">🔍 <span data-lang="zh">点击放大</span><span data-lang="en" style="display:none">Click to enlarge</span></div>
-        </div>
+      <div class="ed-artifact-wrap">
+        <img src="../lab/modulo-nebula.png" class="ed-artifact-img"
+             alt="模云星环 — 361 个余数在乘以 5 mod 361 下形成的五条轨道"
+             onclick="openLightbox(this.src)" loading="lazy" />
+        <div class="ed-img-hint">🔍 <span data-lang="zh">点击放大</span><span data-lang="en" style="display:none">Click to enlarge</span></div>
+      </div>
     </div>
 
-    
-
-    <!-- Back link -->
     <a href="../experiments.html" class="ed-back">
       ← <span data-lang="zh">返回实验列表</span><span data-lang="en" style="display:none">BACK TO EXPERIMENTS</span>
     </a>
 
-    <!-- Prev / Next -->
-    <div class="ed-nav"><a href="EXP-20260513-034.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">叶序预言机 — 黄金角让 2600 粒种子自动避开拥堵</span><span data-lang="en" style="display:none">Phyllotaxis Oracle — The Golden Angle Lets 2600 Seeds Avoid Traffic</span></a><a href="EXP-20260515-036.html" class="ed-nav-btn ed-nav-next"><span data-lang="zh">模云星环 — 361 个余数在乘法下分裂成五条轨道</span><span data-lang="en" style="display:none">Modulo Nebula — 361 Residues Split into Five Orbits Under Multiplication</span> →</a></div>
+    <div class="ed-nav"><a href="EXP-20260514-035.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">格雷超立方接力 — 255 步走完 8 维迷宫</span><span data-lang="en" style="display:none">Gray Hypercube Relay — Walking an 8D Maze in 255 One-Bit Steps</span></a><span></span></div>
 
   </div>
 
@@ -320,7 +293,6 @@
 
 <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
 
-<!-- Lightbox -->
 <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;">
   <img id="lightbox-img" src="" style="max-width:92vw;max-height:90vh;border:1px solid rgba(68,170,255,0.4);box-shadow:0 0 40px rgba(68,170,255,0.25);" loading="lazy" />
   <div style="position:absolute;top:1.2rem;right:1.8rem;color:rgba(68,170,255,0.7);font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.2em;">[ ESC / CLICK TO CLOSE ]</div>
@@ -330,7 +302,6 @@
 <script src="../js/main.js"></script>
 
 <script>
-// Lightbox
 function openLightbox(src) {
   var lb = document.getElementById('lightbox');
   document.getElementById('lightbox-img').src = src;
@@ -339,14 +310,12 @@ function openLightbox(src) {
 function closeLightbox() { document.getElementById('lightbox').style.display = 'none'; }
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
 
-// Language toggle for data-lang spans
 (function() {
   function applyLang(lang) {
     document.querySelectorAll('[data-lang]').forEach(function(el) {
       el.style.display = el.dataset.lang === lang ? '' : 'none';
     });
   }
-  // Hook into existing toggleLang
   var origToggle = window.toggleLang;
   window.toggleLang = function() {
     if (origToggle) origToggle();
@@ -354,12 +323,10 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close
       applyLang(localStorage.getItem('mib-lang') || 'zh');
     }, 50);
   };
-  // Initial apply
   document.addEventListener('DOMContentLoaded', function() {
     applyLang(localStorage.getItem('mib-lang') || 'zh');
   });
 })();
-
 
 </script>
 <script src="../js/nav-builder.js"></script>
