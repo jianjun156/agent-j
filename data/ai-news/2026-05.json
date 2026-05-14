@@ -1,7 +1,18 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-14T08:02:54+08:00",
+  "lastUpdate": "2026-05-14T10:33:16+08:00",
   "articles": [
+    {
+      "title": "To bring Codex to Windows, we had to answer a hard question: how do you let coding agents stay useful without forcing developers to choose between constant approval prompts and full machine access?",
+      "summary": "Here’s how we built the Windows sandbox for Codex:\nhttps://t.co/U8JfOe3WIG",
+      "url": "https://x.com/i/status/2054735161166819377",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-14",
+      "time": "09:26",
+      "likes": 217,
+      "views": 23621
+    },
     {
       "title": "Claude Code 每周限制将增加 50%，从现在持续至 7 月 13 日",
       "summary": "同时可以和上周的5小时限额翻倍福利叠加\n\n立即生效 https://t.co/ZlQ5e9MMFd",
@@ -102,6 +113,39 @@
       "views": 36985
     },
     {
+      "title": "codex is the best AI coding product and we want to make it easy to try.",
+      "summary": "for the next 30 days, we are giving companies that want to try switching over two months of free codex usage.",
+      "url": "https://x.com/i/status/2054626219858293128",
+      "source": "X/Twitter",
+      "author": "@sama",
+      "date": "2026-05-14",
+      "time": "02:13",
+      "likes": 14672,
+      "views": 1254362
+    },
+    {
+      "title": "NVIDIA and SAP are making specialized AI agents ready for enterprise work, with security, governance and execution controls built into SAP Business AI Platform. Learn how NVIDIA OpenShell is helping teams move from agent development to trusted production deployment across finance, procurement, supply chain and more.",
+      "summary": "",
+      "url": "https://x.com/i/status/2054622706465702339",
+      "source": "X/Twitter",
+      "author": "@nvidia",
+      "date": "2026-05-14",
+      "time": "02:00",
+      "likes": 469,
+      "views": 39369
+    },
+    {
+      "title": "Another reason to switch to Codex.",
+      "summary": "",
+      "url": "https://x.com/i/status/2054620621255192719",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2026-05-14",
+      "time": "01:51",
+      "likes": 1867,
+      "views": 254144
+    },
+    {
       "title": "Starting June 15, paid Claude plans can claim a dedicated monthly credit for programmatic usage.",
       "summary": "The credit covers usage of:\n- Claude Agent SDK\n- claude -p\n- Claude Code GitHub Actions\n- Third-party apps built on the Agent SDK",
       "url": "https://x.com/i/status/2054610152817619388",
@@ -111,6 +155,28 @@
       "time": "01:10",
       "likes": 7808,
       "views": 3023916
+    },
+    {
+      "title": "We've heard your questions about SDK and claude -p usage sharing your subscription rate limits with Claude Code and chat.",
+      "summary": "Starting June 15, programmatic usage gets its own dedicated budget instead. Your subscription limits don't change, they're now reserved for interactive use.",
+      "url": "https://x.com/i/status/2054610153929097600",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-05-14",
+      "time": "01:10",
+      "likes": 771,
+      "views": 268590
+    },
+    {
+      "title": "China might have just leaked the roadmap for the entire AI agent industry.",
+      "summary": "A developer compiled EVERYTHING happening in AI agents in 2026 into one massive repo… and the timing couldn’t be crazier.\n\nWhile most people are still talking about chatbots, this repo tracks what’s actually powering the next wave of AI:\n\n• The biggest AI agent frameworks of 2026\n• Multi-agent orche…",
+      "url": "https://x.com/i/status/2054608359761076693",
+      "source": "X/Twitter",
+      "author": "@DivyanshT91162",
+      "date": "2026-05-14",
+      "time": "01:03",
+      "likes": 6,
+      "views": 515
     },
     {
       "title": "@NotionHQ Yes!!! 💪👀👀👀",
@@ -199,6 +265,17 @@
       "time": "22:09",
       "likes": 5,
       "views": 644
+    },
+    {
+      "title": "2026-2027：AI从\"会说话\"进化到\"会干活\"。这是比ChatGPT更大的转折点",
+      "summary": "AI已经进化了。\n第一代AI：你问，它答。 第二代AI：你说目标，它自己想办法完成。\n这就是Agentic AI——有目标、有记忆、会调用工具、能自主执行的AI Agent。它不只是聊天机器人。 它是第一个真正能替代人类工作流的技术。这是AI从\"有趣的玩具\"变成\"真实生产力\"的分水岭。而这个分水岭，对应着一张完整的投资地图。今天把它画清楚。\n\n先理解Agentic AI是什么\n传统AI：输入→输出，一次性交互。\nAgentic AI：接收一个复杂目标，自主分解任务，调用多个工具和数据源，循环执行直到完成，全程不需要人类干预。\n\n举个例子：传统AI：\"帮我写一封销售邮件\" Agentic AI：…",
+      "url": "https://x.com/i/status/2054563948377325917",
+      "source": "X/Twitter",
+      "author": "@ArtofSpecuycky",
+      "date": "2026-05-13",
+      "time": "22:06",
+      "likes": 19,
+      "views": 7754
     },
     {
       "title": "Five hosts with different perspectives argue their point live, and they don't always agree. Tune in, hit play, do your thing.",
@@ -828,6 +905,17 @@
       "views": 7854
     },
     {
+      "title": "Claude Code 2.1.139 system prompt updated",
+      "summary": "Notable changes:\n1) Claude is no longer explicitly told that long chats trigger automatic context compaction. This reduces prompting to anticipate compression/truncation behavior in lengthy sessions (e.g., proactively preserving key details), since the harness-level reminder is gone.\n\nLinks:\n1) http…",
+      "url": "https://x.com/i/status/2053913652579733829",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-12",
+      "time": "03:02",
+      "likes": 18,
+      "views": 11847
+    },
+    {
       "title": "Claude Code 2.1.139 is about to be released",
       "summary": "#cccnext",
       "url": "https://x.com/i/status/2053900997664076106",
@@ -892,6 +980,17 @@
       "time": "19:47",
       "likes": 1872,
       "views": 433446
+    },
+    {
+      "title": "Google is COOKING 🧑🏻‍🍳",
+      "summary": "Early Sample Of The New Omni Video Model:\n\n(I’d put this slightly above seedance 2) https://t.co/3hkwit4Ypp",
+      "url": "https://x.com/i/status/2053720769528476125",
+      "source": "X/Twitter",
+      "author": "@chatgpt21",
+      "date": "2026-05-11",
+      "time": "14:16",
+      "likes": 1100,
+      "views": 227570
     },
     {
       "title": "Sample video and early feedback 👀",
@@ -1180,6 +1279,17 @@
       "views": 49778
     },
     {
+      "title": "Hailuo AI is completely breaking the cost structure.",
+      "summary": "Seedance 2.0 pricing is insanely low, way beyond expectations.\n\nPlus access to GPT Image2 + Banana2 & Pro, and even unlimited image generation.\n\nTop-tier video + image models all in one place.\n\nThis is honestly the best time to learn AI.",
+      "url": "https://x.com/i/status/2052414229916082609",
+      "source": "X/Twitter",
+      "author": "@FellMentKE",
+      "date": "2026-05-07",
+      "time": "23:44",
+      "likes": 165,
+      "views": 1480776
+    },
+    {
       "title": "🎬 Dreamina App is HERE — CAST Yourself into Any Dream",
       "summary": "Dreamina App, the all-new AI video social platform by Dreamina AI, is officially rolling out globally! You can download it now on the App Store or Google Play.\nWith our brand-new Cast feature powered by Seedance 2.0, you can record your own digital avatar and generate highly personalized AI videos —…",
       "url": "https://x.com/i/status/2052388051159257091",
@@ -1189,6 +1299,17 @@
       "time": "22:00",
       "likes": 406,
       "views": 38025
+    },
+    {
+      "title": "最近很多人说 Codex 已经超越 Claude Code，成为 2026 年最强 Agent",
+      "summary": "这期视频我带你从0到1，完整走一遍 Codex 核心体验 👇\n\n📦 安装流程 + 界面怎么用\n🖼️ 用 Codex 给文章自动生成配图\n📊 直接生成可编辑的 PPT\n⏰ 把重复性工作做成定时自动化任务\n🖥️ 让 Codex 直接操控电脑帮你干活 https://t.co/7EYuREod0c",
+      "url": "https://x.com/i/status/2052329250741452898",
+      "source": "X/Twitter",
+      "author": "@axichuhai",
+      "date": "2026-05-07",
+      "time": "18:06",
+      "likes": 44,
+      "views": 9108
     },
     {
       "title": "GPT Image 2 + Seedance 2.0 = Latte Art 🎶",
@@ -1233,6 +1354,17 @@
       "time": "06:22",
       "likes": 20,
       "views": 5302
+    },
+    {
+      "title": "Claude Code CLI 2.1.132 changelog:",
+      "summary": "New features:\n• Added CLAUDE_CODE_SESSION_ID environment variable to the Bash tool subprocess environment, matching the session_id passed to hooks\n• Added CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1 env var to opt out of the fullscreen alternate-screen renderer and keep the conversation in the terminal's…",
+      "url": "https://x.com/i/status/2052152064222888058",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-07",
+      "time": "06:22",
+      "likes": 18,
+      "views": 3244
     },
     {
       "title": "Claude Code 2.1.132 is about to be released",
@@ -1708,6 +1840,17 @@
       "views": 184985
     },
     {
+      "title": "Claude Code 2.1.122 has been released.",
+      "summary": "18 CLI changes, 2 system prompt changes\n\nHighlights:\n• Responses prepend 'looking is not acting' and require explicit consent before risky actions, preventing harm\n• Added ANTHROPIC_BEDROCK_SERVICE_TIER to select Bedrock tier (default/flex/priority), affects tier, speed, cost\n• Pasting a PR URL into…",
+      "url": "https://x.com/i/status/2049252718892458237",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-04-29",
+      "time": "06:21",
+      "likes": 245,
+      "views": 26589
+    },
+    {
       "title": "More connectors launching today: Adobe Creative Cloud, Ableton, Splice, Canva Affinity, SketchUp, and Resolume.",
       "summary": "We've also joined the Blender Development Fund as a patron to support open-source development of the software.\n\nRead more: https://t.co/vg3l9MWNTg",
       "url": "https://x.com/i/status/2049143442601546054",
@@ -1785,6 +1928,17 @@
       "views": 456925
     },
     {
+      "title": "Create custom logo animations with ChatGPT Images 2.0 and Seedance 2.0.",
+      "summary": "Images 2.0 can create an animation sheet for how a logo should appear.\n\nThis can be quite detailed, to help the AI video tool guide how long each section takes.\n\nMore in the comments: https://t.co/okkKlzcMbg",
+      "url": "https://x.com/i/status/2048514264043045266",
+      "source": "X/Twitter",
+      "author": "@jerrod_lew",
+      "date": "2026-04-27",
+      "time": "05:27",
+      "likes": 1982,
+      "views": 180475
+    },
+    {
       "title": "ChatGPT made a storyboard from a single reference image, then I used Seedance 2.0 to animate the storyboard shots: https://t.co/iYHEiKvHvn",
       "summary": "",
       "url": "https://x.com/i/status/2048418148395679950",
@@ -1794,6 +1948,17 @@
       "time": "23:05",
       "likes": 3435,
       "views": 292286
+    },
+    {
+      "title": "说个暴论，现在90%的AI Agent记忆，全都是假的。",
+      "summary": "我之前也踩过这个坑，把所有历史记录决策日志全堆进Markdown文件里，以为这就是给Agent加了长期记忆，结果用了两周就崩了，\n\n同一个事实有三个互相矛盾的版本，上个月的偏好和昨天的权重一模一样，每次调用都把所有东西一股脑塞进上下文，慢到离谱还经常串台，\n\n直到看到这篇文章才恍然大悟，原来我根本不是在做记忆，只是在把Prompt当RAM用🌚\n\n真正的记忆不是堆文件，应该是图和节点加嵌入加遍历，\n\nMarkdown方案有四个根本解决不了的硬伤，没有去重，没有衰减，没有排名，超过一百条记录直接变成性能杀手，\n\n它只能记住你写过什么，永远记不住这件事和那件事有什么关系，\n这个决策为什么被否决，上次…",
+      "url": "https://x.com/i/status/2048278717793722747",
+      "source": "X/Twitter",
+      "author": "@AYi_AInotes",
+      "date": "2026-04-26",
+      "time": "13:51",
+      "likes": 2855,
+      "views": 704796
     },
     {
       "title": "Just created my own AAA game",
@@ -1871,6 +2036,17 @@
       "time": "05:09",
       "likes": 10692,
       "views": 1601304
+    },
+    {
+      "title": "Introducing Claude Design by Anthropic Labs: make prototypes, slides, and one-pagers by talking to Claude.",
+      "summary": "Powered by Claude Opus 4.7, our most capable vision model. Available in research preview on the Pro, Max, Team, and Enterprise plans, rolling out throughout the day. https://t.co/2BgBGtgYGX",
+      "url": "https://x.com/i/status/2045156267690213649",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-04-17",
+      "time": "23:03",
+      "likes": 148646,
+      "views": 63538442
     },
     {
       "title": "58页的Obsidian+Claude Code构建知识库的橙皮书📙来了：https://t.co/WQlkWqXVbR",
