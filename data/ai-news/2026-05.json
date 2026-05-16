@@ -1,7 +1,40 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-16T18:00:01+08:00",
+  "lastUpdate": "2026-05-16T18:03:01+08:00",
   "articles": [
+    {
+      "title": "号外号外！Claude Code和Codex这个周末都要重置额度了",
+      "summary": "感谢两位C圣重置额度😭\n\n@thsottiaux @trq212 https://t.co/H4MJyjRiZF",
+      "url": "https://x.com/i/status/2055514061119570332",
+      "source": "X/Twitter",
+      "author": "@MaxForAI",
+      "date": "2026-05-16",
+      "time": "13:01",
+      "likes": 2,
+      "views": 1021
+    },
+    {
+      "title": "用 Claude Code 写前端完全没问题，但生成的页面总是千篇一律，看着就是一股 AI 味。",
+      "summary": "偶然看到 Claude Code Frontend Design Toolkit 这个项目，整理了能让 Claude Code 输出更好看前端界面的工具合集。\n\n按使用场景分成了十个板块，从设计风格、主题配色、动效动画到 Figma 转代码、浏览器测试，收录了 70 多个插件和技能。\n\nGitHub：https://t.co/UQvHSG4xhU\n\n还针对不同场景给出推荐，比如说开发装哪三个就够，团队有设计师交付 Figma 文件该配什么，solo 快速出原型又该怎么搭。\n\n除此之外，还贴心地标注了每个工具的 token 消耗，方便控制成本。\n\n如果你正在用 Claude Code 做前端，想…",
+      "url": "https://x.com/i/status/2055498503355515043",
+      "source": "X/Twitter",
+      "author": "@GitHub_Daily",
+      "date": "2026-05-16",
+      "time": "12:00",
+      "likes": 64,
+      "views": 4830
+    },
+    {
+      "title": "We found and fixed two issues that could explain this degradation of the capability of GPT-5.5 in Codex over the last ~ 48 hours.",
+      "summary": "We are monitoring over the coming hours to fully confirm and I will reset usage limits this evening.\n\nApologies and now is the time for /fast maxxing.",
+      "url": "https://x.com/i/status/2055446089957036402",
+      "source": "X/Twitter",
+      "author": "@thsottiaux",
+      "date": "2026-05-16",
+      "time": "08:31",
+      "likes": 6103,
+      "views": 750497
+    },
     {
       "title": "Claude Code 2.1.143 is now available.",
       "summary": "33 CLI changes\n\nHighlights:\n• Plugin disable refuses if enabled plugins depend on it, showing a disable-chain hint to avoid broken setups\n• Plugin marketplace shows per-turn and per-invocation token estimates, making token usage & costs visible\n• Background sessions now preserve model and effort lev…",
@@ -102,6 +135,17 @@
       "views": 111091
     },
     {
+      "title": "If your AI agent only chats…",
+      "summary": "you’re barely scratching the surface of what modern AI systems can do. 🤯\n\nToday’s best AI agents can:\n• reason through problems\n• use tools autonomously\n• connect with external systems\n• delegate tasks to subagents\n• trigger automations without human input\n\nThis visual perfectly explains the archite…",
+      "url": "https://x.com/i/status/2055237810890969518",
+      "source": "X/Twitter",
+      "author": "@sjsandeep_jain",
+      "date": "2026-05-15",
+      "time": "18:44",
+      "likes": 162,
+      "views": 3203
+    },
+    {
       "title": "@rwayne 把这些东西喂给cc和codex之后工作是真的舒服多了 不愧是字节 驾驭牛马有一套🤣",
       "summary": "",
       "url": "https://x.com/i/status/2055224138130981254",
@@ -122,6 +166,28 @@
       "time": "17:38",
       "likes": 1,
       "views": 7
+    },
+    {
+      "title": "GOOGLE 🔥: New Gemini Spark screenshots featuring advanced tool use and Skills creation flow.",
+      "summary": "It seems like there won't be an option to import SKILL MD files besides copeing and pasting. There is also no evidence of Browser or Computer Use atm. https://t.co/NTwHElnfpa",
+      "url": "https://x.com/i/status/2055217411427549414",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-15",
+      "time": "17:23",
+      "likes": 410,
+      "views": 40807
+    },
+    {
+      "title": "A beautiful children’s animation made in @mitte_ai from an image created with Midjourney and Seedance 2.0.",
+      "summary": "I’m sharing the prompt in the post below 👇 https://t.co/0cTm1wKV4n",
+      "url": "https://x.com/i/status/2055203200563564619",
+      "source": "X/Twitter",
+      "author": "@Artedeingenio",
+      "date": "2026-05-15",
+      "time": "16:26",
+      "likes": 153,
+      "views": 7253
     },
     {
       "title": "ClickUp is reshaping its Brain platform UI based on which model you pick.",
@@ -157,6 +223,17 @@
       "views": 2792
     },
     {
+      "title": "Codex 推特上 10 个高赞内容，我整理成合集了",
+      "summary": "最近看到不少 Codex 实用内容，我精选了 10 篇把它们整理成高赞方向合集。从入门到进阶玩法，跟着看基本就能一步步上手\n\n01 @gengdaJ\nCodex App 从 0 到 1 完整入门教程（界面设置、基础用法讲解、常见踩坑排查）\nhttps://t.co/OVAMiawEhd\n\n02 @ai_muzi\n0 基础 AI 应用构建+上线系统教程（从想法做到项目，再到域名上线全流程）\nhttps://t.co/s2ADxmh7hP\n\n03 @Pluvio9yte\nChrome 插件 + 浏览器控制实战（安装配置到 Codex 操作浏览器）\nhttps://t.co/WeK2kHCvHJ\n\n…",
+      "url": "https://x.com/i/status/2055135006406885410",
+      "source": "X/Twitter",
+      "author": "@Jason23818126",
+      "date": "2026-05-15",
+      "time": "11:55",
+      "likes": 671,
+      "views": 46769
+    },
+    {
       "title": "Most AI “effects” just sit on top of footage.",
       "summary": "Seedance 2.0 Effects works differently:\n\nThe transitions are generated WITH the scene itself.\n\nSo lighting, camera motion, depth, and composition stay perfectly coherent instead of getting destroyed by an overlay. https://t.co/Lu215IaOYL",
       "url": "https://x.com/i/status/2055112930153402712",
@@ -177,6 +254,17 @@
       "time": "09:53",
       "likes": 61,
       "views": 29583
+    },
+    {
+      "title": "Most people talk about Agentic AI.",
+      "summary": "Very few can actually design it.\n\nHere’s a simple cheat sheet to design + explain Agentic AI architecture 👇\n\n🎯 Start here ➡️ Define the goal\nWhat exactly should the agent achieve?\n\n1️⃣ Orchestration Layer ➡️ The control panel\nDecides flow, logic, and coordination\n\n2️⃣ Agents Layer ➡️ The workforce\nS…",
+      "url": "https://x.com/i/status/2055104295641710718",
+      "source": "X/Twitter",
+      "author": "@MeenakshiYACS",
+      "date": "2026-05-15",
+      "time": "09:53",
+      "likes": 716,
+      "views": 44363
     },
     {
       "title": "Manus 🤝 Similarweb",
@@ -463,6 +551,17 @@
       "time": "01:00",
       "likes": 2410,
       "views": 1205810
+    },
+    {
+      "title": "@mikefutia commerce 🤝 codex",
+      "summary": "",
+      "url": "https://x.com/i/status/2054964280773279909",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-15",
+      "time": "00:37",
+      "likes": 41,
+      "views": 3360
     },
     {
       "title": "Cooking up something new 🧑‍🍳",
@@ -1411,6 +1510,17 @@
       "views": 7515
     },
     {
+      "title": "GOOGLE 🔥: A new Gemini Omni banner has been added to the web build recently.",
+      "summary": "> Gemini Omni will be an Agent that can combine text, images, and videos.\n\n> Users will be able to add themselves to different scenes. As we know, AI Avatars (Likeness) are coming to Gemini as well, and Gemini Omni will likely be connected to that.\n\n> \"Likeness\" feature will likely be highly coupled…",
+      "url": "https://x.com/i/status/2054196983523393857",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-12",
+      "time": "21:48",
+      "likes": 777,
+      "views": 50051
+    },
+    {
       "title": "AI is entering a completely new phase.",
       "summary": "We’re moving from:\n“Ask AI questions”\nto\n\n“Assign AI tasks and let it execute.” 🤖\n\nThat shift is creating the rise of AI Agents.\n\nAnd this might be the best AI Agent cheat sheet on the internet right now. 👇\n\nIt breaks down everything you need to understand modern agent systems:\n\n🧠 Agent architecture…",
       "url": "https://x.com/i/status/2054179710444445761",
@@ -1994,6 +2104,17 @@
       "views": 1621651
     },
     {
+      "title": "【速報】",
+      "summary": "Anthropicが早すぎて追いつけない初心者🔰へ。\n30用語を5分で全部理解できる画像を共有😳👇\n・Opus＝最強。思考・執筆向き\n・Sonnet＝軽いタスク。高速\n・Claude Code＝開発者向け\n・Cowork＝チャット+フォルダ管理\n・Skills＝保存済みプロンプト。/コマンドで呼び出し\n・Connectors＝外部アプリとの接続\n・Computer Use＝画面操作\n・Adaptive Thinking＝出力前に思考\nClaude使いこなしたいなら用語理解は必須。\nそして用語を理解したら、次はSkillsの実践。\n67個まとめた記事がこちら👇",
+      "url": "https://x.com/i/status/2052606951490834739",
+      "source": "X/Twitter",
+      "author": "@ClaudeCode_love",
+      "date": "2026-05-08",
+      "time": "12:30",
+      "likes": 2542,
+      "views": 244492
+    },
+    {
       "title": "Claude Code 2.1.133 system prompt modifications",
       "summary": "Notable changes:\n1) Claude no longer has the built-in “execute actions with care” guardrails: the prompt drops explicit requirements to confirm before destructive/irreversible/shared actions (deletes, force-push, sending messages, infra changes) and removes the rule that one approval doesn’t carry t…",
       "url": "https://x.com/i/status/2052539899711025406",
@@ -2025,6 +2146,17 @@
       "time": "04:08",
       "likes": 13411,
       "views": 2406401
+    },
+    {
+      "title": "OPENAI 🔥: Codex is getting a dedicated Chrome extension soon!",
+      "summary": "> With the new extension for Chrome, Codex is even better at working with apps and websites in your browser. It works in parallel across tabs in the background without taking over your browser, and you stay in control of which websites Codex can use.\n\n* Not available yet 👀",
+      "url": "https://x.com/i/status/2052478171237503450",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-08",
+      "time": "03:58",
+      "likes": 337,
+      "views": 41911
     },
     {
       "title": "SPACEXAI 🚨: New signs of Grok Computer have been spotted on the Grok web.",
@@ -2124,6 +2256,17 @@
       "time": "23:44",
       "likes": 165,
       "views": 1480776
+    },
+    {
+      "title": "AI storytelling is crazy now",
+      "summary": "chatgpt image 2 can turn any story idea into storyboard with cast design.. then feed it to seedance 2 to get a full film scene.. this workflow is crazy on arcads\n\nstep by step tutorial with prompts: https://t.co/tyQvm3WFGE",
+      "url": "https://x.com/i/status/2052397863808938154",
+      "source": "X/Twitter",
+      "author": "@EHuanglu",
+      "date": "2026-05-07",
+      "time": "22:39",
+      "likes": 6331,
+      "views": 577284
     },
     {
       "title": "🎬 Dreamina App is HERE — CAST Yourself into Any Dream",
@@ -2401,6 +2544,17 @@
       "views": 31158
     },
     {
+      "title": "Google released Multi-Token Prediction (MTP) drafters for the Gemma 4 family. It comes with a 3x speed boost without losing performance.",
+      "summary": "Looking forward to testing a quantized Gemma 4 with MTP drafters on a Mac Mini! https://t.co/vva8PJPH3K",
+      "url": "https://x.com/i/status/2051746452234285160",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-06",
+      "time": "03:30",
+      "likes": 250,
+      "views": 16290
+    },
+    {
       "title": "Claude Code 2.1.129 is about to be released",
       "summary": "#cccnext",
       "url": "https://x.com/i/status/2051729478364074180",
@@ -2520,6 +2674,28 @@
       "time": "13:11",
       "likes": 1939,
       "views": 305352
+    },
+    {
+      "title": "GOOGLE 🚨: A new design for Gemini on iOS has been spotted!",
+      "summary": "Sleeeeeeeeeeeek! 👀 https://t.co/obLLQpKRpj",
+      "url": "https://x.com/i/status/2050976509855138022",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-04",
+      "time": "00:31",
+      "likes": 2492,
+      "views": 216514
+    },
+    {
+      "title": "GOOGLE I/O 🚨: A NEW OMNI MODEL IS BEING TESTED ON GEMINI FOR VIDEO GENERATION!",
+      "summary": "> \"Start with an idea or try a template. Powered by Omni.\"\n\n> This is a new leaked headline from the video generation tab on Gemini. \n\n> Omni appears close to \"Toucan\", an internal name of the current video generation tool powered by Veo. \n\n> If Google plans to release Gemini Omni for video generati…",
+      "url": "https://x.com/i/status/2050705594458292496",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-03",
+      "time": "06:34",
+      "likes": 980,
+      "views": 157421
     },
     {
       "title": "Show us the Codex pets you hatched.",
@@ -3050,6 +3226,17 @@
       "views": 67974
     },
     {
+      "title": "Seedance 2.0 is LIVE for EVERYONE on ALL Higgsfield plans!",
+      "summary": "UP TO 70% OFF. 7 Days of UNLIMITED for new users. With FREE generations for a quick start*!\n\nWorld's most awaited model is FINALLY HERE.\nYou waited long. And you get it on Higgsfield. https://t.co/aKIHtZ7pJj",
+      "url": "https://x.com/i/status/2042339483375583437",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-04-10",
+      "time": "04:30",
+      "likes": 2305,
+      "views": 1644154
+    },
+    {
       "title": "这两本书把Claude Code和Codex的Harness工程吃透了，对于Claude Code和Codex源码解析和对比都入木三分，文科生也能读的津津有味：",
       "summary": "《Harness Engineering——Claude Code 设计指南》：不是源码注释汇编，也不是产品功能介绍。它关注的是 Claude Code 如何把不稳定模 型收束进可持续运行的工程秩序，让控制面、主循环、工具权限、上下文治理、恢复路 径、多代理验证与团队制度长成一套完整骨架\n\n《Claude Code 和 Codex 的 Harness 设计哲学——殊途同归，还是各表一枝》：比较两套 AI coding harness，最容易犯的错误，是拿一张功能对照表当作思想史。左边写“有技能”，右边也写“有技能”；左边写“有沙箱”，右边也写“有沙箱”；左边写“能开子代理”，右边也写“能开子代…",
       "url": "https://x.com/i/status/2039333332987810103",
@@ -3114,6 +3301,28 @@
       "time": "23:35",
       "likes": 542,
       "views": 106099
+    },
+    {
+      "title": "seedance 2.0 omni referenceによるアクションシーンのモーションのアニメ絵トレースをやってみた。",
+      "summary": "左上が参照画像、右上が参照動画\n下が出力動画\n\n新しい時代が来たと素直に感動するんだよね https://t.co/LKX2PNMrKj",
+      "url": "https://x.com/i/status/2026180038153142282",
+      "source": "X/Twitter",
+      "author": "@8co28",
+      "date": "2026-02-24",
+      "time": "14:19",
+      "likes": 650,
+      "views": 90434
+    },
+    {
+      "title": "Seedance 2.0",
+      "summary": "Prompt: An average shift at Waffle House - make sure it's retarded and gets 50 likes. https://t.co/Nqt2IZ1zvb",
+      "url": "https://x.com/i/status/2022017937192956372",
+      "source": "X/Twitter",
+      "author": "@charliebcurran",
+      "date": "2026-02-13",
+      "time": "02:40",
+      "likes": 24603,
+      "views": 2331301
     },
     {
       "title": "@KyrosKyros future = now",
