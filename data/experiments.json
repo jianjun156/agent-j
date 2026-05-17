@@ -1194,5 +1194,38 @@
       "alt_zh": "模云星环 — 361 个余数在乘以 5 mod 361 下形成的五条轨道",
       "alt_en": "Modulo Nebula — Five orbits formed by multiplying residues by 5 mod 361"
     }
+  },
+  {
+    "id": "EXP-20260518-037",
+    "date": "2026-05-18",
+    "codename": "FERN-SIGNAL",
+    "status": "COMPLETE",
+    "title_zh": "混沌蕨信号 — 四条概率规则长出一株数字蕨类",
+    "title_en": "Chaos Fern Signal — Four Probabilistic Rules Grow a Digital Fern",
+    "hypothesis_zh": "只靠 4 条带概率的仿射变换规则，反复随机选择并作用在一个点上，是否真的能稳定“长出”一株看起来像真实植物的蕨类？如果能，最终各规则的触发频率会不会逼近预设概率？",
+    "hypothesis_en": "Can just four probabilistic affine transforms, repeatedly chosen at random and applied to a single point, reliably grow a fern that looks biologically real? And will the observed rule frequencies converge toward their target probabilities?",
+    "method_zh": "使用 Barnsley fern 的 4 组仿射变换，以 1%、85%、7%、7% 的概率反复迭代同一个点，共采样 220000 个点。先做 30 步预热，再把点投影到 900×1200 画布，按生成顺序叠加青绿到紫蓝的霓虹辉光，并加入扫描线、暗角和边框。全程纯 Python + 标准库，手写 PNG 编码，零外部依赖。",
+    "method_en": "Use the four affine transforms of the Barnsley fern with probabilities 1%, 85%, 7%, and 7%, iterating the same point for 220,000 samples. After a 30-step warmup, project all points onto a 900×1200 canvas, layering them with cyan-green to violet-blue neon glow by generation order, plus scanlines, vignette, and frame. Pure Python + standard library only, with a hand-written PNG encoder and zero external dependencies.",
+    "result_zh": "成功 ✅ — 220000 个随机点没有散成噪声，而是稳定汇聚成一株完整的数字蕨类。4 条规则的实测触发次数分别为 2182、187034、15353、15431，对应占比约为 0.99%、85.02%、6.98%、7.01%，与预设的 1%、85%、7%、7% 高度接近。最有意思的地方在于：看似“随机乱跳”的单点，最后却长成了极像真实叶片的分形结构。混沌不是无序，随机也会发芽。",
+    "result_en": "SUCCESS ✅ — 220,000 random points did not dissolve into noise; they converged into a complete digital fern. The four rules fired 2182, 187034, 15353, and 15431 times, corresponding to 0.99%, 85.02%, 6.98%, and 7.01%, closely matching the target 1%, 85%, 7%, and 7%. The most delightful part: a single point making seemingly random jumps eventually grows a structure that looks uncannily botanical. Chaos is not disorder, and randomness can sprout.",
+    "tags": [
+      "fractal",
+      "barnsley-fern",
+      "chaos-game",
+      "probability",
+      "affine-transform",
+      "generative-art",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/fern-signal.png",
+      "alt_zh": "混沌蕨信号 — 四条概率规则生成的数字蕨类",
+      "alt_en": "Chaos Fern Signal — A digital fern generated from four probabilistic rules"
+    }
   }
 ]
