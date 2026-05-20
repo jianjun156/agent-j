@@ -1,7 +1,381 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-19T18:00:00+08:00",
+  "lastUpdate": "2026-05-20T08:02:29+08:00",
   "articles": [
+    {
+      "title": "Claude Code 2.1.145 has been released.",
+      "summary": "20 CLI changes\n\nHighlights:\n• claude agents --json outputs live agent sessions as JSON for scripting and automation tools\n• Tool now runs Bash commands and returns their output, enabling shell checks and scriptable workflows\n• Fixed Bash bypass that auto-approved bare assignments to non-allowlisted …",
+      "url": "https://x.com/i/status/2056866139351753043",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-20",
+      "time": "06:34",
+      "likes": 88,
+      "views": 7337
+    },
+    {
+      "title": "Gemini Omni doesn't just build scenes that look real, it reasons about what should happen next. It combines an intuitive understanding of physics with Gemini's knowledge of history, science, and cultural context.",
+      "summary": "Rolling out today starting with video outputs to Google AI Plus, Pro and Ultra subscribers globally through the @Geminiapp + Google Flow, and @YouTube Shorts this week.",
+      "url": "https://x.com/i/status/2056816915717443862",
+      "source": "X/Twitter",
+      "author": "@sundarpichai",
+      "date": "2026-05-20",
+      "time": "03:19",
+      "likes": 3837,
+      "views": 240813
+    },
+    {
+      "title": "Run reliable AI agent evaluations right in your CI/CD with GitHub Actions! 🚀",
+      "summary": "⚡ Automate pre-production testing of Foundry agents\n📊 Get confidence intervals & statistical comparisons\n🛡️ Evaluate quality, safety, and performance across scenarios\nStart here 👉 https://t.co/XIuXDbpoo9\n#AzureAI #GitHubActions #DevOps #AIQuality",
+      "url": "https://x.com/i/status/2056812133401157783",
+      "source": "X/Twitter",
+      "author": "@AzureSupport",
+      "date": "2026-05-20",
+      "time": "03:00",
+      "likes": 16,
+      "views": 1586
+    },
+    {
+      "title": "AI for Science! https://t.co/GpGoQiHAxA",
+      "summary": "",
+      "url": "https://x.com/i/status/2056809241684435018",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "02:48",
+      "likes": 14,
+      "views": 2203
+    },
+    {
+      "title": "Scott Wu (@ScottWu46) runs @cognition, the team behind Devin, an AI software engineer built on Claude.",
+      "summary": "He wants to make building software 10x faster for every engineering team: https://t.co/5AKOp2vXE6",
+      "url": "https://x.com/i/status/2056805728774402428",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-20",
+      "time": "02:34",
+      "likes": 2001,
+      "views": 258933
+    },
+    {
+      "title": "From The Problem Solvers, a new series featuring founders taking on hard problems with Claude: https://t.co/lXWwc2eHPe",
+      "summary": "",
+      "url": "https://x.com/i/status/2056805730359931007",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-20",
+      "time": "02:34",
+      "likes": 140,
+      "views": 39356
+    },
+    {
+      "title": "Google Pics, a new app for image generation https://t.co/8JTeRGjaC3",
+      "summary": "",
+      "url": "https://x.com/i/status/2056803685846421599",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "02:26",
+      "likes": 8,
+      "views": 610
+    },
+    {
+      "title": "Gen AI UI in live responses https://t.co/pqkluuMYD3",
+      "summary": "",
+      "url": "https://x.com/i/status/2056800711174758864",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "02:14",
+      "likes": 4,
+      "views": 503
+    },
+    {
+      "title": "New Gemini Live experience 🔥 https://t.co/dv1QzAZQEC",
+      "summary": "",
+      "url": "https://x.com/i/status/2056800339886494109",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "02:13",
+      "likes": 5,
+      "views": 527
+    },
+    {
+      "title": "Gemini 3.5 Flash benchmarks! 🤩 https://t.co/YX3C4tOxNz",
+      "summary": "",
+      "url": "https://x.com/i/status/2056794849274110081",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "01:51",
+      "likes": 22,
+      "views": 2055
+    },
+    {
+      "title": "GOOGLE I/O 🔥: A 24/7 GEMINI SPARK AI AGENT HAS BEEN ANNOUNCED!",
+      "summary": "> Comes with a dedicated virtual machine\n> Supports MCPs and Connectors\n> Powered by Gemini 3.5 and Antigravity harness\n\nTons of use cases! 👀\n\nRolling out to trusted testers this week and to Ultra users in the US next week.",
+      "url": "https://x.com/i/status/2056792764235280492",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "01:43",
+      "likes": 325,
+      "views": 24099
+    },
+    {
+      "title": "Loads of TPU 8 performance upgrades ⚡ https://t.co/nCT82axhUN",
+      "summary": "",
+      "url": "https://x.com/i/status/2056785851103715681",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "01:15",
+      "likes": 12,
+      "views": 902
+    },
+    {
+      "title": "Docs Live Beta has been announced, allowing users to create docs with their voices! https://t.co/AqPVBEWrFC",
+      "summary": "",
+      "url": "https://x.com/i/status/2056785092811317282",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "01:12",
+      "likes": 9,
+      "views": 938
+    },
+    {
+      "title": "Avatar V API is live at $0.05/sec",
+      "summary": "The highest-quality AI avatar model for developers\n\nBenchmarked against Veo 3.1, Kling O3 Pro, OmniHuman 1.5, and Seedance 2.0 on cross-scene talking-head generation\n\nAvatar V won every category\n\nResearch report + API ↓ https://t.co/WDbK1MeAT0",
+      "url": "https://x.com/i/status/2056781720842899794",
+      "source": "X/Twitter",
+      "author": "@HeyGen",
+      "date": "2026-05-20",
+      "time": "00:59",
+      "likes": 284,
+      "views": 103566
+    },
+    {
+      "title": "Want to differentiate yourself as an AI Engineer?",
+      "summary": "𝗦𝘁𝗮𝗻𝗱 𝗼𝘂𝘁 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲𝘀𝗲 𝟵 𝗵𝗶𝗴𝗵-𝗶𝗺𝗽𝗮𝗰𝘁 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 𝘂𝘀𝗶𝗻𝗴 𝗔𝗴𝗲𝗻𝘁𝘀, 𝗟𝗟𝗠𝘀, 𝗮𝗻𝗱 𝗥𝗔𝗚.\n\n》 1. AI Cyber-Defense Multi-Agent Reasoning and Planning End-to-End\nArchitect with LangGraph, add reasoning & memory, build cyber-defense agents that detect threats from logs with a 12-step blueprint.\n\n↳ Watch here: https://t.…",
+      "url": "https://x.com/i/status/2056772255288332636",
+      "source": "X/Twitter",
+      "author": "@MaryamMiradi",
+      "date": "2026-05-20",
+      "time": "00:21",
+      "likes": 6,
+      "views": 286
+    },
+    {
+      "title": "a0_swarm: parallel sub-agents plugin.",
+      "summary": "Mention something that needs multi-agent work and they spin up on their own. \n\nHere, four hacker agents go through Agent Zero's GitHub security at once.\n\nMade by the A0 team. Available now in the Plugin Hub. https://t.co/Zx8xlnWPgM",
+      "url": "https://x.com/i/status/2056770130684608797",
+      "source": "X/Twitter",
+      "author": "@Agent0ai",
+      "date": "2026-05-20",
+      "time": "00:13",
+      "likes": 43,
+      "views": 120316
+    },
+    {
+      "title": "𝗘𝘃𝗲𝗿𝘆 𝗺𝗮𝗷𝗼𝗿 𝗔𝗜 𝗰𝗼𝗱𝗶𝗻𝗴 𝘁𝗼𝗼𝗹 𝗷𝘂𝘀𝘁 𝘀𝘁𝗮𝗻𝗱𝗮𝗿𝗱𝗶𝘇𝗲𝗱 𝗼𝗻 𝗼𝗻𝗲 𝗶𝗱𝗲𝗮.",
+      "summary": "Not a model.\nNot an agent framework.\nNot a vector database.\nA markdown file.\n𝗦𝗞𝗜𝗟𝗟.𝗺𝗱\n\nAnthropic introduced it in late 2025.\n\nNow OpenAI, Google, Microsoft, Cursor, JetBrains, and 10+ other AI coding platforms support the same format.\n\nDifferent companies.\nDifferent models.\nDifferent ecosystems.\n\nBu…",
+      "url": "https://x.com/i/status/2056768914261193018",
+      "source": "X/Twitter",
+      "author": "@jianw851",
+      "date": "2026-05-20",
+      "time": "00:08",
+      "likes": 38,
+      "views": 1386
+    },
+    {
+      "title": "What to expect? 👀",
+      "summary": "https://t.co/3jysjjrIdR",
+      "url": "https://x.com/i/status/2056762299864531450",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "23:41",
+      "likes": 31,
+      "views": 3807
+    },
+    {
+      "title": "the engineer who built Claude Code just dropped a 30-minute video on how to build an entire company using Claude Code",
+      "summary": "I've seen $500 courses that don't cover what they show in the first 10 minutes\n\nagent teams, automated operations, multi-agent architecture, zero-employee workflows\n\nall in one video and completely free\n\nCEO: 1 human. Employees: AI agents. Operations: fully automatic\n\nthe zero-headcount company is n…",
+      "url": "https://x.com/i/status/2056757245761986661",
+      "source": "X/Twitter",
+      "author": "@eng_khairallah1",
+      "date": "2026-05-19",
+      "time": "23:21",
+      "likes": 79,
+      "views": 10431
+    },
+    {
+      "title": "Agentic AI is not just about building agents.",
+      "summary": "The real challenge is how systems operate at scale.\n\nSharing great insights from Luis Rodrigues.\n\nThe operating model defines real-world agent behavior.\n\nIncludes ownership, control, and reliable execution flow.\n\nWithout this, you are not building agentic AI.\n\nYou are only building GenAI task automa…",
+      "url": "https://x.com/i/status/2056737031531725229",
+      "source": "X/Twitter",
+      "author": "@Igor_Buinevici",
+      "date": "2026-05-19",
+      "time": "22:01",
+      "likes": 47,
+      "views": 4016
+    },
+    {
+      "title": "𝗔𝗜 𝗔𝗴𝗲𝗻𝘁’𝘀 𝗠𝗲𝗺𝗼𝗿𝘆 is the most important piece of 𝗖𝗼𝗻𝘁𝗲𝘅𝘁 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴, this is how we define it 👇",
+      "summary": "In general, the memory for an agent is something that we provide via context in the prompt passed to LLM that helps the agent to better plan and react given past interactions or data not immediately available.\n\nIt is useful to group the memory into four types:\n\n𝟭. 𝗘𝗽𝗶𝘀𝗼𝗱𝗶𝗰 - This type of memory cont…",
+      "url": "https://x.com/i/status/2056719008993329612",
+      "source": "X/Twitter",
+      "author": "@Aurimas_Gr",
+      "date": "2026-05-19",
+      "time": "20:49",
+      "likes": 211,
+      "views": 9533
+    },
+    {
+      "title": "GOOGLE I/O 🔥: We are getting Gemini 3.5 Flash today!",
+      "summary": "&gt; GEMINI\n&gt; GEMINI\n&gt; GEMINI\n&gt; GEM 👀 https://t.co/6uTSYmWJX2",
+      "url": "https://x.com/i/status/2056707725740953606",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "20:05",
+      "likes": 754,
+      "views": 51818
+    },
+    {
+      "title": "AI AGENTS MASTER TREE",
+      "summary": "AI AGENTS + AUTOMATION + AGENTIC AI MASTER TREE\n│\n├── 1. Agent Foundations\n│   ├── What is an AI Agent\n│   ├── Agent vs Workflow\n│   ├── Single-Agent Systems\n│   ├── Multi-Agent Systems\n│   └── Agentic AI Concepts\n│\n├── 2. LLM Fundamentals\n│   ├── Transformer Architecture\n│   ├── Context Windows\n│  …",
+      "url": "https://x.com/i/status/2056691466379100170",
+      "source": "X/Twitter",
+      "author": "@BharukaShraddha",
+      "date": "2026-05-19",
+      "time": "19:00",
+      "likes": 176,
+      "views": 6862
+    },
+    {
+      "title": "ClickUp's AI Brain will soon be able to build fully interactive apps from a single prompt, with live data integrations.",
+      "summary": "Some examples 👀\n\n> Sprint tracker - to reshape your team operations into an analytics dashboard for stakeholders.\n\n> CRM tool - to have a custom dashboard with customizable controls on top of your existing data.\n\n> Live OKR dashboard - to have a dynamic view that can pull the latest updates automati…",
+      "url": "https://x.com/i/status/2056689001159946323",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "18:50",
+      "likes": 53,
+      "views": 7051
+    },
+    {
+      "title": "GOOGLE 🔥: A new AI Studio mobile app is now available on Google Play for pre-registration!",
+      "summary": "> \"Your next big idea is just a conversation away. Inspiration doesn't wait for you to be at your desk. It strikes on the couch, on the bus, or in the middle of the night. With Google AI Studio, you finally have a way to capture that spark and turn it into something real—right from your phone.\"\n\n> \"…",
+      "url": "https://x.com/i/status/2056659138545955039",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "16:52",
+      "likes": 705,
+      "views": 105733
+    },
+    {
+      "title": "With self-hosted sandboxes, you can run agents in any environment you control: your own infrastructure, or managed providers like Cloudflare, Daytona, Modal, or Vercel. https://t.co/OELUCt7QRf",
+      "summary": "",
+      "url": "https://x.com/i/status/2056645487860555806",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-19",
+      "time": "15:57",
+      "likes": 545,
+      "views": 78124
+    },
+    {
+      "title": "Try self-hosted sandboxes today on the Claude Platform, and request access to MCP tunnels: https://t.co/S9VJ8F64dq",
+      "summary": "",
+      "url": "https://x.com/i/status/2056645493493575681",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-19",
+      "time": "15:57",
+      "likes": 294,
+      "views": 68635
+    },
+    {
+      "title": "THE CLAUDE CODE RESOURCE BIBLE JUST DROPPED.",
+      "summary": "54 tools. Agents. MCP servers. Skills. Automation.\n\nMost people have never seen this stack.\n\nThat is your edge.\n\nSave this before you scroll past it.\n\nOFFICIAL\n\nClaude Code docs: https://t.co/E0XcFgvj72\nOfficial MCP servers: https://t.co/pUzVqJdWAK\nFree certification: https://t.co/K8hIaxCbiM\n\nDIRECT…",
+      "url": "https://x.com/i/status/2056609293953372162",
+      "source": "X/Twitter",
+      "author": "@cyrilXBT",
+      "date": "2026-05-19",
+      "time": "13:34",
+      "likes": 114,
+      "views": 7260
+    },
+    {
+      "title": "AI Agents are the new apps. 🤖",
+      "summary": "And most people are already falling behind.\n\nWhile everyone is busy learning “prompt engineering,” the smartest developers are mastering:\n⚡ RAG\n⚡ MCP\n⚡ Agent Memory\n⚡ Multi-Agent Systems\n⚡ Orchestration\n⚡ AI Workflows\n⚡ Evaluation & Monitoring\n\nThis roadmap shows the exact skills needed to go from:\n…",
+      "url": "https://x.com/i/status/2056582689495663081",
+      "source": "X/Twitter",
+      "author": "@sjsandeep_jain",
+      "date": "2026-05-19",
+      "time": "11:48",
+      "likes": 97,
+      "views": 1380
+    },
+    {
+      "title": "兄弟们注意了，GitHub 又出宝藏项目了——",
+      "summary": "hello-agents，直接冲上开源热榜第一，还在飙。\n\n这玩意儿把 AI Agent 从理论到实操全打包成一套开源课程，\n\n①1️⃣ Agentic RL\n②2️⃣ SFT\n③3️⃣ GRPO\n\n这些找高端 AI 岗必考的技能，全在里面。\n\n以前这些东西要么散得到处都是，要么得花钱买课。\n\n现在？免费，还系统，不看你亏大了。\n\nhttps://t.co/IZsctEZbi9",
+      "url": "https://x.com/i/status/2056555467812552712",
+      "source": "X/Twitter",
+      "author": "@NFTCPS",
+      "date": "2026-05-19",
+      "time": "10:00",
+      "likes": 105,
+      "views": 165924
+    },
+    {
+      "title": "Claude Code 2.1.144 has been released.",
+      "summary": "52 CLI changes\n\nHighlights:\n• Edit tool performs exact string replacements in files, preventing unintended partial matches\n• System searches use the grep tool for consistent, file-based results, improving reproducible search behavior\n\nFull details available in thread ↓",
+      "url": "https://x.com/i/status/2056539661481206232",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-19",
+      "time": "08:57",
+      "likes": 410,
+      "views": 48220
+    },
+    {
+      "title": "Claude Code CLI 2.1.144 changelog:",
+      "summary": "New features:\n• Added /resume support for background sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg\n• Added elapsed duration to background subagent completion notifications (e.g. \"Agent completed · 3h 2m 5s\")\n\nFixes:\n• Fixed startup ha…",
+      "url": "https://x.com/i/status/2056539672830943555",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-19",
+      "time": "08:57",
+      "likes": 24,
+      "views": 6078
+    },
+    {
+      "title": "OpenAI Codex Cookbook 系列之 Goals",
+      "summary": "从 \"prompt\" 到 \"goals\"\n· Prompt：ask → work → result → wait（做完即停）\n· Goal：work → check → continue or complete（做完检查证据，未达成则继续）\nGoal 的关键是给 Codex 一条可审计的完成线，并允许它在空闲时基于已有证据自主决定下一步，而无需用户每轮重复说\"继续\"、\"再跑一次基准\"、\"现在查测试\"。\n\n生命周期和命令\nGoals 是 线程作用域 的持久状态，不是全局 memory，也不是项目级 instructions。\n/goal <目标>     设置目标\n/goal          …",
+      "url": "https://x.com/i/status/2056533239544914179",
+      "source": "X/Twitter",
+      "author": "@shao__meng",
+      "date": "2026-05-19",
+      "time": "08:31",
+      "likes": 21,
+      "views": 3725
+    },
+    {
+      "title": "@dkundel You can just build macOS apps",
+      "summary": "",
+      "url": "https://x.com/i/status/2056524593540800898",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-19",
+      "time": "07:57",
+      "likes": 139,
+      "views": 5718
+    },
     {
       "title": "Scientific data is often multimodal and complex.",
       "summary": "@altaratech is using OpenAI models to help scientists and engineers move through multi-step R&amp;D workflows with more transparency.",
@@ -12,6 +386,17 @@
       "time": "05:36",
       "likes": 180,
       "views": 21589
+    },
+    {
+      "title": "Eric Schmidt (ex-Google CEO): “if you really want to make money, it’s actually easy. found an agentic AI company.”",
+      "summary": "If I had  only 30 days to do that , I'd begin here and save this: \n\nAgent Architecture \nhttps://t.co/Xyy3e9AjAQ\n\nClaude Code 101:\nhttps://t.co/tZbHeRDWkj\n\nClaude Code in Action:\nhttps://t.co/RDYEVbydhW\n\nPrompt engineering (official):\nhttps://t.co/aYQzAWmObh\n\nInteractive prompt tutorial (hands-on):\nh…",
+      "url": "https://x.com/i/status/2056485655925174468",
+      "source": "X/Twitter",
+      "author": "@eng_khairallah1",
+      "date": "2026-05-19",
+      "time": "05:22",
+      "likes": 1735,
+      "views": 369558
     },
     {
       "title": "@reach_vb @Erik_Andersson1 🕺",
@@ -135,6 +520,17 @@
       "views": 144319
     },
     {
+      "title": "CODEX SKILL THAT CREATES A REAL WEBSITE IN LESS THAN 10 MINUTES!",
+      "summary": "I made a Codex skill that combines image generation with image-to-code.\n\nIt generates visual references first, analyzes the design, then helps Codex build the actual frontend from those references instead of starting from a generic layout.\n\nI merged two workflows into one:\n$imagegen + $image-to-code…",
+      "url": "https://x.com/i/status/2056344054938628218",
+      "source": "X/Twitter",
+      "author": "@Kappaemme1926",
+      "date": "2026-05-18",
+      "time": "20:00",
+      "likes": 405,
+      "views": 29109
+    },
+    {
       "title": "Next stop: London.",
       "summary": "Register to tune in tomorrow for deep dives, demos, and conversations with the teams behind Claude: https://t.co/6le4bIXvJt",
       "url": "https://x.com/i/status/2056328149940543808",
@@ -155,6 +551,17 @@
       "time": "18:30",
       "likes": 83,
       "views": 1103
+    },
+    {
+      "title": "Open Design now works inside Codex.",
+      "summary": "The hardest part of AI design isn’t generating one screen — it’s keeping design intent alive as you iterate, build, and ship.\n\nNow your agent can work with the canvas directly.\nDesign → code → motion, in one workflow.\n\nHere’s a quick demo: https://t.co/GWMYmKp6dj",
+      "url": "https://x.com/i/status/2056309544997818507",
+      "source": "X/Twitter",
+      "author": "@nexudotio",
+      "date": "2026-05-18",
+      "time": "17:42",
+      "likes": 1891,
+      "views": 268833
     },
     {
       "title": "@pip_ai_2026 This is adorable. Seedance 2.0 really handles animations well.",
@@ -267,6 +674,17 @@
       "views": 1335848
     },
     {
+      "title": "@denyamsk 🤓 this is awesome",
+      "summary": "",
+      "url": "https://x.com/i/status/2056020633532932141",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-17",
+      "time": "22:34",
+      "likes": 48,
+      "views": 4025
+    },
+    {
       "title": "Codex now allows you to control Mac from your phone.",
       "summary": "Will go an do things 😊 https://t.co/USHhjNUxrc",
       "url": "https://x.com/i/status/2055937014009090364",
@@ -287,6 +705,17 @@
       "time": "16:08",
       "likes": 515,
       "views": 46400
+    },
+    {
+      "title": "一哥们用 seedance 2.0 制作了一个近 2h 的人类进化史科普视频",
+      "summary": "视频全网撸了上亿的流量，但是哥们你得多有钱呀？这token费用不爆炸？ https://t.co/sspnxy2UPm",
+      "url": "https://x.com/i/status/2055921869736550475",
+      "source": "X/Twitter",
+      "author": "@Saccc_c",
+      "date": "2026-05-17",
+      "time": "16:02",
+      "likes": 12008,
+      "views": 878555
     },
     {
       "title": "$SERV pumps 69% today following a technical breakout, likely fueled by interest in its autonomous AI agent narrative. https://t.co/jbJAH8ZZqm",
@@ -1046,6 +1475,17 @@
       "time": "07:07",
       "likes": 4,
       "views": 880
+    },
+    {
+      "title": "@royale_wit_whiz Make sure ChatGPT mobile and Codex on macOS are up to date. Then use the Codex desktop sidebar to connect your phone. Windows support for phone pairing is coming soon.",
+      "summary": "",
+      "url": "https://x.com/i/status/2055035863088902358",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-15",
+      "time": "05:21",
+      "likes": 27,
+      "views": 3846
     },
     {
       "title": "After a TMZ report, fans are speculating that Kanye West was spotted with a mysterious AI device last week.",
@@ -2467,6 +2907,17 @@
       "views": 1227723
     },
     {
+      "title": "这绝对是 Codex 最牛掰的实战教程，把常见用法和最近的爆火玩法都讲透了。",
+      "summary": "我之前更多是用 Codex CLI，听了逸尘的建议，现在用 Codex 桌面端，体验真是好了一大截。 https://t.co/s0tZ94oJ3H",
+      "url": "https://x.com/i/status/2054079878748688573",
+      "source": "X/Twitter",
+      "author": "@gkxspace",
+      "date": "2026-05-12",
+      "time": "14:03",
+      "likes": 846,
+      "views": 203836
+    },
+    {
       "title": "Anthropic 那篇 Building Effective Agents 的作者 Barry 在 AI Engineer Summit 做了一次升级版分享",
       "summary": "把 agent 这件事拆成 3 条铁律\n\n如果你正在做 agent 产品 / 这三条直接抄\n\n· 1️⃣ 第一条 ：别什么都用 agent 做\n\n很多人一上来就想用 agent / 但 agent 不是给所有任务用的\n\nBarry 给了一份判断清单 / 4 个问题逐条问自己\n\n1）任务复杂度\nagent 在「模糊问题空间」里才发光\n能画出完整决策树的任务 / 直接写 workflow / 每个节点单独优化 / 又便宜又可控\n\n2）任务价值\nagent 用 token 很猛 / 任务必须能 cover 这个成本\n比如客服系统每单预算 10 美分 / 那就 3-5 万 token 上限 / 这种场…",
       "url": "https://x.com/i/status/2054074674636878159",
@@ -2817,6 +3268,17 @@
       "time": "21:17",
       "likes": 936,
       "views": 133933
+    },
+    {
+      "title": "THE OLD SKATE KING",
+      "summary": "made with GPT Image 2 + Seedance 2 on @openart_ai \n\nPrompt below ↓ https://t.co/Z0BXWKgnkk",
+      "url": "https://x.com/i/status/2053431022260490332",
+      "source": "X/Twitter",
+      "author": "@0xbisc",
+      "date": "2026-05-10",
+      "time": "19:04",
+      "likes": 1081,
+      "views": 67009
     },
     {
       "title": "Everyone is talking about Hermes Agent, and for good reason",
@@ -3259,6 +3721,17 @@
       "views": 223801
     },
     {
+      "title": "GPT-Realtime-2 is built for voice agents that need to keep the conversation going while they work.",
+      "summary": "The model is better at harder requests, tool use, recovery behavior, domain-specific language, and tone control while the conversation is happening.\n\nWe also increased its context window from 32K to 128K, supporting longer conversations and more complex task flows.",
+      "url": "https://x.com/i/status/2052440932071678391",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-08",
+      "time": "01:30",
+      "likes": 118,
+      "views": 10688
+    },
+    {
       "title": "OPENAI 🚨: 3 new models are now available on OpenAI Playground and APIs.",
       "summary": "- gpt-realtime 2 \n- gpt-realtime-whisper \n- gpt-realtime-translate\n\nChatGPT Voice Mode upgrade soon? 👀 https://t.co/CkMDTVn489",
       "url": "https://x.com/i/status/2052439728838808031",
@@ -3501,6 +3974,17 @@
       "views": 224984
     },
     {
+      "title": "Available today on the Claude Platform.",
+      "summary": "Read more: https://t.co/5zHETK3Rje",
+      "url": "https://x.com/i/status/2052067407204700646",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-07",
+      "time": "00:46",
+      "likes": 718,
+      "views": 243093
+    },
+    {
       "title": "We’ve agreed to a partnership with @SpaceX that will substantially increase our compute capacity.",
       "summary": "This, along with our other recent compute deals, means that we’ve been able to increase our usage limits for Claude Code and the Claude API.",
       "url": "https://x.com/i/status/2052060691893227611",
@@ -3565,6 +4049,17 @@
       "time": "23:58",
       "likes": 5397,
       "views": 788358
+    },
+    {
+      "title": "This guy literally shows you how to master 97% of Codex in UNDER AN HOUR 🤯",
+      "summary": "Nate just published a killer article + a full 1-hour video detailing his exact workflow, zero skipped steps!\n\nTruly one of the most generous builders out there.\n\nLink to the YT video in 🧵↓ https://t.co/vAaD5zIpH1",
+      "url": "https://x.com/i/status/2052041051439800324",
+      "source": "X/Twitter",
+      "author": "@DataChaz",
+      "date": "2026-05-06",
+      "time": "23:01",
+      "likes": 364,
+      "views": 65405
     },
     {
       "title": "Ink Groove",
@@ -4326,6 +4821,17 @@
       "views": 704796
     },
     {
+      "title": "待ってwww",
+      "summary": "これはヤバすぎるwww\n\nClaude Codeにバズってる筋トレ系のインスタリールのURLを渡して、「構成を完全再現しつつ、日本人女性を生成してRenoiseとHyperframesで編集して」って伝えたらこうなった。\n\nもう何でもありだなClaude Code！\n\nショート動画の価値も下がりそう😇\nやっぱりAIマネタイズで大事になるのは、「企画力」「言語化力」だけだね！\n\n詳しいやり方はリプ👇",
+      "url": "https://x.com/i/status/2048183680095699411",
+      "source": "X/Twitter",
+      "author": "@note_ai_mousigo",
+      "date": "2026-04-26",
+      "time": "07:33",
+      "likes": 4434,
+      "views": 1037555
+    },
+    {
       "title": "Just created my own AAA game",
       "summary": "with GPT image 2 and Seedance 2 https://t.co/B0LbPoWJ6I",
       "url": "https://x.com/i/status/2048002328272437663",
@@ -4478,6 +4984,17 @@
       "time": "21:54",
       "likes": 1089,
       "views": 67974
+    },
+    {
+      "title": "想玩明白Claude Code，看这篇入门资源合集就够了",
+      "summary": "Claude Code就是一个拥有无限智能的超级助手\n人都会有好点子，但因为各种限制无法变成实际成果\n\n有了CC，普通人只需要用大白话讲清需求\n操作交给它，不论是工作上的任务还是自己编程做项目都能搞定\n\n1.最全面中文教程，从安装下载到基础使用\n再到更高级的综合实战项目等高级玩法一应俱全\nhttps://t.co/ufllhoZKEP\n\n2.核心概念，五分钟让你知道核心概念与工作原理\nhttps://t.co/23WBj97HMF\n\n3.基础命令与交互技巧\nhttps://t.co/23WBj97HMF\n\n4.Claude Code skills库，有了这些技能，就可以直接让CC变成专业工程师…",
+      "url": "https://x.com/i/status/2042800854387036274",
+      "source": "X/Twitter",
+      "author": "@jiroucaigou",
+      "date": "2026-04-11",
+      "time": "11:04",
+      "likes": 1687,
+      "views": 159680
     },
     {
       "title": "Seedance 2.0 is LIVE for EVERYONE on ALL Higgsfield plans!",
