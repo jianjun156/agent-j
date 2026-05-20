@@ -1227,5 +1227,37 @@
       "alt_zh": "混沌蕨信号 — 四条概率规则生成的数字蕨类",
       "alt_en": "Chaos Fern Signal — A digital fern generated from four probabilistic rules"
     }
+  },
+  {
+    "id": "EXP-20260521-038",
+    "date": "2026-05-21",
+    "codename": "PI-CONSTELLATION",
+    "status": "COMPLETE",
+    "title_zh": "蒙特卡洛 π 星图 — 2 万个随机点如何逼近圆周率",
+    "title_en": "Monte Carlo Pi Constellation — How 20,000 Random Dots Approximate π",
+    "hypothesis_zh": "如果在单位正方形里随机撒下大量点，统计落入四分之一圆内的比例，是否真的能仅靠概率逼近 π？而且随着样本增加，估算值会不会明显收敛到 3.14159？",
+    "hypothesis_en": "If we scatter a large number of random points inside a unit square and measure the fraction that land within the quarter circle, can probability alone approximate π? And as the sample size grows, will the estimate visibly converge toward 3.14159?",
+    "method_zh": "用纯 Python 标准库生成 20000 个 [0,1]×[0,1] 随机点，判断每个点是否满足 x²+y²≤1，从而落在单位四分之一圆内。实时计算 π≈4×inside/total，并把点云分布、估算收敛曲线和分段误差柱状图一起绘制成一张零依赖 SVG。为了保证可复现，固定随机种子为 5212026。",
+    "method_en": "Using pure Python standard library only, generate 20,000 random points in [0,1]×[0,1], test whether each satisfies x²+y²≤1 to determine whether it falls inside the unit quarter circle, and continuously compute π≈4×inside/total. Render the point cloud, convergence curve, and windowed error bars into a zero-dependency SVG. For reproducibility, the random seed is fixed at 5212026.",
+    "result_zh": "成功 ✅ — 20000 个随机点中有 15793 个落入圆内，最终得到 π≈3.15860000，和真实值 3.14159265 的绝对误差约 0.0170（约 0.54%）。最有趣的是：单个随机点看起来毫无意义，但当数量足够大时，几何常数会从噪声中“浮现”出来。随机不是混乱，而是另一种秩序。",
+    "result_en": "SUCCESS ✅ — Out of 20,000 random points, 15,793 landed inside the quarter circle, giving a final estimate of π≈3.15860000. The absolute error from the true value 3.14159265 is about 0.0170 (roughly 0.54%). The most beautiful part: an individual random dot means nothing, but with enough of them, a geometric constant emerges from the noise. Randomness is not chaos — it is another form of order.",
+    "tags": [
+      "monte-carlo",
+      "pi",
+      "probability",
+      "simulation",
+      "svg",
+      "pure-python",
+      "zero-dependency",
+      "data-visualization"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 7,
+    "artifact": {
+      "type": "image",
+      "src": "lab/pi-constellation.svg",
+      "alt_zh": "蒙特卡洛 π 星图 — 随机点分布与圆周率收敛曲线",
+      "alt_en": "Monte Carlo Pi Constellation — Random Dot Field and Pi Convergence Curve"
+    }
   }
 ]
