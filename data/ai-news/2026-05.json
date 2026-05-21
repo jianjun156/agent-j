@@ -1,7 +1,183 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-21T08:00:00+08:00",
+  "lastUpdate": "2026-05-21T08:02:12+08:00",
   "articles": [
+    {
+      "title": "Apply to attend: https://t.co/x2cm7TgMki",
+      "summary": "",
+      "url": "https://x.com/i/status/2057243343097389558",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-21",
+      "time": "07:33",
+      "likes": 20,
+      "views": 2556
+    },
+    {
+      "title": "Show us what you’re building with realtime voice.",
+      "summary": "Join the OpenAI team in SF on May 27 for a demo showcase using the latest voice models.\n\nWe’re looking for prototypes and products that are interesting, useful, creative, and technically ambitious. \n\nTop projects will present onstage, win prizes, and be featured by @OpenAIDevs & @cerebral_valley for…",
+      "url": "https://x.com/i/status/2057243340752802290",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-21",
+      "time": "07:33",
+      "likes": 89,
+      "views": 3904
+    },
+    {
+      "title": "Claude Code 2.1.146 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2057195194085204259",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-21",
+      "time": "04:22",
+      "likes": 54,
+      "views": 4468
+    },
+    {
+      "title": "Come join us at a Codex meetup 🌏",
+      "summary": "https://t.co/HbugdYaEam",
+      "url": "https://x.com/i/status/2057191089145336105",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-21",
+      "time": "04:05",
+      "likes": 163,
+      "views": 32202
+    },
+    {
+      "title": "Your laptop can stay home.",
+      "summary": "Work with Codex from the ChatGPT mobile app, answer questions on the go, and pick up the same thread later from your computer. https://t.co/MQJA8VYmeV",
+      "url": "https://x.com/i/status/2057142816497906045",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-21",
+      "time": "00:54",
+      "likes": 636,
+      "views": 55940
+    },
+    {
+      "title": "https://t.co/xVm4LpQzrU",
+      "summary": "",
+      "url": "https://x.com/i/status/2057142817944969367",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-21",
+      "time": "00:54",
+      "likes": 50,
+      "views": 10599
+    },
+    {
+      "title": "The Tech Stack: Seedance 2.0",
+      "summary": "The Volume: 300+ videos every single day\nThe Speed: Minutes from idea to final render\n\nWe aren't talking about janky, flashing AI videos here.\n\nThese are fully realistic UGC ads with cinematic lighting, natural human movement, and clean, high-converting pacing.\n\nI’m breaking down the exact workflow,…",
+      "url": "https://x.com/i/status/2057099141293993996",
+      "source": "X/Twitter",
+      "author": "@georgesttock",
+      "date": "2026-05-20",
+      "time": "22:00",
+      "likes": 24,
+      "views": 855
+    },
+    {
+      "title": "I SPENT 3 WEEKS TESTING EVERY AI AGENT PEOPLE ACTUALLY USE IN 2026.",
+      "summary": "Honestly speaking 20%  automated my entire workflow & 80% wasted my 2 hours and did nothing.\n\nHere are the my 9 Best AI agents for you.👇\n\n🔖 Bookmark before this gets buried.\n\n1. OpenAI Operator / AutoGPT\n\nBest overall AI agent for end-to-end automation.\n\n↳ Full web navigation without human intervent…",
+      "url": "https://x.com/i/status/2057052993682637293",
+      "source": "X/Twitter",
+      "author": "@KanikaBK",
+      "date": "2026-05-20",
+      "time": "18:57",
+      "likes": 51,
+      "views": 2541
+    },
+    {
+      "title": "AI AGENTS MASTER TREE",
+      "summary": "AI AGENTS + AUTOMATION + AGENTIC AI MASTER TREE\n│\n├── 1. Agent Foundations\n│   ├── What is an AI Agent\n│   ├── Agent vs Workflow\n│   ├── Single-Agent Systems\n│   ├── Multi-Agent Systems\n│   └── Agentic AI Concepts\n│\n├── 2. LLM Fundamentals\n│   ├── Transformer Architecture\n│   ├── Context Windows\n│  …",
+      "url": "https://x.com/i/status/2056996424978726964",
+      "source": "X/Twitter",
+      "author": "@BharukaShraddha",
+      "date": "2026-05-20",
+      "time": "15:12",
+      "likes": 107,
+      "views": 2472
+    },
+    {
+      "title": "Codex CLI 0.132.0 is out.",
+      "summary": "Highlights:\n- Python SDK gains first-class authentication: API key login, ChatGPT browser and device-code flows, account inspection, and logout.\n- Python turn APIs now accept a plain string as input; handle-based runs return a richer TurnResult with collected items, timing, and usage data.\n- `codex …",
+      "url": "https://x.com/i/status/2056965427109204463",
+      "source": "X/Twitter",
+      "author": "@CodexReleases",
+      "date": "2026-05-20",
+      "time": "13:09",
+      "likes": 419,
+      "views": 40832
+    },
+    {
+      "title": "AI agents are replacing apps faster than anyone expected.",
+      "summary": "In 2026, the winners aren’t the people using AI…\n\nThey’re the people building autonomous workflows.\n\n10 AI agents dominating this year:\n• OpenAI Operator\n• Claude Computer Use\n• Manus AI\n• CrewAI\n• AutoGPT\n• LangGraph\n• Lindy AI\n• Devin\n• Microsoft AutoGen\n• Google ADK\n\nThe next billion-dollar compa…",
+      "url": "https://x.com/i/status/2056952326221660498",
+      "source": "X/Twitter",
+      "author": "@Tech_AI_Rasel",
+      "date": "2026-05-20",
+      "time": "12:17",
+      "likes": 86,
+      "views": 7909
+    },
+    {
+      "title": "🚀 Codex CLI 0.132.0 is out!",
+      "summary": "🔐 Python SDK: API key, ChatGPT browser &amp; device-code auth\n⚡ Faster TUI startup via batched terminal probes\n📋 exec resume gains --output-schema support\n\nChangelog: https://t.co/Tq8lpH8ZL9",
+      "url": "https://x.com/i/status/2056936187638526144",
+      "source": "X/Twitter",
+      "author": "@Codex_Changelog",
+      "date": "2026-05-20",
+      "time": "11:12",
+      "likes": 404,
+      "views": 32359
+    },
+    {
+      "title": "最近发现了一个使用claude code成本直降 85% 的组合方案。",
+      "summary": "Claude Code 是目前唯二最强的 AI 编程 Agent 工具之一，但它默认只能用 Anthropic 自家的模型，订阅费用不便宜——Claude Max 5x 是 100 美元/月，Max 20x 更是 200 美元/月。\n\n而 DeepSeek V4 Pro 在 SWE-bench 上的表现和 Claude Opus 4.6 只差 0.2%，但价格是后者的约 1/7\n\n底层逻辑很简单：DeepSeek 提供了与 Anthropic 完全兼容的 API 端点\n\n你只需要把 Claude Code 的请求地址换成 DeepSeek 的地址，就能无缝使用 DeepSeek V4 Pro—…",
+      "url": "https://x.com/i/status/2056916301520712128",
+      "source": "X/Twitter",
+      "author": "@yaohui12138",
+      "date": "2026-05-20",
+      "time": "09:53",
+      "likes": 63,
+      "views": 9436
+    },
+    {
+      "title": "AI/ML API platform now supports Gemini 3.5 Flash and offers 24 hours of FREE token usage for model testing!",
+      "summary": "&gt; AI/ML API is an AI platform for developers and SaaS entrepreneurs looking to integrate cutting-edge AI capabilities into their products.\n\nCheck the details below 👇 https://t.co/zsQXVwVZtI",
+      "url": "https://x.com/i/status/2056891417939653122",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "08:15",
+      "likes": 147,
+      "views": 14122
+    },
+    {
+      "title": "Grab your free tokens for testing 👀",
+      "summary": "1. Set up an AI/ML API account https://t.co/PK69IQqB3w\n\n2. Reach out to the AI/ML team via Discord https://t.co/QlcW4aRgbC\n\n3. Enjoy 24 hours of free Gemini 3.5 Flash access\n\n> Set it up with OpenClaw https://t.co/iO78dEZAJM\n\n> or Hermes https://t.co/Zp4vlSSMG6",
+      "url": "https://x.com/i/status/2056891421370515943",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "08:15",
+      "likes": 20,
+      "views": 3315
+    },
+    {
+      "title": "We are investigating unauthorized access to GitHub’s internal repositories. While we currently have no evidence of impact to customer information stored outside of GitHub’s internal repositories (such as our customers’ enterprises, organizations, and repositories), we are closely monitoring our infrastructure for follow-on activity.",
+      "summary": "",
+      "url": "https://x.com/i/status/2056884788179726685",
+      "source": "X/Twitter",
+      "author": "@github",
+      "date": "2026-05-20",
+      "time": "07:48",
+      "likes": 24325,
+      "views": 12365582
+    },
     {
       "title": "Claude Code 2.1.145 has been released.",
       "summary": "20 CLI changes\n\nHighlights:\n• claude agents --json outputs live agent sessions as JSON for scripting and automation tools\n• Tool now runs Bash commands and returns their output, enabling shell checks and scriptable workflows\n• Fixed Bash bypass that auto-approved bare assignments to non-allowlisted …",
@@ -12,6 +188,39 @@
       "time": "06:34",
       "likes": 88,
       "views": 7337
+    },
+    {
+      "title": "Claude Code 2.1.145: further changes",
+      "summary": "CLI surface:\nAdded:\n• options: --strict\n• env vars: ANTHROPIC_ENVIRONMENT_ID, ANTHROPIC_ENVIRONMENT_KEY, CLAUDE_CODE_HOST_AUTH_ENV_VAR, CLAUDE_CODE_HOST_AUTH_REFRESH_TIMEOUT_MS, CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH, DISPLAY, SCREENSHOT_DIR\n\nRemoved:\n• env vars: CLAUDE_CODE_PLAN_MODE_INTERVIEW_PHASE…",
+      "url": "https://x.com/i/status/2056866159929012378",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-20",
+      "time": "06:34",
+      "likes": 15,
+      "views": 4003
+    },
+    {
+      "title": "Claude Code CLI 2.1.145 changelog:",
+      "summary": "New features:\n• Added claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)\n• Added agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and fixed trace parenting so background subagent spans nest under the dispatchi…",
+      "url": "https://x.com/i/status/2056866149720014977",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-20",
+      "time": "06:34",
+      "likes": 18,
+      "views": 4702
+    },
+    {
+      "title": "Starting today, use your Grok or X Premium subscription in @openclaw.",
+      "summary": "Chat with your agent, generate images and videos, or search for X posts.\n\nhttps://t.co/GSNl9KrH45 https://t.co/2utObz8z58",
+      "url": "https://x.com/i/status/2056826183745253663",
+      "source": "X/Twitter",
+      "author": "@xai",
+      "date": "2026-05-20",
+      "time": "03:55",
+      "likes": 8338,
+      "views": 1684021
     },
     {
       "title": "Gemini Omni doesn't just build scenes that look real, it reasons about what should happen next. It combines an intuitive understanding of physics with Gemini's knowledge of history, science, and cultural context.",
@@ -80,6 +289,17 @@
       "views": 610
     },
     {
+      "title": "Daily Brief is coming to Gemini as well.",
+      "summary": "Daily Brief will compose a summary based on your data from connected apps https://t.co/v20CPG39Xd",
+      "url": "https://x.com/i/status/2056801328962134493",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "02:17",
+      "likes": 10,
+      "views": 785
+    },
+    {
       "title": "Gen AI UI in live responses https://t.co/pqkluuMYD3",
       "summary": "",
       "url": "https://x.com/i/status/2056800711174758864",
@@ -102,6 +322,17 @@
       "views": 527
     },
     {
+      "title": "Introducing Antigravity 2.0, a new standalone desktop application that delivers fully on that original glimpse of a truly agent-optimized experience.",
+      "summary": "Rebuilt from the ground up with multi-agent teams, scheduled tasks, native voice and one-click integration with other Google products. \n\nLearn how to get started with Antigravity 2.0 👇",
+      "url": "https://x.com/i/status/2056795168326754759",
+      "source": "X/Twitter",
+      "author": "@antigravity",
+      "date": "2026-05-20",
+      "time": "01:52",
+      "likes": 9764,
+      "views": 2086868
+    },
+    {
       "title": "Gemini 3.5 Flash benchmarks! 🤩 https://t.co/YX3C4tOxNz",
       "summary": "",
       "url": "https://x.com/i/status/2056794849274110081",
@@ -122,6 +353,28 @@
       "time": "01:43",
       "likes": 325,
       "views": 24099
+    },
+    {
+      "title": "Gemini Spark is your new 24/7 personal AI agent.",
+      "summary": "Give it a task and it works autonomously in the background, even if your phone and laptop are turned off. You choose to turn it on and it's designed to check with you before taking major actions. #GoogleIO",
+      "url": "https://x.com/i/status/2056792333132460322",
+      "source": "X/Twitter",
+      "author": "@GeminiApp",
+      "date": "2026-05-20",
+      "time": "01:41",
+      "likes": 2548,
+      "views": 643763
+    },
+    {
+      "title": "Introducing Gemini Spark ✨",
+      "summary": "It’s your 24/7 personal AI agent that helps you navigate your digital life, taking action on your behalf, and under your direction. \n\n🧠 It runs on Gemini 3.5 and is built on @Antigravity, so it can perform long-running tasks easily in the background.\n\n⏱️ And because it runs on dedicated virtual mach…",
+      "url": "https://x.com/i/status/2056791134295273554",
+      "source": "X/Twitter",
+      "author": "@Google",
+      "date": "2026-05-20",
+      "time": "01:36",
+      "likes": 5591,
+      "views": 1446756
     },
     {
       "title": "Loads of TPU 8 performance upgrades ⚡ https://t.co/nCT82axhUN",
@@ -300,6 +553,17 @@
       "views": 68635
     },
     {
+      "title": "With MCP tunnels, your agents reach MCP servers inside your private network without exposing them to the public internet. https://t.co/Fl18mTb5QU",
+      "summary": "",
+      "url": "https://x.com/i/status/2056645491207655584",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-19",
+      "time": "15:57",
+      "likes": 590,
+      "views": 111650
+    },
+    {
       "title": "THE CLAUDE CODE RESOURCE BIBLE JUST DROPPED.",
       "summary": "54 tools. Agents. MCP servers. Skills. Automation.\n\nMost people have never seen this stack.\n\nThat is your edge.\n\nSave this before you scroll past it.\n\nOFFICIAL\n\nClaude Code docs: https://t.co/E0XcFgvj72\nOfficial MCP servers: https://t.co/pUzVqJdWAK\nFree certification: https://t.co/K8hIaxCbiM\n\nDIRECT…",
       "url": "https://x.com/i/status/2056609293953372162",
@@ -355,6 +619,17 @@
       "views": 6078
     },
     {
+      "title": "Claude Code 2.1.144 additional modifications",
+      "summary": "CLI surface:\nAdded:\n• env vars: CCR_SPAWN_TIMESTAMP_MS, CLAUDE_CODE_ALT_SCREEN_FULL_REPAINT, CLAUDE_PTY_HOST_EXEC, CLAUDE_SECURESTORAGE_CONFIG_DIR\n• models: claude-in-chrome.\n\nFile: https://t.co/8qDg5bgR9K\n\nMetadata:\n• Time since 2.1.143 release: 3d 1h 4m 35s\n• Bundle file size: +47.1 kB (+0.2%)\n\n• …",
+      "url": "https://x.com/i/status/2056539683010552148",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-19",
+      "time": "08:57",
+      "likes": 13,
+      "views": 5563
+    },
+    {
       "title": "OpenAI Codex Cookbook 系列之 Goals",
       "summary": "从 \"prompt\" 到 \"goals\"\n· Prompt：ask → work → result → wait（做完即停）\n· Goal：work → check → continue or complete（做完检查证据，未达成则继续）\nGoal 的关键是给 Codex 一条可审计的完成线，并允许它在空闲时基于已有证据自主决定下一步，而无需用户每轮重复说\"继续\"、\"再跑一次基准\"、\"现在查测试\"。\n\n生命周期和命令\nGoals 是 线程作用域 的持久状态，不是全局 memory，也不是项目级 instructions。\n/goal <目标>     设置目标\n/goal          …",
       "url": "https://x.com/i/status/2056533239544914179",
@@ -397,6 +672,17 @@
       "time": "05:22",
       "likes": 1735,
       "views": 369558
+    },
+    {
+      "title": "Claude Code 2.1.144 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2056466663978004858",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-19",
+      "time": "04:07",
+      "likes": 110,
+      "views": 9303
     },
     {
       "title": "@reach_vb @Erik_Andersson1 🕺",
@@ -465,6 +751,17 @@
       "views": 65742
     },
     {
+      "title": "Motion design with Claude Code + Higgsfield MCP:",
+      "summary": "1. Pull references with Pinterest API in Claude Code\n2. Storyboard 6 scenes via GPT Images 2.0 in Higgsfield MCP and feed the on-screen text\n3. Drop the board into Seedance 2.0 via Higgsfield MCP\n\nMotion Design, solved. https://t.co/AW3twKekTh",
+      "url": "https://x.com/i/status/2056427804531773598",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-05-19",
+      "time": "01:32",
+      "likes": 2631,
+      "views": 224271
+    },
+    {
       "title": "I just built a fully mapped Claude Code on Autopilot system covering every layer a GTM engineer needs to run autonomous builds from one connected task board.",
       "summary": "Feed it your project spec, your build requirements, and your current Claude Code setup → it maps every Linear issue, GitHub branch, and Slack notification to the right layer → so you know exactly what to connect, what each thing does, and how the layers keep Claude working without you prompting betw…",
       "url": "https://x.com/i/status/2056421010002358722",
@@ -518,6 +815,17 @@
       "time": "21:14",
       "likes": 862,
       "views": 144319
+    },
+    {
+      "title": "GOOGLE 🔥: Gemini desktop app will get Gemini Live, Gemini Spark, Gemini Omni, and a new \"Stream to Cursor\" feature.",
+      "summary": "What we know so far 👀\n- \"Stream to Cursor\" feature will allow Gemini to have something similar to \"Magic Pointer\" announced last week during Android Show. \n- Gemini Spark Agent will be able to operate local files from attached folders. \n- Gimini Omni is referred to as \"Veo4 Omni\" internally. \n- Skil…",
+      "url": "https://x.com/i/status/2056358095954022795",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-18",
+      "time": "20:55",
+      "likes": 1885,
+      "views": 195238
     },
     {
       "title": "CODEX SKILL THAT CREATES A REAL WEBSITE IN LESS THAN 10 MINUTES!",
@@ -969,6 +1277,17 @@
       "time": "22:50",
       "likes": 1,
       "views": 59
+    },
+    {
+      "title": "Codex 登录需要手机号验证了，WhatsApp 还收不到验证码？",
+      "summary": "亲测使用泰国的号码即可。\n\nhttps://t.co/vCCiZLGAXw https://t.co/72dNa5OTJm",
+      "url": "https://x.com/i/status/2055659452804870513",
+      "source": "X/Twitter",
+      "author": "@IndieMakerMing",
+      "date": "2026-05-16",
+      "time": "22:39",
+      "likes": 10,
+      "views": 2115
     },
     {
       "title": "@kevinrose @digg Really enjoying the new experience 👀👀👀",
@@ -3446,6 +3765,17 @@
       "views": 1191449
     },
     {
+      "title": "Google is testing the option to mark Notebooks as \"Donation Safe\" as part of a Data Donation feature.",
+      "summary": "> Your logs from using this notebook will NOT be scrubbed (this allows for quality improvement).\n\n> The notebook will immediately lose its Donation Safe status if shared.\n\n> Marking a notebook as Donation Safe allows you to Donate Detailed Feedback.\n\n> You must not donate NTK or Privileged data.",
+      "url": "https://x.com/i/status/2052881466908922257",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-09",
+      "time": "06:40",
+      "likes": 192,
+      "views": 15636
+    },
+    {
       "title": "Correction for 2.1.136: the Bun hot-module-reload lines were an extraction artifact. Re-extracting the native prompt shows no meaningful system-prompt changes vs 2.1.133. Fixed cc-prompt + release notes: https://t.co/DbsQ332aeJ",
       "summary": "",
       "url": "https://x.com/i/status/2052845885692707239",
@@ -5050,6 +5380,17 @@
       "time": "21:25",
       "likes": 2033,
       "views": 426057
+    },
+    {
+      "title": "我们公司的所有同事，现在除了有几大模型的企业账号包月外，还有 300 美金每天的 Token 额度，可以畅用包括 seedance 2.0 在内的几乎所有模型。",
+      "summary": "公司还有大量岗位招聘中 https://t.co/4JGOlr5dAW\n特别推荐 AI 游戏创作实习生，我亲自带！ https://t.co/nL4RDy4G6s",
+      "url": "https://x.com/i/status/2039306742803370051",
+      "source": "X/Twitter",
+      "author": "@DashHuang",
+      "date": "2026-04-01",
+      "time": "19:39",
+      "likes": 325,
+      "views": 157969
     },
     {
       "title": "现在 AI 开发都在往 Agent 方向靠，但真碰上复杂业务，怎么设计架构、管理记忆、让多个智能体协作，常常让人摸不着头脑。",
