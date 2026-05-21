@@ -1,7 +1,51 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-21T18:00:00+08:00",
+  "lastUpdate": "2026-05-21T18:02:41+08:00",
   "articles": [
+    {
+      "title": "@quxiaoyin @tycoonai Testing 👀👀👀",
+      "summary": "",
+      "url": "https://x.com/i/status/2057389194461196534",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-21",
+      "time": "17:13",
+      "likes": 2,
+      "views": 100
+    },
+    {
+      "title": "Claude Code 2.1.146 has been released.",
+      "summary": "16 CLI changes\n\nHighlights:\n• Renamed /simplify to /code-review; adds optional effort levels like '/code-review high' to adjust review depth\n• Auto mode preserves AskUserQuestion when a user or skill depends on it, so required prompts are shown\n• Backgrounded sessions stop re-prompting for tools mar…",
+      "url": "https://x.com/i/status/2057281277884031016",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-21",
+      "time": "10:04",
+      "likes": 296,
+      "views": 31297
+    },
+    {
+      "title": "Claude Code CLI 2.1.146 changelog:",
+      "summary": "Fixes:\n• Fixed Windows PowerShell tool failing with \"command line is invalid\" when pwsh is installed via winget or the Microsoft Store (regression in v2.1.124)\n• Fixed MCP resources/list, resources/templates/list, and prompts/list dropping items past page 1 on paginating servers\n• Fixed full-screen …",
+      "url": "https://x.com/i/status/2057281288617197667",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-21",
+      "time": "10:04",
+      "likes": 14,
+      "views": 3553
+    },
+    {
+      "title": "Claude Code 2.1.146: additional changes",
+      "summary": "CLI surface:\nAdded:\n• env vars: CLAUDE_BG_SESSION_PERMISSION_RULES, CLAUDE_CODE_WORKFLOWS\n• models: claude-for-financial-services, claude-for-legal\n\nFile: https://t.co/6SiddDC8On\n\nMetadata:\n• Time since 2.1.145 release: 1d 0h 10m 51s\n• Bundle file size: +451.2 kB (+1.7%)\n\n• Prompt files: +3 (+5.3%)\n…",
+      "url": "https://x.com/i/status/2057281298574590303",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-21",
+      "time": "10:04",
+      "likes": 8,
+      "views": 2852
+    },
     {
       "title": "Apply to attend: https://t.co/x2cm7TgMki",
       "summary": "",
@@ -47,6 +91,39 @@
       "views": 32202
     },
     {
+      "title": "You can now create and manage automations in the same workspace as your agents.",
+      "summary": "Automations are now available in the Agents Window. For the next 7 days, all agent runs for newly created automations are 50% off. https://t.co/bUz588Rjhy",
+      "url": "https://x.com/i/status/2057167359593603471",
+      "source": "X/Twitter",
+      "author": "@cursor_ai",
+      "date": "2026-05-21",
+      "time": "02:31",
+      "likes": 1285,
+      "views": 107035
+    },
+    {
+      "title": "not sure why nobody is talking about this but Google Omni is insane at video editing",
+      "summary": "Original Video (left) vs  Omni Edited Video (right)\n\neveryone is comparing it to Seedance and missing the point completely. Seedance is for generating videos from scratch. Google Omni is for editing videos that already exist. which are two completely different use cases\n\nthis is like when Nano Banan…",
+      "url": "https://x.com/i/status/2057151867927601413",
+      "source": "X/Twitter",
+      "author": "@Mho_23",
+      "date": "2026-05-21",
+      "time": "01:30",
+      "likes": 327,
+      "views": 20730
+    },
+    {
+      "title": "New course: Build AI agents that generate images and videos -- an under-explored frontier. A key to performance is having the agent evaluate its own output, and iterate to improve quality. This short course is built together with @googlecloudtech and taught by Katie Nguyen  and Wafae Bakkali.",
+      "summary": "You'll learn three evaluation techniques and combine them in an agent: image-text similarity scoring to check the output matches the prompt, an LLM judge that scores against custom criteria like brand consistency, and structured rubrics that break a prompt into verifiable yes/no questions like \"is t…",
+      "url": "https://x.com/i/status/2057146565500998024",
+      "source": "X/Twitter",
+      "author": "@AndrewYNg",
+      "date": "2026-05-21",
+      "time": "01:08",
+      "likes": 755,
+      "views": 67003
+    },
+    {
       "title": "Your laptop can stay home.",
       "summary": "Work with Codex from the ChatGPT mobile app, answer questions on the go, and pick up the same thread later from your computer. https://t.co/MQJA8VYmeV",
       "url": "https://x.com/i/status/2057142816497906045",
@@ -78,6 +155,17 @@
       "time": "22:00",
       "likes": 24,
       "views": 855
+    },
+    {
+      "title": "Seedance 2.0 Prompt:",
+      "summary": "Use the storyboard @[storyboard ref]  as choreography, timing, camera and motion-planning reference. Follow action flow, annotations, arrows and movement guides internally for staging and animation logic. Follow the storyboard shot by shot. Do not render storyboard elements in the final video. No ar…",
+      "url": "https://x.com/i/status/2057083545168773493",
+      "source": "X/Twitter",
+      "author": "@aimikoda",
+      "date": "2026-05-20",
+      "time": "20:58",
+      "likes": 29,
+      "views": 1262
     },
     {
       "title": "I SPENT 3 WEEKS TESTING EVERY AI AGENT PEOPLE ACTUALLY USE IN 2026.",
@@ -210,6 +298,28 @@
       "time": "06:34",
       "likes": 18,
       "views": 4702
+    },
+    {
+      "title": "New upgrades to the @GeminiApp are you helping you get more done:",
+      "summary": "✨Gemini Spark is your 24/7 personal AI agent that can take action on your behalf, under your direction. It  seamlessly integrates with @Gmail, @GoogleDocs, and Slides to automate your workflows and, best of all, it can keep working even when your laptop is closed.\n\n☀ ️Daily Brief is our newest out-o…",
+      "url": "https://x.com/i/status/2056859455833473091",
+      "source": "X/Twitter",
+      "author": "@GoogleAI",
+      "date": "2026-05-20",
+      "time": "06:08",
+      "likes": 392,
+      "views": 33171
+    },
+    {
+      "title": "OpenClaw just plugged into X, and now your own hardware gets the claws. 🦞",
+      "summary": "Bring your Grok, SuperGrok or X Premium subscription to your OpenClaw agent.\n\nNow even your personal agent is red-pilled and based.\n\nGet Grokked:\nhttps://t.co/pIj2vp1IpM",
+      "url": "https://x.com/i/status/2056826388322340910",
+      "source": "X/Twitter",
+      "author": "@openclaw",
+      "date": "2026-05-20",
+      "time": "03:56",
+      "likes": 4120,
+      "views": 465213
     },
     {
       "title": "Starting today, use your Grok or X Premium subscription in @openclaw.",
@@ -410,6 +520,17 @@
       "views": 103566
     },
     {
+      "title": "Here’s a comparison between Gemini Omni and Seedance 2.0.",
+      "summary": "Gemini Omni on the left.\nSeedance 2.0 on the right.\n\nWhich one do you prefer? https://t.co/XnRxxzAm5Q",
+      "url": "https://x.com/i/status/2056774932520989091",
+      "source": "X/Twitter",
+      "author": "@NACHOS2D_",
+      "date": "2026-05-20",
+      "time": "00:32",
+      "likes": 205,
+      "views": 57766
+    },
+    {
       "title": "Want to differentiate yourself as an AI Engineer?",
       "summary": "𝗦𝘁𝗮𝗻𝗱 𝗼𝘂𝘁 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲𝘀𝗲 𝟵 𝗵𝗶𝗴𝗵-𝗶𝗺𝗽𝗮𝗰𝘁 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 𝘂𝘀𝗶𝗻𝗴 𝗔𝗴𝗲𝗻𝘁𝘀, 𝗟𝗟𝗠𝘀, 𝗮𝗻𝗱 𝗥𝗔𝗚.\n\n》 1. AI Cyber-Defense Multi-Agent Reasoning and Planning End-to-End\nArchitect with LangGraph, add reasoning & memory, build cyber-defense agents that detect threats from logs with a 12-step blueprint.\n\n↳ Watch here: https://t.…",
       "url": "https://x.com/i/status/2056772255288332636",
@@ -465,6 +586,17 @@
       "views": 10431
     },
     {
+      "title": "Flow Agent settings 👀 https://t.co/ZTD5F8STyX",
+      "summary": "",
+      "url": "https://x.com/i/status/2056752919802773995",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "23:04",
+      "likes": 55,
+      "views": 5731
+    },
+    {
       "title": "Agentic AI is not just about building agents.",
       "summary": "The real challenge is how systems operate at scale.\n\nSharing great insights from Luis Rodrigues.\n\nThe operating model defines real-world agent behavior.\n\nIncludes ownership, control, and reliable execution flow.\n\nWithout this, you are not building agentic AI.\n\nYou are only building GenAI task automa…",
       "url": "https://x.com/i/status/2056737031531725229",
@@ -496,6 +628,17 @@
       "time": "20:05",
       "likes": 754,
       "views": 51818
+    },
+    {
+      "title": "🤯This is insane… you can now run Codex inside Claude Code.",
+      "summary": "No tab switching.\nNo copy-pasting.\nNo second IDE.\n\nJust one terminal — two AI agents working together.\n\nIt’s called codex-plugin-cc.\n\nHere’s what this unlocks:\n\n• Delegate entire coding tasks from Claude → Codex\n• Ask Codex to review your changes before commit\n• Run adversarial design reviews on you…",
+      "url": "https://x.com/i/status/2056692082908246449",
+      "source": "X/Twitter",
+      "author": "@Suryanshti777",
+      "date": "2026-05-19",
+      "time": "19:02",
+      "likes": 280,
+      "views": 50000
     },
     {
       "title": "AI AGENTS MASTER TREE",
@@ -562,6 +705,17 @@
       "time": "15:57",
       "likes": 590,
       "views": 111650
+    },
+    {
+      "title": "Live from Code with Claude London: we're launching self-hosted sandboxes (public beta) and MCP tunnels (research preview) in Claude Managed Agents.",
+      "summary": "Run agents inside your own perimeter, with your security controls applied by default. https://t.co/cxvmk3feHp",
+      "url": "https://x.com/i/status/2056645485696315581",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-19",
+      "time": "15:57",
+      "likes": 7550,
+      "views": 2249324
     },
     {
       "title": "THE CLAUDE CODE RESOURCE BIBLE JUST DROPPED.",
@@ -2168,6 +2322,17 @@
       "time": "22:01",
       "likes": 917,
       "views": 125437
+    },
+    {
+      "title": "Codex new `/goal` is literally INSANE",
+      "summary": "You can easily transform your AI bots into a tireless 24/7 workforce that grinds for HOURS completely unguided 🤯\n\nCodex desktop → Settings → Config, set\ngoals = true\n\nCheck out the ace cheat sheet + article by @aiedge_ to master it 👇 https://t.co/WTHgy07kCm",
+      "url": "https://x.com/i/status/2054917240688881989",
+      "source": "X/Twitter",
+      "author": "@DataChaz",
+      "date": "2026-05-14",
+      "time": "21:30",
+      "likes": 70,
+      "views": 11379
     },
     {
       "title": "Most AI workflows today still break at one point",
@@ -3941,6 +4106,17 @@
       "views": 3121
     },
     {
+      "title": "Claude Code 2.1.133 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2052483640521613722",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-08",
+      "time": "04:20",
+      "likes": 86,
+      "views": 6907
+    },
+    {
       "title": "Codex can now take on more of your browser dev work.",
       "summary": "With the new Chrome plugin in the Codex app, it can test web apps, gather context across tabs, use web DevTools efficiently in parallel, and keep results organized without taking over your browser. https://t.co/T6LwuPCUr5",
       "url": "https://x.com/i/status/2052481136971125158",
@@ -4984,6 +5160,17 @@
       "time": "08:50",
       "likes": 27,
       "views": 5785
+    },
+    {
+      "title": "Learn 95% of Codex in 28 minutes",
+      "summary": "These are the 7 knowledge work capabilities...\ninside Codex, the super-app\n\n00:00 Intro\n02:19 Capability 1 - Full File Access\n07:41 Capability 2 - Persistent Memory\n10:46 Capability 3 - Plugins\n13:52 Capability 4 - Skills\n19:22  Capability 5 - GPT Image Access\n21:03 Capability 6 - Browser and Comput…",
+      "url": "https://x.com/i/status/2049285752866107856",
+      "source": "X/Twitter",
+      "author": "@rileybrown",
+      "date": "2026-04-29",
+      "time": "08:32",
+      "likes": 4087,
+      "views": 807350
     },
     {
       "title": "You can ask Codex to update an existing repo to GPT-5.5. https://t.co/wbozdea03A",
