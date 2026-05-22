@@ -1,7 +1,117 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-22T18:00:01+08:00",
+  "lastUpdate": "2026-05-22T18:02:26+08:00",
   "articles": [
+    {
+      "title": "🚨 Anthropic quietly dropped 13 FREE Claude courses",
+      "summary": "And it’s basically a complete AI learning path\n\nFrom beginner → advanced → production\n\nYou’ll learn:\n• Claude basics\n• AI fluency\n• Claude API\n• MCP\n• Production-ready agent workflows\n\nSo whether you’re just starting or already building\nthis is worth saving\n\n📚 Full links here 👇\n\n1, Claude Basics: ht…",
+      "url": "https://x.com/i/status/2057740815628202315",
+      "source": "X/Twitter",
+      "author": "@dkare1009",
+      "date": "2026-05-22",
+      "time": "16:30",
+      "likes": 5,
+      "views": 72
+    },
+    {
+      "title": "🚨BREAKING: Seedance 2.1 will get a full core model revamp!",
+      "summary": "· ~20% boost in visuals/stability/detail\n\n· Optimized facial, limb and temporal coherence\n\n· Stronger Chinese prompt parsing for long scripts\n\n· Standalone API available alongside v2.0 for seamless switching\n#ByteDance https://t.co/FFGkCAA4xA",
+      "url": "https://x.com/i/status/2057689330173538378",
+      "source": "X/Twitter",
+      "author": "@LunchangG7603",
+      "date": "2026-05-22",
+      "time": "13:05",
+      "likes": 15,
+      "views": 568
+    },
+    {
+      "title": "I’m sorry, but is that a Samurai warrior? // Seedance 2 @runwayml https://t.co/EveX8YSdxD",
+      "summary": "",
+      "url": "https://x.com/i/status/2057665803202203871",
+      "source": "X/Twitter",
+      "author": "@CoffeeVectors",
+      "date": "2026-05-22",
+      "time": "11:32",
+      "likes": 11,
+      "views": 632
+    },
+    {
+      "title": "You're building AI agents without a system. That's why they keep failing.",
+      "summary": "Here’s the right system to go from idea → working agent\n\n❤️ Like\n🔁 Retweet\n🔖 Bookmark\n\nFollow @amrita4AI for more AI insights.\n\n#AI #ArtificialIntelligence #AISkills #AIAgents #Upskilling #CareerGrowth https://t.co/5Jdv21dAHH",
+      "url": "https://x.com/i/status/2057650152341676247",
+      "source": "X/Twitter",
+      "author": "@amrita4AI",
+      "date": "2026-05-22",
+      "time": "10:30",
+      "likes": 52,
+      "views": 306
+    },
+    {
+      "title": "Claude Code 2.1.148 additional updates",
+      "summary": "Metadata:\n• Time since 2.1.147 release: 6h 53m 10s\n• Bundle file size: -1.5 kB (-0.0%)\n\n• Prompt files: +3 (+4.8%)\n• Prompt tokens: +6,315 (+7.9%)\n\nPrompt token mix by kind:\n• tools: 69.4%→71.7%\n• system: 12.6%→11.7%\n• system-reminder: 11.8%→10.9%\n• agent: 3.7%→3.4%\n• system-data: 1.7%→1.5%\n• skill:…",
+      "url": "https://x.com/i/status/2057634725225808305",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-22",
+      "time": "09:28",
+      "likes": 3,
+      "views": 2970
+    },
+    {
+      "title": "Claude Code CLI 2.1.148 changelog:",
+      "summary": "Fix:\n• Fixed the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)\n\nSource: https://t.co/aCTET90WA5",
+      "url": "https://x.com/i/status/2057634715155251309",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-22",
+      "time": "09:28",
+      "likes": 7,
+      "views": 3487
+    },
+    {
+      "title": "Claude Code 2.1.148 has been released.",
+      "summary": "1 CLI change\n\nHighlights:\n• Bash tool no longer returns exit code 127 for every command, restoring accurate exit codes for automation\n\nFull details are in thread ↓ https://t.co/XbM9dtSur5",
+      "url": "https://x.com/i/status/2057634705403474194",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-22",
+      "time": "09:28",
+      "likes": 166,
+      "views": 15078
+    },
+    {
+      "title": "Highlights from today’s Codex Thursday launches:",
+      "summary": "1️⃣ Codex can now securely use apps on your Mac from your phone, even when your Mac is locked and the screen is off.\n\nhttps://t.co/JUOss3M2Va https://t.co/CAEUe1aswm",
+      "url": "https://x.com/i/status/2057617844800794878",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2026-05-22",
+      "time": "08:21",
+      "likes": 2485,
+      "views": 339710
+    },
+    {
+      "title": "2️⃣ Appshots bring context from your screen straight into the Codex app. https://t.co/R8ZOXLizL7",
+      "summary": "",
+      "url": "https://x.com/i/status/2057617846449197480",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2026-05-22",
+      "time": "08:21",
+      "likes": 276,
+      "views": 47657
+    },
+    {
+      "title": "4️⃣ Advanced annotation mode lets you directly adjust the way web pages look while leaving feedback, making it even easier to work together with Codex. https://t.co/gBTKxMSTYX",
+      "summary": "",
+      "url": "https://x.com/i/status/2057617862479708650",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2026-05-22",
+      "time": "08:21",
+      "likes": 289,
+      "views": 58808
+    },
     {
       "title": "Brand books are quite nice too! 🔥 https://t.co/HSJFBIbEn5",
       "summary": "",
@@ -69,6 +179,17 @@
       "views": 3693
     },
     {
+      "title": "@argofowl one more for you https://t.co/wSe2xiAyWj",
+      "summary": "",
+      "url": "https://x.com/i/status/2057537516354629689",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-22",
+      "time": "03:02",
+      "likes": 225,
+      "views": 18510
+    },
+    {
       "title": "Codex anywhere and everywhere, all the time.",
       "summary": "Now your Mac doesn’t have to be unlocked for Codex to use your computer.\n\nFrom your phone, Codex can securely use apps on your Mac, even when the screen is off and locked.\n\nhttps://t.co/PCGK4i7FSF https://t.co/956aAtM3vl",
       "url": "https://x.com/i/status/2057536706778378692",
@@ -78,6 +199,17 @@
       "time": "02:59",
       "likes": 4412,
       "views": 331210
+    },
+    {
+      "title": "🚀 Codex app 26.519 is out!",
+      "summary": "📸 Appshots: send any app window to Codex with both Command keys\n🎯 Goal mode out of beta across app, IDE, and CLI\n🖥 Remote computer use while Mac is locked\n\nChangelog: https://t.co/LhA7w25jFe",
+      "url": "https://x.com/i/status/2057532714811584682",
+      "source": "X/Twitter",
+      "author": "@Codex_Changelog",
+      "date": "2026-05-22",
+      "time": "02:43",
+      "likes": 789,
+      "views": 69986
     },
     {
       "title": "Aleph 2.0 is here. Now you can edit a single frame in your video, preview the change and then Aleph 2.0 carries that edit across the rest of your video.",
@@ -135,6 +267,17 @@
       "views": 61744
     },
     {
+      "title": "AI AGENT STACK — MASTER TREE 🌲",
+      "summary": "AI Agents\n│\n├── 01. Foundation Layer\n│   ├── LLMs\n│   │   ├── GPT-4.1\n│   │   ├── Claude\n│   │   ├── Gemini\n│   │   └── DeepSeek\n│   │\n│   ├── Prompting\n│   │   ├── System Prompts\n│   │   ├── Few-shot\n│   │   ├── Chain of Thought\n│   │   └── Structured Output\n│   │\n│   └── Context\n│       ├── Memory…",
+      "url": "https://x.com/i/status/2057515213314998328",
+      "source": "X/Twitter",
+      "author": "@LearnWithBrij",
+      "date": "2026-05-22",
+      "time": "01:33",
+      "likes": 727,
+      "views": 33304
+    },
+    {
       "title": "@0xbisc @openart_ai This Billie Jean impression is straight fire. Kid nailing MJ’s moves, sequins popping under that spotlight, moonwalk vibes on point. GPT Image 2 + Seedance 2 absolutely cooking.",
       "summary": "",
       "url": "https://x.com/i/status/2057506983864099239",
@@ -190,6 +333,72 @@
       "views": 170198
     },
     {
+      "title": "https://t.co/E3qB380qNs",
+      "summary": "",
+      "url": "https://x.com/i/status/2057487466198618450",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-21",
+      "time": "23:43",
+      "likes": 540,
+      "views": 173021
+    },
+    {
+      "title": "https://t.co/2LOyFsiaUN",
+      "summary": "",
+      "url": "https://x.com/i/status/2057487469709300100",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-21",
+      "time": "23:43",
+      "likes": 130,
+      "views": 83559
+    },
+    {
+      "title": "Tinkering, prototyping, and seeing what happens with Claude Design:",
+      "summary": "",
+      "url": "https://x.com/i/status/2057487463518548073",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-21",
+      "time": "23:43",
+      "likes": 7837,
+      "views": 781062
+    },
+    {
+      "title": "Claude Code isn't a coding tool.",
+      "summary": "(It's a programmable dev environment)\n\nEngineers open it, type a prompt, and let it write code. But the real leverage is in the system around the prompt.\n\nHere are 12 features that make Claude Code programmable:\n\n𝟭) 𝗖𝗟𝗔𝗨𝗗𝗘.𝗺𝗱: The project's persistent memory. Stack details, conventions, and constrai…",
+      "url": "https://x.com/i/status/2057446083853520948",
+      "source": "X/Twitter",
+      "author": "@akshay_pachaar",
+      "date": "2026-05-21",
+      "time": "20:59",
+      "likes": 288,
+      "views": 29410
+    },
+    {
+      "title": "People think Claude Code is for developers.",
+      "summary": "It's not. The setup takes under 10 minutes:\n\nStep 1: Open Terminal, paste one line, you're in.\nStep 2: Claude reads your rules before every reply.\nStep 3: Claude shows its plan before touching anything.\nStep 4: One keyword runs an entire saved workflow.\nStep 5: Type / and your whole workflow fires.\n…",
+      "url": "https://x.com/i/status/2057440110942290299",
+      "source": "X/Twitter",
+      "author": "@charliejhills",
+      "date": "2026-05-21",
+      "time": "20:35",
+      "likes": 53,
+      "views": 8836
+    },
+    {
+      "title": "GPT Image 2 でショットリストを作成し、",
+      "summary": "Seedance 2.0 のリファレンス生成で動画を作成しました。\n\nSeedanceがショットリストを理解して動画を生成するので、細かな編集無しでこのような映像が完成します。 https://t.co/eH8g9kzmYk",
+      "url": "https://x.com/i/status/2057433716339933656",
+      "source": "X/Twitter",
+      "author": "@hasamaru_studio",
+      "date": "2026-05-21",
+      "time": "20:09",
+      "likes": 242,
+      "views": 16460
+    },
+    {
       "title": "Alibaba released Qwen 3.7 Max, its latest proprietary model for agentic coding.",
       "summary": "Qwen 3.7 Max scores 56.6 on the Artificial Analysis Intelligence Index, outperforming recently released Gemini 3.5 Flash and Kimi K2.6. https://t.co/xSrj9b1t7E",
       "url": "https://x.com/i/status/2057420016543215779",
@@ -210,6 +419,17 @@
       "time": "19:00",
       "likes": 255,
       "views": 13445
+    },
+    {
+      "title": "Most AI projects don’t fail because of the model.",
+      "summary": "They fail because the project structure is chaos.\n\n→ Prompts hidden inside random JS files\n→ “final_v2_REAL_final” notebooks everywhere\n→ No evals\n→ No agent separation\n→ Nobody knows what the AI is actually doing\n\nThis 4-folder structure fixes that:\n\n📁 prompts/\nVersion prompts like real code\n\n📁 dat…",
+      "url": "https://x.com/i/status/2057399225936163015",
+      "source": "X/Twitter",
+      "author": "@LearnWithBrij",
+      "date": "2026-05-21",
+      "time": "17:52",
+      "likes": 123,
+      "views": 4060
     },
     {
       "title": "@AiTesty5 Kind of, but it removes the need to build your own harness layer, since the tool is configured for a specific purpose (prompts, workflows, etc.)",
@@ -245,6 +465,17 @@
       "views": 629
     },
     {
+      "title": "GPT Image 2 + Seedance 2.0 Prompt Share",
+      "summary": "Metamorphosis\n\nWorkflow: Create a character, create a storyboard with that character, then animate it.\n\nCreated on @mitte_ai https://t.co/kmarLExztX",
+      "url": "https://x.com/i/status/2057379012440105015",
+      "source": "X/Twitter",
+      "author": "@aimikoda",
+      "date": "2026-05-21",
+      "time": "16:32",
+      "likes": 273,
+      "views": 11722
+    },
+    {
       "title": "Claude Code 2.1.146 has been released.",
       "summary": "16 CLI changes\n\nHighlights:\n• Renamed /simplify to /code-review; adds optional effort levels like '/code-review high' to adjust review depth\n• Auto mode preserves AskUserQuestion when a user or skill depends on it, so required prompts are shown\n• Backgrounded sessions stop re-prompting for tools mar…",
       "url": "https://x.com/i/status/2057281277884031016",
@@ -276,6 +507,17 @@
       "time": "10:04",
       "likes": 8,
       "views": 2852
+    },
+    {
+      "title": "Grok Build 0.1 is now available for early access in Hermes Agent https://t.co/6o71K91eqH",
+      "summary": "",
+      "url": "https://x.com/i/status/2057278565897371856",
+      "source": "X/Twitter",
+      "author": "@NousResearch",
+      "date": "2026-05-21",
+      "time": "09:53",
+      "likes": 1459,
+      "views": 591920
     },
     {
       "title": "Apply to attend: https://t.co/x2cm7TgMki",
@@ -441,6 +683,17 @@
       "time": "18:57",
       "likes": 51,
       "views": 2541
+    },
+    {
+      "title": "How to use Open Design inside Codex:",
+      "summary": "Ask Codex to deploy Open Design locally, then tell Codex what you want to build.\n\nThe real unlock: Codex can operate the design tool for you — choosing workflows, filling briefs, inspecting files, testing interactions, and iterating on the result.\n\nDesign tools are becoming agent-operated.",
+      "url": "https://x.com/i/status/2057048563998208235",
+      "source": "X/Twitter",
+      "author": "@nexudotio",
+      "date": "2026-05-20",
+      "time": "18:39",
+      "likes": 858,
+      "views": 125249
     },
     {
       "title": "AI AGENTS MASTER TREE",
@@ -771,6 +1024,17 @@
       "time": "01:36",
       "likes": 5591,
       "views": 1446756
+    },
+    {
+      "title": "GOOGLE I/O 🔥: GEMINI OMNI FLASH HAS BEEN ANNOUNCED AND IS NOW AVAILABLE ON GEMINI AND GOOGLE FLOW.",
+      "summary": "GEMINI OMNI PRO IS COMING SOON 🤩 https://t.co/xaxjFDNmre",
+      "url": "https://x.com/i/status/2056787680944406538",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "01:22",
+      "likes": 131,
+      "views": 9260
     },
     {
       "title": "Loads of TPU 8 performance upgrades ⚡ https://t.co/nCT82axhUN",
@@ -1488,6 +1752,17 @@
       "views": 32105
     },
     {
+      "title": "腾讯放大招啦！",
+      "summary": "不用再担心烧 Token 啦！不用担心 Agent 失忆啦！\n\n腾讯历时 6 个月精心打磨，直接开源了 TencentDB-Agent-Memory —— 一个专为 AI Agent 打造的分层记忆引擎！\n\n核心亮点如下：\n· 符号化短期记忆 + 四层长期记忆（L0原始对话 → L1原子事实 → L2结构化总结 → L3用户画像）\n· 最高压缩 61% Token，长任务成功率直接起飞\n· 支持跨会话持续懂你，记住你的工作流、偏好和历史经验\n· 零外部依赖，本地就能全量部署，MIT协议随便玩\n· 特别适配 OpenClaw、Hermes 等主流 Agent 框架，一键集成\n\n地址：https:…",
+      "url": "https://x.com/i/status/2055850794973557085",
+      "source": "X/Twitter",
+      "author": "@BTCqzy1",
+      "date": "2026-05-17",
+      "time": "11:20",
+      "likes": 671,
+      "views": 85751
+    },
+    {
       "title": "GOOGLE 🔥: Traces of Gemini 3.2 Flash-lite-live have been spotted on Google Cloud Console.",
       "summary": "Even cheaper real-time model? 👀 https://t.co/ZZdYhWBYFC",
       "url": "https://x.com/i/status/2055794741782929617",
@@ -2137,6 +2412,17 @@
       "views": 6208
     },
     {
+      "title": "Making Vitamin-C ad using GPT Image 2 x Seedance 2.0 on Higgsfield",
+      "summary": "Workflow⬇️",
+      "url": "https://x.com/i/status/2055211603461886323",
+      "source": "X/Twitter",
+      "author": "@D_studioproject",
+      "date": "2026-05-15",
+      "time": "17:00",
+      "likes": 1793,
+      "views": 225450
+    },
+    {
       "title": "A beautiful children’s animation made in @mitte_ai from an image created with Midjourney and Seedance 2.0.",
       "summary": "I’m sharing the prompt in the post below 👇 https://t.co/0cTm1wKV4n",
       "url": "https://x.com/i/status/2055203200563564619",
@@ -2674,6 +2960,17 @@
       "time": "19:46",
       "likes": 30,
       "views": 3190
+    },
+    {
+      "title": "Grace Dive",
+      "summary": "made with GPT Image 2 + Seedance 2\n#DreaminaCPP @dreamina_ai \n\nPrompt below ↓ https://t.co/nVdUhIfRHx",
+      "url": "https://x.com/i/status/2054872820191277454",
+      "source": "X/Twitter",
+      "author": "@0xbisc",
+      "date": "2026-05-14",
+      "time": "18:33",
+      "likes": 2349,
+      "views": 180754
     },
     {
       "title": "Let’s put real numbers on it:",
@@ -6073,6 +6370,17 @@
       "time": "03:08",
       "likes": 64,
       "views": 6189
+    },
+    {
+      "title": "Turn on agent mode and ChatGPT can take action for you—research, plan, and get things done while you browse.",
+      "summary": "Now in preview for Plus, Pro, and Business users. https://t.co/d4pb6B4vfM",
+      "url": "https://x.com/i/status/1984304194837528864",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2025-11-01",
+      "time": "00:59",
+      "likes": 2497,
+      "views": 773451
     },
     {
       "title": "Happy Friday! 🎉Here is our recap of launches from this week:",
