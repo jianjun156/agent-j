@@ -1,7 +1,205 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-23T08:00:01+08:00",
+  "lastUpdate": "2026-05-23T08:02:06+08:00",
   "articles": [
+    {
+      "title": "@H3roAi look at the section about memory here",
+      "summary": "that's what isn't included\n\nhttps://t.co/lLAP3Aqbrh",
+      "url": "https://x.com/i/status/2057971490629255387",
+      "source": "X/Twitter",
+      "author": "@daniel_mac8",
+      "date": "2026-05-23",
+      "time": "07:46",
+      "likes": 1,
+      "views": 35
+    },
+    {
+      "title": "I turned Claude into a work tracker.",
+      "summary": "Claude tracks and updates threads for me, using data from all my connectors. \n\nI barely have to do anything to catch up on everything.\n\nHere's how it works:\n\n- Add the Debrief MCP to Claude, Cursor, any MCP AI\n- Tell the agent to \"check in\"\n- The agent checks apps (like Slack, Gmail, etc)\n- My agent…",
+      "url": "https://x.com/i/status/2057963755598905359",
+      "source": "X/Twitter",
+      "author": "@willkenca",
+      "date": "2026-05-23",
+      "time": "07:16",
+      "likes": 2,
+      "views": 21
+    },
+    {
+      "title": "@realrealcat Nope, that’s up to host providers (so depends)",
+      "summary": "",
+      "url": "https://x.com/i/status/2057955757656539494",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "06:44",
+      "likes": 0,
+      "views": 188
+    },
+    {
+      "title": "Claude Code 2.1.149 has been released.",
+      "summary": "26 CLI changes\n\nHighlights:\n• /usage shows per-category usage (skills, subagents, plugins, per-MCP-server costs) to identify cost drivers\n• PowerShell cd forms (cd.., cd\\, cd~, X:) no longer change cwd silently, blocking reads outside workspace\n• Bash find no longer exhausts macOS file/vnode table o…",
+      "url": "https://x.com/i/status/2057950976175153615",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "06:25",
+      "likes": 73,
+      "views": 5407
+    },
+    {
+      "title": "Claude Code 2.1.149 additional updates",
+      "summary": "CLI surface:\nAdded:\n• env vars: CLAUDE_CODE_SYNC_SKILLS, CLAUDE_CODE_SYNC_SKILLS_WAIT_TIMEOUT_MS\n• models: claude-skill-\n\nFile: https://t.co/ZWGDy7VNmh\n\nMetadata:\n• Time since 2.1.148 release: 16h 23m 13s\n• Bundle file size: +167.4 kB (+0.6%)\n\n• Prompt files: +2 (+3.1%)\n• Prompt tokens: +3,298 (+3.8…",
+      "url": "https://x.com/i/status/2057950996559503779",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "06:25",
+      "likes": 5,
+      "views": 1278
+    },
+    {
+      "title": "Please run claude update, or update the Claude desktop app to the latest version.",
+      "summary": "Docs: https://t.co/8Ur6DJhp2f",
+      "url": "https://x.com/i/status/2057946804743012635",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-05-23",
+      "time": "06:08",
+      "likes": 70,
+      "views": 17878
+    },
+    {
+      "title": "@giordanorandone Yeah, we need this next 1.5T params model to be released for sure! 🤖",
+      "summary": "",
+      "url": "https://x.com/i/status/2057933451647418489",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "05:15",
+      "likes": 3,
+      "views": 119
+    },
+    {
+      "title": "With the Cursor SDK, you can build your own agents with Composer 2.5. It's now available in Python and TypeScript.",
+      "summary": "This long weekend, Composer usage is 90% off in the SDK. We're excited to see what you build! https://t.co/8grHpJQtOu",
+      "url": "https://x.com/i/status/2057913121558413770",
+      "source": "X/Twitter",
+      "author": "@cursor_ai",
+      "date": "2026-05-23",
+      "time": "03:54",
+      "likes": 1251,
+      "views": 85359
+    },
+    {
+      "title": "Claude Code 2.1.149 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2057892886360854922",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "02:34",
+      "likes": 40,
+      "views": 4401
+    },
+    {
+      "title": "The best way to learn AI is to build with agents.",
+      "summary": "To help with that, we've launched hands-on labs and a new series on Agentic Engineering.\n\nFirst topic: Agent Skills.\n\nNext in the pipeline: planning, context engineering, multi-agent systems, long-running agents,..\n\nGo build! https://t.co/fkVwgQyIiC",
+      "url": "https://x.com/i/status/2057878077246767599",
+      "source": "X/Twitter",
+      "author": "@omarsar0",
+      "date": "2026-05-23",
+      "time": "01:35",
+      "likes": 76,
+      "views": 6780
+    },
+    {
+      "title": "Claude Code team just dropped a 27-minute workshop on shipping production agents from scratch",
+      "summary": "27 minutes. completely free. worth more than any $500 vibe-coding course\n\nmake sure to bookmark it before it gets lost in your feed\n\nin this workshop they break down exactly how agents get built at production level:\n\n- going from zero to deployed agent in one session\n- the sandboxing and memory syst…",
+      "url": "https://x.com/i/status/2057866388375826679",
+      "source": "X/Twitter",
+      "author": "@eng_khairallah1",
+      "date": "2026-05-23",
+      "time": "00:49",
+      "likes": 74,
+      "views": 7109
+    },
+    {
+      "title": "Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI workspace built on Claude.",
+      "summary": "In a market moving this fast, where anyone can build, he thinks the team is what makes the difference: https://t.co/1fdpKpxjqj",
+      "url": "https://x.com/i/status/2057854403558653983",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-23",
+      "time": "00:01",
+      "likes": 1279,
+      "views": 144801
+    },
+    {
+      "title": "From The Problem Solvers, our series featuring founders taking on hard problems with Claude: https://t.co/lXWwc2eHPe",
+      "summary": "",
+      "url": "https://x.com/i/status/2057854405118922884",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-23",
+      "time": "00:01",
+      "likes": 96,
+      "views": 39712
+    },
+    {
+      "title": "We've hit a strange inflection point in the AI stack.",
+      "summary": "Tools are getting better, but the manual effort to manage them is the new bottleneck.\n\nMore time goes into babysitting agent sessions, switching tabs, and coordinating outputs than actually building.\n\nWe've been testing @lobehub 2.5, and their \"Chief Agent Operator\" (CAO) is the first workflow we've…",
+      "url": "https://x.com/i/status/2057837353310548461",
+      "source": "X/Twitter",
+      "author": "@GithubProjects",
+      "date": "2026-05-22",
+      "time": "22:53",
+      "likes": 34,
+      "views": 6676
+    },
+    {
+      "title": "A Google Cloud engineer just showed how to build a full app with Claude from scratch",
+      "summary": "he spent 26 minutes showing exactly what one person with Claude can do, completely free\n\nworth more than any $500 vibe-coding course\n\nhere's what he covers:\n> raw idea to deployed app in a single session\n> using Claude as the entire engineering team\n> the exact workflow they use at Google\n> no big t…",
+      "url": "https://x.com/i/status/2057833957014614290",
+      "source": "X/Twitter",
+      "author": "@AnatoliKopadze",
+      "date": "2026-05-22",
+      "time": "22:40",
+      "likes": 1072,
+      "views": 230322
+    },
+    {
+      "title": "Boris Cherny, the creator of Claude Code at Anthropic, just explained why some users save 10 hours a week and most save zero",
+      "summary": "in this podcast he breaks down exactly how most people are using 10% of Claude:\n\n- the 10% you lose to CLAUDE.md before typing a word\n- the workflows that chain tasks so you stop copy-pasting between steps\n- the batch operations that handle 30 files in the time you do 1\n- the automations hiding behi…",
+      "url": "https://x.com/i/status/2057793597563630014",
+      "source": "X/Twitter",
+      "author": "@eng_khairallah1",
+      "date": "2026-05-22",
+      "time": "20:00",
+      "likes": 235,
+      "views": 46598
+    },
+    {
+      "title": "People think building AI agents in n8n is hard.",
+      "summary": "Reality: one prompt builds an entire agent for you.\n\nNo need to learn complex workflows or spend hours on setup.\n\nJust give ChatGPT the following prompt. It handles the entire agent creation process in minutes.\n\nHere's exactly how to use it step by step:\n\n[bookmark 🔖 this post for later]\n\nThe proces…",
+      "url": "https://x.com/i/status/2057782311329149190",
+      "source": "X/Twitter",
+      "author": "@AndrewBolis",
+      "date": "2026-05-22",
+      "time": "19:15",
+      "likes": 44,
+      "views": 3199
+    },
+    {
+      "title": "Every AI agent today has the same problem.",
+      "summary": "It forgets everything the moment the session ends.\n\nYour workflow.\nYour preferences.\nThe fixes it learned yesterday.\nAll gone.\n\nHermes Agent is one of the first projects pushing in a completely different direction.\n\nInstead of treating AI like a temporary chat window, it treats it like a system that…",
+      "url": "https://x.com/i/status/2057758081707327881",
+      "source": "X/Twitter",
+      "author": "@Suryanshti777",
+      "date": "2026-05-22",
+      "time": "17:38",
+      "likes": 385,
+      "views": 44075
+    },
     {
       "title": "🚨 Anthropic quietly dropped 13 FREE Claude courses",
       "summary": "And it’s basically a complete AI learning path\n\nFrom beginner → advanced → production\n\nYou’ll learn:\n• Claude basics\n• AI fluency\n• Claude API\n• MCP\n• Production-ready agent workflows\n\nSo whether you’re just starting or already building\nthis is worth saving\n\n📚 Full links here 👇\n\n1, Claude Basics: ht…",
@@ -12,6 +210,17 @@
       "time": "16:30",
       "likes": 5,
       "views": 72
+    },
+    {
+      "title": "Codex is our WorkGPT",
+      "summary": "",
+      "url": "https://x.com/i/status/2057695808267649327",
+      "source": "X/Twitter",
+      "author": "@thsottiaux",
+      "date": "2026-05-22",
+      "time": "13:31",
+      "likes": 1718,
+      "views": 78750
     },
     {
       "title": "🚨BREAKING: Seedance 2.1 will get a full core model revamp!",
@@ -267,6 +476,17 @@
       "views": 61744
     },
     {
+      "title": "instead of watching 2 hours of Netflix tonight, watch this 40-minute masterclass from the founder of a $20B China AI company",
+      "summary": "it's the clearest explanation I've seen of how Agent Swarms and AI systems actually work at scale\n\nuseful whether you've never built an agent in your life or have been using Claude every day for the past year\n\nI took the key ideas and turned them into a practical guide on how to actually build with …",
+      "url": "https://x.com/i/status/2057528102368977328",
+      "source": "X/Twitter",
+      "author": "@kirillk_web3",
+      "date": "2026-05-22",
+      "time": "02:25",
+      "likes": 2620,
+      "views": 2151008
+    },
+    {
       "title": "AI AGENT STACK — MASTER TREE 🌲",
       "summary": "AI Agents\n│\n├── 01. Foundation Layer\n│   ├── LLMs\n│   │   ├── GPT-4.1\n│   │   ├── Claude\n│   │   ├── Gemini\n│   │   └── DeepSeek\n│   │\n│   ├── Prompting\n│   │   ├── System Prompts\n│   │   ├── Few-shot\n│   │   ├── Chain of Thought\n│   │   └── Structured Output\n│   │\n│   └── Context\n│       ├── Memory…",
       "url": "https://x.com/i/status/2057515213314998328",
@@ -278,6 +498,17 @@
       "views": 33304
     },
     {
+      "title": "Claude Code 2.1.147 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2057511616002875478",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-22",
+      "time": "01:19",
+      "likes": 56,
+      "views": 5551
+    },
+    {
       "title": "@0xbisc @openart_ai This Billie Jean impression is straight fire. Kid nailing MJ’s moves, sequins popping under that spotlight, moonwalk vibes on point. GPT Image 2 + Seedance 2 absolutely cooking.",
       "summary": "",
       "url": "https://x.com/i/status/2057506983864099239",
@@ -287,6 +518,17 @@
       "time": "01:01",
       "likes": 1,
       "views": 56
+    },
+    {
+      "title": "🚀 Codex CLI 0.133.0 is out!",
+      "summary": "🎯 Goals on by default, dedicated storage\n🔌 Plugin list: versions, marketplace roots, remote collections\n🧩 Extensions: subagent, tool, and turn lifecycle events\n\nChangelog: https://t.co/BdyNipHQwl",
+      "url": "https://x.com/i/status/2057506276045947386",
+      "source": "X/Twitter",
+      "author": "@Codex_Changelog",
+      "date": "2026-05-22",
+      "time": "00:58",
+      "likes": 405,
+      "views": 34324
     },
     {
       "title": "https://t.co/14CICBjq4p",
@@ -366,6 +608,28 @@
       "views": 781062
     },
     {
+      "title": "I just broke down the anatomy of the perfect SOUL. md file for AI agents.",
+      "summary": "SOUL. md is the identity file every AI agent reads before it does anything else.\n\nWithout it, your agent is just a raw LLM with no memory, no personality, and no boundaries.\n\nWith it, your agent knows who it is, how to talk, what to refuse, and which tools to use.\n\nHere are the 9 sections that make …",
+      "url": "https://x.com/i/status/2057476020454949201",
+      "source": "X/Twitter",
+      "author": "@alex_prompter",
+      "date": "2026-05-21",
+      "time": "22:58",
+      "likes": 876,
+      "views": 37997
+    },
+    {
+      "title": "Link 👀",
+      "summary": "https://t.co/ZLHxuE1vih",
+      "url": "https://x.com/i/status/2057464755795747274",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-21",
+      "time": "22:13",
+      "likes": 18,
+      "views": 6810
+    },
+    {
       "title": "Claude Code isn't a coding tool.",
       "summary": "(It's a programmable dev environment)\n\nEngineers open it, type a prompt, and let it write code. But the real leverage is in the system around the prompt.\n\nHere are 12 features that make Claude Code programmable:\n\n𝟭) 𝗖𝗟𝗔𝗨𝗗𝗘.𝗺𝗱: The project's persistent memory. Stack details, conventions, and constrai…",
       "url": "https://x.com/i/status/2057446083853520948",
@@ -441,6 +705,17 @@
       "time": "17:46",
       "likes": 4,
       "views": 246
+    },
+    {
+      "title": "Before Tycoon, Astra ran within HeyBoss, helping client companies reach 100K users and $1M in ARR in 30 days.",
+      "summary": "That experiment is now packaged as a platform any solo founder can access.\n\nTest Tycoon for yourself here👇\nhttps://t.co/srTzF0ljMH",
+      "url": "https://x.com/i/status/2057394371549417966",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-21",
+      "time": "17:33",
+      "likes": 9,
+      "views": 3476
     },
     {
       "title": "@quxiaoyin @tycoonai Testing 👀👀👀",
@@ -1103,6 +1378,17 @@
       "views": 14052
     },
     {
+      "title": "Aspect ratio settings are available for Gemini Omni on the Gemini web as well! https://t.co/WSjmSIHaZS",
+      "summary": "",
+      "url": "https://x.com/i/status/2056770707116241200",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "00:15",
+      "likes": 35,
+      "views": 4679
+    },
+    {
       "title": "a0_swarm: parallel sub-agents plugin.",
       "summary": "Mention something that needs multi-agent work and they spin up on their own. \n\nHere, four hacker agents go through Agent Zero's GitHub security at once.\n\nMade by the A0 team. Available now in the Plugin Hub. https://t.co/Zx8xlnWPgM",
       "url": "https://x.com/i/status/2056770130684608797",
@@ -1233,6 +1519,17 @@
       "time": "16:52",
       "likes": 705,
       "views": 105733
+    },
+    {
+      "title": "A new UI experience is being rolled out on Gemini ahead of today's Google I/O.",
+      "summary": "It also comes along with a Thinking effort selector and a new Usage Limits tab in settings. \n\n@GoogleDeepMind theme 🔥 https://t.co/yW1oXjQqTX",
+      "url": "https://x.com/i/status/2056657501999804764",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "16:45",
+      "likes": 463,
+      "views": 24855
     },
     {
       "title": "With self-hosted sandboxes, you can run agents in any environment you control: your own infrastructure, or managed providers like Cloudflare, Daytona, Modal, or Vercel. https://t.co/OELUCt7QRf",
@@ -1686,6 +1983,17 @@
       "views": 12313
     },
     {
+      "title": "🚨 Anthropic just showed a 30-minute workshop on how to actually use Claude Code properly.",
+      "summary": "Straight from Boris Cherny himself.\n\nFree. No registration. No paywall.\n\nI've seen $300 courses that don't cover what they teach in the first 8 minutes.\n\nBookmark it and share it now. https://t.co/cPF0mNaaOq",
+      "url": "https://x.com/i/status/2056024748962754628",
+      "source": "X/Twitter",
+      "author": "@eng_khairallah1",
+      "date": "2026-05-17",
+      "time": "22:51",
+      "likes": 316,
+      "views": 51220
+    },
+    {
       "title": "Claude Code feels completely different once you install this.",
       "summary": "Anthropic quietly released an official plugin called claude-code-setup and it basically turns Claude Code from “pretty good” into an actual AI dev environment.\n\nIt scans your project and recommends:\n\n→ hooks\n→ skills\n→ MCP servers\n→ subagents\n→ automations\n\nThen sets everything up step-by-step for y…",
       "url": "https://x.com/i/status/2056022182560665602",
@@ -1849,6 +2157,17 @@
       "time": "03:43",
       "likes": 1504,
       "views": 93678
+    },
+    {
+      "title": "@AlexFinn And it feels like I will need more Mac machines soon 👀",
+      "summary": "",
+      "url": "https://x.com/i/status/2055735839724834879",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-17",
+      "time": "03:43",
+      "likes": 0,
+      "views": 2093
     },
     {
       "title": "@altryne This one seems to be available to some users only but Locked Use for Computer Use is not afaik. So it is a bit mixed https://t.co/RRnc7dLmBF",
@@ -3369,6 +3688,17 @@
       "views": 23785
     },
     {
+      "title": "一个本地代理，让最新版 Codex 能对接 MiMo、DeepSeek 及各种 OpenAI 兼容模型，不用为了兼容而降级 Codex。",
+      "summary": "https://t.co/rK7QV0HID4\n\nCodex 新版强制要求 Responses API，但 MiMo 等只提供 Chat Completions。mimo2codex 在中间做协议转换，本地跑个 Node 代理，Codex 以为是原生 Responses 后端，实际转发到 MiMo、DeepSeek 或任意 OpenAI 兼容 provider。",
+      "url": "https://x.com/i/status/2054569100882460824",
+      "source": "X/Twitter",
+      "author": "@QingQ77",
+      "date": "2026-05-13",
+      "time": "22:27",
+      "likes": 64,
+      "views": 6885
+    },
+    {
       "title": "@benedictk__ 🙌🙌🙌 👀👀👀",
       "summary": "",
       "url": "https://x.com/i/status/2054568365075669057",
@@ -3422,6 +3752,17 @@
       "time": "21:59",
       "likes": 14,
       "views": 2408
+    },
+    {
+      "title": "thehype radio is now live: a 24/7 AI-run news station built for founders and builders, with five AI hosts carrying real editorial judgment, memory, and distinct opinions.",
+      "summary": "Not a headline reader on loop.\nBreaking news within minutes, roundups every 30 min, and a startup funding radar. \n\n> GitHub, OpenRouter, and HuggingFace trends on the hour \n\n> Community takes from X and HN \n\n> Music between segments 👀",
+      "url": "https://x.com/i/status/2054562154208952451",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-13",
+      "time": "21:59",
+      "likes": 64,
+      "views": 7280
     },
     {
       "title": "Agentic AI is growing up. Microsoft Agent Framework 1.0 brings stable APIs, A2A cross‑runtime messaging, MCP tool discovery, graph‑based workflows, and a DevUI debugger for real‑time agent tracing. #dotNET + Python parity finally lands.",
@@ -4700,6 +5041,17 @@
       "views": 103537
     },
     {
+      "title": "MkAnime刚刚上线了 GPT Image2 to Video Generator 🚀",
+      "summary": "用 ChatGPT Image 2 把你的故事想法生成分镜图，再用 Seedance 2.0 转成动漫视频！非常适合用来生成宣传片等物料！ https://t.co/gagFhP8qgO",
+      "url": "https://x.com/i/status/2052609638303195599",
+      "source": "X/Twitter",
+      "author": "@yihui_indie",
+      "date": "2026-05-08",
+      "time": "12:40",
+      "likes": 346,
+      "views": 29474
+    },
+    {
       "title": "【速報】",
       "summary": "Anthropicが早すぎて追いつけない初心者🔰へ。\n30用語を5分で全部理解できる画像を共有😳👇\n・Opus＝最強。思考・執筆向き\n・Sonnet＝軽いタスク。高速\n・Claude Code＝開発者向け\n・Cowork＝チャット+フォルダ管理\n・Skills＝保存済みプロンプト。/コマンドで呼び出し\n・Connectors＝外部アプリとの接続\n・Computer Use＝画面操作\n・Adaptive Thinking＝出力前に思考\nClaude使いこなしたいなら用語理解は必須。\nそして用語を理解したら、次はSkillsの実践。\n67個まとめた記事がこちら👇",
       "url": "https://x.com/i/status/2052606951490834739",
@@ -5657,6 +6009,17 @@
       "views": 4858569
     },
     {
+      "title": "Available today in public beta for Claude Enterprise customers.",
+      "summary": "Learn more: https://t.co/Oei6EHTZuX",
+      "url": "https://x.com/i/status/2049898745051886013",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-01",
+      "time": "01:08",
+      "likes": 397,
+      "views": 172014
+    },
+    {
       "title": "🤯16步完整编舞直出！",
       "summary": "ChatGPT-Images2 + Seedance2.0制作编舞视频太顶了！\n\n流程超丝滑：\n1、先用 ChatGPT-Images2 生成16宫格舞蹈动作图\n2、再喂给 Seedance 2.0 生成完整舞蹈视频\n\n参考16宫格 vs 视频效果，对比真的绝💃\n这下编舞也自由了！\n\n（完整提示词整理在评论区） https://t.co/NaA86M5THH",
       "url": "https://x.com/i/status/2049771778646442222",
@@ -5721,6 +6084,17 @@
       "time": "00:19",
       "likes": 323,
       "views": 142787
+    },
+    {
+      "title": "Sign up for our developer newsletter to learn about future hackathons like these: https://t.co/SNJCIrk27U",
+      "summary": "",
+      "url": "https://x.com/i/status/2049523911730028968",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-04-30",
+      "time": "00:19",
+      "likes": 320,
+      "views": 133332
     },
     {
       "title": "Add Codex seats with a $0 seat fee for a limited time.",
