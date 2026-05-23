@@ -1,7 +1,51 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-23T18:00:01+08:00",
+  "lastUpdate": "2026-05-23T18:04:37+08:00",
   "articles": [
+    {
+      "title": "Claude Code 2.1.150 — additional changes",
+      "summary": "CLI surface:\nRemoved:\n• models: claude-empty-\n\nFile: https://t.co/SLzImPUIiA\n\nMetadata:\n• Time since 2.1.149 release: 9h 56m 3s\n• Bundle file size: -0.5 kB (-0.0%)\n\n• Prompt files: +1 (+1.5%)\n• Prompt tokens: +1,946 (+2.2%)\n\nPrompt token mix by kind:\n• tools: 72.7%→73.3%\n• system: 11.3%→11.0%\n• syst…",
+      "url": "https://x.com/i/status/2058038978486423676",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "12:15",
+      "likes": 6,
+      "views": 2404
+    },
+    {
+      "title": "Claude Code CLI 2.1.150 changelog:",
+      "summary": "Other change:\n• Internal infrastructure improvements (no user-facing changes)\n\nSource: https://t.co/drymtApgFY",
+      "url": "https://x.com/i/status/2058038968487198990",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "12:15",
+      "likes": 6,
+      "views": 2787
+    },
+    {
+      "title": "Claude Code 2.1.150 has been released.",
+      "summary": "1 CLI change\n\nHighlights:\n• Tool descriptions now use ripgrep-based grep for search tasks, producing more consistent and faster results\n• Internal infrastructure improvements with no user-facing changes\n\nFull details are in thread below ↓",
+      "url": "https://x.com/i/status/2058038958735360002",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "12:14",
+      "likes": 126,
+      "views": 11031
+    },
+    {
+      "title": "What better way to understand a powerful tool like Claude Code than to build your own version of it?",
+      "summary": "In this handbook, @wagslane walks you through coding your own AI agent.\n\nYou'll use Python and Gemini and learn about multi-directory projects, how AI tools work under the hood, functional programming, and more.\n\nhttps://t.co/QFqUFM1Rez",
+      "url": "https://x.com/i/status/2058035453266186266",
+      "source": "X/Twitter",
+      "author": "@freeCodeCamp",
+      "date": "2026-05-23",
+      "time": "12:01",
+      "likes": 247,
+      "views": 7142
+    },
     {
       "title": "@H3roAi look at the section about memory here",
       "summary": "that's what isn't included\n\nhttps://t.co/lLAP3Aqbrh",
@@ -36,6 +80,17 @@
       "views": 188
     },
     {
+      "title": "@AiTesty5 https://t.co/mwqDZlwP5e",
+      "summary": "",
+      "url": "https://x.com/i/status/2057951223706165285",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "06:26",
+      "likes": 15,
+      "views": 2292
+    },
+    {
       "title": "Claude Code 2.1.149 has been released.",
       "summary": "26 CLI changes\n\nHighlights:\n• /usage shows per-category usage (skills, subagents, plugins, per-MCP-server costs) to identify cost drivers\n• PowerShell cd forms (cd.., cd\\, cd~, X:) no longer change cwd silently, blocking reads outside workspace\n• Bash find no longer exhausts macOS file/vnode table o…",
       "url": "https://x.com/i/status/2057950976175153615",
@@ -58,6 +113,17 @@
       "views": 1278
     },
     {
+      "title": "Claude Code CLI 2.1.149 changelog:",
+      "summary": "New feature:\n• Enterprise: added the allowAllClaudeAiMcps managed setting to load https://t.co/ldz5BaC3j0 cloud MCP connectors alongside managed-mcp.json\n\nFixes:\n• Fixed a PowerShell permission bypass: built-in cd functions (cd.., cd\\, cd~, X:) changed the working directory undetected, letting a lat…",
+      "url": "https://x.com/i/status/2057950986673533154",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "06:25",
+      "likes": 10,
+      "views": 3480
+    },
+    {
       "title": "Please run claude update, or update the Claude desktop app to the latest version.",
       "summary": "Docs: https://t.co/8Ur6DJhp2f",
       "url": "https://x.com/i/status/2057946804743012635",
@@ -78,6 +144,17 @@
       "time": "05:15",
       "likes": 3,
       "views": 119
+    },
+    {
+      "title": "Shipped papercut: new diff markers setting in Appearance.",
+      "summary": "Prefer classic + / - markers when reviewing diffs? You can now use those instead of only color-coded diff bars.\n\nDefault stays the same unless you opt in. https://t.co/FwQz3CLqiL",
+      "url": "https://x.com/i/status/2057918624841728349",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-23",
+      "time": "04:16",
+      "likes": 826,
+      "views": 69233
     },
     {
       "title": "With the Cursor SDK, you can build your own agents with Composer 2.5. It's now available in Python and TypeScript.",
@@ -320,6 +397,28 @@
       "time": "08:21",
       "likes": 289,
       "views": 58808
+    },
+    {
+      "title": "3️⃣ Goal mode is now available in the Codex app, IDE extension, and CLI.",
+      "summary": "Goal mode makes Codex more hands-off, letting you set a goal that it can work towards for hours or even days. \nhttps://t.co/OZ18P1YxBf",
+      "url": "https://x.com/i/status/2057617860986593680",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2026-05-22",
+      "time": "08:21",
+      "likes": 401,
+      "views": 57219
+    },
+    {
+      "title": "OPENAI 👀: ChatGPT is now available directly in PowerPoint, allowing users to create and edit slides.",
+      "summary": "PowerGPT 💪🤖 https://t.co/VoykypD3aC",
+      "url": "https://x.com/i/status/2057613158479712277",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-22",
+      "time": "08:03",
+      "likes": 412,
+      "views": 39168
     },
     {
       "title": "Brand books are quite nice too! 🔥 https://t.co/HSJFBIbEn5",
@@ -606,6 +705,17 @@
       "time": "23:43",
       "likes": 7837,
       "views": 781062
+    },
+    {
+      "title": "In the next version of Claude Code: run /usage to see a breakdown of which Skills, Agents, MCPs, and Plugins are using your tokens",
+      "summary": "CLI today, coming to Desktop next https://t.co/HK8XQO6bBA",
+      "url": "https://x.com/i/status/2057476878110261587",
+      "source": "X/Twitter",
+      "author": "@bcherny",
+      "date": "2026-05-21",
+      "time": "23:01",
+      "likes": 5280,
+      "views": 260333
     },
     {
       "title": "I just broke down the anatomy of the perfect SOUL. md file for AI agents.",
@@ -1433,6 +1543,17 @@
       "views": 10431
     },
     {
+      "title": "Introducing Hallmark!",
+      "summary": "An open source design skill to make beautiful UIs and landing pages by default.\n\nWorks in Claude Code, Cursor, and Codex.\n\nnpx skills add nutlope/hallmark https://t.co/wEZw1ZTjPW",
+      "url": "https://x.com/i/status/2056754959819915459",
+      "source": "X/Twitter",
+      "author": "@nutlope",
+      "date": "2026-05-19",
+      "time": "23:12",
+      "likes": 4488,
+      "views": 526734
+    },
+    {
       "title": "Flow Agent settings 👀 https://t.co/ZTD5F8STyX",
       "summary": "",
       "url": "https://x.com/i/status/2056752919802773995",
@@ -1651,6 +1772,17 @@
       "time": "08:31",
       "likes": 21,
       "views": 3725
+    },
+    {
+      "title": "GOOGLE I/O 🔥: These legends are AI-generated via an upcoming Gemini Omni model.",
+      "summary": "> Both videos are 8s HD samples.\n> Video with Sandar and Demis is likely generated as an image-to-video using Omni for style editing.\n> Logan's video is likely a \"Likeness\" Avatar and Omni video.\n\nAnd \"GEMINI\" means a new model release! 🤯",
+      "url": "https://x.com/i/status/2056532499036045317",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "08:28",
+      "likes": 996,
+      "views": 105362
     },
     {
       "title": "@dkundel You can just build macOS apps",
@@ -3237,6 +3369,17 @@
       "views": 8780031
     },
     {
+      "title": "AI animation filmmaking is already here. ❤️‍🔥",
+      "summary": "3 prompts in the comments:\n\nThis is not an AD.\n\nWorkflow orchestrated by its supercomputer agent,  created with @higgsfield Seedance 2.0 + GPT Image 2 + Storyboard https://t.co/KCZ68Ym9ga",
+      "url": "https://x.com/i/status/2054936739756523998",
+      "source": "X/Twitter",
+      "author": "@hedo_ist",
+      "date": "2026-05-14",
+      "time": "22:47",
+      "likes": 555,
+      "views": 29840
+    },
+    {
       "title": "AI is ready to make full films",
       "summary": "Seedance 2.0 now can read your entire shot list to generate a full story.. keep characters, props and set design consistent with one image on BytePlus\n\nduration and consistency is not a problem anymore\n\nhere's how with prompts: https://t.co/PDJsi0lKyV",
       "url": "https://x.com/i/status/2054932133349883962",
@@ -3961,6 +4104,17 @@
       "time": "05:22",
       "likes": 10,
       "views": 3471
+    },
+    {
+      "title": "META 🔥: Muse Spark will be available within a new Voice Mode and a Live Camera view on the Meta AI app.",
+      "summary": "There, it can generate images, show places on the map, pull data from Reels, and more. \n\nAdditionally, new features were added to Shopping Mode, including the ability to search Facebook Marketplace. \n\n> Muse Spark is starting to gradually roll out on Ray-Ban Meta and Oakley Meta glasses in the US an…",
+      "url": "https://x.com/i/status/2054305432722698301",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-13",
+      "time": "04:59",
+      "likes": 350,
+      "views": 39464
     },
     {
       "title": "@SambitBiswas 100% - loads of opportunities there 🔥",
@@ -4920,6 +5074,17 @@
       "views": 2226
     },
     {
+      "title": "Chain of thought monitors are a key layer of defense against AI agent misalignment. To preserve monitorability, we avoid penalizing misaligned reasoning during RL.",
+      "summary": "We found a limited amount of accidental CoT grading which affected released models, and are sharing our analysis.\nhttps://t.co/0o3PLfafC4",
+      "url": "https://x.com/i/status/2052845764507062349",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2026-05-09",
+      "time": "04:19",
+      "likes": 3041,
+      "views": 481452
+    },
+    {
       "title": "Available until the goblins notice.",
       "summary": "https://t.co/Ymb4PN6nqc https://t.co/nz0IZL0rO8",
       "url": "https://x.com/i/status/2052830440864780761",
@@ -5171,6 +5336,17 @@
       "time": "02:38",
       "likes": 1866,
       "views": 172514
+    },
+    {
+      "title": "让 ai agent 去学习了 price action 和 smc 。",
+      "summary": "接上了币安的 ai skill。\n\n选了5个大币种做实验，\n目前看着还可以，看看后续能跑出什么样来。\n\n而且这次设置的是 ai 自己分析完去挂限价单，\n如果能打到限价单就继续执行，\n如果达不到限价单入场就取消交易计划。\n感觉比之前直接判断完立马市价入场舒服一点。\n\n熊市继续烧token做点小实验～～",
+      "url": "https://x.com/i/status/2052450404320092268",
+      "source": "X/Twitter",
+      "author": "@xincctnnq",
+      "date": "2026-05-08",
+      "time": "02:08",
+      "likes": 64,
+      "views": 11181
     },
     {
       "title": "Claude for Excel, PowerPoint, and Word are now generally available, and Claude for Outlook is in public beta.",
@@ -5943,6 +6119,17 @@
       "views": 1121780
     },
     {
+      "title": "终于！历时 3 天打磨，来自日本、德国、巴西、韩国等朋友的支持 💪",
+      "summary": "支持 72+ 图片和视频模板、 open-design 正式支持全模态设计！🔥\n\ngpt-image 2、seedance 2、免费的 hyperframes！\n\n推特上最顶级提示词、模板直接用，每个人都能用顶级图片做顶级的设计🔥\n\n关注进展 👉 https://t.co/7fuhR3IQ5a https://t.co/HdqPUzf4kc",
+      "url": "https://x.com/i/status/2050202245447168315",
+      "source": "X/Twitter",
+      "author": "@tuturetom",
+      "date": "2026-05-01",
+      "time": "21:14",
+      "likes": 906,
+      "views": 98354
+    },
+    {
       "title": "Kitchen Hunt",
       "summary": "GPT Image 2 + Seedance 2.0 is the best combo right now for speeding up creative workflows.\n\nPrompt below ↓ https://t.co/o60cpxlQ8Q",
       "url": "https://x.com/i/status/2050154597340287143",
@@ -6216,6 +6403,17 @@
       "time": "06:21",
       "likes": 14,
       "views": 3307
+    },
+    {
+      "title": "Claude vs Codex",
+      "summary": "Prompt 👇 https://t.co/HXnol8S5sE",
+      "url": "https://x.com/i/status/2049198617387565159",
+      "source": "X/Twitter",
+      "author": "@viktoroddy",
+      "date": "2026-04-29",
+      "time": "02:46",
+      "likes": 504,
+      "views": 23721
     },
     {
       "title": "Higgsfield MCP is HERE! 🧩",
