@@ -1,7 +1,73 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-24T18:00:00+08:00",
+  "lastUpdate": "2026-05-24T18:02:23+08:00",
   "articles": [
+    {
+      "title": "还没在Codex里配置好Agents.md的可以直接来抄大神Karpathy的作业了",
+      "summary": "65行的极简配置，内容精辟有效，完全可以作为你的Agents.md全局规则起点\n\n具体怎么做：\n直接把仓库里的这套规范复制到Codex App的全局自定义指令部分，后续配合下面文章的方法去不断扩充、迭代规则，你的Codex使用就已经超越了大多数人\n\n仓库地址：https://t.co/v2MC3iP4rg",
+      "url": "https://x.com/i/status/2058467100537090544",
+      "source": "X/Twitter",
+      "author": "@Saccc_c",
+      "date": "2026-05-24",
+      "time": "16:36",
+      "likes": 10,
+      "views": 1254
+    },
+    {
+      "title": "@LufzzLiz 我是使用claude code的/insights这个功能，然后复盘，codex有类似的功能吗？",
+      "summary": "",
+      "url": "https://x.com/i/status/2058462768190337413",
+      "source": "X/Twitter",
+      "author": "@li9292",
+      "date": "2026-05-24",
+      "time": "16:19",
+      "likes": 1,
+      "views": 50
+    },
+    {
+      "title": "@zoncat_i 和cc聊似乎也会关联到官端的发牌…实在想搓前端可以试试codex！",
+      "summary": "",
+      "url": "https://x.com/i/status/2058435739659206693",
+      "source": "X/Twitter",
+      "author": "@SeelenverwandtC",
+      "date": "2026-05-24",
+      "time": "14:31",
+      "likes": 2,
+      "views": 133
+    },
+    {
+      "title": "Most people will spend 4 hours tonight consuming. Zero creating. Then wonder why nothing changes.",
+      "summary": "Spend 30 minutes with any one of these.\n\n10 completely free resources that will teach you how to build AI agents from scratch.\n\nThe same systems companies are paying consultants $50,000 to implement right now.\n\nFree. Available tonight. No excuses.\n\n01 — Hugging Face AI Agents Course\nThe most compreh…",
+      "url": "https://x.com/i/status/2058435344320929829",
+      "source": "X/Twitter",
+      "author": "@cyrilXBT",
+      "date": "2026-05-24",
+      "time": "14:30",
+      "likes": 65,
+      "views": 3056
+    },
+    {
+      "title": "用 Seedance2-skill 创建高质量视频，看到都拍手叫好！",
+      "summary": "https://t.co/QL8e0RQVhx\n 电影级提示词 + 自动生成外挂。专为字节 Seedance 2.0（Jimeng）视频模型打造的提示词技能，教 AI 怎么写带镜头语言、结构、@引用素材的高质量 prompt。 \n直接塞进 Cursor / Claude Code 等 AI 编码工具里用，一键生成专业级视频提示词。",
+      "url": "https://x.com/i/status/2058415740831805546",
+      "source": "X/Twitter",
+      "author": "@GitTrend0x",
+      "date": "2026-05-24",
+      "time": "13:12",
+      "likes": 32,
+      "views": 5529
+    },
+    {
+      "title": "Full post 🗞️",
+      "summary": "https://t.co/7PbqaCJieQ",
+      "url": "https://x.com/i/status/2058322225283965361",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-24",
+      "time": "07:00",
+      "likes": 94,
+      "views": 29932
+    },
     {
       "title": "Anthropic is launching a new \"Gift a week of Cowork\" referral program. Users will get 3 invite codes to share with others.",
       "summary": "> Send a friend a free week of Cowork. If they love it and subscribe, you'll get €10 in usage credits.\n\n> They'll also get Claude in: Excel, PowerPoint, Chrome, Claude Code\n\nWho wants to give Cowork a test? 👀",
@@ -25,6 +91,17 @@
       "views": 309263
     },
     {
+      "title": "Most devs are barely scratching the surface with Claude Code.",
+      "summary": "Here's a full cheat sheet.\n\nCore building blocks -\n✦ CLAUDE[.]md - persistent project instructions and repo context loaded every session. Keep it short and durable.\n✦ Skills - reusable workflows packaged in SKILL[.]md files, loaded on demand or when relevant. Use for repeatable tasks like code revie…",
+      "url": "https://x.com/i/status/2058257711570284812",
+      "source": "X/Twitter",
+      "author": "@techNmak",
+      "date": "2026-05-24",
+      "time": "02:44",
+      "likes": 30,
+      "views": 1634
+    },
+    {
       "title": "@bughuntergeek Niiiiice!",
       "summary": "",
       "url": "https://x.com/i/status/2058189674288394371",
@@ -45,6 +122,28 @@
       "time": "20:15",
       "likes": 414,
       "views": 22611
+    },
+    {
+      "title": "@nikitabier Quote is the best credit 💪👀",
+      "summary": "Happy to see these changes coming",
+      "url": "https://x.com/i/status/2058143613767344208",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "19:10",
+      "likes": 25,
+      "views": 2599
+    },
+    {
+      "title": "推荐一个网站 Agent Skills Hub，堪称 AI Agent 时代的「应用商店」。",
+      "summary": "里面收录了 数万款 Agent Skills、MCP Server 和 AI 工具，覆盖编程开发、内容创作、数据分析、自动化办公、营销运营等场景。很多爆火的 Claude Code、OpenClaw、Codex 技能包，都能在这里直接找到。  \n\n最方便的是支持按场景搜索，比如：\n\n* AI 编程\n* 自动化工作流\n* 内容创作\n* PPT 生成\n* 视频处理\n* 浏览器自动化\n* MCP 工具集成\n\n看到合适的项目后，直接复制安装命令即可使用，不用满 GitHub 到处翻仓库。平台还会根据活跃度、维护情况、文档质量等维度进行评分，找优质项目效率非常高。  \n\n地址：\nhttps://t.co…",
+      "url": "https://x.com/i/status/2058136672244740328",
+      "source": "X/Twitter",
+      "author": "@grgerwcwetwet",
+      "date": "2026-05-23",
+      "time": "18:43",
+      "likes": 117,
+      "views": 9202
     },
     {
       "title": "Claude Code 2.1.150 — additional changes",
@@ -377,6 +476,17 @@
       "views": 568
     },
     {
+      "title": "如何在  Codex App 使用 /goal 的简单说明：",
+      "summary": "1. 升级 Codex App 到最新版本\n\n2. 先在命令行运行一下下面的指令：  \n> codex features enable goals\n\n或者手动修改 ~/.codex/config.toml\n\n[features]\ngoals = true\n\n3. 开头输入 /goal，或者点 + 弹出菜单中选择\n\n4. 开始后，输入框上方可以暂停、编辑、删除",
+      "url": "https://x.com/i/status/2057672416071987378",
+      "source": "X/Twitter",
+      "author": "@dotey",
+      "date": "2026-05-22",
+      "time": "11:58",
+      "likes": 397,
+      "views": 70358
+    },
+    {
       "title": "I’m sorry, but is that a Samurai warrior? // Seedance 2 @runwayml https://t.co/EveX8YSdxD",
       "summary": "",
       "url": "https://x.com/i/status/2057665803202203871",
@@ -652,6 +762,17 @@
       "views": 61744
     },
     {
+      "title": "We’ve improved Analytics in Codex for businesses and enterprises.",
+      "summary": "Get more detailed breakdowns of:\n- Active users \n- Credits\n- Tokens\n- Runs\n- User leaderboards\n- Lines of code generated\n- Plugin usage\n\n+ updates to the Analytics API so teams can better understand how Codex is being used across their org.",
+      "url": "https://x.com/i/status/2057530213974814844",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-22",
+      "time": "02:33",
+      "likes": 358,
+      "views": 45784
+    },
+    {
       "title": "instead of watching 2 hours of Netflix tonight, watch this 40-minute masterclass from the founder of a $20B China AI company",
       "summary": "it's the clearest explanation I've seen of how Agent Swarms and AI systems actually work at scale\n\nuseful whether you've never built an agent in your life or have been using Claude every day for the past year\n\nI took the key ideas and turned them into a practical guide on how to actually build with …",
       "url": "https://x.com/i/status/2057528102368977328",
@@ -850,6 +971,17 @@
       "views": 16460
     },
     {
+      "title": "Boris Cherny, the creator of Claude Code at Anthropic, just explained why most people aren't getting real results from Claude",
+      "summary": "in this podcast he breaks down exactly how most people never actually set up Claude:\n\n- the 14% you lose to CLAUDE.md before typing a word\n- the features that change how Claude thinks before you type a word\n- the settings 95% of users have never opened\n- the workflows hiding behind one toggle\n\nif yo…",
+      "url": "https://x.com/i/status/2057433528363811098",
+      "source": "X/Twitter",
+      "author": "@eng_khairallah1",
+      "date": "2026-05-21",
+      "time": "20:09",
+      "likes": 3585,
+      "views": 1216204
+    },
+    {
       "title": "Alibaba released Qwen 3.7 Max, its latest proprietary model for agentic coding.",
       "summary": "Qwen 3.7 Max scores 56.6 on the Artificial Analysis Intelligence Index, outperforming recently released Gemini 3.5 Flash and Kimi K2.6. https://t.co/xSrj9b1t7E",
       "url": "https://x.com/i/status/2057420016543215779",
@@ -936,6 +1068,17 @@
       "time": "17:02",
       "likes": 21,
       "views": 629
+    },
+    {
+      "title": "@notjazii Let's see if it drops 👀",
+      "summary": "",
+      "url": "https://x.com/i/status/2057381880488423678",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-21",
+      "time": "16:43",
+      "likes": 2,
+      "views": 330
     },
     {
       "title": "GPT Image 2 + Seedance 2.0 Prompt Share",
@@ -7118,6 +7261,17 @@
       "time": "03:08",
       "likes": 64,
       "views": 6189
+    },
+    {
+      "title": "New on the Anthropic Engineering Blog: Long-running AI agents still face challenges working across many context windows.",
+      "summary": "We looked to human engineers for inspiration in creating a more effective agent harness. https://t.co/aLDLQPhf1K",
+      "url": "https://x.com/i/status/1993733817849303409",
+      "source": "X/Twitter",
+      "author": "@AnthropicAI",
+      "date": "2025-11-27",
+      "time": "01:29",
+      "likes": 3359,
+      "views": 1535217
     },
     {
       "title": "Turn on agent mode and ChatGPT can take action for you—research, plan, and get things done while you browse.",
