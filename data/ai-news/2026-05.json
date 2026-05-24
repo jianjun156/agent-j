@@ -1,7 +1,51 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-24T08:00:01+08:00",
+  "lastUpdate": "2026-05-24T08:01:47+08:00",
   "articles": [
+    {
+      "title": "Anthropic is launching a new \"Gift a week of Cowork\" referral program. Users will get 3 invite codes to share with others.",
+      "summary": "> Send a friend a free week of Cowork. If they love it and subscribe, you'll get €10 in usage credits.\n\n> They'll also get Claude in: Excel, PowerPoint, Chrome, Claude Code\n\nWho wants to give Cowork a test? 👀",
+      "url": "https://x.com/i/status/2058302779240702304",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-24",
+      "time": "05:43",
+      "likes": 115,
+      "views": 6855
+    },
+    {
+      "title": "Some of you noticed limits drained faster in Codex, we root caused it to an optimization that we rolled back that had an impact on cache hit rates when compacting across long running sessions.",
+      "summary": "We fixed this and have now reset usage limits for all accounts. Enjoy the weekend.",
+      "url": "https://x.com/i/status/2058280452851638313",
+      "source": "X/Twitter",
+      "author": "@thsottiaux",
+      "date": "2026-05-24",
+      "time": "04:14",
+      "likes": 6395,
+      "views": 309263
+    },
+    {
+      "title": "@bughuntergeek Niiiiice!",
+      "summary": "",
+      "url": "https://x.com/i/status/2058189674288394371",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "22:13",
+      "likes": 4,
+      "views": 512
+    },
+    {
+      "title": "ICYMI 👀: Gemini in Chrome is now available to some users in Europe.",
+      "summary": "I finally got Gemini for Chrome feature here in Germany on my Canary build, with Gemini 3.5 Flash, Skills, and Gemini Live.\n\nDoes it work for you as well? https://t.co/mpW88laeHM",
+      "url": "https://x.com/i/status/2058159956021452914",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "20:15",
+      "likes": 414,
+      "views": 22611
+    },
     {
       "title": "Claude Code 2.1.150 — additional changes",
       "summary": "CLI surface:\nRemoved:\n• models: claude-empty-\n\nFile: https://t.co/SLzImPUIiA\n\nMetadata:\n• Time since 2.1.149 release: 9h 56m 3s\n• Bundle file size: -0.5 kB (-0.0%)\n\n• Prompt files: +1 (+1.5%)\n• Prompt tokens: +1,946 (+2.2%)\n\nPrompt token mix by kind:\n• tools: 72.7%→73.3%\n• system: 11.3%→11.0%\n• syst…",
@@ -135,6 +179,17 @@
       "views": 17878
     },
     {
+      "title": "Two updates to auto mode:",
+      "summary": "· Now available on the Pro plan\n· Sonnet 4.6 is now supported, alongside Opus 4.7\n\nShift+tab, and let Claude run.",
+      "url": "https://x.com/i/status/2057946803685974482",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-05-23",
+      "time": "06:08",
+      "likes": 5769,
+      "views": 415754
+    },
+    {
       "title": "@giordanorandone Yeah, we need this next 1.5T params model to be released for sure! 🤖",
       "summary": "",
       "url": "https://x.com/i/status/2057933451647418489",
@@ -245,6 +300,17 @@
       "views": 230322
     },
     {
+      "title": "总结一下GPT、Codex我自己用的反代工具",
+      "summary": "直接自己配，不再担心用别人的中转会泄露信息\n\n1.GPT Plus账号：https://t.co/FcpvBDX3Zy\n\n2.接码：https://t.co/j8ysyvHWPK\n\n3.一键导出json格式：https://t.co/P9vNcEm80p\n\n4.反代工具:\nCPA https://t.co/qoF54l6mbp\nSub2 https://t.co/OdrhXsEomN\n\n有条件的我建议部署到服务器里面，我自己买的是free账号来用",
+      "url": "https://x.com/i/status/2057828044396744750",
+      "source": "X/Twitter",
+      "author": "@Eason2766565277",
+      "date": "2026-05-22",
+      "time": "22:16",
+      "likes": 907,
+      "views": 60048
+    },
+    {
       "title": "Boris Cherny, the creator of Claude Code at Anthropic, just explained why some users save 10 hours a week and most save zero",
       "summary": "in this podcast he breaks down exactly how most people are using 10% of Claude:\n\n- the 10% you lose to CLAUDE.md before typing a word\n- the workflows that chain tasks so you stop copy-pasting between steps\n- the batch operations that handle 30 files in the time you do 1\n- the automations hiding behi…",
       "url": "https://x.com/i/status/2057793597563630014",
@@ -331,6 +397,17 @@
       "time": "10:30",
       "likes": 52,
       "views": 306
+    },
+    {
+      "title": "一张图解释什么是agent👇 https://t.co/WFTurTDlr3",
+      "summary": "",
+      "url": "https://x.com/i/status/2057648583739085253",
+      "source": "X/Twitter",
+      "author": "@ai_xiaomu",
+      "date": "2026-05-22",
+      "time": "10:23",
+      "likes": 12,
+      "views": 1339
     },
     {
       "title": "Claude Code 2.1.148 additional updates",
@@ -826,6 +903,17 @@
       "time": "17:33",
       "likes": 9,
       "views": 3476
+    },
+    {
+      "title": "Tycoon launched as the world's first operating system for one-person companies, giving every solo founder an AI CEO named Astra and a virtually unlimited workforce of AI employees across coding, marketing, research, SEO, finance, legal, and ops.",
+      "summary": "Astra manages up to 1,000 agents in parallel, 24/7, and can orchestrate external tools such as Claude Code and Hermes Agent!",
+      "url": "https://x.com/i/status/2057394368068083738",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-21",
+      "time": "17:33",
+      "likes": 179,
+      "views": 32738
     },
     {
       "title": "@quxiaoyin @tycoonai Testing 👀👀👀",
@@ -1343,6 +1431,17 @@
       "time": "02:13",
       "likes": 5,
       "views": 527
+    },
+    {
+      "title": "We’re building a foundation for agentic commerce. Here’s how ⬇️",
+      "summary": "1️⃣ Universal Commerce Protocol, an open-source standard that allows all the key players to work together by giving agents and systems a common language. \n\n2️⃣ Agent Payments Protocol (AP2), so your AI agent can securely make payments on your behalf, with boundaries and accountability.\n\n3️⃣ Universa…",
+      "url": "https://x.com/i/status/2056798660663365944",
+      "source": "X/Twitter",
+      "author": "@Google",
+      "date": "2026-05-20",
+      "time": "02:06",
+      "likes": 294,
+      "views": 57260
     },
     {
       "title": "Introducing Antigravity 2.0, a new standalone desktop application that delivers fully on that original glimpse of a truly agent-optimized experience.",
@@ -2489,6 +2588,17 @@
       "views": 733
     },
     {
+      "title": "强烈建议搞 OPC 的兄弟们，周末花点时间必须把它看完！",
+      "summary": "Anthropic刚刚把一本内部手册扔了出来，名字叫《Founder's Playbook》。  \n\n这不是鼓吹AI多牛的宣传册。  \n\n反而是他们看着自家Claude Code和一大批YC创始人踩过的坑，整理出的经验教训：  \n\nAI会让创业失败率上升。  \n\n不是下降，是上升。  \n\nCB Insights那份报告说，42%的创业公司死于“造出了没人想要的东西”。  \n\n就是重复生产垃圾和自我感动的东西！\n\n过去，这个坑至少要几个月才能踩出来，找联合创始人、谈预算、外包开发，时间本身就是保护机制。  \n\n现在Claude Code一个下午就能给你一个能跑的原型。  \n\n听起来是降维打击。 …",
+      "url": "https://x.com/i/status/2055635826462130227",
+      "source": "X/Twitter",
+      "author": "@berryxia",
+      "date": "2026-05-16",
+      "time": "21:05",
+      "likes": 403,
+      "views": 80354
+    },
+    {
       "title": "These video prompts not contain any actual scene information. Without a storyboard, I’d have to fully write out the entire prompt instead. I’m already specifying the director style while generating the images and also mention it again in the Seedance prompt. I’m not really sure how much difference it actually makes though.",
       "summary": "",
       "url": "https://x.com/i/status/2055635609402621953",
@@ -3402,6 +3512,17 @@
       "views": 125437
     },
     {
+      "title": "Image2提示词：",
+      "summary": "创作 9 宫格分镜，展示白酒产品从开箱、倒酒、品鉴到餐桌场景的完整流程，电影级画面，暖色调，高级感，一个中国女子  将宽高比设为 16:9\n\n再使用Seedance参考图生视频，上传分镜图后，直接生成成品。\n\n很适合白酒、美妆、珠宝、香水、茶饮这类强调质感和氛围的高端产品广告。 https://t.co/8VEFng9QLL",
+      "url": "https://x.com/i/status/2054921086567960582",
+      "source": "X/Twitter",
+      "author": "@joshesye",
+      "date": "2026-05-14",
+      "time": "21:45",
+      "likes": 68,
+      "views": 16634
+    },
+    {
       "title": "Codex new `/goal` is literally INSANE",
       "summary": "You can easily transform your AI bots into a tireless 24/7 workforce that grinds for HOURS completely unguided 🤯\n\nCodex desktop → Settings → Config, set\ngoals = true\n\nCheck out the ace cheat sheet + article by @aiedge_ to master it 👇 https://t.co/WTHgy07kCm",
       "url": "https://x.com/i/status/2054917240688881989",
@@ -3411,6 +3532,17 @@
       "time": "21:30",
       "likes": 70,
       "views": 11379
+    },
+    {
+      "title": "2026年4月全球大模型公司能力梯队全景图",
+      "summary": "AI叙事，才刚刚开始\n\n兄弟们，看这张图。\n\n2026年4月全球大模型公司能力梯队全景图，T1到T5，密密麻麻几十家公司。\n\nT1梯队：OpenAI、Anthropic、Google、xAI。\n\n估值到1万亿级别，工业级Agent闭环、GPQA推理准确率超94%、代码生成率超85%。\n\nT2梯队：阿里、DeepSeek、Meta、智谱AI。\n\n多模态与逻辑推理、代码生成率TOP 5、开源生态标杆。\n\nT3梯队：Moonshot、Mistral、MiniMax、Meta、NVIDIA。\n\n垂直行业分析、端侧部署、行业级多模态。\n\nT4梯队：百度、微软、亚马逊、Cohere、Falcon。\n\n政企…",
+      "url": "https://x.com/i/status/2054916564789625060",
+      "source": "X/Twitter",
+      "author": "@DtDt666",
+      "date": "2026-05-14",
+      "time": "21:27",
+      "likes": 208,
+      "views": 21694
     },
     {
       "title": "Most AI workflows today still break at one point",
@@ -5019,6 +5151,17 @@
       "views": 5507
     },
     {
+      "title": "Claude Code团队核心成员 Thariq 最近了一篇很有启发的文章，建议大家都读读。",
+      "summary": "《The Unreasonable Effectiveness of HTML》\n\n核心观点是：在 AI Agent 时代，HTML 可能正在变成新的 Markdown。\n\n这句话一开始听起来有点夸张，但越想越合理。\n\n过去我们让 AI 输出 Markdown，因为它简单、轻量、适合写总结、README、文档。\n\n但 Agent 现在能做的事情已经不只是“写一段文字”了。\n\n文章还配了一个示例站（https://t.co/W56xysXlgQ），里面有 20 个真实场景的 .html 产出，比如：\n\n1. PR Review 可以直接生成一个 HTML 页面，里面有 diff、风险等级、调用链…",
+      "url": "https://x.com/i/status/2052906959112958128",
+      "source": "X/Twitter",
+      "author": "@yanhua1010",
+      "date": "2026-05-09",
+      "time": "08:22",
+      "likes": 25,
+      "views": 6923
+    },
+    {
       "title": "Claude Code 2.1.137 has been released.",
       "summary": "1 CLI change\n\nHighlights:\n• VSCode extension activation fixed on Windows, restoring startup and access to features\n\nComplete details in thread ↓ https://t.co/22XPc65Vii",
       "url": "https://x.com/i/status/2052906343405621633",
@@ -5987,6 +6130,17 @@
       "views": 49264
     },
     {
+      "title": "最近有朋友登录codex的时候，手机号会是必填项",
+      "summary": "然而+86是无效号码\n\n这里有个小技巧：\n1.先在网页端登录openai\n2.再在这生成apikey:https://t.co/Nt7amtOb2z\n3.用apikey登录codex\n\n有需要的朋友们，可以收藏一下，以备不时之需🫡 https://t.co/Po47kn7Av7",
+      "url": "https://x.com/i/status/2051286982920392989",
+      "source": "X/Twitter",
+      "author": "@onehopeA9",
+      "date": "2026-05-04",
+      "time": "21:05",
+      "likes": 1780,
+      "views": 206468
+    },
+    {
       "title": "🤯真实到离谱！",
       "summary": "我用 ChatGPT+Seedance 做了一套「iPhone真人相册+Vlog」工作流，效果太炸裂了！💥\n\n我生成了：巴塞罗那情侣旅行Vlog\n颗粒、失焦、手抖、风吹乱头发、mid-motion抓拍…\n那种刚好被随手拍下来的真实生活感，太像真人相册了！\n\n重点是这套方法完全通用：\n支持情侣/单人/闺蜜/亲子，随便换城市都能用，还能一键生成Vlog视频！\n\n完整工作流 + 提示词查看评论区👇",
       "url": "https://x.com/i/status/2051167888615096673",
@@ -6625,6 +6779,17 @@
       "views": 13035354
     },
     {
+      "title": "好久没有发Seedance 2.0的视频分享了，不是不想发，主要是即梦的Seedance贵且慢。",
+      "summary": "刚看到有大佬分享了一个接入了Seedance 2.0的平台：Rita。\n\n你绝对想不到它居然是GamsGo旗下的一个视频平台，GamsGo之前应该有不少大佬推荐过，可以在上面跟别人拼车买到各种比较优惠的大模型的订阅服务。\n\n现在又接入了Seedance 2.0，还限时送积分，相比即梦那真的是打骨折，是真壕气。\n\n而且不是只能用Seedance一个模型，还可以同时用ChatGPT、Gemini、Claude、NanoBanana 等顶级模型。\n\n注册地址：https://t.co/YUpBmpoKUe\n\n我用它做了一个广州的城市宣传片，确认是正版Seedance 2.0，视频和提示词见评论区。\n…",
+      "url": "https://x.com/i/status/2047240877261951283",
+      "source": "X/Twitter",
+      "author": "@liyue_ai",
+      "date": "2026-04-23",
+      "time": "17:07",
+      "likes": 150,
+      "views": 92719
+    },
+    {
       "title": "#Runway Unlimited mode… so useful.",
       "summary": "Test. Tweak. Repeat.\n\nWithout burning credits on Seedance and the other models.\nPerfect setup to actually improve. https://t.co/d80zEjUuJ8",
       "url": "https://x.com/i/status/2047231525599531345",
@@ -6634,6 +6799,17 @@
       "time": "16:30",
       "likes": 112,
       "views": 7126
+    },
+    {
+      "title": "GPT 的 Images 2 × Seedance 2.0 这套工作流，",
+      "summary": "用对了，真的很猛。\n\n我现在基本是这样跑的：\n\n1️⃣ 先用提示词把创意想法跑顺\n2️⃣ 让 GPT 先出故事板图\n3️⃣ 再把这张图丢给 Seedance 当参考\n4️⃣ 最后把整理好的提示词贴回 Seedance 继续生成\n\n我现在想要更稳一点的效果，\n基本都靠这套流程。\n\n提示词 ⬇️\n一份专业的动漫院线分镜头（16：9），标题为《天空之击》，副标题为“战士与圣石”。干净的浅米色背景，圆角矩形面板排列成三列网格，共 9 个场景。每个场景面板显示：橙色“场景 XX”标签、时间码、场景标题，然后是两个并排的画面，分别标有“开始帧”→“结束帧”，通过白色箭头连接，下面有注释（镜头/对白/特效/…",
+      "url": "https://x.com/i/status/2047224465097134172",
+      "source": "X/Twitter",
+      "author": "@0xluffy_eth",
+      "date": "2026-04-23",
+      "time": "16:02",
+      "likes": 408,
+      "views": 26440
     },
     {
       "title": "すげえや、、",
