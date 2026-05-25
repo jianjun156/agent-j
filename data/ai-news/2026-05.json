@@ -1,7 +1,117 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-25T08:00:01+08:00",
+  "lastUpdate": "2026-05-25T08:01:49+08:00",
   "articles": [
+    {
+      "title": "Microsoft is quietly taking over the Enterprise AI Agent stack.",
+      "summary": "And most people have only seen ~10% of it.\n\nEveryone talks about Copilot.\nSome know Azure.\nA few use GitHub Copilot.\n\nBut underneath...\n\nMicrosoft has built a full-stack AI ecosystem\n—from models → to agents → to governance.\n\nHere’s the full breakdown 👇\n\n📌 1. Models (the brain)\nAzure GPT-5.1, Phi-4,…",
+      "url": "https://x.com/i/status/2058646791348727997",
+      "source": "X/Twitter",
+      "author": "@dkare1009",
+      "date": "2026-05-25",
+      "time": "04:30",
+      "likes": 13,
+      "views": 344
+    },
+    {
+      "title": "Riley brown(@rileybrown) shipped 6 live products in one codex session. solo.",
+      "summary": "most people touch 5% of codex and decide that’s the whole tool.\n\nhe used the other 95%.\n\nin one sitting:\n\n→ an ios app on testflight, real auth and database\n\n→ a landing page live on vercel taking signups\n\n→ an investor deck that opens straight in canva\n\n→ a launch video\n\n→ daily x posts running on …",
+      "url": "https://x.com/i/status/2058634403858063653",
+      "source": "X/Twitter",
+      "author": "@rohit4verse",
+      "date": "2026-05-25",
+      "time": "03:41",
+      "likes": 64,
+      "views": 6312
+    },
+    {
+      "title": "Boris Cherny, the creator of Claude Code, just explained why the features most users never find are the ones that matter most",
+      "summary": "in this podcast he breaks down not just how to use Claude, but what it all means for the next few years:\n\n> the right way to give Claude context before it starts working\n> why giving it too much information is just as bad as too little\n> how Claude Code is already changing how engineers build things…",
+      "url": "https://x.com/i/status/2058610906351722655",
+      "source": "X/Twitter",
+      "author": "@AnatoliKopadze",
+      "date": "2026-05-25",
+      "time": "02:07",
+      "likes": 55,
+      "views": 5289
+    },
+    {
+      "title": "If you haven't set up Agents.md in Codex yet",
+      "summary": "you can just copy the homework from Andrej Karpathy.  \n\nHere's the exact setup (takes 2 minutes):    \n\n1. Go to his repo   \n2. Copy the 65-line Agents.md config  \n3. Paste it into Codex App → Global Custom Instructions   \n4. Done. You're already ahead of 90% of Codex users.    \n\nIt's minimalist. It'…",
+      "url": "https://x.com/i/status/2058588647088406931",
+      "source": "X/Twitter",
+      "author": "@Av1dlive",
+      "date": "2026-05-25",
+      "time": "00:39",
+      "likes": 592,
+      "views": 81501
+    },
+    {
+      "title": "CODEX SKILL THAT CREATES A REAL PHONE APP IN LESS THAN 10 MINUTES!",
+      "summary": "I made a Codex skill that turns a prompt into a mobile app running on your actual phone. \n\nNo Xcode setup.\nNo TestFlight. \nNo App Store waiting.  \n\nJust: Codex + Expo Go + QR code.  \n\nI built a workflow that lets Codex create and iterate mobile apps live:  \n\n-> create an Expo/React Native app \n-> st…",
+      "url": "https://x.com/i/status/2058578772585074958",
+      "source": "X/Twitter",
+      "author": "@Kappaemme1926",
+      "date": "2026-05-25",
+      "time": "00:00",
+      "likes": 129,
+      "views": 10211
+    },
+    {
+      "title": "@Hunter_Lott_ Yes, if you are on Claude Enterprise that has access 👀 https://t.co/V6by7etgq9",
+      "summary": "",
+      "url": "https://x.com/i/status/2058568046306787544",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-24",
+      "time": "23:17",
+      "likes": 12,
+      "views": 3874
+    },
+    {
+      "title": "Boris Cherny, the creator of Claude Code at Anthropic, just explained why most people aren't getting real results from Claude",
+      "summary": "in this talk he breaks down exactly how the wrong prompts are costing you everything:\n\n- the 14% you lose to CLAUDE.md before typing a word\n- the prompts that turn Claude into a strategist, not a chatbot\n- the role framing that 95% of users have never tried\n- the features that change how Claude thin…",
+      "url": "https://x.com/i/status/2058553355895763236",
+      "source": "X/Twitter",
+      "author": "@eng_khairallah1",
+      "date": "2026-05-24",
+      "time": "22:19",
+      "likes": 236,
+      "views": 46075
+    },
+    {
+      "title": "https://t.co/Ik7U8ADtiY",
+      "summary": "",
+      "url": "https://x.com/i/status/2058552181763309605",
+      "source": "X/Twitter",
+      "author": "@Codestudiopjbk",
+      "date": "2026-05-24",
+      "time": "22:14",
+      "likes": 49,
+      "views": 6641
+    },
+    {
+      "title": "Rookie Clown",
+      "summary": "made with GPT Image 2 + Seedance 2 on @openart_ai  \n\nPrompt below ↓ https://t.co/Oh137Ijfoz",
+      "url": "https://x.com/i/status/2058508472099209651",
+      "source": "X/Twitter",
+      "author": "@0xbisc",
+      "date": "2026-05-24",
+      "time": "19:20",
+      "likes": 231,
+      "views": 9190
+    },
+    {
+      "title": "2 OpenAI engineers just gave a masterclass on how to build and ship apps using Codex",
+      "summary": "they spent 16 mins on how Codex turns one person into an entire software engineering team\n\nfor free. better than any $500 dollar AI course.\n\n[here is what it covers]  \n\n>Codex is not “AI autocomplete” \n>it is an agent harness for software work it can review code like a senior engineer \n>it can split…",
+      "url": "https://x.com/i/status/2058502093426794683",
+      "source": "X/Twitter",
+      "author": "@Av1dlive",
+      "date": "2026-05-24",
+      "time": "18:55",
+      "likes": 88,
+      "views": 9655
+    },
     {
       "title": "还没在Codex里配置好Agents.md的可以直接来抄大神Karpathy的作业了",
       "summary": "65行的极简配置，内容精辟有效，完全可以作为你的Agents.md全局规则起点\n\n具体怎么做：\n直接把仓库里的这套规范复制到Codex App的全局自定义指令部分，后续配合下面文章的方法去不断扩充、迭代规则，你的Codex使用就已经超越了大多数人\n\n仓库地址：https://t.co/v2MC3iP4rg",
@@ -12,6 +122,17 @@
       "time": "16:36",
       "likes": 10,
       "views": 1254
+    },
+    {
+      "title": "Microsoft Senior AI developer just showed how they build AI agents with Claude at Microsoft.",
+      "summary": "34-minutes. free. By Microsoft team\n\nOpus 4.7 + 1,400+ pre-built MCP tools\n\nplug Claude into agent → give it tools → ship to production\n\nworth more than any $500 vibe-coding course.\n\nBookmark and watch it today.",
+      "url": "https://x.com/i/status/2058465917051490337",
+      "source": "X/Twitter",
+      "author": "@sairahul1",
+      "date": "2026-05-24",
+      "time": "16:31",
+      "likes": 150,
+      "views": 21781
     },
     {
       "title": "@LufzzLiz 我是使用claude code的/insights这个功能，然后复盘，codex有类似的功能吗？",
@@ -58,6 +179,28 @@
       "views": 5529
     },
     {
+      "title": "JUST DO IT.",
+      "summary": "This video is inspired by NIKE's iconic and powerful slogan - JUST DO IT.\"  \n\nMade with NIJI V7 on @nijijourney x GPT-image 2 and Seedance 2.0 on @OiiOii_Official  @oiioii_ai_japan .\n\nThis is the key prompt that i use if you want the same art style like this: \n2D digital painting. Large simplified c…",
+      "url": "https://x.com/i/status/2058391981269647831",
+      "source": "X/Twitter",
+      "author": "@imtheboboo",
+      "date": "2026-05-24",
+      "time": "11:37",
+      "likes": 36,
+      "views": 2647
+    },
+    {
+      "title": "2 hours a day, 5-7 videos shipped, $12,000/mo from youtube ad revenue, zero face on camera",
+      "summary": "the operator's stack:\n\n> claude custom skill locks character and outfit consistency once, every generation pulls from it\n> higgsfield or seedance renders the daily batch\n> voiceover, edits, upload run on auto\n> ad revenue hits the account weekly\n\nthe wall every other faceless ai channel hit was char…",
+      "url": "https://x.com/i/status/2058341816613663202",
+      "source": "X/Twitter",
+      "author": "@0xKiyoro",
+      "date": "2026-05-24",
+      "time": "08:18",
+      "likes": 136,
+      "views": 13794
+    },
+    {
       "title": "Full post 🗞️",
       "summary": "https://t.co/7PbqaCJieQ",
       "url": "https://x.com/i/status/2058322225283965361",
@@ -80,6 +223,17 @@
       "views": 6855
     },
     {
+      "title": "单一 Agent 用来生成图片、做数据分析、剪视频——每一项看起来能干，但想出一份完整的结果，往往得在 ChatGPT、Midjourney、Seedance、Excel 之间来回切五次。",
+      "summary": "给大家分享一个最近在用的开源项目 VRSEN/OpenSwarm，8 个专业 agent 协同 + 一个 prompt 出完整交付物，全程跑在终端里，不用开任何 GUI。\n\nGitHub：https://t.co/rF2RYzN3Pz\n\n- Orchestrator 统一收请求自动分发给对应专家；\n- Deep Research 调研竞品顺手带引证；\n- Slides Agent 直接生成 HTML deck 并导出 PPTX；\n- Data Analyst 跑在隔离的 IPython kernel 里出可视化图表；\n- Image 和 Video 接了 Gemini、Sora、Veo 多个模…",
+      "url": "https://x.com/i/status/2058295886963171814",
+      "source": "X/Twitter",
+      "author": "@FakeMaidenMaker",
+      "date": "2026-05-24",
+      "time": "05:15",
+      "likes": 19,
+      "views": 1790
+    },
+    {
       "title": "Some of you noticed limits drained faster in Codex, we root caused it to an optimization that we rolled back that had an impact on cache hit rates when compacting across long running sessions.",
       "summary": "We fixed this and have now reset usage limits for all accounts. Enjoy the weekend.",
       "url": "https://x.com/i/status/2058280452851638313",
@@ -100,6 +254,17 @@
       "time": "02:44",
       "likes": 30,
       "views": 1634
+    },
+    {
+      "title": "Hermes Agent is the most powerful AI tool right now",
+      "summary": "The issue is, almost nobody knows how to use it properly\n\nIn this video I show you 6 use cases for Hermes I promise will completely change how you work: https://t.co/zKocIWKuzk",
+      "url": "https://x.com/i/status/2058253367328313789",
+      "source": "X/Twitter",
+      "author": "@AlexFinn",
+      "date": "2026-05-24",
+      "time": "02:26",
+      "likes": 1143,
+      "views": 72769
     },
     {
       "title": "@bughuntergeek Niiiiice!",
@@ -267,6 +432,17 @@
       "views": 3480
     },
     {
+      "title": "ANTHROPIC 🔥: Mythos class models are expected to become generally available after getting stronger safeguards, according to the latest Project Glasswing update.",
+      "summary": "> And in the near future, once we’ve developed the far stronger safeguards we need, we look forward to making Mythos-class models available through a general release.\n\nSoon? 👀",
+      "url": "https://x.com/i/status/2057949989729419559",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "06:21",
+      "likes": 1333,
+      "views": 150322
+    },
+    {
       "title": "Please run claude update, or update the Claude desktop app to the latest version.",
       "summary": "Docs: https://t.co/8Ur6DJhp2f",
       "url": "https://x.com/i/status/2057946804743012635",
@@ -342,6 +518,17 @@
       "time": "01:35",
       "likes": 76,
       "views": 6780
+    },
+    {
+      "title": "DeepSeek permanently reduced pricing for DeepSeek V4 Pro by 75%!",
+      "summary": "&gt; $0.003625 per million input tokens (with cache)\n&gt; $0.435 per million input tokens. \n&gt; $0.87 per million output tokens. \n\nCache is almost free 👀 https://t.co/6XrrA8wgaU",
+      "url": "https://x.com/i/status/2057873107726041177",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-23",
+      "time": "01:15",
+      "likes": 1842,
+      "views": 108810
     },
     {
       "title": "Claude Code team just dropped a 27-minute workshop on shipping production agents from scratch",
@@ -617,6 +804,17 @@
       "time": "06:00",
       "likes": 6,
       "views": 1251
+    },
+    {
+      "title": "GOOGLE 🔥: Pomelli can now generate and host a landing page website based on your Brand DNA in 2 clicks! Brand Books generation is now available as well.",
+      "summary": "Testing time 👀 https://t.co/cqp0CWS3OI",
+      "url": "https://x.com/i/status/2057582433214591224",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-22",
+      "time": "06:00",
+      "likes": 261,
+      "views": 22503
     },
     {
       "title": "Claude Code 2.1.147 has been released.",
@@ -2201,6 +2399,17 @@
       "time": "21:14",
       "likes": 862,
       "views": 144319
+    },
+    {
+      "title": "@damngamero Duno but I hope it will land there too 🤞",
+      "summary": "",
+      "url": "https://x.com/i/status/2056360244020646155",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-18",
+      "time": "21:04",
+      "likes": 0,
+      "views": 1126
     },
     {
       "title": "GOOGLE 🔥: Gemini desktop app will get Gemini Live, Gemini Spark, Gemini Omni, and a new \"Stream to Cursor\" feature.",
@@ -6416,6 +6625,17 @@
       "views": 1121780
     },
     {
+      "title": "One of the most overlooked AI opportunities in the next 24 months is voice agents for boring businesses.",
+      "summary": "Every HVAC, plumbing, and pest control company in America is sending calls to voicemail after 5pm. One AI voice agent fixes it overnight. \n\nMost owners have never even heard of this technology, yet alone know how to implement it. \n\nThe person who packages this up and sells it to 500 of them is going…",
+      "url": "https://x.com/i/status/2050235563706310886",
+      "source": "X/Twitter",
+      "author": "@Codie_Sanchez",
+      "date": "2026-05-01",
+      "time": "23:27",
+      "likes": 1673,
+      "views": 352211
+    },
+    {
       "title": "终于！历时 3 天打磨，来自日本、德国、巴西、韩国等朋友的支持 💪",
       "summary": "支持 72+ 图片和视频模板、 open-design 正式支持全模态设计！🔥\n\ngpt-image 2、seedance 2、免费的 hyperframes！\n\n推特上最顶级提示词、模板直接用，每个人都能用顶级图片做顶级的设计🔥\n\n关注进展 👉 https://t.co/7fuhR3IQ5a https://t.co/HdqPUzf4kc",
       "url": "https://x.com/i/status/2050202245447168315",
@@ -7250,6 +7470,17 @@
       "time": "22:57",
       "likes": 21131,
       "views": 17798946
+    },
+    {
+      "title": "GPT-5.2-Codex rolling out to @code now https://t.co/EYRfYFQZGq",
+      "summary": "",
+      "url": "https://x.com/i/status/2011503658815668623",
+      "source": "X/Twitter",
+      "author": "@code",
+      "date": "2026-01-15",
+      "time": "02:20",
+      "likes": 1388,
+      "views": 144588
     },
     {
       "title": "Claude Code usage data shows engineers are delegating increasingly complex tasks, with more consecutive tool calls and fewer human turns per conversation. https://t.co/tmcng7kkA8",
