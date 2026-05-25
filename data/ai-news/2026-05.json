@@ -1,7 +1,73 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-25T18:00:01+08:00",
+  "lastUpdate": "2026-05-25T18:02:44+08:00",
   "articles": [
+    {
+      "title": "中華パねぇ。",
+      "summary": "アリエクで買った格安プロジェクターがマルウェア入り、接続するだけで自宅IPが売られていた https://t.co/zSjbGPuPIT @FabScenejpから",
+      "url": "https://x.com/i/status/2058836678543131078",
+      "source": "X/Twitter",
+      "author": "@kinoto_chan",
+      "date": "2026-05-25",
+      "time": "17:04",
+      "likes": 1,
+      "views": 19
+    },
+    {
+      "title": "平时刷抖音看到一些电影解说视频，自己想做得找素材、写脚本、配音再剪辑，实在耗时耗力直接被劝退。",
+      "summary": "偶然看到 narrator-ai-cli-skill 这个项目，让 AI Agent 学会做电影解说视频，全程自动化。\n\n只需对着 AI 说一句「帮我做一个电影解说」，就会自动搜索影片、选模板、配音乐、生成脚本、合成视频。\n\nGitHub：https://t.co/oWqUSVFLsu\n\n内置了约 100 部电影资源、146 首背景音乐、63 种配音声线和 90 多套解说模板。\n\n支持改编解说和原创解说两种创作路径，还能单独做声音克隆和文字转语音。\n\n兼容 Claude Code、Cursor、Windsurf 等主流 AI 编程工具。\n\n一行命令即可安装完成，想做电影解说号的朋友可以试试。",
+      "url": "https://x.com/i/status/2058812822700872106",
+      "source": "X/Twitter",
+      "author": "@GitHub_Daily",
+      "date": "2026-05-25",
+      "time": "15:30",
+      "likes": 20,
+      "views": 1904
+    },
+    {
+      "title": "想做量化，会玩AI Agent的都看过来，这个是真的能赚钱！",
+      "summary": "过去量化听起来就是程序员和数学家的事，普通人卡在代码、API、回测这些工程环节上。现在智能体帮忙之后，一个人就能把想法分解成步骤：写需求、搭建框架、接入数据、运行测试、修复问题。门槛确实被拉下来不少。\n\n分享里重点提了8个方向。信号层要前后统一，回测和实盘不能用两套规则；K线形态、背离、支撑压力这些手动判断的形态尽量参数化；先拿BTC和ETH这些流动性好的币种验证系统，别急着去追小币的假信号。\n\n他们搭建的系统，手动胜率95%以上，自动化实盘测试也75%+。全靠这几位老师 @damobianyuan  @dajingou1 @PWenzhen76938 @fan128168  的开发和风控，真…",
+      "url": "https://x.com/i/status/2058807400422093177",
+      "source": "X/Twitter",
+      "author": "@0xMulight",
+      "date": "2026-05-25",
+      "time": "15:08",
+      "likes": 5,
+      "views": 671
+    },
+    {
+      "title": "The Injective Nova Program is officially live with @Microsoft and @Web3Labs_Club.",
+      "summary": "A pipeline from idea to production, powered by Azure AI and Injective's agent stack.\n\nOpening ceremony 👉️  May 25, 2PM (UTC+8). \n\nFollow @InjectiveLabsCN for the livestream.\n\nBe the Nova. 💫 https://t.co/10sPCXyOnC",
+      "url": "https://x.com/i/status/2058760548674613417",
+      "source": "X/Twitter",
+      "author": "@injective",
+      "date": "2026-05-25",
+      "time": "12:02",
+      "likes": 292,
+      "views": 6031
+    },
+    {
+      "title": "今天推荐一个最近蛮火的开源 AI 工程课程，非常适合想把 AI 工程从底层补到 agent 实战的人。",
+      "summary": "路线从线性代数、反向传播、tokenizer、attention，一路排到 LLM、agent loop、MCP、多智能体和生产部署，一共 20 个阶段、435 节课，约 320 小时\n\n每节课都会先把问题和数学推出来，再手写一版小实现，然后用 PyTorch / sklearn 复现，最后留下一个 prompt、skill、agent 或 MCP server\n\n仓库里还放了 /find-your-level 和 /check-understanding，前者用 10 个问题帮你找起点，后者按阶段测理解。",
+      "url": "https://x.com/i/status/2058760326154473737",
+      "source": "X/Twitter",
+      "author": "@chuhaiqu",
+      "date": "2026-05-25",
+      "time": "12:01",
+      "likes": 21,
+      "views": 3667
+    },
+    {
+      "title": "兄弟们，AI 拍视频卷到这种程度了？？",
+      "summary": "刚刷到这个 Seedance2-skill，直接给我看傻了 👇\n\n🔗 https://t.co/pwPSegz3FC\n\n1️⃣ 电影级提示词外挂，专门喂字节 Seedance 2.0（即梦）\n2️⃣ 教 AI 写镜头语言、分镜结构、@素材引用，全是专业那一套\n3️⃣ 塞进 Cursor、Claude Code 里直接用，一键出片\n\n以前写 prompt 靠玄学，现在直接抄作业，普通人也能拍出运镜大片，这波是真的要把视频制作门槛踩到地板了。",
+      "url": "https://x.com/i/status/2058719981794406443",
+      "source": "X/Twitter",
+      "author": "@NFTCPS",
+      "date": "2026-05-25",
+      "time": "09:21",
+      "likes": 318,
+      "views": 18104
+    },
     {
       "title": "Microsoft is quietly taking over the Enterprise AI Agent stack.",
       "summary": "And most people have only seen ~10% of it.\n\nEveryone talks about Copilot.\nSome know Azure.\nA few use GitHub Copilot.\n\nBut underneath...\n\nMicrosoft has built a full-stack AI ecosystem\n—from models → to agents → to governance.\n\nHere’s the full breakdown 👇\n\n📌 1. Models (the brain)\nAzure GPT-5.1, Phi-4,…",
@@ -47,6 +113,17 @@
       "views": 81501
     },
     {
+      "title": "@RayLin_AI Yesss, this is the way 👀",
+      "summary": "",
+      "url": "https://x.com/i/status/2058583731032539391",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "00:19",
+      "likes": 18,
+      "views": 2941
+    },
+    {
       "title": "CODEX SKILL THAT CREATES A REAL PHONE APP IN LESS THAN 10 MINUTES!",
       "summary": "I made a Codex skill that turns a prompt into a mobile app running on your actual phone. \n\nNo Xcode setup.\nNo TestFlight. \nNo App Store waiting.  \n\nJust: Codex + Expo Go + QR code.  \n\nI built a workflow that lets Codex create and iterate mobile apps live:  \n\n-> create an Expo/React Native app \n-> st…",
       "url": "https://x.com/i/status/2058578772585074958",
@@ -89,6 +166,17 @@
       "time": "22:14",
       "likes": 49,
       "views": 6641
+    },
+    {
+      "title": "People often ask what my biggest tip is for getting the most out of Claude Code.",
+      "summary": "These days my #1 tip is: use auto mode\n\nAuto mode means no more permission prompts. It is the key building block for multi-clauding: start a session, then while it runs, work on another session in parallel.",
+      "url": "https://x.com/i/status/2058519809214607704",
+      "source": "X/Twitter",
+      "author": "@bcherny",
+      "date": "2026-05-24",
+      "time": "20:05",
+      "likes": 4435,
+      "views": 687708
     },
     {
       "title": "Rookie Clown",
@@ -146,6 +234,17 @@
       "views": 50
     },
     {
+      "title": "各位好，这真的是我最后一个关于Anthropic的故事了，本视频由seedance2制作完成。感谢你一直以来对我的关注。结尾有彩蛋。 https://t.co/ER5lUqrpXq",
+      "summary": "",
+      "url": "https://x.com/i/status/2058458683781365873",
+      "source": "X/Twitter",
+      "author": "@CuiMao",
+      "date": "2026-05-24",
+      "time": "16:02",
+      "likes": 2706,
+      "views": 814313
+    },
+    {
       "title": "@zoncat_i 和cc聊似乎也会关联到官端的发牌…实在想搓前端可以试试codex！",
       "summary": "",
       "url": "https://x.com/i/status/2058435739659206693",
@@ -188,6 +287,17 @@
       "time": "11:37",
       "likes": 36,
       "views": 2647
+    },
+    {
+      "title": "别再花几千块买“AI 工程师速成课”了。",
+      "summary": "今天 GitHub 热榜上有个开源课程很离谱：AI Engineering from Scratch。\n\n435 节课，20 个阶段，从线性代数一路讲到 autonomous agent swarms，全程免费开源。\n\n这比那种“10 分钟学会 Transformer”的内容靠谱太多了。\n\n碎片化教程会让人兴奋，系统化路线才会让人变强。\n\n🔗 https://t.co/TmDV8XxF9L",
+      "url": "https://x.com/i/status/2058388265712119914",
+      "source": "X/Twitter",
+      "author": "@xiaofeilong99",
+      "date": "2026-05-24",
+      "time": "11:23",
+      "likes": 30,
+      "views": 10640
     },
     {
       "title": "2 hours a day, 5-7 videos shipped, $12,000/mo from youtube ad revenue, zero face on camera",
@@ -309,6 +419,17 @@
       "time": "18:43",
       "likes": 117,
       "views": 9202
+    },
+    {
+      "title": "@VigoCreativeAI 哈哈 统一 Agent 交互了",
+      "summary": "",
+      "url": "https://x.com/i/status/2058100701176451429",
+      "source": "X/Twitter",
+      "author": "@op7418",
+      "date": "2026-05-23",
+      "time": "16:20",
+      "likes": 1,
+      "views": 821
     },
     {
       "title": "Claude Code 2.1.150 — additional changes",
@@ -520,6 +641,17 @@
       "views": 6780
     },
     {
+      "title": "Big fan of teaching more people the basics of using Claude Code in an accessible way.",
+      "summary": "So much of the world has not yet used agents. There's a lot of opportunity to level the playing field and expand access.",
+      "url": "https://x.com/i/status/2057876668501434603",
+      "source": "X/Twitter",
+      "author": "@bcherny",
+      "date": "2026-05-23",
+      "time": "01:30",
+      "likes": 3278,
+      "views": 554918
+    },
+    {
       "title": "DeepSeek permanently reduced pricing for DeepSeek V4 Pro by 75%!",
       "summary": "&gt; $0.003625 per million input tokens (with cache)\n&gt; $0.435 per million input tokens. \n&gt; $0.87 per million output tokens. \n\nCache is almost free 👀 https://t.co/6XrrA8wgaU",
       "url": "https://x.com/i/status/2057873107726041177",
@@ -562,6 +694,17 @@
       "time": "00:01",
       "likes": 96,
       "views": 39712
+    },
+    {
+      "title": "ICYMI: Imagine Agent is now available on Grok for iOS!",
+      "summary": "Have you tested it yet? 👀 https://t.co/KrLlz2ocpN",
+      "url": "https://x.com/i/status/2057842710346682721",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-22",
+      "time": "23:15",
+      "likes": 173,
+      "views": 14359
     },
     {
       "title": "We've hit a strange inflection point in the AI stack.",
@@ -1708,6 +1851,17 @@
       "views": 2203
     },
     {
+      "title": "A new Audio Glasses concept! https://t.co/ubgoYjXKeG",
+      "summary": "",
+      "url": "https://x.com/i/status/2056806085290344796",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "02:35",
+      "likes": 10,
+      "views": 957
+    },
+    {
       "title": "Scott Wu (@ScottWu46) runs @cognition, the team behind Devin, an AI software engineer built on Claude.",
       "summary": "He wants to make building software 10x faster for every engineering team: https://t.co/5AKOp2vXE6",
       "url": "https://x.com/i/status/2056805728774402428",
@@ -1728,6 +1882,17 @@
       "time": "02:34",
       "likes": 140,
       "views": 39356
+    },
+    {
+      "title": "New Google Flow features 👀 https://t.co/3Yj9EnLIAW",
+      "summary": "",
+      "url": "https://x.com/i/status/2056804473385742703",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-20",
+      "time": "02:29",
+      "likes": 10,
+      "views": 813
     },
     {
       "title": "Google Pics, a new app for image generation https://t.co/8JTeRGjaC3",
@@ -2069,6 +2234,17 @@
       "time": "18:50",
       "likes": 53,
       "views": 7051
+    },
+    {
+      "title": "Anthropic announced self-hosted sendboxes and MCP tunnels for Claude Managed Agents during its \"Code with Claude\" event in London.",
+      "summary": "> With self-hosted sandboxes, you keep sensitive files, packages, and services in your own infrastructure or with a managed sandbox provider.\n\n> With MCP tunnels, your agents reach MCP servers inside your private network without exposing them to the public internet.",
+      "url": "https://x.com/i/status/2056681929915699404",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-19",
+      "time": "18:22",
+      "likes": 384,
+      "views": 40200
     },
     {
       "title": "GOOGLE 🔥: A new AI Studio mobile app is now available on Google Play for pre-registration!",
@@ -2608,6 +2784,17 @@
       "time": "17:02",
       "likes": 1,
       "views": 36
+    },
+    {
+      "title": "🚨 STOP BURNING YOUR TOKENS!",
+      "summary": "If you use Claude Code, you are probably wasting 80% of your context window.\n\nI found 10 ace tools that will completely rescue your API bill.\n\n1. Caveman Claude\n- Literally makes Claude talk like a caveman\n- Slashes 75% of output tokens with zero loss in accuracy\nRepo → https://t.co/eEvSOvHutG\n\n2. R…",
+      "url": "https://x.com/i/status/2055929071733743693",
+      "source": "X/Twitter",
+      "author": "@DataChaz",
+      "date": "2026-05-17",
+      "time": "16:31",
+      "likes": 846,
+      "views": 149839
     },
     {
       "title": "SPACEXAI 🔥: The next version of Grok, based on the 1.5T V9 base model has finished training. Looks like we will get a major upgrade this summer.",
@@ -3972,6 +4159,17 @@
       "time": "17:47",
       "likes": 787,
       "views": 103000
+    },
+    {
+      "title": "If you build AI agents for work, like B2B workflows, internal copilots, or long-horizon automation, the token cost is the ceiling you hit eventually. OpenSquilla is built to push it back.",
+      "summary": "OpenSquilla also runs a “10M Token Bill Challenge”, which is now live.\n\nStar the repo and get free tokens to test it against your stack👇 \nhttps://t.co/YjiE0TtHNw\n#10MTokenChallenge @OpenSquilla",
+      "url": "https://x.com/i/status/2054855679085547731",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-14",
+      "time": "17:25",
+      "likes": 12,
+      "views": 3541
     },
     {
       "title": "GOOGLE 🔥: A new Gemini Spark Agent is about to be revealed during Google I/O. Gemini Spark will work as a 24/7 assistant that can learn from user behavior and work with connected apps and skills.",
@@ -5437,6 +5635,17 @@
       "views": 148824
     },
     {
+      "title": "闲鱼无货源实操系列课程",
+      "summary": "https://t.co/Tx5s4cMgP3\n生财有术（第八期）知识星球2024.04-2025.04（完结）\nhttps://t.co/9yJ9yMt6Ws\nCoze扣子工作流Ai Agent教程\nhttps://t.co/ArtjYY6EK1\n千梦同学《AI编程超级课》\nhttps://t.co/ztBVBRZaEx\n从入门到大师AI实战课\nhttps://t.co/FYrVEKOVM8",
+      "url": "https://x.com/i/status/2053137524630163883",
+      "source": "X/Twitter",
+      "author": "@li18875786",
+      "date": "2026-05-09",
+      "time": "23:38",
+      "likes": 59,
+      "views": 5107
+    },
+    {
       "title": "🔥别再高价冲AI会员了！",
       "summary": "✅Claude Pro尼区注册=半价\n✅ChatGPT Plus土区Apple ID=半价\n不用原价20刀，直接省一半！claude +codex  双剑合璧\n\n全套小白保姆级教程已备好👇\n手慢无，速冲💨\n\n#AI省钱 #ChatGPT #ClaudePro https://t.co/YnCGlgAmJ4",
       "url": "https://x.com/i/status/2053118326449332355",
@@ -5490,6 +5699,17 @@
       "time": "14:48",
       "likes": 11,
       "views": 6252
+    },
+    {
+      "title": "Claude Code CLI 2.1.138 changelog:",
+      "summary": "Other change:\n• Internal fixes\n\nSource: https://t.co/sb1YJJPZ64",
+      "url": "https://x.com/i/status/2053004192814367056",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-09",
+      "time": "14:48",
+      "likes": 8,
+      "views": 7334
     },
     {
       "title": "Claude Code 2.1.138 is about to be released",
@@ -5556,6 +5776,17 @@
       "time": "06:40",
       "likes": 192,
       "views": 15636
+    },
+    {
+      "title": "@Dimillian Codex cooked",
+      "summary": "",
+      "url": "https://x.com/i/status/2052854976582762698",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-09",
+      "time": "04:55",
+      "likes": 0,
+      "views": 14700
     },
     {
       "title": "Correction for 2.1.136: the Bun hot-module-reload lines were an extraction artifact. Re-extracting the native prompt shows no meaningful system-prompt changes vs 2.1.133. Fixed cc-prompt + release notes: https://t.co/DbsQ332aeJ",
@@ -6152,6 +6383,17 @@
       "views": 243093
     },
     {
+      "title": "Outcomes lets you set the bar for quality. You write a rubric, a separate grader checks the output, and the agent iterates until it gets there.",
+      "summary": "Subscribe to webhooks to get notified when it's done.",
+      "url": "https://x.com/i/status/2052067403228455419",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-07",
+      "time": "00:46",
+      "likes": 701,
+      "views": 120831
+    },
+    {
       "title": "We’ve agreed to a partnership with @SpaceX that will substantially increase our compute capacity.",
       "summary": "This, along with our other recent compute deals, means that we’ve been able to increase our usage limits for Claude Code and the Claude API.",
       "url": "https://x.com/i/status/2052060691893227611",
@@ -6546,6 +6788,17 @@
       "time": "01:00",
       "likes": 2027,
       "views": 563798
+    },
+    {
+      "title": "GPT的images2 ＋seedance2.0绝对是制作AI漫剧的最佳组合：",
+      "summary": "完整提示词流程：\nStep 0：构思剧情（脚本）\nStep 1：生成3×3故事板（核心）\nStep 2：统一角色设定（防崩）\nStep 3：生成Seedance视频提示词（导演级）\nStep 4：在Seedance中用image作为参考生成视频\nStep 5：后期（字幕 / 节奏 / 发布）\n\n完整的提示词我放在评论区。\n\n事实上我这个并不算特别好的案例（五一时间有限，见谅），完美的案例可以参考这个帖子：\nhttps://t.co/7T1Il1llG5",
+      "url": "https://x.com/i/status/2050449563773981106",
+      "source": "X/Twitter",
+      "author": "@0xtonixie",
+      "date": "2026-05-02",
+      "time": "13:37",
+      "likes": 119,
+      "views": 15464
     },
     {
       "title": "Meta acquired Assured Robot Intelligence, a startup developing AI models for robots.",
@@ -7032,6 +7285,17 @@
       "views": 456925
     },
     {
+      "title": "Claude Code 值得安装的几个skills都整理好了",
+      "summary": "1、Claude Mem - 给 Claude 装记忆，不用重复描述需求\nhttps://t.co/5ChzRdhprE\n2、Obsidian Skills - 让 Claude 真正理解你的上下文\nhttps://t.co/g6spwT42KN\n3、GSD - 让 Claude 真正干活，不是瞎扯\nhttps://t.co/ZLDDXT9iOd\n4、LightRAG - 知识图谱，Claude 秒变专家\nhttps://t.co/8PLNkTm7Re\n5、Superpowers - 给 Claude 装上超能力\nhttps://t.co/yACrQPPpfB \n6、Everything Cl…",
+      "url": "https://x.com/i/status/2048537609308344658",
+      "source": "X/Twitter",
+      "author": "@WY_mask",
+      "date": "2026-04-27",
+      "time": "07:00",
+      "likes": 1384,
+      "views": 149352
+    },
+    {
       "title": "Create custom logo animations with ChatGPT Images 2.0 and Seedance 2.0.",
       "summary": "Images 2.0 can create an animation sheet for how a logo should appear.\n\nThis can be quite detailed, to help the AI video tool guide how long each section takes.\n\nMore in the comments: https://t.co/okkKlzcMbg",
       "url": "https://x.com/i/status/2048514264043045266",
@@ -7096,6 +7360,17 @@
       "time": "23:04",
       "likes": 30067,
       "views": 7237011
+    },
+    {
+      "title": "歸藏大佬的 PPT SKill 终于来了，审美依旧没对手，可以吧之前的 PPT SKill 换掉了",
+      "summary": "配合刚出的 GPT5.5 和 新版 Codex，简直无敌\n\nhttps://t.co/5gT550Fitg https://t.co/LfR9b4PKza",
+      "url": "https://x.com/i/status/2047494444857913663",
+      "source": "X/Twitter",
+      "author": "@gkxspace",
+      "date": "2026-04-24",
+      "time": "09:54",
+      "likes": 1369,
+      "views": 263274
     },
     {
       "title": "Memory on Claude Managed Agents is now in public beta.",
@@ -7206,6 +7481,17 @@
       "time": "05:33",
       "likes": 1100,
       "views": 255540
+    },
+    {
+      "title": "刚发现一个疯狂的开源项目：Claude-Code-Game-Studios。",
+      "summary": "11,574 stars，今天涨了1,107星。\n\n它是什么？\n\n一个完全由AI Agent组成的游戏开发工作室。\n\n听起来很科幻对吧？\n但你知道这解决了多大的痛点吗？\n以前做游戏，需要程序员、美术、策划、测试...\n一个小团队都要5-10人。\n\n现在，这个项目用49个AI Agent，\n分工协作，各负责一个环节：\n有的写代码，有的画素材，有的测bug，有的优化性能。\n72个工作流技能，覆盖完整开发流程。\n\n更狠的是，这些Agent用Claude Code驱动，\n能自主决策、自我纠错、协同工作。\n\n我翻了下他们的demo游戏，\n虽然还很简单，但完整度惊人——\n从概念到可玩版本，全Agent完成…",
+      "url": "https://x.com/i/status/2045360925289361858",
+      "source": "X/Twitter",
+      "author": "@AI_jacksaku",
+      "date": "2026-04-18",
+      "time": "12:37",
+      "likes": 2080,
+      "views": 161165
     },
     {
       "title": "The Claude Code hackathon is back for Opus 4.7.",
@@ -7340,6 +7626,17 @@
       "views": 54783
     },
     {
+      "title": "好  我承认我就是个懒b",
+      "summary": "昨天我才赚了14块5😂\n\n说实话 我claude code工作流都搭好了，非常nice 一键触发，就是懒 https://t.co/rcTlp4zQay",
+      "url": "https://x.com/i/status/2036702978418295176",
+      "source": "X/Twitter",
+      "author": "@sichen250639",
+      "date": "2026-03-25",
+      "time": "15:13",
+      "likes": 1580,
+      "views": 484784
+    },
+    {
       "title": "New on the Anthropic Engineering Blog:",
       "summary": "How we use a multi-agent harness to push Claude further in frontend design and long-running autonomous software engineering.\n\nRead more: https://t.co/HWvmXk1ykn",
       "url": "https://x.com/i/status/2036481033621623056",
@@ -7404,6 +7701,17 @@
       "time": "01:54",
       "likes": 208,
       "views": 97802
+    },
+    {
+      "title": "New in Claude Code: Remote Control.",
+      "summary": "Kick off a task in your terminal and pick it up from your phone while you take a walk or join a meeting. \n\nClaude keeps running on your machine, and you can control the session from the Claude app or https://t.co/er6Blrr63e https://t.co/FxUVDecyVJ",
+      "url": "https://x.com/i/status/2026418433911603668",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-02-25",
+      "time": "06:06",
+      "likes": 44534,
+      "views": 10069670
     },
     {
       "title": "We’re partnering with @AMD to integrate their GPUs into our infrastructure—that means more compute power to bring our AI experiences to even more people. https://t.co/XHCSOi5uTy",
