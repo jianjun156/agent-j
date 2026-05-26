@@ -1,7 +1,62 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-26T18:00:01+08:00",
+  "lastUpdate": "2026-05-26T18:02:53+08:00",
   "articles": [
+    {
+      "title": "@littleironwaltz There is no evidence at this moment 😁",
+      "summary": "Would be for sure interesting to play with it 👌",
+      "url": "https://x.com/i/status/2059182356771062186",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-26",
+      "time": "15:58",
+      "likes": 1,
+      "views": 24
+    },
+    {
+      "title": "Claude-Bughunter is a drop-in skill bundle that transforms Claude Code into a senior bug-hunting researcher and red-team operator with 51 skills and 15 commands.",
+      "summary": "- 574+ disclosed report patterns across 24 vulnerability classes\n- Enterprise platform attack chains for M365, Okta, VMware, and VPN appliances\n- 5-phase non-linear hunting workflow with critical-thinking framework\n- Automated engagement-folder scaffolding and Burp MCP integration\n\nExplore it here:\n…",
+      "url": "https://x.com/i/status/2059172145453019389",
+      "source": "X/Twitter",
+      "author": "@GithubProjects",
+      "date": "2026-05-26",
+      "time": "15:17",
+      "likes": 39,
+      "views": 2690
+    },
+    {
+      "title": "@littleironwaltz This model no. But Mythos grade models likely yes.",
+      "summary": "Yet it is very unclear how broad the availability would be 👀",
+      "url": "https://x.com/i/status/2059168989582958789",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-26",
+      "time": "15:05",
+      "likes": 1,
+      "views": 135
+    },
+    {
+      "title": "网站抓取永不被封杀手级开源神器",
+      "summary": "https://t.co/Pq8vH2ZDXO\n\n这就是 Crawl4AI，专为 AI Agent 设计的下一代智能爬虫神器！把任意网站秒变成干净、可直接喂给 LLM 的 Markdown / 结构化数据，内置超强反封锁机制，再也不用担心被 Cloudflare、Akamai、PerimeterX、DataDome 等各种防护狂封了！ https://t.co/GmgYeAlFgA",
+      "url": "https://x.com/i/status/2059142729758888184",
+      "source": "X/Twitter",
+      "author": "@GitTrend0x",
+      "date": "2026-05-26",
+      "time": "13:20",
+      "likes": 27,
+      "views": 3527
+    },
+    {
+      "title": "AI Agent 相关项目现在多到离谱：编程 Agent、浏览器 Agent、语音 Agent、多 Agent 框架、低代码自动化工具……想系统找一圈，很容易被一堆名字淹没。",
+      "summary": "GitHub 上这个 awesome-ai-agents-2026，整理了一份 2026 版 AI Agent 工具和资源清单。\n\nGitHub：https://t.co/f2p3yah9Q0\n\n它收录了 340+ 个资源，按 20+ 个类别组织，比较适合拿来做选型入口。\n\n里面不只是列产品名，还把不同类型分得比较细：\n- Coding Agents：IDE 原生、终端 CLI、自主软件工程、代码审查、安全等\n- Agent Frameworks：通用框架、多 Agent 编排、轻量模板\n- Voice / Browser / Workflow / App Builder 等具体使用场景\n- …",
+      "url": "https://x.com/i/status/2059107331473129855",
+      "source": "X/Twitter",
+      "author": "@wsl8297",
+      "date": "2026-05-26",
+      "time": "11:00",
+      "likes": 17,
+      "views": 793
+    },
     {
       "title": "BASE INDEX is live.",
       "summary": "every major Base project queryable by any AI agent via one MCP endpoint.\n\n→ top 50 by 24h volume\n→ live market data (price · 24h% · volume · liquidity)\n→ each project = its own compute_baseindex_* tool, addressable\n  from Claude Desktop / Cursor / any MCP client\n\nhttps://t.co/Ag2CVIGSv3\n\ndrop your B…",
@@ -12,6 +67,17 @@
       "time": "07:37",
       "likes": 10,
       "views": 155
+    },
+    {
+      "title": "We’re thrilled to announce the Antigravity CLI, a lightweight way to spin up the same Antigravity agents right from the terminal. 💻",
+      "summary": "It gives you the exact same harness and same models, with a product experience tailored for the command line. It adapts entirely to you: your keybindings, your themes, your workflows.\n\nFull Antigravity CLI Walkthrough:",
+      "url": "https://x.com/i/status/2058990383011397902",
+      "source": "X/Twitter",
+      "author": "@antigravity",
+      "date": "2026-05-26",
+      "time": "03:15",
+      "likes": 1708,
+      "views": 128595
     },
     {
       "title": "Grok Build is now available in Beta for all SuperGrok and X Premium+ users.",
@@ -34,6 +100,17 @@
       "time": "01:35",
       "likes": 67,
       "views": 10413
+    },
+    {
+      "title": "刚看完AirOps在Claude大会上的分享，干货满满🔥",
+      "summary": "他们从复杂的workflow builder转型到agent-based approach的思路很有意思。最戳我的是这个\"harness engineering\"的比喻——把AI模型比作引擎，但真正重要的是周围那一圈东西（tools, context, guardrails等）。\n\n核心观点：\n- 用markdown文件编排agent，而不是写代码\n- 通过subagents（brand compliance/writer/brand kit）来保证输出质量\n- 每次解决问题后，friction point会移动，要持续chase friction\n\n结果也很硬核：token消耗减少80%，速…",
+      "url": "https://x.com/i/status/2058944327364051337",
+      "source": "X/Twitter",
+      "author": "@VincentLogic",
+      "date": "2026-05-26",
+      "time": "00:12",
+      "likes": 38,
+      "views": 4233
     },
     {
       "title": "new unlimited Seedance promo.",
@@ -78,6 +155,17 @@
       "time": "20:42",
       "likes": 188,
       "views": 10881
+    },
+    {
+      "title": "ねこにゃんと遊ぶ🐈",
+      "summary": "seedance2.0 https://t.co/tkKoLZB9fN",
+      "url": "https://x.com/i/status/2058881138882740277",
+      "source": "X/Twitter",
+      "author": "@keshiAIart",
+      "date": "2026-05-25",
+      "time": "20:01",
+      "likes": 9279,
+      "views": 319090
     },
     {
       "title": "435节课，20个阶段，320小时，建完数学建神经网络。",
@@ -157,6 +245,17 @@
       "views": 4476
     },
     {
+      "title": "实时互动 AI 数字人终于眨眼级响应了！",
+      "summary": "https://t.co/9g35zcc2M8\n\n以前做 AI Agent 多尴尬？\n\n要么只是个聊天框，要么是机器人配音，冰冷、生硬、没灵魂，用户聊两句就跑。\n\n想做客服，销售、培训、语言教学……一上脸就穿帮，延迟还高得离谱，用户体验直接拉胯。现在好了，https://t.co/v7u42l1QUW 直接把数字人干到生产级实时互动，180ms 平均响应速度（比眨眼还快！），彻底把 AI 有脸这件事做成了现实。",
+      "url": "https://x.com/i/status/2058793544333344785",
+      "source": "X/Twitter",
+      "author": "@0xKingsKuan",
+      "date": "2026-05-25",
+      "time": "14:13",
+      "likes": 44,
+      "views": 8933
+    },
+    {
       "title": "The Injective Nova Program is officially live with @Microsoft and @Web3Labs_Club.",
       "summary": "A pipeline from idea to production, powered by Azure AI and Injective's agent stack.\n\nOpening ceremony 👉️  May 25, 2PM (UTC+8). \n\nFollow @InjectiveLabsCN for the livestream.\n\nBe the Nova. 💫 https://t.co/10sPCXyOnC",
       "url": "https://x.com/i/status/2058760548674613417",
@@ -188,6 +287,17 @@
       "time": "11:31",
       "likes": 647,
       "views": 39999
+    },
+    {
+      "title": "Using computer use, you can ask codex to cancel subscriptions you don't need anymore. Very pleasant to watch. No particular one in mind, works on all of them.",
+      "summary": "https://t.co/Q2mNyiCPba",
+      "url": "https://x.com/i/status/2058748717155664162",
+      "source": "X/Twitter",
+      "author": "@thsottiaux",
+      "date": "2026-05-25",
+      "time": "11:15",
+      "likes": 3014,
+      "views": 256010
     },
     {
       "title": "兄弟们，AI 拍视频卷到这种程度了？？",
@@ -289,6 +399,17 @@
       "views": 13813
     },
     {
+      "title": "ANTHROPIC 🔥: Claude will soon receive a new file-based memory upgrade, offering users the option to choose between Memory Files and Classic memory.",
+      "summary": "> Organized notes Claude writes as you chat and reads when they're relevant. Browse and edit them anytime.\n\nThis feature appears to be a new iteration of the previously discovered \"Knowledge Bases\" and more closely resembles what memory works in always-on agents like OpenClaw and Hermes. \n\nConsideri…",
+      "url": "https://x.com/i/status/2058579152387653841",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "00:01",
+      "likes": 2207,
+      "views": 397785
+    },
+    {
       "title": "CODEX SKILL THAT CREATES A REAL PHONE APP IN LESS THAN 10 MINUTES!",
       "summary": "I made a Codex skill that turns a prompt into a mobile app running on your actual phone. \n\nNo Xcode setup.\nNo TestFlight. \nNo App Store waiting.  \n\nJust: Codex + Expo Go + QR code.  \n\nI built a workflow that lets Codex create and iterate mobile apps live:  \n\n-> create an Expo/React Native app \n-> st…",
       "url": "https://x.com/i/status/2058578772585074958",
@@ -320,6 +441,17 @@
       "time": "22:19",
       "likes": 236,
       "views": 46075
+    },
+    {
+      "title": "One Piece meets Naruto in this incredible 3D animation",
+      "summary": "the Admirals have met their match. Even Madara steps onto the battlefield to settle the score with Akainu.\n\nMade with seedance 2.0 https://t.co/9Do5aOBqcA",
+      "url": "https://x.com/i/status/2058553493791924242",
+      "source": "X/Twitter",
+      "author": "@YaseenK7212",
+      "date": "2026-05-24",
+      "time": "22:19",
+      "likes": 19482,
+      "views": 296251
     },
     {
       "title": "https://t.co/Ik7U8ADtiY",
@@ -364,6 +496,17 @@
       "time": "20:01",
       "likes": 4,
       "views": 558
+    },
+    {
+      "title": "Grok Build CLI is now available to SuperGrok and X Premium users! It is cool that you can also use it to search through X and use it as a read-only X client.",
+      "summary": "One more agent for your team 👀 https://t.co/w2y91BTeWi",
+      "url": "https://x.com/i/status/2058513422694670684",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-24",
+      "time": "19:40",
+      "likes": 353,
+      "views": 37803
     },
     {
       "title": "Rookie Clown",
@@ -518,6 +661,17 @@
       "time": "07:00",
       "likes": 94,
       "views": 29932
+    },
+    {
+      "title": "ANTHROPIC 🔥: Mythos 1, \"claude-mythos-1-preview\", is being prepared for a release on Claude Code and Claude Security.",
+      "summary": "The model became visible for a short amount of time on Claude; besides that, new strings mentioning Mythos have been added.  \n\n> Access to the Claude Mythos model in Claude Code and Claude Security.\n\nIt still doesn't mean the general public will have access to this exact model, according to Anthropi…",
+      "url": "https://x.com/i/status/2058322222297518498",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-24",
+      "time": "07:00",
+      "likes": 3045,
+      "views": 891487
     },
     {
       "title": "Anthropic is launching a new \"Gift a week of Cowork\" referral program. Users will get 3 invite codes to share with others.",
@@ -7043,6 +7197,17 @@
       "views": 563798
     },
     {
+      "title": "昨天晚上很多渠道的codex都无法使用",
+      "summary": "今天看到推上全是各种plus号退款\n另外有越来越多B端代理带着团队主动对接我们号池\n一个靠谱稳定的上游对于中转站长期的运营尤为关键\n一个人又要做站长又要维护号池是非常辛苦的事情\n\n昨天我们正式打通了代理后台\n没有自己站点的代理们可以直接使用我们的后台管理\nDAPI：https://t.co/pTFAnTWsI1",
+      "url": "https://x.com/i/status/2050497749498605749",
+      "source": "X/Twitter",
+      "author": "@10UWINA8",
+      "date": "2026-05-02",
+      "time": "16:48",
+      "likes": 8,
+      "views": 5812
+    },
+    {
       "title": "GPT的images2 ＋seedance2.0绝对是制作AI漫剧的最佳组合：",
       "summary": "完整提示词流程：\nStep 0：构思剧情（脚本）\nStep 1：生成3×3故事板（核心）\nStep 2：统一角色设定（防崩）\nStep 3：生成Seedance视频提示词（导演级）\nStep 4：在Seedance中用image作为参考生成视频\nStep 5：后期（字幕 / 节奏 / 发布）\n\n完整的提示词我放在评论区。\n\n事实上我这个并不算特别好的案例（五一时间有限，见谅），完美的案例可以参考这个帖子：\nhttps://t.co/7T1Il1llG5",
       "url": "https://x.com/i/status/2050449563773981106",
@@ -7756,6 +7921,17 @@
       "time": "12:37",
       "likes": 2080,
       "views": 161165
+    },
+    {
+      "title": "这个太牛逼了！Github 81万收藏！！！",
+      "summary": "一个能把全世界的岗位变成AI员工的存储库，它包含了20+职能分类、140+岗位，而且每一个都是专家级别\n\n只需要把想要的身份喂给Agent就可以拥有一个专属的专家级AI助手，还可以多个Agents分头工作、各自执行\nhttps://t.co/eKlpJ4ZrNx",
+      "url": "https://x.com/i/status/2045306315699093870",
+      "source": "X/Twitter",
+      "author": "@WY_mask",
+      "date": "2026-04-18",
+      "time": "09:00",
+      "likes": 2031,
+      "views": 444194
     },
     {
       "title": "The Claude Code hackathon is back for Opus 4.7.",
