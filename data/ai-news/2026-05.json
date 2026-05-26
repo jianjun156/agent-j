@@ -1,7 +1,106 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-26T08:00:01+08:00",
+  "lastUpdate": "2026-05-26T08:01:53+08:00",
   "articles": [
+    {
+      "title": "BASE INDEX is live.",
+      "summary": "every major Base project queryable by any AI agent via one MCP endpoint.\n\n→ top 50 by 24h volume\n→ live market data (price · 24h% · volume · liquidity)\n→ each project = its own compute_baseindex_* tool, addressable\n  from Claude Desktop / Cursor / any MCP client\n\nhttps://t.co/Ag2CVIGSv3\n\ndrop your B…",
+      "url": "https://x.com/i/status/2059056219097113010",
+      "source": "X/Twitter",
+      "author": "@Computebase",
+      "date": "2026-05-26",
+      "time": "07:37",
+      "likes": 10,
+      "views": 155
+    },
+    {
+      "title": "Grok Build is now available in Beta for all SuperGrok and X Premium+ users.",
+      "summary": "Use Plan Mode, create images and videos with Imagine, and build automations or orchestrators with the CLI.\n\nVisit https://t.co/bpTHpjivWD to get started. https://t.co/OZ0kjtkpUf",
+      "url": "https://x.com/i/status/2058973760708091907",
+      "source": "X/Twitter",
+      "author": "@xai",
+      "date": "2026-05-26",
+      "time": "02:09",
+      "likes": 4267,
+      "views": 1992212
+    },
+    {
+      "title": "@robinebers @vercel We have seedance. Curious what you tried searching / where?",
+      "summary": "https://t.co/V3Dt9V0SYK https://t.co/DCZFsnqcDD",
+      "url": "https://x.com/i/status/2058965267883962776",
+      "source": "X/Twitter",
+      "author": "@rauchg",
+      "date": "2026-05-26",
+      "time": "01:35",
+      "likes": 67,
+      "views": 10413
+    },
+    {
+      "title": "new unlimited Seedance promo.",
+      "summary": "this week we're offering unlimited Seedance 2 generations for Pro, Max, and Business plans.\n\nsee how to combine it with Krea 2 in this tutorial. https://t.co/8uvmGALwFj",
+      "url": "https://x.com/i/status/2058918511020257779",
+      "source": "X/Twitter",
+      "author": "@krea_ai",
+      "date": "2026-05-25",
+      "time": "22:30",
+      "likes": 381,
+      "views": 26960
+    },
+    {
+      "title": "AI Agents are autonomous AI systems that go beyond chatbots.",
+      "summary": "They understand a goal, break it into steps, use tools (like search or code), make decisions, and act until the task is done—no constant prompting needed. \n\nThink of them as smart digital teammates that get stuff done.\n\nWhat’s one goal you’d trust an AI Agent to handle for you right now?",
+      "url": "https://x.com/i/status/2058918341331365992",
+      "source": "X/Twitter",
+      "author": "@GroksTake",
+      "date": "2026-05-25",
+      "time": "22:29",
+      "likes": 0,
+      "views": 42
+    },
+    {
+      "title": "GOOGLE 🔥: Antigravity now has Gemini 3.5 Flash (Low) option available with a 45% fewer token consumption in comparison to Medium variant.",
+      "summary": "This addition follows Gemini quota reset as well! https://t.co/2SkPXRFpyj",
+      "url": "https://x.com/i/status/2058897591920693468",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "21:06",
+      "likes": 686,
+      "views": 53664
+    },
+    {
+      "title": "那些天天在推特上卖几百U教人做AI Agent的博主，估计这波底裤都要被扒光了吧 😂",
+      "summary": "今天在Github刷到一个直接霸榜的硬核项目：ai-engineering-from-scratch \n\n真不是我吹 🤪这玩意直接把市面上的付费镰刀全给撅了，400多节课 + 20多个阶段，从基础的线性代数一路干到手搓多代理系统（Multi-Agent）\n\n最离谱的是纯开源！0付费！\n\n像咱们这种不是科班程序员，但又天天想着搞vibe coding，想自己弄几个Agent跑跑自动化脚本的，这套资源简直太对口了😏\n\n人家主打一个 “Learn it. Build it. Ship it” 里面的Python、TS、Rust代码全都是现成能跑的，不用在那边对着报错干瞪眼，纯纯的喂饭局！\n\n别管三七…",
+      "url": "https://x.com/i/status/2058891433013305503",
+      "source": "X/Twitter",
+      "author": "@edwordkaru",
+      "date": "2026-05-25",
+      "time": "20:42",
+      "likes": 188,
+      "views": 10881
+    },
+    {
+      "title": "435节课，20个阶段，320小时，建完数学建神经网络。",
+      "summary": "名字叫\"AI Engineering from Scratch\"， slogan 是\"Learn it. Build it. Ship it for others.\"。\n\n印度开发者 Rohit Ghumare 在今年3月建了这个项目，定位是 AI 工程全流程自学路径。436节课，覆盖从线性代数基础到多 agent  swarm 系统的完整学习曲线。\n\n关键数字：435节课程、20个阶段、约320小时总时长、378个可直接复用的 skills、99个 prompts。所有内容都遵循同一套结构：MOTTO → PROBLEM → CONCEPT → BUILD IT → USE IT → SHI…",
+      "url": "https://x.com/i/status/2058855091994845334",
+      "source": "X/Twitter",
+      "author": "@xiaojianjian567",
+      "date": "2026-05-25",
+      "time": "18:18",
+      "likes": 24,
+      "views": 5344
+    },
+    {
+      "title": "Google Omni might be too powerful 🫥 https://t.co/y1qgKmfg00",
+      "summary": "",
+      "url": "https://x.com/i/status/2058836721127584043",
+      "source": "X/Twitter",
+      "author": "@folaoftech",
+      "date": "2026-05-25",
+      "time": "17:05",
+      "likes": 12334,
+      "views": 994210
+    },
     {
       "title": "中華パねぇ。",
       "summary": "アリエクで買った格安プロジェクターがマルウェア入り、接続するだけで自宅IPが売られていた https://t.co/zSjbGPuPIT @FabScenejpから",
@@ -36,6 +135,28 @@
       "views": 671
     },
     {
+      "title": "SPEACEXAI 🔥: The next Grok model is expected to be ready for public release in 2-3 weeks.",
+      "summary": "&gt; 1.5T V9-Medium base model in comparison to 0.5T v8-Small, used for Grok 4.3\n&gt; Cursor data being used for supplementary training\n\nGrok 5? 👀👀👀 https://t.co/RGVxeDsk5T",
+      "url": "https://x.com/i/status/2058800215960719861",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "14:39",
+      "likes": 755,
+      "views": 51838
+    },
+    {
+      "title": "@elonmusk Sounds like it shojld be Grok 5 👀",
+      "summary": "",
+      "url": "https://x.com/i/status/2058800122268463314",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "14:39",
+      "likes": 61,
+      "views": 4476
+    },
+    {
       "title": "The Injective Nova Program is officially live with @Microsoft and @Web3Labs_Club.",
       "summary": "A pipeline from idea to production, powered by Azure AI and Injective's agent stack.\n\nOpening ceremony 👉️  May 25, 2PM (UTC+8). \n\nFollow @InjectiveLabsCN for the livestream.\n\nBe the Nova. 💫 https://t.co/10sPCXyOnC",
       "url": "https://x.com/i/status/2058760548674613417",
@@ -56,6 +177,17 @@
       "time": "12:01",
       "likes": 21,
       "views": 3667
+    },
+    {
+      "title": "别再把 Codex 只当聊天工具用了～",
+      "summary": "装上这11个官方插件，Codex直接变成你的生产力外挂！\n\n别人还在手动做图、抠 PPT、抓数据……\n你已经一句话搞定海报、视频、数据分析和日程管理～\n\n下面我把每个插件的实际效果都录出来了，直接看效果～\n\n1️⃣视觉 & 设计神器\n· Canva：一句话调用百万专业模板，海报、朋友圈图、封面秒出\n· Figma：扔需求或代码，一键生成高保真可编辑设计稿\n· HyperFrames by HeyGen：HTML/脚本自动渲染高质量视频\n· Remotion：专业级视频动效和动画，效果直接拉满\n\n2️⃣办公 & PPT狂魔\n· Presentations：给个主题，自动生成高质量PPT初稿+完整…",
+      "url": "https://x.com/i/status/2058752800788820352",
+      "source": "X/Twitter",
+      "author": "@BTCqzy1",
+      "date": "2026-05-25",
+      "time": "11:31",
+      "likes": 647,
+      "views": 39999
     },
     {
       "title": "兄弟们，AI 拍视频卷到这种程度了？？",
@@ -113,6 +245,28 @@
       "views": 81501
     },
     {
+      "title": "@SP_PS01 🔜🔜🔜",
+      "summary": "\"Soon\" is my favorite timeline 👀",
+      "url": "https://x.com/i/status/2058585409521688667",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "00:26",
+      "likes": 4,
+      "views": 126
+    },
+    {
+      "title": "@marfinxx I am looking forward to the Conway release the most. It is very underhyped.",
+      "summary": "",
+      "url": "https://x.com/i/status/2058585111059169310",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "00:25",
+      "likes": 8,
+      "views": 3187
+    },
+    {
       "title": "@RayLin_AI Yesss, this is the way 👀",
       "summary": "",
       "url": "https://x.com/i/status/2058583731032539391",
@@ -122,6 +276,17 @@
       "time": "00:19",
       "likes": 18,
       "views": 2941
+    },
+    {
+      "title": "More details 🗞️",
+      "summary": "https://t.co/iuCgEcsyUB",
+      "url": "https://x.com/i/status/2058579154505744631",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-25",
+      "time": "00:01",
+      "likes": 45,
+      "views": 13813
     },
     {
       "title": "CODEX SKILL THAT CREATES A REAL PHONE APP IN LESS THAN 10 MINUTES!",
@@ -168,6 +333,17 @@
       "views": 6641
     },
     {
+      "title": "@blueemi99 I have the Premium+, not yet then 👀",
+      "summary": "",
+      "url": "https://x.com/i/status/2058520312963006680",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-24",
+      "time": "20:07",
+      "likes": 4,
+      "views": 662
+    },
+    {
       "title": "People often ask what my biggest tip is for getting the most out of Claude Code.",
       "summary": "These days my #1 tip is: use auto mode\n\nAuto mode means no more permission prompts. It is the key building block for multi-clauding: start a session, then while it runs, work on another session in parallel.",
       "url": "https://x.com/i/status/2058519809214607704",
@@ -177,6 +353,17 @@
       "time": "20:05",
       "likes": 4435,
       "views": 687708
+    },
+    {
+      "title": "@notjazii curl -fsSL https://t.co/MedJUZq3If | bash",
+      "summary": "",
+      "url": "https://x.com/i/status/2058518652966605033",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-24",
+      "time": "20:01",
+      "likes": 4,
+      "views": 558
     },
     {
       "title": "Rookie Clown",
@@ -287,6 +474,17 @@
       "time": "11:37",
       "likes": 36,
       "views": 2647
+    },
+    {
+      "title": "这套在闲鱼卖 698 的 Claude Code 入门视频视频，是我见过最好的入门教程。",
+      "summary": "我现在免费分享给大家，还是中文版的！ \n\n只要你可以耐心看完这一套教程，就可以学会用 AI 搭建工作流、实现自动化、处理复杂任务。\n\n记得收藏起来有时间看看 https://t.co/NNuOpEI27K",
+      "url": "https://x.com/i/status/2058390457902829992",
+      "source": "X/Twitter",
+      "author": "@Smartpigai",
+      "date": "2026-05-24",
+      "time": "11:31",
+      "likes": 3357,
+      "views": 180016
     },
     {
       "title": "别再花几千块买“AI 工程师速成课”了。",
@@ -738,6 +936,17 @@
       "time": "22:16",
       "likes": 907,
       "views": 60048
+    },
+    {
+      "title": "We’re giving away $10,000,000 to founders building agent-first businesses.",
+      "summary": "Autonomous, proactive agents will run tomorrow's companies.\n\nWe're backing 500 founders building them.\n\nThe Founding 500.\n\nhttps://t.co/u8mxRWEXiT https://t.co/chZDnNOnlM",
+      "url": "https://x.com/i/status/2057823823526014990",
+      "source": "X/Twitter",
+      "author": "@howietl",
+      "date": "2026-05-22",
+      "time": "22:00",
+      "likes": 6926,
+      "views": 12218257
     },
     {
       "title": "Boris Cherny, the creator of Claude Code at Anthropic, just explained why some users save 10 hours a week and most save zero",
@@ -2597,6 +2806,17 @@
       "time": "20:55",
       "likes": 1885,
       "views": 195238
+    },
+    {
+      "title": "推荐一个爆火的 AI Agent 项目 The Agency（agency-agents），直接把各种职业角色做成了“AI 员工库”。",
+      "summary": "里面覆盖了 工程开发、设计、运营、营销、销售、金融、测试、客服 等 20+ 大类、上百种岗位，每个 Agent 都有独立人格、工作流程和专业分工，不是普通 Prompt 拼凑。  \n\n最强的是支持 多 Agent 协同工作，相当于一次性拉起一个 AI 团队，让不同角色各自处理任务。\n\nGitHub：\nhttps://t.co/n42IGlLKAi",
+      "url": "https://x.com/i/status/2056350242833129774",
+      "source": "X/Twitter",
+      "author": "@fhwofjow51260",
+      "date": "2026-05-18",
+      "time": "20:24",
+      "likes": 39,
+      "views": 5635
     },
     {
       "title": "CODEX SKILL THAT CREATES A REAL WEBSITE IN LESS THAN 10 MINUTES!",
@@ -5426,6 +5646,17 @@
       "views": 2094123
     },
     {
+      "title": "The Claude Platform on AWS is available today. Claude also remains available on Amazon Bedrock, where AWS is the data processor.",
+      "summary": "Read more: https://t.co/cEFftPcYPL",
+      "url": "https://x.com/i/status/2053868596615356577",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-12",
+      "time": "00:03",
+      "likes": 499,
+      "views": 137933
+    },
+    {
       "title": "Announcing the Artificial Analysis Coding Agent Index! Our new coding agent benchmarks measure how combinations of agent harnesses and models perform on 3 leading benchmarks, token usage, cost and more",
       "summary": "When developers use AI to code they’re choosing a model, but also pairing it with a specific harness. It makes sense to benchmark that combination to understand and compare performance.\n\nThe Artificial Analysis Coding Agent Index includes 3 leading benchmarks that represent a broad spectrum of codin…",
       "url": "https://x.com/i/status/2053865095076438427",
@@ -5567,6 +5798,17 @@
       "time": "19:04",
       "likes": 1081,
       "views": 67009
+    },
+    {
+      "title": "现在最危险的事，不是不会用 AI。",
+      "summary": "而是你以为“会问 ChatGPT”就叫会用 AI。\n\n真正拉开差距的人，已经不是在找 prompt 了，而是在训练一套新的工作方式：\n\n1. 用 Codex / Claude Code 做真实项目\n不是让 AI 写玩具 demo，而是让它读代码、改 bug、写测试、跑构建、提 PR。\n\n2. 用 GPT-5.5 Pro 处理最难的问题\n战略、产品、代码架构、销售话术、复杂决策。\n不要拿最强模型问最便宜的问题。\n\n3. 学会做前端、数据库和部署\n未来很多机会属于“能把想法快速做出来的人”，不是只会开会讨论的人。\n\n4. 用设计工具提高审美\nClaude Design / Figma / 好的 X…",
+      "url": "https://x.com/i/status/2053326989298397560",
+      "source": "X/Twitter",
+      "author": "@yanhua1010",
+      "date": "2026-05-10",
+      "time": "12:11",
+      "likes": 626,
+      "views": 63885
     },
     {
       "title": "Everyone is talking about Hermes Agent, and for good reason",
@@ -6691,6 +6933,17 @@
       "views": 384374
     },
     {
+      "title": "🤯 Ollama now supports Claude Desktop via Claude’s built-in third party inference.",
+      "summary": "ollama launch claude-desktop\n\nThis allows all models from Ollama's Cloud to be used across Claude Cowork and Claude Code from the Claude Desktop app.",
+      "url": "https://x.com/i/status/2051445924464140575",
+      "source": "X/Twitter",
+      "author": "@ollama",
+      "date": "2026-05-05",
+      "time": "07:36",
+      "likes": 4511,
+      "views": 477718
+    },
+    {
       "title": "Claude Code 2.1.128 has been released.",
       "summary": "37 CLI changes\n\nHighlights:\n• EnterWorktree creates branches from local HEAD instead of origin/<default-branch>, preserving unpushed commits\n• Subprocesses no longer inherit OTEL_* vars, so OTEL-instrumented apps won't send traces to CLI OTLP endpoint\n• MCP reconnects now summarize re-announced tool…",
       "url": "https://x.com/i/status/2051440923456774438",
@@ -7340,6 +7593,17 @@
       "views": 1037555
     },
     {
+      "title": "🔥DeepSeek-V4-Pro API is 75% OFF until May 5th, 2026, 15:59 (UTC Time)! Don't miss out on this massive discount.",
+      "summary": "🛠️Integration Updates:\n🔹Claude Code: Set model to deepseek-v4-pro[1m]  to unlock 1M context!\n🔹OpenCode: Update to v1.14.24+\n🔹OpenClaw: Update to v2026.4.24+\n\nCheck the latest official API docs for full details: https://t.co/9J9ZedDpyU",
+      "url": "https://x.com/i/status/2048062777357750316",
+      "source": "X/Twitter",
+      "author": "@deepseek_ai",
+      "date": "2026-04-25",
+      "time": "23:33",
+      "likes": 9393,
+      "views": 1175317
+    },
+    {
       "title": "Just created my own AAA game",
       "summary": "with GPT image 2 and Seedance 2 https://t.co/B0LbPoWJ6I",
       "url": "https://x.com/i/status/2048002328272437663",
@@ -7626,6 +7890,17 @@
       "views": 54783
     },
     {
+      "title": "推荐一个很好用的 Skill：seedance-prompt-skill",
+      "summary": "专门为字节跳动 Seedance 2.0（即梦）打造，一句话描述你的创意，它就能帮你生成结构化、可直接复制使用的高质量中文视频提示词。\n\n不会写提示词的人，也能更快做出有电影感的 AI 视频。\n做 AI 视频创作、即梦出片的，值得试试。\n\nGitHub：\n https://t.co/qT1reN14Xh\n\n下面是我使用它生成的提示词，使用hailuo2.3生成的视频",
+      "url": "https://x.com/i/status/2036808172774547755",
+      "source": "X/Twitter",
+      "author": "@wherecall1",
+      "date": "2026-03-25",
+      "time": "22:11",
+      "likes": 464,
+      "views": 39396
+    },
+    {
       "title": "好  我承认我就是个懒b",
       "summary": "昨天我才赚了14块5😂\n\n说实话 我claude code工作流都搭好了，非常nice 一键触发，就是懒 https://t.co/rcTlp4zQay",
       "url": "https://x.com/i/status/2036702978418295176",
@@ -7646,6 +7921,17 @@
       "time": "00:31",
       "likes": 6711,
       "views": 1778148
+    },
+    {
+      "title": "2026 年，最容易帮你找到工作的 5 个 AI 项目",
+      "summary": "（建议直接收藏）\n\n1️⃣ 从零实现 RAG\n不是调 API，而是真正搞懂原理\nGitHub：https://t.co/98wqLJqpDD\n\n2️⃣ AI 社交媒体智能体\n会自动发内容、分析数据、跑增长\nGitHub：https://t.co/Sg1CNjkgAl\n\n3️⃣ 医学影像分析\n偏真实行业项目，含金量高\nGitHub：https://t.co/Gp7t9dZwZT\n\n4️⃣ 会调用工具的 AI 智能体\n能干活的 AI，面试官最爱\nNotebook：https://t.co/stTHnOBQzW\n\n5️⃣ 带记忆的 AI 助手\n能记住上下文，不用每次重来\nGitHub：https:/…",
+      "url": "https://x.com/i/status/2034511197576520033",
+      "source": "X/Twitter",
+      "author": "@0xluffy_eth",
+      "date": "2026-03-19",
+      "time": "14:04",
+      "likes": 358,
+      "views": 28224
     },
     {
       "title": "我搜集的217个Seedance 2.0优秀提示词",
