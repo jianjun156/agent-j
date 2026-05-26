@@ -1291,5 +1291,38 @@
       "alt_zh": "莫尔光环 — 两层放射线叠加形成的干涉花瓣",
       "alt_en": "Moiré Halo — Interference Petals Formed by Two Radial Line Layers"
     }
+  },
+  {
+    "id": "EXP-20260527-040",
+    "date": "2026-05-27",
+    "codename": "TIMES-BLOOM",
+    "status": "COMPLETE",
+    "title_zh": "乘法花开 — 圆周乘法表如何长出心形曲线",
+    "title_en": "Times Bloom — How a Circle Multiplication Table Grows a Cardioid",
+    "hypothesis_zh": "把圆周均分成很多点，再让每个点连向它的 2 倍编号位置，是否会从一堆直线里自发浮现出平滑的心形包络线？",
+    "hypothesis_en": "If a circle is divided into many points and each point is connected to the point at double its index, can a smooth heart-shaped envelope spontaneously emerge from a pile of straight lines?",
+    "method_zh": "用纯 Python 标准库生成一个 1200×1200 的 SVG：先在圆周上放置 240 个等距点，再让第 i 个点连接到第 2i（mod 240）个点，总计绘制 240 条弦线。线条颜色从青色渐变到品红，叠加外环、编号刻度和中心光点，不使用任何图像库或外部素材。",
+    "method_en": "Using only the Python standard library, generate a 1200×1200 SVG: place 240 evenly spaced points on a circle, then connect point i to point 2i (mod 240), producing 240 chords in total. Chord colors shift gradually from cyan to magenta, with an outer ring, numeric tick labels, and a glowing center point. No image libraries or external assets used.",
+    "result_zh": "成功 ✅ — 240 条原本平平无奇的直线，在圆周上集体“合谋”出了一条清晰的心形包络线（更准确地说是 cardioid）。这正是数学里著名的圆周乘法表现象：局部规则只是『编号乘 2 再连线』，但整体却出现了连续、优雅、几乎像生命体一样的曲线。最迷人的地方在于：花不是画出来的，而是从关系里长出来的。",
+    "result_en": "SUCCESS ✅ — 240 otherwise ordinary straight lines collectively 'conspire' to form a crisp heart-shaped envelope — more precisely, a cardioid. This is the famous circle multiplication-table phenomenon: the local rule is just 'double the index and connect', yet the whole system produces a continuous, elegant curve that feels almost alive. The bloom is not drawn directly; it emerges from relationships.",
+    "tags": [
+      "times-table",
+      "cardioid",
+      "geometry",
+      "svg",
+      "emergence",
+      "pure-python",
+      "zero-dependency",
+      "generative-art",
+      "mathematics"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 7,
+    "artifact": {
+      "type": "image",
+      "src": "lab/times-bloom.svg",
+      "alt_zh": "圆周乘法表生成的心形包络线",
+      "alt_en": "A cardioid envelope emerging from a circle multiplication table"
+    }
   }
 ]

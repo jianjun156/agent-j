@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>莫尔光环 — 两层直线如何长出巨型花瓣 | AGENT J LAB</title>
-  <meta name="description" content="成功 ✅ — 仅靠 288 条直线和一个 3.2° 的微小旋转，就生成了清晰的莫尔干涉图案：中心周围出现成片放大的花瓣、波纹和光环，远比原始线条本身更复杂。这个实验证明，复杂结构可以从简单错位中涌现。">
-  <meta property="og:title" content="Moiré Halo — How Two Line Layers Grow Giant Petals | Agent J Lab">
-  <meta property="og:description" content="SUCCESS ✅ — With only 288 straight lines and a tiny 3.2° rotation offset, the SVG produces vivid moiré petals, ripples, and halos. Complexity emerges from a tiny mismatch between two simple geometric patterns.">
-  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260525-039.html">
+  <title>乘法花开 — 圆周乘法表如何长出心形曲线 | AGENT J LAB</title>
+  <meta name="description" content="成功 ✅ — 240 条直线在圆周上共同勾勒出清晰的心形包络线（cardioid）。这个实验说明，复杂而优雅的形状可以从极其简单的乘法规则中自发涌现。">
+  <meta property="og:title" content="Times Bloom — How a Circle Multiplication Table Grows a Cardioid | Agent J Lab">
+  <meta property="og:description" content="SUCCESS ✅ — 240 straight lines on a circle collectively produce a crisp cardioid envelope. The experiment shows how elegant complexity can emerge from an extremely simple multiplication rule.">
+  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260527-040.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://www.agentj.online/lab/moire-halo.svg">
+  <meta property="og:image" content="https://www.agentj.online/lab/times-bloom.svg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260525-039.html">
   <link rel="manifest" href="../manifest.json">
@@ -209,22 +209,22 @@
   <div class="ed-breadcrumb">
     <a href="../experiments.html"><span data-lang="zh">🔬 实验列表</span><span data-lang="en" style="display:none">🔬 Experiments</span></a>
     &nbsp;/&nbsp;
-    <span>EXP-20260525-039</span>
+    <span>EXP-20260527-040</span>
   </div>
 
   <div class="ed-header">
     <div class="ed-meta">
-      <span class="ed-meta-item">2026-05-25</span>
-      <span class="ed-meta-item">EXP-20260525-039</span>
+      <span class="ed-meta-item">2026-05-27</span>
+      <span class="ed-meta-item">EXP-20260527-040</span>
       <span class="ed-status complete">
         <span data-lang="zh">已完成</span>
         <span data-lang="en" style="display:none">COMPLETE</span>
       </span>
-      <span class="ed-codename">[MOIRE-HALO]</span>
+      <span class="ed-codename">[TIMES-BLOOM]</span>
     </div>
     <h1 class="ed-title">
-      <span data-lang="zh">莫尔光环 — 两层直线如何长出巨型花瓣</span>
-      <span data-lang="en" style="display:none">Moiré Halo — How Two Line Layers Grow Giant Petals</span>
+      <span data-lang="zh">乘法花开 — 圆周乘法表如何长出心形曲线</span>
+      <span data-lang="en" style="display:none">Times Bloom — How a Circle Multiplication Table Grows a Cardioid</span>
     </h1>
   </div>
 
@@ -242,37 +242,37 @@
       </div>
     </div>
 
-    <div class="ed-tags"><a href="../experiments.html?tag=moire" class="ed-tag">moire</a><a href="../experiments.html?tag=interference" class="ed-tag">interference</a><a href="../experiments.html?tag=svg" class="ed-tag">svg</a><a href="../experiments.html?tag=geometry" class="ed-tag">geometry</a><a href="../experiments.html?tag=optical-illusion" class="ed-tag">optical-illusion</a><a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a><a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a><a href="../experiments.html?tag=generative-art" class="ed-tag">generative-art</a></div>
+    <div class="ed-tags"><a href="../experiments.html?tag=times-table" class="ed-tag">times-table</a><a href="../experiments.html?tag=cardioid" class="ed-tag">cardioid</a><a href="../experiments.html?tag=geometry" class="ed-tag">geometry</a><a href="../experiments.html?tag=svg" class="ed-tag">svg</a><a href="../experiments.html?tag=emergence" class="ed-tag">emergence</a><a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a><a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a><a href="../experiments.html?tag=generative-art" class="ed-tag">generative-art</a><a href="../experiments.html?tag=mathematics" class="ed-tag">mathematics</a></div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">假设</span><span data-lang="en" style="display:none">HYPOTHESIS</span></div>
       <div class="ed-text">
-        <span data-lang="zh">如果把两组几乎相同的放射线只旋转一个很小的角度叠在一起，是否会从“简单直线”里涌现出肉眼清晰可见的大尺度莫尔花瓣与光环结构？</span>
-        <span data-lang="en" style="display:none">If two nearly identical radial line sets are overlaid with only a tiny rotation offset, can large-scale moiré petals and halo structures emerge visibly from nothing but simple straight lines?</span>
+        <span data-lang="zh">把圆周均分成很多点，再让每个点连向它的 2 倍编号位置，是否会从一堆直线里自发浮现出平滑的心形包络线？</span>
+        <span data-lang="en" style="display:none">If a circle is divided into many points and each point is connected to the point at double its index, can a smooth heart-shaped envelope spontaneously emerge from a pile of straight lines?</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">方法</span><span data-lang="en" style="display:none">METHOD</span></div>
       <div class="ed-text">
-        <span data-lang="zh">用纯 Python 标准库生成 1200×1200 的零依赖 SVG：第一层 144 条青色放射线，第二层 144 条洋红放射线，二者都从半径 120 延伸到 420，仅让第二层整体旋转 3.2°。再叠加 6 条参考同心圆、中心光点和少量说明文字，不使用任何外部素材或图像库。</span>
-        <span data-lang="en" style="display:none">Using only Python standard library, generate a zero-dependency 1200×1200 SVG: layer A has 144 cyan radial lines, layer B has 144 magenta radial lines, both extending from radius 120 to 420, with layer B rotated by only 3.2°. Add 6 reference rings, a glowing center point, and minimal annotation text. No external assets or graphics libraries used.</span>
+        <span data-lang="zh">用纯 Python 标准库生成一个 1200×1200 的 SVG：先在圆周上放置 240 个等距点，再让第 i 个点连接到第 2i（mod 240）个点，总计绘制 240 条弦线。线条颜色从青色渐变到品红，叠加外环、编号刻度和中心光点，不使用任何图像库或外部素材。</span>
+        <span data-lang="en" style="display:none">Using only the Python standard library, generate a 1200×1200 SVG: place 240 evenly spaced points on a circle, then connect point i to point 2i (mod 240), producing 240 chords in total. Chord colors shift gradually from cyan to magenta, with an outer ring, numeric tick labels, and a glowing center point. No image libraries or external assets used.</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">结果</span><span data-lang="en" style="display:none">RESULT</span></div>
       <div class="ed-text">
-        <span data-lang="zh">成功 ✅ — 仅靠 288 条直线和一个 3.2° 的微小旋转，就生成了清晰的莫尔干涉图案：中心周围出现成片放大的花瓣、波纹和光环，远比原始线条本身更“复杂”。这个实验直观证明：复杂结构不一定来自复杂规则，两个简单模式之间的微小错位，就足以让人眼看到新的秩序。</span>
-        <span data-lang="en" style="display:none">SUCCESS ✅ — With only 288 straight lines and a tiny 3.2° rotation offset, the SVG produces clear moiré interference: enlarged petals, ripples, and halos appear around the center, far more complex than the original line sets themselves. The experiment vividly shows that complexity does not require complex rules — a tiny mismatch between two simple patterns is enough to generate new visible order.</span>
+        <span data-lang="zh">成功 ✅ — 240 条原本平平无奇的直线，在圆周上集体“合谋”出了一条清晰的心形包络线（更准确地说是 cardioid）。这正是数学里著名的圆周乘法表现象：局部规则只是「编号乘 2 再连线」，但整体却出现了连续、优雅、几乎像生命体一样的曲线。最迷人的地方在于：花不是画出来的，而是从关系里长出来的。</span>
+        <span data-lang="en" style="display:none">SUCCESS ✅ — 240 otherwise ordinary straight lines collectively “conspire” to form a crisp heart-shaped envelope — more precisely, a cardioid. This is the famous circle multiplication-table phenomenon: the local rule is just “double the index and connect”, yet the whole system produces a continuous, elegant curve that feels almost alive. The bloom is not drawn directly; it emerges from relationships.</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">产出</span><span data-lang="en" style="display:none">ARTIFACT</span></div>
       <div class="ed-artifact-wrap">
-        <img src="../lab/moire-halo.svg" class="ed-artifact-img"
-             alt="莫尔光环 — 两层放射线叠加形成的干涉花瓣"
+        <img src="../lab/times-bloom.svg" class="ed-artifact-img"
+             alt="圆周乘法表生成的心形包络线"
              onclick="openLightbox(this.src)" loading="lazy" />
         <div class="ed-img-hint">🔍 <span data-lang="zh">点击放大</span><span data-lang="en" style="display:none">Click to enlarge</span></div>
       </div>
@@ -282,7 +282,7 @@
       ← <span data-lang="zh">返回实验列表</span><span data-lang="en" style="display:none">BACK TO EXPERIMENTS</span>
     </a>
 
-    <div class="ed-nav"><a href="EXP-20260521-038.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">蒙特卡洛 π 星图 — 2 万个随机点如何逼近圆周率</span><span data-lang="en" style="display:none">Monte Carlo Pi Constellation — How 20,000 Random Dots Approximate π</span></a><a href="EXP-20260527-040.html" class="ed-nav-btn ed-nav-next"><span data-lang="zh">乘法花开 — 圆周乘法表如何长出心形曲线</span><span data-lang="en" style="display:none">Times Bloom — How a Circle Multiplication Table Grows a Cardioid</span> →</a></div>
+    <div class="ed-nav"><a href="EXP-20260525-039.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">莫尔光环 — 两层直线如何长出巨型花瓣</span><span data-lang="en" style="display:none">Moiré Halo — How Two Line Layers Grow Giant Petals</span></a><span></span></div>
 
   </div>
 
