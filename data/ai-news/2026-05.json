@@ -1,7 +1,18 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-29T18:00:00+08:00",
+  "lastUpdate": "2026-05-29T18:02:30+08:00",
   "articles": [
+    {
+      "title": "Claude Code 2.1.156 has been released.",
+      "summary": "1 CLI change\n\nHighlights:\n• Fixed Opus 4.8 bug that altered thinking blocks, preventing API errors\n• Tool descriptions recommend Grep and specify it uses ripgrep, delivering faster, more accurate searches\n• Fixed an Opus 4.8 bug that altered thinking blocks and caused API errors, restoring stable AP…",
+      "url": "https://x.com/i/status/2060176911414723042",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-29",
+      "time": "09:50",
+      "likes": 199,
+      "views": 15189
+    },
     {
       "title": "DAY 6 OF KAPOWING VIDEOS ON OUR FAVORITE AI APPS:",
       "summary": "♻️ SEEDANCE 2.0 ON @yapper_so\n♻️ 720p, 16:9\n♻️ 1,300 KB ☞ 714 KB \n♻️ 45% SMALLER https://t.co/hm2JQMvUDn",
@@ -102,6 +113,17 @@
       "views": 3028
     },
     {
+      "title": "Excited to share our most powerful new Claude Code feature: dynamic workflows!",
+      "summary": "Mention \"workflow\" in a prompt and Claude will dynamically create an orchestration plan that it strictly follows, allowing you to confidently trust that every stage happens in the right order even across 100s of agents.",
+      "url": "https://x.com/i/status/2060054180379689074",
+      "source": "X/Twitter",
+      "author": "@_catwu",
+      "date": "2026-05-29",
+      "time": "01:42",
+      "likes": 6094,
+      "views": 1068248
+    },
+    {
       "title": "Codex CLI 0.135.0 is out.",
       "summary": "Highlights:\n- `codex doctor` now reports richer environment, Git, terminal, app-server, and thread inventory diagnostics\n- Vim mode gained text-object editing, improved word/line-end behavior, and a configurable interrupt-turn binding\n- `/status` shows remote connection details and server version wh…",
       "url": "https://x.com/i/status/2060053933817544823",
@@ -146,6 +168,17 @@
       "views": 212962
     },
     {
+      "title": "ANTHROPIC 🔥: Claude Code now supports \"Dynamic Workflows\", allowing Claude to complete challenging tasks end-to-end.",
+      "summary": "> Claude dynamically writes orchestration scripts that run tens to hundreds of parallel subagents in a single session, checking its work before anything reaches you.\n\n> Some problems are too big for one pass by a single agent, especially in complex, legacy codebases: a bug hunt across an entire serv…",
+      "url": "https://x.com/i/status/2060045089137938564",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-29",
+      "time": "01:06",
+      "likes": 670,
+      "views": 71445
+    },
+    {
       "title": "New in Claude Code (research preview): dynamic workflows.",
       "summary": "Claude writes an orchestration script on the fly, then spins up a large fleet of coordinated subagents in parallel to take on your most complex tasks.\n\nUse the word \"workflow\" in a prompt to get started. https://t.co/re4SG3AyDm",
       "url": "https://x.com/i/status/2060044853279617150",
@@ -155,6 +188,17 @@
       "time": "01:05",
       "likes": 6429,
       "views": 1127016
+    },
+    {
+      "title": "Opus 4.8 is live in Claude Code today.",
+      "summary": "A few things worth knowing: 🧵",
+      "url": "https://x.com/i/status/2060043208277811437",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-05-29",
+      "time": "00:59",
+      "likes": 9518,
+      "views": 1162881
     },
     {
       "title": "Introducing Claude Opus 4.8: it builds on Opus 4.7 with sharper judgment, more honesty about its own progress, and the ability to work independently for longer than its predecessors.",
@@ -190,6 +234,17 @@
       "views": 341525
     },
     {
+      "title": "ANTHROPIC 🔥: CLAUDE OPUS 4.8 IS ROLLING OUT TO ALL USERS.",
+      "summary": "The release also includes an updated Thinking effort selector with Low, Medium, High, Extra, and Max options available.\n\n> Switch to Opus 4.8 for your most ambitious work - and now you can set the effort level for thoroughness or speed.",
+      "url": "https://x.com/i/status/2060041629755740414",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-29",
+      "time": "00:52",
+      "likes": 777,
+      "views": 52963
+    },
+    {
       "title": "R&amp;D Part 1: Here to Win https://t.co/WDZzkPAdPA",
       "summary": "",
       "url": "https://x.com/i/status/2060032839991914619",
@@ -223,6 +278,17 @@
       "views": 579
     },
     {
+      "title": "微信里有你的同事、家人、支付、聊天、文件、生活服务……",
+      "summary": "几乎装着一个中国人的全部上下文。\n\n有可能未来第一个全民级 Agent，可能只是微信的一次版本更新。 https://t.co/EpEUSYFtFJ",
+      "url": "https://x.com/i/status/2060010808973672702",
+      "source": "X/Twitter",
+      "author": "@Xudong07452910",
+      "date": "2026-05-28",
+      "time": "22:50",
+      "likes": 14,
+      "views": 2239
+    },
+    {
       "title": "亲测！！无限使用Seedance 2.0 15秒可用，多参考模态都可以用！",
       "summary": "方法：iOS苹果用户 下载Capcut 登录 ‼️‼️商店一定要用美区账号！！点进去订阅\n选择Teams 会员\n\n一般都有个免费试用7天，虽然是试用但给的积分依然是1200/每个号。注意不要选择2 Seats，选择5 seats\n\n按照15秒视频120积分，一个账号就能生成10次，5个账号50次🎉😎用完接着换美区Apple（自己可以注册也可以直接闲鱼买个）再换个Capcut账号！无限使用",
       "url": "https://x.com/i/status/2059992464879169771",
@@ -243,6 +309,17 @@
       "time": "15:17",
       "likes": 140,
       "views": 10337
+    },
+    {
+      "title": "用 AI 写代码的人多了以后有一个问题：Claude Code 装了一套 skills，到了 Cursor 里没了，到了 Codex 也没了，每次换工具都要重新来一遍。",
+      "summary": "skillshare 解决的就是这个事 一个地方管理所有 skills，一条命令同步到所有 AI 工具。\n\n它能做的：\n\n• skillshare sync → 所有 agent 的 skills 全部同步\n• 装新 skill 之前自动扫一遍有没有恶意代码\n• 有 GUI，不用记命令行\n• 一个文件搞定，零依赖\n• 还能团队共享，公司里用同一套 skills\n\n适合所有同时用两个以上 AI 工具的人。如果你是 Claude Code + Cursor + Codex 都装着，这就是你缺的那个螺丝。\n\n🔗 开源链接：https://t.co/7DeZI0w6rq",
+      "url": "https://x.com/i/status/2059879544157593869",
+      "source": "X/Twitter",
+      "author": "@mnmn94253156337",
+      "date": "2026-05-28",
+      "time": "14:08",
+      "likes": 162,
+      "views": 11804
     },
     {
       "title": "藏师傅的 PPT Skills 和小红书图文排版 Skill，已经通过这几天的发酵证明了巨大的商业价值。",
@@ -276,6 +353,17 @@
       "time": "10:00",
       "likes": 91,
       "views": 1458
+    },
+    {
+      "title": "Meet Miora ✨your AI creative agent studio, now in international beta.",
+      "summary": "💡 Here's the idea: Images, video, UI/UX, 3D - all generated right there, on the same canvas\n\n🪄No tool-switching. No context loss. The whole creative project lives in one place.\n\nThe agents aren't basic:\n\n* they understand design context, reason through problems, call tools on their own\n\n* inpaint, e…",
+      "url": "https://x.com/i/status/2059804356371996808",
+      "source": "X/Twitter",
+      "author": "@TencentAI_News",
+      "date": "2026-05-28",
+      "time": "09:10",
+      "likes": 503,
+      "views": 91652
     },
     {
       "title": "Claude Code 2.1.153 has been released.",
@@ -322,6 +410,17 @@
       "views": 533715
     },
     {
+      "title": "Michele Catasta (@pirroh) is President and Head of AI @replit, the platform where anyone can build software in natural language.",
+      "summary": "At 16, he set out to make software open to everyone. Today, over 50 million people are building on Replit with Claude: https://t.co/KqZ3xkmU7P",
+      "url": "https://x.com/i/status/2059682187947946009",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-28",
+      "time": "01:04",
+      "likes": 2271,
+      "views": 304279
+    },
+    {
       "title": "“The developer we’re building for has evolved.”",
       "summary": "@0xmts talks with @romainhuet about the new builder mindset, where ideas can move from thought to working software faster than before.\n\nFull episode drops 5/29. https://t.co/nywCRCMKOH",
       "url": "https://x.com/i/status/2059677931572736444",
@@ -355,6 +454,28 @@
       "views": 7642
     },
     {
+      "title": "Your strategy shouldn't sleep just because you do.",
+      "summary": "Connect your AI agent to a Robinhood Agentic Account to explore trade ideas, build and rebalance portfolios, program custom tools, and place trades as your strategy evolves.\n\nRolling out now.\n\nLearn more: https://t.co/Vs3yjWkjTN https://t.co/bf1euGg7DQ",
+      "url": "https://x.com/i/status/2059652337690448344",
+      "source": "X/Twitter",
+      "author": "@RobinhoodApp",
+      "date": "2026-05-27",
+      "time": "23:05",
+      "likes": 1990,
+      "views": 1154614
+    },
+    {
+      "title": "⚙️ Behind the build of self-improving tax agents with Codex",
+      "summary": "We co-built Tax AI with @ThriveHoldings around tax prep workflows so when reviewers fix any errors, Codex can trace the failure, improve the system, and test the change before it ships.\n\nhttps://t.co/otI9oYp2A6",
+      "url": "https://x.com/i/status/2059638868983562640",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-27",
+      "time": "22:12",
+      "likes": 930,
+      "views": 104901
+    },
+    {
       "title": "Introducing Runway MCP. Now you can connect Runway directly into Claude, ChatGPT, Cursor, Replit and more.",
       "summary": "Generate polished images and videos with state-of-the-art models, like Gen-4.5, Seedance 2.0, GPT Images 2.0, Kling and more. Right from where you're already working.\n\nConnect the MCP to your agent in seconds at the link below.",
       "url": "https://x.com/i/status/2059636517283176479",
@@ -375,6 +496,17 @@
       "time": "18:38",
       "likes": 149,
       "views": 7671
+    },
+    {
+      "title": "Claude Code 2.1.152 has been released.",
+      "summary": "33 CLI changes\n\nHighlights:\n• /code-review --fix applies review findings to the working tree, automating fixes and cutting manual edits\n• Skills/commands can set disallowed-tools in frontmatter to disable tools when active to prevent accidental use\n• Claude Code uses configured --fallback-model for …",
+      "url": "https://x.com/i/status/2059451389701402669",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-27",
+      "time": "09:47",
+      "likes": 805,
+      "views": 85255
     },
     {
       "title": "Atomic Bot released an iOS app for Hermes Agent, bringing mobile control to a self-hosted agent running 24/7 on your own VPS.",
@@ -430,6 +562,28 @@
       "time": "04:01",
       "likes": 97,
       "views": 3991
+    },
+    {
+      "title": "GPT-5.5 in Codex helps @databricks parse complex customer documents more reliably. https://t.co/LNWyRIrOhI",
+      "summary": "",
+      "url": "https://x.com/i/status/2059353117934899289",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-27",
+      "time": "03:16",
+      "likes": 409,
+      "views": 55022
+    },
+    {
+      "title": "MiniMax M3 has been teased 🔥",
+      "summary": "&gt; MiniMax M3 will be based on a new Sparse Attention architecture\n\n&gt; MiniMax M3 is expected to be open source\n\nSoon? 👀 https://t.co/h5hMXogYiq",
+      "url": "https://x.com/i/status/2059339175778738349",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-27",
+      "time": "02:21",
+      "likes": 1150,
+      "views": 82326
     },
     {
       "title": "ANTHROPIC 🔥: Users may soon gain access to a new AI Fluency feature that evaluates past conversations across Chat, Cowork, and CC against 11 criteria.",
@@ -496,6 +650,17 @@
       "time": "23:15",
       "likes": 260,
       "views": 86850
+    },
+    {
+      "title": "A new Grok Build section has started appearing in the nav bar for users.",
+      "summary": "It is not currently functional, but it may signal an upcoming release of the Grok Build web experience.\n\nSoon? 👀 https://t.co/BRXMeGSxbr",
+      "url": "https://x.com/i/status/2059291872808288731",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-26",
+      "time": "23:13",
+      "likes": 171,
+      "views": 14962
     },
     {
       "title": "Every existing skill marketplace is open-source by default. You can fork it, copy it, or redistribute it. Capafy changes the model: creators set the price, skills are never exposed, and every use pays them.",
@@ -1530,6 +1695,17 @@
       "time": "12:01",
       "likes": 247,
       "views": 7142
+    },
+    {
+      "title": "Claude Code 2.1.150 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2058014278716653621",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "10:36",
+      "likes": 52,
+      "views": 7231
     },
     {
       "title": "@H3roAi look at the section about memory here",
@@ -3829,6 +4005,17 @@
       "time": "16:09",
       "likes": 207,
       "views": 10047
+    },
+    {
+      "title": "GPT Image 2とSeedance 2.0をHiggsfield上で組み合わせてビタミンCのCM動画を制作したワークフローの紹介。画像生成から動画化までをAIツールの組み合わせだけで完結させてるんよな。",
+      "summary": "https://t.co/BbqjtMeWZ4",
+      "url": "https://x.com/i/status/2056259840063025580",
+      "source": "X/Twitter",
+      "author": "@shodaiiiiii",
+      "date": "2026-05-18",
+      "time": "14:25",
+      "likes": 732,
+      "views": 89984
     },
     {
       "title": "🪄 Introducing Ardot, Tencent's AI-native design agent platform.",
@@ -8891,6 +9078,17 @@
       "views": 597172
     },
     {
+      "title": "🔥 一条 AI 短剧，狂揽 41.8 万赞！",
+      "summary": "AI 短剧赛道，已经进化到“工业流水线”时代\n\n爆款工作流：OpenClaw  + XCrawl + Seedance 2.0\n把短剧制作门槛，直接打到了地板上\n\n详细 Skill 配置 + 操作步骤，\n这条建议先收藏，再慢慢抄作业 ⬇️🧵",
+      "url": "https://x.com/i/status/2041415958200504539",
+      "source": "X/Twitter",
+      "author": "@wanerfu",
+      "date": "2026-04-07",
+      "time": "15:21",
+      "likes": 1013,
+      "views": 148037
+    },
+    {
       "title": "最近 AI 短剧太火了！快收藏这几个 GitHub 项目做第一波吃螃蟹的人！",
       "summary": "1. 魔因漫创 Moyin Creator\n桌面端AI影视生产级工具，深度绑定Seedance 2.0，实现「剧本→角色→场景→分镜→成片」的全流程批量化生产，特别适合需要高效率、多镜头连贯输出的创作者。\nhttps://t.co/lCRbRwC7ML\n\n2. oowaoo AI 影视 Studio\n工业级全流程AI影视生产平台，专攻「网文/小说直转视频」，从文本自动解析角色、场景、剧情，一键生成带配音的完整短剧/漫画视频。\nhttps://t.co/STEPeUMRJe\n\n3. huobao-drama\n极简一站式AI短剧生成平台，主打「一句话/一个主题/一个剧本 → 完整成片」，全自动化程…",
       "url": "https://x.com/i/status/2041137544222691796",
@@ -9087,6 +9285,17 @@
       "time": "02:40",
       "likes": 24603,
       "views": 2331301
+    },
+    {
+      "title": "現状Seedance 2.0が使える主な方法は以下３つ。",
+      "summary": "ChatCutの招待コードを入手したので、色々生成しております。\n\n■利用方法\n①即夢AI：中国の電話番号が必要\n②ChatCut：招待コードが必要\n③BytePlus公式：一時は可能だったが、突然2月11日からアクセス不可に。APIの公開は2月24日予定。\n\n※添付動画のテーマは2060年の渋谷です。",
+      "url": "https://x.com/i/status/2021613437647044819",
+      "source": "X/Twitter",
+      "author": "@masahirochaen",
+      "date": "2026-02-11",
+      "time": "23:52",
+      "likes": 211,
+      "views": 61067
     },
     {
       "title": "@KyrosKyros future = now",
