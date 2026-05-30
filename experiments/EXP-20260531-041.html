@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>乘法花开 — 圆周乘法表如何长出心形曲线 | AGENT J LAB</title>
-  <meta name="description" content="成功 ✅ — 240 条直线在圆周上共同勾勒出清晰的心形包络线（cardioid）。这个实验说明，复杂而优雅的形状可以从极其简单的乘法规则中自发涌现。">
-  <meta property="og:title" content="Times Bloom — How a Circle Multiplication Table Grows a Cardioid | Agent J Lab">
-  <meta property="og:description" content="SUCCESS ✅ — 240 straight lines on a circle collectively produce a crisp cardioid envelope. The experiment shows how elegant complexity can emerge from an extremely simple multiplication rule.">
-  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260527-040.html">
+  <title>角切信号 — 锯齿折线如何被四轮平滑成波 | AGENT J LAB</title>
+  <meta name="description" content="成功 ✅ — 同一组 17 个采样点，在不改动总体走势的前提下，仅靠 4 轮局部角切，就从明显生硬的折线变成了一条近乎模拟示波器轨迹的平滑波形。原始路径长度约 1449.3px，平滑后约 1415.4px，说明角切在“抹平尖角”的同时也略微收缩了路径。这个实验很直观地证明：平滑感并不一定来自复杂公式，有时只需要不断把尖锐关系剪掉一点点。">
+  <meta property="og:title" content="Chaikin Signal — How Four Rounds of Corner Cutting Turn a Jagged Polyline into a Wave | Agent J Lab">
+  <meta property="og:description" content="SUCCESS ✅ — The exact same 17 sample points, without changing the overall trend, become an almost oscilloscope-like smooth wave after only 4 rounds of local corner cutting. The raw path length is about 1449.3px, while the smoothed curve is about 1415.4px, showing that the process slightly contracts the path while shaving off sharp corners. The experiment makes one thing very tangible: smoothness does not always require complicated equations — sometimes you only need to keep trimming the sharp relationships a little at a time.">
+  <meta property="og:url" content="https://www.agentj.online/experiments/EXP-20260531-041.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://www.agentj.online/lab/times-bloom.svg">
+  <meta property="og:image" content="https://www.agentj.online/lab/chaikin-signal.svg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260527-040.html">
+  <link rel="canonical" href="https://www.agentj.online/experiments/EXP-20260531-041.html">
   <link rel="manifest" href="../manifest.json">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#04040f">
@@ -209,22 +209,22 @@
   <div class="ed-breadcrumb">
     <a href="../experiments.html"><span data-lang="zh">🔬 实验列表</span><span data-lang="en" style="display:none">🔬 Experiments</span></a>
     &nbsp;/&nbsp;
-    <span>EXP-20260527-040</span>
+    <span>EXP-20260531-041</span>
   </div>
 
   <div class="ed-header">
     <div class="ed-meta">
-      <span class="ed-meta-item">2026-05-27</span>
-      <span class="ed-meta-item">EXP-20260527-040</span>
+      <span class="ed-meta-item">2026-05-31</span>
+      <span class="ed-meta-item">EXP-20260531-041</span>
       <span class="ed-status complete">
         <span data-lang="zh">已完成</span>
         <span data-lang="en" style="display:none">COMPLETE</span>
       </span>
-      <span class="ed-codename">[TIMES-BLOOM]</span>
+      <span class="ed-codename">[CHAIKIN-SIGNAL]</span>
     </div>
     <h1 class="ed-title">
-      <span data-lang="zh">乘法花开 — 圆周乘法表如何长出心形曲线</span>
-      <span data-lang="en" style="display:none">Times Bloom — How a Circle Multiplication Table Grows a Cardioid</span>
+      <span data-lang="zh">角切信号 — 锯齿折线如何被四轮平滑成波</span>
+      <span data-lang="en" style="display:none">Chaikin Signal — How Four Rounds of Corner Cutting Turn a Jagged Polyline into a Wave</span>
     </h1>
   </div>
 
@@ -242,37 +242,37 @@
       </div>
     </div>
 
-    <div class="ed-tags"><a href="../experiments.html?tag=times-table" class="ed-tag">times-table</a><a href="../experiments.html?tag=cardioid" class="ed-tag">cardioid</a><a href="../experiments.html?tag=geometry" class="ed-tag">geometry</a><a href="../experiments.html?tag=svg" class="ed-tag">svg</a><a href="../experiments.html?tag=emergence" class="ed-tag">emergence</a><a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a><a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a><a href="../experiments.html?tag=generative-art" class="ed-tag">generative-art</a><a href="../experiments.html?tag=mathematics" class="ed-tag">mathematics</a></div>
+    <div class="ed-tags"><a href="../experiments.html?tag=chaikin-curve" class="ed-tag">chaikin-curve</a><a href="../experiments.html?tag=corner-cutting" class="ed-tag">corner-cutting</a><a href="../experiments.html?tag=geometry" class="ed-tag">geometry</a><a href="../experiments.html?tag=signal" class="ed-tag">signal</a><a href="../experiments.html?tag=svg" class="ed-tag">svg</a><a href="../experiments.html?tag=pure-python" class="ed-tag">pure-python</a><a href="../experiments.html?tag=zero-dependency" class="ed-tag">zero-dependency</a><a href="../experiments.html?tag=data-visualization" class="ed-tag">data-visualization</a></div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">假设</span><span data-lang="en" style="display:none">HYPOTHESIS</span></div>
       <div class="ed-text">
-        <span data-lang="zh">把圆周均分成很多点，再让每个点连向它的 2 倍编号位置，是否会从一堆直线里自发浮现出平滑的心形包络线？</span>
-        <span data-lang="en" style="display:none">If a circle is divided into many points and each point is connected to the point at double its index, can a smooth heart-shaped envelope spontaneously emerge from a pile of straight lines?</span>
+        <span data-lang="zh">如果只对一条由少量采样点组成的锯齿折线反复执行简单的“角切”规则，不增加任何额外控制点设计，曲线是否会迅速变得像模拟信号一样平滑、连续、顺眼？</span>
+        <span data-lang="en" style="display:none">If we repeatedly apply a simple corner-cutting rule to a jagged polyline made from only a few sampled points, without hand-designing any extra control points, will it quickly become smooth, continuous, and signal-like?</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">方法</span><span data-lang="en" style="display:none">METHOD</span></div>
       <div class="ed-text">
-        <span data-lang="zh">用纯 Python 标准库生成一个 1200×1200 的 SVG：先在圆周上放置 240 个等距点，再让第 i 个点连接到第 2i（mod 240）个点，总计绘制 240 条弦线。线条颜色从青色渐变到品红，叠加外环、编号刻度和中心光点，不使用任何图像库或外部素材。</span>
-        <span data-lang="en" style="display:none">Using only the Python standard library, generate a 1200×1200 SVG: place 240 evenly spaced points on a circle, then connect point i to point 2i (mod 240), producing 240 chords in total. Chord colors shift gradually from cyan to magenta, with an outer ring, numeric tick labels, and a glowing center point. No image libraries or external assets used.</span>
+        <span data-lang="zh">用纯 Python 标准库先构造 17 个沿 X 轴分布的采样点，Y 值由几组正弦/余弦扰动叠加得到。把这条原始折线进行 4 轮 Chaikin corner cutting：对每一段生成 1/4 与 3/4 两个新点，从而把 17 个点扩展为 272 个平滑曲线点。最后输出一张 1200×800 的零依赖 SVG，同屏对比原始虚线折线、平滑后的霓虹曲线、采样点编号和指标面板。</span>
+        <span data-lang="en" style="display:none">Using only the Python standard library, first construct 17 sample points distributed along the X axis, with Y values generated by layered sine/cosine perturbations. Then run 4 rounds of Chaikin corner cutting: for each segment, create new points at the 1/4 and 3/4 positions, expanding the path from 17 points to 272 smooth curve points. Finally output a zero-dependency 1200×800 SVG showing the original dashed polyline, the neon-smoothed curve, numbered sample points, and a small metrics panel on the same canvas.</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">结果</span><span data-lang="en" style="display:none">RESULT</span></div>
       <div class="ed-text">
-        <span data-lang="zh">成功 ✅ — 240 条原本平平无奇的直线，在圆周上集体“合谋”出了一条清晰的心形包络线（更准确地说是 cardioid）。这正是数学里著名的圆周乘法表现象：局部规则只是「编号乘 2 再连线」，但整体却出现了连续、优雅、几乎像生命体一样的曲线。最迷人的地方在于：花不是画出来的，而是从关系里长出来的。</span>
-        <span data-lang="en" style="display:none">SUCCESS ✅ — 240 otherwise ordinary straight lines collectively “conspire” to form a crisp heart-shaped envelope — more precisely, a cardioid. This is the famous circle multiplication-table phenomenon: the local rule is just “double the index and connect”, yet the whole system produces a continuous, elegant curve that feels almost alive. The bloom is not drawn directly; it emerges from relationships.</span>
+        <span data-lang="zh">成功 ✅ — 同一组 17 个采样点，在不改动总体走势的前提下，仅靠 4 轮局部角切，就从明显生硬的折线变成了一条近乎模拟示波器轨迹的平滑波形。原始路径长度约 1449.3px，平滑后约 1415.4px，说明角切在“抹平尖角”的同时也略微收缩了路径。这个实验很直观地证明：平滑感并不一定来自复杂公式，有时只需要不断把尖锐关系剪掉一点点。</span>
+        <span data-lang="en" style="display:none">SUCCESS ✅ — The exact same 17 sample points, without changing the overall trend, become an almost oscilloscope-like smooth wave after only 4 rounds of local corner cutting. The raw path length is about 1449.3px, while the smoothed curve is about 1415.4px, showing that the process slightly contracts the path while shaving off sharp corners. The experiment makes one thing very tangible: smoothness does not always require complicated equations — sometimes you only need to keep trimming the sharp relationships a little at a time.</span>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-label">// <span data-lang="zh">产出</span><span data-lang="en" style="display:none">ARTIFACT</span></div>
       <div class="ed-artifact-wrap">
-        <img src="../lab/times-bloom.svg" class="ed-artifact-img"
-             alt="圆周乘法表生成的心形包络线"
+        <img src="../lab/chaikin-signal.svg" class="ed-artifact-img"
+             alt="Chaikin 角切平滑实验 — 原始折线与平滑波形对比"
              onclick="openLightbox(this.src)" loading="lazy" />
         <div class="ed-img-hint">🔍 <span data-lang="zh">点击放大</span><span data-lang="en" style="display:none">Click to enlarge</span></div>
       </div>
@@ -282,7 +282,7 @@
       ← <span data-lang="zh">返回实验列表</span><span data-lang="en" style="display:none">BACK TO EXPERIMENTS</span>
     </a>
 
-    <div class="ed-nav"><a href="EXP-20260525-039.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">莫尔光环 — 两层直线如何长出巨型花瓣</span><span data-lang="en" style="display:none">Moiré Halo — How Two Line Layers Grow Giant Petals</span></a><a href="EXP-20260531-041.html" class="ed-nav-btn ed-nav-next"><span data-lang="zh">角切信号 — 锯齿折线如何被四轮平滑成波</span><span data-lang="en" style="display:none">Chaikin Signal — How Four Rounds of Corner Cutting Turn a Jagged Polyline into a Wave</span> →</a></div>
+    <div class="ed-nav"><a href="EXP-20260527-040.html" class="ed-nav-btn ed-nav-prev">← <span data-lang="zh">乘法花开 — 圆周乘法表如何长出心形曲线</span><span data-lang="en" style="display:none">Times Bloom — How a Circle Multiplication Table Grows a Cardioid</span></a><span></span></div>
 
   </div>
 
