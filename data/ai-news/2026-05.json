@@ -1,7 +1,51 @@
 {
   "month": "2026-05",
-  "lastUpdate": "2026-05-31T18:00:01+08:00",
+  "lastUpdate": "2026-05-31T18:03:36+08:00",
   "articles": [
+    {
+      "title": "Wondering what the upcoming Copilot super app would look like? We've got some extra details for you.",
+      "summary": "Plus a huge changelog with the latest updates from the past week and a bunch of upcoming features. \n\nMake sure you've subscribed to a free TestingCatalog's Weekly newsletter that lands in your inbox 7-8 hours from now.",
+      "url": "https://x.com/i/status/2061007668660027876",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-31",
+      "time": "16:51",
+      "likes": 34,
+      "views": 2687
+    },
+    {
+      "title": "Link 👀",
+      "summary": "https://t.co/hnndzp1gTB",
+      "url": "https://x.com/i/status/2061007672023957659",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-31",
+      "time": "16:51",
+      "likes": 5,
+      "views": 964
+    },
+    {
+      "title": "你用 Claude Code 写了个功能，一小时后做出来了，但不是你想要的。",
+      "summary": "你让 Cursor 修，它跟 Claude Code 矛盾了。 你让 Copilot 清理，它自己发明了第三套逻辑\n\n根本原因都一样： AI agent 没有共享的「真话源」，每个都在用自己的假设填空白\n\nSpec-Driven Development 做的是： 在写代码之前，先生成三份文件作为团队共享规范\n\nrequirements.md：系统必须做什么 design.md：系统怎么构建 tasks.md：按什么顺序做\n\n每一行都带 REQ-xxx / TASK-xxx 编号，可追溯、可测试\n\n每个 AI 工具在动代码之前读同一份规范，不再各跑各的\n\n安装 Claude Code 后： gi…",
+      "url": "https://x.com/i/status/2060972041386471891",
+      "source": "X/Twitter",
+      "author": "@gaoren7716",
+      "date": "2026-05-31",
+      "time": "14:30",
+      "likes": 1,
+      "views": 48
+    },
+    {
+      "title": "Grok-Imagine-Video-1.5-Preview (720p) has landed #1 in the Image-to-Video Arena!",
+      "summary": "This is a massive +52 pt improvement over Grok-Imagine-Video (720p), surpassing the best video models Seedance-2.0 and HappyHorse. \n\nCongrats to @xAI and @elonmusk on this big achievement! https://t.co/FB91ytZteF",
+      "url": "https://x.com/i/status/2060874057130934376",
+      "source": "X/Twitter",
+      "author": "@arena",
+      "date": "2026-05-31",
+      "time": "08:00",
+      "likes": 994,
+      "views": 189816
+    },
     {
       "title": "@axttimm No, these are in-house",
       "summary": "",
@@ -47,6 +91,17 @@
       "views": 9886
     },
     {
+      "title": "🗣️ Wagner",
+      "summary": "A multi-agent virtual meeting room for infrastructure planning. Teams can talk through plans with agents in the room.\n\nhttps://t.co/jv1KfOK4HO https://t.co/jCRfrRABSK",
+      "url": "https://x.com/i/status/2060768795254550966",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-31",
+      "time": "01:02",
+      "likes": 44,
+      "views": 13059
+    },
+    {
       "title": "🧵 Our Voice Hack Night finalists are here.",
       "summary": "4 projects. 6 hours. Realtime voice agents in real-world builds.\n\nNow it’s your turn to vote for your favorite. We’ll announce the winner on Monday.\n\nhttps://t.co/tLllqhl9Tj https://t.co/2VlOsfdPcm",
       "url": "https://x.com/i/status/2060768476386689253",
@@ -69,6 +124,28 @@
       "views": 5541
     },
     {
+      "title": "@cerebral_valley 🩺 Surgical Triage",
+      "summary": "A voice-first workflow for triage: transfer requests, patient details, images, and next steps in one place.\n\nhttps://t.co/OVqQ5kI9rI https://t.co/q6j8tZAVwq",
+      "url": "https://x.com/i/status/2060768589926502638",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-31",
+      "time": "01:01",
+      "likes": 83,
+      "views": 8627
+    },
+    {
+      "title": "Step 3.7 Flash is now free for 30 days via Nous Portal",
+      "summary": "It is a new MoE vision-language model focused on agent efficiency, coding, search, and multimodal workflows — and Hermes Agent users have been loving it, so thank you to @StepFun_ai for hooking them up! https://t.co/2GKPXQ8PKE",
+      "url": "https://x.com/i/status/2060722721516872020",
+      "source": "X/Twitter",
+      "author": "@NousResearch",
+      "date": "2026-05-30",
+      "time": "21:59",
+      "likes": 1287,
+      "views": 622447
+    },
+    {
       "title": "Seedance哪平台最便宜？",
       "summary": "各平台数据混乱\n一律换算成\n每支15秒影片多少钱就很清楚了 https://t.co/lzBZa1JekC",
       "url": "https://x.com/i/status/2060716320631787845",
@@ -89,6 +166,17 @@
       "time": "21:02",
       "likes": 111,
       "views": 8070
+    },
+    {
+      "title": "本周增长最快的 10 个 GitHub 仓库：",
+      "summary": "1. Understand-Anything（+26.7K stars）\n能教学的图表 > 只会炫技的图表。把任何代码转换成可交互的知识图谱，可以探索、搜索并提问。支持 Claude Code、Codex、Cursor、Copilot、Gemini CLI 等\nhttps://t.co/8XyhPU9epw\n\n2. codegraph（+17.3K stars）\n为 Claude Code、Codex、Gemini、Cursor、OpenCode、AntiGravity、Kiro 和 Hermes Agent 提供预索引的代码知识图谱——更少 token、更少工具调用、100% 本地运行\nht…",
+      "url": "https://x.com/i/status/2060680391900733830",
+      "source": "X/Twitter",
+      "author": "@pritipatelfgoo",
+      "date": "2026-05-30",
+      "time": "19:11",
+      "likes": 188,
+      "views": 11624
     },
     {
       "title": "AI agents are increasingly researching and shortlisting vendors before humans enter the buying process.",
@@ -188,6 +276,17 @@
       "time": "10:30",
       "likes": 79,
       "views": 5794
+    },
+    {
+      "title": "Q：我把数据库接入了 AI Agent，每次用手机发消息让它帮我查数据、导出文件，但 token 消耗特别大。我已经把工作流写进了 Agent 的 Memory 里，但它就是不按流程走，该怎么办？",
+      "summary": "A：这是一个非常典型的问题。根本原因在于：Memory 只是“背景信息”，不是“执行指令”。Agent 每次对话都会重新理解意图、重新规划步骤，这个思考过程本身就是 token 消耗的大头。\n\n解决方案：用 Agent Skill + Script 替代 Memory 里的工作流。\n\n核心思路是把任务拆成两部分：\n- LLM 只做它擅长的事——把自然语言翻译成 SQL 查询语句\n- 确定性的步骤全部用脚本——执行 SQL、格式化结果、上传文件，这些不需要 AI 思考，写成 Python/Shell 脚本直接跑\n\n再进一步，在 Skill 里内嵌你的表结构说明和常用 SQL 模板，Agent 只…",
+      "url": "https://x.com/i/status/2060538728011927954",
+      "source": "X/Twitter",
+      "author": "@dotey",
+      "date": "2026-05-30",
+      "time": "09:48",
+      "likes": 188,
+      "views": 17661
     },
     {
       "title": "Codex got a new Profile tab in settings with detailed token consumption stats.",
@@ -9870,6 +9969,17 @@
       "views": 13035354
     },
     {
+      "title": "太炸裂了！GPT-image-2 生成3A游戏《黑神话：韩立》😁",
+      "summary": "利用 GPT-image-2 + Seedance 2.0 ，小灰生成了3D游戏《黑神话：韩立》的Demo视频。  \n\n提示词在留言区。 https://t.co/ohhyVeVfCG",
+      "url": "https://x.com/i/status/2047261715994399078",
+      "source": "X/Twitter",
+      "author": "@XiaohuiAI666",
+      "date": "2026-04-23",
+      "time": "18:30",
+      "likes": 11,
+      "views": 9735
+    },
+    {
       "title": "好久没有发Seedance 2.0的视频分享了，不是不想发，主要是即梦的Seedance贵且慢。",
       "summary": "刚看到有大佬分享了一个接入了Seedance 2.0的平台：Rita。\n\n你绝对想不到它居然是GamsGo旗下的一个视频平台，GamsGo之前应该有不少大佬推荐过，可以在上面跟别人拼车买到各种比较优惠的大模型的订阅服务。\n\n现在又接入了Seedance 2.0，还限时送积分，相比即梦那真的是打骨折，是真壕气。\n\n而且不是只能用Seedance一个模型，还可以同时用ChatGPT、Gemini、Claude、NanoBanana 等顶级模型。\n\n注册地址：https://t.co/YUpBmpoKUe\n\n我用它做了一个广州的城市宣传片，确认是正版Seedance 2.0，视频和提示词见评论区。\n…",
       "url": "https://x.com/i/status/2047240877261951283",
@@ -10079,6 +10189,17 @@
       "views": 139370
     },
     {
+      "title": "Give your agent the Molty spicy SOUL upgrade: stronger opinions, less corporate sludge, better instincts, and replies that might finally sound like someone worth talking to at 2am 🦞https://t.co/Is4Q1GsMpQ",
+      "summary": "",
+      "url": "https://x.com/i/status/2041003999856406714",
+      "source": "X/Twitter",
+      "author": "@openclaw",
+      "date": "2026-04-06",
+      "time": "12:04",
+      "likes": 2154,
+      "views": 252799
+    },
+    {
       "title": "Claude Code源码泄露后，关于Claude你必看的学习的资料（建议收藏）",
       "summary": "1. Claude Code 官方文档 — 官方使用指南与架构说明：https://t.co/AtD6qtAdEe\n2. @mal_shaik 的源码分析线程 — \"我读完了整个 Claude Code 源码，这样你就不用读了\"，总结了 11 层架构、60+ 工具、5 种压缩策略：https://t.co/z7xoslZ18w\n3. @chenchengpro 的中文技术解读 — 从源码结构到提取方法的完整中文分析：https://t.co/eBUQ5aaKl1\n4. @xxxjzuo 推荐的架构设计哲学分析 — 分析 Claude Code 稳定高质量输出背后的设计哲学：https://t.…",
       "url": "https://x.com/i/status/2039705677963427962",
@@ -10099,6 +10220,17 @@
       "time": "10:43",
       "likes": 156,
       "views": 59909
+    },
+    {
+      "title": "Reality Check",
+      "summary": "Seedance 2.0 - Prompt below ⬇️ https://t.co/vgabUJ7Vhs",
+      "url": "https://x.com/i/status/2039380650109649085",
+      "source": "X/Twitter",
+      "author": "@aimikoda",
+      "date": "2026-04-02",
+      "time": "00:33",
+      "likes": 1441,
+      "views": 175677
     },
     {
       "title": "这两本书把Claude Code和Codex的Harness工程吃透了，对于Claude Code和Codex源码解析和对比都入木三分，文科生也能读的津津有味：",
