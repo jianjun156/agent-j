@@ -1,7 +1,40 @@
 {
   "month": "2026-06",
-  "lastUpdate": "2026-06-03T18:00:01+08:00",
+  "lastUpdate": "2026-06-03T18:02:30+08:00",
   "articles": [
+    {
+      "title": "Perplexity Computer will soon be able to dynamically split compute power between local models and cloud models!",
+      "summary": "If that would drive Perplexity Computer costs down, it would be huge, since it is one of the top blockers for many at this moment. \n\nSoon 👀 https://t.co/MQgoBi3QOJ",
+      "url": "https://x.com/i/status/2062086538549195062",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "16:18",
+      "likes": 88,
+      "views": 7455
+    },
+    {
+      "title": "10 GitHub repos that will level up your AI Agent skills (SAVE THIS)🔖",
+      "summary": "1. Hands-On Large Language Models\nComplete code notebooks from basics to advanced fine-tuning.\n🔗 https://t.co/8q0GPd9S7Y\n\n2. AI Agents for Beginners\nA free 11-part intro course to build your first agents.\n🔗 https://t.co/Vo869gOld4\n\n3. GenAI Agents\nTutorials and code for building generative AI agents…",
+      "url": "https://x.com/i/status/2062016475293196354",
+      "source": "X/Twitter",
+      "author": "@Suryanshti777",
+      "date": "2026-06-03",
+      "time": "11:40",
+      "likes": 26,
+      "views": 982
+    },
+    {
+      "title": "OpenAI 更新 Codex，这次信息量挺大。",
+      "summary": "Codex 现在每周已有 500 万+ 用户，而且不再只是开发者工具。官方称，非开发者已占用户约 20%，包括分析师、市场、运营、设计师、研究员、投资人等，增长速度超过开发者的 3 倍。\n\n1. 角色插件\n\nOpenAI 推出 6 类 role-specific plugins，把应用、技能、指令和工作流整合在一起。官方称，这批插件覆盖 62 个常用应用和 110 个 skills。\n\n6 类插件包括：\n\n1. 数据分析：支持 Snowflake、Databricks Genie、Hex、Tableau 等，用于数据探索、指标分析和报告生成。\n\n2. 创意生产：支持 Figma、Canva、S…",
+      "url": "https://x.com/i/status/2061966917267865684",
+      "source": "X/Twitter",
+      "author": "@yanhua1010",
+      "date": "2026-06-03",
+      "time": "08:23",
+      "likes": 131,
+      "views": 20065
+    },
     {
       "title": "用 AI 智能体生产级事情，写代码、跑流程、调接口，一开始还行，但规模一大就容易失控，权限太宽、上下文丢失、调试无从下手。",
       "summary": "于是找到了 agents-best-practices 这套完整的智能体运行框架设计指南，不限于编码场景，运营、销售、数据分析等领域同样适用。\n\n核心是让模型只负责「提议」，真正的验证、授权、执行和记录全部交给外部运行框架来完成，确保每一步都可审计、可控制。\n\nGitHub：https://t.co/nK8LryWhIU\n\n内容涵盖了工具权限分级、上下文压缩策略、预算控制机制、工作流拆解方法，还有上线前的检查清单。\n\n安装方式也很灵活，支持 Codex 和 Claude Code，一条命令就能加载到你的开发环境里。\n\n如果你正在搭建或优化自己的 AI 智能体系统，这份给 AI Agent 的生…",
@@ -135,6 +168,17 @@
       "views": 41785
     },
     {
+      "title": "When the output is a prototype, Sites gives your team a place to review it together.",
+      "summary": "",
+      "url": "https://x.com/i/status/2061888379093184727",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-03",
+      "time": "03:11",
+      "likes": 69,
+      "views": 18333
+    },
+    {
       "title": "Bring your briefs to life.",
       "summary": "The creative production plugin for Codex. https://t.co/XzQ75rZtDo",
       "url": "https://x.com/i/status/2061887828058075190",
@@ -168,6 +212,17 @@
       "views": 52971
     },
     {
+      "title": "We’re making Codex more useful for your work by expanding plugins beyond individual tools.",
+      "summary": "These plugins turn Codex into a specialist for a specific role with a single install, no coding required.\n\nCodex can access 62 popular apps and 110 skills for work across sales, data analytics, creative production, product design, and public equity investing.\n\nhttps://t.co/nunrYP2uMI",
+      "url": "https://x.com/i/status/2061887650391625870",
+      "source": "X/Twitter",
+      "author": "@OpenAI",
+      "date": "2026-06-03",
+      "time": "03:08",
+      "likes": 3591,
+      "views": 333456
+    },
+    {
       "title": "@steipete Quantum Computing updates - Majorana 2 https://t.co/N8oqh7BC7Z",
       "summary": "",
       "url": "https://x.com/i/status/2061883740293353577",
@@ -177,6 +232,17 @@
       "time": "02:52",
       "likes": 11,
       "views": 1861
+    },
+    {
+      "title": "@steipete Tuned environments on Copilot 🔥 https://t.co/4NyT7VCQb6",
+      "summary": "",
+      "url": "https://x.com/i/status/2061880110764970368",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "02:38",
+      "likes": 5,
+      "views": 1205
     },
     {
       "title": "We’ve added a CLI for Claude Platform to make every API endpoint runnable from your terminal.",
@@ -234,6 +300,28 @@
       "views": 27650
     },
     {
+      "title": "Meet Microsoft Scout.",
+      "summary": "An always-on agent that keeps work moving, taking action without needing to be prompted each time.\n\nAs Microsoft’s first Autopilot agent, Microsoft Scout works across Teams, Outlook, OneDrive, and more—taking action within the controls your organization sets.\n\nLearn more: https://t.co/n8xTWVZA5P",
+      "url": "https://x.com/i/status/2061874930547871868",
+      "source": "X/Twitter",
+      "author": "@Microsoft365",
+      "date": "2026-06-03",
+      "time": "02:17",
+      "likes": 1625,
+      "views": 269412
+    },
+    {
+      "title": "TinyFish launched Bigset, an open-source multi-agent system that builds a verified, structured dataset from a single plain-language sentence, pulled live from the web and refreshed on whatever cadence you set.",
+      "summary": "Describe the data, agents research it across real sources, deduplicate, and hand back a table you can export as CSV or XLSX.",
+      "url": "https://x.com/i/status/2061873207603322889",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "02:10",
+      "likes": 71,
+      "views": 8423
+    },
+    {
       "title": "@steipete With support for the Canvas feature 🔥 https://t.co/v3YJoxsh5d",
       "summary": "",
       "url": "https://x.com/i/status/2061870587958403265",
@@ -245,6 +333,17 @@
       "views": 1575
     },
     {
+      "title": "@steipete A dedicated Github Copilot app 👀 https://t.co/9iGXavkhvS",
+      "summary": "",
+      "url": "https://x.com/i/status/2061870434983813313",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "01:59",
+      "likes": 22,
+      "views": 2731
+    },
+    {
       "title": "MAI-Thinking-1 Benchmarks 👀 https://t.co/NdU1NxfB2M",
       "summary": "",
       "url": "https://x.com/i/status/2061869972511511036",
@@ -254,6 +353,28 @@
       "time": "01:58",
       "likes": 52,
       "views": 5150
+    },
+    {
+      "title": "MAI-Code-1-Flash Benchmarks https://t.co/TDiKIwBzzJ",
+      "summary": "",
+      "url": "https://x.com/i/status/2061869969088880991",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "01:58",
+      "likes": 60,
+      "views": 4470
+    },
+    {
+      "title": "Source https://t.co/scYXNxzToy",
+      "summary": "",
+      "url": "https://x.com/i/status/2061869975665606687",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "01:58",
+      "likes": 19,
+      "views": 4464
     },
     {
       "title": "🚀 Codex app update",
@@ -278,6 +399,17 @@
       "views": 1345
     },
     {
+      "title": "Introducing model routing to Factory.",
+      "summary": "Factory Router picks the right model for every task, automatically.\n\nMaintain frontier performance while cutting costs by 25%. https://t.co/WFnJbSnwNQ",
+      "url": "https://x.com/i/status/2061862733126275549",
+      "source": "X/Twitter",
+      "author": "@FactoryAI",
+      "date": "2026-06-03",
+      "time": "01:29",
+      "likes": 1759,
+      "views": 1503808
+    },
+    {
       "title": "Badge form factor AI device 👀",
       "summary": "With camara, voice control and AI Agents https://t.co/3FA4Db4mPp",
       "url": "https://x.com/i/status/2061860045256626630",
@@ -287,6 +419,28 @@
       "time": "01:18",
       "likes": 14,
       "views": 1398
+    },
+    {
+      "title": "We believe AI can be a dedicated research partner to help discover the next breakthrough.",
+      "summary": "Enter Co-Scientist: our latest Gemini-based multi-agent system that can generate, debate and evolve novel hypotheses for complex scientific problems 🧵",
+      "url": "https://x.com/i/status/2061857539977842793",
+      "source": "X/Twitter",
+      "author": "@GoogleDeepMind",
+      "date": "2026-06-03",
+      "time": "01:08",
+      "likes": 1260,
+      "views": 118037
+    },
+    {
+      "title": "Source https://t.co/FMTcDOFuBL",
+      "summary": "",
+      "url": "https://x.com/i/status/2061852748111339602",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "00:49",
+      "likes": 22,
+      "views": 3032
     },
     {
       "title": "OPENAI 🔥: New Sites, role-specific Plugins, and Annotations features are rolling out in preview for Business and Enterprise plans.",
@@ -322,6 +476,17 @@
       "views": 2965
     },
     {
+      "title": "Codex will be integrated further into ChatGPT https://t.co/XJvQyTrRr7",
+      "summary": "",
+      "url": "https://x.com/i/status/2061839720640893387",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-02",
+      "time": "23:57",
+      "likes": 130,
+      "views": 7380
+    },
+    {
       "title": "Interpreting law is one of the oldest jobs in the world. @MaxJunestrand, co-founder and CEO of @WeAreLegora, is bringing it into its next era with Claude.",
       "summary": "His bet: every new model release raises the tide, and Legora is building the boats for everyone else. https://t.co/EOM8PqALT4",
       "url": "https://x.com/i/status/2061829558999912680",
@@ -333,6 +498,28 @@
       "views": 237506
     },
     {
+      "title": "Useful workflow💡",
+      "summary": "1) Use Seedance to map the dance to your character\n2) Use Google OMNI for flash cuts of the same dance\n\nObviously this doesn't only apply to dancing videos.... very powerful\n\nOriginal video from user: t_kuma.65 on IG https://t.co/B88fY41V2z",
+      "url": "https://x.com/i/status/2061824522773496227",
+      "source": "X/Twitter",
+      "author": "@AIWarper",
+      "date": "2026-06-02",
+      "time": "22:57",
+      "likes": 196,
+      "views": 15571
+    },
+    {
+      "title": "Capafy opened a free trial across its Skill marketplace, letting anyone run its expert-built Skill Agents at no cost before paying for a single one.",
+      "summary": "Free skills! 👀 https://t.co/P0cNeSWwze",
+      "url": "https://x.com/i/status/2061801109308481628",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-02",
+      "time": "21:24",
+      "likes": 104,
+      "views": 19276
+    },
+    {
       "title": "@YknZhu @ThiccNchubb Thanks for confirming! 🙌",
       "summary": "",
       "url": "https://x.com/i/status/2061758773694235000",
@@ -342,6 +529,17 @@
       "time": "18:36",
       "likes": 0,
       "views": 56
+    },
+    {
+      "title": "【海外で話題】",
+      "summary": "Anthropicの中の人が\nClaude Codeを“自走させる9つのコツ”をまとめた36分動画を無料公開👀ポイントはいきなりタスクを投げないこと！動画見たけどコツはこんな感じ👇\nhttps://t.co/DZrdgL9BiW\n① タスクを明確化\n「○○について作る」ではなく\n“成功の定義”まで書いて渡す。\n例：\n「[SUCCESS CRITERIA]を満たすバックエンドを\nClaude Codeで完成させたい」\n\n② コンテキストを渡す\nCLAUDE.md / ルール / 既存設計を\nリポにまとめて読み込ませる。\n③ verification層を組む\nClaude自身が差分・テスト・型を採…",
+      "url": "https://x.com/i/status/2061749686986510796",
+      "source": "X/Twitter",
+      "author": "@ClaudeCode_love",
+      "date": "2026-06-02",
+      "time": "18:00",
+      "likes": 164,
+      "views": 33991
     },
     {
       "title": "@rkjat65 Interesting - I see it too, but it doesn't work - is it working on your side by any chance?",
@@ -397,6 +595,17 @@
       "time": "11:52",
       "likes": 628,
       "views": 63768
+    },
+    {
+      "title": "刚刷到一个TikTok 410万播放的爆款，差点笑死…",
+      "summary": "黑人母子路边搬沙发，警车闪灯冲过来，以为要出大事，结果警察掏出清洁剂疯狂擦沙发？！这反转绝了😂\n\n我直接不信邪：用AI 1:1复刻了一个！\n\n步骤就3步：\n1️⃣ 把原视频丢给AI，让它当“好莱坞导演”拆解成逐秒Prompt\n2️⃣ 喂给Seedance 2.0（字节最新多模态视频模型）\n3️⃣ 换成我要带的清洁剂产品图\n\n结果连警察擦沙发的丝滑动作 + 沙发变新效果都完美还原🤯\n\n这玩意儿做TikTok带货简直降维打击，完播率和转化率直接起飞。\n\n完整复刻流程 + Prompt模板我放评论区了（想看的扣“1”）\n\n你觉得AI视频生成下一次会先干掉谁的饭碗？\nA. 传统广告导演\nB. 短视频剪…",
+      "url": "https://x.com/i/status/2061645353170919861",
+      "source": "X/Twitter",
+      "author": "@VincentLogic",
+      "date": "2026-06-02",
+      "time": "11:05",
+      "likes": 31,
+      "views": 6502
     },
     {
       "title": "卧槽，天塌了，",
@@ -562,6 +771,17 @@
       "time": "01:35",
       "likes": 18176,
       "views": 2026062
+    },
+    {
+      "title": "someone built an entire company org chart out of AI agents and posted it on TikTok. 48,5k likes",
+      "summary": "a Chief agent at the top\n\nmarketing, SEO, CRM, VC sourcing underneath. \n\neach one wired to Gmail, Notion, the tools a real team would use\n\nthis is the same thing Karpathy described in code. he went from 80% manual to 80% AI in four weeks by switching modes, not tools. \"I've never felt more behind as…",
+      "url": "https://x.com/i/status/2061479734794404187",
+      "source": "X/Twitter",
+      "author": "@0xDepressionn",
+      "date": "2026-06-02",
+      "time": "00:07",
+      "likes": 129,
+      "views": 14495
     },
     {
       "title": "@AnthropicAI It is happening! 📈",
@@ -1114,6 +1334,17 @@
       "views": 169869
     },
     {
+      "title": "Codex now supports more of the Windows developer loop.",
+      "summary": "With Computer use on Windows, Codex can test apps, debug flows, and review work where your project context lives. Codex in the ChatGPT mobile app lets you connect to Windows machines and keep steering from your phone.",
+      "url": "https://x.com/i/status/2060429591655927942",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-05-30",
+      "time": "02:34",
+      "likes": 1304,
+      "views": 174582
+    },
+    {
       "title": "Windows users, this one’s for you.",
       "summary": "Computer use now works on Windows, so Codex can take action on your Windows computer.\n\nAnd with Windows support for Codex in the ChatGPT mobile app, you can start, review, and steer tasks on the go while work continues on your Windows machine.\n\nAn early experience, but we’re working on more ways to …",
       "url": "https://x.com/i/status/2060428604727771421",
@@ -1334,6 +1565,17 @@
       "views": 278399
     },
     {
+      "title": "Claude Code 2.1.153 - additional changes",
+      "summary": "CLI surface:\nAdded:\n• models: claude-empty-\n\nFile: https://t.co/wzHgT2NYEg\n\nMetadata:\n• Time since 2.1.152 release: 1d 0h 40m 4s\n• Bundle file size: +11.5 kB (+0.0%)\n\n• Prompt files: +2 (+3.1%)\n• Prompt tokens: +2,724 (+3.2%)\n\nPrompt token mix by kind:\n• tools: 81.3%→81.9%\n• system-reminder: 11.0%→1…",
+      "url": "https://x.com/i/status/2059802901548044417",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-28",
+      "time": "09:04",
+      "likes": 11,
+      "views": 4711
+    },
+    {
       "title": "BREAKING 🚨: Sesame just released HER",
       "summary": "> Sesam iOS app is now available in Preview, offering a collection of 4 personal voice agents.\n> Sesame Agents are powered by a SOTA real-time voice mode.\n> Agents can search the web, manage reminders, and have memory. \n> App rollout is gradual and has a whitelist \n\nNothing stands even close ATM.",
       "url": "https://x.com/i/status/2059743513047093533",
@@ -1521,6 +1763,17 @@
       "views": 65428
     },
     {
+      "title": "ini bukan footage asli",
+      "summary": "ini bukan filter\nini bukan edit\n\nini prompt Seedance 2.0 yang gua bangun frame by frame\nSony Cyber-Shot 2012. CCD grain. LCD HUD. Direct flash.\nsemua dari nol. semua teks.\n\nAI udah bisa replicate nostalgia yang lo sendiri ga pernah ngalamin .  Cek prompt di reply",
+      "url": "https://x.com/i/status/2058715926451896397",
+      "source": "X/Twitter",
+      "author": "@aripratama293",
+      "date": "2026-05-25",
+      "time": "09:05",
+      "likes": 3066,
+      "views": 2007479
+    },
+    {
       "title": "这套在闲鱼卖 698 的 Claude Code 入门视频视频，是我见过最好的入门教程。",
       "summary": "我现在免费分享给大家，还是中文版的！ \n\n只要你可以耐心看完这一套教程，就可以学会用 AI 搭建工作流、实现自动化、处理复杂任务。\n\n记得收藏起来有时间看看 https://t.co/NNuOpEI27K",
       "url": "https://x.com/i/status/2058390457902829992",
@@ -1563,6 +1816,17 @@
       "time": "06:21",
       "likes": 1327,
       "views": 152425
+    },
+    {
+      "title": "Claude Code 2.1.149 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2057892886360854922",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-05-23",
+      "time": "02:34",
+      "likes": 46,
+      "views": 7108
     },
     {
       "title": "Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI workspace built on Claude.",
@@ -1783,6 +2047,17 @@
       "time": "15:57",
       "likes": 404,
       "views": 117079
+    },
+    {
+      "title": "With MCP tunnels, your agents reach MCP servers inside your private network without exposing them to the public internet. https://t.co/Fl18mTb5QU",
+      "summary": "",
+      "url": "https://x.com/i/status/2056645491207655584",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-05-19",
+      "time": "15:57",
+      "likes": 642,
+      "views": 146579
     },
     {
       "title": "Claude Code 2.1.144 additional modifications",
@@ -2421,6 +2696,17 @@
       "time": "06:06",
       "likes": 11,
       "views": 4267
+    },
+    {
+      "title": "@JonathanWinbush feeling is mutual",
+      "summary": "",
+      "url": "https://x.com/i/status/1968407228894863496",
+      "source": "X/Twitter",
+      "author": "@Meta",
+      "date": "2025-09-18",
+      "time": "04:10",
+      "likes": 2,
+      "views": 1359
     },
     {
       "title": "Take a peek into what the future of headsets might hold. https://t.co/TYHg37jGUL",
