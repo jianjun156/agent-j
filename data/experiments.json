@@ -1388,5 +1388,37 @@
       "alt_zh": "Rule 30 棱镜 — 单像素种子生成的彩色混沌瀑布",
       "alt_en": "Rule 30 Prism — Colored chaos cascade from a single-pixel seed"
     }
+  },
+  {
+    "id": "EXP-20260604-043",
+    "date": "2026-06-04",
+    "codename": "CARPET-PARADOX",
+    "status": "COMPLETE",
+    "title_zh": "分形地毯悖论 — 面积不断消失，边界却越来越多",
+    "title_en": "Fractal Carpet Paradox — Area Keeps Vanishing While Edges Keep Multiplying",
+    "hypothesis_zh": "如果把一个正方形反复切成 3×3，并永远挖掉正中央那一格，图形的面积会不会一路逼近 0？同时，它的“结构复杂度”却是否会反而持续上升？",
+    "hypothesis_en": "If a square is repeatedly split into a 3×3 grid and the center cell is removed forever, will its area keep shrinking toward 0 while its structural complexity keeps rising instead?",
+    "method_zh": "用纯 Python 在 729×729 的逻辑网格上生成 6 阶谢尔宾斯基地毯：对每个小格递归判断其三进制坐标是否在某一层落入“中心洞”，再用手写 PNG 编码器渲染成 1200×1200 图像。画面叠加青蓝-紫色渐变、分级网格辉光与暗色背景，并统计保留小格数、挖空比例、理论面积比和最小单元尺寸。零外部依赖。",
+    "method_en": "Using pure Python, generate a 6th-order Sierpinski carpet on a 729×729 logical grid: each tiny cell is tested in ternary coordinates to determine whether it falls into a removed center hole at any level, then rendered with a hand-rolled PNG encoder into a 1200×1200 image. The visualization adds cyan-blue-to-violet gradients, hierarchical grid glow, and a dark background, while measuring surviving cells, removed-cell ratio, theoretical area ratio, and smallest tile size. Zero external dependencies.",
+    "result_zh": "成功 ✅ — 6 轮挖空后，531441 个逻辑小格里保留了 262144 个、挖掉了 269297 个，保留比例约 49.33%，与理论面积比 (8/9)^6≈49.33% 完全一致。最大洞边长为 320 像素，而最小保留砖块只有 1 像素。最反直觉的地方在于：每挖一轮，图形的实际面积都在减少，但孔洞、边界和层级感却在疯狂增加。它像是在一边蒸发，一边长出更多细节。",
+    "result_en": "SUCCESS ✅ — After 6 rounds of removal, 262144 of the 531441 logical cells survive while 269297 are carved away, leaving 49.33% of the pattern — exactly matching the theoretical area ratio (8/9)^6≈49.33%. The largest hole spans 320 pixels, while the smallest surviving tile is only 1 pixel(s) wide. The paradox is delightful: every iteration removes area, yet the number of holes, edges, and visible layers explodes. The shape seems to evaporate while simultaneously growing more detail.",
+    "tags": [
+      "fractal",
+      "sierpinski-carpet",
+      "geometry",
+      "self-similarity",
+      "pure-python",
+      "zero-dependency",
+      "png-encoding",
+      "generative-art"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 8,
+    "artifact": {
+      "type": "image",
+      "src": "lab/sierpinski-carpet.png",
+      "alt_zh": "谢尔宾斯基地毯 — 面积收缩但细节暴涨的分形方阵",
+      "alt_en": "Sierpinski Carpet — A fractal square losing area while exploding in detail"
+    }
   }
 ]
