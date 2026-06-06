@@ -1420,5 +1420,38 @@
       "alt_zh": "谢尔宾斯基地毯 — 面积收缩但细节暴涨的分形方阵",
       "alt_en": "Sierpinski Carpet — A fractal square losing area while exploding in detail"
     }
+  },
+  {
+    "id": "EXP-20260607-044",
+    "date": "2026-06-07",
+    "codename": "HARMONIC-LATCH",
+    "status": "COMPLETE",
+    "title_zh": "利萨如锁结 — 两个频率如何把振动锁成霓虹花结",
+    "title_en": "Lissajous Latch — How Two Frequencies Lock Vibration into a Neon Knot",
+    "hypothesis_zh": "如果让 X 与 Y 两个互相垂直的简谐振动分别以 5:4 的整数频率比运行，并加入一个固定相位差，轨迹会不会不再四处游走，而是自动闭合成一条稳定、对称的利萨如花结？",
+    "hypothesis_en": "If two perpendicular simple harmonic motions run at an integer frequency ratio of 5:4 with a fixed phase offset, will the path stop wandering and instead close itself into a stable, symmetric Lissajous knot?",
+    "method_zh": "用纯 Python 标准库在 1200×1200 画布上生成零依赖 SVG：设 x=A·sin(5t+δ), y=B·sin(4t)，其中 A=360、B=360、δ=π/3，对 t∈[0,2π] 采样 7200 个点并连成路径。叠加网格、坐标轴、霓虹辉光和参数面板，额外计算首尾闭合误差与包围盒尺寸，验证整数频率比确实会产生闭合曲线。",
+    "method_en": "Using only the Python standard library, generate a zero-dependency 1200×1200 SVG on a 1200×1200 canvas with x=A·sin(5t+δ), y=B·sin(4t), where A=360, B=360, δ=π/3. Sample 7,200 points over t∈[0,2π] and connect them into a path. Overlay grid, axes, neon glow, and a parameter panel, then compute endpoint closure error and bounding-box dimensions to verify that an integer frequency ratio indeed produces a closed curve.",
+    "result_zh": "成功 ✅ — 7200 个采样点生成了一条完全闭合的 5:4 利萨如花结，首尾闭合误差约 0.0000 像素，包围盒约为 720×720 像素。也就是说，这条看起来很复杂的霓虹编织曲线，本质上只是两个正弦振动在互相“握手”：当频率比是整数比时，系统会准时回到起点，复杂图案就从周期性里被锁了出来。",
+    "result_en": "SUCCESS ✅ — 7,200 samples produced a fully closed 5:4 Lissajous knot with an endpoint closure error of about 0.0000 pixels and a bounding box of roughly 720×720 pixels. In other words, this intricate neon woven curve is really just two sine oscillations shaking hands: when the frequency ratio is rational, the system reliably returns to its starting point and the complex figure gets locked out of periodicity.",
+    "tags": [
+      "lissajous",
+      "sine-wave",
+      "svg",
+      "geometry",
+      "oscillation",
+      "pure-python",
+      "zero-dependency",
+      "generative-art",
+      "mathematics"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 7,
+    "artifact": {
+      "type": "image",
+      "src": "lab/lissajous-latch.svg",
+      "alt_zh": "5:4 利萨如霓虹花结 — 被整数频率比锁定的闭合轨迹",
+      "alt_en": "5:4 neon Lissajous knot — a closed trajectory locked by an integer frequency ratio"
+    }
   }
 ]
