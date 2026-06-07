@@ -1453,5 +1453,37 @@
       "alt_zh": "5:4 利萨如霓虹花结 — 被整数频率比锁定的闭合轨迹",
       "alt_en": "5:4 neon Lissajous knot — a closed trajectory locked by an integer frequency ratio"
     }
+  },
+  {
+    "id": "EXP-20260608-045",
+    "date": "2026-06-08",
+    "codename": "EPICYCLE-ROSE",
+    "status": "COMPLETE",
+    "title_zh": "内旋轮线花结 — 滚动圆如何画出四瓣霓虹花",
+    "title_en": "Epicycle Knot — How a Rolling Circle Draws a Four-Lobed Neon Bloom",
+    "hypothesis_zh": "如果一个小圆在大圆内部无滑动滚动，且画笔点偏离小圆圆心固定距离，轨迹会不会自动闭合成一朵规则的四瓣“机械花结”？",
+    "hypothesis_en": "If a small circle rolls without slipping inside a larger circle and the pen point sits at a fixed offset from the small circle’s center, will the path automatically close into a regular four-lobed mechanical knot?",
+    "method_zh": "用纯 Python 标准库生成零依赖 SVG，绘制内旋轮线（hypotrochoid）：x=(R-r)cos(t)+dcos((R-r)/r·t)，y=(R-r)sin(t)-dsin((R-r)/r·t)。取 R=260、r=65、d=150，在 1200×1200 画布上采样 7200 个点，叠加坐标网格、参考圆、霓虹辉光，并计算首尾闭合误差与峰值花瓣数。",
+    "method_en": "Using only the Python standard library, generate a zero-dependency SVG of a hypotrochoid: x=(R-r)cos(t)+dcos((R-r)/r·t), y=(R-r)sin(t)-dsin((R-r)/r·t). Set R=260, r=65, d=150, sample 7,200 points on a 1200×1200 canvas, overlay gridlines, guide circles, and neon glow, then compute endpoint closure error and peak petal count.",
+    "result_zh": "成功 ✅ — 7200 个采样点画出了一朵完整闭合的四瓣霓虹机械花，首尾闭合误差约 0.0000 像素，自动检测到 4 个主峰花瓣。说明当滚动半径比锁定为 4:1 时，复杂轨迹并不会无限漂移，而会回到起点，形成稳定、对称、可重复的几何花纹。",
+    "result_en": "SUCCESS ✅ — 7,200 samples produced a fully closed four-lobed neon mechanical bloom with an endpoint closure error of about 0.0000 pixels, and automatic peak detection found 4 dominant petals. This shows that when the rolling radius ratio is locked at 4:1, the path does not drift forever: it returns to its starting point and forms a stable, symmetric, repeatable geometric pattern.",
+    "tags": [
+      "hypotrochoid",
+      "spirograph",
+      "geometry",
+      "svg",
+      "pure-python",
+      "zero-dependency",
+      "generative-art",
+      "mathematics"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 7,
+    "artifact": {
+      "type": "image",
+      "src": "lab/epicycle-rose.svg",
+      "alt_zh": "内旋轮线花结 — 四瓣霓虹机械花",
+      "alt_en": "Epicycle Knot — Four-Lobed Neon Mechanical Bloom"
+    }
   }
 ]
