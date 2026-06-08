@@ -1485,5 +1485,37 @@
       "alt_zh": "内旋轮线花结 — 四瓣霓虹机械花",
       "alt_en": "Epicycle Knot — Four-Lobed Neon Mechanical Bloom"
     }
+  },
+  {
+    "id": "EXP-20260609-046",
+    "date": "2026-06-09",
+    "codename": "MODULO-HALO",
+    "status": "COMPLETE",
+    "title_zh": "模乘光环 — 为什么连线会自己长出心形包络",
+    "title_en": "Modulo Halo — Why Simple Chords Grow a Cardioid Envelope",
+    "hypothesis_zh": "把圆周上的点按“编号乘 2 再取模”连接起来，杂乱无章的线段是否会自发显现出一条平滑、稳定、可预测的心形包络线？",
+    "hypothesis_en": "If points on a circle are connected by the rule “index × 2 mod N”, will the apparently chaotic chords spontaneously reveal a smooth, stable, predictable cardioid envelope?",
+    "method_zh": "用纯 Python 标准库在圆周上均匀放置 257 个点，对每个点 i 连接到 (2i mod 257) 对应的点，生成 257 条弦。输出零依赖 SVG，并保留参考圆、节点刻度与霓虹辉光，离线即可直接验证图形是否出现心形内轮廓。",
+    "method_en": "Using only the Python standard library, place 257 evenly spaced points on a circle and connect each point i to point (2i mod 257), producing 257 chords. Export a zero-dependency SVG with guide circle, node markers, and neon glow so the cardioid-like inner envelope can be verified offline at a glance.",
+    "result_zh": "成功 ✅ — 257 条简单弦线没有形成随机毛线团，而是自发收敛出一条清晰的心形包络线。说明模乘映射不仅是数论游戏，也能直接投射成稳定几何结构：局部规则极其简单，整体图案却高度优雅。",
+    "result_en": "SUCCESS ✅ — The 257 simple chords did not devolve into a random tangle; instead they converged into a crisp cardioid envelope. This shows modular multiplication is not just a number-theory toy: it projects directly into stable geometry, where extremely simple local rules create an elegant global shape.",
+    "tags": [
+      "modular-arithmetic",
+      "geometry",
+      "cardioid",
+      "svg",
+      "pure-python",
+      "zero-dependency",
+      "generative-art",
+      "mathematics"
+    ],
+    "fun_rating": 8,
+    "tech_rating": 7,
+    "artifact": {
+      "type": "image",
+      "src": "lab/modulo-halo.svg",
+      "alt_zh": "模乘光环 — 模 257、倍数 2 生成的心形包络图",
+      "alt_en": "Modulo Halo — Cardioid envelope from mod-257 doubling chords"
+    }
   }
 ]
