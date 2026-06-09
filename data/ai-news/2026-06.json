@@ -1,7 +1,238 @@
 {
   "month": "2026-06",
-  "lastUpdate": "2026-06-09T08:00:01+08:00",
+  "lastUpdate": "2026-06-09T08:01:57+08:00",
   "articles": [
+    {
+      "title": "🚀 Codex CLI 0.138.0 is out!",
+      "summary": "🖥 /app handoff to Codex Desktop on macOS and Windows\n🖼 Saved image paths now exposed to model\n🔌 Plugin add/remove and list commands gain --json output\n\nChangelog: https://t.co/VODCXW6Agw",
+      "url": "https://x.com/i/status/2064127872827285732",
+      "source": "X/Twitter",
+      "author": "@Codex_Changelog",
+      "date": "2026-06-09",
+      "time": "07:30",
+      "likes": 18,
+      "views": 967
+    },
+    {
+      "title": "Here are the experiences developers are building with the Realtime API: https://t.co/13D6JEnaHf",
+      "summary": "",
+      "url": "https://x.com/i/status/2064121924888797188",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-09",
+      "time": "07:06",
+      "likes": 70,
+      "views": 6594
+    },
+    {
+      "title": "Codex CLI 0.138.0 is out.",
+      "summary": "Highlights:\n- /app can now hand off the CLI thread to Codex Desktop on macOS and Windows\n- Saved image file paths are now exposed to the model for more reliable follow-up edits and file references\n- Reasoning effort: TUI gains fallback shortcuts for missing Alt bindings; model-defined effort levels …",
+      "url": "https://x.com/i/status/2064121180492382681",
+      "source": "X/Twitter",
+      "author": "@CodexReleases",
+      "date": "2026-06-09",
+      "time": "07:03",
+      "likes": 78,
+      "views": 7034
+    },
+    {
+      "title": "@pnpmjs @OpenAI @github ❤️",
+      "summary": "",
+      "url": "https://x.com/i/status/2064119950491447697",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-09",
+      "time": "06:58",
+      "likes": 1,
+      "views": 70
+    },
+    {
+      "title": "Claude Code 2.1.169 has been released.",
+      "summary": "30 CLI changes\n\nHighlights:\n• Added --safe-mode flag and CLAUDE_CODE_SAFE_MODE to run Claude Code with customizations disabled for debugging\n• Added /cd command to change a session working directory without breaking the prompt cache mid-session\n• Untrusted project settings now require trust to set O…",
+      "url": "https://x.com/i/status/2064108721278521448",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-06-09",
+      "time": "06:14",
+      "likes": 71,
+      "views": 6282
+    },
+    {
+      "title": "Claude Code CLI 2.1.169 changelog:",
+      "summary": "New features:\n• Added --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP servers) disabled for troubleshooting\n• Added /cd command to move a session to a new working directory without breaking the prompt cache mid-session…",
+      "url": "https://x.com/i/status/2064108732393324569",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-06-09",
+      "time": "06:14",
+      "likes": 7,
+      "views": 1611
+    },
+    {
+      "title": "Claude Code 2.1.169 additional updates",
+      "summary": "CLI surface:\nAdded:\n• options: --safe-mode\n• env vars: CLAUDE_BG_CLAIM_AUTH, CLAUDE_BG_PTY_AUTH, CLAUDE_BG_RV_AUTH, CLAUDE_BG_SOCKET_TOKENS_PATH, CLAUDE_CODE_DISABLE_CLAUDE_MDS, CLAUDE_CODE_SAFE_MODE, SRT_WIN_PATH\n• models: claude-community, claude-design-contextual, claude-plugins-community\n\nRemove…",
+      "url": "https://x.com/i/status/2064108743009153161",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-06-09",
+      "time": "06:14",
+      "likes": 5,
+      "views": 1311
+    },
+    {
+      "title": "Most powerful on-device model 👀 https://t.co/GR9G0pq2cJ",
+      "summary": "",
+      "url": "https://x.com/i/status/2064047892726268346",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "02:12",
+      "likes": 9,
+      "views": 650
+    },
+    {
+      "title": "Broad world knowledge, upgraded image generation, and more! https://t.co/SdVUKV2XwV",
+      "summary": "",
+      "url": "https://x.com/i/status/2064038383597322523",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:34",
+      "likes": 8,
+      "views": 830
+    },
+    {
+      "title": "AI section - the intro goes deep about guardrails, this doesn't sound good 🤖 https://t.co/jDwxOj8VMA",
+      "summary": "",
+      "url": "https://x.com/i/status/2064037271985140110",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:30",
+      "likes": 10,
+      "views": 759
+    },
+    {
+      "title": "Updated approval system and more 👀 https://t.co/2dcqKivpXI",
+      "summary": "",
+      "url": "https://x.com/i/status/2064035840079077655",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:24",
+      "likes": 6,
+      "views": 935
+    },
+    {
+      "title": "Child accounts and gradual content control. https://t.co/knuOn9port",
+      "summary": "",
+      "url": "https://x.com/i/status/2064035319662403859",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:22",
+      "likes": 6,
+      "views": 964
+    },
+    {
+      "title": "Upgraded Child &amp; Safety features, including customization. https://t.co/vwSokSlEBs",
+      "summary": "",
+      "url": "https://x.com/i/status/2064034591552176624",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:19",
+      "likes": 7,
+      "views": 857
+    },
+    {
+      "title": "OPENAI 🔥: Users can now generate interactive charts from data and comparisons in @ChatGPTapp for web and mobile.",
+      "summary": "Testing time 👀 https://t.co/Pjso3RoHNd",
+      "url": "https://x.com/i/status/2064021173923373056",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "00:26",
+      "likes": 457,
+      "views": 24649
+    },
+    {
+      "title": "A Google Cloud engineer just showed how to build a full app with Claude from scratch",
+      "summary": "he spent 26 minutes live on stage doing what most teams take weeks to do\n\nworth more than any $500 vibe-coding course\n\nhere's what he covers:\n> zero to deployed app in a single session\n> handling five engineering roles alone with Claude\n> the exact workflow Google uses internally\n> no team, no setup…",
+      "url": "https://x.com/i/status/2064001663057207798",
+      "source": "X/Twitter",
+      "author": "@AnatoliKopadze",
+      "date": "2026-06-08",
+      "time": "23:08",
+      "likes": 387,
+      "views": 62578
+    },
+    {
+      "title": "Meet Kimi Work - a local AI agent on your desktop that does the work for you.",
+      "summary": "🔹Native agent swarm: Up to 300 AI agents running in parallel on your local machine.\n🔹Browser use: Paired with WebBridge extension, your agent will navigate websites in your browser: search, scroll, click, type and complete tasks.\n🔹Built for Finance: Native global market data tool call from Yahoo Fin…",
+      "url": "https://x.com/i/status/2063990409903112344",
+      "source": "X/Twitter",
+      "author": "@Kimi_Moonshot",
+      "date": "2026-06-08",
+      "time": "22:23",
+      "likes": 1872,
+      "views": 194147
+    },
+    {
+      "title": "Thanks to Ideogram for sending this ❤️",
+      "summary": "Ideogram 4.0 was one of the biggest releases last week! Especially for the open source community. \n\nTested it 👀 https://t.co/e3T0S0GLQt",
+      "url": "https://x.com/i/status/2063928346380038601",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-08",
+      "time": "18:17",
+      "likes": 187,
+      "views": 17319
+    },
+    {
+      "title": "兄弟们，这个项目我必须给你们强力安利一波！",
+      "summary": "🔗 https://t.co/7oTbpReIaQ\n\nGitHub 上有个叫 agency-agents 的角色库，现在已经 10.8 万颗星了，这不是开玩笑，是真的火。\n\n里面塞了 218 个专家级的 Agent 角色，CEO、律师、程序员、增长黑客……你能想到的岗位基本都全了。\n\n直接把角色喂给 Claude Code 或者 Cursor，立马变成你的专属顾问。还能让多个 Agent 组团干活，相当于自己开了家虚拟公司。\n\n完全免费，不用白不用。",
+      "url": "https://x.com/i/status/2063891276685058502",
+      "source": "X/Twitter",
+      "author": "@XAMTO_AI",
+      "date": "2026-06-08",
+      "time": "15:50",
+      "likes": 745,
+      "views": 44546
+    },
+    {
+      "title": "是谁说claude code不需要干净IP的。。",
+      "summary": "我拿稳定用了半年的号测试了一下，半小时前用vpn的机房ip登陆，半小时后封禁邮件发到邮箱，光速封号🤣\n\n还好最近一两个月都没开claudecode订阅\n\n刚好帮你们试试申诉会不会解封",
+      "url": "https://x.com/i/status/2063868909133144558",
+      "source": "X/Twitter",
+      "author": "@CMhOeNnExY",
+      "date": "2026-06-08",
+      "time": "14:21",
+      "likes": 38,
+      "views": 20573
+    },
+    {
+      "title": "GOOGLE JUST RELEASED 13 OFFICIAL SKILLS FOR AI AGENTS — and they work with Claude Code, Cursor, and Copilot right now.",
+      "summary": "Not third-party plugins someone built in a weekend.\nOfficial Google skills. Free. Open source. Compatible with every major agent on the market.\n\nDrop them in and your agent can execute advanced tasks and automate complex workflows it couldn’t handle before.\n\nNo endless configuration.\nNo setup headac…",
+      "url": "https://x.com/i/status/2063856052169490576",
+      "source": "X/Twitter",
+      "author": "@cyrilXBT",
+      "date": "2026-06-08",
+      "time": "13:30",
+      "likes": 56,
+      "views": 5859
+    },
+    {
+      "title": "Stop telling Claude, \"do this.\"",
+      "summary": "Stop telling Claude, \"write code.\" \nStop telling Claude, \"fix this error.\"  \n\nYou're actually treating a senior AI like a junior intern. \nHere are 8 prompts you can copy and paste directly: https://t.co/1gH7qAZg7s",
+      "url": "https://x.com/i/status/2063825276090675432",
+      "source": "X/Twitter",
+      "author": "@aiwithaman",
+      "date": "2026-06-08",
+      "time": "11:27",
+      "likes": 146,
+      "views": 13360
+    },
     {
       "title": "这篇论文让我感觉，我们对「AI 会取代程序员」这件事的讨论方向可能全错了。",
       "summary": "核心观点：AI Agent 的出现不是让软件工程师工作效率更高，而是让「把决策逻辑永久编码进软件」这件事本身变得越来越不必要。\n\n作者说的是一个更根本的范式变化：传统软件工程的本质是，人类把判断逻辑「固化」成代码——if-else、状态机、算法，这些都是把人类决策「提前写死」的方式。但在以 LLM 为核心推理引擎的 Agent 系统里，代码变成了「临时生成、用完即扔的工具」，每次任务，Agent 动态生成需要的代码，执行完就不需要了。决策不再被预先编码，而是在运行时由 LLM 推理循环动态产生。这不是增量改进，而是软件生产范式的结构性替换。\n\n我觉得这个观点里最值得注意的细节是：这不只是生产力…",
@@ -36,6 +267,17 @@
       "views": 407431
     },
     {
+      "title": "One Document. 50+ AI Agent Resources. Unlimited Learning 🤯",
+      "summary": "Most people waste time searching random tutorials.\nSmart people save curated lists like this 👇\n\nI just found one of the best AI Agents collections on the internet.\n\nSaved it instantly. You should too.\n\n📌📹 Videos:\n1. LLM Introduction: https://t.co/CkYY33UIqj\n\n2. LLMs from Scratch: https://t.co/pis0V3…",
+      "url": "https://x.com/i/status/2063764737309987031",
+      "source": "X/Twitter",
+      "author": "@dkare1009",
+      "date": "2026-06-08",
+      "time": "07:27",
+      "likes": 53,
+      "views": 1695
+    },
+    {
       "title": "I have a new kind of big button that I can press for Codex. Over the next 100 days, we will select one person per day who does impressive or incredibly useful work with Codex and give them 10X usage limits for a month to see what they can do with it.",
       "summary": "First one tomorrow.",
       "url": "https://x.com/i/status/2063748242681307611",
@@ -58,6 +300,17 @@
       "views": 6391
     },
     {
+      "title": "🤖 How to build your own AI Agent in 10 minutes:",
+      "summary": "1️⃣ Pick a repetitive task\n2️⃣ Map the workflow step-by-step\n3️⃣ Choose a framework/tool\n4️⃣ Define inputs &amp; outputs\n5️⃣ Give the agent a clear role\n6️⃣ Add memory &amp; context\n7️⃣ Set guardrails\n8️⃣ Test, refine, repeat\nAI agents = https://t.co/bx7stKlAj9",
+      "url": "https://x.com/i/status/2063613146041073854",
+      "source": "X/Twitter",
+      "author": "@AlexRiad84837",
+      "date": "2026-06-07",
+      "time": "21:24",
+      "likes": 74,
+      "views": 2109
+    },
+    {
       "title": "Want to become a Claude Certified Architect in 6 weeks? 🚀",
       "summary": "Here’s a simple roadmap to go from beginner → builder → certified 👇\n\n📅 Week 1 — Learn the Basics Master the essentials: • Claude API\n• MCP (Model Context Protocol)\n• Claude Code\n• Claude fundamentals\n\n📅 Week 2 — Build Real Projects Stop watching tutorials. Start shipping: • Apps with Claude Code\n• A…",
       "url": "https://x.com/i/status/2063504756187013132",
@@ -67,6 +320,17 @@
       "time": "14:14",
       "likes": 56,
       "views": 1276
+    },
+    {
+      "title": "Stop wasting hours trying to learn AI.",
+      "summary": "I have already done it for you.\n\nWith one list. Zero confusion. And no fluff\n\n📹 Videos:\n\n1. LLM Introduction: https://t.co/nQqhVUFcqL\n\n2. LLMs from Scratch: https://t.co/ubOoUe6vyH\n\n3. Agentic AI Overview (Stanford): https://t.co/kjXIX43D0L\n\n4. Building and Evaluating Agents: https://t.co/83gYRKeFR5…",
+      "url": "https://x.com/i/status/2063452536972124604",
+      "source": "X/Twitter",
+      "author": "@SaurabhDub28465",
+      "date": "2026-06-07",
+      "time": "10:46",
+      "likes": 164,
+      "views": 5803
     },
     {
       "title": "🗞️ Claude が NMR で専用ソフト並みに — 構造を逆算",
@@ -1268,6 +1532,28 @@
       "views": 2156
     },
     {
+      "title": "@FDavidsonT @OdessiaTravel we're grateful to have you in our community!",
+      "summary": "",
+      "url": "https://x.com/i/status/2062261420625154363",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-04",
+      "time": "03:53",
+      "likes": 44,
+      "views": 4050
+    },
+    {
+      "title": "@OpenAI How I feel when AI News arrives 👀 https://t.co/B7JZSEh4QA",
+      "summary": "",
+      "url": "https://x.com/i/status/2062253277291446434",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-04",
+      "time": "03:21",
+      "likes": 194,
+      "views": 14524
+    },
+    {
       "title": "👀 Interesting... Google AI Studio product lead quoting https://t.co/AKoFUgA9O6 website, who just announced funding from @openai https://t.co/3gsbweqon4",
       "summary": "",
       "url": "https://x.com/i/status/2062251883914272941",
@@ -1464,6 +1750,17 @@
       "time": "19:40",
       "likes": 77,
       "views": 7356
+    },
+    {
+      "title": "跳出思维框架，这是一个新玩法！",
+      "summary": "最近很火的FPV效果别只用来展示城市地标！！\n\n同样可以用到更小、甚至微观的场景。\n\n比如，用来进行团队形象宣传，\n只需要一个照片，就可以轻松做出惊艳的形象展示和亮相视频！ https://t.co/FsVvT0SG8L",
+      "url": "https://x.com/i/status/2062137407240372620",
+      "source": "X/Twitter",
+      "author": "@yyyole",
+      "date": "2026-06-03",
+      "time": "19:40",
+      "likes": 5222,
+      "views": 747789
     },
     {
       "title": "今天有个新数据被披露出来：",
@@ -2168,6 +2465,17 @@
       "time": "23:17",
       "likes": 253,
       "views": 101246
+    },
+    {
+      "title": "Generate a complete storyboard from a single prompt, then animate it in Seedance 2.0 using a reference image.",
+      "summary": "This ComfyUI workflow uses LLMs to expand prompts, create storyboard scenes, and format everything specifically for Seedance 2.0, making it easier to go from idea to animation with a more structured workflow.\n\nTo try this workflow, link below 👇",
+      "url": "https://x.com/i/status/2061825461504872469",
+      "source": "X/Twitter",
+      "author": "@ComfyUI",
+      "date": "2026-06-02",
+      "time": "23:01",
+      "likes": 209,
+      "views": 27175
     },
     {
       "title": "Useful workflow💡",
@@ -4865,6 +5173,17 @@
       "views": 2757801
     },
     {
+      "title": "GPT Image 2 + Seedance 2.0 Prompt Share",
+      "summary": "Mei Lin's Elemental Kung Fu Performance\n\nCreated on @mitte_ai \n\nI'm experimenting with Laban right now. I think it helps make movements feel smoother and more expressive, but I still need to do more tests. For this one, I only added a small Laban section to the Seedance prompt.\n\nLaban is a movement …",
+      "url": "https://x.com/i/status/2054460932068200517",
+      "source": "X/Twitter",
+      "author": "@aimikoda",
+      "date": "2026-05-13",
+      "time": "15:17",
+      "likes": 1240,
+      "views": 81502
+    },
+    {
       "title": "How do you keep Claude working until the job is done? Claude Code helps with this in a few ways, including one we shipped recently: /goal. https://t.co/QtVPmwoKct",
       "summary": "",
       "url": "https://x.com/i/status/2054351031279186040",
@@ -5116,6 +5435,17 @@
       "time": "14:45",
       "likes": 358,
       "views": 46378
+    },
+    {
+      "title": "Codex教程整理合集，配合文档教程和视频教程直接无敌",
+      "summary": "Codex文档教程，涵盖从0到1的Codex指南，包括Codex是什么，安装教程、如何用Codex做任务，做项目做开发\nhttps://t.co/2LanIT5qc8\n\nCodex视频教程\nhttps://t.co/kcmvlIAdxq\nhttps://t.co/PM4PoMzWli\nhttps://t.co/cay34ULhDG\n\n其他几个比较热门的教程\nhttps://t.co/cM6PskpFA5\nhttps://t.co/8lXTyijV6v\nhttps://t.co/9ksmmeeiam",
+      "url": "https://x.com/i/status/2051549545499410664",
+      "source": "X/Twitter",
+      "author": "@WY_mask",
+      "date": "2026-05-05",
+      "time": "14:28",
+      "likes": 673,
+      "views": 86068
     },
     {
       "title": "Codex 新手必看！5 分钟上手保姆级中文教程",
