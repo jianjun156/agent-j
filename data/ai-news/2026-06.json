@@ -1,7 +1,51 @@
 {
   "month": "2026-06",
-  "lastUpdate": "2026-06-09T18:00:01+08:00",
+  "lastUpdate": "2026-06-09T18:01:47+08:00",
   "articles": [
+    {
+      "title": "@VaibhavSisinty honestly the right setup with Claude just compounds. we use it daily at https://t.co/4m82YXW8re for threat modeling and at https://t.co/NguHQxFipD for dev workflows. once you get the hang of it you wonder how you shipped anything before lol",
+      "summary": "",
+      "url": "https://x.com/i/status/2064284640727420968",
+      "source": "X/Twitter",
+      "author": "@thisiskartik_",
+      "date": "2026-06-09",
+      "time": "17:53",
+      "likes": 0,
+      "views": 10
+    },
+    {
+      "title": "Seedance 2.0 的真实度已经离谱到吓人了。",
+      "summary": "这是百分百的 AI 生成内容。\n\n10 个炸裂的实例： https://t.co/P3KGjb8lp3",
+      "url": "https://x.com/i/status/2064239595005661432",
+      "source": "X/Twitter",
+      "author": "@FinanceYF5",
+      "date": "2026-06-09",
+      "time": "14:54",
+      "likes": 10,
+      "views": 3754
+    },
+    {
+      "title": "这年头什么事都有，居然有这样抢座位的？我该去哪讲理去？ 上次有人拍拍到这个姐姐的视频发推特上了，今天居然我也遇到了。  SEEDANCE PROMPT: 🤣🤣🤣未经处理的iPhone手持拍摄的真实视频素材风格呈现，所有相机设置均为自动，无任何后期调色或特效。画面带有真实的手持轻微抖动和操作者（男生）呼吸感，因地铁列车行驶晃动导致镜头自然下沉或倾斜后迅速回正。自动对焦偶尔出现搜索、延迟和短暂失焦，尤其在身体移动或手部动作时。自动白平衡随车厢荧光灯与隧道光线变化在冷暖色调间自然切换。图像整体平坦，保留真实的镜头光晕、边缘轻微色差、运动模糊等光学瑕疵。模拟CCD传感器拍摄效果，带有轻微垂直拖尾（smear）、色彩溢出、颗粒噪点和高对比边缘的紫绿fringes。仅使用画内自然环境音效，包括地铁低沉的行驶轰鸣声、轮轨摩擦声、乘客低语和衣物摩擦声，麦克风在列车加速或较大动作时可能轻微失真。采用地铁车厢内男生第一人称POV视角（从坐在座位上的低角度抬头视点开始），镜头运动完全跟随男生本能反应（抬头、身体僵硬、起身移动时的晃动）。车厢内十分拥挤，没有任何空座位，背景站满乘客、拉环和模糊人群，强化满载真实感。偶尔可见男生自己的腿部、膝盖或手部边缘（强化坐在座位上的位置感）。 15秒时间线（完整意境：正常距离开始→女生暧昧慢慢靠近胸部渐近但绝不触碰→男生忍耐拉扯最终屈服让开+吃惊“你怎么这样”表情→女生顺势占座嘲笑，最后摘下口罩→男生想碰肩膀，女生拿出清洁喷剂清洁其手）： 0秒时，镜头从坐在地铁座位上的第一人称低角度POV轻微晃动向上对准站在面前的年轻亚洲女性",
+      "summary": "穿着\n带着白色口罩，她双手抓着上方吊环，用眼睛看着男生。车厢拥挤无空座，背景站满乘客。两人保持正常距离，男生抬头瞬间发现，女生眼睛微弯露出调皮神情，开始以暧昧节奏慢慢朝镜头方向靠近（胸部渐近但始终保持安全距离不触碰）。自动对焦锁定在她上半身，画面轻微过曝，CCD颗粒噪点和轻微色彩溢出可见（男生自己的惊讶喘息声传入麦克风），清晰体现坐在座位上的仰视位置感。 1-4秒时，女生继续以缓慢暧昧节奏靠近，胸部视觉距离渐近相差20厘米左右但绝不实际触碰镜头或男生。男生先强行忍耐（POV镜头轻微抖动反映身体僵硬、肩膀紧绷，坐在座位上的低角度抬头导致镜头短暂下移又抬回）。自动对焦在渐近互动中短暂搜索失焦后拉回…",
+      "url": "https://x.com/i/status/2064141263012835721",
+      "source": "X/Twitter",
+      "author": "@john87445528",
+      "date": "2026-06-09",
+      "time": "08:23",
+      "likes": 25,
+      "views": 2410
+    },
+    {
+      "title": "Final stop: Tokyo.",
+      "summary": "Register to hear directly from the teams behind Claude: https://t.co/SkYZwjK3GS",
+      "url": "https://x.com/i/status/2064139073590104402",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-09",
+      "time": "08:14",
+      "likes": 3130,
+      "views": 557701
+    },
     {
       "title": "🚀 Codex CLI 0.138.0 is out!",
       "summary": "🖥 /app handoff to Codex Desktop on macOS and Windows\n🖼 Saved image paths now exposed to model\n🔌 Plugin add/remove and list commands gain --json output\n\nChangelog: https://t.co/VODCXW6Agw",
@@ -80,6 +124,28 @@
       "views": 1311
     },
     {
+      "title": "The next generation of Apple Intelligence powers an entirely new Siri: making the apps and experiences you rely on across iPhone, iPad, Mac, and Apple Vision Pro more personal and helpful than ever. https://t.co/aXiDIkqAKn",
+      "summary": "",
+      "url": "https://x.com/i/status/2064107489847816292",
+      "source": "X/Twitter",
+      "author": "@tim_cook",
+      "date": "2026-06-09",
+      "time": "06:09",
+      "likes": 20804,
+      "views": 1176248
+    },
+    {
+      "title": "@hydrojenXX 100% - I will use a backup device for a time being in that case",
+      "summary": "",
+      "url": "https://x.com/i/status/2064069100486140264",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "03:36",
+      "likes": 1,
+      "views": 123
+    },
+    {
       "title": "Most powerful on-device model 👀 https://t.co/GR9G0pq2cJ",
       "summary": "",
       "url": "https://x.com/i/status/2064047892726268346",
@@ -89,6 +155,17 @@
       "time": "02:12",
       "likes": 9,
       "views": 650
+    },
+    {
+      "title": "New Apple Intelligence features on Safari",
+      "summary": "&gt; tab grouping \n&gt; notify me feature\n&gt; describe an extension https://t.co/Jor52Ro5ZX",
+      "url": "https://x.com/i/status/2064043604566303183",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:55",
+      "likes": 9,
+      "views": 864
     },
     {
       "title": "Broad world knowledge, upgraded image generation, and more! https://t.co/SdVUKV2XwV",
@@ -146,6 +223,39 @@
       "views": 857
     },
     {
+      "title": "Custom EQ on Airpads 👀 https://t.co/lJHCots5cK",
+      "summary": "",
+      "url": "https://x.com/i/status/2064033910623805508",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:16",
+      "likes": 12,
+      "views": 771
+    },
+    {
+      "title": "Andrej Karpathy:",
+      "summary": "“Vibe coding is incredible. But agentic engineering is the next level.   \n\n90% of my coding routine is automated by AI agents.”\n\nIn this 30-minute talk, Andrej Karpathy explains how to build an AI agent from scratch. \n\nThe first 10 mins gives more value than every X thread on AI today.\n\nWatch it tod…",
+      "url": "https://x.com/i/status/2064032738404147622",
+      "source": "X/Twitter",
+      "author": "@Av1dlive",
+      "date": "2026-06-09",
+      "time": "01:12",
+      "likes": 142,
+      "views": 19007
+    },
+    {
+      "title": "everyone says \"AI agents are only for engineers\"",
+      "summary": "an agent is just a chat with three things added that a normal chat doesn't have:\n\n> tools it can call on its own: search, files, code, APIs\n> memory that carries across tasks, not just one session\n> a loop that keeps running until the job is actually done\n\na regular chat answers once and stops, an a…",
+      "url": "https://x.com/i/status/2064027571143180522",
+      "source": "X/Twitter",
+      "author": "@0xchromium",
+      "date": "2026-06-09",
+      "time": "00:51",
+      "likes": 55,
+      "views": 4480
+    },
+    {
       "title": "OPENAI 🔥: Users can now generate interactive charts from data and comparisons in @ChatGPTapp for web and mobile.",
       "summary": "Testing time 👀 https://t.co/Pjso3RoHNd",
       "url": "https://x.com/i/status/2064021173923373056",
@@ -155,6 +265,17 @@
       "time": "00:26",
       "likes": 457,
       "views": 24649
+    },
+    {
+      "title": "Introducing a more powerful NotebookLM 🚀",
+      "summary": "Massive upgrades deliver agentic capabilities in chat, more advanced reasoning, and a suite of new output formats. Tackling complex, multi-step research problems has never been easier.\n\nRolling out now to Google AI Ultra subscribers. https://t.co/zBXD7unIC7",
+      "url": "https://x.com/i/status/2064016460964585549",
+      "source": "X/Twitter",
+      "author": "@NotebookLM",
+      "date": "2026-06-09",
+      "time": "00:07",
+      "likes": 3543,
+      "views": 551049
     },
     {
       "title": "A Google Cloud engineer just showed how to build a full app with Claude from scratch",
@@ -179,6 +300,17 @@
       "views": 194147
     },
     {
+      "title": "Claude Opus 4.8 didn’t just improve coding.",
+      "summary": "It quietly killed the way most developers think about coding.\n\nBut almost no one is using it the way Andrej Karpathy describes.\n\nPeople are still stuck in:\n\n“write this function”\n“fix this bug”\n“explain this code”\n\nThat’s not wrong.\n\nIt’s just… low-leverage thinking.\n\nKarpathy’s real idea?\n\n👉 You do…",
+      "url": "https://x.com/i/status/2063963634947236184",
+      "source": "X/Twitter",
+      "author": "@Suryanshti777",
+      "date": "2026-06-08",
+      "time": "20:37",
+      "likes": 127,
+      "views": 18360
+    },
+    {
       "title": "Thanks to Ideogram for sending this ❤️",
       "summary": "Ideogram 4.0 was one of the biggest releases last week! Especially for the open source community. \n\nTested it 👀 https://t.co/e3T0S0GLQt",
       "url": "https://x.com/i/status/2063928346380038601",
@@ -188,6 +320,28 @@
       "time": "18:17",
       "likes": 187,
       "views": 17319
+    },
+    {
+      "title": "Codex 总是在我余额充足的时候疯狂重置，在我额度不足的时候毫无动静。",
+      "summary": "🥲 https://t.co/y98NHbKwiY",
+      "url": "https://x.com/i/status/2063928116280766470",
+      "source": "X/Twitter",
+      "author": "@starstarding",
+      "date": "2026-06-08",
+      "time": "18:16",
+      "likes": 4,
+      "views": 788
+    },
+    {
+      "title": "what is agent looping",
+      "summary": "for the last two years we prompted agents one task at a time. that is starting to change\n\ninstead of asking an agent to build the landing page and then driving every step yourself, you set up a loop that handles discovery, planning, the work, checking, and iterating until the goal is met\n\nlooping is…",
+      "url": "https://x.com/i/status/2063924108535197842",
+      "source": "X/Twitter",
+      "author": "@shannholmberg",
+      "date": "2026-06-08",
+      "time": "18:00",
+      "likes": 4673,
+      "views": 540558
     },
     {
       "title": "兄弟们，这个项目我必须给你们强力安利一波！",
@@ -223,6 +377,17 @@
       "views": 5859
     },
     {
+      "title": "Kalau ngikutin perkembangan AI agent belakangan ini, setup yang satu ini cukup menarik 👀",
+      "summary": "MiniMax dari China sekarang bisa dihubungkan ke Claude Code dan dipakai sebagai coding assistant untuk mengelola workflow AI dari satu dashboard.\n\nYang bikin menarik, beberapa orang mulai menggabungkannya dengan:\n\n🤖 Hermes\n⚡ OpenClaw\n🧠 Claude Code\nHasilnya adalah workflow yang lebih terpusat, di man…",
+      "url": "https://x.com/i/status/2063833398875967493",
+      "source": "X/Twitter",
+      "author": "@stellarprtcol",
+      "date": "2026-06-08",
+      "time": "12:00",
+      "likes": 19,
+      "views": 3531
+    },
+    {
       "title": "Stop telling Claude, \"do this.\"",
       "summary": "Stop telling Claude, \"write code.\" \nStop telling Claude, \"fix this error.\"  \n\nYou're actually treating a senior AI like a junior intern. \nHere are 8 prompts you can copy and paste directly: https://t.co/1gH7qAZg7s",
       "url": "https://x.com/i/status/2063825276090675432",
@@ -254,6 +419,17 @@
       "time": "10:29",
       "likes": 40,
       "views": 2570
+    },
+    {
+      "title": "【我的codex账号全都跳二次认证了】",
+      "summary": "真的惨\n上周封号\n这周全部跳二次认证\n我他妈的主号刚买的土区plus\n啥验证方式都加了\n啥设置都弄好了\n该跳还是跳\n他妈的还是多花点钱接个长效码吧\n之前没有长效码\n接的都是临时号码\n我直接哭死\n亏到家了 https://t.co/hlrKlBp2Tx",
+      "url": "https://x.com/i/status/2063809628203631091",
+      "source": "X/Twitter",
+      "author": "@alleywu270684",
+      "date": "2026-06-08",
+      "time": "10:25",
+      "likes": 9,
+      "views": 8920
     },
     {
       "title": "interesting recursive loop here maybe",
@@ -309,6 +485,17 @@
       "time": "21:24",
       "likes": 74,
       "views": 2109
+    },
+    {
+      "title": "Boris Cherny (Claude Code creator):",
+      "summary": "\"I don't prompt Claude anymore... my job is to write loops.\"\n\nIn his latest interview, he breaks down the setup  step by step.\n\nHe runs /loops + a dynamic workflow + a couple hundred agents that read his GitHub, Slack, and Twitter and decide what to build next.\n\nHis only job now is writing the loops…",
+      "url": "https://x.com/i/status/2063592868581978517",
+      "source": "X/Twitter",
+      "author": "@Av1dlive",
+      "date": "2026-06-07",
+      "time": "20:04",
+      "likes": 99,
+      "views": 24110
     },
     {
       "title": "Want to become a Claude Certified Architect in 6 weeks? 🚀",
@@ -2487,6 +2674,17 @@
       "time": "22:57",
       "likes": 196,
       "views": 15571
+    },
+    {
+      "title": "@Capafyai Free testing time 👀👀👀",
+      "summary": "",
+      "url": "https://x.com/i/status/2061809880499921319",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-02",
+      "time": "21:59",
+      "likes": 5,
+      "views": 1328
     },
     {
       "title": "Capafy opened a free trial across its Skill marketplace, letting anyone run its expert-built Skill Agents at no cost before paying for a single one.",
@@ -4755,6 +4953,17 @@
       "views": 99431
     },
     {
+      "title": "最近登 codex 疯狂弹海外手机号验证的，教你们个绕过的野路子。",
+      "summary": "别去到处找接码平台了。\n直接去 ChatGPT 网页版，点设置 - 安全，绑个 Google Authenticator 开二步验证。 只要绑了这个，再登 codex 就直接免手机号验证。\n\n一个设置的事，省掉一堆买号的麻烦。",
+      "url": "https://x.com/i/status/2056881496850591918",
+      "source": "X/Twitter",
+      "author": "@wadezone",
+      "date": "2026-05-20",
+      "time": "07:35",
+      "likes": 1150,
+      "views": 184651
+    },
+    {
       "title": "Claude Code 2.1.145: further changes",
       "summary": "CLI surface:\nAdded:\n• options: --strict\n• env vars: ANTHROPIC_ENVIRONMENT_ID, ANTHROPIC_ENVIRONMENT_KEY, CLAUDE_CODE_HOST_AUTH_ENV_VAR, CLAUDE_CODE_HOST_AUTH_REFRESH_TIMEOUT_MS, CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH, DISPLAY, SCREENSHOT_DIR\n\nRemoved:\n• env vars: CLAUDE_CODE_PLAN_MODE_INTERVIEW_PHASE…",
       "url": "https://x.com/i/status/2056866159929012378",
@@ -5547,6 +5756,17 @@
       "views": 299946
     },
     {
+      "title": "https://t.co/R7jxglREBs",
+      "summary": "",
+      "url": "https://x.com/i/status/2046082879109959807",
+      "source": "X/Twitter",
+      "author": "@Khazix0918",
+      "date": "2026-04-20",
+      "time": "12:25",
+      "likes": 2175,
+      "views": 253149
+    },
+    {
       "title": "You don't need to spend a single dollar to build a production AI system in 2026.",
       "summary": "Here's the full stack:\n→ LLM: Ollama + Gemma 4 / Llama 3.3 / Mistral Small 4 (local, free)\n→ Orchestration: LangGraph / CrewAI (open source)\n→ RAG: LlamaIndex + ChromaDB / Qdrant (local)\n→ Tool Layer: MCP — the open protocol connecting agents to everything\n→ Code Agent: Claude Code CLI / Aider\n→ Fro…",
       "url": "https://x.com/i/status/2044506798057787583",
@@ -5600,6 +5820,17 @@
       "time": "04:30",
       "likes": 2308,
       "views": 1668107
+    },
+    {
+      "title": "the Shopify AI Toolkit is here",
+      "summary": "manage your store with your favorite agent\n\nClaude Code, Codex, Cursor, VS Code, and more https://t.co/gmQiRTdA8p",
+      "url": "https://x.com/i/status/2042335627862032754",
+      "source": "X/Twitter",
+      "author": "@Shopify",
+      "date": "2026-04-10",
+      "time": "04:15",
+      "likes": 6680,
+      "views": 3962744
     },
     {
       "title": "wow.. seedance 2.0 is available in US on higgsfield now",
