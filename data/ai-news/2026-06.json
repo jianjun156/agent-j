@@ -1,7 +1,150 @@
 {
   "month": "2026-06",
-  "lastUpdate": "2026-06-10T08:00:00+08:00",
+  "lastUpdate": "2026-06-10T08:01:50+08:00",
   "articles": [
+    {
+      "title": "We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!",
+      "summary": "",
+      "url": "https://x.com/i/status/2064464557951852643",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-06-10",
+      "time": "05:48",
+      "likes": 13342,
+      "views": 512691
+    },
+    {
+      "title": "We're hosting Claude Fable 5 Build Day in San Francisco on June 13.",
+      "summary": "Point Fable 5 at a problem worth solving and build a solution with Claude Code.\n\nThe Anthropic team will be in the room, with a chance to win from a prize pool of $150K in Claude credits across 3 finalists. https://t.co/V3Y8yGsjtx",
+      "url": "https://x.com/i/status/2064453497005978031",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-06-10",
+      "time": "05:04",
+      "likes": 1078,
+      "views": 59586
+    },
+    {
+      "title": "🚀 Codex CLI 0.139.0 is out!",
+      "summary": "🔍 Web search from code mode and nested JS tool calls\n🔧 oneOf/allOf preserved in tool and connector schemas\n🖼 Image edits now use exact referenced file paths\n\nChangelog: https://t.co/5b5mWISLXl",
+      "url": "https://x.com/i/status/2064448632313516045",
+      "source": "X/Twitter",
+      "author": "@Codex_Changelog",
+      "date": "2026-06-10",
+      "time": "04:44",
+      "likes": 109,
+      "views": 6520
+    },
+    {
+      "title": "This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with added safeguards. The benchmarks are great and it's SOTA on everything by a margin but I'll add that *qualitatively* also, this is a major-version-bump-deserving step change forward (imo of the same order as Claude 4.5 was in November), peaking especially for long problem-solving sessions on very difficult problems. You can give it a lot more ambitious tasks than what you're used to, the model \"gets it\" and it will just go, and it's never felt this tempting to stop looking at the code at all (but don't do this in prod!). The model still has quirks that people will run into and the safeguards are configured to be a little too trigger happy for launch, which can hopefully be tuned over time.",
+      "summary": "I feel a lot of things changing as working software increasingly comes out on a tap. The Jevon's paradox kicks in and I feel my own demand for software growing substantially. You can ask for anything - explainers, visualizers, dashboards, bespoke single-use apps (e.g. a full wandb that is hyper-spec…",
+      "url": "https://x.com/i/status/2064409694761054332",
+      "source": "X/Twitter",
+      "author": "@karpathy",
+      "date": "2026-06-10",
+      "time": "02:10",
+      "likes": 14837,
+      "views": 1041819
+    },
+    {
+      "title": "Claude Code 2.1.170 has been released.",
+      "summary": "2 CLI changes\n\nHighlights:\n• Claude Fable 5: a more-capable model cleared for general use, making improved performance generally available\n• Fixed sessions not saving transcripts or appearing in --resume from VS Code or shells inheriting Code env\n\nComplete details in thread ↓",
+      "url": "https://x.com/i/status/2064402301742207152",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-06-10",
+      "time": "01:40",
+      "likes": 228,
+      "views": 29209
+    },
+    {
+      "title": "Claude Code CLI 2.1.170 changelog:",
+      "summary": "Fix:\n• Fixed sessions not saving transcripts (and not appearing in --resume) when launched from the VS Code integrated terminal or any shell that inherited Claude Code environment variables.\n\nOther change:\n• Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable…",
+      "url": "https://x.com/i/status/2064402312039166011",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-06-10",
+      "time": "01:40",
+      "likes": 16,
+      "views": 3845
+    },
+    {
+      "title": "Claude Fable 5 is here. New model generation, new way of working.",
+      "summary": "Here's how to get started in Claude Code and on the Claude Platform: 🧵",
+      "url": "https://x.com/i/status/2064394919549210774",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-06-10",
+      "time": "01:11",
+      "likes": 10003,
+      "views": 1550760
+    },
+    {
+      "title": "Claude Fable 5 is now available in Cursor.",
+      "summary": "It sets a new state of the art on CursorBench at 72.9%, 8 points above the previous best. https://t.co/L3Wm8mSYq9",
+      "url": "https://x.com/i/status/2064394824313376787",
+      "source": "X/Twitter",
+      "author": "@cursor_ai",
+      "date": "2026-06-10",
+      "time": "01:10",
+      "likes": 4539,
+      "views": 493695
+    },
+    {
+      "title": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use.",
+      "summary": "Its capabilities exceed those of any model we’ve ever made generally available. https://t.co/2AvmEjHIX8",
+      "url": "https://x.com/i/status/2064394146916229443",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-10",
+      "time": "01:08",
+      "likes": 76522,
+      "views": 18682869
+    },
+    {
+      "title": "Fable 5 is state-of-the-art on nearly all tested benchmarks, with exceptional performance in software engineering, knowledge work, scientific research, and vision.",
+      "summary": "The longer and more complex the task, the larger Fable 5’s lead over our other models. https://t.co/DxgSu0KUxh",
+      "url": "https://x.com/i/status/2064394151441863006",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-10",
+      "time": "01:08",
+      "likes": 11832,
+      "views": 2791490
+    },
+    {
+      "title": "Releasing a model this capable comes with risks. Without safeguards, Fable 5’s capabilities in areas like cybersecurity could be misused to cause serious damage.",
+      "summary": "Queries on a narrow range of topics will instead receive a response from our next-most-capable model, Opus 4.8. https://t.co/vJ71vCdkjc",
+      "url": "https://x.com/i/status/2064394155258765783",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-10",
+      "time": "01:08",
+      "likes": 6076,
+      "views": 796738
+    },
+    {
+      "title": "Claude Fable 5 is available everywhere today. Claude Mythos 5 is restricted to Glasswing partners until we expand our trusted access program.",
+      "summary": "https://t.co/iQymY0jiGq",
+      "url": "https://x.com/i/status/2064394160522559632",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-10",
+      "time": "01:08",
+      "likes": 2919,
+      "views": 534950
+    },
+    {
+      "title": "Fable 5’s safeguards detect requests related to cybersecurity, biology and chemistry, and distillation. Users are informed whenever a fallback occurs—on average in less than 5% of sessions.",
+      "summary": "We’ll keep refining the safeguards to reduce false positives.",
+      "url": "https://x.com/i/status/2064394156735172627",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-10",
+      "time": "01:08",
+      "likes": 2578,
+      "views": 596303
+    },
     {
       "title": "@VaibhavSisinty honestly the right setup with Claude just compounds. we use it daily at https://t.co/4m82YXW8re for threat modeling and at https://t.co/NguHQxFipD for dev workflows. once you get the hang of it you wonder how you shipped anything before lol",
       "summary": "",
@@ -56,6 +199,17 @@
       "time": "07:30",
       "likes": 18,
       "views": 967
+    },
+    {
+      "title": "https://t.co/hIe0UX7z6T",
+      "summary": "",
+      "url": "https://x.com/i/status/2064127981161959567",
+      "source": "X/Twitter",
+      "author": "@addyosmani",
+      "date": "2026-06-09",
+      "time": "07:30",
+      "likes": 5075,
+      "views": 892508
     },
     {
       "title": "Here are the experiences developers are building with the Realtime API: https://t.co/13D6JEnaHf",
@@ -234,6 +388,17 @@
       "views": 771
     },
     {
+      "title": "A new, updated search across apps with pre-indexing https://t.co/kN7Dtvp6w0",
+      "summary": "",
+      "url": "https://x.com/i/status/2064033625096487079",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:15",
+      "likes": 10,
+      "views": 764
+    },
+    {
       "title": "Andrej Karpathy:",
       "summary": "“Vibe coding is incredible. But agentic engineering is the next level.   \n\n90% of my coding routine is automated by AI agents.”\n\nIn this 30-minute talk, Andrej Karpathy explains how to build an AI agent from scratch. \n\nThe first 10 mins gives more value than every X thread on AI today.\n\nWatch it tod…",
       "url": "https://x.com/i/status/2064032738404147622",
@@ -276,6 +441,28 @@
       "time": "00:07",
       "likes": 3543,
       "views": 551049
+    },
+    {
+      "title": "Most people think AI Agents are just prompts.",
+      "summary": "They're not.\n\nA real AI Agent = Purpose + Prompt + LLM + Tools + Memory + Workflows + Testing.\n\nThe winners won't be the best users of AI.\n\nThey'll be the builders.\n\n#AIAgents #ArtificialIntelligence #BuildInPublic #AI https://t.co/g7PzczlElA",
+      "url": "https://x.com/i/status/2064013208768376848",
+      "source": "X/Twitter",
+      "author": "@KomalPr17116591",
+      "date": "2026-06-08",
+      "time": "23:54",
+      "likes": 80,
+      "views": 487
+    },
+    {
+      "title": "How To Build An AI Agent",
+      "summary": "(bookmark this for later) https://t.co/L19NXbuhhq",
+      "url": "https://x.com/i/status/2064006586230505689",
+      "source": "X/Twitter",
+      "author": "@mdancho84",
+      "date": "2026-06-08",
+      "time": "23:28",
+      "likes": 223,
+      "views": 10199
     },
     {
       "title": "A Google Cloud engineer just showed how to build a full app with Claude from scratch",
@@ -476,6 +663,17 @@
       "views": 6391
     },
     {
+      "title": "@Andy_AJT see you there 😉",
+      "summary": "",
+      "url": "https://x.com/i/status/2063620190601171182",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-07",
+      "time": "21:52",
+      "likes": 43,
+      "views": 4741
+    },
+    {
       "title": "🤖 How to build your own AI Agent in 10 minutes:",
       "summary": "1️⃣ Pick a repetitive task\n2️⃣ Map the workflow step-by-step\n3️⃣ Choose a framework/tool\n4️⃣ Define inputs &amp; outputs\n5️⃣ Give the agent a clear role\n6️⃣ Add memory &amp; context\n7️⃣ Set guardrails\n8️⃣ Test, refine, repeat\nAI agents = https://t.co/bx7stKlAj9",
       "url": "https://x.com/i/status/2063613146041073854",
@@ -496,6 +694,17 @@
       "time": "20:04",
       "likes": 99,
       "views": 24110
+    },
+    {
+      "title": "SILENT HEIST",
+      "summary": "made with GPT Image 2 + Seedance 2\n#DreaminaCPP @dreamina_ai \n\nPrompt below ↓ https://t.co/q96C4CRIfl",
+      "url": "https://x.com/i/status/2063574069560431016",
+      "source": "X/Twitter",
+      "author": "@0xbisc",
+      "date": "2026-06-07",
+      "time": "18:49",
+      "likes": 420,
+      "views": 20967
     },
     {
       "title": "Want to become a Claude Certified Architect in 6 weeks? 🚀",
@@ -672,6 +881,17 @@
       "time": "21:25",
       "likes": 654,
       "views": 271752
+    },
+    {
+      "title": "https://t.co/e2ORGGFFyi",
+      "summary": "",
+      "url": "https://x.com/i/status/2063242403881083300",
+      "source": "X/Twitter",
+      "author": "@boke_huang",
+      "date": "2026-06-06",
+      "time": "20:51",
+      "likes": 1414,
+      "views": 547789
     },
     {
       "title": "BREAKING 🔥: A new Claude Mythos 5 model slug has been spotted via Dev Mode.",
@@ -1057,6 +1277,17 @@
       "time": "23:13",
       "likes": 51,
       "views": 12249
+    },
+    {
+      "title": "This is what cooking in GTA 6 could look like.🤯🔥",
+      "summary": "Made it using Seedance 2.0 from a single gameplay-style image.\n\nPrompt below ↓ https://t.co/AZy8MWBmqC",
+      "url": "https://x.com/i/status/2062907092491747420",
+      "source": "X/Twitter",
+      "author": "@abxxai",
+      "date": "2026-06-05",
+      "time": "22:39",
+      "likes": 331,
+      "views": 77608
     },
     {
       "title": "I tried the new path control with Seedance 2.0 in @ElevenCreative",
@@ -4161,6 +4392,17 @@
       "views": 11546
     },
     {
+      "title": "这个设计 skill 能彻底拯救你的 Codex 审美",
+      "summary": "结合taste skill和image 2生图，下面是我在Codex里直出的网页设计效果\n\n方法也很简单，只需三步：\n1.  用 taste skill 生成每个页面的参考图\n2. 让 Codex 分析参考图，列出需要单独提取的视觉素材图片\n3. 把参考图和素材交给 Codex，让它只用这些素材 1:1 复刻页面\n\nskill仓库地址：https://t.co/FIgFNSgzjG",
+      "url": "https://x.com/i/status/2059850235711455545",
+      "source": "X/Twitter",
+      "author": "@Saccc_c",
+      "date": "2026-05-28",
+      "time": "12:12",
+      "likes": 929,
+      "views": 125399
+    },
+    {
       "title": "👋 Say hi to WorkBuddy: China's most popular desktop AI agent, now available worldwide.",
       "summary": "WorkBuddy handles the tedious work autonomously and delivers ready-to-use project files across coding, analysis, and productivity scenarios.\n\nWhat sets it apart:\n\nBuilt-in Skills Gallery: Call on 100+ experts with pre-loaded knowledge, skills, and workflows. For complex tasks, agents collaborate on …",
       "url": "https://x.com/i/status/2059827192964808922",
@@ -4588,6 +4830,17 @@
       "time": "09:05",
       "likes": 3066,
       "views": 2007479
+    },
+    {
+      "title": "If you haven't set up Agents.md in Codex yet",
+      "summary": "you can just copy the homework from Andrej Karpathy.  \n\nHere's the exact setup (takes 2 minutes):    \n\n1. Go to his repo   \n2. Copy the 65-line Agents.md config  \n3. Paste it into Codex App → Global Custom Instructions   \n4. Done. You're already ahead of 90% of Codex users.    \n\nIt's minimalist. It'…",
+      "url": "https://x.com/i/status/2058588647088406931",
+      "source": "X/Twitter",
+      "author": "@Av1dlive",
+      "date": "2026-05-25",
+      "time": "00:39",
+      "likes": 1321,
+      "views": 245381
     },
     {
       "title": "ANTHROPIC 🔥: Claude will soon receive a new file-based memory upgrade, offering users the option to choose between Memory Files and Classic memory.",
@@ -5492,6 +5745,17 @@
       "views": 2150243
     },
     {
+      "title": "🚀 AI短剧接单教程",
+      "summary": "Seedance 2.0 从0到1全流程\n 剧本、分镜、运镜、配音、剪辑都讲透了\n\n🔗 https://t.co/D63Up75RaP https://t.co/2AtaWdDZT9",
+      "url": "https://x.com/i/status/2053657342584217914",
+      "source": "X/Twitter",
+      "author": "@xiaoying_eth",
+      "date": "2026-05-11",
+      "time": "10:04",
+      "likes": 297,
+      "views": 94098
+    },
+    {
       "title": "THE OLD SKATE KING",
       "summary": "made with GPT Image 2 + Seedance 2 on @openart_ai \n\nPrompt below ↓ https://t.co/Z0BXWKgnkk",
       "url": "https://x.com/i/status/2053431022260490332",
@@ -5622,6 +5886,17 @@
       "time": "17:36",
       "likes": 2574,
       "views": 375445
+    },
+    {
+      "title": "GPT Image 2 and Seedance 2.0 really show how important storyboards are.",
+      "summary": "The cinematic developing master shot in the quoted post turned out well but it actually took several attempts to get there. Even the final result still didn’t fully follow the prompt. Some important details were missing, like the opening shot, the flag and the person exiting the tavern.\n\nThen I gene…",
+      "url": "https://x.com/i/status/2051930972803776772",
+      "source": "X/Twitter",
+      "author": "@aimikoda",
+      "date": "2026-05-06",
+      "time": "15:44",
+      "likes": 1254,
+      "views": 123064
     },
     {
       "title": "A super simple workflow: Your Image → Custom GPT Image 2.0 storyboard → Seedance 2.0",
@@ -5897,6 +6172,17 @@
       "time": "14:04",
       "likes": 364,
       "views": 28710
+    },
+    {
+      "title": "想要学习 AI Agent 开发，但真想动手学的时候，网上优质的教程太分散，甚至很多还藏有付费资源。",
+      "summary": "在逛 GitHub 时，偶然发现一份名为 free-ai-agents-resources 的开源合集，专门收录了学习和构建 AI 智能体的免费优质资源。\n\n里面汇集了上百个精选链接，涵盖了从微软的基础入门课程，到包含数十个实战代码的 Jupyter Notebook 核心项目。\n\n并且对主流的底层框架、实用的视频教程列表，以及开源学术电子书进行了分类整理。\n\nGitHub：https://t.co/RvH2cilb1N\n\n提供三套不同阶段的学习路线，帮我们规划好了从零基础入门到进阶开发的完整周期。\n\n适合对 AI Agent 感兴趣，想系统性跨入这个领域的朋友收藏学习。",
+      "url": "https://x.com/i/status/2032358712392958456",
+      "source": "X/Twitter",
+      "author": "@GitHub_Daily",
+      "date": "2026-03-13",
+      "time": "15:30",
+      "likes": 253,
+      "views": 22440
     },
     {
       "title": "我搜集的217个Seedance 2.0优秀提示词",
