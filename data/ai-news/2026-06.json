@@ -1,6 +1,6 @@
 {
   "month": "2026-06",
-  "lastUpdate": "2026-06-10T18:00:01+08:00",
+  "lastUpdate": "2026-06-10T18:02:05+08:00",
   "articles": [
     {
       "title": "We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!",
@@ -67,6 +67,39 @@
       "time": "01:40",
       "likes": 16,
       "views": 3845
+    },
+    {
+      "title": "Claude Code 2.1.170 additional updates",
+      "summary": "CLI surface:\nAdded:\n• env vars: ANTHROPIC_DEFAULT_FABLE_MODEL, ANTHROPIC_DEFAULT_FABLE_MODEL_DESCRIPTION, ANTHROPIC_DEFAULT_FABLE_MODEL_NAME, CLAUDE_CODE_PLAN_MODE_REQUIRED, DISABLE_PROMPT_CACHING_FABLE\n• models: claude-fable-, claude-fable-5, claude-mythos-, claude-mythos-5\n\nFile: https://t.co/auEr…",
+      "url": "https://x.com/i/status/2064402322181046564",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-06-10",
+      "time": "01:40",
+      "likes": 15,
+      "views": 3563
+    },
+    {
+      "title": "Claude Fable 5 changed how we work on the Claude Code team day to day.",
+      "summary": "We used to verify that Claude did the work right. Now we verify that it's doing the right work.\n\nHere’s the 3 biggest changes: https://t.co/KhYNlNWcC4",
+      "url": "https://x.com/i/status/2064399512664526853",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-06-10",
+      "time": "01:29",
+      "likes": 10272,
+      "views": 763123
+    },
+    {
+      "title": "Your app can now search the web for images.",
+      "summary": "Web search in the Responses API now supports image results in addition to text results, so you can build apps that surface  products, places, visual references, and source links for inspiration. https://t.co/Oyl4cS4Jdu",
+      "url": "https://x.com/i/status/2064395155688616153",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-10",
+      "time": "01:12",
+      "likes": 1766,
+      "views": 122333
     },
     {
       "title": "Claude Fable 5 is here. New model generation, new way of working.",
@@ -146,6 +179,39 @@
       "views": 596303
     },
     {
+      "title": "introducing gemini 3.5 live translate, our latest audio model:",
+      "summary": "- low-latency translation across 70+ languages\n- auto-detection for multilingual inputs in a single session\n- native audio processing that preserves pitch & pacing\n- robust noise filtering for loud environments\n\ntry it in public preview via the gemini live api and ai studio",
+      "url": "https://x.com/i/status/2064369053045608894",
+      "source": "X/Twitter",
+      "author": "@GoogleAIStudio",
+      "date": "2026-06-09",
+      "time": "23:28",
+      "likes": 2649,
+      "views": 179467
+    },
+    {
+      "title": "Maket has released Auto-Complete, a feature that can take a partial floor plan and generate the rest of the layout while keeping the rooms already placed exactly as they are.",
+      "summary": "> You can start with as little as a rough sketch, a few walls, or even one bedroom roughly positioned.\n\n> It's enough to get a complete, well-dimensioned plan back in minutes.",
+      "url": "https://x.com/i/status/2064345380284666315",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "21:54",
+      "likes": 102,
+      "views": 15858
+    },
+    {
+      "title": "Codex Design is becoming real.",
+      "summary": "The real breakthrough isn’t one more design tool.\n\nIt’s keeping the same context from idea to design output to launch asset.\n\nWe tested it with Codex Plugins, Open Design, and html-video: from vague idea to polished promo video.\n\nAll inside Codex. https://t.co/ZQor5eoz00",
+      "url": "https://x.com/i/status/2064297362177093766",
+      "source": "X/Twitter",
+      "author": "@nexudotio",
+      "date": "2026-06-09",
+      "time": "18:43",
+      "likes": 431,
+      "views": 85759
+    },
+    {
       "title": "@VaibhavSisinty honestly the right setup with Claude just compounds. we use it daily at https://t.co/4m82YXW8re for threat modeling and at https://t.co/NguHQxFipD for dev workflows. once you get the hang of it you wonder how you shipped anything before lol",
       "summary": "",
       "url": "https://x.com/i/status/2064284640727420968",
@@ -166,6 +232,17 @@
       "time": "14:54",
       "likes": 10,
       "views": 3754
+    },
+    {
+      "title": "GPT5.5 × seedanceの架空広告。",
+      "summary": "1️⃣3×3のグリッド形式で画像作成\n2️⃣GPTに読み込ませプロンプト作成\n3️⃣1の画像と2のプロンプトで動画生成\n\nちなみにhiggsfieldのMCPでcodexから作成してるので、バリエーションもジャンルも無限に自動化。\n\n動画生成プロンプトのコツはリプで↓ https://t.co/HCUBCuPa8m",
+      "url": "https://x.com/i/status/2064177944604688544",
+      "source": "X/Twitter",
+      "author": "@onofumi_AI",
+      "date": "2026-06-09",
+      "time": "10:49",
+      "likes": 320,
+      "views": 21890
     },
     {
       "title": "这年头什么事都有，居然有这样抢座位的？我该去哪讲理去？ 上次有人拍拍到这个姐姐的视频发推特上了，今天居然我也遇到了。  SEEDANCE PROMPT: 🤣🤣🤣未经处理的iPhone手持拍摄的真实视频素材风格呈现，所有相机设置均为自动，无任何后期调色或特效。画面带有真实的手持轻微抖动和操作者（男生）呼吸感，因地铁列车行驶晃动导致镜头自然下沉或倾斜后迅速回正。自动对焦偶尔出现搜索、延迟和短暂失焦，尤其在身体移动或手部动作时。自动白平衡随车厢荧光灯与隧道光线变化在冷暖色调间自然切换。图像整体平坦，保留真实的镜头光晕、边缘轻微色差、运动模糊等光学瑕疵。模拟CCD传感器拍摄效果，带有轻微垂直拖尾（smear）、色彩溢出、颗粒噪点和高对比边缘的紫绿fringes。仅使用画内自然环境音效，包括地铁低沉的行驶轰鸣声、轮轨摩擦声、乘客低语和衣物摩擦声，麦克风在列车加速或较大动作时可能轻微失真。采用地铁车厢内男生第一人称POV视角（从坐在座位上的低角度抬头视点开始），镜头运动完全跟随男生本能反应（抬头、身体僵硬、起身移动时的晃动）。车厢内十分拥挤，没有任何空座位，背景站满乘客、拉环和模糊人群，强化满载真实感。偶尔可见男生自己的腿部、膝盖或手部边缘（强化坐在座位上的位置感）。 15秒时间线（完整意境：正常距离开始→女生暧昧慢慢靠近胸部渐近但绝不触碰→男生忍耐拉扯最终屈服让开+吃惊“你怎么这样”表情→女生顺势占座嘲笑，最后摘下口罩→男生想碰肩膀，女生拿出清洁喷剂清洁其手）： 0秒时，镜头从坐在地铁座位上的第一人称低角度POV轻微晃动向上对准站在面前的年轻亚洲女性",
@@ -410,6 +487,28 @@
       "views": 19007
     },
     {
+      "title": "Layered liquid glass icons! 🔥 https://t.co/gIOmSEe9vy",
+      "summary": "",
+      "url": "https://x.com/i/status/2064032337768132646",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:10",
+      "likes": 17,
+      "views": 870
+    },
+    {
+      "title": "The next version is named Golden Gate! 🌉",
+      "summary": "Platform Improvements first 👀 https://t.co/lJYYrxSPbh",
+      "url": "https://x.com/i/status/2064031433635631490",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "01:06",
+      "likes": 13,
+      "views": 1161
+    },
+    {
       "title": "everyone says \"AI agents are only for engineers\"",
       "summary": "an agent is just a chat with three things added that a normal chat doesn't have:\n\n> tools it can call on its own: search, files, code, APIs\n> memory that carries across tasks, not just one session\n> a loop that keeps running until the job is actually done\n\na regular chat answers once and stops, an a…",
       "url": "https://x.com/i/status/2064027571143180522",
@@ -474,6 +573,17 @@
       "time": "23:08",
       "likes": 387,
       "views": 62578
+    },
+    {
+      "title": "搞AI Agent的朋友注意了，这个开源项目你要是不收藏，真有点可惜。",
+      "summary": "GitHub上有个叫12-Factor Agents的项目，现在已经收获了23.1k+ Star（我之前看的11k+，最近涨了不少）。它核心就解决一个痛点：为啥你做的Agent只能在演示环境跑跑，一拿到线上就各种崩？\n\n项目作者和上百位技术创始人聊完后，总结出了12条原则。这些不是那种虚头巴脑的理论，而是真正能落地的工程实践，涵盖了上下文管理、工具调用、状态建模、错误处理这些关键环节。\n\n🔗 : https://t.co/B6unP0p255",
+      "url": "https://x.com/i/status/2063993823538364642",
+      "source": "X/Twitter",
+      "author": "@XAMTO_AI",
+      "date": "2026-06-08",
+      "time": "22:37",
+      "likes": 147,
+      "views": 10438
     },
     {
       "title": "Meet Kimi Work - a local AI agent on your desktop that does the work for you.",
@@ -661,6 +771,17 @@
       "time": "22:35",
       "likes": 78,
       "views": 6391
+    },
+    {
+      "title": "@speaksGaming @threejs nice! what are you building?",
+      "summary": "",
+      "url": "https://x.com/i/status/2063620334113464670",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-07",
+      "time": "21:53",
+      "likes": 62,
+      "views": 10842
     },
     {
       "title": "@Andy_AJT see you there 😉",
@@ -1565,6 +1686,17 @@
       "views": 39888
     },
     {
+      "title": "@Baconbrix @sentry 🔥🤝",
+      "summary": "",
+      "url": "https://x.com/i/status/2062606696854544611",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-05",
+      "time": "02:45",
+      "likes": 12,
+      "views": 2120
+    },
+    {
       "title": "More of the iOS app loop, now inside Codex.",
       "summary": "The Build iOS Apps plugin lets Codex view and test your iOS app in the in-app browser, open SwiftUI previews, and hot reload edits without leaving Codex. https://t.co/SksapiJFjY",
       "url": "https://x.com/i/status/2062599291479478275",
@@ -2005,6 +2137,17 @@
       "views": 691258
     },
     {
+      "title": "Claude Code 2.1.162 is about to be released",
+      "summary": "#cccnext",
+      "url": "https://x.com/i/status/2062235890450092224",
+      "source": "X/Twitter",
+      "author": "@ClaudeCodeLog",
+      "date": "2026-06-04",
+      "time": "02:12",
+      "likes": 57,
+      "views": 7485
+    },
+    {
       "title": "Ben kept getting distracted during long Claude Code sessions, so he built a miniature Clawd to get his attention. When  Claude Code needs input, a solenoid inside the aluminum body pushes it upward. In other words, it jumps up and down. https://t.co/hugzPTTnSw",
       "summary": "",
       "url": "https://x.com/i/status/2062220049146876347",
@@ -2091,6 +2234,17 @@
       "time": "00:21",
       "likes": 259,
       "views": 19403
+    },
+    {
+      "title": "Meet Gemma 4 12B!",
+      "summary": "A unified, encoder-free multimodal model designed to bring high-performance intelligence directly to your laptop, and released under an Apache 2.0 license.\n\nBridging the gap between edge efficiency and advanced reasoning. Here is what’s new with Gemma 4 12B: 👇 https://t.co/gf4FZv0WZb",
+      "url": "https://x.com/i/status/2062202706882883696",
+      "source": "X/Twitter",
+      "author": "@googlegemma",
+      "date": "2026-06-04",
+      "time": "00:00",
+      "likes": 12339,
+      "views": 3152948
     },
     {
       "title": "Perplexity Personal Computer is now available to Max and Enterprise Max users on Windows!",
@@ -2905,6 +3059,17 @@
       "time": "22:57",
       "likes": 196,
       "views": 15571
+    },
+    {
+      "title": "You can build an entire company without leaving Claude + Higgsfield MCP.",
+      "summary": "Brand identity, app screens built for downloads, motion videos that drive revenue, founder vision in one post.\n\nBuilt-in marketing skills generate ads, Virality Predictor finds winners. https://t.co/SjEJgReKZJ",
+      "url": "https://x.com/i/status/2061813474934882482",
+      "source": "X/Twitter",
+      "author": "@higgsfield",
+      "date": "2026-06-02",
+      "time": "22:13",
+      "likes": 1450,
+      "views": 228251
     },
     {
       "title": "@Capafyai Free testing time 👀👀👀",
@@ -5820,6 +5985,17 @@
       "time": "22:39",
       "likes": 6420,
       "views": 598298
+    },
+    {
+      "title": "GPT Image 2 + Seedance 2.0 = Latte Art 🎶",
+      "summary": "Using a few techniques I’ve shared recently, you can create musical animations like this one.\n\nFor this video, I used a Character Sheet + Storyboard + IPA.\nEven though it skips a beat or two in places, that’s totally normal. I think it blended the musical tone with the artistic style instead of foll…",
+      "url": "https://x.com/i/status/2052301045309509736",
+      "source": "X/Twitter",
+      "author": "@aimikoda",
+      "date": "2026-05-07",
+      "time": "16:14",
+      "likes": 3482,
+      "views": 298401
     },
     {
       "title": "爆肝制作，全网最细最全的 Claude Code 零基础系统教程！👇👇",
