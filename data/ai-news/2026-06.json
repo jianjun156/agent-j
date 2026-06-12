@@ -1,7 +1,62 @@
 {
   "month": "2026-06",
-  "lastUpdate": "2026-06-12T08:00:00+08:00",
+  "lastUpdate": "2026-06-12T08:02:04+08:00",
   "articles": [
+    {
+      "title": "GPT-5.5 (xHigh) ranks #2 on Agent Arena (+10.6% net improvement), making it the highest-ranked OpenAI model closely behind Claude Fable 5 (High).",
+      "summary": "Per signal breakdown, GPT-5.5 (xHigh) ranks #1 in Praise vs. Complaint (+29.4%) and Bash Recovery (+14.1%), scoring higher than Claude Fable 5 (High) on both signals. It trails Claude Fable 5 (High) on Confirmed Success (+5.4% vs. +17.6%) and Steerability (+1.9% vs. +5.4%).\n\nAgent Arena evaluates mo…",
+      "url": "https://x.com/i/status/2065155922260025640",
+      "source": "X/Twitter",
+      "author": "@arena",
+      "date": "2026-06-12",
+      "time": "03:35",
+      "likes": 172,
+      "views": 10789
+    },
+    {
+      "title": "Exciting news: Gemini Omni Flash is now #1 in the Video Arena (both Text-to-Video and Image-to-Video)!",
+      "summary": "For Text-to-Video this is a massive +158 pt improvement over Veo 3.1 (1080p) and a large +61 pt lead over the next best model, Seedance 2.0.\n\nCongrats @GoogleDeepMind for this huge milestone!",
+      "url": "https://x.com/i/status/2065112147093545333",
+      "source": "X/Twitter",
+      "author": "@arena",
+      "date": "2026-06-12",
+      "time": "00:41",
+      "likes": 584,
+      "views": 78477
+    },
+    {
+      "title": "We’ve reached an agreement to acquire @ona_hq.",
+      "summary": "Its secure cloud execution technology will help Codex take on longer-running work, even when laptops are closed, and help more organizations deploy agents securely in production.\n\nAfter closing, Ona will join OpenAI’s Codex team. https://t.co/RXoL4LSDcf",
+      "url": "https://x.com/i/status/2065088002335158753",
+      "source": "X/Twitter",
+      "author": "@OpenAINewsroom",
+      "date": "2026-06-11",
+      "time": "23:05",
+      "likes": 3158,
+      "views": 427408
+    },
+    {
+      "title": "We've just added two new Claude Managed Agents features:",
+      "summary": "1. Scheduled deployments - run tasks on a schedule\n \n2. Environment variables - expose vault credentials for CLIs as environment variables https://t.co/exfhz4yylr",
+      "url": "https://x.com/i/status/2065080005328249086",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-06-11",
+      "time": "22:33",
+      "likes": 2588,
+      "views": 171471
+    },
+    {
+      "title": "With the new environment variable credential type, Claude Managed Agents can securely use CLIs, SDKs, or direct API calls to services that authenticate with environment variables.",
+      "summary": "Claude never has access to secrets. Credentials are swapped in at the network boundary. https://t.co/0JTjE2TDbz",
+      "url": "https://x.com/i/status/2065080009203892302",
+      "source": "X/Twitter",
+      "author": "@ClaudeDevs",
+      "date": "2026-06-11",
+      "time": "22:33",
+      "likes": 156,
+      "views": 30082
+    },
     {
       "title": "We’re rolling out changes to make Fable 5’s safeguards for frontier LLM development visible.",
       "summary": "Starting this week, flagged requests will visibly fall back to Opus 4.8—the same as our safeguards for cyber and bio. You will see this every time it happens. On the API, any flagged requests will return a reason for their refusal (coming to server-side fallback in the next few days).\n\nWe wanted to …",
@@ -45,6 +100,17 @@
       "time": "13:51",
       "likes": 6,
       "views": 1745
+    },
+    {
+      "title": "Claude Fable 5 ranks #1 in Code Arena: Frontend, leading by a wide margin over Opus-4.8.",
+      "summary": "Highlights:\n- #1 in every sub leaderboard: HTML, React\n- #1 in every sub category: Brand & Marketing, Reference-Based Design, Data & Analytics, Consumer Product, Gaming, Simulations, and Content Creation Tools.\n\nHuge congrats to @AnthropicAI for this milestone! The thread breaks down how Claude Fabl…",
+      "url": "https://x.com/i/status/2064858698582040693",
+      "source": "X/Twitter",
+      "author": "@arena",
+      "date": "2026-06-11",
+      "time": "07:54",
+      "likes": 2353,
+      "views": 341669
     },
     {
       "title": "Claude Code 2.1.172 has been released.",
@@ -135,6 +201,17 @@
       "views": 449394
     },
     {
+      "title": "@inworld_ai Thats a big cut! 🔥",
+      "summary": "",
+      "url": "https://x.com/i/status/2064746745964204044",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-11",
+      "time": "00:29",
+      "likes": 8,
+      "views": 1331
+    },
+    {
       "title": "New from Code with Claude Tokyo: scheduled deployments and environment variables in vaults are in public beta in Claude Managed Agents, and dynamic workflows in Claude Code are generally available.",
       "summary": "Agents now run on a schedule, use your tools securely, and take on bigger jobs. https://t.co/9mTr8T6g5K",
       "url": "https://x.com/i/status/2064741174317924421",
@@ -168,6 +245,61 @@
       "views": 38770
     },
     {
+      "title": "Scheduled deployments and environment variables in vaults are available today on the Claude Platform.",
+      "summary": "Read more: https://t.co/kCYH1FnRbO",
+      "url": "https://x.com/i/status/2064741184547795408",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-11",
+      "time": "00:07",
+      "likes": 134,
+      "views": 47442
+    },
+    {
+      "title": "Environment variables in vaults let your agents use command-line tools that need API keys, without the model ever seeing them.",
+      "summary": "The sandbox only holds a placeholder. The real key is attached at the network boundary, and only for the domains you allow. https://t.co/Q1oDVHQgjL",
+      "url": "https://x.com/i/status/2064741179053252755",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-11",
+      "time": "00:07",
+      "likes": 324,
+      "views": 34487
+    },
+    {
+      "title": "Meet DiffusionGemma!",
+      "summary": "An experimental open model that explores a fast approach to text generation, released under an Apache 2.0 license.\n\nMoving beyond sequential, token-by-token processes to generate entire blocks of text simultaneously. Here’s what’s new with DiffusionGemma: 👇 https://t.co/iaVMPr0WKx",
+      "url": "https://x.com/i/status/2064741002204545467",
+      "source": "X/Twitter",
+      "author": "@googlegemma",
+      "date": "2026-06-11",
+      "time": "00:06",
+      "likes": 4788,
+      "views": 829363
+    },
+    {
+      "title": "For musician and composer @sound4movement, Codex works like a studio assistant.",
+      "summary": "He asks for a piano track in 3/4, sets the tempo and harmony, then describes how the performance should build.\n\nCodex handles the setup in Ableton Live. Michael stays focused on the creative work. https://t.co/HUqoxcza2u",
+      "url": "https://x.com/i/status/2064730990971646192",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-10",
+      "time": "23:26",
+      "likes": 819,
+      "views": 78789
+    },
+    {
+      "title": "Open AI 曾官方点名的Codex 视频",
+      "summary": "值得收藏，不到 2 小时，把 Codex + GPT-5.5 这套组合讲得很实：\n\n- 技能怎么配。\n- 插件怎么用。\n- 自动化工作流怎么搭。\n- 多任务怎么并行跑。\n- 以及最关键的，怎么把 Codex 从一个聊天窗口，变成一个可以持续帮你干活的开发系统。\n\n真正高效的方式，是你先把上下文、技能、流程、权限、任务边界搭好，然后让 AI 在一个更稳定的工作环境里执行。",
+      "url": "https://x.com/i/status/2064688026518016073",
+      "source": "X/Twitter",
+      "author": "@Easycompany333",
+      "date": "2026-06-10",
+      "time": "20:36",
+      "likes": 1625,
+      "views": 91088
+    },
+    {
       "title": "即梦 + Seedance 2.0 这波新比赛，真的可以冲一下。",
       "summary": "不是那种看看热闹的活动。\n\n这次入围奖有 97 位，每人 10 万即梦积分。\n\n按现在 AI 视频生成的消耗来算，这个积分价值已经不低了，实际价值超过一万现金也很正常。\n\n对经常做 AI 视频、短片、分镜、图生视频、运镜测试的人来说，这不是一个虚奖。\n\n这相当于直接送你一大笔试错预算。\n\n而且这类比赛最值得冲的点，不一定是一等奖。\n\n真正现实的是入围奖。\n\n名额多，门槛相对没那么离谱，只要作品完成度、画面概念、镜头语言和故事性够清楚，就有机会被看见。\n\n现在 AI 视频还在早期阶段，平台也在找样片、找创作者、找能证明 Seedance 2.0 能力的案例。\n\n所以这时候参赛，本质上不是单纯投稿…",
       "url": "https://x.com/i/status/2064673239595688052",
@@ -179,6 +311,28 @@
       "views": 232
     },
     {
+      "title": "装完 Codex 不搞钱？难道等着吃灰？",
+      "summary": "很多人装完 Codex，只会让它改代码、写脚本。 \n但我觉得更有想象力的玩法，是让它参与整条视频制作流程。 \n\n给 Codex 装上这 6 个 GitHub 上的视频 Skills，它就不只是写代码的工具，而是可以帮你做： \n脚本、分镜、提示词、动效、字幕、剪辑、包装和 MP4 渲染。\n \n1. HyperFrames：一句话生成动效视频\n2. video-use：让 Agent 帮你剪视频\n3. Remotion Skills：用代码批量制作视频\n4. Generative Media Skills：AI 视频生成工具箱\n5. videocut-skills：中文视频剪辑 Agent\n6. …",
+      "url": "https://x.com/i/status/2064671147363610852",
+      "source": "X/Twitter",
+      "author": "@0xQiYan",
+      "date": "2026-06-10",
+      "time": "19:28",
+      "likes": 745,
+      "views": 43161
+    },
+    {
+      "title": "很多人还在问：Codex 除了写代码，还能怎么赚钱？",
+      "summary": "我整理了 10 个真实存在的 Codex Skills，不一定官方，但都可以围绕它们包装成服务。\n\n1、competitive-ads-extractor\n\nGitHub：https://t.co/sMM7v2UgHl\n\n分析竞品广告，提取卖点、角度和投放素材。适合做竞品广告分析报告。\n\n2、lead-research-assistant\n\nGitHub：https://t.co/aX5RbEeAoj\n\n研究潜在客户，补充公司信息和线索资料。适合做 B2B 销售线索服务。\n\n3、support-ticket-triage\n\nGitHub：https://t.co/q1sWQQZULU\n\n给客服…",
+      "url": "https://x.com/i/status/2064663928060485711",
+      "source": "X/Twitter",
+      "author": "@Smartpigai",
+      "date": "2026-06-10",
+      "time": "19:00",
+      "likes": 125,
+      "views": 11389
+    },
+    {
       "title": "兄弟们，今天随手一刷，看到个东西直接把我干懵了。",
       "summary": "GitHub上有个叫 agency-agents 的开源角色库，你知道它现在多少星吗？81万。不是8.1万，是81万。这个数字意味着什么？意味着全球有几十万开发者和AI玩家已经在用了，你还不知道？\n\n🔗 : https://t.co/7oTbpRfg0o\n\n先说这东西是干嘛的。\n\n简单讲，就是一个超级角色提示词库，里面塞了140多个专家级Agent角色。CEO、律师、程序员、产品经理、增长黑客、财务顾问、市场策略师……你能叫出名字的岗位，基本都在里面。每个角色都是精心调教过的，不是那种随便写两句“你是一个律师”就完事的垃圾提示词，是真的有深度、有专业框架的角色设定。\n\n用法也极其简单，三步走：…",
       "url": "https://x.com/i/status/2064532250155417943",
@@ -188,6 +342,17 @@
       "time": "10:17",
       "likes": 4557,
       "views": 368485
+    },
+    {
+      "title": "📘 开源教程推荐：《Claude How-To》—— Claude Code 最完整的进阶学习路径，含图、含模板、含自测",
+      "summary": "如果你一直是「用到什么查什么」的方式用 Claude Code，这个项目值得花 11-13 小时系统过一遍。\n\n它用 Mermaid 流程图把 Claude Code 的每个核心特性都可视化了，从最基础的斜杠命令一路进阶到 Subagent、MCP 服务器、Hooks 和 Checkpoint。\n\n每个模块都有可直接复用的生产级模板，不只是解释「这是什么」，而是告诉你「工程里怎么真正用起来」。\n\n课程模块（10 个递进学习单元）：\n1. Module 01-02：斜杠命令 + 记忆系统（CLAUDE.md 最佳实践）\n2. Module 03-04：技能（Skills）系统 + Subagen…",
+      "url": "https://x.com/i/status/2064505324107862508",
+      "source": "X/Twitter",
+      "author": "@Xudong07452910",
+      "date": "2026-06-10",
+      "time": "08:30",
+      "likes": 89,
+      "views": 6007
     },
     {
       "title": "We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!",
@@ -322,6 +487,17 @@
       "views": 122333
     },
     {
+      "title": "https://t.co/CwSbd8f4gl",
+      "summary": "",
+      "url": "https://x.com/i/status/2064395168007278714",
+      "source": "X/Twitter",
+      "author": "@OpenAIDevs",
+      "date": "2026-06-10",
+      "time": "01:12",
+      "likes": 57,
+      "views": 17029
+    },
+    {
       "title": "Claude Fable 5 is here. New model generation, new way of working.",
       "summary": "Here's how to get started in Claude Code and on the Claude Platform: 🧵",
       "url": "https://x.com/i/status/2064394919549210774",
@@ -397,6 +573,17 @@
       "time": "01:08",
       "likes": 2578,
       "views": 596303
+    },
+    {
+      "title": "For a small group of cyber defenders and critical infrastructure providers, we are also launching Claude Mythos 5.",
+      "summary": "Mythos 5 shares the same underlying model as Fable 5, but with the safeguards lifted in some areas.",
+      "url": "https://x.com/i/status/2064394158056386684",
+      "source": "X/Twitter",
+      "author": "@claudeai",
+      "date": "2026-06-10",
+      "time": "01:08",
+      "likes": 2880,
+      "views": 660709
     },
     {
       "title": "introducing gemini 3.5 live translate, our latest audio model:",
@@ -663,6 +850,17 @@
       "views": 10312
     },
     {
+      "title": "Shortcuts are getting updated too 👀",
+      "summary": "Users can create shortcuts via prompts! https://t.co/1TyK3f2DHG",
+      "url": "https://x.com/i/status/2064044989093421311",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-09",
+      "time": "02:00",
+      "likes": 6,
+      "views": 808
+    },
+    {
       "title": "New Apple Intelligence features on Safari",
       "summary": "&gt; tab grouping \n&gt; notify me feature\n&gt; describe an extension https://t.co/Jor52Ro5ZX",
       "url": "https://x.com/i/status/2064043604566303183",
@@ -859,6 +1057,17 @@
       "time": "23:08",
       "likes": 387,
       "views": 62578
+    },
+    {
+      "title": "KIMI 🔥: A new \"Kimi for Work\" AI Agent has been released with support for Native Agent Swarm, Browser Use, and more!",
+      "summary": "> The app is available on both macOS and Windows. \n> Users can spawn up to 300 agents locally.\n> Browser Use is working as part of the earlier-released WebBridge. \n> Kimi for Work is powered by its own Memory System.",
+      "url": "https://x.com/i/status/2063995467260694758",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-08",
+      "time": "22:44",
+      "likes": 383,
+      "views": 33524
     },
     {
       "title": "搞AI Agent的朋友注意了，这个开源项目你要是不收藏，真有点可惜。",
@@ -1123,6 +1332,17 @@
       "time": "14:14",
       "likes": 56,
       "views": 1276
+    },
+    {
+      "title": "用AI的最高境界，是以道御术，",
+      "summary": "但说句实话，你得先以术入道，才谈得上驾驭。\n\n最近《丧尸清道夫》火得一塌糊涂，一个素人，\n一支AI视频，直接把自己送上了全球最顶级的资源圈。\n\n这事给我的冲击很大，不是因为这视频有多炫，而是它验证了一件事：AI视频，正在成为下一个抖音时刻。\n\n不管你拿它当副业搞钱，当主业深耕，还是纯个人爱好，这个赛道都值得你认真看一眼。\n\n想要看懂这个赛道，基础知识是绕不过去的，你得知道它怎么来的，才知道它往哪去。\n\n今天聊聊AI视频的三个阶段，一起看一遍来时路。\n\n第一阶段：图生视频\n\n最早的入口，其实是图生视频，\n文生视频那会儿我基本跳过了，实话实说，没什么用。\n\n真正的转折发生在2023年2月，Runw…",
+      "url": "https://x.com/i/status/2063499733578965229",
+      "source": "X/Twitter",
+      "author": "@AYi_AInotes",
+      "date": "2026-06-07",
+      "time": "13:54",
+      "likes": 44,
+      "views": 17177
     },
     {
       "title": "Stop wasting hours trying to learn AI.",
@@ -2170,6 +2390,17 @@
       "views": 39520
     },
     {
+      "title": "Today we're shipping Nemotron 3 Ultra.",
+      "summary": "A 550B MoE frontier-intelligence open model built for long-running agents.\n\nIt delivers 5x faster inference and lowers the cost of complex agentic tasks by up to 30% versus other open frontier models. https://t.co/FEXqvfzQFO",
+      "url": "https://x.com/i/status/2062521325076299981",
+      "source": "X/Twitter",
+      "author": "@NVIDIAAI",
+      "date": "2026-06-04",
+      "time": "21:06",
+      "likes": 3458,
+      "views": 1226526
+    },
+    {
       "title": "Saber Poi Ritual",
       "summary": "Midjourney + Gpt Image 2 + Seedance 2.0 + Suno\n\nWorkflow and prompts are in the replies. https://t.co/VoC7oBhLir",
       "url": "https://x.com/i/status/2062516255941095583",
@@ -2927,6 +3158,17 @@
       "time": "02:26",
       "likes": 2350,
       "views": 598570
+    },
+    {
+      "title": "MICROSOFT 🔥: A new Copilot super app has been announced!",
+      "summary": "It arrives with a concept of Autopilots, long-running, always-on agents, with Scout being the first Agent coming out of the box. More Autopilot Agents will be added later. https://t.co/Ewi20W5v9e",
+      "url": "https://x.com/i/status/2061877188400484842",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-06-03",
+      "time": "02:26",
+      "likes": 530,
+      "views": 49938
     },
     {
       "title": "@steipete 7 new models 🔥",
@@ -4027,6 +4269,17 @@
       "time": "21:58",
       "likes": 486,
       "views": 43040
+    },
+    {
+      "title": "Read more 🗞️",
+      "summary": "https://t.co/OfWwhPfKao",
+      "url": "https://x.com/i/status/2061084841580302768",
+      "source": "X/Twitter",
+      "author": "@testingcatalog",
+      "date": "2026-05-31",
+      "time": "21:58",
+      "likes": 26,
+      "views": 5557
     },
     {
       "title": "@patrickbrady10 My bad, it was posted while I was half asleep 😶‍🌫️",
@@ -5369,6 +5622,17 @@
       "time": "23:39",
       "likes": 2021,
       "views": 116987
+    },
+    {
+      "title": "Higgsfield just turned Claude into a film studio.",
+      "summary": "You can now make studio-quality films without ever leaving Claude.\n\nClaude → the story\nNano Banana Pro → character sheets + storyboard\nSeedance 2.0 → animates the final cut\nHiggsfield MCP → routes it all\n\nDuration and consistency? No longer a problem.",
+      "url": "https://x.com/i/status/2058516230320046497",
+      "source": "X/Twitter",
+      "author": "@AngryTomtweets",
+      "date": "2026-05-24",
+      "time": "19:51",
+      "likes": 683,
+      "views": 62764
     },
     {
       "title": "还没在Codex里配置好Agents.md的可以直接来抄大神Karpathy的作业了",
